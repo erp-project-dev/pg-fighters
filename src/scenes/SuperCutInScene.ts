@@ -101,13 +101,13 @@ export class SuperCutInScene extends Phaser.Scene {
     strumChord(this, SOLOS[def.superMove.solo]);
     Audio.tone(this, 110, 0.5, 'sawtooth', 0.06);
     this.time.delayedCall(duration - 220, () => this.close());
-    // ENTER / J / ESPACIO: completa la frase al instante, o pasa al solo si ya está escrita.
-    for (const key of ['ENTER', 'SPACE', 'J']) {
-      this.input.keyboard!.on(`keydown-${key}`, () => {
-        if (this.typed < this.full.length) this.skipTyping = true;
-        else this.close();
-      });
-    }
+    // ENTER o clic: completa la frase al instante, o pasa al solo si ya está escrita.
+    const skip = () => {
+      if (this.typed < this.full.length) this.skipTyping = true;
+      else this.close();
+    };
+    this.input.keyboard!.on('keydown-ENTER', skip);
+    this.input.on(Phaser.Input.Events.POINTER_DOWN, skip);
   }
 
   private close(): void {

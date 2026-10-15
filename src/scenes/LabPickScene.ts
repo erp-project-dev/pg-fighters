@@ -67,7 +67,7 @@ export class LabPickScene extends Phaser.Scene {
       });
     });
     this.cursor = this.add.graphics();
-    footer(this, '← → ↑ ↓  ELEGIR      ENTER  JUGAR      TAB  TÚ / RIVAL      F  ESCENARIO      V  SPRITES      M  MENÚ      ESC  VOLVER');
+    footer(this, 'W A S D  ELEGIR      ENTER  JUGAR      TAB  TÚ / RIVAL      F  ESCENARIO      V  SPRITES      M  MENÚ      ESC  VOLVER');
 
     // Teclas propias del laboratorio (no son acciones del juego).
     const onKey = (e: KeyboardEvent) => {

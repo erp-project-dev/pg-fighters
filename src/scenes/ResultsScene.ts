@@ -64,7 +64,7 @@ export class ResultsScene extends Phaser.Scene {
       { label: 'CAMBIAR LUCHADOR', onSelect: () => goTo(this, SCENES.Select, { last: data.p1 }) },
       { label: 'MENÚ PRINCIPAL', onSelect: () => goTo(this, SCENES.Title, { skipPress: true }) },
     ], x + 30, 760, 76, 48, 'left');
-    footer(this, '↑ ↓  ELEGIR      ENTER  CONFIRMAR');
+    footer(this, 'W S  ELEGIR      ENTER  CONFIRMAR');
     scanlines(this, 0.06);
   }
 

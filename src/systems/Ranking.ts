@@ -131,6 +131,8 @@ export const Ranking = {
 
   /** Guarda la partida en la fila de la cuenta solo si supera su mejor puntaje. */
   async submit(entry: Omit<RankEntry, 'id'>): Promise<void> {
+    // Las partidas de prueba en local no van al ranking mundial.
+    if (import.meta.env.DEV) return;
     try {
       const { fs, db } = await connect();
       if (!(await this.init())) return;

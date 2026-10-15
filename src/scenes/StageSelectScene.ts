@@ -95,7 +95,7 @@ export class StageSelectScene extends Phaser.Scene {
 
     const start = data.last ? this.options.indexOf(data.last) : 0;
     this.pick(Math.max(0, start), true);
-    footer(this, '← → ↑ ↓  ELEGIR      ENTER  CONFIRMAR      ESC  VOLVER').setDepth(900);
+    footer(this, 'W A S D  ELEGIR      ENTER  CONFIRMAR      ESC  VOLVER').setDepth(900);
     scanlines(this, 0.05);
   }
 
@@ -137,7 +137,7 @@ export class StageSelectScene extends Phaser.Scene {
     return { x: GAME_WIDTH / 2 + (col - (count - 1) / 2) * (CARD_W + CARD_GAP), y: ROW_Y[row], row };
   }
 
-  /** ↑ ↓: salta a la tarjeta más cercana de la otra fila. */
+  /** W S: salta a la tarjeta más cercana de la otra fila. */
   private moveRow(): void {
     const cur = this.slotPos(this.index);
     let best = this.index;

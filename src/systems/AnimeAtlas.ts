@@ -28,8 +28,15 @@ export function registerAnimeAtlases(scene: Phaser.Scene): void {
         if(!recovery)ctx.clearRect(760*sx,1140*sy,494*sx,114*sy);
       }
     }
+    // The raised victory fist reaches into the guard's cell: each pose gets a copy without the other's pixels.
+    const [guard,victory]=([[700,683,280,20],[560,683,140,20]] as const).map(([cx,cy,cw,ch])=>{
+      const canvas=document.createElement('canvas');canvas.width=extra.width;canvas.height=extra.height;
+      const ctx=canvas.getContext('2d')!;ctx.drawImage(extra,0,0);
+      if(id==='edu') ctx.clearRect(cx*extra.width/1536,cy*extra.height/1024,cw*extra.width/1536,ch*extra.height/1024);
+      return canvas;
+    });
     const key=`${id}-anime`;
-    const sources=[base,extra,low,lowSweep,lowRecovery,superSheet,dashSheet];
+    const sources=[base,extra,low,lowSweep,lowRecovery,superSheet,dashSheet,guard,victory];
     const texture=scene.textures.create(key,sources)!;
     let idleHeight=1,extraScale=1;
     const add=(name:string,index:number,region:number[])=>{
@@ -62,6 +69,16 @@ export function registerAnimeAtlases(scene: Phaser.Scene): void {
       : [[0,0,510,370],[520,0,460,365],[1020,0,516,340],[0,375,510,315],[560,365,420,335],[1030,340,506,380],[0,690,560,334],[600,700,360,324],[990,740,546,284]];
     const names=['walk-0','walk-1','jump','crouch','block','uppercut','airKick','win','ko'];
     regions.forEach((r,i)=>add(names[i],1,r.map((n,j)=>n*(j%2?extra.height/(id==='pata'?1254:1024):extra.width/(id==='pata'?1254:1536)))));
+    if(id==='edu') {
+      const sx=extra.width/1536,sy=extra.height/1024;
+      for(const [index,name,region] of [[7,'block',[560,365,420,335]],[8,'win',[600,683,360,341]]] as const) {
+        texture.remove(prefix+name);
+        add(name,index,region.map((n,j)=>n*(j%2?sy:sx)));
+        poseScale.set(`${key}/${prefix+name}`,extraScale);
+      }
+      // The victory pose is painted smaller than the rest of the sheet.
+      poseScale.set(`${key}/${prefix}win`,extraScale*1.15);
+    }
     // Dedicated low attacks share the guard's anatomical scale and ground anchor.
     const crouch=texture.get(prefix+'crouch');
     const targetCrouchHeight=crouch.realHeight*extraScale;

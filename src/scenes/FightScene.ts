@@ -86,7 +86,7 @@ export class FightScene extends Phaser.Scene implements Arena {
   private hud!: HudScene;
   private hitstopUntil = 0;
   private timeScale = 1;
-  private pending = { punch: false, kick: false, dash: false, super: false };
+  private pending = { punch: false, kick: false, super: false };
   private dim!: Phaser.GameObjects.Rectangle;
   private neon!: Phaser.GameObjects.Rectangle;
   private matchStart = 0;
@@ -355,7 +355,7 @@ export class FightScene extends Phaser.Scene implements Arena {
   private updateClash(realDt: number): void {
     const c = this.clash!;
     const i = this.input2;
-    if (i.justDown('punch') || i.justDown('kick') || i.justDown('super') || i.justDown('dash') || i.justDown('confirm')) {
+    if (i.justDown('punch') || i.justDown('kick') || i.justDown('super') || i.justDown('confirm')) {
       c.score[this.p1.side]++;
       this.fx.ring(this.p1.x, GROUND_Y - 300, this.p1.def.color, 120, 0.2);
     }
@@ -505,7 +505,7 @@ export class FightScene extends Phaser.Scene implements Arena {
       down: i.isDown('down'),
       punch: this.pending.punch,
       kick: this.pending.kick,
-      dash: this.pending.dash,
+      dash: false,
       super: this.pending.super,
     };
   }
@@ -527,7 +527,6 @@ export class FightScene extends Phaser.Scene implements Arena {
     // Las pulsaciones se acumulan durante el hitstop para no perderlas.
     this.pending.punch ||= this.input2.justDown('punch');
     this.pending.kick ||= this.input2.justDown('kick');
-    this.pending.dash ||= this.input2.justDown('dash');
     this.pending.super ||= this.input2.justDown('super');
 
     const realDt = Math.min(delta, 40) / 1000;
@@ -549,7 +548,7 @@ export class FightScene extends Phaser.Scene implements Arena {
         this.p1.control(NO_INTENT);
         this.p2.control(NO_INTENT);
       }
-      this.pending = { punch: false, kick: false, dash: false, super: false };
+      this.pending = { punch: false, kick: false, super: false };
     }
 
     this.p1.update(dt);

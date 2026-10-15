@@ -1,30 +1,21 @@
 import Phaser from 'phaser';
 
-export type Action = 'left' | 'right' | 'up' | 'down' | 'punch' | 'kick' | 'dash' | 'super' | 'confirm' | 'back' | 'pause';
+export type Action = 'left' | 'right' | 'up' | 'down' | 'punch' | 'kick' | 'super' | 'confirm' | 'back' | 'pause';
 
-/** Teclas físicas (KeyboardEvent.code) → acciones. Una tecla puede servir en menús y en pelea. */
+/**
+ * Teclas físicas (KeyboardEvent.code) → acciones. Un solo esquema para todo el juego:
+ * WASD (doble toque A A / D D = dash), clic izquierdo (puño), clic derecho (patada), E (ultimate), ENTER y ESC.
+ */
 const BINDINGS: Record<string, Action[]> = {
-  ArrowLeft: ['left'],
   KeyA: ['left'],
-  ArrowRight: ['right'],
   KeyD: ['right'],
-  ArrowUp: ['up'],
   KeyW: ['up'],
-  ArrowDown: ['down'],
   KeyS: ['down'],
-  KeyJ: ['punch', 'confirm'],
-  KeyK: ['kick'],
-  Space: ['dash', 'confirm'],
-  KeyL: ['dash'],
   KeyE: ['super'],
   Enter: ['confirm'],
   NumpadEnter: ['confirm'],
   Escape: ['back', 'pause'],
-  Backspace: ['back'],
-  KeyP: ['pause'],
 };
-
-const CAPTURED = new Set(['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Space', 'Backspace']);
 
 /**
  * Teclas físicas apretadas ahora mismo, en todo el juego. Se registran una sola vez para que
@@ -33,7 +24,6 @@ const CAPTURED = new Set(['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Sp
  */
 const heldCodes = new Set<string>();
 window.addEventListener('keydown', (e) => {
-  if (CAPTURED.has(e.code)) e.preventDefault();
   heldCodes.add(e.code);
 });
 window.addEventListener('keyup', (e) => heldCodes.delete(e.code));

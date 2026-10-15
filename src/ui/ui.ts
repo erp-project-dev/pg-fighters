@@ -107,11 +107,11 @@ export interface MenuItem {
   label: string | (() => string);
   enabled?: boolean;
   onSelect?: () => void;
-  /** Para opciones con ← →. */
+  /** Para opciones con A D. */
   onSide?: (dir: number) => void;
 }
 
-/** Lista vertical: ↑ ↓ y Enter, o ratón (hover + clic). ← → cambia las opciones con valor. */
+/** Lista vertical: W S y Enter, o ratón (hover + clic). A D cambia las opciones con valor. */
 export class Menu {
   index = 0;
   private texts: Phaser.GameObjects.Text[] = [];

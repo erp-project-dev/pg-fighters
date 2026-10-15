@@ -37,7 +37,7 @@ const CREDITS: Line[] = [
   ['title', 'LARGA VIDA A LA ESCENA'],
 ];
 
-/** Créditos: suben solos como en los arcades. ENTER/ESC vuelve al menú; ↑ ↓ adelanta o retrocede. */
+/** Créditos: suben solos como en los arcades. ENTER/ESC vuelve al menú; W S adelanta o retrocede. */
 export class CreditsScene extends Phaser.Scene {
   private input2!: Input;
   private roll!: Phaser.GameObjects.Container;
@@ -78,7 +78,7 @@ export class CreditsScene extends Phaser.Scene {
     const fade = this.add.graphics();
     fade.fillGradientStyle(COLORS.bg, COLORS.bg, COLORS.bg, COLORS.bg, 1, 1, 0, 0).fillRect(0, 0, GAME_WIDTH, 140);
     fade.fillGradientStyle(COLORS.bg, COLORS.bg, COLORS.bg, COLORS.bg, 0, 0, 1, 1).fillRect(0, GAME_HEIGHT - 200, GAME_WIDTH, 200);
-    footer(this, '↑ ↓  ADELANTAR / RETROCEDER      ENTER ESC  VOLVER');
+    footer(this, 'W S  ADELANTAR / RETROCEDER      ENTER ESC  VOLVER');
     scanlines(this, 0.06);
   }
 

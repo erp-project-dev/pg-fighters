@@ -32,14 +32,14 @@ const K = (ms = 140, dirs: Step['dirs'] = []): Step => ({ dirs, kick: true, ms }
 
 /** Combos de demostración: el juego los ejecuta solo con el luchador del jugador. */
 export const DEMOS: DemoCombo[] = [
-  { name: 'P · P · K', gap: 230, steps: () => [P(), P(), K(420)] },
-  { name: '↓P · ↓P · ↓K', gap: 230, steps: () => [P(140, ['down']), P(140, ['down']), K(520, ['down'])] },
-  { name: 'P · P · PODER', gap: 230, steps: () => [P(), P(40), { dirs: ['down'], ms: 30 }, { dirs: ['down', 'fwd'], ms: 30 }, P(60, ['fwd'])] },
-  { name: 'SALTO K · P · P · K', gap: 430, steps: () => [{ dirs: ['up', 'fwd'], ms: 60 }, { dirs: [], ms: 380 }, K(320), P(), P(), K(420)] },
-  { name: 'DASH · P · P · K', gap: 620, steps: () => [{ dirs: ['fwd'], dash: true, ms: 240 }, P(), P(), K(420)] },
+  { name: 'IZQ · IZQ · DER', gap: 230, steps: () => [P(), P(), K(420)] },
+  { name: 'S+IZQ · S+IZQ · S+DER', gap: 230, steps: () => [P(140, ['down']), P(140, ['down']), K(520, ['down'])] },
+  { name: 'IZQ · IZQ · PODER', gap: 230, steps: () => [P(), P(40), { dirs: ['down'], ms: 30 }, { dirs: ['down', 'fwd'], ms: 30 }, P(60, ['fwd'])] },
+  { name: 'SALTO DER · IZQ · IZQ · DER', gap: 430, steps: () => [{ dirs: ['up', 'fwd'], ms: 60 }, { dirs: [], ms: 380 }, K(320), P(), P(), K(420)] },
+  { name: 'DASH · IZQ · IZQ · DER', gap: 620, steps: () => [{ dirs: ['fwd'], dash: true, ms: 240 }, P(), P(), K(420)] },
   { name: 'UPPERCUT', gap: 230, steps: () => SEQ.uppercut() },
   { name: 'ULTIMATE (E)', gap: 620, meter: true, steps: () => [{ dirs: [], super: true, ms: 80 }] },
-  { name: 'P · P · ULTIMATE', gap: 230, meter: true, steps: () => [P(), P(80), { dirs: [], super: true, ms: 80 }] },
+  { name: 'IZQ · IZQ · ULTIMATE', gap: 230, meter: true, steps: () => [P(), P(80), { dirs: [], super: true, ms: 80 }] },
 ];
 
 /** Entrada registrada para el historial (dirección absoluta en notación numérica). */
@@ -136,7 +136,7 @@ export class Training {
     const h = (i.right ? 1 : 0) - (i.left ? 1 : 0);
     const v = i.down ? 0 : i.up ? 6 : 3;
     const dir = v + 2 + h;
-    const buttons = `${i.punch ? 'P' : ''}${i.kick ? 'K' : ''}${i.dash ? 'D' : ''}${i.super ? 'S' : ''}`;
+    const buttons = [i.punch && 'IZQ', i.kick && 'DER', i.dash && 'DASH', i.super && 'E'].filter(Boolean).join('+');
     const top = this.inputLog[0];
     if (top && top.dir === dir && !buttons && !top.buttons) {
       top.frames++;

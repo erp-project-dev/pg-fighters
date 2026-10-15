@@ -5,7 +5,7 @@ import { DEMOS, DUMMY_LABEL } from '../systems/Training';
 import { text } from '../ui/ui';
 import type { FightScene } from './FightScene';
 
-const ARROWS: Record<number, string> = { 1: '↙', 2: '↓', 3: '↘', 4: '←', 5: '•', 6: '→', 7: '↖', 8: '↑', 9: '↗' };
+const ARROWS: Record<number, string> = { 1: 'S+A', 2: 'S', 3: 'S+D', 4: 'A', 5: '•', 6: 'D', 7: 'W+A', 8: 'W', 9: 'W+D' };
 const FRAME_MS = 1000 / 60;
 const frames = (ms: number) => `${Math.round(ms / FRAME_MS)}f`;
 
@@ -36,10 +36,10 @@ export class TrainingHudScene extends Phaser.Scene {
   create() {
     // Historial de entradas
     const hg = this.add.graphics();
-    hg.fillStyle(COLORS.bg, 0.6).fillRect(24, 220, 190, 650);
+    hg.fillStyle(COLORS.bg, 0.6).fillRect(24, 220, 250, 650);
     text(this, 40, 240, 'ENTRADAS', { size: 22, weight: '800', color: CSS.lime, origin: [0, 0.5], spacing: 3 });
     for (let i = 0; i < 18; i++) {
-      this.history.push(text(this, 40, 280 + i * 33, '', { size: 28, weight: '800', origin: [0, 0.5] }).setAlpha(1 - i * 0.04));
+      this.history.push(text(this, 40, 280 + i * 33, '', { size: 22, weight: '800', origin: [0, 0.5] }).setAlpha(1 - i * 0.04));
     }
 
     // Opciones
@@ -88,7 +88,7 @@ export class TrainingHudScene extends Phaser.Scene {
     t.inputLog.forEach((e, i) => {
       const row = this.history[i];
       if (!row) return;
-      row.setText(`${ARROWS[e.dir]} ${e.buttons}`.padEnd(6) + (e.frames > 1 ? `  ${Math.min(e.frames, 99)}` : ''));
+      row.setText(`${ARROWS[e.dir]} ${e.buttons}`.padEnd(10) + (e.frames > 1 ? `  ${Math.min(e.frames, 99)}` : ''));
       row.setColor(e.buttons ? CSS.lime : CSS.cream);
     });
     for (let i = t.inputLog.length; i < this.history.length; i++) this.history[i].setText('');

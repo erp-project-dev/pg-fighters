@@ -9,13 +9,15 @@ import type { FightData } from './FightScene';
 const LAB = new URLSearchParams(location.search).has('sprites');
 
 const MOVES_LIST: [string, string][] = [
-  ['PODER', '↓ ↘ → + P'],
-  ['UPPERCUT', '→ ↓ ↘ + P'],
+  ['PUÑO / PATADA', 'CLIC IZQ / CLIC DER'],
+  ['PODER', 'S → D + CLIC IZQ'],
+  ['UPPERCUT', 'D → S → S+D + CLIC IZQ'],
   ['ULTIMATE (barra llena)', 'E'],
-  ['BARRIDA', '↓ + K'],
-  ['DASH', 'ESPACIO  o  → →'],
-  ['BLOQUEAR', 'mantener ATRÁS'],
+  ['BARRIDA', 'S + CLIC DER'],
+  ['DASH / ATRÁS', 'D D / A A'],
+  ['BLOQUEAR', 'mantener A'],
 ];
+
 
 /** Pausa sobre la pelea: continuar, reiniciar, cambiar de luchador o salir. Muestra la lista de movimientos. */
 export class PauseScene extends Phaser.Scene {
@@ -54,7 +56,7 @@ export class PauseScene extends Phaser.Scene {
       text(this, px + 40, y, name, { size: 30, weight: '800', color: CSS.lime, origin: [0, 0.5] });
       text(this, px + 720, y, input, { size: 30, weight: '700', origin: [1, 0.5] });
     });
-    footer(this, '↑ ↓  ELEGIR      ENTER  CONFIRMAR      ESC  CONTINUAR');
+    footer(this, 'W S  ELEGIR      ENTER  CONFIRMAR      ESC  CONTINUAR');
   }
 
   private resume(): void {

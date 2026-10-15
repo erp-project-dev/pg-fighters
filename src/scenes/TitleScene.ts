@@ -92,7 +92,7 @@ export class TitleScene extends Phaser.Scene {
       { label: 'CONTROLES', onSelect: () => goTo(this, SCENES.Controls) },
       { label: 'CRÉDITOS', onSelect: () => goTo(this, SCENES.Credits) },
     ], GAME_WIDTH / 2, 672, saved ? 46 : 52, 38);
-    footer(this, '↑ ↓  ELEGIR      ← →  CAMBIAR      ENTER  CONFIRMAR');
+    footer(this, 'W S  ELEGIR      A D  CAMBIAR      ENTER  CONFIRMAR');
   }
 
   update() {

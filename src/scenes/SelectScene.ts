@@ -198,8 +198,8 @@ export class SelectScene extends Phaser.Scene {
   private setFooter(): void {
     this.footerRow?.destroy();
     this.footerRow = this.phase === 'difficulty' || this.phase === 'run'
-      ? footer(this, '↑ ↓  ELEGIR      ENTER  CONFIRMAR      ESC  VOLVER')
-      : footer(this, '← → ↑ ↓  ELEGIR      ENTER  CONFIRMAR      ESC  VOLVER');
+      ? footer(this, 'W S  ELEGIR      ENTER  CONFIRMAR      ESC  VOLVER')
+      : footer(this, 'W A S D  ELEGIR      ENTER  CONFIRMAR      ESC  VOLVER');
     this.footerRow.setDepth(30);
   }
 
@@ -258,7 +258,7 @@ export class SelectScene extends Phaser.Scene {
     y += i.quote.height - (i.quote.padding.top ?? 0) * 2 + 12;
     i.style.setText(`ESTILO: ${def.style}`).setColor(def.css).setY(y);
     y += 34;
-    i.moves.setText(`PODER: ${def.moves.special}  ·  ↓↘→ + P\nULTIMATE: ${def.moves.super}  ·  E`).setY(y);
+    i.moves.setText(`PODER: ${def.moves.special}  ·  S → D + CLIC IZQ\nULTIMATE: ${def.moves.super}  ·  E`).setY(y);
     y += i.moves.height - (i.moves.padding.top ?? 0) * 2 + 18;
 
     const g = i.bars;
@@ -337,7 +337,7 @@ export class SelectScene extends Phaser.Scene {
     this.drawCursor(this.cursor, i, false);
   }
 
-  /** ← →: siguiente casilla elegible. */
+  /** A D: siguiente casilla elegible. */
   private move(dir: number): void {
     let i = this.index;
     do i = (i + dir + SLOTS.length) % SLOTS.length;
@@ -345,7 +345,7 @@ export class SelectScene extends Phaser.Scene {
     this.pick(i);
   }
 
-  /** ↑ ↓: salta a la casilla elegible más cercana de la otra fila. */
+  /** W S: salta a la casilla elegible más cercana de la otra fila. */
   private moveRow(dir: number): void {
     const rows = Math.ceil(SLOTS.length / PER_ROW);
     const cur = this.slotPos(this.index);
