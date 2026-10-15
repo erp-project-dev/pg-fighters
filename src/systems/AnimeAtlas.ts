@@ -2,6 +2,15 @@ import Phaser from 'phaser';
 
 /** Presentation-only adapter for the current combat renderer. */
 export const poseScale = new Map<string, number>();
+
+/**
+ * Guard and victory cells touch in the extra sheets (the raised fist). Regions in sheet reference px;
+ * `clear` lists what to erase from the guard copy and from the victory copy respectively.
+ */
+const VICTORY_SPLIT: Record<string,{block:number[];win:number[];clear:[number[][],number[][]];winScale:number}> = {
+  edu: { block:[560,365,420,335], win:[600,683,360,341], clear:[[[700,683,280,20]],[[560,683,140,20]]], winScale:1.19 },
+  pata: { block:[440,450,390,410], win:[440,856,360,398], clear:[[[600,856,120,10]],[[470,856,80,5],[730,856,80,5]]], winScale:1.25 },
+};
 export function registerAnimeAtlases(scene: Phaser.Scene): void {
   for(const [id,prefix] of [['pata','mayin-'],['edu','erp-']]) {
     const base=scene.textures.get(`${id}-base`).getSourceImage() as HTMLImageElement;
@@ -29,10 +38,11 @@ export function registerAnimeAtlases(scene: Phaser.Scene): void {
       }
     }
     // The raised victory fist reaches into the guard's cell: each pose gets a copy without the other's pixels.
-    const [guard,victory]=([[700,683,280,20],[560,683,140,20]] as const).map(([cx,cy,cw,ch])=>{
+    const ref=id==='pata'?[1254,1254]:[1536,1024];
+    const [guard,victory]=(VICTORY_SPLIT[id].clear).map((rects)=>{
       const canvas=document.createElement('canvas');canvas.width=extra.width;canvas.height=extra.height;
       const ctx=canvas.getContext('2d')!;ctx.drawImage(extra,0,0);
-      if(id==='edu') ctx.clearRect(cx*extra.width/1536,cy*extra.height/1024,cw*extra.width/1536,ch*extra.height/1024);
+      for(const [cx,cy,cw,ch] of rects) ctx.clearRect(cx*extra.width/ref[0],cy*extra.height/ref[1],cw*extra.width/ref[0],ch*extra.height/ref[1]);
       return canvas;
     });
     const key=`${id}-anime`;
@@ -69,15 +79,15 @@ export function registerAnimeAtlases(scene: Phaser.Scene): void {
       : [[0,0,510,370],[520,0,460,365],[1020,0,516,340],[0,375,510,315],[560,365,420,335],[1030,340,506,380],[0,690,560,334],[600,700,360,324],[990,740,546,284]];
     const names=['walk-0','walk-1','jump','crouch','block','uppercut','airKick','win','ko'];
     regions.forEach((r,i)=>add(names[i],1,r.map((n,j)=>n*(j%2?extra.height/(id==='pata'?1254:1024):extra.width/(id==='pata'?1254:1536)))));
-    if(id==='edu') {
-      const sx=extra.width/1536,sy=extra.height/1024;
-      for(const [index,name,region] of [[7,'block',[560,365,420,335]],[8,'win',[600,683,360,341]]] as const) {
+    {
+      const {block,win,winScale}=VICTORY_SPLIT[id];
+      for(const [index,name,region] of [[7,'block',block],[8,'win',win]] as const) {
         texture.remove(prefix+name);
-        add(name,index,region.map((n,j)=>n*(j%2?sy:sx)));
+        add(name,index,region.map((n,j)=>n*(j%2?extra.height/ref[1]:extra.width/ref[0])));
         poseScale.set(`${key}/${prefix+name}`,extraScale);
       }
-      // The victory pose is painted smaller than the rest of the sheet.
-      poseScale.set(`${key}/${prefix}win`,extraScale*1.15);
+      // The victory pose is painted smaller: scaled so the head reaches the guard height (walk-0 head to feet / win head to feet).
+      poseScale.set(`${key}/${prefix}win`,extraScale*winScale);
     }
     // Dedicated low attacks share the guard's anatomical scale and ground anchor.
     const crouch=texture.get(prefix+'crouch');

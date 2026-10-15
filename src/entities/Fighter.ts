@@ -45,6 +45,10 @@ export type HitResult = 'hit' | 'block' | 'whiff';
 const GRAVITY = 4300;
 const JUMP_VZ = 1600;
 const JUMP_VX = 430;
+/** Uppercut: sube ~360 px en arco y vuelve al suelo en ~0,6 s (gravedad propia, más rápida que el salto). */
+const UPPERCUT_VZ = 2400;
+const UPPERCUT_VX = 380;
+const UPPERCUT_GRAVITY = 8000;
 const MAX_HP = 1000;
 export const MAX_METER = 100;
 /** Recarga del poder básico (ms): evita lanzarlo una y otra vez sin parar. */
@@ -469,7 +473,7 @@ export class Fighter {
     if (knock) {
       this.setState('knockdown', 99999);
       this.vx = opts.dir * (move.push * 0.8 + 240);
-      this.vz = move.id === 'uppercut' ? 1500 : 1050;
+      this.vz = move.id === 'uppercut' ? 1750 : 1050;
       this.z = Math.max(this.z, 1);
     } else {
       this.setState('hurt', move.hitstun);
@@ -530,9 +534,10 @@ export class Fighter {
         }
         if (m.id === 'super') this.arena.startSolo(this);
         if (m.id === 'uppercut') {
-          this.vz = 1350;
+          // Salto alto en arco: sube y avanza, y cae un poco más adelante.
+          this.vz = UPPERCUT_VZ;
           this.z = 1;
-          this.vx = this.facing * 180;
+          this.vx = this.facing * UPPERCUT_VX;
         }
       }
       const total = m.startup + m.active + m.recovery;
@@ -560,7 +565,7 @@ export class Fighter {
     if (this.state === 'walk' && this.grounded) this.strideDist += Math.abs(this.vx * dt);
     this.x += this.vx * dt;
     if (this.z > 0 || this.vz > 0) {
-      this.vz -= GRAVITY * dt;
+      this.vz -= (this.state === 'attack' && this.move?.id === 'uppercut' ? UPPERCUT_GRAVITY : GRAVITY) * dt;
       this.z += this.vz * dt;
       if (this.z <= 0) this.land();
     } else if (this.state !== 'walk') {
@@ -726,6 +731,8 @@ export class Fighter {
     }
     if (this.state === 'attack' && this.phase === 'startup' && this.move?.id === 'super') ox = Math.sin(now * 0.12) * 4;
     if (pose === 'win') oy -= Math.abs(Math.sin(now / 180)) * 18;
+    // Uppercut en el aire: se inclina hacia adelante al subir y se endereza al caer.
+    if (this.state === 'attack' && this.move?.id === 'uppercut' && !this.grounded) angle += Phaser.Math.Clamp(this.vz / 290, -3, 8);
     if (pose === 'super' && this.soloVisualTime !== null) {
       const t = this.soloVisualTime;
       const motion = superMotion(this.def.id, t, SOLOS[this.def.superMove.solo].duration,
@@ -736,11 +743,8 @@ export class Fighter {
       sx *= motion.sx;
       sy *= motion.sy;
     }
-    // El jefe flota un poco sobre el suelo y ondula como una señal.
-    if (this.def.boss && pose !== 'down' && pose !== 'ko' && pose !== 'knockdown') {
-      oy -= 24 + Math.sin(now / 280) * 10;
-      sx *= 1 + Math.sin(now / 90) * 0.012;
-    }
+    // El jefe pisa el mismo suelo que los demás, pero ondula como una señal.
+    if (this.def.boss && pose !== 'down' && pose !== 'ko' && pose !== 'knockdown') sx *= 1 + Math.sin(now / 90) * 0.012;
     oy -= this.visualLift;
     // Aterrizaje: aplastamiento breve.
     if (this.state === 'idle' && now < this.stateUntil) sy *= 0.94;

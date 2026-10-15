@@ -825,7 +825,7 @@ export const FIGHTERS: Record<FighterId, FighterDef> = {
     style: "JEFE · PODERES ROBADOS",
     color: 0x7df9ff,
     css: "#7df9ff",
-    art: { ...LEAN, height: 520 },
+    art: { ...LEAN, height: 464 },
     stats: {
       walk: 300,
       dash: 1350,

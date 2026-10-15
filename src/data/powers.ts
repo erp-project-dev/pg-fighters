@@ -43,6 +43,8 @@ export interface ShotSpec {
   /** Gira alrededor del luchador estos ms (escudo) y luego sale disparado; `phase` reparte el ángulo inicial (0–1). */
   orbit?: number;
   phase?: number;
+  /** Dardo: crece en el puño estos ms y sale disparado hacia el pecho del rival dejando una cola de láser. */
+  dart?: number;
   /** Rayo instantáneo: carga estos ms y cruza (hasta `range` o toda la pantalla). */
   beam?: number;
   /** Se divide: los dos disparos viajan juntos y se separan arriba/abajo a los `split` ms. */
@@ -108,8 +110,8 @@ export const POWERS: Partial<Record<FighterId, ShotSpec[]>> = {
 export const ACOPLE_POWERS: ShotSpec[][] = [
   // Orbe de energía oscura, pesado.
   [{ look: 'darkOrb', speed: 0.8, size: 1.3, damage: 1.3 }],
-  // Rayo de feedback que cruza la pantalla.
-  [{ look: 'feedback', size: 0.7, damage: 0.95, beam: 220 }],
+  // Bola de feedback que se carga en la mano y sale disparada hacia el rival con una cola de láser.
+  [{ look: 'feedback', size: 0.7, damage: 0.95, dart: 260, speed: 3.2 }],
   // Chillido que persigue al rival.
   [{ look: 'shriek', speed: 0.85, size: 0.9, damage: 0.9, homing: 2.2, life: 2.8 }],
 ];

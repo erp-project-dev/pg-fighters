@@ -27,6 +27,11 @@ Todos los luchadores tienen arte propio. Los datos (nombre, título, biografía,
 | 21 | `kimberly` | KIMBERLY | `public/assets/characters/kimberly/` |
 | ?? | `acople` | EL ACOPLE | `public/assets/characters/acople/` |
 
+## Encargos pendientes
+
+- **`kimberly` · ultimate (`super-0` a `super-3`)**: sale con otra ropa (top blanco con tirantes y medias con liguero). Repintar con el diseño aprobado del resto de poses: polera lila, falda negra a cuadros y pantis negras.
+- **Pose `win` en general**: pintarla a la misma escala de cuerpo que la guardia. Hoy varias se corrigen por código (`WIN_FIT` en `RosterArt.ts`, `VICTORY_SPLIT` en `AnimeAtlas.ts`); si se repinta una, quitar su corrección.
+
 ## Qué entrega cada personaje
 1. **Atlas de poses** (`atlas.png` + `atlas.json`, frames `<id>-<pose>`) mirando a la derecha, fondo transparente. Lista de poses en `systems/FighterArt.ts` (`POSES`); las que falten se simulan solas.
 2. **Retrato** `portrait.png` (512×512) y `metadata.json` con las escalas.

@@ -17,6 +17,15 @@ const BEAM_FADE = 0.22;
  * Poder básico (↓ ↘ → + P): un disparo de `ShotSpec` (data/powers.ts). Sale del puño, deja su cola
  * de partículas y se mueve según su comportamiento: recto, onda, bote, arco, bumerán, trampa, rayo…
  */
+/** Puño en la pose del poder [adelante, altura] × alto de guardia, para quien no encaja con el promedio. */
+const FIST: Partial<Record<string, [number, number]>> = {
+  // El Acople lanza con la mano abierta y el brazo alto, y su arte se ve más grande que su alto de guardia.
+  acople: [0.38, 0.77],
+};
+
+/** Duración (s) de la cola de láser del dardo. */
+const TAIL_S = 0.25;
+
 export class Projectile {
   x: number;
   z: number;
@@ -43,6 +52,9 @@ export class Projectile {
   /** Rayos: momento en que se encendió (s) y si ya pegó. */
   private beamAt = -1;
   private spent = false;
+  /** Dardo: si ya salió del puño y los últimos puntos de su recorrido (cola). */
+  private released = false;
+  private tail: { x: number; y: number; t: number }[] = [];
 
   constructor(
     private scene: Phaser.Scene,
@@ -69,7 +81,8 @@ export class Projectile {
   private fist(): { x: number; z: number } {
     const o = this.owner;
     const h = o.def.art.height;
-    return { x: o.x + o.facing * h * 0.34, z: o.z + h * 0.58 };
+    const [fx, fz] = FIST[o.def.id] ?? [0.34, 0.58];
+    return { x: o.x + o.facing * h * fx, z: o.z + h * fz };
   }
 
   /** Sale del puño: aparece el dibujo y, según el tipo, su velocidad inicial. */
@@ -214,6 +227,24 @@ export class Projectile {
       return;
     }
 
+    if (s.dart && !this.released) {
+      // Dardo: la bola crece en el puño y luego sale hacia el pecho del rival.
+      const k = Math.min(1, (t * 1000) / s.dart);
+      const fist = this.fist();
+      this.x = fist.x;
+      this.z = fist.z;
+      this.look?.obj.setScale((this.radius / BASE_RADIUS) * (0.4 + 0.6 * k)).setPosition(this.x, this.y);
+      if (k < 1) return;
+      this.released = true;
+      const target = this.owner.opponent;
+      const tx = target.x - this.x;
+      const tz = target.z + target.def.art.height * 0.55 - this.z;
+      const d = Math.hypot(tx, tz) || 1;
+      this.vx = (tx / d) * this.speed;
+      this.vz = (tz / d) * this.speed;
+      this.fx.ring(this.x, this.y, this.color, this.radius * 2, 0.18);
+    }
+
     if (s.orbit && t * 1000 < s.orbit) {
       // Escudo: gira alrededor del luchador (choca con los poderes rivales y pega si el rival se acerca).
       const o = this.owner;
@@ -286,7 +317,8 @@ export class Projectile {
     }
     if ((s.life && t > s.life) || this.x < -200 || this.x > GAME_WIDTH + 200 || this.z > 1300) return this.destroy();
 
-    if (Math.random() < 0.9) this.fx.trail(this.x - Math.sign(this.vx || this.dir) * this.radius * 0.6, this.y, this.color, this.radius);
+    if (s.dart) this.drawTail();
+    else if (Math.random() < 0.9) this.fx.trail(this.x - Math.sign(this.vx || this.dir) * this.radius * 0.6, this.y, this.color, this.radius);
     const obj = this.look?.obj;
     if (!obj) return;
     obj.setPosition(this.x, this.y);
@@ -345,6 +377,21 @@ export class Projectile {
       }
     }
     if (on < BEAM_ON && Math.random() < 0.8) this.fx.trail(x1, this.y, this.color, this.radius);
+  }
+
+  /** Cola de láser del dardo: los últimos puntos del recorrido, más finos y tenues cuanto más viejos. */
+  private drawTail(): void {
+    this.tail.push({ x: this.x, y: this.y, t: this.age });
+    while (this.tail.length && this.age - this.tail[0].t > TAIL_S) this.tail.shift();
+    const g = this.g;
+    g.clear();
+    for (let i = 1; i < this.tail.length; i++) {
+      const a = this.tail[i - 1];
+      const b = this.tail[i];
+      const k = 1 - (this.age - b.t) / TAIL_S;
+      g.lineStyle(this.radius * 0.9 * k, this.color, 0.35 * k).lineBetween(a.x, a.y, b.x, b.y);
+      g.lineStyle(this.radius * 0.3 * k, 0xffffff, 0.8 * k).lineBetween(a.x, a.y, b.x, b.y);
+    }
   }
 
   destroy(): void {

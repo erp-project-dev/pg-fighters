@@ -74,9 +74,9 @@ export const MOVES: Record<MoveId, MoveDef> = {
     id: 'special', pose: 'special', startup: 180, active: 0, recovery: 430, damage: 110, reach: 0, level: 'mid',
     hitstun: 420, blockstun: 300, push: 380, hitstop: 100, meter: 10, sfx: 'punch',
   },
-  /** → ↓ ↘ + golpe: antiaéreo invulnerable al arrancar. Muy castigable si falla. */
+  /** D → S → S+D + clic izquierdo: antiaéreo invulnerable al arrancar. Muy castigable si falla. */
   uppercut: {
-    id: 'uppercut', pose: 'uppercut', startup: 55, active: 230, recovery: 480, damage: 130, reach: 245, level: 'mid',
+    id: 'uppercut', pose: 'uppercut', startup: 55, active: 230, recovery: 450, damage: 130, reach: 245, level: 'mid',
     hitstun: 0, blockstun: 260, push: 260, hitstop: 120, meter: 12, knockdown: true, antiAir: true, invuln: 180, sfx: 'punch',
   },
   /**
