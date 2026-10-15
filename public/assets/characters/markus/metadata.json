@@ -1,0 +1,253 @@
+{
+  "sourceRegions": {
+    "idle": [
+      18,
+      47,
+      266,
+      342
+    ],
+    "walk-0": [
+      290,
+      46,
+      521,
+      340
+    ],
+    "walk-1": [
+      554,
+      49,
+      789,
+      341
+    ],
+    "jump": [
+      770,
+      34,
+      1042,
+      277
+    ],
+    "crouch": [
+      1043,
+      164,
+      1240,
+      346
+    ],
+    "punch": [
+      10,
+      376,
+      272,
+      650
+    ],
+    "kick": [
+      289,
+      380,
+      573,
+      650
+    ],
+    "special": [
+      562,
+      379,
+      800,
+      651
+    ],
+    "hurt": [
+      812,
+      371,
+      1032,
+      651
+    ],
+    "block": [
+      1050,
+      380,
+      1254,
+      651
+    ],
+    "crouchPunch": [
+      8,
+      768,
+      263,
+      961
+    ],
+    "sweep": [
+      250,
+      780,
+      585,
+      949
+    ],
+    "airPunch": [
+      544,
+      654,
+      789,
+      902
+    ],
+    "airKick": [
+      763,
+      663,
+      1078,
+      911
+    ],
+    "uppercut": [
+      1065,
+      648,
+      1248,
+      967
+    ],
+    "knockdown": [
+      8,
+      1004,
+      309,
+      1208
+    ],
+    "ko": [
+      274,
+      1107,
+      591,
+      1215
+    ],
+    "win": [
+      573,
+      929,
+      784,
+      1235
+    ],
+    "super": [
+      760,
+      961,
+      1040,
+      1233
+    ],
+    "portrait": [
+      1034,
+      976,
+      1254,
+      1238
+    ],
+    "movement/dash-0": [
+      17,
+      79,
+      414,
+      426
+    ],
+    "movement/dash-1": [
+      447,
+      74,
+      916,
+      419
+    ],
+    "movement/dash-2": [
+      921,
+      45,
+      1240,
+      435
+    ],
+    "movement/backdash-0": [
+      38,
+      484,
+      533,
+      840
+    ],
+    "movement/backdash-1": [
+      507,
+      451,
+      838,
+      790
+    ],
+    "movement/backdash-2": [
+      927,
+      463,
+      1246,
+      862
+    ],
+    "movement/getup": [
+      27,
+      855,
+      432,
+      1224
+    ],
+    "movement/crouchHurt": [
+      477,
+      885,
+      830,
+      1210
+    ],
+    "movement/crouchBlock": [
+      898,
+      891,
+      1244,
+      1224
+    ]
+  },
+  "scales": {
+    "idle": 1,
+    "walk-0": 1,
+    "walk-1": 1,
+    "jump": 1,
+    "crouch": 1,
+    "punch": 1,
+    "kick": 1,
+    "special": 1,
+    "hurt": 1,
+    "block": 1,
+    "crouchPunch": 1,
+    "sweep": 1,
+    "airPunch": 1,
+    "airKick": 1,
+    "uppercut": 1,
+    "knockdown": 1,
+    "ko": 1,
+    "win": 1,
+    "super": 1,
+    "portrait": 1,
+    "dash-0": 0.7564102564102564,
+    "dash-1": 0.7564102564102564,
+    "dash-2": 0.7564102564102564,
+    "backdash-0": 0.7564102564102564,
+    "backdash-1": 0.7564102564102564,
+    "backdash-2": 0.7564102564102564,
+    "getup": 0.7564102564102564,
+    "crouchHurt": 0.7564102564102564,
+    "crouchBlock": 0.7564102564102564,
+    "walkBack-0": 1,
+    "walkBack-1": 1,
+    "fall": 1,
+    "intro": 1,
+    "down": 1,
+    "throw": 1,
+    "crouchPunch-0": 1,
+    "crouchPunch-1": 1,
+    "crouchPunch-2": 1,
+    "sweep-0": 1,
+    "sweep-1": 1,
+    "sweep-2": 1
+  },
+  "paintedPoses": [
+    "idle",
+    "walk-0",
+    "walk-1",
+    "jump",
+    "crouch",
+    "punch",
+    "kick",
+    "special",
+    "hurt",
+    "block",
+    "crouchPunch",
+    "sweep",
+    "airPunch",
+    "airKick",
+    "uppercut",
+    "knockdown",
+    "ko",
+    "win",
+    "super",
+    "portrait",
+    "dash-0",
+    "dash-1",
+    "dash-2",
+    "backdash-0",
+    "backdash-1",
+    "backdash-2",
+    "getup",
+    "crouchHurt",
+    "crouchBlock"
+  ],
+  "hasMovement": true
+}

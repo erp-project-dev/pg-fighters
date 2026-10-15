@@ -1,0 +1,1093 @@
+{
+  "frames": {
+    "toxicity-idle": {
+      "frame": {
+        "x": 1256,
+        "y": 888,
+        "w": 253,
+        "h": 327
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 253,
+        "h": 327
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 253,
+        "h": 327
+      },
+      "pivot": {
+        "x": 0.4332454984628898,
+        "y": 0.9908256880733946
+      }
+    },
+    "toxicity-walk-0": {
+      "frame": {
+        "x": 1521,
+        "y": 888,
+        "w": 244,
+        "h": 324
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 244,
+        "h": 324
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 244,
+        "h": 324
+      },
+      "pivot": {
+        "x": 0.4804661268022911,
+        "y": 0.9907407407407407
+      }
+    },
+    "toxicity-walk-1": {
+      "frame": {
+        "x": 1777,
+        "y": 888,
+        "w": 233,
+        "h": 324
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 233,
+        "h": 324
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 233,
+        "h": 324
+      },
+      "pivot": {
+        "x": 0.47420166001777236,
+        "y": 0.9907407407407407
+      }
+    },
+    "toxicity-jump": {
+      "frame": {
+        "x": 1788,
+        "y": 1311,
+        "w": 250,
+        "h": 303
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 250,
+        "h": 303
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 250,
+        "h": 303
+      },
+      "pivot": {
+        "x": 0.453811320754717,
+        "y": 0.9900990099009901
+      }
+    },
+    "toxicity-crouch": {
+      "frame": {
+        "x": 927,
+        "y": 1960,
+        "w": 194,
+        "h": 201
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 194,
+        "h": 201
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 194,
+        "h": 201
+      },
+      "pivot": {
+        "x": 0.3170333210603829,
+        "y": 0.9850746268656716
+      }
+    },
+    "toxicity-punch": {
+      "frame": {
+        "x": 982,
+        "y": 1311,
+        "w": 277,
+        "h": 311
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 277,
+        "h": 311
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 277,
+        "h": 311
+      },
+      "pivot": {
+        "x": 0.2597122689800097,
+        "y": 0.9903536977491961
+      }
+    },
+    "toxicity-kick": {
+      "frame": {
+        "x": 404,
+        "y": 1646,
+        "w": 313,
+        "h": 300
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 313,
+        "h": 300
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 313,
+        "h": 300
+      },
+      "pivot": {
+        "x": 0.33621633957097213,
+        "y": 0.99
+      }
+    },
+    "toxicity-special": {
+      "frame": {
+        "x": 1518,
+        "y": 1311,
+        "w": 258,
+        "h": 306
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 258,
+        "h": 306
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 258,
+        "h": 306
+      },
+      "pivot": {
+        "x": 0.07006201550387597,
+        "y": 0.9901960784313726
+      }
+    },
+    "toxicity-hurt": {
+      "frame": {
+        "x": 1271,
+        "y": 1311,
+        "w": 235,
+        "h": 310
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 235,
+        "h": 310
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 235,
+        "h": 310
+      },
+      "pivot": {
+        "x": 0.6882071581725219,
+        "y": 0.9903225806451613
+      }
+    },
+    "toxicity-crouchPunch": {
+      "frame": {
+        "x": 646,
+        "y": 1960,
+        "w": 269,
+        "h": 205
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 269,
+        "h": 205
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 269,
+        "h": 205
+      },
+      "pivot": {
+        "x": 0.3294217763246294,
+        "y": 0.9853658536585366
+      }
+    },
+    "toxicity-sweep": {
+      "frame": {
+        "x": 1133,
+        "y": 1960,
+        "w": 354,
+        "h": 174
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 354,
+        "h": 174
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 354,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.3391280435978201,
+        "y": 0.9827586206896551
+      }
+    },
+    "toxicity-airPunch": {
+      "frame": {
+        "x": 1501,
+        "y": 1646,
+        "w": 227,
+        "h": 279
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 227,
+        "h": 279
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 227,
+        "h": 279
+      },
+      "pivot": {
+        "x": 0.4104946188590866,
+        "y": 0.989247311827957
+      }
+    },
+    "toxicity-airKick": {
+      "frame": {
+        "x": 6,
+        "y": 1960,
+        "w": 311,
+        "h": 223
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 311,
+        "h": 223
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 311,
+        "h": 223
+      },
+      "pivot": {
+        "x": 0.3523171108325613,
+        "y": 0.9865470852017937
+      }
+    },
+    "toxicity-uppercut": {
+      "frame": {
+        "x": 6,
+        "y": 6,
+        "w": 484,
+        "h": 870
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 484,
+        "h": 870
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 484,
+        "h": 870
+      },
+      "pivot": {
+        "x": 0.538699643194779,
+        "y": 0.996551724137931
+      }
+    },
+    "toxicity-knockdown": {
+      "frame": {
+        "x": 329,
+        "y": 1960,
+        "w": 305,
+        "h": 216
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 305,
+        "h": 216
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 305,
+        "h": 216
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.9861111111111112
+      }
+    },
+    "toxicity-ko": {
+      "frame": {
+        "x": 1499,
+        "y": 1960,
+        "w": 297,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 297,
+        "h": 97
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 297,
+        "h": 97
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.9690721649484536
+      }
+    },
+    "toxicity-win": {
+      "frame": {
+        "x": 729,
+        "y": 1646,
+        "w": 215,
+        "h": 296
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 215,
+        "h": 296
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 215,
+        "h": 296
+      },
+      "pivot": {
+        "x": 0.5283151085784692,
+        "y": 0.9898648648648649
+      }
+    },
+    "toxicity-super": {
+      "frame": {
+        "x": 956,
+        "y": 1646,
+        "w": 262,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 262,
+        "h": 282
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 262,
+        "h": 282
+      },
+      "pivot": {
+        "x": 0.503462918962641,
+        "y": 0.9893617021276596
+      }
+    },
+    "toxicity-portrait": {
+      "frame": {
+        "x": 1230,
+        "y": 1646,
+        "w": 259,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 259,
+        "h": 282
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 259,
+        "h": 282
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.9893617021276596
+      }
+    },
+    "toxicity-dash-0": {
+      "frame": {
+        "x": 6,
+        "y": 1646,
+        "w": 386,
+        "h": 302
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 386,
+        "h": 302
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 386,
+        "h": 302
+      },
+      "pivot": {
+        "x": 0.40036400167894914,
+        "y": 0.9900662251655629
+      }
+    },
+    "toxicity-dash-1": {
+      "frame": {
+        "x": 452,
+        "y": 888,
+        "w": 453,
+        "h": 345
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 453,
+        "h": 345
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 453,
+        "h": 345
+      },
+      "pivot": {
+        "x": 0.09216335540838852,
+        "y": 0.991304347826087
+      }
+    },
+    "toxicity-dash-2": {
+      "frame": {
+        "x": 1505,
+        "y": 6,
+        "w": 325,
+        "h": 436
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 325,
+        "h": 436
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 325,
+        "h": 436
+      },
+      "pivot": {
+        "x": 0.34805231331739556,
+        "y": 0.9931192660550459
+      }
+    },
+    "toxicity-backdash-0": {
+      "frame": {
+        "x": 6,
+        "y": 888,
+        "w": 434,
+        "h": 411
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 434,
+        "h": 411
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 434,
+        "h": 411
+      },
+      "pivot": {
+        "x": 0.29611308403415887,
+        "y": 0.9927007299270073
+      }
+    },
+    "toxicity-backdash-1": {
+      "frame": {
+        "x": 917,
+        "y": 888,
+        "w": 327,
+        "h": 339
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 327,
+        "h": 339
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 327,
+        "h": 339
+      },
+      "pivot": {
+        "x": 0.7862385321100918,
+        "y": 0.9911504424778761
+      }
+    },
+    "toxicity-backdash-2": {
+      "frame": {
+        "x": 1167,
+        "y": 6,
+        "w": 326,
+        "h": 443
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 326,
+        "h": 443
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 326,
+        "h": 443
+      },
+      "pivot": {
+        "x": 0.3733889151067065,
+        "y": 0.9932279909706546
+      }
+    },
+    "toxicity-getup": {
+      "frame": {
+        "x": 611,
+        "y": 1311,
+        "w": 359,
+        "h": 314
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 359,
+        "h": 314
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 359,
+        "h": 314
+      },
+      "pivot": {
+        "x": 0.3717753110958693,
+        "y": 0.9904458598726115
+      }
+    },
+    "toxicity-crouchHurt": {
+      "frame": {
+        "x": 6,
+        "y": 1311,
+        "w": 289,
+        "h": 323
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 289,
+        "h": 323
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 289,
+        "h": 323
+      },
+      "pivot": {
+        "x": 0.5297337499489813,
+        "y": 0.9907120743034056
+      }
+    },
+    "toxicity-crouchBlock": {
+      "frame": {
+        "x": 307,
+        "y": 1311,
+        "w": 292,
+        "h": 321
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 292,
+        "h": 321
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 292,
+        "h": 321
+      },
+      "pivot": {
+        "x": 0.6604830833187249,
+        "y": 0.9906542056074766
+      }
+    },
+    "toxicity-block": {
+      "frame": {
+        "x": 502,
+        "y": 6,
+        "w": 653,
+        "h": 727
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 653,
+        "h": 727
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 653,
+        "h": 727
+      },
+      "pivot": {
+        "x": 0.08260848152829794,
+        "y": 0.9958734525447043
+      }
+    },
+    "toxicity-walkBack-0": {
+      "frame": {
+        "x": 1777,
+        "y": 888,
+        "w": 233,
+        "h": 324
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 233,
+        "h": 324
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 233,
+        "h": 324
+      },
+      "pivot": {
+        "x": 0.47420166001777236,
+        "y": 0.9907407407407407
+      }
+    },
+    "toxicity-walkBack-1": {
+      "frame": {
+        "x": 1521,
+        "y": 888,
+        "w": 244,
+        "h": 324
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 244,
+        "h": 324
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 244,
+        "h": 324
+      },
+      "pivot": {
+        "x": 0.4804661268022911,
+        "y": 0.9907407407407407
+      }
+    },
+    "toxicity-fall": {
+      "frame": {
+        "x": 1788,
+        "y": 1311,
+        "w": 250,
+        "h": 303
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 250,
+        "h": 303
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 250,
+        "h": 303
+      },
+      "pivot": {
+        "x": 0.453811320754717,
+        "y": 0.9900990099009901
+      }
+    },
+    "toxicity-intro": {
+      "frame": {
+        "x": 1256,
+        "y": 888,
+        "w": 253,
+        "h": 327
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 253,
+        "h": 327
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 253,
+        "h": 327
+      },
+      "pivot": {
+        "x": 0.4332454984628898,
+        "y": 0.9908256880733946
+      }
+    },
+    "toxicity-down": {
+      "frame": {
+        "x": 1499,
+        "y": 1960,
+        "w": 297,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 297,
+        "h": 97
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 297,
+        "h": 97
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.9690721649484536
+      }
+    },
+    "toxicity-throw": {
+      "frame": {
+        "x": 1518,
+        "y": 1311,
+        "w": 258,
+        "h": 306
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 258,
+        "h": 306
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 258,
+        "h": 306
+      },
+      "pivot": {
+        "x": 0.07006201550387597,
+        "y": 0.9901960784313726
+      }
+    },
+    "toxicity-crouchPunch-0": {
+      "frame": {
+        "x": 927,
+        "y": 1960,
+        "w": 194,
+        "h": 201
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 194,
+        "h": 201
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 194,
+        "h": 201
+      },
+      "pivot": {
+        "x": 0.3170333210603829,
+        "y": 0.9850746268656716
+      }
+    },
+    "toxicity-crouchPunch-1": {
+      "frame": {
+        "x": 646,
+        "y": 1960,
+        "w": 269,
+        "h": 205
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 269,
+        "h": 205
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 269,
+        "h": 205
+      },
+      "pivot": {
+        "x": 0.3294217763246294,
+        "y": 0.9853658536585366
+      }
+    },
+    "toxicity-crouchPunch-2": {
+      "frame": {
+        "x": 927,
+        "y": 1960,
+        "w": 194,
+        "h": 201
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 194,
+        "h": 201
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 194,
+        "h": 201
+      },
+      "pivot": {
+        "x": 0.3170333210603829,
+        "y": 0.9850746268656716
+      }
+    },
+    "toxicity-sweep-0": {
+      "frame": {
+        "x": 927,
+        "y": 1960,
+        "w": 194,
+        "h": 201
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 194,
+        "h": 201
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 194,
+        "h": 201
+      },
+      "pivot": {
+        "x": 0.3170333210603829,
+        "y": 0.9850746268656716
+      }
+    },
+    "toxicity-sweep-1": {
+      "frame": {
+        "x": 1133,
+        "y": 1960,
+        "w": 354,
+        "h": 174
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 354,
+        "h": 174
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 354,
+        "h": 174
+      },
+      "pivot": {
+        "x": 0.3391280435978201,
+        "y": 0.9827586206896551
+      }
+    },
+    "toxicity-sweep-2": {
+      "frame": {
+        "x": 927,
+        "y": 1960,
+        "w": 194,
+        "h": 201
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 194,
+        "h": 201
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 194,
+        "h": 201
+      },
+      "pivot": {
+        "x": 0.3170333210603829,
+        "y": 0.9850746268656716
+      }
+    },
+    "toxicity-super-0": {
+      "frame": {
+        "x": 8,
+        "y": 2197,
+        "w": 267,
+        "h": 333
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 267,
+        "h": 333
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 267,
+        "h": 333
+      },
+      "pivot": {
+        "x": 0.5404821949380977,
+        "y": 1
+      }
+    },
+    "toxicity-super-1": {
+      "frame": {
+        "x": 291,
+        "y": 2197,
+        "w": 269,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 269,
+        "h": 282
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 269,
+        "h": 282
+      },
+      "pivot": {
+        "x": 0.5491336858678034,
+        "y": 1
+      }
+    },
+    "toxicity-super-2": {
+      "frame": {
+        "x": 576,
+        "y": 2197,
+        "w": 288,
+        "h": 316
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 288,
+        "h": 316
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 288,
+        "h": 316
+      },
+      "pivot": {
+        "x": 0.5269211943220754,
+        "y": 1
+      }
+    },
+    "toxicity-super-3": {
+      "frame": {
+        "x": 880,
+        "y": 2197,
+        "w": 278,
+        "h": 309
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 278,
+        "h": 309
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 278,
+        "h": 309
+      },
+      "pivot": {
+        "x": 0.5377522467399861,
+        "y": 1
+      }
+    }
+  },
+  "meta": {
+    "image": "toxicity-atlas.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2044,
+      "h": 2538
+    },
+    "scale": "1"
+  }
+}

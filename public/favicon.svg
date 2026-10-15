@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>PG Fighters</title>
+  <rect width="64" height="64" rx="12" fill="#0b0a0e"/>
+  <path d="M9 7h46l-3 4H8zM12 53h44l-3 4H9z" fill="#dfff00"/>
+  <g transform="translate(6 0) skewX(-8)">
+    <path d="M9 17h14q8 0 8 8v5q0 8-8 8h-6v10H9zm8 7v7h5q1 0 1-2v-3q0-2-1-2z" fill="#e9e5d9" fill-rule="evenodd"/>
+    <path d="M57 17H42q-8 0-8 8v15q0 8 8 8h15V30H44v7h5v4h-6q-1 0-1-2V26q0-2 1-2h14z" fill="#dfff00"/>
+  </g>
+</svg>

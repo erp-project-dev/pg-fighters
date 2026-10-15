@@ -1,0 +1,1093 @@
+{
+  "frames": {
+    "jesex-idle": {
+      "frame": {
+        "x": 624,
+        "y": 1373,
+        "w": 239,
+        "h": 311
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 239,
+        "h": 311
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 239,
+        "h": 311
+      },
+      "pivot": {
+        "x": 0.47393583475176826,
+        "y": 0.9903536977491961
+      }
+    },
+    "jesex-walk-0": {
+      "frame": {
+        "x": 875,
+        "y": 1373,
+        "w": 224,
+        "h": 310
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 224,
+        "h": 310
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 310
+      },
+      "pivot": {
+        "x": 0.4828664638932496,
+        "y": 0.9903225806451613
+      }
+    },
+    "jesex-walk-1": {
+      "frame": {
+        "x": 1420,
+        "y": 1373,
+        "w": 226,
+        "h": 303
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 226,
+        "h": 303
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 226,
+        "h": 303
+      },
+      "pivot": {
+        "x": 0.5770794406915386,
+        "y": 0.9900990099009901
+      }
+    },
+    "jesex-jump": {
+      "frame": {
+        "x": 1135,
+        "y": 1706,
+        "w": 216,
+        "h": 248
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 216,
+        "h": 248
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 216,
+        "h": 248
+      },
+      "pivot": {
+        "x": 0.4454345964461571,
+        "y": 0.9879032258064516
+      }
+    },
+    "jesex-crouch": {
+      "frame": {
+        "x": 6,
+        "y": 2007,
+        "w": 179,
+        "h": 203
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 179,
+        "h": 203
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 179,
+        "h": 203
+      },
+      "pivot": {
+        "x": 0.43370299341282414,
+        "y": 0.9852216748768473
+      }
+    },
+    "jesex-punch": {
+      "frame": {
+        "x": 242,
+        "y": 1706,
+        "w": 265,
+        "h": 288
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 265,
+        "h": 288
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 265,
+        "h": 288
+      },
+      "pivot": {
+        "x": 0.37363412633305987,
+        "y": 0.9895833333333334
+      }
+    },
+    "jesex-kick": {
+      "frame": {
+        "x": 1111,
+        "y": 1373,
+        "w": 297,
+        "h": 309
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 297,
+        "h": 309
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 297,
+        "h": 309
+      },
+      "pivot": {
+        "x": 0.25714169810555354,
+        "y": 0.9902912621359223
+      }
+    },
+    "jesex-special": {
+      "frame": {
+        "x": 6,
+        "y": 1706,
+        "w": 224,
+        "h": 289
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 224,
+        "h": 289
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 289
+      },
+      "pivot": {
+        "x": 0.9056640625,
+        "y": 0.9896193771626297
+      }
+    },
+    "jesex-hurt": {
+      "frame": {
+        "x": 916,
+        "y": 1706,
+        "w": 207,
+        "h": 283
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 207,
+        "h": 283
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 207,
+        "h": 283
+      },
+      "pivot": {
+        "x": 0.4080962351685347,
+        "y": 0.9893992932862191
+      }
+    },
+    "jesex-block": {
+      "frame": {
+        "x": 707,
+        "y": 1706,
+        "w": 197,
+        "h": 284
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 197,
+        "h": 284
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 197,
+        "h": 284
+      },
+      "pivot": {
+        "x": 0.43488226480914155,
+        "y": 0.9894366197183099
+      }
+    },
+    "jesex-crouchPunch": {
+      "frame": {
+        "x": 197,
+        "y": 2007,
+        "w": 245,
+        "h": 196
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 245,
+        "h": 196
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 245,
+        "h": 196
+      },
+      "pivot": {
+        "x": 0.4254690111338653,
+        "y": 0.9846938775510204
+      }
+    },
+    "jesex-sweep": {
+      "frame": {
+        "x": 752,
+        "y": 2007,
+        "w": 352,
+        "h": 145
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 352,
+        "h": 145
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 352,
+        "h": 145
+      },
+      "pivot": {
+        "x": 0.16126365174588525,
+        "y": 0.9793103448275862
+      }
+    },
+    "jesex-airPunch": {
+      "frame": {
+        "x": 1363,
+        "y": 1706,
+        "w": 221,
+        "h": 237
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 221,
+        "h": 237
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 237
+      },
+      "pivot": {
+        "x": 0.431354804365185,
+        "y": 0.9873417721518988
+      }
+    },
+    "jesex-airKick": {
+      "frame": {
+        "x": 1596,
+        "y": 1706,
+        "w": 281,
+        "h": 222
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 281,
+        "h": 222
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 281,
+        "h": 222
+      },
+      "pivot": {
+        "x": 0.6557298565341589,
+        "y": 0.9864864864864865
+      }
+    },
+    "jesex-uppercut": {
+      "frame": {
+        "x": 1658,
+        "y": 1373,
+        "w": 139,
+        "h": 299
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 139,
+        "h": 299
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 139,
+        "h": 299
+      },
+      "pivot": {
+        "x": 0.5663615287172256,
+        "y": 0.9899665551839465
+      }
+    },
+    "jesex-knockdown": {
+      "frame": {
+        "x": 454,
+        "y": 2007,
+        "w": 286,
+        "h": 190
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 286,
+        "h": 190
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 286,
+        "h": 190
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.9842105263157894
+      }
+    },
+    "jesex-ko": {
+      "frame": {
+        "x": 1116,
+        "y": 2007,
+        "w": 303,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 303,
+        "h": 103
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 303,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.970873786407767
+      }
+    },
+    "jesex-win": {
+      "frame": {
+        "x": 519,
+        "y": 1706,
+        "w": 176,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 176,
+        "h": 286
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 176,
+        "h": 286
+      },
+      "pivot": {
+        "x": 0.22245440729483282,
+        "y": 0.9895104895104895
+      }
+    },
+    "jesex-super": {
+      "frame": {
+        "x": 6,
+        "y": 6,
+        "w": 806,
+        "h": 926
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 806,
+        "h": 926
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 806,
+        "h": 926
+      },
+      "pivot": {
+        "x": 0.06773118473277119,
+        "y": 0.9967602591792657
+      }
+    },
+    "jesex-portrait": {
+      "frame": {
+        "x": 824,
+        "y": 6,
+        "w": 602,
+        "h": 566
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 602,
+        "h": 566
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 602,
+        "h": 566
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.9946996466431095
+      }
+    },
+    "jesex-dash-0": {
+      "frame": {
+        "x": 1168,
+        "y": 944,
+        "w": 421,
+        "h": 354
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 421,
+        "h": 354
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 421,
+        "h": 354
+      },
+      "pivot": {
+        "x": 0.10829689290676159,
+        "y": 0.9915254237288136
+      }
+    },
+    "jesex-dash-1": {
+      "frame": {
+        "x": 746,
+        "y": 944,
+        "w": 410,
+        "h": 359
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 410,
+        "h": 359
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 410,
+        "h": 359
+      },
+      "pivot": {
+        "x": 0.13615374075089065,
+        "y": 0.9916434540389972
+      }
+    },
+    "jesex-dash-2": {
+      "frame": {
+        "x": 6,
+        "y": 944,
+        "w": 345,
+        "h": 417
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 345,
+        "h": 417
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 345,
+        "h": 417
+      },
+      "pivot": {
+        "x": 0.4683188725372705,
+        "y": 0.9928057553956835
+      }
+    },
+    "jesex-backdash-0": {
+      "frame": {
+        "x": 363,
+        "y": 944,
+        "w": 371,
+        "h": 374
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 371,
+        "h": 374
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 371,
+        "h": 374
+      },
+      "pivot": {
+        "x": 0.9078712256579545,
+        "y": 0.9919786096256684
+      }
+    },
+    "jesex-backdash-1": {
+      "frame": {
+        "x": 1601,
+        "y": 944,
+        "w": 289,
+        "h": 337
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 289,
+        "h": 337
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 289,
+        "h": 337
+      },
+      "pivot": {
+        "x": 0.4422657952069717,
+        "y": 0.9910979228486647
+      }
+    },
+    "jesex-backdash-2": {
+      "frame": {
+        "x": 1438,
+        "y": 6,
+        "w": 326,
+        "h": 438
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 326,
+        "h": 438
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 326,
+        "h": 438
+      },
+      "pivot": {
+        "x": 0.44580889705683635,
+        "y": 0.9931506849315068
+      }
+    },
+    "jesex-getup": {
+      "frame": {
+        "x": 297,
+        "y": 1373,
+        "w": 315,
+        "h": 314
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 315,
+        "h": 314
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 315,
+        "h": 314
+      },
+      "pivot": {
+        "x": 0.6320719803072744,
+        "y": 0.9904458598726115
+      }
+    },
+    "jesex-crouchHurt": {
+      "frame": {
+        "x": 6,
+        "y": 1373,
+        "w": 279,
+        "h": 321
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 279,
+        "h": 321
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 279,
+        "h": 321
+      },
+      "pivot": {
+        "x": 0.16542533951530697,
+        "y": 0.9906542056074766
+      }
+    },
+    "jesex-crouchBlock": {
+      "frame": {
+        "x": 1809,
+        "y": 1373,
+        "w": 231,
+        "h": 299
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 231,
+        "h": 299
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 231,
+        "h": 299
+      },
+      "pivot": {
+        "x": 0.5451763039409117,
+        "y": 0.9899665551839465
+      }
+    },
+    "jesex-walkBack-0": {
+      "frame": {
+        "x": 1420,
+        "y": 1373,
+        "w": 226,
+        "h": 303
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 226,
+        "h": 303
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 226,
+        "h": 303
+      },
+      "pivot": {
+        "x": 0.5770794406915386,
+        "y": 0.9900990099009901
+      }
+    },
+    "jesex-walkBack-1": {
+      "frame": {
+        "x": 875,
+        "y": 1373,
+        "w": 224,
+        "h": 310
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 224,
+        "h": 310
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 310
+      },
+      "pivot": {
+        "x": 0.4828664638932496,
+        "y": 0.9903225806451613
+      }
+    },
+    "jesex-fall": {
+      "frame": {
+        "x": 1135,
+        "y": 1706,
+        "w": 216,
+        "h": 248
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 216,
+        "h": 248
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 216,
+        "h": 248
+      },
+      "pivot": {
+        "x": 0.4454345964461571,
+        "y": 0.9879032258064516
+      }
+    },
+    "jesex-intro": {
+      "frame": {
+        "x": 624,
+        "y": 1373,
+        "w": 239,
+        "h": 311
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 239,
+        "h": 311
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 239,
+        "h": 311
+      },
+      "pivot": {
+        "x": 0.47393583475176826,
+        "y": 0.9903536977491961
+      }
+    },
+    "jesex-down": {
+      "frame": {
+        "x": 1116,
+        "y": 2007,
+        "w": 303,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 303,
+        "h": 103
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 303,
+        "h": 103
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.970873786407767
+      }
+    },
+    "jesex-throw": {
+      "frame": {
+        "x": 6,
+        "y": 1706,
+        "w": 224,
+        "h": 289
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 224,
+        "h": 289
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 224,
+        "h": 289
+      },
+      "pivot": {
+        "x": 0.9056640625,
+        "y": 0.9896193771626297
+      }
+    },
+    "jesex-crouchPunch-0": {
+      "frame": {
+        "x": 6,
+        "y": 2007,
+        "w": 179,
+        "h": 203
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 179,
+        "h": 203
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 179,
+        "h": 203
+      },
+      "pivot": {
+        "x": 0.43370299341282414,
+        "y": 0.9852216748768473
+      }
+    },
+    "jesex-crouchPunch-1": {
+      "frame": {
+        "x": 197,
+        "y": 2007,
+        "w": 245,
+        "h": 196
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 245,
+        "h": 196
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 245,
+        "h": 196
+      },
+      "pivot": {
+        "x": 0.4254690111338653,
+        "y": 0.9846938775510204
+      }
+    },
+    "jesex-crouchPunch-2": {
+      "frame": {
+        "x": 6,
+        "y": 2007,
+        "w": 179,
+        "h": 203
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 179,
+        "h": 203
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 179,
+        "h": 203
+      },
+      "pivot": {
+        "x": 0.43370299341282414,
+        "y": 0.9852216748768473
+      }
+    },
+    "jesex-sweep-0": {
+      "frame": {
+        "x": 6,
+        "y": 2007,
+        "w": 179,
+        "h": 203
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 179,
+        "h": 203
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 179,
+        "h": 203
+      },
+      "pivot": {
+        "x": 0.43370299341282414,
+        "y": 0.9852216748768473
+      }
+    },
+    "jesex-sweep-1": {
+      "frame": {
+        "x": 752,
+        "y": 2007,
+        "w": 352,
+        "h": 145
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 352,
+        "h": 145
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 352,
+        "h": 145
+      },
+      "pivot": {
+        "x": 0.16126365174588525,
+        "y": 0.9793103448275862
+      }
+    },
+    "jesex-sweep-2": {
+      "frame": {
+        "x": 6,
+        "y": 2007,
+        "w": 179,
+        "h": 203
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 179,
+        "h": 203
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 179,
+        "h": 203
+      },
+      "pivot": {
+        "x": 0.43370299341282414,
+        "y": 0.9852216748768473
+      }
+    },
+    "jesex-super-0": {
+      "frame": {
+        "x": 8,
+        "y": 2224,
+        "w": 875,
+        "h": 1009
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 875,
+        "h": 1009
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 875,
+        "h": 1009
+      },
+      "pivot": {
+        "x": 0.25447190160832545,
+        "y": 1
+      }
+    },
+    "jesex-super-1": {
+      "frame": {
+        "x": 899,
+        "y": 2224,
+        "w": 878,
+        "h": 926
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 878,
+        "h": 926
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 878,
+        "h": 926
+      },
+      "pivot": {
+        "x": 0.2459070096982348,
+        "y": 1
+      }
+    },
+    "jesex-super-2": {
+      "frame": {
+        "x": 1793,
+        "y": 2224,
+        "w": 865,
+        "h": 948
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 865,
+        "h": 948
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 865,
+        "h": 948
+      },
+      "pivot": {
+        "x": 0.1557873504720461,
+        "y": 1
+      }
+    },
+    "jesex-super-3": {
+      "frame": {
+        "x": 2674,
+        "y": 2224,
+        "w": 873,
+        "h": 975
+      },
+      "rotated": false,
+      "trimmed": false,
+      "sourceSize": {
+        "w": 873,
+        "h": 975
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 873,
+        "h": 975
+      },
+      "pivot": {
+        "x": 0.2398046089703596,
+        "y": 1
+      }
+    }
+  },
+  "meta": {
+    "image": "jesex-atlas.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 3555,
+      "h": 3241
+    },
+    "scale": "1"
+  }
+}

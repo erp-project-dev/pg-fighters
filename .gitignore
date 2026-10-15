@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+__pycache__/
+
+# Material de trabajo de Codex (hojas de origen, prompts, notas, archivo viejo): vive en codex/,
+# queda en la máquina para volver a armar el arte, pero no se sube ni se publica. Ver AGENTS.md.
+codex/

@@ -1,0 +1,278 @@
+{
+  "sourceRegions": {
+    "idle": [
+      18,
+      18,
+      278,
+      356
+    ],
+    "walk-0": [
+      308,
+      20,
+      546,
+      352
+    ],
+    "walk-1": [
+      546,
+      23,
+      779,
+      354
+    ],
+    "jump": [
+      786,
+      13,
+      1025,
+      294
+    ],
+    "crouch": [
+      1040,
+      132,
+      1247,
+      356
+    ],
+    "punch": [
+      6,
+      366,
+      579,
+      684
+    ],
+    "special": [
+      523,
+      386,
+      825,
+      683
+    ],
+    "hurt": [
+      814,
+      381,
+      1054,
+      682
+    ],
+    "block": [
+      1054,
+      369,
+      1253,
+      683
+    ],
+    "crouchPunch": [
+      12,
+      753,
+      279,
+      968
+    ],
+    "sweep": [
+      261,
+      780,
+      621,
+      978
+    ],
+    "airPunch": [
+      503,
+      685,
+      777,
+      932
+    ],
+    "airKick": [
+      774,
+      698,
+      1101,
+      936
+    ],
+    "uppercut": [
+      1052,
+      676,
+      1248,
+      967
+    ],
+    "knockdown": [
+      5,
+      999,
+      287,
+      1235
+    ],
+    "ko": [
+      254,
+      1114,
+      567,
+      1239
+    ],
+    "win": [
+      537,
+      944,
+      776,
+      1245
+    ],
+    "super": [
+      748,
+      967,
+      1250,
+      1244
+    ],
+    "movement/dash-0": [
+      28,
+      119,
+      401,
+      425
+    ],
+    "movement/dash-1": [
+      432,
+      75,
+      871,
+      418
+    ],
+    "movement/dash-2": [
+      890,
+      20,
+      1222,
+      428
+    ],
+    "movement/backdash-0": [
+      54,
+      482,
+      429,
+      849
+    ],
+    "movement/backdash-1": [
+      496,
+      446,
+      791,
+      776
+    ],
+    "movement/backdash-2": [
+      890,
+      439,
+      1222,
+      847
+    ],
+    "movement/getup": [
+      66,
+      879,
+      419,
+      1201
+    ],
+    "movement/crouchHurt": [
+      514,
+      914,
+      859,
+      1204
+    ],
+    "movement/crouchBlock": [
+      922,
+      912,
+      1216,
+      1204
+    ],
+    "repair/idle": [
+      37,
+      21,
+      453,
+      486
+    ],
+    "repair/punch": [
+      529,
+      35,
+      1004,
+      474
+    ],
+    "repair/kick": [
+      1043,
+      32,
+      1514,
+      481
+    ],
+    "repair/uppercut": [
+      70,
+      468,
+      396,
+      1006
+    ],
+    "repair/super": [
+      522,
+      537,
+      1004,
+      995
+    ],
+    "repair/portrait": [
+      1032,
+      542,
+      1522,
+      994
+    ]
+  },
+  "scales": {
+    "idle": 1.0,
+    "walk-0": 1,
+    "walk-1": 1,
+    "jump": 1,
+    "crouch": 1,
+    "punch": 0.7699316628701595,
+    "special": 1,
+    "hurt": 1,
+    "block": 1,
+    "crouchPunch": 1,
+    "sweep": 1,
+    "airPunch": 1,
+    "airKick": 1,
+    "uppercut": 0.7224907063197026,
+    "knockdown": 1,
+    "ko": 1,
+    "win": 1,
+    "super": 0.7379912663755459,
+    "dash-0": 0.8284313725490197,
+    "dash-1": 0.8284313725490197,
+    "dash-2": 0.8284313725490197,
+    "backdash-0": 0.8284313725490197,
+    "backdash-1": 0.8284313725490197,
+    "backdash-2": 0.8284313725490197,
+    "getup": 0.8284313725490197,
+    "crouchHurt": 0.8284313725490197,
+    "crouchBlock": 0.8284313725490197,
+    "kick": 0.7527839643652561,
+    "portrait": 0.7477876106194691,
+    "walkBack-0": 1,
+    "walkBack-1": 1,
+    "fall": 1,
+    "intro": 1.0,
+    "down": 1,
+    "throw": 1,
+    "crouchPunch-0": 1,
+    "crouchPunch-1": 1,
+    "crouchPunch-2": 1,
+    "sweep-0": 1,
+    "sweep-1": 1,
+    "sweep-2": 1
+  },
+  "paintedPoses": [
+    "idle",
+    "walk-0",
+    "walk-1",
+    "jump",
+    "crouch",
+    "punch",
+    "special",
+    "hurt",
+    "block",
+    "crouchPunch",
+    "sweep",
+    "airPunch",
+    "airKick",
+    "uppercut",
+    "knockdown",
+    "ko",
+    "win",
+    "super",
+    "dash-0",
+    "dash-1",
+    "dash-2",
+    "backdash-0",
+    "backdash-1",
+    "backdash-2",
+    "getup",
+    "crouchHurt",
+    "crouchBlock",
+    "kick",
+    "portrait"
+  ],
+  "hasMovement": true,
+  "visualHeight": 594
+}
