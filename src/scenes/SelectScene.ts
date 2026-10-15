@@ -61,8 +61,6 @@ export class SelectScene extends Phaser.Scene {
   private diff: { box: Phaser.GameObjects.Container; items: Phaser.GameObjects.Text[]; marker: Phaser.GameObjects.Graphics; index: number } | null = null;
   private training = false;
   private story = false;
-  /** Historia, CONTINUAR: solo se eligen los personajes con partida guardada. */
-  private resume = false;
   private cursor!: Phaser.GameObjects.Graphics;
   private p1Fig!: Figure;
   private cpuFig!: Figure;
@@ -86,10 +84,9 @@ export class SelectScene extends Phaser.Scene {
     super(SCENES.Select);
   }
 
-  create(data: { last?: FighterId; mode?: 'arcade' | 'training' | 'story'; resume?: boolean }) {
+  create(data: { last?: FighterId; mode?: 'arcade' | 'training' | 'story' }) {
     this.training = data?.mode === 'training';
     this.story = data?.mode === 'story';
-    this.resume = this.story && !!data?.resume;
     this.locked = false;
     this.phase = 'p1';
     this.dims = [];
@@ -101,7 +98,7 @@ export class SelectScene extends Phaser.Scene {
     speedStripes(this, COLORS.lime, 0.03);
     this.input2 = new Input(this);
 
-    this.title = text(this, GAME_WIDTH / 2, 62, this.resume ? 'CONTINÚA TU HISTORIA' : 'ELIGE TU LUCHADOR', { size: 84, italic: true, weight: '900', color: CSS.lime, origin: [0.5, 0.5], shadow: true });
+    this.title = text(this, GAME_WIDTH / 2, 62, 'ELIGE TU LUCHADOR', { size: 84, italic: true, weight: '900', color: CSS.lime, origin: [0.5, 0.5], shadow: true });
     text(this, GAME_WIDTH / 2, 128, this.story ? 'MODO HISTORIA  ·  LIBERA A LA ESCENA DEL ODIO' : this.training ? 'MODO ENTRENAMIENTO  ·  SIN TIEMPO NI K.O.' : 'ARCADE  ·  1 JUGADOR VS CPU  ·  MEJOR DE 3', { size: 24, weight: '700', origin: [0.5, 0.5], spacing: 5 });
 
     // Figuras (detrás de los textos)
@@ -148,8 +145,8 @@ export class SelectScene extends Phaser.Scene {
         frame.lineStyle(3, def.color, 0.9).strokePoints(pts(this.tile(x, y, 0)), true);
         frame.fillStyle(0x000000, 0.8).fillRect(x - SLOT / 2 + SKEW, y + SLOT / 2 - 20, 30, 18);
         text(this, x - SLOT / 2 + SKEW + 15, y + SLOT / 2 - 11, def.number, { size: 14, weight: '800', color: def.css, origin: [0.5, 0.5] });
-        // Historia: los personajes con partida guardada muestran en qué pelea van.
-        const run = this.story ? StoryRun.runs[id] : undefined;
+        // Historia: el personaje de la partida guardada muestra en qué pelea va.
+        const run = this.story && StoryRun.run?.player === id ? StoryRun.run : undefined;
         if (run) {
           const tag = levelLabel({ level: run.index, total: run.rivals.length + 1 }).replace('PELEA ', '');
           frame.fillStyle(COLORS.lime, 1).fillRect(x - 24, y - SLOT / 2, 48 + SKEW, 20);
@@ -182,13 +179,13 @@ export class SelectScene extends Phaser.Scene {
   }
 
   /**
-   * Casilla que no se puede elegir: el aleatorio al elegir tu luchador (y, en CONTINUAR, los que no tienen partida);
+   * Casilla que no se puede elegir: el aleatorio al elegir tu luchador;
    * tu propio luchador al elegir el rival.
    */
   private disabled(i: number): boolean {
     const slot = SLOTS[i];
     if (this.phase !== 'p1') return slot === this.p1;
-    return slot === RANDOM || (this.resume && !StoryRun.runs[slot]);
+    return slot === RANDOM;
   }
 
   private refreshDims(): void {
@@ -325,9 +322,7 @@ export class SelectScene extends Phaser.Scene {
     if (slot === RANDOM) return;
     const def = FIGHTERS[slot];
     if (this.story) {
-      const run = StoryRun.runs[slot];
-      this.cpuTag.setText(run ? `GUARDADA: ${levelLabel({ level: run.index, total: run.rivals.length + 1 })}  ·  ${run.score.toLocaleString('es-PE')} PTS` : 'PARTIDA NUEVA')
-        .setColor(run ? CSS.lime : CSS.grey);
+      this.cpuTag.setText('PARTIDA NUEVA').setColor(CSS.grey);
     }
     this.showFigure(this.p1Fig, def, false);
     this.showInfo(def);
@@ -377,10 +372,9 @@ export class SelectScene extends Phaser.Scene {
     this.cameras.main.flash(180, 223, 255, 0);
     this.tweens.add({ targets: this.p1Fig.fig, scale: this.p1Fig.fig.scale * 1.06, duration: 120, yoyo: true });
     if (this.story) {
-      // Historia: sin rival a elegir. Si el personaje ya tiene partida, se continúa (o se empieza de nuevo).
-      if (this.resume) return this.storyGo(slot, true);
-      if (StoryRun.runs[slot]) return this.openRunChoice();
-      return this.storyGo(slot, false);
+      // Historia: sin rival a elegir. Si ya hay una partida guardada, avisa que se borra.
+      if (StoryRun.run) return this.openRunChoice();
+      return this.storyGo(slot);
     }
     // Ahora toca elegir al rival de la CPU: tu casilla queda marcada y el cursor pasa a la CPU.
     this.phase = 'cpu';
@@ -391,25 +385,21 @@ export class SelectScene extends Phaser.Scene {
     this.move(1);
   }
 
-  /** Entra a la historia con `p1`: retoma su partida guardada o empieza una nueva (prólogo). */
-  private storyGo(player: FighterId, resume: boolean): void {
+  /** Empieza una historia nueva con `player` (prólogo); reemplaza la partida guardada. */
+  private storyGo(player: FighterId): void {
     this.locked = true;
-    if (resume && StoryRun.resume(player)) {
-      this.time.delayedCall(700, () => goTo(this, SCENES.StoryProgress, {}, 400));
-      return;
-    }
     StoryRun.start(player);
     this.time.delayedCall(700, () => goTo(this, SCENES.Story, { mode: 'prologue' }, 400));
   }
 
-  /** Historia: el personaje elegido ya tiene partida guardada. */
+  /** Historia nueva con una partida guardada: avisa que se borra. */
   private openRunChoice(): void {
-    const run = StoryRun.runs[this.p1]!;
-    const where = `${levelLabel({ level: run.index, total: run.rivals.length + 1 })}  ·  ${run.score.toLocaleString('es-PE')} PTS`;
-    this.openChoice('run', 'YA TIENES PARTIDA', `${FIGHTERS[this.p1].name}  ·  ${where}`, [
-      { label: 'CONTINUAR', note: 'SIGUES DONDE TE QUEDASTE' },
-      { label: 'EMPEZAR DE NUEVO', note: 'SE PIERDE LA PARTIDA GUARDADA' },
-    ], 0);
+    const run = StoryRun.run!;
+    const where = `${FIGHTERS[run.player].name}  ·  ${levelLabel({ level: run.index, total: run.rivals.length + 1 })}  ·  ${run.score.toLocaleString('es-PE')} PTS`;
+    this.openChoice('run', 'NUEVA HISTORIA', 'ESTO BORRARÁ CUALQUIER PROGRESO ACTUAL', [
+      { label: 'EMPEZAR', note: `SE PIERDE: ${where}` },
+      { label: 'CANCELAR', note: 'VUELVES A ELEGIR' },
+    ], 1);
   }
 
   /** Rival al azar: nunca tu mismo luchador ni el que tocó al azar la vez anterior. */
@@ -496,7 +486,7 @@ export class SelectScene extends Phaser.Scene {
   private confirmChoice(): void {
     const d = this.diff;
     if (!d || this.locked) return;
-    if (this.phase === 'run') return this.storyGo(this.p1, d.index === 0);
+    if (this.phase === 'run') return d.index === 0 ? this.storyGo(this.p1) : this.back();
     this.locked = true;
     const difficulty = DIFFICULTIES[d.index].id;
     Settings.data.difficulty = difficulty;

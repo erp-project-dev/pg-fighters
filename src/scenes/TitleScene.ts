@@ -76,16 +76,19 @@ export class TitleScene extends Phaser.Scene {
     if (StoryRun.ready) {
       text(this, GAME_WIDTH - 24, 30, `JUGANDO COMO  ${StoryRun.name}`, { size: 24, weight: '800', color: CSS.lime, origin: [1, 0.5], spacing: 2 });
     }
-    const saved = StoryRun.ready && StoryRun.saved.length > 0;
-    // Sin perfil, la historia vuelve a pedir la conexión.
-    const story = (resume: boolean) => () => StoryRun.ready
-      ? goTo(this, SCENES.Select, { mode: 'story', resume, last: resume ? StoryRun.saved[0].player : undefined })
-      : connectProfile(this);
+    const saved = StoryRun.ready && !!StoryRun.run;
+    // Sin perfil, la historia vuelve a pedir la conexión. CONTINUAR retoma la partida guardada; NUEVA HISTORIA
+    // elige luchador (y, si había partida, avisa que se borra).
+    const story = (resume: boolean) => () => {
+      if (!StoryRun.ready) return connectProfile(this);
+      if (resume && StoryRun.resume()) return goTo(this, SCENES.StoryProgress, {});
+      goTo(this, SCENES.Select, { mode: 'story', last: StoryRun.run?.player });
+    };
     const box = this.add.graphics();
     box.fillStyle(COLORS.bg, 0.6).fillRect(GAME_WIDTH / 2 - 330, 640, 660, 385);
     this.menu = new Menu(this, [
       ...(saved ? [{ label: 'CONTINUAR HISTORIA', onSelect: story(true) }] : []),
-      { label: 'HISTORIA', onSelect: story(false) },
+      { label: saved ? 'NUEVA HISTORIA' : 'HISTORIA', onSelect: story(false) },
       { label: 'ARCADE  ·  VS CPU', onSelect: () => goTo(this, SCENES.Select) },
       { label: 'ENTRENAMIENTO', onSelect: () => goTo(this, SCENES.Select, { mode: 'training' }) },
       { label: 'RANKING', onSelect: () => goTo(this, SCENES.Ranking) },
