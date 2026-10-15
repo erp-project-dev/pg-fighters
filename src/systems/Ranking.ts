@@ -11,9 +11,14 @@ const FIREBASE_CONFIG = {
 };
 
 const COLLECTION = 'ranking';
-/** Partida de la historia en curso: un documento por cuenta (`progress/<uid>`). */
+/** Perfil de la cuenta: nickname fijo y una partida de la historia por personaje (`progress/<uid>`). */
 const PROGRESS = 'progress';
+/** Nicknames tomados: `names/<nickname>` → `{ uid }` (así no hay dos cuentas con el mismo). */
+const NAMES = 'names';
 const NAME_KEY = 'pg-fighters-player';
+
+/** Id del documento de un nickname: sin distinguir mayúsculas ni espacios repetidos (el prefijo evita ids reservados como "." o "__x__"). */
+const nameKey = (name: string) => `n_${name.trim().toUpperCase().replace(/\s+/g, ' ')}`;
 
 export const NAME_MAX = 12;
 
@@ -63,8 +68,8 @@ const connect = () => {
 };
 
 /**
- * Cuenta anónima de Firebase (se crea sola al entrar a la historia; la sesión queda en el navegador) y Firestore: ranking global (una fila por cuenta con
- * su mejor puntaje) y la partida de la historia de cada cuenta. Sin conexión, todo falla en silencio.
+ * Cuenta anónima de Firebase (se crea sola al abrir el menú; la sesión queda en el navegador) y Firestore: ranking global (una fila por cuenta con
+ * su mejor puntaje) y el perfil de cada cuenta (nickname y partidas). Sin conexión, todo falla en silencio.
  */
 export const Ranking = {
   /** Cuenta conectada (null = sin sesión o todavía no se sabe). */
@@ -88,7 +93,7 @@ export const Ranking = {
     return user;
   },
 
-  /** Partida guardada de la cuenta conectada (null = no tiene). Lanza si no se pudo leer. */
+  /** Perfil guardado de la cuenta conectada (null = no tiene). Lanza si no se pudo leer. */
   async loadProgress<T>(): Promise<T | null> {
     const { fs, db } = await connect();
     if (!(await this.init())) return null;
@@ -107,14 +112,21 @@ export const Ranking = {
     }
   },
 
-  async clearProgress(): Promise<void> {
-    try {
-      const { fs, db } = await connect();
-      if (!(await this.init())) return;
-      await fs.deleteDoc(fs.doc(db, PROGRESS, user!.uid));
-    } catch (e) {
-      console.warn('[progreso] no se pudo borrar', e);
-    }
+  /**
+   * Reserva el nickname para la cuenta conectada. Devuelve false si ya es de otra cuenta. Lanza sin conexión.
+   * La transacción evita que dos cuentas lo tomen a la vez.
+   */
+  async claimName(name: string): Promise<boolean> {
+    const { fs, db } = await connect();
+    if (!(await this.init())) throw new Error('sin sesión');
+    const uid = user!.uid;
+    const ref = fs.doc(db, NAMES, nameKey(name));
+    return fs.runTransaction(db, async (tx) => {
+      const snap = await tx.get(ref);
+      if (snap.exists()) return snap.data().uid === uid;
+      tx.set(ref, { uid, name, createdAt: Date.now() });
+      return true;
+    });
   },
 
   /** Guarda la partida en la fila de la cuenta solo si supera su mejor puntaje. */

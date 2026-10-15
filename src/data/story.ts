@@ -102,7 +102,7 @@ export const EPILOGUES: Partial<Record<FighterId, string>> = {
   ricardo:
     "Ricardo graba su primer disco con su nombre en la portada. Es rock de raíz, crudo y honesto. En los créditos de cada canción dice lo mismo: Ricardo.",
   platanero:
-    "El Platanero relanza su curso en VHS como «edición de coleccionista». Vende tres copias: dos se las compra la abuela. Su legado queda en VHS, por si te quieres reír de lo mal que enseñaba.",
+    "Platanero relanza su curso en VHS como «edición de coleccionista». Vende tres copias: dos se las compra la abuela. Su legado queda en VHS, por si te quieres reír de lo mal que enseñaba.",
   toxicity:
     "Por primera vez una banda le pide a Toxicity que se quede. Dura tres ensayos. Es su récord. Lo celebra rezando, con rabia.",
 };

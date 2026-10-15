@@ -21,7 +21,7 @@ const bananaTex = (scene: Phaser.Scene) =>
 const LESSONS = ['LECCIÓN 1: AFINAR (OPCIONAL)', 'LECCIÓN 2: ¿ESTO ERA DO?', 'LECCIÓN 3: REBOBINA', 'LECCIÓN 4: PÁGAME', 'LECCIÓN 5: YA NO HAY LECCIÓN 5'];
 
 /**
- * EL PLATANERO · EL CURSO COMPLETO EN VHS: la pantalla se vuelve una cinta vieja (tracking, PLAY y
+ * PLATANERO · EL CURSO COMPLETO EN VHS: la pantalla se vuelve una cinta vieja (tracking, PLAY y
  * contador), se rebobina sola, llueven plátanos y los golpes son plátanos. Remate: STOP.
  */
 export const platanero: SuperShow = {

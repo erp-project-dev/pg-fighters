@@ -10,6 +10,14 @@ export const ROSTER_ART_IDS = [
   'markus', 'jesex', 'escalas', 'tayloy', 'platanero', 'kimberly', 'ricardo',
 ] as const;
 
+/** Recorte cuadrado [x, y, lado] de la cara en el portrait de 512 px; por defecto [100, 0, 340]. */
+const FACE_CROPS: Partial<Record<string, [number, number, number]>> = {
+  acople: [0, 0, 512],
+  rematada: [0, 0, 512],
+  kimberly: [160, 70, 350],
+  platanero: [140, 30, 360],
+};
+
 /** Alto de la pose de ultimate respecto de la guardia (la guitarra levantada suma un poco). */
 const SUPER_HEIGHT = 1.05;
 
@@ -59,8 +67,8 @@ export function registerRosterArt(scene: Phaser.Scene): void {
     if (scene.textures.exists(portraitKey)) {
       const portrait = scene.textures.get(portraitKey);
       if (!portrait.has('face')) {
-        if (id === 'acople' || id === 'rematada') portrait.add('face', 0, 0, 0, 512, 512);
-        else portrait.add('face', 0, 100, 0, 340, 340);
+        const [x, y, size] = FACE_CROPS[id] ?? [100, 0, 340];
+        portrait.add('face', 0, x, y, size, size);
       }
     }
   }

@@ -715,7 +715,7 @@ export const FIGHTERS: Record<FighterId, FighterDef> = {
   platanero: {
     id: "platanero",
     number: "19",
-    name: "EL PLATANERO",
+    name: "PLATANERO",
     tag: "EL PROFESOR DEL VHS",
     bio: "Gordo de mierda, hijo de la mil putas y vago profesional que vivía del sueldo de la abuela. No tocaba ni mierda, pero igual grabó un curso de guitarra en VHS. Una noche, tan borracho que no veía las líneas de la pista, vio un pedazo de pollito frito tirado en medio, se agachó a recogerlo… y un carro se lo llevó. Volvió del más allá con alas y halo porque ni el cielo lo aguantó. Su legado queda en VHS, por si te quieres reír de lo mal que enseñaba.",
     quote: "Ya, ya, ahora sí lo toco bien… rebobina.",

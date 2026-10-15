@@ -5,21 +5,30 @@ import { STAGES, type StageId } from '../data/stages';
 import { Audio } from '../systems/Audio';
 import { artScale } from '../systems/FighterArt';
 import { Input } from '../systems/Input';
+import type { CpuLevel } from '../systems/Settings';
 import { buildStage } from '../systems/StageArt';
 import { fitText, goTo, pts, scanlines, text } from '../ui/ui';
 
 const DURATION = 3000;
 
+interface VersusData {
+  p1: FighterId;
+  p2: FighterId;
+  stage?: StageId;
+  story?: boolean;
+  difficulty?: CpuLevel;
+}
+
 /** Pantalla VS: los dos luchadores entran desde los lados y choca el "VS". */
 export class VersusScene extends Phaser.Scene {
   private input2!: Input;
-  private data0!: { p1: FighterId; p2: FighterId; stage?: StageId; story?: boolean };
+  private data0!: VersusData;
 
   constructor() {
     super(SCENES.Versus);
   }
 
-  create(data: { p1: FighterId; p2: FighterId; stage?: StageId; story?: boolean }) {
+  create(data: VersusData) {
     this.data0 = data;
     this.cameras.main.fadeIn(200, 11, 10, 14);
     Audio.stopMusic(600);

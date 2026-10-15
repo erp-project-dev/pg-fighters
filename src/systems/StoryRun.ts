@@ -36,6 +36,23 @@ const restore = (raw: StoryState | null): StoryState | null => {
   return raw;
 };
 
+/** Documento `progress/<uid>`: nickname fijo de la cuenta y una partida por personaje. */
+interface Profile {
+  name?: string;
+  runs?: Partial<Record<FighterId, StoryState>>;
+}
+
+/** Lee el perfil. Las cuentas viejas guardaban una sola partida suelta: pasa a ser la de su personaje. */
+const readProfile = (raw: (Profile & Partial<StoryState>) | null): { name: string; runs: Partial<Record<FighterId, StoryState>> } => {
+  const runs: Partial<Record<FighterId, StoryState>> = {};
+  const list = raw?.player ? [raw as StoryState] : Object.values(raw?.runs ?? {});
+  for (const r of list) {
+    const run = restore(r);
+    if (run) runs[run.player] = run;
+  }
+  return { name: (raw?.name ?? '').trim(), runs };
+};
+
 /** Sorteo de amigos para una partida nueva: STORY_RIVALS del roster, sin el elegido ni repetidos. */
 export const drawRivals = (player: FighterId, exclude: FighterId[] = []): FighterId[] => {
   const pool = ROSTER.filter((id) => id !== player && !exclude.includes(id));
@@ -46,15 +63,48 @@ export const drawRivals = (player: FighterId, exclude: FighterId[] = []): Fighte
   return pool.slice(0, STORY_RIVALS);
 };
 
-/** Partida en curso del modo historia. Se guarda solo en Firestore, en la cuenta (anónima) del jugador. */
+/**
+ * Modo historia: el perfil de la cuenta (anónima) del jugador, con su nickname fijo y una partida guardada por
+ * personaje, y la partida que se está jugando. Se guarda solo en Firestore.
+ */
 export const StoryRun = {
+  /** Partida que se está jugando. */
   state: null as StoryState | null,
+  /** Nickname de la cuenta ('' = todavía no lo eligió). No se cambia una vez elegido. */
+  name: '',
+  /** Partidas guardadas, una por personaje. */
+  runs: {} as Partial<Record<FighterId, StoryState>>,
+  /** Ya se trajo el perfil de la cuenta en esta sesión. */
+  loaded: false,
 
-  start(player: FighterId, name: string): void {
-    this.state = { name, player, rivals: drawRivals(player), index: 0, freed: [], stats: { seconds: 0, maxCombo: 0, perfects: 0, continues: 0 }, score: 0 };
+  /** Con cuenta y nickname: se puede jugar la historia. */
+  get ready(): boolean {
+    return this.loaded && !!this.name;
+  },
+
+  /** Partidas guardadas, la última jugada primero. */
+  get saved(): StoryState[] {
+    return Object.values(this.runs).sort((a, b) => (b!.updatedAt ?? 0) - (a!.updatedAt ?? 0)) as StoryState[];
+  },
+
+  /** Elige el nickname (una sola vez) y lo guarda en la cuenta. */
+  setName(name: string): void {
+    if (this.name) return;
+    this.name = name;
+    this.persist();
+  },
+
+  /** Partida nueva con `player` (pisa la que tenía guardada ese personaje). `keep = false`: solo en memoria (laboratorio). */
+  start(player: FighterId, keep = true): void {
+    this.state = { name: keep ? this.name : '', player, rivals: drawRivals(player), index: 0, freed: [], stats: { seconds: 0, maxCombo: 0, perfects: 0, continues: 0 }, score: 0 };
     this.save();
   },
 
+  /** Retoma la partida guardada de `player`. */
+  resume(player: FighterId): boolean {
+    this.state = this.runs[player] ?? null;
+    return !!this.state;
+  },
   get opponents(): FighterId[] {
     return this.state ? [...this.state.rivals, BOSS] : [];
   },
@@ -122,28 +172,36 @@ export const StoryRun = {
     return !!this.state && this.state.index >= this.opponents.length;
   },
 
-  /** Sube la partida a la cuenta. Las del laboratorio (sin nombre) solo viven en memoria. */
+  /** Guarda la partida en la cuenta. Las del laboratorio (sin nombre) solo viven en memoria. */
   save(): void {
     const s = this.state;
     if (!s?.name) return;
     s.updatedAt = Date.now();
-    void Ranking.saveProgress(s);
+    this.runs[s.player] = s;
+    this.persist();
   },
 
-  /**
-   * Con la sesión iniciada: trae la partida de la cuenta. Devuelve true si cargó una partida que no
-   * estaba en memoria. Falla (lanza) si no se pudo leer Firestore, para no empezar una partida nueva
-   * encima de la guardada.
-   */
-  async sync(): Promise<boolean> {
-    if (!Ranking.user) return false;
-    const had = !!this.state;
-    this.state = restore(await Ranking.loadProgress<StoryState>());
-    return !had && !!this.state;
+  /** Sube el perfil entero (nickname y partidas). */
+  persist(): void {
+    if (this.loaded) void Ranking.saveProgress({ name: this.name, runs: this.runs });
   },
 
+  /** Trae el perfil de la cuenta conectada. Falla (lanza) si no se pudo leer Firestore, para no pisar lo guardado. */
+  async sync(): Promise<void> {
+    if (!Ranking.user) return;
+    const profile = readProfile(await Ranking.loadProgress<Profile & Partial<StoryState>>());
+    this.name = profile.name;
+    this.runs = profile.runs;
+    if (this.state?.name) this.state = this.runs[this.state.player] ?? null;
+    this.loaded = true;
+  },
+
+  /** Historia terminada: se borra la partida de ese personaje (el puntaje ya quedó en el ranking). */
   clear(): void {
-    if (this.state?.name) void Ranking.clearProgress();
+    const s = this.state;
     this.state = null;
+    if (!s?.name) return;
+    delete this.runs[s.player];
+    this.persist();
   },
 };

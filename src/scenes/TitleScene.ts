@@ -6,7 +6,7 @@ import { artScale } from '../systems/FighterArt';
 import { Input } from '../systems/Input';
 import { Ranking } from '../systems/Ranking';
 import { StoryRun } from '../systems/StoryRun';
-import { enterStory } from './LoginScene';
+import { Profile, connectProfile } from './LoginScene';
 import { Menu, footer, goTo, logo, scanlines, speedStripes, stageBackdrop, text } from '../ui/ui';
 
 /** Pantalla de título: "PRESIONA ENTER" y luego el menú principal. */
@@ -14,6 +14,7 @@ export class TitleScene extends Phaser.Scene {
   private input2!: Input;
   private menu: Menu | null = null;
   private press!: Phaser.GameObjects.Text;
+  private leaving = false;
 
   constructor() {
     super(SCENES.Title);
@@ -21,7 +22,8 @@ export class TitleScene extends Phaser.Scene {
 
   create(data: { skipPress?: boolean }) {
     this.menu = null;
-    // Se carga Firebase de fondo para saber si hay sesión antes de entrar a la historia.
+    this.leaving = false;
+    // Se carga Firebase de fondo mientras se ve el título (la conexión de la cuenta va antes del menú).
     Ranking.init().catch(() => undefined);
     this.cameras.main.fadeIn(400, 11, 10, 14);
     Audio.music(this, MUSIC.menu, 0.35);
@@ -61,25 +63,41 @@ export class TitleScene extends Phaser.Scene {
   }
 
   private openMenu(): void {
-    if (this.menu) return;
+    if (this.menu || this.leaving) return;
+    // Antes del menú: la cuenta y el nickname (una sola vez por sesión, salvo que se haya saltado).
+    if (!StoryRun.ready && !Profile.guest) {
+      this.leaving = true;
+      Audio.blip(this, true);
+      connectProfile(this);
+      return;
+    }
     Audio.blip(this, true);
     this.press.destroy();
+    if (StoryRun.ready) {
+      text(this, GAME_WIDTH - 24, 30, `JUGANDO COMO  ${StoryRun.name}`, { size: 24, weight: '800', color: CSS.lime, origin: [1, 0.5], spacing: 2 });
+    }
+    const saved = StoryRun.ready && StoryRun.saved.length > 0;
+    // Sin perfil, la historia vuelve a pedir la conexión.
+    const story = (resume: boolean) => () => StoryRun.ready
+      ? goTo(this, SCENES.Select, { mode: 'story', resume, last: resume ? StoryRun.saved[0].player : undefined })
+      : connectProfile(this);
     const box = this.add.graphics();
     box.fillStyle(COLORS.bg, 0.6).fillRect(GAME_WIDTH / 2 - 330, 640, 660, 385);
     this.menu = new Menu(this, [
-      ...(StoryRun.state ? [{ label: 'CONTINUAR HISTORIA', onSelect: () => enterStory(this, 'continue') }] : []),
-      { label: 'HISTORIA', onSelect: () => enterStory(this, 'new') },
+      ...(saved ? [{ label: 'CONTINUAR HISTORIA', onSelect: story(true) }] : []),
+      { label: 'HISTORIA', onSelect: story(false) },
       { label: 'ARCADE  ·  VS CPU', onSelect: () => goTo(this, SCENES.Select) },
       { label: 'ENTRENAMIENTO', onSelect: () => goTo(this, SCENES.Select, { mode: 'training' }) },
       { label: 'RANKING', onSelect: () => goTo(this, SCENES.Ranking) },
       { label: 'CONTROLES', onSelect: () => goTo(this, SCENES.Controls) },
       { label: 'CRÉDITOS', onSelect: () => goTo(this, SCENES.Credits) },
-    ], GAME_WIDTH / 2, 672, StoryRun.state ? 46 : 52, 38);
+    ], GAME_WIDTH / 2, 672, saved ? 46 : 52, 38);
     footer(this, '↑ ↓  ELEGIR      ← →  CAMBIAR      ENTER  CONFIRMAR');
   }
 
   update() {
     const i = this.input2;
+    if (this.leaving) return;
     if (!this.menu) {
       if (i.justDown('confirm') || i.justDown('punch')) this.openMenu();
       return;

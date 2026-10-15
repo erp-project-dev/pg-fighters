@@ -260,7 +260,7 @@ export class LabScene extends Phaser.Scene {
 
   /** Atajo de prueba: historia con todos los amigos liberados → revelación → pelea contra El Acople. */
   private toBoss(): void {
-    StoryRun.start(this.char, ''); // sin nombre: no sube al ranking
+    StoryRun.start(this.char, false); // solo en memoria: no se guarda ni sube al ranking
     const s = StoryRun.state!;
     s.freed = StoryRun.opponents.filter((id) => id !== BOSS);
     s.index = s.freed.length;

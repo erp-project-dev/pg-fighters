@@ -22,7 +22,7 @@ Todos los luchadores tienen arte propio. Los datos (nombre, título, biografía,
 | 16 | `tayloy` | TAYLOY | `public/assets/characters/tayloy/` |
 | 17 | `jesex` | JESEX | `public/assets/characters/jesex/` |
 | 18 | `markus` | MARKUS | `public/assets/characters/markus/` |
-| 19 | `platanero` | EL PLATANERO | `public/assets/characters/platanero/` |
+| 19 | `platanero` | PLATANERO | `public/assets/characters/platanero/` |
 | 20 | `ricardo` | RICARDO | `public/assets/characters/ricardo/` |
 | 21 | `kimberly` | KIMBERLY | `public/assets/characters/kimberly/` |
 | ?? | `acople` | EL ACOPLE | `public/assets/characters/acople/` |

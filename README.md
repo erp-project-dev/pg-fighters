@@ -158,18 +158,25 @@ PG Fighters es una parodia hecha con cariño para la comunidad de Peru Guitar. T
 
 ## Modo historia, cuenta y Firestore
 
-La historia no pide login: al entrar se crea sola una cuenta anónima de Firebase Auth (proveedor _Anonymous_, activado en la consola) y la sesión queda en el navegador; el jugador solo escribe su nickname. Cada partida (13 peleas: 12 amigos y El Acople) sortea 12 amigos al azar (sin repetir ni incluir al elegido) y termina con El Acople; el número está en `STORY_RIVALS` (`src/data/story.ts`), con una pista por amigo.
+No hay login: al abrir el menú se conecta sola una cuenta anónima de Firebase Auth (proveedor _Anonymous_, activado en la consola) y la sesión queda en el navegador. La primera vez se pide el nickname, que es **único** (no lo puede tener otra cuenta) y **queda fijo para siempre**. Sin conexión (o con ESC) se juega arcade y entrenamiento; la historia vuelve a pedir la conexión. Cada partida (13 peleas: 12 amigos y El Acople) sortea 12 amigos al azar (sin repetir ni incluir al elegido) y termina con El Acople; el número está en `STORY_RIVALS` (`src/data/story.ts`), con una pista por amigo.
 
-Firestore (proyecto `pg-fighters`) guarda dos colecciones, ambas con el `uid` de la cuenta como id del documento:
+Cada cuenta guarda **una partida por personaje**: CONTINUAR HISTORIA deja elegir cuál seguir, y en HISTORIA, si el personaje elegido ya tiene partida, pregunta si continuarla o empezar de nuevo.
 
-- `ranking/{uid}`: mejor puntaje de la cuenta.
-- `progress/{uid}`: la partida en curso. Se guarda solo aquí; al terminar la historia se borra. Como la cuenta es anónima, borrar los datos del navegador o cambiar de equipo empieza una cuenta nueva. Si no se puede leer, la pantalla de conexión muestra el error y no deja empezar encima de la partida guardada.
+Firestore (proyecto `pg-fighters`) guarda tres colecciones:
 
-Reglas necesarias para `progress` (en la consola de Firebase, junto a las de `ranking`; sin ellas no se guarda el avance):
+- `ranking/{uid}`: mejor puntaje de la cuenta (con el personaje con que lo hizo).
+- `progress/{uid}`: perfil de la cuenta, `{ name, runs: { <fighterId>: partida } }`. La partida de un personaje se borra al terminar su historia. Las cuentas con el formato viejo (una sola partida suelta) se convierten solas al leerlas. Como la cuenta es anónima, borrar los datos del navegador o cambiar de equipo empieza una cuenta nueva. Si no se puede leer, la pantalla de conexión muestra el error y no deja seguir encima del perfil guardado.
+- `names/n_<NICKNAME>`: `{ uid, name }`, reserva del nickname (en mayúsculas). Se crea una vez y no se cambia ni se borra.
+
+Reglas necesarias (en la consola de Firebase, junto a las de `ranking`; sin ellas no se guarda el avance ni se puede elegir nickname):
 
 ```
 match /progress/{uid} {
   allow read, write: if request.auth != null && request.auth.uid == uid;
+}
+match /names/{name} {
+  allow read: if request.auth != null;
+  allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
 }
 ```
 

@@ -3,6 +3,7 @@ import { COLORS, CSS, GAME_HEIGHT, GAME_WIDTH, SCENES } from '../config';
 import type { FighterId } from '../data/fighters';
 import { STAGES, STAGE_ORDER, type StageId } from '../data/stages';
 import { Audio, MUSIC } from '../systems/Audio';
+import type { Difficulty } from '../systems/Settings';
 import { Input } from '../systems/Input';
 import { buildStage, hasStageArt } from '../systems/StageArt';
 import { fitText, footer, goTo, scanlines, text } from '../ui/ui';
@@ -11,6 +12,8 @@ export interface StageSelectData {
   p1: FighterId;
   p2: FighterId;
   training?: boolean;
+  /** Dificultad elegida para la CPU (arcade). */
+  difficulty?: Difficulty;
   last?: StageId;
 }
 
@@ -167,8 +170,8 @@ export class StageSelectScene extends Phaser.Scene {
       this.pick(this.index, true);
       this.locked = true;
     }
-    const { p1, p2, training } = this.data0;
-    this.time.delayedCall(700, () => goTo(this, training ? SCENES.Fight : SCENES.Versus, { p1, p2, stage, training }, 300));
+    const { p1, p2, training, difficulty } = this.data0;
+    this.time.delayedCall(700, () => goTo(this, training ? SCENES.Fight : SCENES.Versus, { p1, p2, stage, training, difficulty }, 300));
   }
 
   update() {

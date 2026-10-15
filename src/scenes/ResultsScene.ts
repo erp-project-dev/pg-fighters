@@ -5,6 +5,7 @@ import type { StageId } from '../data/stages';
 import { Audio, MUSIC } from '../systems/Audio';
 import { artScale } from '../systems/FighterArt';
 import { Input } from '../systems/Input';
+import type { CpuLevel } from '../systems/Settings';
 import { Menu, fitText, footer, goTo, scanlines, speedStripes, stageBackdrop, text } from '../ui/ui';
 import type { MatchStats } from './FightScene';
 
@@ -12,6 +13,7 @@ interface ResultsData {
   p1: FighterId;
   p2: FighterId;
   stage?: StageId;
+  difficulty?: CpuLevel;
   playerWon: boolean;
   stats: MatchStats;
 }
@@ -58,7 +60,7 @@ export class ResultsScene extends Phaser.Scene {
     });
 
     this.menu = new Menu(this, [
-      { label: 'REVANCHA', onSelect: () => goTo(this, SCENES.Versus, { p1: data.p1, p2: data.p2, stage: data.stage }) },
+      { label: 'REVANCHA', onSelect: () => goTo(this, SCENES.Versus, { p1: data.p1, p2: data.p2, stage: data.stage, difficulty: data.difficulty }) },
       { label: 'CAMBIAR LUCHADOR', onSelect: () => goTo(this, SCENES.Select, { last: data.p1 }) },
       { label: 'MENÚ PRINCIPAL', onSelect: () => goTo(this, SCENES.Title, { skipPress: true }) },
     ], x + 30, 760, 76, 48, 'left');

@@ -316,7 +316,7 @@ const maqam = (): SoloNote[] => phrase([
   [null, 160], [[40, 47, 52, 56], 1000, 'f'],
 ]);
 
-/** EL PLATANERO: melodía lenta y luminosa en Re mayor que sube de a poco, con notas largas y ligadas. */
+/** PLATANERO: melodía lenta y luminosa en Re mayor que sube de a poco, con notas largas y ligadas. */
 const ascension = (): SoloNote[] => phrase([
   [[50, 57, 62, 66], 420, 'hl'], [69, 280, 's'], [71, 280], [74, 420, 'hl'],
   [[55, 62, 67, 71], 420, 'hl'], [76, 280, 's'], [78, 280], [81, 420, 'hbl'],

@@ -20,7 +20,7 @@ Generación: herramienta integrada `image_gen` con las hojas anime del proyecto 
 | TAYLOY | tayloy | Completo |
 | JESEX | jesex | Completo |
 | MARKUS | markus | Completo |
-| EL PLATANERO | platanero | Completo |
+| PLATANERO | platanero | Completo |
 | RICARDO | ricardo | Completo |
 | KIMBERLY | kimberly | Completo |
 | EL ACOPLE | acople | Completo |
