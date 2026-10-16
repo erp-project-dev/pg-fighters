@@ -16,6 +16,8 @@ const PROGRESS = 'progress';
 /** Nicknames tomados: `names/<nickname>` → `{ uid }` (así no hay dos cuentas con el mismo). */
 const NAMES = 'names';
 const NAME_KEY = 'pg-fighters-player';
+/** Id de la fila del ranking: cuenta + personaje. */
+const rowId = (uid: string, fighter: FighterId) => `${uid}_${fighter}`;
 
 /** Id del documento de un nickname: sin distinguir mayúsculas ni espacios repetidos (el prefijo evita ids reservados como "." o "__x__"). */
 const nameKey = (name: string) => `n_${name.trim().toUpperCase().replace(/\s+/g, ' ')}`;
@@ -68,8 +70,8 @@ const connect = () => {
 };
 
 /**
- * Cuenta anónima de Firebase (se crea sola al abrir el menú; la sesión queda en el navegador) y Firestore: ranking global (una fila por cuenta con
- * su mejor puntaje) y el perfil de cada cuenta (nickname y partidas). Sin conexión, todo falla en silencio.
+ * Cuenta anónima de Firebase (se crea sola al abrir el menú; la sesión queda en el navegador) y Firestore: ranking global (una fila por cuenta y
+ * personaje: la de su historia) y el perfil de cada cuenta (nickname y partidas). Sin conexión, todo falla en silencio.
  */
 export const Ranking = {
   /** Cuenta conectada (null = sin sesión o todavía no se sabe). */
@@ -129,20 +131,35 @@ export const Ranking = {
     });
   },
 
-  /** Guarda la partida en la fila de la cuenta solo si supera su mejor puntaje. */
+  /** Fila de la historia de `fighter` en el ranking: siempre refleja esa partida (una fila por cuenta y personaje). */
   async submit(entry: Omit<RankEntry, 'id'>): Promise<void> {
     // Las partidas de prueba en local no van al ranking mundial.
     if (import.meta.env.DEV) return;
     try {
       const { fs, db } = await connect();
       if (!(await this.init())) return;
-      const ref = fs.doc(db, COLLECTION, user!.uid);
-      const best = await fs.getDoc(ref);
-      if (best.exists() && (best.data().score as number) >= entry.score) return;
-      await fs.setDoc(ref, entry);
+      await fs.setDoc(fs.doc(db, COLLECTION, rowId(user!.uid, entry.fighter)), entry);
     } catch (e) {
       console.warn('[ranking] no se pudo guardar', e);
     }
+  },
+
+  /** Quita del ranking la fila de la historia de `fighter` (al reiniciarla o eliminarla). */
+  async remove(fighter: FighterId): Promise<void> {
+    if (import.meta.env.DEV) return;
+    try {
+      const { fs, db } = await connect();
+      if (!(await this.init())) return;
+      await fs.deleteDoc(fs.doc(db, COLLECTION, rowId(user!.uid, fighter)));
+    } catch (e) {
+      console.warn('[ranking] no se pudo borrar', e);
+    }
+  },
+
+  /** La fila es de la cuenta conectada. */
+  isMine(id: string): boolean {
+    const uid = user?.uid;
+    return !!uid && id.startsWith(`${uid}_`);
   },
 
   /** Mejores puntajes (espera a saber la sesión para poder marcar la fila propia). */

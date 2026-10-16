@@ -24,13 +24,14 @@ import { ContinueScene } from './scenes/ContinueScene';
 import { LoginScene } from './scenes/LoginScene';
 import { NameEntryScene } from './scenes/NameEntryScene';
 import { RankingScene } from './scenes/RankingScene';
+import { SavesScene } from './scenes/SavesScene';
 
 /** Arranca el juego (main.ts lo carga solo si el equipo se puede usar para jugar). */
 export const startGame = (): void => {
   const game = new Phaser.Game({
     ...GAME_CONFIG_BASE,
     parent: 'game',
-    scene: [BootScene, PreloadScene, TitleScene, ControlsScene, SelectScene, StageSelectScene, VersusScene, FightScene, HudScene, TrainingHudScene, SuperCutInScene, PauseScene, ResultsScene, StoryScene, StoryProgressScene, ContinueScene, LoginScene, NameEntryScene, RankingScene, CreditsScene, DisclaimerScene, LabScene, LabPickScene],
+    scene: [BootScene, PreloadScene, TitleScene, ControlsScene, SelectScene, StageSelectScene, VersusScene, FightScene, HudScene, TrainingHudScene, SuperCutInScene, PauseScene, ResultsScene, StoryScene, StoryProgressScene, ContinueScene, LoginScene, NameEntryScene, RankingScene, SavesScene, CreditsScene, DisclaimerScene, LabScene, LabPickScene],
   });
 
   // Acceso desde la consola del navegador en desarrollo.
