@@ -969,8 +969,8 @@ export const FIGHTERS: Record<FighterId, FighterDef> = {
     stats: {
       walk: 300,
       dash: 1350,
-      damage: 1.1,
-      defense: 0.85,
+      damage: 1.0,
+      defense: 0.9,
       projectileSpeed: 980,
     },
     rating: { potencia: 5, velocidad: 4, alcance: 5, tecnica: 5 },
@@ -989,7 +989,7 @@ export const FIGHTERS: Record<FighterId, FighterDef> = {
     hater:
       "Cada crítica a las 3:33 me hizo más grande. Y tú me los estás quitando.",
     freed: "…",
-    boss: { hp: 1500 },
+    boss: { hp: 1350 },
   },
 };
 

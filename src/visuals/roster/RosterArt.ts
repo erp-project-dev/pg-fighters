@@ -54,8 +54,8 @@ const PIVOT_X: Partial<Record<string, number>> = {
   'acople-intro': 0.49,
 };
 
-/** Alto visual (px) que reemplaza al de metadata.json: El Acople, ~11% más chico que su arte original (594). */
-const VISUAL_HEIGHT: Partial<Record<string, number>> = { acople: 530 };
+/** Alto visual (px) que reemplaza al de metadata.json: El Acople, al tamaño de su arte original (imponente). */
+const VISUAL_HEIGHT: Partial<Record<string, number>> = { acople: 594 };
 
 /** Alto de la pose de ultimate respecto de la guardia (la guitarra levantada suma un poco). */
 const SUPER_HEIGHT = 1.05;

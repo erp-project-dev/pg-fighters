@@ -9,6 +9,8 @@ import type { CpuLevel } from './Settings';
 export const BOSS: FighterId = 'acople';
 /** Nivel del último amigo antes del jefe (1 = difícil). */
 const STORY_PEAK = 0.9;
+/** Dificultad de la CPU contra El Acople (1 = difícil: era imposible ganarle). */
+const BOSS_LEVEL = 0.8;
 
 export interface StoryState {
   /** Nombre del jugador en el ranking. */
@@ -124,10 +126,11 @@ export const StoryRun = {
 
   /**
    * Rampa de dificultad: el primer amigo pelea en fácil y cada uno es un poco más duro, hasta quedar
-   * justo debajo de difícil (STORY_PEAK). El Acople pelea en difícil con su vida, furia y stats de jefe.
+   * justo debajo de difícil (STORY_PEAK). El Acople pelea un poco por debajo de eso (BOSS_LEVEL): su vida,
+   * furia y stats de jefe ya lo hacen duro.
    */
   get difficulty(): CpuLevel {
-    if (this.isBossFight) return 'hard';
+    if (this.isBossFight) return BOSS_LEVEL;
     const k = this.friends > 1 ? this.state!.index / (this.friends - 1) : 1;
     return STORY_PEAK * k ** 1.15;
   },
