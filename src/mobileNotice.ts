@@ -27,11 +27,10 @@ const STYLE = `
   letter-spacing: 1px; text-transform: uppercase; text-decoration: none; cursor: pointer; }
 .pgm-wa { background: #dfff00; color: #0b0a0e; }
 .pgm-copy { background: transparent; color: #e9e5d9; box-shadow: inset 0 0 0 2px #e9e5d9; }
-.pgm-skip { background: none; border: 0; color: #8b897f; font: 600 15px 'Barlow', sans-serif; text-decoration: underline; cursor: pointer; padding: 8px; }
 `;
 
-/** Aviso a pantalla completa: el juego se juega en computadora. `onSkip` entra igual. */
-export const mobileNotice = (onSkip: () => void): void => {
+/** Aviso a pantalla completa: el juego solo se juega en computadora; en táctil no se carga nada. */
+export const mobileNotice = (): void => {
   const style = document.createElement('style');
   style.textContent = STYLE;
   document.head.append(style);
@@ -42,14 +41,13 @@ export const mobileNotice = (onSkip: () => void): void => {
   box.innerHTML = `
     <div class="pgm-card">
       <div class="pgm-logo"><b>PG</b><span>FIGHTERS</span></div>
-      <h1>🎸 Optimizado para computadora</h1>
+      <h1>🎸 Solo para computadora</h1>
       <p>Se juega con teclado: moverse, combos, especiales y ultimates necesitan teclas de verdad.</p>
       <p>Ábrelo en tu PC o laptop y entra a pelear.</p>
       <div class="pgm-actions">
         <a class="pgm-btn pgm-wa" href="https://wa.me/?text=${encodeURIComponent(text)}" target="_blank" rel="noopener">Mandarme el link por WhatsApp</a>
         <button class="pgm-btn pgm-copy" type="button">Copiar link</button>
       </div>
-      <button class="pgm-skip" type="button">Entrar de todos modos</button>
     </div>`;
   document.body.append(box);
 
@@ -61,10 +59,5 @@ export const mobileNotice = (onSkip: () => void): void => {
     } catch {
       copy.textContent = GAME_URL;
     }
-  });
-  box.querySelector<HTMLButtonElement>('.pgm-skip')!.addEventListener('click', () => {
-    box.remove();
-    style.remove();
-    onSkip();
   });
 };

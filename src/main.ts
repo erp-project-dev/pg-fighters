@@ -1,8 +1,8 @@
 import { mobileNotice, touchOnly } from './mobileNotice';
 
 /**
- * El juego se carga aparte: en un celular o tablet solo táctil primero sale el aviso de que se juega
- * con teclado, sin descargar el motor ni el arte (no se gastan datos para nada).
+ * El juego se carga aparte: en un celular o tablet solo táctil solo sale el aviso de que se juega
+ * con teclado, sin descargar el motor ni el arte: ahí el juego no se puede jugar.
  */
 const play = () => void ready().then(() => import('./game')).then((m) => m.startGame());
 
@@ -26,5 +26,5 @@ async function ready(): Promise<void> {
   }
 }
 
-if (touchOnly()) mobileNotice(play);
+if (touchOnly()) mobileNotice();
 else play();
