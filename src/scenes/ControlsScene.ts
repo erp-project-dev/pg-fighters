@@ -20,9 +20,9 @@ const BASICS: [string, string][] = [
 ];
 
 const SPECIALS: [string, string, string][] = [
-  ['PODER', 'S → D + CLIC IZQ', 'Proyectil.'],
+  ['PODER', 'S → D + CLIC IZQ', 'Propio de cada luchador: disparo, embestida, trampa… (ver Pausa).'],
   ['UPPERCUT', 'D → S → S+D + CLIC IZQ', 'Antiaéreo invulnerable al arrancar.'],
-  ['ULTIMATE', 'E', 'Con la barra ULTIMATE llena.'],
+  ['ULTIMATE', 'E', 'Barra llena. El remate solo sale si el último golpe acierta.'],
   ['BARRIDA', 'S + CLIC DER', 'Tumba. Solo se bloquea agachado.'],
   ['CADENA', 'IZQ · IZQ · DER', 'Tres clics: el tercero tumba.'],
   ['CANCELAR', 'IZQ → PODER', 'Si el golpe conecta, enlaza el poder.'],

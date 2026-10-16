@@ -1,50 +1,86 @@
 import Phaser from 'phaser';
-import { GAME_HEIGHT, GAME_WIDTH } from '../../config';
-import { chest, dotTex, emit, rand, slam, type ShowCtx, type SuperShow } from './kit';
+import { GAME_WIDTH } from '../../config';
+import { chest, emit, rand, slam, veil, type ShowCtx, type SuperShow } from './kit';
+import { ADD, burst, colorFlash, comet, every, glowTex, heartAt, lensColor, markHit, orb, shockwave, spark, victim, wave } from './energy';
 
-const COLORS = [0x5bcefa, 0xf5a9b8, 0xffffff];
+const SKY = 0xb04dff;
+const PINK = 0xff5fc8;
 
 /**
- * RICARDO · MI PROPIO SONIDO: haces de luz suben desde el piso (renacer) en celeste, rosa y blanco,
- * y anillos florecen desde él al ritmo del riff; remate: un estallido hacia arriba.
+ * RICARDO · MI PROPIO SONIDO: todo empieza apagado y gris (las canciones ajenas) y cada golpe le devuelve
+ * color a la pantalla. Lanza ondas moradas cada vez más fuertes; el rival se queda gris, sin color.
+ * Remate: un corazón de luz gigante se enciende sobre el rival y explota devolviendo todo el color.
  */
 export const ricardo: SuperShow = {
   start(c: ShowCtx) {
-    const g = c.scene.add.graphics().setBlendMode(Phaser.BlendModes.ADD);
+    const g = c.scene.add.graphics().setBlendMode(ADD);
     c.back.add(g);
-    Object.assign(c.data, { g, ringAt: 0, k: 0 });
+    Object.assign(c.data, { g, color: 0 });
   },
-  update(c: ShowCtx, dt: number) {
+  update(c: ShowCtx) {
+    const hits = c.data.hits ?? 0;
+    // El color vuelve de a poco con cada golpe.
+    const target = c.data.finalAt !== undefined ? 1 : Math.min(0.75, hits * 0.1);
+    c.data.color += (target - c.data.color) * 0.08;
+    const cm = lensColor(c);
+    if (cm) {
+      cm.colorMatrix.grayscale(1);
+      cm.colorMatrix.alpha = 1 - c.data.color;
+    }
+    // Ondas celestes que salen de él, más grandes con cada golpe.
     const g = c.data.g as Phaser.GameObjects.Graphics;
     g.clear();
-    // Haces verticales que suben y se desvanecen hacia arriba.
-    for (let i = 0; i < 14; i++) {
-      const x = ((i * 157 + Math.sin(i * 3.1) * 90) % GAME_WIDTH + GAME_WIDTH) % GAME_WIDTH;
-      const rise = ((c.t / (900 + (i % 4) * 160) + i * 0.27) % 1);
-      const h = GAME_HEIGHT * (0.3 + 0.5 * rise);
-      const color = COLORS[i % COLORS.length];
-      g.fillStyle(color, 0.16 * (1 - rise)).fillRect(x - 10, GAME_HEIGHT - h, 20, h);
-      g.fillStyle(color, 0.4 * (1 - rise)).fillRect(x - 2, GAME_HEIGHT - h, 4, h);
-    }
-    // Anillos que florecen desde él cada medio segundo.
-    if (c.t - c.data.ringAt > 480) {
-      c.data.ringAt = c.t;
-      const p = chest(c.owner);
-      c.fx.ring(p.x, p.y, COLORS[c.data.k++ % COLORS.length], 320, 0.6);
-    }
-    if (Math.random() < dt * 40) emit(c, dotTex(c.scene), rand(0, GAME_WIDTH), GAME_HEIGHT - rand(0, 120), { vy: -rand(200, 380), life: 2, scale: rand(0.4, 1), tint: COLORS[Math.floor(rand(0, 3))], add: true, layer: 'back' });
+    const p = chest(c.owner);
+    for (let i = 0; i < 4; i++) wave(g, p.y + (i - 1.5) * 90, 20 + hits * 6, 80, c.t / 70 + i, SKY, 4 + hits, 0.15 + c.data.color * 0.4, Math.min(p.x, c.target.x), Math.max(p.x, c.target.x));
+    if (every(c, 'ringAt', 360)) c.fx.ring(p.x, p.y, SKY, 220 + hits * 30, 0.5);
+    // El rival se queda gris.
+    const since = c.t - (c.data.hitAt ?? -9999);
+    victim(c, { tint: since < 120 ? SKY : 0x8a8a8a, fill: since < 120, x: since < 180 ? (Math.floor(c.t / 40) % 2 ? 8 : -8) : 0 });
+  },
+  note(c, x, y, hit, final) {
+    return hit ? orb(c, x, y, SKY, final ? 56 : 22 + (c.data.hits ?? 0) * 4) : spark(c, x, y, SKY);
+  },
+  fly(c, x, y, age, final) {
+    comet(c, x, y + Math.sin(age * 16) * 12, SKY, final ? 1.4 : 0.8 + (c.data.hits ?? 0) * 0.05);
   },
   impact(c, x, y, final) {
+    markHit(c, final);
+    burst(c, x, y, SKY, 10, 600);
     if (!final) return;
     const scene = c.scene;
     const t = chest(c.target);
-    // Estallido que sube como un renacer.
-    const burst = scene.add.graphics().setDepth(47).setBlendMode(Phaser.BlendModes.ADD);
-    COLORS.forEach((col, i) => burst.fillStyle(col, 0.22).fillRect(t.x - 70 + i * 50, -40, 40, t.y + 40));
-    scene.tweens.add({ targets: burst, alpha: 0, duration: 600, onComplete: () => burst.destroy() });
-    for (let k = 0; k < 3; k++) c.fx.ring(t.x, t.y, COLORS[k], 220 + k * 140, 0.5);
-    c.fx.hit(t.x, t.y, 0x5bcefa, true);
-    scene.cameras.main.shake(320, 0.016);
-    slam(scene, t.x, t.y - 300, 'ESTE SOY YO', '#5bcefa', 140);
+    // Corazón de luz que crece sobre el rival…
+    const heart = scene.add.graphics().setDepth(47).setBlendMode(ADD);
+    const st = { r: 40 };
+    const draw = () => {
+      const pts: Phaser.Math.Vector2[] = [];
+      for (let i = 0; i <= 60; i++) {
+        const p = heartAt(i / 60, st.r);
+        pts.push(new Phaser.Math.Vector2(t.x + p.x, t.y + p.y));
+      }
+      heart.clear();
+      heart.fillStyle(PINK, 0.18).fillPoints(pts, true);
+      heart.lineStyle(30, SKY, 0.25).strokePoints(pts, true);
+      heart.lineStyle(8, 0xffffff, 0.95).strokePoints(pts, true);
+    };
+    scene.tweens.add({
+      targets: st, r: 260, duration: 380, ease: 'Back.easeOut', onUpdate: draw,
+      onComplete: () => {
+        // …y explota: partículas que salen con forma de corazón.
+        heart.destroy();
+        for (let i = 0; i < 90; i++) {
+          const p = heartAt(i / 90, 1);
+          const sp = rand(900, 1300);
+          emit(c, glowTex(scene), t.x + p.x * 200, t.y + p.y * 200, { vx: p.x * sp, vy: p.y * sp, life: 0.8, scale: rand(0.6, 1.2), grow: -0.9, tint: i % 3 ? SKY : PINK, add: true });
+        }
+        colorFlash(scene, 'saturate', 1000);
+        veil(scene, PINK, 0.5, 100, 20, 500, 48);
+        shockwave(scene, 0.7, 900);
+        for (let k = 0; k < 6; k++) c.fx.ring(t.x, t.y, k % 2 ? PINK : SKY, 240 + k * 170, 0.5 + k * 0.08);
+        c.fx.hit(t.x, t.y, SKY, true);
+        scene.cameras.main.shake(600, 0.026);
+        slam(scene, GAME_WIDTH / 2, 420, 'ESTE SOY YO', '#c77dff', 150);
+      },
+    });
   },
 };

@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import { GAME_WIDTH, GROUND_Y } from '../config';
 import type { MoveDef } from '../data/moves';
 import { moveFor } from '../data/moveset';
-import type { ShotSpec } from '../data/powers';
+import { powerFist, type ShotSpec } from '../data/powers';
 import type { Fx } from '../systems/Fx';
 import { buildLook, type LookObj } from '../visuals/powers';
 import type { Fighter } from './Fighter';
@@ -34,10 +34,6 @@ const BEAM_FADE = 0.22;
  * de partículas y se mueve según su comportamiento: recto, onda, bote, arco, bumerán, trampa, rayo…
  */
 /** Puño en la pose del poder [adelante, altura] × alto de guardia, para quien no encaja con el promedio. */
-const FIST: Partial<Record<string, [number, number]>> = {
-  // El Acople lanza con la mano abierta y el brazo alto, y su arte se ve más grande que su alto de guardia.
-  acople: [0.38, 0.77],
-};
 
 /** Velocidad del arranque lento (`windup`) respecto de la final. */
 const WINDUP_SPEED = 0.08;
@@ -130,7 +126,7 @@ export class Projectile {
   private fist(): { x: number; z: number } {
     const o = this.owner;
     const h = o.def.art.height;
-    const [fx, fz] = FIST[o.def.id] ?? [0.34, 0.58];
+    const [fx, fz] = powerFist(o.def.id);
     return { x: o.x + o.facing * h * fx, z: o.z + h * fz };
   }
 
@@ -456,6 +452,8 @@ export class Projectile {
         this.vz += ((tz / d) * this.speed - this.vz) * k;
       }
       if (s.boomerang) {
+        // Bandeja de Chantal: si el rival la esquiva (lo pasa de largo sin que pegue a la ida), se rompe y no vuelve.
+        if (!this.returning && !this.connected && (rival.x - this.x) * this.dir < -rival.def.art.height * 0.2) return this.shatter();
         const a = (this.speed * this.speed) / (2 * s.boomerang);
         this.vx -= this.dir * a * dt;
         if (!this.returning && this.vx * this.dir < 0) {

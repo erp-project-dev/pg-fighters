@@ -1,72 +1,93 @@
 import Phaser from 'phaser';
 import { GAME_HEIGHT, GAME_WIDTH } from '../../config';
-import { chest, emit, floatText, pick, rand, slam, tex, type ShowCtx, type SuperShow } from './kit';
+import { chest, rand, slam, type ShowCtx, type SuperShow } from './kit';
+import { ADD, burst, colorFlash, echo, every, lensColor, markHit, pixelFlash, shockwave, spark, squareTex, victim } from './energy';
 
 const MONO = 'Menlo, Consolas, "Courier New", monospace';
+const YELLOW = 0xe8c547;
 
-const bananaTex = (scene: Phaser.Scene) =>
-  tex(scene, 'sx-banana', 120, 90, (g) => {
-    const arc = (r: number, w: number, c: number) => {
-      g.lineStyle(w, c, 1);
-      g.beginPath();
-      g.arc(60, -10, r, Math.PI * 0.2, Math.PI * 0.8);
-      g.strokePath();
-    };
-    arc(66, 24, 0x8a6a10);
-    arc(66, 18, 0xffd84a);
-    arc(70, 5, 0xfff3a8);
-    g.fillStyle(0x4a3a10, 1).fillCircle(18, 30, 6).fillCircle(102, 30, 5);
-  });
-
-const LESSONS = ['LECCIÓN 1: AFINAR (OPCIONAL)', 'LECCIÓN 2: ¿ESTO ERA DO?', 'LECCIÓN 3: REBOBINA', 'LECCIÓN 4: PÁGAME', 'LECCIÓN 5: YA NO HAY LECCIÓN 5'];
+/** Franja de estática: rayitas blancas y grises que tiemblan. */
+const staticShot = (c: ShowCtx, x: number, y: number, size: number): Phaser.GameObjects.Container => {
+  const bits = [];
+  for (let i = 0; i < 6; i++) {
+    bits.push(c.scene.add.image(rand(-30, 30) * size, (i - 2.5) * 9 * size, squareTex(c.scene)).setBlendMode(ADD)
+      .setTint(i % 2 ? 0xffffff : YELLOW).setScale(rand(2, 5) * size, 0.3 * size));
+  }
+  return c.scene.add.container(x, y, bits);
+};
 
 /**
- * PLATANERO · EL CURSO COMPLETO EN VHS: la pantalla se vuelve una cinta vieja (tracking, PLAY y
- * contador), se rebobina sola, llueven plátanos y los golpes son plátanos. Remate: STOP.
+ * PLATANERO · EL CURSO COMPLETO EN VHS: la imagen se vuelve una cinta vieja (ruido, líneas de tracking,
+ * colores corridos y saltos); dispara franjas de estática. El rival se rebobina: retrocede a saltos,
+ * dejando copias hacia adelante. Remate: estática total… y STOP.
  */
 export const platanero: SuperShow = {
   lift: 90,
-  spin: 720,
   start(c: ShowCtx) {
-    bananaTex(c.scene);
     const noise = c.scene.add.graphics();
-    const osd = c.scene.add.text(110, 120, '', { fontFamily: MONO, fontSize: '40px', fontStyle: 'bold', color: '#ffffff' }).setStroke('#000000', 6);
-    const lesson = c.scene.add.text(GAME_WIDTH / 2, GAME_HEIGHT - 230, '', { fontFamily: MONO, fontSize: '34px', fontStyle: 'bold', color: '#ffffff', backgroundColor: '#1a1a7a', padding: { x: 14, y: 6 } }).setOrigin(0.5).setVisible(false);
-    c.front.add([noise, osd, lesson]);
-    Object.assign(c.data, { noise, osd, lesson, rewindAt: 900, rewinding: 0, lessonAt: 0, k: 0 });
+    const osd = c.scene.add.text(80, 70, '▶ PLAY', { fontFamily: MONO, fontSize: '54px', fontStyle: 'bold', color: '#ffffff' }).setShadow(3, 3, '#000000', 0);
+    c.front.add([noise, osd]);
+    Object.assign(c.data, { noise, osd });
   },
-  update(c: ShowCtx, dt: number) {
-    const t = c.t;
-    // Rebobinada de la cinta cada tanto: todo se sacude y salta el "REW".
-    if (t > c.data.rewindAt && t < c.duration - 400) {
-      c.data.rewindAt = t + rand(1100, 1600);
-      c.data.rewinding = t + 260;
-      c.scene.cameras.main.shake(220, 0.006);
-    }
-    const rewinding = t < c.data.rewinding;
-    // Indicador de la cinta y contador (horas:minutos:segundos de "clase").
-    const secs = Math.floor(t / 40);
-    const counter = `${String(Math.floor(secs / 3600)).padStart(1, '0')}:${String(Math.floor(secs / 60) % 60).padStart(2, '0')}:${String(secs % 60).padStart(2, '0')}`;
-    (c.data.osd as Phaser.GameObjects.Text).setText(`${rewinding ? '◀◀ REW' : Math.floor(t / 500) % 2 ? '▶ PLAY' : '▶'}\n${counter}`);
-    // Título de la "lección" que va cambiando.
-    if (t - c.data.lessonAt > 900) {
-      c.data.lessonAt = t;
-      (c.data.lesson as Phaser.GameObjects.Text).setText(LESSONS[c.data.k++ % LESSONS.length]).setVisible(true);
-    }
-    // Tracking: franjas de ruido que suben, más fuertes al rebobinar.
+  update(c: ShowCtx) {
     const g = c.data.noise as Phaser.GameObjects.Graphics;
-    g.clear();
-    const bands = rewinding ? 14 : 4;
-    for (let i = 0; i < bands; i++) {
-      const y = (t * 0.35 + i * 197 + (rewinding ? rand(0, 400) : 0)) % GAME_HEIGHT;
-      g.fillStyle(0xffffff, rewinding ? rand(0.08, 0.2) : 0.05).fillRect(rand(-60, 0), y, GAME_WIDTH + 60, rewinding ? rand(6, 30) : 3);
+    const blackout = c.data.blackout as boolean;
+    // Ruido: se redibuja a 20 fps, como una cinta.
+    if (every(c, 'noiseAt', 50)) {
+      g.clear();
+      const n = blackout ? 900 : 140;
+      for (let i = 0; i < n; i++) g.fillStyle(Math.random() < 0.5 ? 0xffffff : 0x000000, blackout ? 0.9 : rand(0.05, 0.25)).fillRect(rand(0, GAME_WIDTH), rand(0, GAME_HEIGHT), rand(2, blackout ? 40 : 8), rand(2, 4));
+      // Línea de tracking que baja por la pantalla.
+      const ty = (c.t * 0.4) % (GAME_HEIGHT + 200) - 100;
+      for (let k = 0; k < 6; k++) g.fillStyle(0xffffff, 0.08).fillRect(0, ty + k * 7, GAME_WIDTH, rand(2, 5));
+      g.fillStyle(0xffffff, 0.18).fillRect(0, ty + 20, GAME_WIDTH, 3);
     }
+    // Colores corridos: copias roja y azul.
+    if (every(c, 'bleedAt', 90)) for (const f of [c.owner, c.target]) {
+      echo(c.scene, f.sprite, { dx: -10, color: 0xff3355, alpha: 0.25, ms: 100 });
+      echo(c.scene, f.sprite, { dx: 10, color: 0x3366ff, alpha: 0.25, ms: 100 });
+    }
+    const cm = lensColor(c);
+    if (cm) {
+      cm.colorMatrix.desaturate();
+      cm.colorMatrix.contrast(0.25, true);
+      cm.colorMatrix.alpha = 0.55;
+    }
+    // Rebobinado: retrocede a saltos y deja copias hacia adelante.
+    const since = c.t - (c.data.hitAt ?? -9999);
+    const rew = since < 500;
+    (c.data.osd as Phaser.GameObjects.Text).setText(blackout ? '■ STOP' : rew ? '◀◀ REW' : '▶ PLAY').setVisible(Math.floor(c.t / 400) % 4 !== 3);
+    if (rew && every(c, 'rewAt', 60)) echo(c.scene, c.target.sprite, { dx: -c.owner.facing * 50, color: 0xdddddd, alpha: 0.35, ms: 200, add: false });
+    const jump = Math.floor(c.t / 70) % 5 === 0 ? 14 : 0;
+    victim(c, rew
+      ? { x: c.owner.facing * (Math.floor((since / 500) * 6) * 12), y: -jump, tint: Math.floor(c.t / 60) % 2 ? 0xffffff : 0xb0b0b0, fill: Math.floor(c.t / 60) % 2 === 1 }
+      : { y: -jump * 0.5 });
+  },
+  note(c, x, y, hit, final) {
+    return hit ? staticShot(c, x, y, final ? 1.6 : 1) : spark(c, x, y, YELLOW);
+  },
+  fly(c, _x, _y, _age, _final, obj) {
+    obj.setAngle(0);
+    for (const b of (obj as Phaser.GameObjects.Container).list as Phaser.GameObjects.Image[]) if (Math.random() < 0.4) b.setX(rand(-36, 36));
   },
   impact(c, x, y, final) {
-    if (!final) return void (Math.random() < 0.4 && floatText(c, x, y - 50, pick(['¡ESO NO!', 'OTRA VEZ', 'CASI', '¿DO?']), '#f2d24e', 28));
+    markHit(c, final);
+    burst(c, x, y, 0xffffff, 10, 600, squareTex(c.scene));
+    pixelFlash(c.scene, 6, 140);
+    if (!final) return;
+    const scene = c.scene;
     const t = chest(c.target);
-    c.fx.hit(t.x, t.y, 0xe8c547, true);
-    c.scene.cameras.main.shake(320, 0.016);
-    slam(c.scene, t.x, t.y - 300, '■ STOP', '#f2d24e', 150, 0);
+    // Estática total… y la imagen vuelve de golpe.
+    c.data.blackout = true;
+    colorFlash(scene, 'gray', 500);
+    scene.time.delayedCall(360, () => {
+      c.data.blackout = false;
+      pixelFlash(scene, 30, 500);
+      shockwave(scene, 0.5, 800);
+      for (let k = 0; k < 4; k++) c.fx.ring(t.x, t.y, k % 2 ? 0xffffff : YELLOW, 240 + k * 170, 0.5);
+      c.fx.hit(t.x, t.y, YELLOW, true);
+      scene.cameras.main.shake(500, 0.024);
+      slam(scene, GAME_WIDTH / 2, 420, '■ STOP', '#f2d24e', 170, 0);
+    });
   },
 };

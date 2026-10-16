@@ -1,57 +1,75 @@
 import Phaser from 'phaser';
-import { GAME_HEIGHT, GAME_WIDTH, GROUND_Y } from '../../config';
-import { chest, slam, veil, type ShowCtx, type SuperShow } from './kit';
+import { GAME_HEIGHT, GAME_WIDTH } from '../../config';
+import { chest, emit, pick, rand, slam, veil, type ShowCtx, type SuperShow } from './kit';
+import { ADD, burst, colorFlash, comet, glowTex, lensBarrel, markHit, orb, shockwave, spark, victim } from './energy';
 
-const LIGHTS = [0xff3fa4, 0x3dd6ff, 0xffe14d, 0x7cff4d, 0xa36bff];
+const COLORS = [0xff3fa4, 0x3af0ff, 0xffe14d, 0x9b5cff];
+/** Un golpe de dembow (ms). */
+const BEAT = 300;
 
-/** CLAVITO · DEMBOW APOCALÍPTICO: columnas de luz de colores que barren la pantalla y destellos al ritmo del beat; remate: el drop. */
+/**
+ * CLAVITO · DEMBOW APOCALÍPTICO: láseres de colores barren la pantalla y toda la imagen rebota con el beat;
+ * dispara pulsos de color que van saltando. El rival rebota obligado al ritmo.
+ * Remate: negro y silencio medio segundo… y el drop: flash de color y lluvia de chispas.
+ */
 export const clavito: SuperShow = {
   start(c: ShowCtx) {
-    const g = c.scene.add.graphics().setBlendMode(Phaser.BlendModes.ADD);
-    c.back.add(g);
-    Object.assign(c.data, { g, beatAt: 0, beat: 0 });
+    const lasers = c.scene.add.graphics().setBlendMode(ADD);
+    c.back.add(lasers);
+    Object.assign(c.data, { lasers });
   },
-  update(c: ShowCtx) {
-    // Beat de dembow: cada golpe sacude un poco y cambia los colores.
-    if (c.t - c.data.beatAt > 300) {
-      c.data.beatAt = c.t;
-      c.data.beat++;
-      c.scene.cameras.main.shake(70, c.data.beat % 4 === 3 ? 0.006 : 0.003);
-    }
-    const sinceBeat = (c.t - c.data.beatAt) / 300;
-    const g = c.data.g as Phaser.GameObjects.Graphics;
+  update(c: ShowCtx, dt: number) {
+    // Patrón de dembow: golpe fuerte, contratiempo y golpe.
+    const ph = (c.t % BEAT) / BEAT;
+    const beat = Math.max(0, 1 - ph * 4) + (ph > 0.5 ? Math.max(0, 1 - (ph - 0.5) * 6) * 0.6 : 0);
+    const dark = c.data.drop === 'dark';
+    const g = c.data.lasers as Phaser.GameObjects.Graphics;
     g.clear();
-    // Destello de pantalla completa que se apaga en cada beat
-    g.fillStyle(LIGHTS[c.data.beat % LIGHTS.length], 0.12 * (1 - sinceBeat)).fillRect(0, 0, GAME_WIDTH, GAME_HEIGHT);
-    // Columnas de luz que barren de lado a lado
-    for (let i = 0; i < 6; i++) {
-      const x = GAME_WIDTH / 2 + Math.sin(c.t / 420 + i * 1.3) * GAME_WIDTH * 0.55;
-      const col = LIGHTS[(i + c.data.beat) % LIGHTS.length];
-      g.fillStyle(col, 0.1).fillRect(x - 40, 0, 80, GAME_HEIGHT);
-      g.fillStyle(col, 0.18).fillRect(x - 8, 0, 16, GAME_HEIGHT);
+    if (!dark) {
+      for (let i = 0; i < 8; i++) {
+        const ox = (i % 2 ? 0 : GAME_WIDTH);
+        const a = Math.PI / 2 + Math.sin(c.t / (260 + i * 40) + i) * 1.1;
+        const ex = ox + Math.cos(a) * 2400 * (i % 2 ? 1 : -1);
+        const ey = -60 + Math.sin(a) * 2400;
+        const col = COLORS[(i + Math.floor(c.t / BEAT)) % COLORS.length];
+        g.lineStyle(26, col, 0.08 + beat * 0.08).lineBetween(ox, -60, ex, ey);
+        g.lineStyle(4, col, 0.5 + beat * 0.4).lineBetween(ox, -60, ex, ey);
+      }
+      // Pantalla que "bombea" con el beat.
+      const b = lensBarrel(c);
+      if (b) b.amount = 1 + beat * 0.035;
+      if (Math.random() < dt * 30) emit(c, glowTex(c.scene), rand(0, GAME_WIDTH), rand(0, GAME_HEIGHT), { life: 0.4, scale: rand(0.5, 1.2), grow: -2, tint: pick(COLORS), add: true, layer: 'back' });
     }
+    // El rival rebota al ritmo.
+    victim(c, dark ? { tint: 0x333333 } : { y: -beat * 34, sy: 1 - beat * 0.12, sx: 1 + beat * 0.08, tint: COLORS[Math.floor(c.t / BEAT) % COLORS.length], fill: beat > 0.85 });
+  },
+  note(c, x, y, hit, final) {
+    return hit ? orb(c, x, y, final ? 0xffffff : pick(COLORS), final ? 50 : 30) : spark(c, x, y, pick(COLORS));
+  },
+  fly(c, x, y, age, final, obj) {
+    // Va saltando como una pelota con el beat.
+    obj.setY(y - Math.abs(Math.sin(age * 10)) * 60);
+    comet(c, x, obj.y, pick(COLORS), final ? 1.2 : 0.7, 0.3);
   },
   impact(c, x, y, final) {
+    markHit(c, final);
+    burst(c, x, y, pick(COLORS), 12, 700);
     if (!final) return;
     const scene = c.scene;
     const t = chest(c.target);
-    veil(scene, 0xffffff, 0.9, 120, 30, 300);
-    scene.cameras.main.shake(500, 0.024);
-    c.fx.hit(t.x, t.y, 0xff3fa4, true);
-    // Onda que parte el piso hacia los dos lados
-    const wave = scene.add.graphics().setDepth(47).setBlendMode(Phaser.BlendModes.ADD);
-    const s = { k: 0 };
-    scene.tweens.add({
-      targets: s, k: 1, duration: 650, ease: 'Cubic.easeOut',
-      onUpdate: () => {
-        wave.clear();
-        for (let r = 0; r < 3; r++) {
-          const w = s.k * (900 - r * 200);
-          wave.lineStyle(14 - r * 4, LIGHTS[r], 1 - s.k).strokeEllipse(t.x, GROUND_Y, w * 2, w * 0.22);
-        }
-      },
-      onComplete: () => wave.destroy(),
+    // Silencio y negro… y el drop.
+    c.data.drop = 'dark';
+    veil(scene, 0x000000, 0.95, 420, 30, 120, 47);
+    scene.time.delayedCall(480, () => {
+      c.data.drop = 'go';
+      colorFlash(scene, 'hue', 700);
+      veil(scene, 0xff3fa4, 0.5, 60, 10, 400, 48);
+      shockwave(scene, 0.8, 900);
+      for (const col of COLORS) burst(c, t.x, t.y, col, 22, 1600);
+      for (let k = 0; k < 6; k++) c.fx.ring(t.x, t.y, COLORS[k % COLORS.length], 240 + k * 170, 0.5);
+      c.fx.hit(t.x, t.y, 0xff3fa4, true);
+      scene.cameras.main.shake(700, 0.032);
+      slam(scene, GAME_WIDTH / 2, 420, '¡DROP!', '#ff3fa4', 190);
     });
-    slam(scene, t.x, t.y - 300, '¡DROP!', '#ff3fa4', 170);
   },
 };

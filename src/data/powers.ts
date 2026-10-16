@@ -4,7 +4,7 @@ import type { FighterId } from './fighters';
 export type PowerLook =
   | 'code' | 'note' | 'wave' | 'laser' | 'pick' | 'lick' | 'meteor' | 'tray' | 'kiss' | 'redStar' | 'miniNote'
   | 'flask' | 'lash' | 'banana' | 'phoenix' | 'like' | 'book' | 'pearl' | 'cheque' | 'star8' | 'firefly' | 'darkOrb' | 'feedback' | 'shriek' | 'soundwave'
-  | 'decree' | 'sun' | 'drum' | 'marble' | 'cross' | 'needle' | 'coin' | 'mirror' | 'ring' | 'dagger' | 'spear' | 'buster' | 'slash';
+  | 'decree' | 'sun' | 'drum' | 'marble' | 'cross' | 'needle' | 'coin' | 'mirror' | 'ring' | 'dagger' | 'spear' | 'buster' | 'slash' | 'tornado';
 
 /**
  * Un disparo del poder básico (↓ ↘ → + P). Las velocidades y tamaños multiplican los valores base
@@ -90,6 +90,8 @@ export interface ShotSpec {
   track?: number;
   /** Al llegar a `range` se planta parado en el piso estos ms: bloquea los poderes del rival y no pega. */
   wall?: number;
+  /** Si pega, jala un poco al rival hacia el que lo lanzó (px aproximados). */
+  tug?: number;
   /** Si pega, jala al rival hasta quedar a distancia de golpe. */
   pull?: boolean;
   /** No lanza nada: carga el próximo golpe normal, que pega `empower` × (se gasta al conectar). */
@@ -117,55 +119,63 @@ export interface ShotSpec {
   steal?: number;
   /** Vida máxima (s). */
   life?: number;
+  /** No lanza nada: por estos ms camina y golpea más rápido (Fighter.haste). */
+  haste?: number;
+  /** Multiplicador de velocidad según la vez que se lanza el poder (en ciclo): [1ª, 2ª, 3ª…] y vuelve a empezar. */
+  speedCycle?: number[];
+  /** Si pega, el que lo lanzó se cura esta fracción del daño. */
+  drain?: number;
+  /** Tributo: cada `every` aciertos de este poder, el disparo vuelve al que lo lanzó y lo cura `drain` × el daño. */
+  tribute?: { every: number; drain: number };
+  /** Si pega, el rival no puede usar su poder básico estos ms (no se acumula mientras dura). */
+  silence?: number;
 }
 
 /** Poder básico de cada luchador. El Acople usa uno de sus tres al azar. */
 export const POWERS: Partial<Record<FighterId, ShotSpec[]>> = {
-  // Ráfaga de dos disparos de buster morados, muy rápidos (el golpe sale y recarga antes: data/moveset.ts).
-  erp: [0, 110].map((delay) => ({ look: 'buster' as const, color: 0x9b30ff, speed: 1.8, size: 1.2, damage: 0.4, delay })),
-  // Nota bomba: cae al piso y explota a los 1,5 s; si pega directo, explota al instante y pega más.
-  mayin: [{ look: 'note', size: 1.1, damage: 1.05, fuse: 1500, explode: 230, direct: 1.25 }],
-  // Onda afinada: va recta y corrige su altura hacia el pecho del rival.
-  george: [{ look: 'wave', damage: 1, track: 2.2 }],
+  // Disparo de buster morado, recto y rapidísimo desde el puño: el poder más simple del juego.
+  erp: [{ look: 'buster', color: 0x9b30ff, speed: 2.2, size: 1.3, damage: 0.85 }],
+  // Onda afinada: va recta y corrige su altura hacia el pecho del rival. Si pega, silencia al rival 3 s.
+  george: [{ look: 'wave', damage: 0.7, track: 2.2, silence: 3000 }],
   // Láser de ecualizador que cruza la pantalla. Manteniendo el clic se carga (hasta 2 s) y sale más grueso y fuerte.
   pepper: [{ look: 'laser', size: 0.6, damage: 0.75, beam: 260, charged: { size: 2.4, damage: 2, push: 2.5 } }],
   // Golpe de oro: su próximo golpe normal pega el doble (se gasta al conectar).
   slandor: [{ look: 'pick', empower: 2 }],
   // El lick que funciona: sube de nivel cada vez que pega (3 niveles); si falla, vuelve al 1.
   pentalick: [{ look: 'lick', size: 0.75, damage: 0.8, levels: 3 }],
-  // Bandeja en bumerán, rápida: atraviesa poderes y pega a la ida y a la vuelta.
-  chantal: [{ look: 'tray', speed: 1.6, size: 0.8, damage: 0.55, boomerang: 640, hits: 2, pierce: true }],
-  // Tres canicas rápidas que salen abiertas y curvan hacia el rival.
-  jeanpierre: [[0, 500], [90, -350], [180, 150]].map(([delay, vz0]) => ({ look: 'marble' as const, speed: 1.35, size: 0.42, damage: 0.35, delay, vz0, homing: 2.4, life: 2.2 })),
-  // Dos estrellas tiradas al piso que rebotan hacia el rival.
-  ferdex: [0, 160].map((delay) => ({ look: 'redStar' as const, size: 0.5, damage: 0.5, delay, bounce: true, vz0: -700, seek: 2.5, life: 3 })),
-  // Tres parejas de notitas pegadas, una encima de la otra, a la altura de la mano.
-  // Salen casi quietas y de golpe disparan rapidísimo.
-  turboshred: [0, 110, 220].flatMap((delay) => [24, -24].map((dz) => ({ look: 'miniNote' as const, size: 0.45, damage: 0.2, delay, speed: 2.4, windup: 450, dz }))),
+  // Bandeja en bumerán, rápida: atraviesa poderes y pega a la ida y a la vuelta. Si el rival la esquiva, se rompe.
+  chantal: [{ look: 'tray', speed: 2.4, size: 0.8, damage: 0.55, boomerang: 1000, hits: 2, pierce: true }],
+  // Tres canicas seguidas y rápidas que van de frente ondulando arriba y abajo; cada una empuja un poco al rival.
+  jeanpierre: [0, 60, 120].map((delay, i) => ({
+    // Cada canica empuja un poco al rival hacia atrás.
+    look: 'marble' as const, speed: 2, size: 0.42, damage: 0.32, delay, wave: { amp: i === 1 ? -70 : 70, freq: 11 }, push: 520,
+  })),
+  // MayinBlues y Ferdex no lanzan nada: su poder es una embestida (data/moveset.ts, `rush`).
+  // Tempo imposible: no lanza nada; por 3 s camina y golpea más rápido (la recarga corre al terminar).
+  turboshred: [{ look: 'miniNote', haste: 3000 }],
   // Cruz que crece hasta llegar al rival.
   toxicity: [{ look: 'cross', size: 0.55, damage: 1.1, grow: 5 }],
   // Latigazo de cuerda: si pega, jala al rival hacia ella.
   rematada: [{ look: 'lash', size: 0.7, damage: 1.2, beam: 120, range: 560, pull: true }],
-  // Libro-muro: vuela un poco y se planta parado en el piso 3 s, bloqueando los poderes del rival.
-  escalas: [{ look: 'book', size: 1.1, damage: 1, range: 340, wall: 3000 }],
+  // Doctor Escalas no lanza nada: su poder es un contraataque (data/moveset.ts, `counter`).
   // Tres agujas de jade desde alturas distintas, apuntadas al rival.
   tayloy: [[0, 240], [70, 0], [140, -150]].map(([delay, aimed]) => ({ look: 'needle' as const, size: 0.5, damage: 0.35, delay, aimed })),
-  // Moneda rapidísima: si pega, pega dos veces.
-  jesex: [{ look: 'coin', speed: 2.3, size: 0.45, damage: 0.45, hits: 2, stick: true }],
-  // Estrella que avanza por el piso, sube hacia el rival y explota (KABOOM).
-  markus: [{ look: 'star8', speed: 1.5, size: 0.9, damage: 1.1, rise: 520, homing: 3, explode: 240, life: 4.5 }],
+  // Moneda rápida: si pega, le roba un poco de vida al rival (se cura el 60 % del daño). Sale cada vez más rápida: normal, +10 % y +25 %, y vuelve a empezar.
+  jesex: [{ look: 'coin', speed: 2.3, size: 0.5, damage: 0.7, drain: 0.6, speedCycle: [1, 1.1, 1.25] }],
+  // Tornado de arena: avanza recto y, si pega, jala un poco al rival hacia Markus.
+  markus: [{ look: 'tornado', speed: 1.3, size: 2.1, damage: 0.9, tall: 420, tug: 260 }],
   // Plátano que se arrastra por el piso hasta el rival y pega abajo.
   platanero: [{ look: 'banana', size: 0.6, damage: 0.7, low: true, seek: 3, life: 3.2 }],
-  // Tres ondas de audio en aros verticales, de grande a pequeña, una detrás de otra: pegan y empujan lejos.
-  ricardo: [[0, 1.8, 0.45], [90, 1.3, 0.3], [180, 0.85, 0.2]].map(([delay, size, damage]) => ({ look: 'ring' as const, color: 0xb04dff, size, damage, delay, push: 1100 })),
+  // Tres aros de corazón, de grande a pequeño, uno detrás de otro: pegan y empujan lejos.
+  ricardo: [[0, 2.6, 0.45], [90, 1.9, 0.3], [180, 1.3, 0.2]].map(([delay, size, damage]) => ({ look: 'ring' as const, color: 0xb04dff, size, damage, delay, push: 1100 })),
   // Corazones de seguidores que giran a su alrededor como escudo y después salen disparados.
   kimberly: [0, 1 / 3, 2 / 3].map((phase) => ({ look: 'like' as const, size: 0.6, damage: 0.4, orbit: 2000, phase })),
   // Jaula de corrección: esfera enrejada que, si pega, encierra al rival un momento (se gasta al salir; mientras se recarga, esfera lisa).
   nosu: [{ look: 'soundwave', color: 0xb04dff, size: 0.9, damage: 0.45, cage: 1100 }],
   // Espejo que se queda delante: si un poder rival lo toca, lo copia y lo dispara de vuelta.
   mimetico: [{ look: 'mirror', size: 0.85, damage: 0.5, range: 380, hover: 1800, mirror: true }],
-  // Tres cortes de sable altos, seguidos, hacia el rival: normal, rápido y rapidísimo (los últimos alcanzan a los primeros).
-  virrey: [[0, 1], [120, 1.5], [240, 2]].map(([delay, speed]) => ({ look: 'slash' as const, size: 0.6, damage: 0.38, delay, speed, tall: 320 })),
+  // Corte de sable alto hacia el rival. Tributo: al tercer acierto, el corte vuelve a él y lo cura (FightScene.tribute).
+  virrey: [{ look: 'slash', size: 0.48, damage: 0.9, speed: 1.5, tall: 240, tribute: { every: 3, drain: 0.8 } }],
   // Sol que se carga girando a su alrededor (sin pegar) y luego sale disparado al rival. Puede tener varios (data/moveset.ts).
   inti: [{ look: 'sun', size: 0.8, damage: 0.9, orbit: 1200, charge: true }],
   // Lanza de chonta envenenada: sale rapidísima en línea recta y, si pega, el veneno pega enseguida otra vez.
@@ -194,10 +204,22 @@ const chaos = (): ShotSpec[] => {
   }));
 };
 
+/**
+ * De dónde sale el poder: puño en la pose del poder, como fracción de la altura del luchador
+ * ([adelante, arriba]). Por defecto [0.34, 0.58].
+ */
+const FIST: Partial<Record<FighterId, [number, number]>> = {
+  // El Acople lanza con la mano abierta y el brazo alto, y su arte se ve más grande que su alto de guardia.
+  acople: [0.38, 0.77],
+  // ERP dispara el buster con el puño a la altura del pecho.
+  erp: [0.36, 0.74],
+};
+export const powerFist = (id: FighterId): [number, number] => FIST[id] ?? [0.34, 0.58];
+
 /** Disparos del poder de `id` (El Acople elige uno de los suyos). */
 export const powerFor = (id: FighterId): ShotSpec[] => {
   if (id === 'acople') return ACOPLE_POWERS[Math.floor(Math.random() * ACOPLE_POWERS.length)];
   // Clavito: caos, cada vez distinto.
   if (id === 'clavito') return chaos();
-  return POWERS[id] ?? POWERS.mayin!;
+  return POWERS[id] ?? POWERS.george!;
 };

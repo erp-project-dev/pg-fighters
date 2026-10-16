@@ -11,11 +11,11 @@ import { SHOWS } from '../visuals/supers';
 import { stepBits, type NoteObj, type ShowCtx, type SuperShow } from '../visuals/supers/kit';
 import type { Fighter } from './Fighter';
 
-/**
- * Golpe de una nota. Devuelve true si la nota se consume (impacto o bloqueo)
- * y false si el rival es intocable en ese momento (la nota se desvanece).
- */
-export type NoteStrike = (owner: Fighter, x: number, y: number, damage: number, final: boolean) => boolean;
+/** Qué pasó con una nota que llegó al rival: conectó, la bloqueó o era intocable (se desvanece). */
+export type NoteResult = 'hit' | 'block' | 'miss';
+
+/** Golpe de una nota: la nota se consume salvo que sea 'miss'. */
+export type NoteStrike = (owner: Fighter, x: number, y: number, damage: number, final: boolean) => NoteResult;
 
 interface FlyingNote {
   obj: NoteObj;
@@ -31,6 +31,8 @@ interface FlyingNote {
 }
 
 const GLYPHS = ['♪', '♫', '♬', '♩'];
+/** Lo que dura el remate de un show antes de volver a la pelea (ms). */
+const FINALE_MS = 850;
 
 /**
  * Actuación del súper: el luchador toca la guitarra y las notas salen volando hacia el rival.
@@ -65,13 +67,15 @@ export class GuitarSolo {
       const back = scene.add.container(0, 0).setDepth(19.5).setAlpha(0);
       const front = scene.add.container(0, 0).setDepth(30).setAlpha(0);
       scene.tweens.add({ targets: [back, front], alpha: 1, duration: 220 });
-      this.ctx = { scene, fx, owner, target: owner.opponent, back, front, t: 0, duration: this.solo.duration, data: {}, bits: [] };
+      this.ctx = { scene, fx, owner, target: owner.opponent, back, front, t: 0, duration: this.solo.duration, data: {}, bits: [], cleanup: [] };
       this.show.start?.(this.ctx);
     }
   }
 
   get finished(): boolean {
-    return this.t >= this.solo.duration && !this.notes.some((n) => n.hit && !n.spent);
+    // Tras el remate, el show sigue un momento para que su estallido se vea completo.
+    const finale = this.owner.soloFinalAt === null || !this.show || this.t - this.owner.soloFinalAt >= FINALE_MS;
+    return this.t >= this.solo.duration && finale && !this.notes.some((n) => n.hit && !n.spent);
   }
 
   /** Punto desde donde salen las notas (cuerpo de la guitarra). */
@@ -97,6 +101,8 @@ export class GuitarSolo {
       this.ctx.t = this.t;
       this.show.update?.(this.ctx, dt);
       stepBits(this.ctx, dt);
+      // La reacción del rival (fxPose) se ve aunque esté congelado por el hitstop.
+      this.ctx.target.sync();
     }
 
     const target = this.owner.opponent;
@@ -115,11 +121,12 @@ export class GuitarSolo {
         if (d < 110) {
           n.spent = true;
           if (n.final) this.owner.soloFinalAt = this.t;
-          const landed = this.strike(this.owner, n.x, n.y, this.solo.damage, n.final);
-          n.life = n.age + (landed ? 0 : 0.3);
-          if (landed) {
+          const result = this.strike(this.owner, n.x, n.y, this.solo.damage, n.final);
+          n.life = n.age + (result === 'miss' ? 0.3 : 0);
+          if (result !== 'miss') {
             this.fx.ring(n.x, n.y, this.owner.def.color, 120, 0.25);
-            if (this.ctx) this.show?.impact?.(this.ctx, n.x, n.y, n.final);
+            // Los efectos del show (y su remate animado) solo salen con los golpes que aciertan, no con los bloqueados.
+            if (this.ctx && result === 'hit') this.show?.impact?.(this.ctx, n.x, n.y, n.final);
           }
         }
       } else if (!n.hit) {
@@ -130,12 +137,14 @@ export class GuitarSolo {
       const wobble = n.hit ? Math.sin(n.age * 14) * this.solo.wobble * 0.3 : 0;
       const fade = Math.min(1, (n.life - n.age) / 0.25);
       const spin = this.show?.spin;
-      n.obj.setPosition(n.x, n.y + wobble).setAlpha(Math.max(0, fade)).setAngle(spin ? n.age * spin * this.owner.facing : Math.sin(n.age * 9) * 20);
-      if (this.owner.def.superMove.solo === 'feedback') {
+      const angle = this.show?.aim && n.hit ? Phaser.Math.RadToDeg(Math.atan2(n.vy, n.vx)) : spin ? n.age * spin * this.owner.facing : Math.sin(n.age * 9) * 20;
+      n.obj.setPosition(n.x, n.y + wobble).setAlpha(Math.max(0, fade)).setAngle(angle);
+      if (n.hit && !n.spent && this.ctx) this.show?.fly?.(this.ctx, n.x, n.y + wobble, n.age, n.final, n.obj);
+      if (this.owner.def.superMove.solo === 'feedback' && !this.show?.note) {
         const size = n.final ? 1.1 : n.hit ? 0.72 : 0.38;
         n.obj.setScale(size * (1 + Math.sin(n.age * 24) * 0.08));
       }
-      if (n.hit && !n.spent && Math.random() < 0.7) this.fx.trail(n.x, n.y + wobble, this.owner.def.color, 34);
+      if (n.hit && !n.spent && !this.show?.fly && Math.random() < 0.7) this.fx.trail(n.x, n.y + wobble, this.owner.def.color, 34);
       if (n.age >= n.life) n.spent = true;
     }
     for (const n of this.notes) if (n.age >= n.life) n.obj.destroy();
@@ -148,8 +157,9 @@ export class GuitarSolo {
     this.pluck = 1;
     const key = `super-note-${o.def.id}`;
     const big = note.hit ? (this.solo.guitar === 'hollow' ? 1.5 : 1.15) : 0.8;
-    const custom = this.ctx ? this.show?.note?.(this.ctx, x, y, !!note.hit, !!note.final, this.next - 1) ?? this.powerNote(x, y, !!note.hit) : null;
-    const obj = o.def.superMove.solo === 'feedback' ? this.buildOrb(x, y, !!note.hit, !!note.final) : custom ? custom : this.scene.textures.exists(key)
+    const own = this.ctx ? this.show?.note?.(this.ctx, x, y, !!note.hit, !!note.final, this.next - 1) ?? null : null;
+    const custom = own ?? (o.def.superMove.solo === 'feedback' ? this.buildOrb(x, y, !!note.hit, !!note.final) : this.ctx ? this.powerNote(x, y, !!note.hit) : null);
+    const obj = custom ? custom : this.scene.textures.exists(key)
       ? this.scene.add.image(x, y, key).setScale(big)
       : this.scene.add.text(x, y, GLYPHS[(note.midi + note.t) % GLYPHS.length], {
           fontFamily: FONTS.body,
@@ -163,7 +173,7 @@ export class GuitarSolo {
     const n: FlyingNote = {
       obj, x, y, age: 0, hit: !!note.hit, final: !!note.final, spent: false,
       vx: note.hit ? o.facing * this.solo.speed * 0.6 : o.facing * (60 + Math.random() * 160),
-      vy: note.hit ? spread * 400 : -220 - Math.random() * 200,
+      vy: note.hit ? spread * 400 * (this.show?.spread ?? 1) : -220 - Math.random() * 200,
       life: note.hit ? 3 : 0.9,
     };
     this.notes.push(n);
@@ -278,6 +288,9 @@ export class GuitarSolo {
     this.owner.soloFinalAt = null;
     this.owner.soloPluck = 0;
     if (this.ctx) {
+      for (const fn of this.ctx.cleanup) fn();
+      this.ctx.target.fxPose = null;
+      this.ctx.target.sync();
       const { back, front } = this.ctx;
       this.scene.tweens.add({ targets: [back, front], alpha: 0, duration: 260, onComplete: () => { back.destroy(); front.destroy(); } });
       this.scene.tweens.add({ targets: this.owner, visualLift: 0, duration: 240, ease: 'Quad.easeIn' });

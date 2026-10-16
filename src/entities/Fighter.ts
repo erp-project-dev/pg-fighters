@@ -5,7 +5,7 @@ import { GROUND_Y, STAGE_LEFT, STAGE_RIGHT } from '../config';
 import { tintOf, type FighterDef } from '../data/fighters';
 import { CHAIN_FINISHER_BONUS, MOVES, comboScale, type MoveDef, type MoveId } from '../data/moves';
 import { chainOf, kitOf, moveFor } from '../data/moveset';
-import { POWERS } from '../data/powers';
+import { POWERS, powerFist } from '../data/powers';
 import { SOLOS } from '../data/solos';
 import { superMotion } from '../visuals/supers/choreography';
 import { artScale, poseFrames, resolvePose, type Pose } from '../systems/FighterArt';
@@ -44,6 +44,8 @@ export interface Arena {
   startSolo(owner: Fighter): void;
   onDash(owner: Fighter): void;
   onAttack(owner: Fighter, move: MoveDef): void;
+  /** Contraataque de `owner` (le pegaron en guardia): reaparece junto a `attacker` y le devuelve el golpe. */
+  counter(owner: Fighter, attacker: Fighter): void;
 }
 
 export type HitResult = 'hit' | 'block' | 'whiff';
@@ -76,6 +78,9 @@ const BACKDASH_MS = 300;
 const WALK_MUL = 1.35;
 /** Caminar hacia atrás es algo más lento que hacia adelante (como en los juegos de pelea). */
 const BACK_WALK = 0.85;
+/** Tempo imposible: caminar más rápido y golpes más cortos (multiplicadores). */
+const HASTE_WALK = 1.4;
+const HASTE_ATTACK = 0.72;
 const DASH_MUL = 1.25;
 const BACKDASH_MUL = 0.9;
 /** Rozamiento durante el dash (más bajo = recorre más). */
@@ -98,6 +103,19 @@ const MOTIONS = {
   special: { steps: [[2], [3, 6]] as Dir[][], window: 420 },
 };
 
+/** Reacción visual del rival durante un súper: desplaza, gira, estira y tiñe el sprite sin tocar su cuerpo. */
+export interface VictimPose {
+  x?: number;
+  y?: number;
+  angle?: number;
+  sx?: number;
+  sy?: number;
+  tint?: number;
+  /** Tinte plano (silueta de un color) en vez de multiplicar. */
+  fill?: boolean;
+  alpha?: number;
+}
+
 export class Fighter {
   x: number;
   z = 0;
@@ -116,6 +134,8 @@ export class Fighter {
   visualLift = 0;
   /** Rasgueo del solo (1 justo al sonar una nota, baja a 0): mueve la pose fija del súper. */
   soloPluck = 0;
+  /** Pose solo visual que le impone el súper del rival (giro, temblor, color…). */
+  fxPose: VictimPose | null = null;
   /** Tinte forzado (p. ej. amigo en "modo hater" en la historia). */
   tintOverride: number | null = null;
   meter = 0;
@@ -130,6 +150,14 @@ export class Fighter {
   moveConnected = false;
   /** El golpe actual ya resolvió su impacto (no vuelve a pegar). */
   moveDone = false;
+  /** Tempo imposible (Turboshred): hasta este momento camina y golpea más rápido. */
+  hasteUntil = 0;
+  /** Silenciado (onda de George): hasta este momento no puede usar su poder básico. */
+  silencedUntil = 0;
+  /** La embestida ya frenó (al conectar o al terminar su fase activa). */
+  private rushStopped = false;
+  private rushRingAt = 0;
+  private lastHasteGhost = 0;
   private moveSpawned = false;
   /** Poder que se carga: momento en que empezó a cargar (-1 = no carga) y carga al soltar (0–1). */
   private chargeFrom = -1;
@@ -152,6 +180,10 @@ export class Fighter {
   flashUntil = 0;
   /** Nivel del lick de Pentalick (0 = primero): sube con cada lick que pega. */
   lickLevel = 0;
+  /** Aciertos acumulados del poder con tributo (El Virrey): cada tercero roba vida. */
+  tributeHits = 0;
+  /** Veces que lanzó su poder en la ronda (para los que cambian cada tantas, como la moneda de Jesex). */
+  powerCasts = 0;
   /** Golpe de oro cargado (Slandor): multiplicador del próximo golpe normal que conecte (0 = sin cargar). */
   gold = 0;
   /** El golpe de oro se apaga solo en este momento. */
@@ -229,6 +261,25 @@ export class Fighter {
     return this.now < this.invulnUntil || this.state === 'down' || this.state === 'getup' || this.state === 'ko' || this.state === 'win' || this.state === 'intro';
   }
 
+  get hasted(): boolean {
+    return this.now < this.hasteUntil;
+  }
+
+  get silenced(): boolean {
+    return this.now < this.silencedUntil;
+  }
+
+  /** Tempo imposible por `ms`: la recarga del poder empieza recién al terminar. */
+  haste(ms: number): void {
+    this.hasteUntil = this.now + ms;
+    this.powerReadyAt = Infinity;
+  }
+
+  /** En guardia de contraataque (fase activa). */
+  get countering(): boolean {
+    return this.state === 'attack' && !!this.move?.counter && this.phase !== 'recovery';
+  }
+
   /** Fase del golpe actual. */
   get phase(): 'startup' | 'active' | 'recovery' | null {
     if (this.state !== 'attack' || !this.move) return null;
@@ -262,6 +313,8 @@ export class Fighter {
     this.facing = facing;
     this.hp = this.maxHp;
     this.powerReadyAt = 0;
+    this.hasteUntil = 0;
+    this.silencedUntil = 0;
     this.blockLocked = false;
     this.rage = false;
     this.move = null;
@@ -273,6 +326,8 @@ export class Fighter {
     this.poisonUntil = 0;
     this.gold = 0;
     this.lickLevel = 0;
+    this.tributeHits = 0;
+    this.powerCasts = 0;
     this.cageReadyAt = 0;
     this.entrance = null;
     this.sprite.setAlpha(1).setTint(this.tintOverride ?? tintOf(this.def));
@@ -380,7 +435,7 @@ export class Fighter {
     const h = (intent.right ? 1 : 0) - (intent.left ? 1 : 0);
     if (h) {
       const forward = h === this.facing;
-      this.vx = h * this.def.stats.walk * WALK_MUL * (forward ? 1 : BACK_WALK) * (this.rage ? 1.25 : 1);
+      this.vx = h * this.def.stats.walk * WALK_MUL * (forward ? 1 : BACK_WALK) * (this.rage ? 1.25 : 1) * (this.hasted ? HASTE_WALK : 1);
       if (this.state !== 'walk') this.setState('walk');
     } else if (this.state !== 'idle') {
       this.setState('idle');
@@ -405,7 +460,7 @@ export class Fighter {
       id = btn === 'kick' ? 'airKick' : 'airPunch';
     } else if (btn !== 'kick' && this.matches('uppercut')) {
       id = 'uppercut';
-    } else if (btn !== 'kick' && this.matches('special') && (kitOf(this.def.id).multi || !this.arena.hasProjectile(this)) && !this.gold && this.now >= this.powerReadyAt) {
+    } else if (btn !== 'kick' && this.matches('special') && (kitOf(this.def.id).multi || !this.arena.hasProjectile(this)) && !this.gold && this.now >= this.powerReadyAt && !this.silenced) {
       id = 'special';
     } else if (this.intent.down) {
       id = btn === 'kick' ? 'sweep' : 'crouchJab';
@@ -422,7 +477,15 @@ export class Fighter {
     return true;
   }
 
+  /** Golpe del contraataque (FightScene.counter): pose de puño, sin zona de golpe propia (el daño ya lo aplica la escena). */
+  playCounterStrike(): void {
+    this.startMove({ ...moveFor(this.def.id, 'jab'), id: 'special', pose: 'punch', startup: 0, active: 140, recovery: 320, reach: 0, lunge: 0 }, false);
+    this.moveSpawned = true;
+  }
+
   private startMove(move: MoveDef, chained: boolean): void {
+    // Con el tempo imposible, los golpes salen y se recuperan más rápido (el ultimate no).
+    if (this.hasted && move.id !== 'super') move = { ...move, startup: move.startup * HASTE_ATTACK, active: move.air ? move.active : move.active * HASTE_ATTACK, recovery: move.recovery * HASTE_ATTACK };
     this.chainCount = chained ? this.chainCount + 1 : 1;
     this.finisher = chained && this.chainCount >= chainOf(this.def.id);
     this.move = move;
@@ -431,6 +494,7 @@ export class Fighter {
     this.moveConnected = false;
     this.moveDone = false;
     this.moveSpawned = false;
+    this.rushStopped = false;
     this.chargeFrom = -1;
     this.chargeStep = 0;
     this.shotCharge = 0;
@@ -490,6 +554,18 @@ export class Fighter {
     if (this.invulnerable) return { result: 'whiff', damage: 0 };
     const armored = this.absorb(attacker, move, opts.damage);
     if (armored) return armored;
+    // Contraataque: recibe el daño igual (no es invulnerable), pero no se corta y devuelve el golpe.
+    if (this.countering && this.phase === 'active' && move.id !== 'superNote' && attacker !== this) {
+      const damage = Math.round(opts.damage ?? attacker.damageAgainst(this, move, 1));
+      if (this.hp - damage > this.minHp) {
+        // Sin destello blanco: así no se confunde con el rival golpeado en el contraataque.
+        this.hp -= damage;
+        this.meter = Math.min(MAX_METER, this.meter + move.meter / 2);
+        attacker.meter = Math.min(MAX_METER, attacker.meter + move.meter);
+        this.arena.counter(this, attacker);
+        return { result: 'hit', damage };
+      }
+    }
 
     if (!opts.unblockable && this.blocks(move.level, opts.fromX)) {
       const chip = Math.round((opts.damage ?? move.damage) * (opts.chip ?? 0));
@@ -561,8 +637,9 @@ export class Fighter {
     this.shotCharge = k;
     if (!this.intent.punchHeld || k >= 1) return false;
     const h = this.def.art.height;
-    const x = this.x + this.facing * h * 0.34;
-    const y = GROUND_Y - this.z - h * 0.58;
+    const [fx, fz] = powerFist(this.def.id);
+    const x = this.x + this.facing * h * fx;
+    const y = GROUND_Y - this.z - h * fz;
     if (Math.random() < 0.8) this.arena.fx.trail(x, y, this.def.color, 18 + 50 * k);
     // Cada cuarto de carga, un anillo (el último, blanco: carga completa).
     const step = Math.floor(k * 4);
@@ -634,7 +711,14 @@ export class Fighter {
         this.moveSpawned = true;
         if (m.id === 'special') {
           this.powerReadyAt = now + this.powerCooldown;
-          this.arena.spawnProjectile(this);
+          if (m.rush) {
+            this.vx = this.facing * m.rush.speed;
+            this.arena.onDash(this);
+            this.arena.fx.dust(this.x, GROUND_Y, this.facing, 12);
+          } else if (m.counter) {
+            // La recarga recién corre cuando termina la guardia (ver más abajo).
+            this.powerReadyAt = Infinity;
+          } else this.arena.spawnProjectile(this);
         }
         if (m.id === 'super') this.arena.startSolo(this);
         if (m.id === 'uppercut') {
@@ -644,11 +728,79 @@ export class Fighter {
           this.vx = this.facing * UPPERCUT_VX;
         }
       }
+      // Guardia de contraataque: páginas de luz que giran a su alrededor mientras espera el golpe.
+      if (m.counter && this.phase === 'active' && now - this.lastGhost > 70) {
+        this.lastGhost = now;
+        this.arena.fx.ghost(this.sprite, 0xe0b862, 0.4, 200, 0.05);
+        const a = now / 120;
+        const h = this.def.art.height;
+        this.arena.fx.trail(this.x + Math.cos(a) * h * 0.32, GROUND_Y - this.z - h * (0.5 + Math.sin(a) * 0.3), 0xe0b862, 30);
+      }
+      // Embestida: aura de ataque al prepararla (para que se lea como golpe, no como un dash normal).
+      if (m.rush && !this.moveSpawned && now - this.lastGhost > 40) {
+        this.lastGhost = now;
+        this.arena.fx.ghost(this.sprite, m.rush.trail, 0.6, 220, 0.05);
+      }
+      // Mantiene la velocidad mientras está activa; frena en seco al conectar o al terminar.
+      if (m.rush && this.moveSpawned && !this.rushStopped) {
+        if (this.phase === 'active' && !this.moveDone) {
+          this.vx = this.facing * m.rush.speed;
+          if (now - this.lastGhost > 28) {
+            this.lastGhost = now;
+            // Estela detrás, aura encendida alrededor del cuerpo y chispas en el frente del golpe.
+            this.arena.fx.ghost(this.sprite, m.rush.trail, 0.55, 260);
+            this.arena.fx.ghost(this.sprite, 0xffffff, 0.35, 140, 0.04);
+            const front = this.x + this.facing * this.def.art.height * 0.28;
+            const y = GROUND_Y - this.z - this.def.art.height * 0.55;
+            for (let k = 0; k < 3; k++) this.arena.fx.trail(front + Phaser.Math.Between(-20, 20), y + Phaser.Math.Between(-90, 90), m.rush.trail, 46);
+          }
+          if (now - this.rushRingAt > 90) {
+            this.rushRingAt = now;
+            this.arena.fx.ring(this.x + this.facing * this.def.art.height * 0.3, GROUND_Y - this.z - this.def.art.height * 0.55, m.rush.trail, 120, 0.18);
+          }
+        } else {
+          this.rushStopped = true;
+          this.vx *= 0.12;
+        }
+      }
       const total = m.startup + m.active + m.recovery;
       if (!m.air && e >= total && this.grounded) {
         this.move = null;
         this.setState(this.intent.down ? 'crouch' : 'idle');
       }
+    }
+
+    // Poderes con recarga diferida (guardia, velocidad): empieza a correr cuando termina su efecto.
+    if (this.powerReadyAt === Infinity && !this.countering && !this.hasted && !this.arena.hasProjectile(this)) this.powerReadyAt = now + this.powerCooldown;
+    // Tempo imposible: estela amarilla de copias y viento que lo atraviesa mientras dura.
+    if (this.hasted) {
+      if (now - this.lastHasteGhost > 55) {
+        this.lastHasteGhost = now;
+        this.arena.fx.ghost(this.sprite, 0xffee32, 0.4, 220);
+      }
+      const h = this.def.art.height;
+      // Rayas de viento que salen de atrás y lo pasan en la dirección en que se mueve, también al saltar y caer
+      // (en pantalla, y crece hacia abajo: subir es vy negativo). Quieto, apuntan hacia donde mira.
+      const sx = this.vx;
+      const sy = this.grounded ? 0 : -this.vz;
+      const speed = Math.hypot(sx, sy);
+      const moving = speed > 50;
+      const ux = moving ? sx / speed : this.facing;
+      const uy = moving ? sy / speed : 0;
+      for (let i = 0; i < (moving ? 3 : 2); i++) {
+        if (Math.random() > dt * 40) continue;
+        // Punto al azar sobre el cuerpo, corrido hacia atrás del movimiento.
+        const back = Phaser.Math.Between(Math.round(h * 0.1), Math.round(h * 0.5));
+        const side = Phaser.Math.Between(-Math.round(h * 0.35), Math.round(h * 0.35));
+        const cx = this.x;
+        const cy = GROUND_Y - this.z - h * 0.5;
+        const x = cx - ux * back - uy * side;
+        const y = cy - uy * back + ux * side;
+        const v = Phaser.Math.Between(moving ? 2600 : 1600, moving ? 3600 : 2400);
+        this.arena.fx.wind(x, y, ux * v, uy * v, Math.random() < 0.6 ? 0xffffff : 0xffee32, Phaser.Math.Between(2, 5));
+      }
+      // Polvo a los pies al correr.
+      if (moving && this.grounded && Math.random() < dt * 12) this.arena.fx.dust(this.x, GROUND_Y, this.facing, 2);
     }
 
     if (this.state === 'dash' && now >= this.stateUntil) {
@@ -851,6 +1003,20 @@ export class Fighter {
       sx *= motion.sx;
       sy *= motion.sy;
     }
+    // Patada voladora: arco visual mientras dura la embestida (el cuerpo sigue en el piso).
+    const rush = this.state === 'attack' ? this.move?.rush : undefined;
+    if (rush?.hop && this.move) {
+      const k = Phaser.Math.Clamp((now - this.moveStart - this.move.startup) / this.move.active, 0, 1);
+      oy -= Math.sin(k * Math.PI) * rush.hop;
+    }
+    const fp = this.fxPose;
+    if (fp) {
+      ox += fp.x ?? 0;
+      oy += fp.y ?? 0;
+      angle += fp.angle ?? 0;
+      sx *= fp.sx ?? 1;
+      sy *= fp.sy ?? 1;
+    }
     // El jefe pisa el mismo suelo que los demás, pero ondula como una señal.
     if (this.def.boss && pose !== 'down' && pose !== 'ko' && pose !== 'knockdown') sx *= 1 + Math.sin(now / 90) * 0.012;
     oy -= this.visualLift;
@@ -873,8 +1039,9 @@ export class Fighter {
       // Entidad de sonido: silueta de luz (cian; roja al enfurecerse) que flota.
       this.sprite.setTint(this.rage ? 0xff4d6d : this.def.color).setTintMode(Phaser.TintModes.FILL);
     } else this.sprite.setTint(this.tintOverride ?? tintOf(this.def)).setTintMode(Phaser.TintModes.MULTIPLY);
+    if (fp?.tint !== undefined) this.sprite.setTint(fp.tint).setTintMode(fp.fill ? Phaser.TintModes.FILL : Phaser.TintModes.MULTIPLY);
     const blink = this.state === 'getup' && Math.floor(now / 70) % 2 === 0;
-    this.sprite.setAlpha(blink ? 0.5 : this.def.boss && this.def.art.placeholder ? 0.86 : 1);
+    this.sprite.setAlpha(fp?.alpha ?? (blink ? 0.5 : this.def.boss && this.def.art.placeholder ? 0.86 : 1));
 
     const k = Phaser.Math.Clamp(1 - this.z / 600, 0.45, 1);
     this.shadow.setPosition(this.x, GROUND_Y + 6).setScale(k * (pose === 'down' || pose === 'ko' ? 1.8 : 1.1), k).setAlpha(0.75 * k);

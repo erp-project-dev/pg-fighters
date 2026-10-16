@@ -96,6 +96,10 @@ export interface SoloDef {
   wobble: number;
 }
 
+/** Lo más que dura un solo (ms) y la velocidad mínima de sus proyectiles (px/s). */
+const SOLO_MAX_MS = 2300;
+const SHOT_MIN_SPEED = 1450;
+
 /** Daño total aproximado de cualquier súper antes de los multiplicadores del luchador. */
 const SUPER_TOTAL = 330;
 
@@ -134,15 +138,21 @@ const hitsEvery = (notes: SoloNote[], n: number): SoloNote[] => {
   return notes;
 };
 
+/** Acelera un solo entero: mismas notas y golpes, en menos tiempo (k < 1 = más rápido). */
+const quick = (notes: SoloNote[], k: number): SoloNote[] => notes.map((n) => ({ ...n, t: n.t * k, len: n.len * k }));
+
 type Base = Omit<SoloDef, 'duration' | 'damage' | 'notes'>;
 
 /** Arma el solo: duración según la última nota y daño por nota según cuántas golpean. */
-const solo = (base: Base, notes: SoloNote[]): SoloDef => {
+const solo = (base: Base, raw: SoloNote[]): SoloDef => {
+  // Todos los súper son rápidos: el solo entero entra en SOLO_MAX_MS y los proyectiles vuelan a SHOT_MIN_SPEED o más.
+  const length = raw.reduce((m, n) => Math.max(m, n.t + n.len), 0);
+  const notes = length > SOLO_MAX_MS ? quick(raw, SOLO_MAX_MS / length) : raw;
   const last = notes.reduce((m, n) => Math.max(m, n.t + n.len), 0);
   const hits = notes.filter((n) => n.hit).length;
   let scale = 0;
   for (let k = 1; k <= hits; k++) scale += comboScale(k);
-  return { ...base, notes, duration: last + 150, damage: Math.round(SUPER_TOTAL / Math.max(scale, 1)) };
+  return { ...base, speed: Math.max(base.speed, SHOT_MIN_SPEED), notes, duration: last + 150, damage: Math.round(SUPER_TOTAL / Math.max(scale, 1)) };
 };
 
 const ELECTRIC = { guitar: 'pointy', strings: 6, wave: 'sawtooth' } as const;
@@ -440,15 +450,15 @@ export const SOLOS: Record<SoloStyle, SoloDef> = {
   lickB: solo({ style: 'lickB', tone: 'chug', ...ELECTRIC, speed: 1200, wobble: 25 }, lickB()),
   dembow: { ...solo({ style: 'dembow', tone: 'synth', ...ELECTRIC, wave: 'square', speed: 1000, wobble: 55 }, dembow()), drums: dembowDrums(3400) },
   andean: solo({ style: 'andean', tone: 'clean', wave: 'triangle', guitar: 'hollow', strings: 6, speed: 950, wobble: 50 }, andean()),
-  musette: solo({ style: 'musette', tone: 'clean', wave: 'square', vibrato: 0.009, guitar: 'hollow', strings: 6, speed: 900, wobble: 60 }, musette()),
+  musette: solo({ style: 'musette', tone: 'clean', wave: 'square', vibrato: 0.009, guitar: 'hollow', strings: 6, speed: 1500, wobble: 60 }, musette()),
   latin: { ...solo({ style: 'latin', tone: 'clean', wave: 'triangle', guitar: 'hollow', strings: 6, speed: 1050, wobble: 40 }, latin()), drums: claveDrums() },
   sweep: solo({ style: 'sweep', tone: 'heavy', ...ELECTRIC, speed: 1500, wobble: 35 }, sweep()),
   tritone: solo({ style: 'tritone', tone: 'heavy', ...ELECTRIC, speed: 1000, wobble: 40 }, tritone()),
   sixth: solo({ style: 'sixth', tone: 'warm', wave: 'sawtooth', guitar: 'hollow', strings: 6, speed: 880, wobble: 65 }, sixth()),
   treatise: solo({ style: 'treatise', tone: 'clean', wave: 'triangle', guitar: 'hollow', strings: 6, speed: 900, wobble: 25 }, treatise()),
   jade: solo({ style: 'jade', tone: 'heavy', ...ELECTRIC, speed: 1450, wobble: 45 }, jade()),
-  jetset: solo({ style: 'jetset', tone: 'warm', ...ELECTRIC, speed: 1000, wobble: 50 }, jetset()),
-  maqam: solo({ style: 'maqam', tone: 'warm', wave: 'sawtooth', guitar: 'hollow', strings: 6, speed: 950, wobble: 60 }, maqam()),
+  jetset: solo({ style: 'jetset', tone: 'warm', ...ELECTRIC, speed: 1500, wobble: 50 }, jetset()),
+  maqam: solo({ style: 'maqam', tone: 'warm', wave: 'sawtooth', guitar: 'hollow', strings: 6, speed: 1500, wobble: 60 }, maqam()),
   ascension: solo({ style: 'ascension', tone: 'smooth', wave: 'triangle', guitar: 'pointy', strings: 6, speed: 780, wobble: 70 }, ascension()),
   roots: solo({ style: 'roots', tone: 'heavy', ...ELECTRIC, speed: 1100, wobble: 40 }, roots()),
   viral: solo({ style: 'viral', tone: 'clean', wave: 'triangle', guitar: 'pointy', strings: 6, speed: 950, wobble: 50 }, viral()),

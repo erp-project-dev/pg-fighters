@@ -35,6 +35,16 @@ export interface MoveDef {
   antiAir?: boolean;
   /** Impulso hacia adelante al arrancar (px/s). */
   lunge?: number;
+  /**
+   * Embestida (poder básico cuerpo a cuerpo): al terminar la preparación sale disparado a `speed` px/s mientras
+   * dura la fase activa y frena en seco al conectar o al acabarse. `hop`: arco visual (px), sin despegar del piso.
+   */
+  rush?: { speed: number; hop?: number; trail: number };
+  /**
+   * Contraataque (poder básico): mientras está activo, si le pegan recibe el daño igual (no es invulnerable)
+   * pero no se corta: reaparece junto al atacante y le devuelve un golpe que tumba (FightScene.counter).
+   */
+  counter?: boolean;
   /** Invulnerable durante los primeros ms del movimiento. */
   invuln?: number;
   /** Puede cancelarse en otro normal (cadena) al conectar. */

@@ -15,6 +15,8 @@ interface Bit {
   age: number;
   life: number;
   alpha: number;
+  /** Cambio de escala por segundo (negativo = se encoge). */
+  grow: number;
 }
 
 /** Estado de un súper en curso, compartido con el show del luchador. */
@@ -32,6 +34,8 @@ export interface ShowCtx {
   /** Estado propio de cada show. */
   data: Record<string, any>;
   bits: Bit[];
+  /** Se ejecutan al terminar el solo (quitar filtros de cámara, devolver la rotación…). */
+  cleanup: (() => void)[];
 }
 
 /**
@@ -43,11 +47,17 @@ export interface SuperShow {
   lift?: number;
   /** Giro de los proyectiles (grados/s). Sin esto, se mecen como notas. */
   spin?: number;
+  /** Los proyectiles apuntan hacia donde vuelan (misiles, cometas). */
+  aim?: boolean;
+  /** Cuánto se abren al salir (1 = normal): más alto, curvas más amplias antes de buscar al rival. */
+  spread?: number;
   start?(c: ShowCtx): void;
   update?(c: ShowCtx, dt: number): void;
   /** Proyectil de cada nota (`hit` = la que golpea). null = nota musical por defecto. */
   note?(c: ShowCtx, x: number, y: number, hit: boolean, final: boolean, i: number): NoteObj | null;
-  /** Una nota alcanzó al rival; `final` es el remate. */
+  /** Cada cuadro, por cada proyectil que golpea y sigue en vuelo (estelas, chispas). */
+  fly?(c: ShowCtx, x: number, y: number, age: number, final: boolean, obj: NoteObj): void;
+  /** Una nota acertó al rival (no se llama si la bloquea o es intocable); `final` es el remate. */
   impact?(c: ShowCtx, x: number, y: number, final: boolean): void;
 }
 
@@ -89,14 +99,16 @@ export const emit = (
   key: string,
   x: number,
   y: number,
-  o: { vx?: number; vy?: number; spin?: number; gravity?: number; life?: number; scale?: number; tint?: number; alpha?: number; add?: boolean; layer?: 'back' | 'front' } = {},
+  o: { vx?: number; vy?: number; spin?: number; gravity?: number; life?: number; scale?: number; grow?: number; tint?: number; alpha?: number; add?: boolean; layer?: 'back' | 'front' } = {},
 ): Phaser.GameObjects.Image => {
   const obj = c.scene.add.image(x, y, key).setScale(o.scale ?? 1).setAngle(rand(0, 360));
   if (o.tint !== undefined) obj.setTint(o.tint);
   if (o.add) obj.setBlendMode(Phaser.BlendModes.ADD);
   obj.setAlpha(o.alpha ?? 1);
   (o.layer === 'back' ? c.back : c.front).add(obj);
-  c.bits.push({ obj, vx: o.vx ?? 0, vy: o.vy ?? 0, spin: o.spin ?? 0, gravity: o.gravity ?? 0, age: 0, life: o.life ?? 3, alpha: o.alpha ?? 1 });
+  // Tope de partículas para equipos lentos: la más vieja se va primero.
+  if (c.bits.length > 420) c.bits[0].age = c.bits[0].life;
+  c.bits.push({ obj, vx: o.vx ?? 0, vy: o.vy ?? 0, spin: o.spin ?? 0, gravity: o.gravity ?? 0, age: 0, life: o.life ?? 3, alpha: o.alpha ?? 1, grow: o.grow ?? 0 });
   return obj;
 };
 
@@ -107,6 +119,7 @@ export const stepBits = (c: ShowCtx, dt: number): void => {
     b.obj.x += b.vx * dt;
     b.obj.y += b.vy * dt;
     b.obj.angle += b.spin * dt;
+    if (b.grow) b.obj.setScale(Math.max(0.01, b.obj.scaleX + b.grow * dt));
     const fade = Math.min(1, (b.life - b.age) / 0.4);
     b.obj.setAlpha(b.alpha * Math.max(0, fade));
     if (b.age >= b.life || b.obj.y > GAME_HEIGHT + 120 || b.obj.y < -300) b.age = Infinity;

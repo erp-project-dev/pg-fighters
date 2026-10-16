@@ -1,115 +1,101 @@
 import Phaser from 'phaser';
-import { FONTS, GAME_HEIGHT, GAME_WIDTH } from '../../config';
-import { chest, pick, rand, slam, veil, type ShowCtx, type SuperShow } from './kit';
+import { GAME_HEIGHT, GAME_WIDTH } from '../../config';
+import { SOLOS } from '../../data/solos';
+import { chest, emit, slam, veil, type ShowCtx, type SuperShow } from './kit';
+import { ADD, colorFlash, lensPixel, markHit, shockwave, shot, spark, squareTex, victim } from './energy';
 
-const MONO = 'Menlo, Consolas, "Courier New", monospace';
 const MAGENTA = 0xff2ba6;
-
-/** Lo que la terminal "detecta" y corrige mientras suena el solo. */
-const LOG = [
-  '> analizando afinación…  ERROR',
-  '> analizando ritmo…  BÁSICO',
-  '> analizando solo…  NO ENSAYADO',
-  '> analizando mezcla…  VOZ AL MÁXIMO',
-  '> corrigiendo errores…',
-];
-
-/** Lecturas que aparecen flotando alrededor del rival. */
-const READINGS = ['440 Hz', '-12 cents', '-31 cents', 'BPM 117.6', 'BPM 123.2', '3 RITMOS', 'CLIP +6 dB', '82 Hz', '196 Hz', 'DESAFINADO', 'FUERA DE TIEMPO', 'TONO: ???'];
-
-/** Espectrograma: columnas que se desplazan hacia la izquierda. */
-const SPEC_COLS = 64;
-const SPEC_ROWS = 12;
-const SPEC_H = 230;
+const CELL = 60;
+const snap = (v: number) => Math.round(v / CELL) * CELL;
+const MONO = 'Menlo, Consolas, "Courier New", monospace';
+const BAR = { x: GAME_WIDTH / 2 - 450, y: 250, w: 900, h: 36 };
+const SEGMENTS = 25;
+/** Golpes del solo: cada uno que conecta llena una parte de la barra. */
+const totalHits = (c: ShowCtx) => SOLOS[c.owner.def.superMove.solo].notes.filter((n) => n.hit).length || 1;
+/** Lo que va "corrigiendo" mientras carga. */
+const FIXES = ['cuantizando el ritmo', 'afinando a 440 Hz', 'quitando el feeling', 'borrando notas fuera de escala', 'comprimiendo la dinámica', 'alineando a la grilla', 'subiendo el volumen'];
 
 /**
- * NOSU · LARGA VIDA AL CÓDIGO: la pantalla se vuelve un analizador. Rejilla de osciloscopio, la forma de
- * onda del solo cruzando la pantalla, una línea de escaneo que barre, espectrograma abajo y lecturas de
- * frecuencia, afinación y tempo sobre el rival; la terminal encuentra sus errores y la barra de corrección
- * llega al 100 %. Remate: ERROR CORREGIDO.
+ * NOSU · LARGA VIDA AL CÓDIGO: una grilla de neón cubre la pantalla y todo se mueve a saltos exactos;
+ * dispara cubos de luz que avanzan casilla por casilla. El rival se "cuantiza": se mueve a saltos y la
+ * pantalla se va pixelando. Remate: el rival se desarma en cuadrados que se ordenan en la grilla.
  */
 export const nosu: SuperShow = {
   start(c: ShowCtx) {
-    const scope = c.scene.add.graphics().setBlendMode(Phaser.BlendModes.ADD);
-    const term = c.scene.add.text(100, 110, '', { fontFamily: MONO, fontSize: '34px', fontStyle: 'bold', color: '#ff2ba6', lineSpacing: 8 }).setStroke('#000000', 6);
+    const grid = c.scene.add.graphics().setBlendMode(ADD);
+    c.back.add(grid);
+    // Barra de carga: CORRIGIENDO… con su porcentaje y lo que va arreglando.
     const bar = c.scene.add.graphics();
-    const pct = c.scene.add.text(100, 420, '', { fontFamily: FONTS.head, fontSize: '40px', fontStyle: 'italic 900', color: '#ffffff' }).setStroke('#000000', 6);
-    const spec = Array.from({ length: SPEC_COLS }, () => Array.from({ length: SPEC_ROWS }, () => rand(0, 0.6)));
-    c.back.add(scope);
-    c.front.add([term, bar, pct]);
-    Object.assign(c.data, { scope, term, bar, pct, spec, shiftAt: 0, tagAt: 0 });
+    const label = c.scene.add.text(BAR.x, BAR.y - 62, '', { fontFamily: MONO, fontSize: '44px', fontStyle: 'bold', color: '#ffffff', stroke: '#000000', strokeThickness: 6 });
+    const pct = c.scene.add.text(BAR.x + BAR.w, BAR.y - 62, '', { fontFamily: MONO, fontSize: '44px', fontStyle: 'bold', color: '#ff2ba6', stroke: '#000000', strokeThickness: 6 }).setOrigin(1, 0);
+    const status = c.scene.add.text(BAR.x, BAR.y + BAR.h + 14, '', { fontFamily: MONO, fontSize: '28px', color: '#ffc4e6', stroke: '#000000', strokeThickness: 5 });
+    c.front.add([bar, label, pct, status]);
+    Object.assign(c.data, { grid, bar, label, pct, status, progress: 0 });
   },
   update(c: ShowCtx) {
-    const k = Math.min(1, c.t / c.duration);
-    const g = c.data.scope as Phaser.GameObjects.Graphics;
+    const g = c.data.grid as Phaser.GameObjects.Graphics;
     g.clear();
-    // Rejilla de osciloscopio.
-    for (let x = 0; x <= GAME_WIDTH; x += 120) g.fillStyle(MAGENTA, 0.07).fillRect(x, 0, 2, GAME_HEIGHT);
-    for (let y = 0; y <= GAME_HEIGHT; y += 120) g.fillStyle(MAGENTA, 0.07).fillRect(0, y, GAME_WIDTH, 2);
-    // Forma de onda: al principio sucia y torcida; a medida que corrige, se vuelve una senoide perfecta.
-    const mid = GAME_HEIGHT * 0.42;
-    const dirt = 1 - k;
-    g.lineStyle(10, MAGENTA, 0.18);
-    g.beginPath();
-    const wave = (x: number) =>
-      mid + Math.sin(x / 38 + c.t / 90) * 70 + dirt * (Math.sin(x / 9 + c.t / 23) * 40 + Math.sin(x / 3.1 - c.t / 13) * 18);
-    for (let x = 0; x <= GAME_WIDTH; x += 8) g.lineTo(x, wave(x));
-    g.strokePath();
-    g.lineStyle(3, 0xffd8ef, 0.75);
-    g.beginPath();
-    for (let x = 0; x <= GAME_WIDTH; x += 8) g.lineTo(x, wave(x));
-    g.strokePath();
-    // Línea de escaneo que barre de izquierda a derecha.
-    const sx = ((c.t / 900) % 1) * GAME_WIDTH;
-    g.fillStyle(MAGENTA, 0.08).fillRect(sx - 120, 0, 120, GAME_HEIGHT);
-    g.fillStyle(MAGENTA, 0.6).fillRect(sx, 0, 4, GAME_HEIGHT);
-    // Espectrograma: avanza una columna cada 60 ms; los graves (abajo) más intensos.
-    const spec = c.data.spec as number[][];
-    if (c.t > c.data.shiftAt) {
-      c.data.shiftAt = c.t + 60;
-      spec.shift();
-      spec.push(Array.from({ length: SPEC_ROWS }, (_, r) => Math.min(1, rand(0, 1) * (1 - r / SPEC_ROWS) * 1.4)));
+    const beat = Math.floor(c.t / 125);
+    for (let x = 0; x <= GAME_WIDTH; x += CELL) g.lineStyle(x % (CELL * 4) ? 1 : 3, MAGENTA, x % (CELL * 4) ? 0.15 : 0.3).lineBetween(x, 0, x, GAME_HEIGHT);
+    for (let y = 0; y <= GAME_HEIGHT; y += CELL) g.lineStyle(y % (CELL * 4) ? 1 : 3, MAGENTA, y % (CELL * 4) ? 0.15 : 0.3).lineBetween(0, y, GAME_WIDTH, y);
+    // Celdas que se encienden en secuencia, como un secuenciador.
+    for (let i = 0; i < 18; i++) {
+      const col = (beat + i * 7) % Math.floor(GAME_WIDTH / CELL);
+      const row = (i * 5 + Math.floor(beat / 4)) % Math.floor(GAME_HEIGHT / CELL);
+      g.fillStyle(i % 3 ? MAGENTA : 0xffffff, 0.22).fillRect(col * CELL + 2, row * CELL + 2, CELL - 4, CELL - 4);
     }
-    const cw = GAME_WIDTH / SPEC_COLS;
-    const ch = SPEC_H / SPEC_ROWS;
-    spec.forEach((col, i) =>
-      col.forEach((v, r) => {
-        const color = v > 0.8 ? 0xff3b3b : v > 0.55 ? 0xffe14d : MAGENTA;
-        g.fillStyle(color, 0.08 + v * 0.3).fillRect(i * cw + 1, GAME_HEIGHT - (r + 1) * ch, cw - 2, ch - 2);
-      }),
-    );
-    // Lecturas sobre el rival, con su mira de análisis.
-    const t = chest(c.target);
-    const pulse = 0.5 + Math.sin(c.t / 110) * 0.5;
-    g.lineStyle(3, MAGENTA, 0.4 + pulse * 0.4).strokeCircle(t.x, t.y, 150 + pulse * 20);
-    g.lineStyle(2, MAGENTA, 0.5).lineBetween(t.x - 210, t.y, t.x - 120, t.y).lineBetween(t.x + 120, t.y, t.x + 210, t.y);
-    g.lineBetween(t.x, t.y - 210, t.x, t.y - 120).lineBetween(t.x, t.y + 120, t.x, t.y + 210);
-    if (c.t > c.data.tagAt) {
-      c.data.tagAt = c.t + 260;
-      const tag = c.scene.add.text(t.x + rand(-300, 300), t.y + rand(-280, 120), pick(READINGS), { fontFamily: MONO, fontSize: '30px', fontStyle: 'bold', color: '#ff2ba6' }).setOrigin(0.5).setStroke('#000000', 5);
-      c.front.add(tag);
-      c.scene.tweens.add({ targets: tag, y: tag.y - 70, alpha: 0, duration: 900, onComplete: () => tag.destroy() });
+    // Progreso: solo avanza con los golpes que conectan (todos = 100 %).
+    const done = c.data.finalAt !== undefined;
+    const goal = (c.data.hits ?? 0) / totalHits(c);
+    c.data.progress += (goal - c.data.progress) * 0.35;
+    const shown = Math.round(c.data.progress * 100);
+    const perfect = done && (c.data.hits ?? 0) >= totalHits(c);
+    const bar = c.data.bar as Phaser.GameObjects.Graphics;
+    bar.clear();
+    bar.fillStyle(0x000000, 0.6).fillRect(BAR.x - 8, BAR.y - 8, BAR.w + 16, BAR.h + 16);
+    bar.lineStyle(3, MAGENTA, 1).strokeRect(BAR.x - 8, BAR.y - 8, BAR.w + 16, BAR.h + 16);
+    const seg = BAR.w / SEGMENTS;
+    for (let i = 0; i < Math.floor(c.data.progress * SEGMENTS); i++) bar.fillStyle(i % 2 ? MAGENTA : 0xff5fbf, 1).fillRect(BAR.x + i * seg + 2, BAR.y, seg - 4, BAR.h);
+    (c.data.label as Phaser.GameObjects.Text).setText(perfect ? 'CORREGIDO' : done ? 'CORRECCIÓN INCOMPLETA' : `CORRIGIENDO${'.'.repeat(1 + (Math.floor(c.t / 250) % 3))}`);
+    (c.data.pct as Phaser.GameObjects.Text).setText(`${shown}%`);
+    (c.data.status as Phaser.GameObjects.Text).setText(perfect ? '> 0 errores. Hit listo.' : done ? `> quedan ${totalHits(c) - (c.data.hits ?? 0)} errores sin corregir` : `> ${FIXES[Math.floor(c.t / 260) % FIXES.length]}`);
+    // La pantalla se cuantiza: pixelado a saltos, cada vez más grueso.
+    const px = lensPixel(c);
+    if (px) {
+      const hits = c.data.hits ?? 0;
+      px.active = hits > 0 && c.data.finalAt === undefined;
+      px.amount = Math.min(4, hits) * (beat % 2 ? 0.7 : 0.4);
     }
-    // Terminal: una línea más cada tramo del solo, y la barra de corrección llenándose.
-    const lines = Math.min(LOG.length, 1 + Math.floor(k * LOG.length * 1.2));
-    (c.data.term as Phaser.GameObjects.Text).setText(LOG.slice(0, lines).join('\n'));
-    const b = c.data.bar as Phaser.GameObjects.Graphics;
-    b.clear();
-    b.fillStyle(0x000000, 0.7).fillRect(100, 380, 520, 30);
-    b.fillStyle(MAGENTA, 1).fillRect(104, 384, 512 * k, 22);
-    (c.data.pct as Phaser.GameObjects.Text).setText(`CORRECCIÓN ${Math.floor(k * 100)} %`);
+    // El rival, cuantizado: salta de casilla en casilla.
+    const since = c.t - (c.data.hitAt ?? -9999);
+    victim(c, { x: since < 400 ? ((beat % 3) - 1) * CELL * 0.4 : 0, y: since < 400 ? -(beat % 2) * CELL * 0.3 : 0, tint: since < 120 ? MAGENTA : 0xffc4e6, fill: since < 120 });
+  },
+  note(c, x, y, hit, final) {
+    return hit ? shot(c, squareTex(c.scene), x, y, final ? 0xffffff : MAGENTA, final ? 3.6 : 2.2) : spark(c, x, y, MAGENTA);
+  },
+  fly(c, x, y, _age, _final, obj) {
+    // Avanza pegado a la grilla.
+    obj.setAngle(0).setPosition(snap(x), snap(y));
   },
   impact(c, x, y, final) {
-    if (!final) {
-      c.fx.ring(x, y, MAGENTA, 90, 0.2);
-      return;
-    }
+    markHit(c, final);
+    c.fx.ring(snap(x), snap(y), MAGENTA, 140, 0.25);
+    if (!final) return;
+    const scene = c.scene;
     const t = chest(c.target);
-    veil(c.scene, MAGENTA, 0.25, 140);
-    c.scene.cameras.main.shake(300, 0.014);
+    // Se desarma en cuadrados que vuelan a ordenarse en la grilla.
+    for (let i = 0; i < 48; i++) {
+      const tx = snap(t.x + ((i % 8) - 3.5) * CELL * 1.6);
+      const ty = snap(t.y - 300 + Math.floor(i / 8) * CELL);
+      emit(c, squareTex(c.scene), t.x, t.y, { vx: (tx - t.x) * 2.2, vy: (ty - t.y) * 2.2, life: 0.75, scale: 2.4, tint: i % 4 ? MAGENTA : 0xffffff, add: true });
+    }
+    colorFlash(scene, 'negative', 260, 0.7);
+    veil(scene, MAGENTA, 0.4, 80, 20, 400, 48);
+    shockwave(scene, 0.5, 800);
+    for (let k = 0; k < 4; k++) c.fx.ring(t.x, t.y, MAGENTA, 240 + k * 170, 0.5);
     c.fx.hit(t.x, t.y, MAGENTA, true);
-    for (let k = 0; k < 3; k++) c.fx.ring(t.x, t.y, k % 2 ? 0xffffff : MAGENTA, 180 + k * 140, 0.5);
-    (c.data.pct as Phaser.GameObjects.Text).setText('CORRECCIÓN 100 %');
-    slam(c.scene, t.x, t.y - 300, 'ERROR CORREGIDO', '#ff2ba6', 110);
+    scene.cameras.main.shake(500, 0.022);
+    const hits = c.data.hits ?? 0;
+    slam(scene, GAME_WIDTH / 2, 420, hits >= totalHits(c) ? 'ERROR CORREGIDO' : `CORREGIDO AL ${Math.round((hits / totalHits(c)) * 100)}%`, '#ff2ba6', 120);
   },
 };

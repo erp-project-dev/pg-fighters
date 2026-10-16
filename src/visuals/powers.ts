@@ -103,9 +103,22 @@ const TEX: Partial<Record<PowerLook, (s: Phaser.Scene) => string>> = {
     g.fillStyle(0xffffff, 1).fillCircle(45, 45, 9);
   }),
   like: (s) => tex(s, 'pw-like', 100, 100, (g) => {
+    // Corazón: halo rosa, borde oscuro, relleno rosa y un brillo blanco arriba a la izquierda.
+    const heart = (r: number, cx = 50, cy = 52) => {
+      const pts: Phaser.Math.Vector2[] = [];
+      for (let i = 0; i < 48; i++) {
+        const a = (i / 48) * Math.PI * 2;
+        const x = 16 * Math.sin(a) ** 3;
+        const y = 13 * Math.cos(a) - 5 * Math.cos(2 * a) - 2 * Math.cos(3 * a) - Math.cos(4 * a);
+        pts.push(new Phaser.Math.Vector2(cx + (x * r) / 16, cy - (y * r) / 16));
+      }
+      return pts;
+    };
     for (let r = 50; r > 30; r -= 5) g.fillStyle(0xff7ad9, 0.08).fillCircle(50, 50, r);
-    g.fillStyle(0xff3fa4, 1).fillRoundedRect(14, 14, 72, 72, 18);
-    g.fillStyle(0xffffff, 1).fillCircle(39, 44, 11).fillCircle(61, 44, 11).fillTriangle(28, 49, 72, 49, 50, 72);
+    g.fillStyle(0xb0136a, 1).fillPoints(heart(42), true);
+    g.fillStyle(0xff3fa4, 1).fillPoints(heart(37), true);
+    g.fillStyle(0xff8fd0, 1).fillPoints(heart(24, 50, 50), true);
+    g.fillStyle(0xffffff, 0.95).fillEllipse(34, 36, 14, 10);
   }),
   phoenix: (s) => tex(s, 'pw-phoenix', 130, 110, (g) => {
     // Llama en forma de ala: núcleo blanco, capas celeste, rosa y blanco hacia atrás.
@@ -218,11 +231,20 @@ const TEX: Partial<Record<PowerLook, (s: Phaser.Scene) => string>> = {
     g.fillStyle(0xaee9ff, 0.8).fillTriangle(56, 80, 70, 58, 68, 88);
     g.fillStyle(0x1f7a46, 1).fillRect(44, 104, 12, 32);
   }),
-  ring: (s) => tex(s, 'pw-ring', 70, 150, (g) => {
-    // Onda de audio: aro vertical (de canto, como una onda que sale de un parlante), con halo y un aro fino adentro.
-    // Se tiñe del color del luchador.
-    for (const [w, a] of [[16, 0.18], [9, 0.4], [5, 1]] as const) g.lineStyle(w, 0xffffff, a).strokeEllipse(35, 75, 44, 128);
-    g.lineStyle(3, 0xffffff, 0.5).strokeEllipse(35, 75, 22, 96);
+  ring: (s) => tex(s, 'pw-ring', 120, 140, (g) => {
+    // Aro de corazón (Ricardo): contorno de corazón con halo y un corazón fino adentro. Se tiñe de su color.
+    const heart = (r: number) => {
+      const pts: Phaser.Math.Vector2[] = [];
+      for (let i = 0; i < 48; i++) {
+        const t = (i / 48) * Math.PI * 2;
+        const x = 16 * Math.sin(t) ** 3;
+        const y = 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t);
+        pts.push(new Phaser.Math.Vector2(60 + (x * r) / 16, 66 - (y * r) / 16));
+      }
+      return pts;
+    };
+    for (const [w, a] of [[16, 0.18], [9, 0.4], [5, 1]] as const) g.lineStyle(w, 0xffffff, a).strokePoints(heart(48), true);
+    g.lineStyle(3, 0xffffff, 0.5).strokePoints(heart(30), true);
   }),
   dagger: (s) => tex(s, 'pw-dagger', 150, 50, (g) => {
     // Daga de la Corona apuntando a la derecha (se gira hacia donde va): hoja de plata, guarda y pomo de oro.
@@ -273,6 +295,17 @@ const TEX: Partial<Record<PowerLook, (s: Phaser.Scene) => string>> = {
     g.fillStyle(0xfff6d8, 1).fillPoints(crescent(84, 62, 10, 236), true);
     g.fillStyle(0xffffff, 1).fillPoints(crescent(80, 70, 6, 228), true);
   }),
+  tornado: (s) => tex(s, 'pw-tornado', 120, 160, (g) => {
+    // Tornado de arena (Markus): embudo de aros dorados y azules, angosto abajo y ancho arriba, con halo.
+    for (let r = 58; r > 20; r -= 6) g.fillStyle(0xe0b862, 0.04).fillEllipse(60, 80, r * 2, r * 2.6);
+    for (let i = 0; i < 9; i++) {
+      const k = i / 8;
+      const y = 150 - k * 136;
+      const w = 18 + k * 92;
+      g.lineStyle(i % 3 === 0 ? 5 : 3, i % 2 ? 0x5c9dff : 0xe0b862, 0.95).strokeEllipse(60 + Math.sin(i * 1.3) * 6, y, w, 12 + k * 10);
+    }
+    g.fillStyle(0xfff1c9, 0.9).fillEllipse(60, 150, 16, 8);
+  }),
   shriek: (s) => tex(s, 'pw-shriek', 120, 120, (g) => {
     for (const [r, c] of [[52, 0xff173d], [38, 0x6a00ff], [24, 0xff173d]] as const) g.lineStyle(6, c, 0.9).strokeCircle(60, 60, r);
     g.fillStyle(0xffd0d8, 1).fillCircle(60, 60, 9);
@@ -305,7 +338,7 @@ export const buildLook = (scene: Phaser.Scene, look: PowerLook, color: number, r
   const key = TEX[look]?.(scene) ?? TEX.darkOrb!(scene);
   const img = scene.add.image(x, y, key).setScale(r / BASE);
   if (TINTED.includes(look)) img.setTint(color);
-  if (['meteor', 'kiss', 'redStar', 'pearl', 'star8', 'firefly', 'darkOrb', 'shriek', 'miniNote', 'wave', 'soundwave', 'sun', 'marble', 'needle', 'ring', 'buster', 'slash'].includes(look)) img.setBlendMode(Phaser.BlendModes.ADD);
+  if (['meteor', 'kiss', 'redStar', 'pearl', 'star8', 'firefly', 'darkOrb', 'shriek', 'miniNote', 'wave', 'soundwave', 'sun', 'marble', 'needle', 'ring', 'buster', 'slash', 'tornado'].includes(look)) img.setBlendMode(Phaser.BlendModes.ADD);
   const spin = look === 'banana' ? 720 : look === 'pick' ? 900 : look === 'book' ? 360 : look === 'tray' ? 0 : look === 'redStar' ? 400 : look === 'star8' ? 300 : look === 'flask' ? 420 : look === 'sun' ? 160 : look === 'marble' ? 540 : look === 'coin' ? 1080 : 0;
-  return { obj: img, spin, aim: look === 'wave' || look === 'needle' || look === 'dagger' || look === 'spear', jitter: look === 'cross' ? 3 : 0 };
+  return { obj: img, spin, aim: look === 'wave' || look === 'needle' || look === 'dagger' || look === 'spear', jitter: look === 'cross' ? 3 : look === 'tornado' ? 8 : 0 };
 };

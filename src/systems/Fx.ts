@@ -69,6 +69,11 @@ export class Fx {
     this.particles.push({ x: x + (Math.random() - 0.5) * size, y: y + (Math.random() - 0.5) * size, vx: 0, vy: (Math.random() - 0.5) * 60, life: 0.25, max: 0.25, size: size * 0.35, color, gravity: 0, kind: 'dot' });
   }
 
+  /** Ráfaga de viento: una raya que pasa veloz (velocidad `vx`, `vy` en px/s) y se apaga. */
+  wind(x: number, y: number, vx: number, vy: number, color: number, size = 3): void {
+    this.particles.push({ x, y, vx, vy, life: 0.18, max: 0.18, size, color, gravity: 0, kind: 'spark' });
+  }
+
   /** Chispa que sube (aura del súper listo). */
   rise(x: number, y: number, color: number): void {
     this.particles.push({ x, y, vx: (Math.random() - 0.5) * 40, vy: -260 - Math.random() * 220, life: 0.6, max: 0.6, size: 5 + Math.random() * 4, color, gravity: 0, kind: 'dot' });

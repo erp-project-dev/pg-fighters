@@ -4,7 +4,7 @@ import { Audio } from '../systems/Audio';
 import { Input } from '../systems/Input';
 import { Menu, footer, text } from '../ui/ui';
 import { FIGHTERS, type FighterDef } from '../data/fighters';
-import { TRAITS, powerInfo } from '../data/moveset';
+import { TRAITS, powerInfo, superInfo } from '../data/moveset';
 import type { FightData } from './FightScene';
 
 /** El laboratorio de sprites se abre con ?sprites en la URL. */
@@ -16,7 +16,7 @@ const movesOf = (def: FighterDef): [string, string, string, string][] => {
   return [
     ['PODER', 'S → D + CLIC IZQ', def.moves.special, powerInfo(def.id)],
     ['UPPERCUT', 'D → S → S+D + CLIC IZQ', def.moves.uppercut, 'Antiaéreo invulnerable al arrancar.'],
-    ['ULTIMATE', 'E', def.moves.super, 'Con la barra ULTIMATE llena.'],
+    ['ULTIMATE', 'E', def.moves.super, superInfo(def.id)],
     ...(trait ? [['RASGO', '', trait.name, trait.desc] as [string, string, string, string]] : []),
   ];
 };

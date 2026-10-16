@@ -174,9 +174,9 @@ export const FIGHTERS: Record<FighterId, FighterDef> = {
     },
     rating: { potencia: 5, velocidad: 2, alcance: 4, tecnica: 3 },
     moves: {
-      special: "ONDA BLUES",
+      special: "PANZAZO BLUES",
       uppercut: "GANCHO DE BARRA",
-      super: "SOLO ETERNO",
+      super: "EL ÚLTIMO BLUES",
     },
     special: "orb",
     superMove: { quote: "Hola amigo, ¿cómo estás?", solo: "blues" },
@@ -464,7 +464,7 @@ export const FIGHTERS: Record<FighterId, FighterDef> = {
     },
     rating: { potencia: 3, velocidad: 3, alcance: 4, tecnica: 5 },
     moves: {
-      special: "ACORDE REVOLUCIONARIO",
+      special: "PUÑO REVOLUCIONARIO",
       uppercut: "ASCENSO DE LAS MASAS",
       super: "LA BENDICIÓN DE CURCUMAN",
     },
@@ -498,7 +498,7 @@ export const FIGHTERS: Record<FighterId, FighterDef> = {
     },
     rating: { potencia: 2, velocidad: 5, alcance: 3, tecnica: 4 },
     moves: {
-      special: "RÁFAGA DE MIL NOTAS",
+      special: "TEMPO IMPOSIBLE",
       uppercut: "BARRIDO VERTICAL",
       super: "METRÓNOMO EN HUELGA",
     },
@@ -595,7 +595,7 @@ export const FIGHTERS: Record<FighterId, FighterDef> = {
     },
     rating: { potencia: 4, velocidad: 2, alcance: 4, tecnica: 5 },
     moves: {
-      special: "BESTSELLER EN TAPA DURA",
+      special: "ESO ESTÁ EN EL CAPÍTULO TRES",
       uppercut: "NOTA AL PIE ASCENDENTE",
       super: "LA TRILOGÍA COMPLETA",
     },
@@ -666,7 +666,7 @@ export const FIGHTERS: Record<FighterId, FighterDef> = {
     },
     rating: { potencia: 4, velocidad: 3, alcance: 4, tecnica: 3 },
     moves: {
-      special: "CHEQUE EN BLANCO",
+      special: "COBRO AL INSTANTE",
       uppercut: "DESPEGUE EN JET PRIVADO",
       super: "GIRA MUNDIAL DE LA ESCUELA DEL ROCK",
     },

@@ -52,6 +52,35 @@ const WIN_FIT: Partial<Record<string, number>> = {
 const PIVOT_X: Partial<Record<string, number>> = {
   'acople-idle': 0.49,
   'acople-intro': 0.49,
+  // Doctor Escalas: el atlas ancló varias poses en un pie (la guardia quedaba corrida a la derecha).
+  // Medido como el centro entre los dos pies de cada cuadro.
+  'escalas-idle': 0.5,
+  'escalas-walk-0': 0.51,
+  'escalas-walk-1': 0.5,
+  'escalas-crouch': 0.5,
+  'escalas-punch': 0.47,
+  'escalas-block': 0.5,
+  'escalas-win': 0.46,
+  'escalas-super': 0.52,
+  'escalas-dash-2': 0.53,
+  'escalas-backdash-2': 0.55,
+  'escalas-getup': 0.56,
+  'escalas-walkBack-0': 0.5,
+  'escalas-walkBack-1': 0.51,
+  'escalas-intro': 0.5,
+  'escalas-crouchPunch-0': 0.5,
+  'escalas-crouchPunch-2': 0.5,
+  'escalas-sweep-0': 0.5,
+  'escalas-sweep-2': 0.5,
+  // Guardia anclada en un pie: el cuerpo quedaba corrido a un lado al estar parado.
+  'chantal-idle': 0.47,
+  'chantal-intro': 0.47,
+  'jeanpierre-idle': 0.5,
+  'jeanpierre-intro': 0.5,
+  'ricardo-idle': 0.5,
+  'ricardo-intro': 0.5,
+  'tayloy-idle': 0.5,
+  'tayloy-intro': 0.5,
 };
 
 /** Alto visual (px) que reemplaza al de metadata.json: El Acople, al tamaño de su arte original (imponente). */

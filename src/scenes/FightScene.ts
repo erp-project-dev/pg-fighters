@@ -2,15 +2,17 @@ import { preloadRegeneratedArt, registerRegeneratedArt } from '../visuals/roster
 import Phaser from 'phaser';
 import { COLORS, GAME_HEIGHT, GAME_WIDTH, GROUND_Y, ROUNDS_TO_WIN, ROUND_SECONDS, SCENES, STAGE_LEFT, STAGE_RIGHT } from '../config';
 import { Cpu } from '../entities/Cpu';
-import { GuitarSolo } from '../entities/GuitarSolo';
+import { GuitarSolo, type NoteResult } from '../entities/GuitarSolo';
 import { Fighter, MAX_METER, NO_INTENT, isNormal, type Arena, type Intent } from '../entities/Fighter';
 import { Projectile, drawCage } from '../entities/Projectile';
+import { buildLook } from '../visuals/powers';
 import { dialogFor } from '../data/dialogs';
 import { FIGHTERS, type FighterId } from '../data/fighters';
 import { POWERS, powerFor } from '../data/powers';
 
 import { STAGES, type StageId } from '../data/stages';
 import { MOVES, type MoveDef } from '../data/moves';
+import { moveFor } from '../data/moveset';
 import { Audio } from '../systems/Audio';
 import { Fx } from '../systems/Fx';
 import { buildStage } from '../systems/StageArt';
@@ -81,6 +83,8 @@ export class FightScene extends Phaser.Scene implements Arena {
   /** Jaula lista: esferita junto a NOSU (por lado) y si estaba lista el frame anterior (para el aviso). */
   private cageIcons: (Phaser.GameObjects.Graphics | null)[] = [null, null];
   private cageWasReady = [true, true];
+  /** Nota tachada sobre la cabeza del silenciado. */
+  private silenceIcon: Phaser.GameObjects.Graphics | null = null;
   /** Rivales encerrados en la jaula de NOSU. */
   private cages: { target: Fighter; color: number; until: number; hp: number; g: Phaser.GameObjects.Graphics; t: number; from: number }[] = [];
   round = 1;
@@ -123,6 +127,7 @@ export class FightScene extends Phaser.Scene implements Arena {
     this.cages = [];
     this.cageIcons = [null, null];
     this.cageWasReady = [true, true];
+    this.silenceIcon = null;
     this.timeScale = 1;
     this.hitstopUntil = 0;
     this.now = 0;
@@ -136,6 +141,9 @@ export class FightScene extends Phaser.Scene implements Arena {
   create() {
     registerRegeneratedArt(this, [this.data0.p1, this.data0.p2]);
     this.cameras.main.fadeIn(300, 11, 10, 14);
+    // Un súper interrumpido (revancha, salir) no debe dejar filtros ni la cámara girada.
+    this.cameras.main.filters?.internal.clear();
+    this.cameras.main.setRotation(0);
     this.buildStage();
     this.fx = new Fx(this);
     this.p1 = new Fighter(this, this, FIGHTERS[this.data0.p1], START_X[0], 1, 0);
@@ -321,14 +329,66 @@ export class FightScene extends Phaser.Scene implements Arena {
       Audio.tone(this, 990, 0.25, 'triangle', 0.06);
       return;
     }
-    for (const base of powerFor(owner.def.id)) {
+    const shots = powerFor(owner.def.id);
+    // Tempo imposible (Turboshred): no lanza nada, se acelera.
+    const haste = shots.find((s) => s.haste)?.haste;
+    if (haste) {
+      owner.haste(haste);
+      const cy = GROUND_Y - owner.z - owner.def.art.height * 0.55;
+      for (let k = 0; k < 3; k++) this.fx.ring(owner.x, cy, k === 1 ? COLORS.white : 0xffee32, 120 + k * 90, 0.3);
+      this.fx.ghost(owner.sprite, 0xffee32, 0.7, 320, 0.15);
+      Audio.tone(this, 1180, 0.2, 'square', 0.05);
+      return;
+    }
+    owner.powerCasts++;
+    for (const base of shots) {
       // Lick de Pentalick: cada nivel sale más grande y pega más.
       const lvl = base.levels ? owner.lickLevel : 0;
-      const spec = base.levels ? { ...base, level: lvl, size: (base.size ?? 1) * (1 + 0.3 * lvl), damage: (base.damage ?? 1) * (1 + 0.5 * lvl) } : base;
+      let spec = base.levels ? { ...base, level: lvl, size: (base.size ?? 1) * (1 + 0.3 * lvl), damage: (base.damage ?? 1) * (1 + 0.5 * lvl) } : base;
+      // Velocidad en ciclo (monedas de Jesex): cada lanzamiento un poco más rápido, y vuelve a empezar.
+      if (spec.speedCycle) spec = { ...spec, speed: (spec.speed ?? 1) * spec.speedCycle[(owner.powerCasts - 1) % spec.speedCycle.length] };
       this.projectiles.push(new Projectile(this, this.fx, owner, spec, spec.color ?? color));
     }
     Audio.sfx(this, 'swing', 0.7, 0.85);
     Audio.tone(this, 260, 0.3, 'sawtooth', 0.05);
+  }
+
+  /**
+   * Contraataque (Doctor Escalas): la pelea se congela un instante, reaparece junto al atacante (estela dorada)
+   * y le devuelve un golpe que tumba y no se bloquea.
+   */
+  counter(owner: Fighter, attacker: Fighter): void {
+    const GOLD = 0xe0b862;
+    const side = Math.sign(owner.x - attacker.x) || -attacker.facing;
+    const from = owner.x;
+    // A distancia de puñetazo (sin montarse sobre el rival); si la pared no deja, del otro lado.
+    const gap = 250;
+    let to = attacker.x + side * gap;
+    if (to < STAGE_LEFT || to > STAGE_RIGHT) to = attacker.x - side * gap;
+    to = Phaser.Math.Clamp(to, STAGE_LEFT, STAGE_RIGHT);
+    const h = owner.def.art.height;
+    const y = GROUND_Y - owner.z - h * 0.55;
+    // Estela de páginas de luz del punto de partida al de llegada.
+    for (let i = 0; i <= 8; i++) this.fx.ring(from + ((to - from) * i) / 8, y, i % 2 ? COLORS.white : GOLD, 60, 0.25);
+    this.fx.ghost(owner.sprite, GOLD, 0.6, 300, 0.1);
+    owner.x = to;
+    owner.facing = (attacker.x >= to ? 1 : -1) as 1 | -1;
+    owner.vx = 0;
+    owner.playCounterStrike();
+    const dir = owner.facing;
+    const res = attacker.receive(owner, { ...moveFor(owner.def.id, 'special'), counter: false, knockdown: true, damage: 115, push: 520, hitstop: 160 }, {
+      dir, fromX: owner.x, unblockable: true, damage: Math.round(115 * owner.def.stats.damage * attacker.def.stats.defense),
+    });
+    const hx = attacker.x - dir * 40;
+    const hy = GROUND_Y - attacker.z - attacker.def.art.height * 0.55;
+    if (res.result !== 'whiff') {
+      this.impact(owner, attacker, moveFor(owner.def.id, 'kick'), res.result, res.damage, hx, hy, { heavy: true });
+      for (let k = 0; k < 3; k++) this.fx.ring(hx, hy, k === 1 ? COLORS.white : GOLD, 120 + k * 90, 0.35);
+    }
+    this.hitstopUntil = this.time.now + 220;
+    this.cameras.main.flash(120, 255, 240, 200);
+    this.hud.announce('¡CAPÍTULO TRES!', { size: 90, ms: 800, color: '#e0b862' });
+    Audio.tone(this, 880, 0.18, 'triangle', 0.06);
   }
 
   hasProjectile(owner: Fighter): boolean {
@@ -406,9 +466,9 @@ export class FightScene extends Phaser.Scene implements Arena {
   }
 
   /** Una nota del solo alcanza al rival. */
-  private noteStrike(owner: Fighter, x: number, y: number, damage: number, final: boolean): boolean {
+  private noteStrike(owner: Fighter, x: number, y: number, damage: number, final: boolean): NoteResult {
     const target = owner.opponent;
-    if (target.invulnerable) return false;
+    if (target.invulnerable) return 'miss';
     const dir = (target.x >= owner.x ? 1 : -1) as 1 | -1;
     const move = MOVES.superNote;
     const res = target.receive(owner, move, {
@@ -418,12 +478,12 @@ export class FightScene extends Phaser.Scene implements Arena {
       finisher: final,
       damage: Math.round(damage * owner.def.stats.damage * target.def.stats.defense),
     });
-    if (res.result === 'whiff') return false;
+    if (res.result === 'whiff') return 'miss';
     this.impact(owner, target, move, res.result, res.damage, x, y, { projectile: true, heavy: final });
     // Sin guitarra sintetizada: cada nota que pega suma un golpe grave para que pese.
     Audio.sfx(this, 'kick', final ? 0.8 : 0.45, final ? 0.6 : 0.75);
     if (final) this.hitstopUntil = this.time.now + 160;
-    return true;
+    return res.result === 'hit' ? 'hit' : 'block';
   }
 
 
@@ -505,6 +565,7 @@ export class FightScene extends Phaser.Scene implements Arena {
     this.fx.update(realDt);
     this.drawAuras(time);
     this.drawCageIcons(time);
+    this.drawSilence(time);
     if (this.solo) {
       this.solo.update(realDt * 1000, dt);
       if (this.solo.finished) this.endSolo();
@@ -636,6 +697,82 @@ export class FightScene extends Phaser.Scene implements Arena {
     }
   }
 
+  /** El que lanzó se cura `amount` (sin pasar su vida máxima): chispas doradas del rival hacia él. */
+  private drain(owner: Fighter, target: Fighter, amount: number): void {
+    owner.hp = Math.min(owner.maxHp, owner.hp + amount);
+    const from = GROUND_Y - target.z - target.def.art.height * 0.55;
+    const to = GROUND_Y - owner.z - owner.def.art.height * 0.55;
+    for (let i = 0; i < 6; i++) {
+      const k = i / 5;
+      this.fx.trail(target.x + (owner.x - target.x) * k, from + (to - from) * k, 0xffd23f, 40);
+    }
+    this.fx.ring(owner.x, to, 0x6dff8a, 140, 0.3);
+    Audio.tone(this, 1046, 0.15, 'triangle', 0.05);
+  }
+
+  /**
+   * Tributo (El Virrey): una copia dorada del corte sale del rival y vuelve volando hacia él (lo sigue si se mueve);
+   * al alcanzarlo se cura `amount`.
+   */
+  private tribute(p: Projectile, amount: number): void {
+    const owner = p.owner;
+    const look = buildLook(this, p.spec.look, 0xffd23f, p.radius, p.x, p.y).obj.setDepth(31).setAlpha(0.95);
+    const from = { x: p.x, y: p.y };
+    const st = { k: 0 };
+    this.tweens.add({
+      targets: st, k: 1, duration: 420, ease: 'Cubic.easeIn',
+      onUpdate: () => {
+        const to = { x: owner.x, y: GROUND_Y - owner.z - owner.def.art.height * 0.55 };
+        const x = from.x + (to.x - from.x) * st.k;
+        const y = from.y + (to.y - from.y) * st.k - Math.sin(st.k * Math.PI) * 120;
+        look.setPosition(x, y).setAngle(st.k * 720 * Math.sign(from.x - to.x || 1));
+        this.fx.trail(x, y, 0xffd23f, 34);
+      },
+      onComplete: () => {
+        look.destroy();
+        if (this.phase === 'over') return;
+        owner.hp = Math.min(owner.maxHp, owner.hp + amount);
+        const y = GROUND_Y - owner.z - owner.def.art.height * 0.55;
+        for (let k = 0; k < 3; k++) this.fx.ring(owner.x, y, k === 1 ? COLORS.white : 0xffd23f, 110 + k * 80, 0.35);
+        this.fx.ghost(owner.sprite, 0xffd23f, 0.6, 320, 0.1);
+        Audio.tone(this, 1046, 0.2, 'triangle', 0.06);
+      },
+    });
+  }
+
+  /** Silencio (George): `target` no puede usar su poder básico por `ms`; la recarga del que lo lanzó espera a que termine. */
+  private silence(owner: Fighter, target: Fighter, ms: number): void {
+    target.silencedUntil = target.now + ms;
+    owner.powerReadyAt = Math.max(owner.powerReadyAt, owner.now + ms + owner.powerCooldown * 0.5);
+    const y = GROUND_Y - target.z - target.def.art.height - 40;
+    for (let k = 0; k < 2; k++) this.fx.ring(target.x, y, k ? COLORS.white : 0x9b7bff, 80 + k * 50, 0.3);
+    this.hud.announce('¡DESAFINADO!', { size: 80, ms: 700, color: '#9b7bff' });
+  }
+
+  /** Silenciado: una nota tachada flota sobre la cabeza mientras dura. */
+  private drawSilence(time: number): void {
+    const g = (this.silenceIcon ??= this.add.graphics().setDepth(24));
+    g.clear();
+    for (const f of [this.p1, this.p2]) {
+      if (!f.silenced || this.solo || f.state === 'ko') continue;
+      const x = f.x;
+      const y = GROUND_Y - f.z - f.def.art.height - 50 + Math.sin(time / 250) * 6;
+      const left = (f.silencedUntil - f.now) / 3000;
+      g.fillStyle(0x000000, 0.55).fillCircle(x, y, 34);
+      g.lineStyle(5, 0x9b7bff, 1).strokeCircle(x, y, 34);
+      // Nota musical.
+      g.fillStyle(0xffffff, 1).fillEllipse(x - 6, y + 10, 18, 13).fillRect(x + 1, y - 18, 4, 28);
+      g.fillTriangle(x + 5, y - 18, x + 17, y - 10, x + 5, y - 6);
+      // Tachada.
+      g.lineStyle(6, 0xff3b4e, 1).lineBetween(x - 24, y + 24, x + 24, y - 24);
+      // Tiempo que le queda.
+      g.lineStyle(4, 0xffffff, 0.8);
+      g.beginPath();
+      g.arc(x, y, 42, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * Math.max(0, left));
+      g.strokePath();
+    }
+  }
+
   private clearCages(): void {
     for (const c of this.cages) c.g.destroy();
     this.cages = [];
@@ -687,10 +824,22 @@ export class FightScene extends Phaser.Scene implements Arena {
         target.meter -= stolen;
         p.owner.meter = Math.min(MAX_METER, p.owner.meter + stolen);
       }
+      // Jesex: la moneda le roba un poco de vida al rival.
+      if (result === 'hit' && p.spec.drain) this.drain(p.owner, target, Math.round(damage * p.spec.drain));
+      // El Virrey: al tercer acierto, el corte vuelve a él con el tributo.
+      if (result === 'hit' && p.spec.tribute && ++p.owner.tributeHits % p.spec.tribute.every === 0) {
+        this.tribute(p, Math.round(damage * p.spec.tribute.drain));
+      }
+      // George: la onda afinada lo deja sin poder un rato (no se acumula mientras dura).
+      if (result === 'hit' && p.spec.silence && !target.silenced) this.silence(p.owner, target, p.spec.silence);
       const hx = p.spec.beam ? target.x - dir * 40 : p.x;
       if (result === 'hit' && p.spec.poison) this.poison(p.owner, target, p.move, p.spec.poison, p.damage);
       // Lick de Pentalick: sube de nivel si pega; si se lo bloquean, vuelve al 1.
       if (p.spec.levels) p.owner.lickLevel = result === 'hit' ? Math.min(p.spec.levels - 1, p.owner.lickLevel + 1) : 0;
+      if (result === 'hit' && p.spec.tug) {
+        // Tornado de Markus: jala un poco al rival hacia él (el rozamiento lo frena tras unos `tug` px).
+        target.vx = -Math.sign(target.x - p.owner.x) * p.spec.tug * 9;
+      }
       if (result === 'hit' && p.spec.pull) {
         // Latigazo de Rematada: lo jala hasta quedar a distancia de golpe (el rozamiento lo frena ahí).
         const gap = target.x - p.owner.x;

@@ -67,6 +67,8 @@ const FPS = 12;
 const INTRO_FPS = 7;
 /** En el piso: respira despacio (a 12 fps parecía temblar). */
 const DOWN_FPS = 5;
+/** Guardia más calmada para quien la tiene muy movida a 12 fps. */
+const IDLE_FPS: Partial<Record<string, number>> = { virrey: 6, inti: 6, amu: 6 };
 
 /** Busca frames de una pose: animación (`pose-0..n`) o frame único. */
 const framesFor = (texture: Phaser.Textures.Texture, prefix: string, pose: Pose): string[] => {
@@ -84,7 +86,7 @@ export const resolvePose = (scene: Phaser.Scene, def: FighterDef, pose: Pose, t:
   for (let guard = 0; guard < 4; guard++) {
     const frames = framesFor(texture, def.art.prefix, p);
     if (frames.length) {
-      const fps = p === 'super' && def.superMove.solo === 'blues' ? 6 : p === 'intro' ? INTRO_FPS : p === 'down' ? DOWN_FPS : FPS;
+      const fps = p === 'super' && def.superMove.solo === 'blues' ? 6 : p === 'intro' ? INTRO_FPS : p === 'down' ? DOWN_FPS : p === 'idle' ? IDLE_FPS[def.id] ?? FPS : FPS;
       const dash = pose === 'dash' || pose === 'backdash' ? pose : null;
       const duration = dash === 'dash' ? 210 : 250;
       const progress = Math.max(0, Math.min(1, (loop ? t % duration : t) / duration));
