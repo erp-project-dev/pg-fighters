@@ -177,7 +177,7 @@ export class GuitarSolo {
   private powerNote(x: number, y: number, hit: boolean): NoteObj | null {
     const o = this.owner;
     if (o.def.id === 'mayin') return null;
-    const raw = powerFor(o.def.id, o.opponent.def.id)[0].look;
+    const raw = powerFor(o.def.id)[0].look;
     const look: PowerLook = raw === 'laser' || raw === 'lash' ? 'wave' : raw === 'feedback' ? 'darkOrb' : raw;
     const color = o.def.id === 'mimetico' ? 0x4dff88 : o.def.color;
     return buildLook(this.scene, look, color, hit ? 40 : 20, x, y).obj;

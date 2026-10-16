@@ -21,7 +21,7 @@ export const STORY_RIVALS = 12;
 export const CLUES: string[] = [
   "Todo empezó la misma noche. Todos estábamos ensayando con los amplis prendidos.",
   "Antes de mi primer comentario de odio escuché un zumbido agudo. Como un acople.",
-  "Todos los comentarios salieron a las 3:33 de la madrugada. Yo a esa hora duermo.",
+  "Todos los comentarios salieron a las 3:33 de la madrugada. Dicen que en la selva, a esa misma hora, el agua del río empezó a vibrar.",
   "Mientras más criticábamos, más fuerte sonaba el zumbido. Como si se alimentara.",
   "La envidia no era nuestra. Era como si alguien la subiera de volumen dentro de la cabeza.",
   "Hasta los instrumentos lo sintieron. Una guitarra vendida al peso en Marketplace despertó esa misma noche… odiando.",
@@ -64,11 +64,11 @@ export const FINALE: string[] = [
 
 /** Epílogo de cada luchador elegible. */
 export const EPILOGUES: Partial<Record<FighterId, string>> = {
-  erp: "ERP Project vuelve a su cuarto. Esa misma noche aparece una canción nueva, terminada, sobre una entidad de feedback. Sigue sin saber cómo la hizo. Quedó brutal.",
+  erp: "ERP Project vuelve a su cuarto, cierra el editor de código y graba un solo de pocas notas, todas con lenguaje. Los que lo odiaban lo escuchan a escondidas. Siguen sin pensar como él. Igual le dan like.",
   mayin:
-    "MayinBlues toca un blues frente a todos sus amigos. Alguien le ofrece una sexta cuerda. La rechaza con dignidad.",
+    "MayinBlues vuelve a su barrio y toca un blues en la esquina, frente a todos sus amigos. Alguien le ofrece una sexta cuerda. La rechaza con dignidad y se queda para la pollada.",
   george:
-    "George reúne a la escena para un ensayo general. Por primera vez en años, todo suena afinado. Igual encuentra tres cents de diferencia. Pero lo dice con cariño.",
+    "George reúne a la escena para un ensayo general, con himno incluido. Por primera vez en años, todo suena afinado. Igual le dice a alguien «cuidado ese bend». Pero lo dice con cariño, y con la gorra puesta.",
   pepper:
     "Pepper graba un disco en vivo con todos los liberados. Lo mezcla durante seis meses. Dice que todavía le falta producción.",
   slandor:
@@ -99,10 +99,18 @@ export const EPILOGUES: Partial<Record<FighterId, string>> = {
     "Markus enseña sus escalas orientales a toda la escena. Por primera vez, todos tocan algo distinto a la pentatónica. El primer ensayo termina en un acorde tan fuerte que se escucha en toda Lima: KABOOOM.",
   kimberly:
     "Kimberly sube un video de la pelea final: once millones de vistas. En los comentarios todos preguntan lo mismo: «¿Pero tocó?». Ella responde con un código de descuento.",
+  nosu:
+    "NOSU produce el disco de reconciliación de toda la escena. Lo afina, lo cuadra y lo masteriza en treinta segundos. Es perfecto. Nadie lo escucha dos veces. Por primera vez, NOSU anota un error que no sabe corregir.",
   ricardo:
     "Ricardo graba su primer disco con su nombre en la portada. Es rock de raíz, crudo y honesto. En los créditos de cada canción dice lo mismo: Ricardo.",
   platanero:
     "Platanero relanza su curso en VHS como «edición de coleccionista». Vende tres copias: dos se las compra la abuela. Su legado queda en VHS, por si te quieres reír de lo mal que enseñaba.",
+  virrey:
+    "El Virrey devuelve la puerta de todos los shows. Toda, no la mitad. Después se encierra en su casona a componer su primera canción propia. Le cobra tributo a su propia inspiración. Ella no paga.",
+  inti:
+    "Inti toca al amanecer en lo alto de la ciudadela, frente a toda la escena. El sol sale justo en el último acorde. Él jura que no lo ensayó. Nadie le cree, y a nadie le importa.",
+  amu:
+    "Amu vuelve al río con la escena entera en un peque-peque que se hunde un poco. Esa noche, el manguaré suena en la orilla y toda Lima lo escucha. Por fin le hacen caso.",
   toxicity:
     "Por primera vez una banda le pide a Toxicity que se quede. Dura tres ensayos. Es su récord. Lo celebra rezando, con rabia.",
 };
@@ -120,5 +128,8 @@ export const STORY_STAGE_ROTATION = [
   "chino",
   "mall",
   "arenal",
+  "casona",
+  "ciudadela",
+  "rio",
 ] as const;
 export const BOSS_STAGE = "ampli" as const;

@@ -36,4 +36,4 @@ Los colores de acento salen de `color` en `data/fighters.ts` (Mayin azul, ERP ro
 Abre `/?sprites`: la pestaña SPRITES marca qué poses tienen arte propio, ANIMACIÓN → [S] muestra el retrato, y ENTRENAMIENTO → [8] lanza el súper completo.
 
 ## Tiempos y daño
-Las notas del solo, cuáles golpean y su daño están en `data/solos.ts`. El sonido del solo se sintetiza en `systems/Licks.ts` con esos mismos tiempos, así que una animación de `super-0..n` debería durar unos 2,5 s o hacer loop.
+Las notas del solo, cuáles golpean y su daño están en `data/solos.ts`. Una animación de `super-0..n` debería durar unos 2,5 s (lo que dura el solo) o hacer loop.

@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1996,
+        "h": 828
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-airKick-0",
+          "frame": {
+            "x": 1000,
+            "y": 8,
+            "w": 319,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.4890282131661442,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "inti-airKick-1",
+          "frame": {
+            "x": 664,
+            "y": 8,
+            "w": 320,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 320,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 320,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.6375,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "inti-airKick-2",
+          "frame": {
+            "x": 8,
+            "y": 466,
+            "w": 520,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 520,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 520,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.3625,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "inti-airKick-3",
+          "frame": {
+            "x": 544,
+            "y": 466,
+            "w": 355,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.48732394366197185,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "inti-airKick-4",
+          "frame": {
+            "x": 1335,
+            "y": 8,
+            "w": 321,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.7227414330218068,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "inti-airKick-5",
+          "frame": {
+            "x": 1672,
+            "y": 8,
+            "w": 316,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 316,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 316,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.6044303797468354,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "inti-airKick-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 312,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.8557692307692307,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "inti-airKick-7",
+          "frame": {
+            "x": 336,
+            "y": 8,
+            "w": 312,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.5721153846153846,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "inti-airKick",
+          "frame": {
+            "x": 1000,
+            "y": 8,
+            "w": 319,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.4890282131661442,
+            "y": 0.9927184466019418
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1890,
+        "h": 935
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-airPunch-0",
+          "frame": {
+            "x": 8,
+            "y": 487,
+            "w": 324,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.32253086419753085,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "inti-airPunch-1",
+          "frame": {
+            "x": 1168,
+            "y": 8,
+            "w": 352,
+            "h": 448
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 448
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 448
+          },
+          "pivot": {
+            "x": 0.42613636363636365,
+            "y": 0.9933035714285714
+          }
+        },
+        {
+          "filename": "inti-airPunch-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 468,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 468,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 468,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.30662393162393164,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "inti-airPunch-3",
+          "frame": {
+            "x": 348,
+            "y": 487,
+            "w": 375,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.37333333333333335,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "inti-airPunch-4",
+          "frame": {
+            "x": 739,
+            "y": 487,
+            "w": 370,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.3472972972972973,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "inti-airPunch-5",
+          "frame": {
+            "x": 1536,
+            "y": 8,
+            "w": 346,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.10260115606936417,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "inti-airPunch-6",
+          "frame": {
+            "x": 826,
+            "y": 8,
+            "w": 326,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.4493865030674847,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "inti-airPunch-7",
+          "frame": {
+            "x": 492,
+            "y": 8,
+            "w": 318,
+            "h": 458
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 458
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 458
+          },
+          "pivot": {
+            "x": 0.37264150943396224,
+            "y": 0.9934497816593887
+          }
+        },
+        {
+          "filename": "inti-airPunch",
+          "frame": {
+            "x": 8,
+            "y": 487,
+            "w": 324,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.32253086419753085,
+            "y": 0.9931818181818182
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1826,
+        "h": 938
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-backdash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 353,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937888198757764
+          }
+        },
+        {
+          "filename": "inti-backdash-1",
+          "frame": {
+            "x": 380,
+            "y": 507,
+            "w": 330,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.4621212121212121,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "inti-backdash-2",
+          "frame": {
+            "x": 726,
+            "y": 507,
+            "w": 418,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 418,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 418,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.4342105263157895,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "inti-backdash-3",
+          "frame": {
+            "x": 1040,
+            "y": 8,
+            "w": 333,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.3978978978978979,
+            "y": 0.9933628318584071
+          }
+        },
+        {
+          "filename": "inti-backdash-4",
+          "frame": {
+            "x": 1389,
+            "y": 8,
+            "w": 429,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 429,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 429,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "inti-backdash-5",
+          "frame": {
+            "x": 8,
+            "y": 507,
+            "w": 356,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5210674157303371,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "inti-backdash-6",
+          "frame": {
+            "x": 716,
+            "y": 8,
+            "w": 308,
+            "h": 461
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 461
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 461
+          },
+          "pivot": {
+            "x": 0.5340909090909091,
+            "y": 0.9934924078091106
+          }
+        },
+        {
+          "filename": "inti-backdash-7",
+          "frame": {
+            "x": 377,
+            "y": 8,
+            "w": 323,
+            "h": 475
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 475
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 475
+          },
+          "pivot": {
+            "x": 0.5139318885448917,
+            "y": 0.9936842105263158
+          }
+        },
+        {
+          "filename": "inti-backdash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 353,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937888198757764
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1931,
+        "h": 955
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-special-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 377,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "inti-special-1",
+          "frame": {
+            "x": 401,
+            "y": 8,
+            "w": 365,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "inti-special-2",
+          "frame": {
+            "x": 1507,
+            "y": 8,
+            "w": 416,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.4951923076923077,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "inti-special-3",
+          "frame": {
+            "x": 1163,
+            "y": 8,
+            "w": 328,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "inti-special-4",
+          "frame": {
+            "x": 823,
+            "y": 505,
+            "w": 358,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "inti-special-5",
+          "frame": {
+            "x": 405,
+            "y": 505,
+            "w": 402,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "inti-special-6",
+          "frame": {
+            "x": 8,
+            "y": 505,
+            "w": 381,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "inti-special-7",
+          "frame": {
+            "x": 782,
+            "y": 8,
+            "w": 365,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.5027397260273972,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "inti-special",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 377,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937629937629938
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1906,
+        "h": 948
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-block-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 372,
+            "h": 471
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 471
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 471
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936305732484076
+          }
+        },
+        {
+          "filename": "inti-block-1",
+          "frame": {
+            "x": 396,
+            "y": 8,
+            "w": 370,
+            "h": 462
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 462
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 462
+          },
+          "pivot": {
+            "x": 0.5108108108108108,
+            "y": 0.9935064935064936
+          }
+        },
+        {
+          "filename": "inti-block-2",
+          "frame": {
+            "x": 8,
+            "y": 495,
+            "w": 369,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.505420054200542,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "inti-block-3",
+          "frame": {
+            "x": 815,
+            "y": 495,
+            "w": 381,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5236220472440944,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "inti-block-4",
+          "frame": {
+            "x": 1538,
+            "y": 8,
+            "w": 360,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932885906040269
+          }
+        },
+        {
+          "filename": "inti-block-5",
+          "frame": {
+            "x": 782,
+            "y": 8,
+            "w": 368,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.5081521739130435,
+            "y": 0.993421052631579
+          }
+        },
+        {
+          "filename": "inti-block-6",
+          "frame": {
+            "x": 393,
+            "y": 495,
+            "w": 406,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 406,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 406,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5049261083743842,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "inti-block-7",
+          "frame": {
+            "x": 1166,
+            "y": 8,
+            "w": 356,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "inti-block",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 372,
+            "h": 471
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 471
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 471
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936305732484076
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1940,
+        "h": 904
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-crouch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 374,
+            "h": 448
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 448
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 448
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933035714285714
+          }
+        },
+        {
+          "filename": "inti-crouch-1",
+          "frame": {
+            "x": 8,
+            "y": 472,
+            "w": 371,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "inti-crouch-2",
+          "frame": {
+            "x": 398,
+            "y": 8,
+            "w": 365,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "inti-crouch-3",
+          "frame": {
+            "x": 779,
+            "y": 8,
+            "w": 373,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "inti-crouch-4",
+          "frame": {
+            "x": 782,
+            "y": 472,
+            "w": 382,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.506544502617801,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "inti-crouch-5",
+          "frame": {
+            "x": 1168,
+            "y": 8,
+            "w": 375,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "inti-crouch-6",
+          "frame": {
+            "x": 1559,
+            "y": 8,
+            "w": 373,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5107238605898123,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "inti-crouch-7",
+          "frame": {
+            "x": 395,
+            "y": 472,
+            "w": 371,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "inti-crouch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 374,
+            "h": 448
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 448
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 448
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933035714285714
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1930,
+        "h": 785
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-crouchBlock-0",
+          "frame": {
+            "x": 790,
+            "y": 8,
+            "w": 361,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5041551246537396,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "inti-crouchBlock-1",
+          "frame": {
+            "x": 1167,
+            "y": 8,
+            "w": 368,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5054347826086957,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "inti-crouchBlock-2",
+          "frame": {
+            "x": 1551,
+            "y": 8,
+            "w": 371,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5067385444743935,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "inti-crouchBlock-3",
+          "frame": {
+            "x": 395,
+            "y": 401,
+            "w": 353,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.5184135977337111,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "inti-crouchBlock-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 373,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.5080428954423593,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "inti-crouchBlock-5",
+          "frame": {
+            "x": 397,
+            "y": 8,
+            "w": 377,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.5079575596816976,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "inti-crouchBlock-6",
+          "frame": {
+            "x": 8,
+            "y": 401,
+            "w": 371,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5053908355795148,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "inti-crouchBlock-7",
+          "frame": {
+            "x": 764,
+            "y": 401,
+            "w": 360,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.5013888888888889,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "inti-crouchBlock",
+          "frame": {
+            "x": 790,
+            "y": 8,
+            "w": 361,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5041551246537396,
+            "y": 0.9920212765957447
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1970,
+        "h": 869
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-crouchHurt-0",
+          "frame": {
+            "x": 834,
+            "y": 8,
+            "w": 365,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "inti-crouchHurt-1",
+          "frame": {
+            "x": 438,
+            "y": 8,
+            "w": 380,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 380,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 380,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5039473684210526,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "inti-crouchHurt-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 414,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 414,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 414,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.5374396135265701,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "inti-crouchHurt-3",
+          "frame": {
+            "x": 777,
+            "y": 464,
+            "w": 335,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5059701492537313,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "inti-crouchHurt-4",
+          "frame": {
+            "x": 8,
+            "y": 464,
+            "w": 367,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.49727520435967304,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "inti-crouchHurt-5",
+          "frame": {
+            "x": 1215,
+            "y": 8,
+            "w": 369,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.497289972899729,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "inti-crouchHurt-6",
+          "frame": {
+            "x": 391,
+            "y": 464,
+            "w": 370,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "inti-crouchHurt-7",
+          "frame": {
+            "x": 1600,
+            "y": 8,
+            "w": 362,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5207182320441989,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "inti-crouchHurt",
+          "frame": {
+            "x": 834,
+            "y": 8,
+            "w": 365,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1983,
+        "h": 822
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-crouchPunch-0",
+          "frame": {
+            "x": 796,
+            "y": 8,
+            "w": 376,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.511968085106383,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "inti-crouchPunch-1",
+          "frame": {
+            "x": 1590,
+            "y": 8,
+            "w": 385,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.525974025974026,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "inti-crouchPunch-2",
+          "frame": {
+            "x": 8,
+            "y": 422,
+            "w": 386,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5272020725388601,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "inti-crouchPunch-3",
+          "frame": {
+            "x": 820,
+            "y": 422,
+            "w": 403,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 403,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 403,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.5198511166253101,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "inti-crouchPunch-4",
+          "frame": {
+            "x": 410,
+            "y": 422,
+            "w": 394,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 394,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 394,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.5114213197969543,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "inti-crouchPunch-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 387,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5103359173126615,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "inti-crouchPunch-6",
+          "frame": {
+            "x": 411,
+            "y": 8,
+            "w": 369,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.510840108401084,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "inti-crouchPunch-7",
+          "frame": {
+            "x": 1188,
+            "y": 8,
+            "w": 386,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.5207253886010362,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "inti-crouchPunch",
+          "frame": {
+            "x": 796,
+            "y": 8,
+            "w": 376,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.511968085106383,
+            "y": 0.9924433249370277
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2011,
+        "h": 374
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-dash-0",
+          "frame": {
+            "x": 231,
+            "y": 8,
+            "w": 207,
+            "h": 355
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 207,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 207,
+            "h": 355
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915492957746479
+          }
+        },
+        {
+          "filename": "inti-dash-1",
+          "frame": {
+            "x": 882,
+            "y": 8,
+            "w": 250,
+            "h": 317
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 250,
+            "h": 317
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 250,
+            "h": 317
+          },
+          "pivot": {
+            "x": 0.436,
+            "y": 0.9905362776025236
+          }
+        },
+        {
+          "filename": "inti-dash-2",
+          "frame": {
+            "x": 1403,
+            "y": 8,
+            "w": 299,
+            "h": 305
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 299,
+            "h": 305
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 299,
+            "h": 305
+          },
+          "pivot": {
+            "x": 0.3394648829431438,
+            "y": 0.9901639344262295
+          }
+        },
+        {
+          "filename": "inti-dash-3",
+          "frame": {
+            "x": 652,
+            "y": 8,
+            "w": 214,
+            "h": 326
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 214,
+            "h": 326
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 214,
+            "h": 326
+          },
+          "pivot": {
+            "x": 0.35046728971962615,
+            "y": 0.99079754601227
+          }
+        },
+        {
+          "filename": "inti-dash-4",
+          "frame": {
+            "x": 1148,
+            "y": 8,
+            "w": 239,
+            "h": 312
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 239,
+            "h": 312
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 239,
+            "h": 312
+          },
+          "pivot": {
+            "x": 0.32426778242677823,
+            "y": 0.9903846153846154
+          }
+        },
+        {
+          "filename": "inti-dash-5",
+          "frame": {
+            "x": 1718,
+            "y": 8,
+            "w": 285,
+            "h": 286
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 286
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 286
+          },
+          "pivot": {
+            "x": 0.5210526315789473,
+            "y": 0.9895104895104895
+          }
+        },
+        {
+          "filename": "inti-dash-6",
+          "frame": {
+            "x": 454,
+            "y": 8,
+            "w": 182,
+            "h": 342
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 182,
+            "h": 342
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 182,
+            "h": 342
+          },
+          "pivot": {
+            "x": 0.510989010989011,
+            "y": 0.9912280701754386
+          }
+        },
+        {
+          "filename": "inti-dash-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 207,
+            "h": 358
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 207,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 207,
+            "h": 358
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916201117318436
+          }
+        },
+        {
+          "filename": "inti-dash",
+          "frame": {
+            "x": 231,
+            "y": 8,
+            "w": 207,
+            "h": 355
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 207,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 207,
+            "h": 355
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915492957746479
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1870,
+        "h": 671
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 249,
+            "h": 490
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 249,
+            "h": 490
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 249,
+            "h": 490
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938775510204082
+          }
+        },
+        {
+          "filename": "inti-ko-1",
+          "frame": {
+            "x": 273,
+            "y": 8,
+            "w": 240,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 240,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 240,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.46041666666666664,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "inti-ko-2",
+          "frame": {
+            "x": 529,
+            "y": 8,
+            "w": 283,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "inti-ko-3",
+          "frame": {
+            "x": 828,
+            "y": 8,
+            "w": 283,
+            "h": 310
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 310
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 310
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9903225806451613
+          }
+        },
+        {
+          "filename": "inti-ko-4",
+          "frame": {
+            "x": 1127,
+            "y": 8,
+            "w": 359,
+            "h": 190
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 190
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 190
+          },
+          "pivot": {
+            "x": 0.4610027855153203,
+            "y": 0.9842105263157894
+          }
+        },
+        {
+          "filename": "inti-ko-5",
+          "frame": {
+            "x": 1502,
+            "y": 8,
+            "w": 360,
+            "h": 162
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 162
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 162
+          },
+          "pivot": {
+            "x": 0.49722222222222223,
+            "y": 0.9814814814814815
+          }
+        },
+        {
+          "filename": "inti-ko-6",
+          "frame": {
+            "x": 376,
+            "y": 514,
+            "w": 373,
+            "h": 143
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 143
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 143
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9790209790209791
+          }
+        },
+        {
+          "filename": "inti-ko-7",
+          "frame": {
+            "x": 8,
+            "y": 514,
+            "w": 352,
+            "h": 149
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 149
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 149
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9798657718120806
+          }
+        },
+        {
+          "filename": "inti-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 249,
+            "h": 490
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 249,
+            "h": 490
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 249,
+            "h": 490
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938775510204082
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1997,
+        "h": 468
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-down-0",
+          "frame": {
+            "x": 1203,
+            "y": 8,
+            "w": 384,
+            "h": 204
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 204
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 204
+          },
+          "pivot": {
+            "x": 0.4986979166666667,
+            "y": 0.9852941176470589
+          }
+        },
+        {
+          "filename": "inti-down-1",
+          "frame": {
+            "x": 392,
+            "y": 260,
+            "w": 378,
+            "h": 186
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 186
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 186
+          },
+          "pivot": {
+            "x": 0.49074074074074076,
+            "y": 0.9838709677419355
+          }
+        },
+        {
+          "filename": "inti-down-2",
+          "frame": {
+            "x": 8,
+            "y": 260,
+            "w": 368,
+            "h": 200
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 200
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 200
+          },
+          "pivot": {
+            "x": 0.4904891304347826,
+            "y": 0.985
+          }
+        },
+        {
+          "filename": "inti-down-3",
+          "frame": {
+            "x": 786,
+            "y": 260,
+            "w": 383,
+            "h": 153
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 153
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 153
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9803921568627451
+          }
+        },
+        {
+          "filename": "inti-down-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 389,
+            "h": 236
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 389,
+            "h": 236
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 389,
+            "h": 236
+          },
+          "pivot": {
+            "x": 0.4832904884318766,
+            "y": 0.9872881355932204
+          }
+        },
+        {
+          "filename": "inti-down-5",
+          "frame": {
+            "x": 1603,
+            "y": 8,
+            "w": 386,
+            "h": 202
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 202
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 202
+          },
+          "pivot": {
+            "x": 0.49740932642487046,
+            "y": 0.9851485148514851
+          }
+        },
+        {
+          "filename": "inti-down-6",
+          "frame": {
+            "x": 413,
+            "y": 8,
+            "w": 386,
+            "h": 221
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 221
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 221
+          },
+          "pivot": {
+            "x": 0.4183937823834197,
+            "y": 0.9864253393665159
+          }
+        },
+        {
+          "filename": "inti-down-7",
+          "frame": {
+            "x": 815,
+            "y": 8,
+            "w": 372,
+            "h": 206
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 206
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 206
+          },
+          "pivot": {
+            "x": 0.4959677419354839,
+            "y": 0.9854368932038835
+          }
+        },
+        {
+          "filename": "inti-down",
+          "frame": {
+            "x": 1203,
+            "y": 8,
+            "w": 384,
+            "h": 204
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 204
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 204
+          },
+          "pivot": {
+            "x": 0.4986979166666667,
+            "y": 0.9852941176470589
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1811,
+        "h": 961
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-fall-0",
+          "frame": {
+            "x": 736,
+            "y": 512,
+            "w": 329,
+            "h": 326
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 326
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 326
+          },
+          "pivot": {
+            "x": 0.4635258358662614,
+            "y": 0.99079754601227
+          }
+        },
+        {
+          "filename": "inti-fall-1",
+          "frame": {
+            "x": 369,
+            "y": 512,
+            "w": 351,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.4188034188034188,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "inti-fall-2",
+          "frame": {
+            "x": 8,
+            "y": 512,
+            "w": 345,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5855072463768116,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "inti-fall-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 342,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.5190058479532164,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "inti-fall-4",
+          "frame": {
+            "x": 1456,
+            "y": 8,
+            "w": 347,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.4409221902017291,
+            "y": 0.9933628318584071
+          }
+        },
+        {
+          "filename": "inti-fall-5",
+          "frame": {
+            "x": 725,
+            "y": 8,
+            "w": 345,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.463768115942029,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "inti-fall-6",
+          "frame": {
+            "x": 1086,
+            "y": 8,
+            "w": 354,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.4251412429378531,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "inti-fall-7",
+          "frame": {
+            "x": 366,
+            "y": 8,
+            "w": 343,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.4868804664723032,
+            "y": 0.9936974789915967
+          }
+        },
+        {
+          "filename": "inti-fall",
+          "frame": {
+            "x": 736,
+            "y": 512,
+            "w": 329,
+            "h": 326
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 326
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 326
+          },
+          "pivot": {
+            "x": 0.4635258358662614,
+            "y": 0.99079754601227
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1830,
+        "h": 877
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-getup-0",
+          "frame": {
+            "x": 788,
+            "y": 528,
+            "w": 436,
+            "h": 158
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 436,
+            "h": 158
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 436,
+            "h": 158
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9810126582278481
+          }
+        },
+        {
+          "filename": "inti-getup-1",
+          "frame": {
+            "x": 406,
+            "y": 528,
+            "w": 366,
+            "h": 239
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 239
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 239
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9874476987447699
+          }
+        },
+        {
+          "filename": "inti-getup-2",
+          "frame": {
+            "x": 8,
+            "y": 528,
+            "w": 382,
+            "h": 341
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 341
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 341
+          },
+          "pivot": {
+            "x": 0.5497382198952879,
+            "y": 0.9912023460410557
+          }
+        },
+        {
+          "filename": "inti-getup-3",
+          "frame": {
+            "x": 1495,
+            "y": 8,
+            "w": 327,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5076452599388379,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "inti-getup-4",
+          "frame": {
+            "x": 1124,
+            "y": 8,
+            "w": 355,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5126760563380282,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "inti-getup-5",
+          "frame": {
+            "x": 395,
+            "y": 8,
+            "w": 327,
+            "h": 503
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 503
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 503
+          },
+          "pivot": {
+            "x": 0.5198776758409785,
+            "y": 0.9940357852882704
+          }
+        },
+        {
+          "filename": "inti-getup-6",
+          "frame": {
+            "x": 738,
+            "y": 8,
+            "w": 370,
+            "h": 500
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 500
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 500
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994
+          }
+        },
+        {
+          "filename": "inti-getup-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 371,
+            "h": 504
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 504
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 504
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940476190476191
+          }
+        },
+        {
+          "filename": "inti-getup",
+          "frame": {
+            "x": 788,
+            "y": 528,
+            "w": 436,
+            "h": 158
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 436,
+            "h": 158
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 436,
+            "h": 158
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9810126582278481
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2028,
+        "h": 1021
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-hurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 312,
+            "h": 501
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 501
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 501
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940119760479041
+          }
+        },
+        {
+          "filename": "inti-hurt-1",
+          "frame": {
+            "x": 8,
+            "y": 525,
+            "w": 396,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 396,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 396,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.42803030303030304,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "inti-hurt-2",
+          "frame": {
+            "x": 336,
+            "y": 8,
+            "w": 344,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.49709302325581395,
+            "y": 0.9939393939393939
+          }
+        },
+        {
+          "filename": "inti-hurt-3",
+          "frame": {
+            "x": 420,
+            "y": 525,
+            "w": 431,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 431,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 431,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.5788863109048724,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "inti-hurt-4",
+          "frame": {
+            "x": 1698,
+            "y": 8,
+            "w": 322,
+            "h": 490
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 490
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 490
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938775510204082
+          }
+        },
+        {
+          "filename": "inti-hurt-5",
+          "frame": {
+            "x": 1044,
+            "y": 8,
+            "w": 321,
+            "h": 492
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 492
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 492
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939024390243902
+          }
+        },
+        {
+          "filename": "inti-hurt-6",
+          "frame": {
+            "x": 696,
+            "y": 8,
+            "w": 332,
+            "h": 493
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 493
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 493
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939148073022313
+          }
+        },
+        {
+          "filename": "inti-hurt-7",
+          "frame": {
+            "x": 1381,
+            "y": 8,
+            "w": 301,
+            "h": 492
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 492
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 492
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939024390243902
+          }
+        },
+        {
+          "filename": "inti-hurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 312,
+            "h": 501
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 501
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 501
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940119760479041
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1801,
+        "h": 1027
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-idle-0",
+          "frame": {
+            "x": 371,
+            "y": 8,
+            "w": 338,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940239043824701
+          }
+        },
+        {
+          "filename": "inti-idle-1",
+          "frame": {
+            "x": 725,
+            "y": 8,
+            "w": 343,
+            "h": 500
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 500
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 500
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994
+          }
+        },
+        {
+          "filename": "inti-idle-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 347,
+            "h": 509
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 509
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 509
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941060903732809
+          }
+        },
+        {
+          "filename": "inti-idle-3",
+          "frame": {
+            "x": 1441,
+            "y": 8,
+            "w": 352,
+            "h": 487
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 487
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 487
+          },
+          "pivot": {
+            "x": 0.5113636363636364,
+            "y": 0.9938398357289527
+          }
+        },
+        {
+          "filename": "inti-idle-4",
+          "frame": {
+            "x": 1084,
+            "y": 8,
+            "w": 341,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "inti-idle-5",
+          "frame": {
+            "x": 8,
+            "y": 533,
+            "w": 355,
+            "h": 486
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 486
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 486
+          },
+          "pivot": {
+            "x": 0.5197183098591549,
+            "y": 0.9938271604938271
+          }
+        },
+        {
+          "filename": "inti-idle-6",
+          "frame": {
+            "x": 379,
+            "y": 533,
+            "w": 354,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.5127118644067796,
+            "y": 0.9937888198757764
+          }
+        },
+        {
+          "filename": "inti-idle-7",
+          "frame": {
+            "x": 749,
+            "y": 533,
+            "w": 368,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5244565217391305,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "inti-idle",
+          "frame": {
+            "x": 371,
+            "y": 8,
+            "w": 338,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940239043824701
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1820,
+        "h": 998
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-intro-0",
+          "frame": {
+            "x": 358,
+            "y": 8,
+            "w": 288,
+            "h": 505
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 505
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 505
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994059405940594
+          }
+        },
+        {
+          "filename": "inti-intro-1",
+          "frame": {
+            "x": 662,
+            "y": 8,
+            "w": 372,
+            "h": 492
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 492
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 492
+          },
+          "pivot": {
+            "x": 0.4220430107526882,
+            "y": 0.9939024390243902
+          }
+        },
+        {
+          "filename": "inti-intro-2",
+          "frame": {
+            "x": 1050,
+            "y": 8,
+            "w": 379,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.45382585751978893,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "inti-intro-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 334,
+            "h": 515
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 515
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 515
+          },
+          "pivot": {
+            "x": 0.5074850299401198,
+            "y": 0.9941747572815534
+          }
+        },
+        {
+          "filename": "inti-intro-4",
+          "frame": {
+            "x": 8,
+            "y": 539,
+            "w": 323,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.5092879256965944,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "inti-intro-5",
+          "frame": {
+            "x": 703,
+            "y": 539,
+            "w": 358,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "inti-intro-6",
+          "frame": {
+            "x": 347,
+            "y": 539,
+            "w": 340,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5044117647058823,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "inti-intro-7",
+          "frame": {
+            "x": 1445,
+            "y": 8,
+            "w": 367,
+            "h": 455
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 455
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 455
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934065934065934
+          }
+        },
+        {
+          "filename": "inti-intro",
+          "frame": {
+            "x": 358,
+            "y": 8,
+            "w": 288,
+            "h": 505
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 505
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 505
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994059405940594
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1771,
+        "h": 864
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-jump-0",
+          "frame": {
+            "x": 715,
+            "y": 8,
+            "w": 338,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "inti-jump-1",
+          "frame": {
+            "x": 8,
+            "y": 498,
+            "w": 329,
+            "h": 358
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 358
+          },
+          "pivot": {
+            "x": 0.48328267477203646,
+            "y": 0.9916201117318436
+          }
+        },
+        {
+          "filename": "inti-jump-2",
+          "frame": {
+            "x": 325,
+            "y": 8,
+            "w": 374,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.08021390374331551,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "inti-jump-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 301,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.20431893687707642,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "inti-jump-4",
+          "frame": {
+            "x": 716,
+            "y": 498,
+            "w": 293,
+            "h": 302
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 293,
+            "h": 302
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 293,
+            "h": 302
+          },
+          "pivot": {
+            "x": 0.45563139931740615,
+            "y": 0.9900662251655629
+          }
+        },
+        {
+          "filename": "inti-jump-5",
+          "frame": {
+            "x": 1428,
+            "y": 8,
+            "w": 335,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.8611940298507462,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "inti-jump-6",
+          "frame": {
+            "x": 353,
+            "y": 498,
+            "w": 347,
+            "h": 346
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 346
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 346
+          },
+          "pivot": {
+            "x": 0.44812680115273773,
+            "y": 0.9913294797687862
+          }
+        },
+        {
+          "filename": "inti-jump-7",
+          "frame": {
+            "x": 1069,
+            "y": 8,
+            "w": 343,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "inti-jump",
+          "frame": {
+            "x": 715,
+            "y": 8,
+            "w": 338,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2048,
+        "h": 959
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-kick-0",
+          "frame": {
+            "x": 289,
+            "y": 8,
+            "w": 319,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "inti-kick-1",
+          "frame": {
+            "x": 8,
+            "y": 496,
+            "w": 331,
+            "h": 455
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 455
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 455
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934065934065934
+          }
+        },
+        {
+          "filename": "inti-kick-2",
+          "frame": {
+            "x": 964,
+            "y": 8,
+            "w": 255,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 255,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 255,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.503921568627451,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "inti-kick-3",
+          "frame": {
+            "x": 1590,
+            "y": 8,
+            "w": 450,
+            "h": 462
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 450,
+            "h": 462
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 450,
+            "h": 462
+          },
+          "pivot": {
+            "x": 0.36444444444444446,
+            "y": 0.9935064935064936
+          }
+        },
+        {
+          "filename": "inti-kick-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 265,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 265,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 265,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.41509433962264153,
+            "y": 0.9936440677966102
+          }
+        },
+        {
+          "filename": "inti-kick-5",
+          "frame": {
+            "x": 355,
+            "y": 496,
+            "w": 292,
+            "h": 453
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 292,
+            "h": 453
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 292,
+            "h": 453
+          },
+          "pivot": {
+            "x": 0.5445205479452054,
+            "y": 0.9933774834437086
+          }
+        },
+        {
+          "filename": "inti-kick-6",
+          "frame": {
+            "x": 624,
+            "y": 8,
+            "w": 324,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "inti-kick-7",
+          "frame": {
+            "x": 1235,
+            "y": 8,
+            "w": 339,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "inti-kick",
+          "frame": {
+            "x": 289,
+            "y": 8,
+            "w": 319,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935483870967742
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1992,
+        "h": 772
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-knockdown-0",
+          "frame": {
+            "x": 426,
+            "y": 8,
+            "w": 337,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993421052631579
+          }
+        },
+        {
+          "filename": "inti-knockdown-1",
+          "frame": {
+            "x": 779,
+            "y": 8,
+            "w": 347,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.4783861671469741,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "inti-knockdown-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 402,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.7189054726368159,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "inti-knockdown-3",
+          "frame": {
+            "x": 1142,
+            "y": 8,
+            "w": 411,
+            "h": 345
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 411,
+            "h": 345
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 411,
+            "h": 345
+          },
+          "pivot": {
+            "x": 0.5766423357664233,
+            "y": 0.991304347826087
+          }
+        },
+        {
+          "filename": "inti-knockdown-4",
+          "frame": {
+            "x": 1569,
+            "y": 8,
+            "w": 415,
+            "h": 304
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 415,
+            "h": 304
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 415,
+            "h": 304
+          },
+          "pivot": {
+            "x": 0.4542168674698795,
+            "y": 0.9901315789473685
+          }
+        },
+        {
+          "filename": "inti-knockdown-5",
+          "frame": {
+            "x": 8,
+            "y": 494,
+            "w": 409,
+            "h": 270
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 270
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 270
+          },
+          "pivot": {
+            "x": 0.45843520782396086,
+            "y": 0.9888888888888889
+          }
+        },
+        {
+          "filename": "inti-knockdown-6",
+          "frame": {
+            "x": 433,
+            "y": 494,
+            "w": 323,
+            "h": 193
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 193
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 193
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9844559585492227
+          }
+        },
+        {
+          "filename": "inti-knockdown-7",
+          "frame": {
+            "x": 772,
+            "y": 494,
+            "w": 429,
+            "h": 129
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 429,
+            "h": 129
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 429,
+            "h": 129
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9767441860465116
+          }
+        },
+        {
+          "filename": "inti-knockdown",
+          "frame": {
+            "x": 426,
+            "y": 8,
+            "w": 337,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993421052631579
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1885,
+        "h": 928
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-punch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 335,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "inti-punch-1",
+          "frame": {
+            "x": 8,
+            "y": 478,
+            "w": 360,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "inti-punch-2",
+          "frame": {
+            "x": 816,
+            "y": 478,
+            "w": 375,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.47333333333333333,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "inti-punch-3",
+          "frame": {
+            "x": 384,
+            "y": 478,
+            "w": 416,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.43149038461538464,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "inti-punch-4",
+          "frame": {
+            "x": 1474,
+            "y": 8,
+            "w": 403,
+            "h": 443
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 403,
+            "h": 443
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 403,
+            "h": 443
+          },
+          "pivot": {
+            "x": 0.45905707196029777,
+            "y": 0.9932279909706546
+          }
+        },
+        {
+          "filename": "inti-punch-5",
+          "frame": {
+            "x": 718,
+            "y": 8,
+            "w": 364,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "inti-punch-6",
+          "frame": {
+            "x": 1098,
+            "y": 8,
+            "w": 360,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "inti-punch-7",
+          "frame": {
+            "x": 359,
+            "y": 8,
+            "w": 343,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "inti-punch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 335,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933920704845814
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1759,
+        "h": 1018
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-super-0",
+          "frame": {
+            "x": 392,
+            "y": 8,
+            "w": 346,
+            "h": 492
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 492
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 492
+          },
+          "pivot": {
+            "x": 0.4653179190751445,
+            "y": 0.9939024390243902
+          }
+        },
+        {
+          "filename": "inti-super-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 368,
+            "h": 519
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 519
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 519
+          },
+          "pivot": {
+            "x": 0.44021739130434784,
+            "y": 0.9942196531791907
+          }
+        },
+        {
+          "filename": "inti-super-2",
+          "frame": {
+            "x": 439,
+            "y": 543,
+            "w": 403,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 403,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 403,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "inti-super-3",
+          "frame": {
+            "x": 1423,
+            "y": 8,
+            "w": 328,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.5198170731707317,
+            "y": 0.9936440677966102
+          }
+        },
+        {
+          "filename": "inti-super-4",
+          "frame": {
+            "x": 858,
+            "y": 543,
+            "w": 425,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 425,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 425,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "inti-super-5",
+          "frame": {
+            "x": 1093,
+            "y": 8,
+            "w": 314,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.2643312101910828,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "inti-super-6",
+          "frame": {
+            "x": 8,
+            "y": 543,
+            "w": 415,
+            "h": 467
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 415,
+            "h": 467
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 415,
+            "h": 467
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935760171306209
+          }
+        },
+        {
+          "filename": "inti-super-7",
+          "frame": {
+            "x": 754,
+            "y": 8,
+            "w": 323,
+            "h": 490
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 490
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 490
+          },
+          "pivot": {
+            "x": 0.5170278637770898,
+            "y": 0.9938775510204082
+          }
+        },
+        {
+          "filename": "inti-super",
+          "frame": {
+            "x": 392,
+            "y": 8,
+            "w": 346,
+            "h": 492
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 492
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 492
+          },
+          "pivot": {
+            "x": 0.4653179190751445,
+            "y": 0.9939024390243902
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1964,
+        "h": 813
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-sweep-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 387,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5038759689922481,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "inti-sweep-1",
+          "frame": {
+            "x": 1208,
+            "y": 8,
+            "w": 329,
+            "h": 350
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 350
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 350
+          },
+          "pivot": {
+            "x": 0.5638297872340425,
+            "y": 0.9914285714285714
+          }
+        },
+        {
+          "filename": "inti-sweep-2",
+          "frame": {
+            "x": 774,
+            "y": 461,
+            "w": 442,
+            "h": 293
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 442,
+            "h": 293
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 442,
+            "h": 293
+          },
+          "pivot": {
+            "x": 0.4762443438914027,
+            "y": 0.9897610921501706
+          }
+        },
+        {
+          "filename": "inti-sweep-3",
+          "frame": {
+            "x": 349,
+            "y": 461,
+            "w": 409,
+            "h": 302
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 302
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 302
+          },
+          "pivot": {
+            "x": 0.43765281173594134,
+            "y": 0.9900662251655629
+          }
+        },
+        {
+          "filename": "inti-sweep-4",
+          "frame": {
+            "x": 1553,
+            "y": 8,
+            "w": 403,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 403,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 403,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.5272952853598015,
+            "y": 0.9913544668587896
+          }
+        },
+        {
+          "filename": "inti-sweep-5",
+          "frame": {
+            "x": 8,
+            "y": 461,
+            "w": 325,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.49846153846153846,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "inti-sweep-6",
+          "frame": {
+            "x": 411,
+            "y": 8,
+            "w": 420,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 420,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 420,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5142857142857142,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "inti-sweep-7",
+          "frame": {
+            "x": 847,
+            "y": 8,
+            "w": 345,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5159420289855072,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "inti-sweep",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 387,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5038759689922481,
+            "y": 0.9931350114416476
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2037,
+        "h": 967
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-uppercut-0",
+          "frame": {
+            "x": 320,
+            "y": 8,
+            "w": 340,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "inti-uppercut-1",
+          "frame": {
+            "x": 369,
+            "y": 595,
+            "w": 330,
+            "h": 336
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 336
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 336
+          },
+          "pivot": {
+            "x": 0.49242424242424243,
+            "y": 0.9910714285714286
+          }
+        },
+        {
+          "filename": "inti-uppercut-2",
+          "frame": {
+            "x": 676,
+            "y": 8,
+            "w": 328,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.4801829268292683,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "inti-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 296,
+            "h": 571
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 296,
+            "h": 571
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 571
+          },
+          "pivot": {
+            "x": 0.3310810810810811,
+            "y": 0.9947460595446584
+          }
+        },
+        {
+          "filename": "inti-uppercut-4",
+          "frame": {
+            "x": 1020,
+            "y": 8,
+            "w": 327,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "inti-uppercut-5",
+          "frame": {
+            "x": 8,
+            "y": 595,
+            "w": 345,
+            "h": 364
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 364
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 364
+          },
+          "pivot": {
+            "x": 0.5072463768115942,
+            "y": 0.9917582417582418
+          }
+        },
+        {
+          "filename": "inti-uppercut-6",
+          "frame": {
+            "x": 1707,
+            "y": 8,
+            "w": 322,
+            "h": 389
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 389
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 389
+          },
+          "pivot": {
+            "x": 0.5046583850931677,
+            "y": 0.9922879177377892
+          }
+        },
+        {
+          "filename": "inti-uppercut-7",
+          "frame": {
+            "x": 1363,
+            "y": 8,
+            "w": 328,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "inti-uppercut",
+          "frame": {
+            "x": 320,
+            "y": 8,
+            "w": 340,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2010,
+        "h": 1002
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-win-0",
+          "frame": {
+            "x": 295,
+            "y": 525,
+            "w": 355,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "inti-win-1",
+          "frame": {
+            "x": 8,
+            "y": 525,
+            "w": 271,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 271,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 271,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "inti-win-2",
+          "frame": {
+            "x": 1116,
+            "y": 8,
+            "w": 268,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 268,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 268,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937888198757764
+          }
+        },
+        {
+          "filename": "inti-win-3",
+          "frame": {
+            "x": 340,
+            "y": 8,
+            "w": 373,
+            "h": 492
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 492
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 492
+          },
+          "pivot": {
+            "x": 0.47587131367292224,
+            "y": 0.9939024390243902
+          }
+        },
+        {
+          "filename": "inti-win-4",
+          "frame": {
+            "x": 729,
+            "y": 8,
+            "w": 371,
+            "h": 491
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 491
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 491
+          },
+          "pivot": {
+            "x": 0.5094339622641509,
+            "y": 0.9938900203665988
+          }
+        },
+        {
+          "filename": "inti-win-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 316,
+            "h": 501
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 316,
+            "h": 501
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 316,
+            "h": 501
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940119760479041
+          }
+        },
+        {
+          "filename": "inti-win-6",
+          "frame": {
+            "x": 1400,
+            "y": 8,
+            "w": 276,
+            "h": 477
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 276,
+            "h": 477
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 276,
+            "h": 477
+          },
+          "pivot": {
+            "x": 0.5307971014492754,
+            "y": 0.9937106918238994
+          }
+        },
+        {
+          "filename": "inti-win-7",
+          "frame": {
+            "x": 1692,
+            "y": 8,
+            "w": 310,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "inti-win",
+          "frame": {
+            "x": 295,
+            "y": 525,
+            "w": 355,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929906542056075
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1695,
+        "h": 1022
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-walk-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 314,
+            "h": 507
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 507
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 507
+          },
+          "pivot": {
+            "x": 0.5095541401273885,
+            "y": 0.9940828402366864
+          }
+        },
+        {
+          "filename": "inti-walk-1",
+          "frame": {
+            "x": 338,
+            "y": 8,
+            "w": 292,
+            "h": 496
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 292,
+            "h": 496
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 292,
+            "h": 496
+          },
+          "pivot": {
+            "x": 0.4811643835616438,
+            "y": 0.9939516129032258
+          }
+        },
+        {
+          "filename": "inti-walk-2",
+          "frame": {
+            "x": 979,
+            "y": 8,
+            "w": 350,
+            "h": 492
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 492
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 492
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939024390243902
+          }
+        },
+        {
+          "filename": "inti-walk-3",
+          "frame": {
+            "x": 1345,
+            "y": 8,
+            "w": 342,
+            "h": 489
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 489
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 489
+          },
+          "pivot": {
+            "x": 0.5014619883040936,
+            "y": 0.9938650306748467
+          }
+        },
+        {
+          "filename": "inti-walk-4",
+          "frame": {
+            "x": 363,
+            "y": 531,
+            "w": 347,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5115273775216138,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "inti-walk-5",
+          "frame": {
+            "x": 726,
+            "y": 531,
+            "w": 342,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.5116959064327485,
+            "y": 0.9936974789915967
+          }
+        },
+        {
+          "filename": "inti-walk-6",
+          "frame": {
+            "x": 8,
+            "y": 531,
+            "w": 339,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.5073746312684366,
+            "y": 0.9937888198757764
+          }
+        },
+        {
+          "filename": "inti-walk-7",
+          "frame": {
+            "x": 646,
+            "y": 8,
+            "w": 317,
+            "h": 496
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 496
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 496
+          },
+          "pivot": {
+            "x": 0.5047318611987381,
+            "y": 0.9939516129032258
+          }
+        },
+        {
+          "filename": "inti-walk",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 314,
+            "h": 507
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 507
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 507
+          },
+          "pivot": {
+            "x": 0.5095541401273885,
+            "y": 0.9940828402366864
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1709,
+        "h": 992
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "inti-walkBack-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 357,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939393939393939
+          }
+        },
+        {
+          "filename": "inti-walkBack-1",
+          "frame": {
+            "x": 381,
+            "y": 8,
+            "w": 342,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.46637426900584794,
+            "y": 0.9937888198757764
+          }
+        },
+        {
+          "filename": "inti-walkBack-2",
+          "frame": {
+            "x": 8,
+            "y": 519,
+            "w": 386,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "inti-walkBack-3",
+          "frame": {
+            "x": 1065,
+            "y": 8,
+            "w": 252,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 252,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 252,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.5317460317460317,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "inti-walkBack-4",
+          "frame": {
+            "x": 735,
+            "y": 519,
+            "w": 425,
+            "h": 460
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 425,
+            "h": 460
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 425,
+            "h": 460
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934782608695653
+          }
+        },
+        {
+          "filename": "inti-walkBack-5",
+          "frame": {
+            "x": 1333,
+            "y": 8,
+            "w": 368,
+            "h": 467
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 467
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 467
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935760171306209
+          }
+        },
+        {
+          "filename": "inti-walkBack-6",
+          "frame": {
+            "x": 739,
+            "y": 8,
+            "w": 310,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "inti-walkBack-7",
+          "frame": {
+            "x": 410,
+            "y": 519,
+            "w": 309,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "inti-walkBack",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 357,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939393939393939
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}

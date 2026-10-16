@@ -20,6 +20,10 @@ import { george } from './george';
 import { platanero } from './platanero';
 import { ricardo } from './ricardo';
 import { kimberly } from './kimberly';
+import { nosu } from './nosu';
+import { virrey } from './virrey';
+import { inti } from './inti';
+import { amu } from './amu';
 import { mimetico } from './mimetico';
 import { slandor } from './slandor';
 import { toxicity } from './toxicity';
@@ -27,7 +31,8 @@ import { toxicity } from './toxicity';
 /** Presentación propia de todos los luchadores, incluido el solo original de Mayin. */
 const shows: Record<FighterId, SuperShow> = {
   erp, mayin, george, pepper, slandor, pentalick, mimetico, clavito, chantal, jeanpierre,
-  ferdex, turboshred, toxicity, rematada, escalas, tayloy, jesex, markus, platanero, ricardo, kimberly, acople,
+  ferdex, turboshred, toxicity, rematada, escalas, tayloy, jesex, markus, platanero, ricardo, kimberly, nosu,
+  virrey, inti, amu, acople,
 };
 
 export const SHOWS = Object.fromEntries(

@@ -1,12 +1,13 @@
+import { preloadRegeneratedArt, registerRegeneratedArt } from '../visuals/roster/RegeneratedArt';
 import Phaser from 'phaser';
 import { COLORS, GAME_HEIGHT, GAME_WIDTH, GROUND_Y, ROUNDS_TO_WIN, ROUND_SECONDS, SCENES, STAGE_LEFT, STAGE_RIGHT } from '../config';
 import { Cpu } from '../entities/Cpu';
 import { GuitarSolo } from '../entities/GuitarSolo';
-import { Fighter, MAX_METER, NO_INTENT, type Arena, type Intent } from '../entities/Fighter';
-import { Projectile } from '../entities/Projectile';
+import { Fighter, MAX_METER, NO_INTENT, isNormal, type Arena, type Intent } from '../entities/Fighter';
+import { Projectile, drawCage } from '../entities/Projectile';
 import { dialogFor } from '../data/dialogs';
 import { FIGHTERS, type FighterId } from '../data/fighters';
-import { powerFor } from '../data/powers';
+import { POWERS, powerFor } from '../data/powers';
 
 import { STAGES, type StageId } from '../data/stages';
 import { MOVES, type MoveDef } from '../data/moves';
@@ -14,7 +15,6 @@ import { Audio } from '../systems/Audio';
 import { Fx } from '../systems/Fx';
 import { buildStage } from '../systems/StageArt';
 import { Input } from '../systems/Input';
-import { playSolo } from '../systems/Licks';
 import { Settings, type CpuLevel } from '../systems/Settings';
 import { StoryRun } from '../systems/StoryRun';
 import { Training, type DemoCombo } from '../systems/Training';
@@ -28,9 +28,7 @@ export interface FightData {
   training?: boolean;
   /** Escenario (por defecto, Barrio Bravo). */
   stage?: StageId;
-  /** Vitrina del laboratorio: práctica sin anuncios ni panel de entrenamiento, con botones de especiales. */
-  showcase?: boolean;
-  /** Laboratorio (?lab): práctica directa; ESC abre el roster para cambiar de luchador al instante. */
+  /** Laboratorio (?lab): práctica directa; ESC abre el menú para cambiar luchadores y escenario. */
   lab?: boolean;
   /** Pelea del modo historia (el rival está en "modo hater" o es el jefe). */
   story?: boolean;
@@ -50,11 +48,9 @@ export interface MatchStats {
   hpLeft: number;
 }
 
-type Phase = 'intro' | 'fight' | 'clash' | 'ko' | 'over';
+type Phase = 'intro' | 'fight' | 'ko' | 'over';
 
 /** Duración del choque de ultimates (ms) y apretadas por segundo de la CPU (fácil → difícil). */
-const CLASH_MS = 1800;
-const CLASH_CPU_RATE = [6, 13];
 
 /** Separación mínima entre cuerpos en el suelo. */
 const BODY_GAP = 130;
@@ -69,12 +65,24 @@ const SPARK_HEIGHT: Record<string, number> = {
 };
 
 /** La pelea: rondas, colisiones, impacto (hitstop, chispas, sacudida), KO y cámara lenta. */
+/** Duración del golpe de oro de Slandor sin usarlo (ms). */
+const GOLD_MS = 5000;
+/** Radio de la esferita que avisa que la jaula de NOSU está lista (px). */
+const CAGE_ICON_R = 26;
+/** La esfera que pegó tarda esto en crecer hasta envolver al rival (s). */
+const CAGE_GROW_S = 0.18;
+
 export class FightScene extends Phaser.Scene implements Arena {
   now = 0;
   fx!: Fx;
   p1!: Fighter;
   p2!: Fighter;
   projectiles: Projectile[] = [];
+  /** Jaula lista: esferita junto a NOSU (por lado) y si estaba lista el frame anterior (para el aviso). */
+  private cageIcons: (Phaser.GameObjects.Graphics | null)[] = [null, null];
+  private cageWasReady = [true, true];
+  /** Rivales encerrados en la jaula de NOSU. */
+  private cages: { target: Fighter; color: number; until: number; hp: number; g: Phaser.GameObjects.Graphics; t: number; from: number }[] = [];
   round = 1;
   wins = [0, 0];
   timer = ROUND_SECONDS;
@@ -93,7 +101,6 @@ export class FightScene extends Phaser.Scene implements Arena {
   /** Dueño del ultimate en curso (manda el primero). */
   private ultOwner: Fighter | null = null;
   /** Choque de ultimates en curso: apretadas de cada lado y barra de tira y afloja. */
-  private clash: { a: Fighter; b: Fighter; score: [number, number]; until: number; cpuAcc: number; g: Phaser.GameObjects.Graphics } | null = null;
   /** Solo de guitarra del súper en curso. */
   private solo: GuitarSolo | null = null;
   /** Estado del modo entrenamiento (null en arcade). */
@@ -113,13 +120,21 @@ export class FightScene extends Phaser.Scene implements Arena {
     this.round = 1;
     this.wins = [0, 0];
     this.projectiles = [];
+    this.cages = [];
+    this.cageIcons = [null, null];
+    this.cageWasReady = [true, true];
     this.timeScale = 1;
     this.hitstopUntil = 0;
     this.now = 0;
     this.stats = { maxCombo: 0, perfects: 0, roundsWon: 0, roundsLost: 0, seconds: 0, fightSeconds: 0, hpLeft: 0 };
   }
 
+  preload() {
+    preloadRegeneratedArt(this, [this.data0.p1, this.data0.p2]);
+  }
+
   create() {
+    registerRegeneratedArt(this, [this.data0.p1, this.data0.p2]);
     this.cameras.main.fadeIn(300, 11, 10, 14);
     this.buildStage();
     this.fx = new Fx(this);
@@ -134,15 +149,14 @@ export class FightScene extends Phaser.Scene implements Arena {
     this.events.on(Phaser.Scenes.Events.RESUME, () => this.input2.reset());
     this.boxes = this.add.graphics().setDepth(60);
     this.training = null;
-    if (this.data0.training || this.data0.showcase) {
+    if (this.data0.training) {
       this.training = new Training(this.p1, this.p2, this.cpu);
       this.p1.minHp = this.p2.minHp = 1;
     }
 
     this.scene.launch(SCENES.Hud, { fight: this });
-    if (this.data0.showcase) this.scene.launch(SCENES.Showcase, { fight: this, data: this.data0 });
     // Laboratorio: sin panel de entrenamiento (la vida y la barra infinitas siguen activas).
-    else if (this.training && !this.data0.lab) this.scene.launch(SCENES.TrainingHud, { fight: this });
+    if (this.training && !this.data0.lab) this.scene.launch(SCENES.TrainingHud, { fight: this });
     this.hud = this.scene.get(SCENES.Hud) as HudScene;
     Audio.music(this, STAGES[this.data0.stage ?? 'barrio'].music, 0.42);
     this.matchStart = this.time.now;
@@ -168,10 +182,10 @@ export class FightScene extends Phaser.Scene implements Arena {
   // ───────────────────────────── Rondas ─────────────────────────────
 
   private startRound(): void {
-    this.cancelClash();
     this.ultOwner = null;
     this.endSolo();
     for (const p of this.projectiles) p.destroy();
+    this.clearCages();
     this.projectiles = [];
     this.p1.reset(START_X[0], 1);
     this.p2.reset(START_X[1], -1);
@@ -181,10 +195,6 @@ export class FightScene extends Phaser.Scene implements Arena {
     // Cada uno entra con un dash desde su lado de la pantalla.
     this.p1.dashIn(-220, 200);
     this.p2.dashIn(GAME_WIDTH + 220, 320);
-    if (this.data0.showcase) {
-      this.time.delayedCall(800, () => this.resetPositions());
-      return;
-    }
     if (this.data0.lab) {
       // Laboratorio: sin anuncios, se prueba apenas terminan de entrar.
       this.time.delayedCall(550, () => this.resetPositions());
@@ -302,7 +312,21 @@ export class FightScene extends Phaser.Scene implements Arena {
   spawnProjectile(owner: Fighter): void {
     // Cada uno tiene su poder (data/powers.ts): Mimético copia el del rival y El Acople elige uno de sus tres.
     const color = owner.def.id === 'mimetico' ? 0x4dff88 : owner.def.color;
-    for (const spec of powerFor(owner.def.id, owner.opponent.def.id)) this.projectiles.push(new Projectile(this, this.fx, owner, spec, color));
+    // Golpe de oro (Slandor): no lanza nada, carga su próximo golpe normal.
+    const empower = powerFor(owner.def.id).find((s) => s.empower)?.empower;
+    if (empower) {
+      owner.chargeGold(empower, GOLD_MS);
+      const cy = GROUND_Y - owner.z - owner.def.art.height * 0.55;
+      for (let k = 0; k < 3; k++) this.fx.ring(owner.x, cy, k === 1 ? COLORS.white : 0xffd23f, 110 + k * 90, 0.3);
+      Audio.tone(this, 990, 0.25, 'triangle', 0.06);
+      return;
+    }
+    for (const base of powerFor(owner.def.id)) {
+      // Lick de Pentalick: cada nivel sale más grande y pega más.
+      const lvl = base.levels ? owner.lickLevel : 0;
+      const spec = base.levels ? { ...base, level: lvl, size: (base.size ?? 1) * (1 + 0.3 * lvl), damage: (base.damage ?? 1) * (1 + 0.5 * lvl) } : base;
+      this.projectiles.push(new Projectile(this, this.fx, owner, spec, spec.color ?? color));
+    }
     Audio.sfx(this, 'swing', 0.7, 0.85);
     Audio.tone(this, 260, 0.3, 'sawtooth', 0.05);
   }
@@ -312,95 +336,13 @@ export class FightScene extends Phaser.Scene implements Arena {
   }
 
   /**
-   * Regla de ultimates, como en Marvel vs. Capcom: manda el primero; mientras está en curso el rival
-   * no puede lanzar el suyo. Si el rival contesta con el suyo estando libre (o los dos a la vez), se
-   * produce un choque: gana quien apriete más rápido y solo su ultimate sale.
+   * Regla de ultimates, como en Marvel vs. Capcom: manda el primero. Mientras está en curso, el ultimate
+   * del rival no sale (y no gasta su barra).
    */
   requestUltimate(owner: Fighter): boolean {
-    if (this.phase !== 'fight' || this.clash) return false;
-    const current = this.ultOwner;
-    if (!current) {
-      this.ultOwner = owner;
-      return true;
-    }
-    if (current === owner) return false;
-    this.startClash(current, owner);
-    return false;
-  }
-
-  private startClash(a: Fighter, b: Fighter): void {
-    // Se cancela lo que estaba en curso del primero (retrato o solo); los dos gastan su barra.
-    if (this.scene.isActive(SCENES.SuperCutIn) || this.scene.isPaused(SCENES.SuperCutIn)) this.scene.stop(SCENES.SuperCutIn);
-    this.scene.resume();
-    this.endSolo();
-    a.endSuper();
-    this.scene.setVisible(true, SCENES.Hud);
-    if (this.training) this.scene.setVisible(true, SCENES.TrainingHud);
-    Audio.duck(false);
-    a.meter = b.meter = 0;
-    this.ultOwner = null;
-    this.phase = 'clash';
-    const g = this.add.graphics().setDepth(55);
-    this.clash = { a, b, score: [0, 0], until: this.time.now + CLASH_MS, cpuAcc: 0, g };
-    this.cameras.main.flash(200, 255, 255, 255);
-    this.cameras.main.shake(400, 0.012);
-    this.cameras.main.zoomTo(1.08, 300, 'Sine.easeOut');
-    this.fx.hit((a.x + b.x) / 2, GROUND_Y - 300, COLORS.white, true);
-    this.hud.announce('¡CHOQUE DE ULTIMATES!', { size: 120, ms: 900 });
-    this.time.delayedCall(700, () => this.clash && this.hud.announce('¡APRIETA!', { size: 150, ms: 700 }));
-    Audio.tone(this, 180, 0.5, 'sawtooth', 0.08);
-  }
-
-  /** Cada frame del choque: apretadas del jugador, ritmo de la CPU y barra de tira y afloja. */
-  private updateClash(realDt: number): void {
-    const c = this.clash!;
-    const i = this.input2;
-    if (i.justDown('punch') || i.justDown('kick') || i.justDown('super') || i.justDown('confirm')) {
-      c.score[this.p1.side]++;
-      this.fx.ring(this.p1.x, GROUND_Y - 300, this.p1.def.color, 120, 0.2);
-    }
-    const lvl = this.data0.difficulty ?? Settings.data.difficulty;
-    const k = typeof lvl === 'number' ? lvl : lvl === 'hard' ? 1 : lvl === 'normal' ? 0.5 : 0;
-    c.cpuAcc += realDt * (CLASH_CPU_RATE[0] + (CLASH_CPU_RATE[1] - CLASH_CPU_RATE[0]) * k);
-    while (c.cpuAcc >= 1) {
-      c.cpuAcc--;
-      c.score[this.p2.side]++;
-      this.fx.ring(this.p2.x, GROUND_Y - 300, this.p2.def.color, 120, 0.2);
-    }
-    // Barra: el punto de choque se corre hacia el que va perdiendo.
-    const diff = c.score[this.p1.side] - c.score[this.p2.side];
-    const mid = GAME_WIDTH / 2 + Phaser.Math.Clamp(diff * 26, -420, 420);
-    const g = c.g;
-    const y = 300;
-    g.clear();
-    g.fillStyle(0x000000, 0.7).fillRect(GAME_WIDTH / 2 - 470, y - 26, 940, 52);
-    g.fillStyle(this.p1.def.color, 1).fillRect(GAME_WIDTH / 2 - 460, y - 18, mid - (GAME_WIDTH / 2 - 460), 36);
-    g.fillStyle(this.p2.def.color, 1).fillRect(mid, y - 18, GAME_WIDTH / 2 + 460 - mid, 36);
-    g.fillStyle(0xffffff, 1).fillCircle(mid, y, 26 + Math.sin(this.time.now / 40) * 5);
-    if (Math.random() < 0.6) this.fx.hit(mid, y, COLORS.white, false);
-    if (this.time.now >= c.until) this.resolveClash();
-  }
-
-  /** Gana el que apretó más (empate: el que lanzó primero); su ultimate sale completo y el otro queda aturdido. */
-  private resolveClash(): void {
-    const c = this.clash!;
-    const s1 = c.score[this.p1.side];
-    const s2 = c.score[this.p2.side];
-    const winner = s1 === s2 ? c.a : s1 > s2 ? this.p1 : this.p2;
-    const loser = winner.opponent;
-    this.cancelClash();
-    this.cameras.main.zoomTo(1, 250);
-    this.phase = 'fight';
-    loser.setState('hurt', 900);
-    loser.vx = -loser.facing * 500;
-    this.ultOwner = winner;
-    winner.forceUltimate();
-  }
-
-  private cancelClash(): void {
-    if (!this.clash) return;
-    this.clash.g.destroy();
-    this.clash = null;
+    if (this.phase !== 'fight' || this.ultOwner) return false;
+    this.ultOwner = owner;
+    return true;
   }
 
   /** Súper, paso 1: se congela la pelea, se va el HUD y entra el retrato a pantalla completa. */
@@ -409,7 +351,7 @@ export class FightScene extends Phaser.Scene implements Arena {
     owner.opponent.blockLocked = true;
     this.scene.setVisible(false, SCENES.Hud);
     if (this.training) this.scene.setVisible(false, SCENES.TrainingHud);
-    Audio.duck(true);
+    Audio.boost(true);
     this.scene.pause();
     this.scene.launch(SCENES.SuperCutIn, { def: owner.def, side: owner.side, onDone: () => this.scene.resume() });
   }
@@ -418,7 +360,6 @@ export class FightScene extends Phaser.Scene implements Arena {
   startSolo(owner: Fighter): void {
     this.endSolo();
     this.solo = new GuitarSolo(this, this.fx, owner, (o, x, y, damage, final) => this.noteStrike(o, x, y, damage, final));
-    playSolo(this, this.solo.solo);
     this.tweens.killTweensOf(this.dim);
     this.tweens.add({ targets: this.dim, alpha: 0.55, duration: 200 });
     this.cameras.main.zoomTo(1.05, 400, 'Sine.easeOut');
@@ -436,7 +377,7 @@ export class FightScene extends Phaser.Scene implements Arena {
     this.cameras.main.zoomTo(1, 400);
     this.scene.setVisible(true, SCENES.Hud);
     if (this.training) this.scene.setVisible(true, SCENES.TrainingHud);
-    Audio.duck(false);
+    Audio.boost(false);
   }
 
   /** Aura del color del luchador mientras tiene el súper listo (barra llena). */
@@ -479,6 +420,8 @@ export class FightScene extends Phaser.Scene implements Arena {
     });
     if (res.result === 'whiff') return false;
     this.impact(owner, target, move, res.result, res.damage, x, y, { projectile: true, heavy: final });
+    // Sin guitarra sintetizada: cada nota que pega suma un golpe grave para que pese.
+    Audio.sfx(this, 'kick', final ? 0.8 : 0.45, final ? 0.6 : 0.75);
     if (final) this.hitstopUntil = this.time.now + 160;
     return true;
   }
@@ -504,6 +447,7 @@ export class FightScene extends Phaser.Scene implements Arena {
       up: i.isDown('up'),
       down: i.isDown('down'),
       punch: this.pending.punch,
+      punchHeld: this.input.activePointer.leftButtonDown(),
       kick: this.pending.kick,
       dash: false,
       super: this.pending.super,
@@ -515,9 +459,6 @@ export class FightScene extends Phaser.Scene implements Arena {
     if (this.hud?.dialogActive) {
       if (this.input2.justDown('confirm')) this.hud.dialogAdvance();
       else if (this.input2.justDown('back')) this.hud.dialogSkip();
-    } else if (this.input2.justDown('pause') && this.data0.showcase) {
-      this.backToLab();
-      return;
     } else if (this.input2.justDown('pause') && !this.solo && (this.phase === 'fight' || this.phase === 'intro')) {
       if (this.data0.lab) this.openLabPick();
       else this.openPause();
@@ -560,9 +501,10 @@ export class FightScene extends Phaser.Scene implements Arena {
       this.resolveProjectiles();
       this.projectiles = this.projectiles.filter((p) => p.alive);
     }
-    if (this.clash) this.updateClash(realDt);
+    this.updateCages(realDt);
     this.fx.update(realDt);
     this.drawAuras(time);
+    this.drawCageIcons(time);
     if (this.solo) {
       this.solo.update(realDt * 1000, dt);
       if (this.solo.finished) this.endSolo();
@@ -621,8 +563,82 @@ export class FightScene extends Phaser.Scene implements Arena {
       if (result === 'whiff') continue;
       a.moveDone = true;
       a.moveConnected = true;
-      this.impact(a, b, move, result, damage, b.x - a.facing * 45, GROUND_Y - b.z - (SPARK_HEIGHT[move.id] ?? 300), { heavy: finisher });
+      this.impact(a, b, move, result, damage, b.x - a.facing * 45, GROUND_Y - b.z - (SPARK_HEIGHT[move.id] ?? 300), { heavy: finisher || (result === 'hit' && !!a.gold && isNormal(move)) });
+      if (result === 'hit' && a.gold && isNormal(move)) {
+        // Golpe de oro: se gasta al pegar (si se lo bloquean, lo conserva), con estallido dorado.
+        const y = GROUND_Y - b.z - (SPARK_HEIGHT[move.id] ?? 300);
+        for (let k = 0; k < 3; k++) this.fx.ring(b.x, y, k === 1 ? COLORS.white : 0xffd23f, 90 + k * 70, 0.3);
+        this.fx.hit(b.x, y, 0xffd23f, true);
+        Audio.tone(this, 1320, 0.2, 'triangle', 0.06);
+        a.gold = 0;
+      }
     }
+  }
+
+  /** Jaula de NOSU: encierra a `target` (si quedó de pie) por `ms`. */
+  private cage(target: Fighter, color: number, ms: number, from: number): void {
+    if (target.state !== 'hurt') return;
+    target.setState('hurt', ms);
+    target.vx = 0;
+    const g = this.add.graphics().setDepth(25).setBlendMode(Phaser.BlendModes.ADD);
+    this.cages.push({ target, color, until: target.now + ms, hp: target.hp, g, t: 0, from });
+    const y = GROUND_Y - target.z - target.def.art.height * 0.5;
+    for (let k = 0; k < 3; k++) this.fx.ring(target.x, y, k === 1 ? COLORS.white : color, 160 + k * 90, 0.3);
+    this.cameras.main.shake(140, 0.006);
+    Audio.tone(this, 660, 0.12, 'square', 0.05);
+  }
+
+  /**
+   * Jaulas abiertas: la esfera que pegó crece hasta envolver al encerrado y lo sigue; se rompe con el
+   * primer golpe que recibe o al acabarse el tiempo.
+   */
+  private updateCages(realDt: number): void {
+    this.cages = this.cages.filter((c) => {
+      const f = c.target;
+      const h = f.def.art.height;
+      const y = GROUND_Y - f.z - h * 0.5;
+      const broken = f.hp < c.hp || f.state !== 'hurt';
+      if (broken || f.now >= c.until) {
+        for (let k = 0; k < (broken ? 4 : 2); k++) this.fx.ring(f.x, y, k % 2 ? COLORS.white : c.color, 140 + k * 80, 0.25);
+        if (broken) this.fx.hit(f.x, y, c.color, false);
+        c.g.destroy();
+        return false;
+      }
+      c.t += realDt;
+      // Últimos 300 ms: parpadea, la reja está por abrirse.
+      const fading = c.until - f.now < 300 && Math.floor(c.t * 14) % 2 === 0;
+      const grow = Phaser.Math.Easing.Back.Out(Math.min(1, c.t / CAGE_GROW_S));
+      drawCage(c.g.clear(), f.x, y, Phaser.Math.Linear(c.from, h * 0.5, grow), Phaser.Math.Linear(c.from, h * 0.6, grow), c.color, c.t, fading ? 0.35 : 1);
+      return true;
+    });
+  }
+
+  /**
+   * Jaula lista: una esferita con rejas flota junto al hombro de NOSU. Al dispararla desaparece y, al
+   * recargarse, reaparece con un destello y un "ding" (el rival también la ve venir).
+   */
+  private drawCageIcons(time: number): void {
+    for (const f of [this.p1, this.p2]) {
+      if (!POWERS[f.def.id]?.some((s) => s.cage)) continue;
+      const g = (this.cageIcons[f.side] ??= this.add.graphics().setDepth(24).setBlendMode(Phaser.BlendModes.ADD));
+      g.clear();
+      const ready = f.now >= f.cageReadyAt;
+      const h = f.def.art.height;
+      const x = f.x - f.facing * h * 0.3;
+      const y = GROUND_Y - f.z - h * 0.82 + Math.sin(time / 300) * 8;
+      if (ready && !this.cageWasReady[f.side] && this.phase === 'fight') {
+        for (let k = 0; k < 2; k++) this.fx.ring(x, y, k ? COLORS.white : f.def.color, 60 + k * 40, 0.25);
+        Audio.tone(this, 1320, 0.12, 'triangle', 0.05);
+      }
+      this.cageWasReady[f.side] = ready;
+      if (!ready || this.solo || f.state === 'ko' || this.phase === 'over') continue;
+      drawCage(g, x, y, CAGE_ICON_R, CAGE_ICON_R, f.def.color, time / 1000, 0.9);
+    }
+  }
+
+  private clearCages(): void {
+    for (const c of this.cages) c.g.destroy();
+    this.cages = [];
   }
 
   private resolveProjectiles(): void {
@@ -631,7 +647,21 @@ export class FightScene extends Phaser.Scene implements Arena {
       for (let j = i + 1; j < list.length; j++) {
         const a = list[i];
         const b = list[j];
-        if (!a.alive || !b.alive || a.owner === b.owner || !a.clashes || !b.clashes || Math.abs(a.x - b.x) > a.radius + b.radius) continue;
+        if (!a.alive || !b.alive || a.owner === b.owner || !a.clashes || !b.clashes) continue;
+        if (Math.abs(a.x - b.x) > a.radius + b.radius || Math.abs(a.z - b.z) > a.zReach + b.zReach) continue;
+        // Libro-muro de Escalas: frena cualquier poder y sigue en pie.
+        if (a.walled !== b.walled) {
+          const [wall, shot] = a.walled ? [a, b] : [b, a];
+          this.fx.hit((wall.x + shot.x) / 2, shot.y, COLORS.white, false);
+          shot.lose();
+          continue;
+        }
+        // Espejo de Mimético: copia el poder que lo toca y lo dispara de vuelta.
+        if (a.spec.mirror !== b.spec.mirror) {
+          const [mirror, shot] = a.spec.mirror ? [a, b] : [b, a];
+          this.reflect(mirror, shot);
+          continue;
+        }
         this.fx.hit((a.x + b.x) / 2, a.y, COLORS.white, true);
         Audio.sfx(this, 'punch', 0.6, 0.7);
         // El que atraviesa poderes (TayLoy) gana el choque y sigue.
@@ -658,9 +688,55 @@ export class FightScene extends Phaser.Scene implements Arena {
         p.owner.meter = Math.min(MAX_METER, p.owner.meter + stolen);
       }
       const hx = p.spec.beam ? target.x - dir * 40 : p.x;
+      if (result === 'hit' && p.spec.poison) this.poison(p.owner, target, p.move, p.spec.poison, p.damage);
+      // Lick de Pentalick: sube de nivel si pega; si se lo bloquean, vuelve al 1.
+      if (p.spec.levels) p.owner.lickLevel = result === 'hit' ? Math.min(p.spec.levels - 1, p.owner.lickLevel + 1) : 0;
+      if (result === 'hit' && p.spec.pull) {
+        // Latigazo de Rematada: lo jala hasta quedar a distancia de golpe (el rozamiento lo frena ahí).
+        const gap = target.x - p.owner.x;
+        target.vx = -Math.sign(gap) * Math.max(0, Math.abs(gap) - 230) * 9;
+      }
       if (!p.onHit()) p.destroy();
       this.impact(p.owner, target, p.move, result, damage, hx, p.y, { projectile: true, heavy: true });
+      if (result === 'hit' && p.caging) this.cage(target, p.color, p.spec.cage!, p.radius * 1.15);
     }
+  }
+
+  /** Veneno (lanza de Amu): burbujas verdes sobre el rival y, al rato, un golpe extra que no se bloquea. */
+  private poison(owner: Fighter, target: Fighter, move: MoveDef, spec: { delay: number; damage: number }, base: number): void {
+    const POISON = 0x7dff3a;
+    const bubbles = 6;
+    for (let k = 0; k < bubbles; k++) {
+      this.time.delayedCall(k * 60, () => this.fx.rise(target.x + Phaser.Math.Between(-50, 50), GROUND_Y - target.z - Phaser.Math.Between(150, 380), POISON));
+    }
+    this.time.delayedCall(spec.delay, () => {
+      if (this.phase !== 'fight' || !target.alive) return;
+      const dir = (target.x >= owner.x ? 1 : -1) as 1 | -1;
+      // Golpe corto: casi no aturde, para que el rival se recupere rápido.
+      const sting = { ...move, push: 40, hitstun: 140, knockdown: false };
+      const res = target.receive(owner, sting, {
+        dir,
+        fromX: owner.x,
+        unblockable: true,
+        damage: Math.round(base * spec.damage * target.def.stats.defense),
+      });
+      if (res.result === 'whiff') return;
+      target.poisonUntil = target.now + 220;
+      this.fx.hit(target.x, GROUND_Y - target.z - 260, POISON, false);
+      this.impact(owner, target, sting, res.result, res.damage, target.x, GROUND_Y - target.z - 260, { projectile: true });
+    });
+  }
+
+  /** El espejo se rompe y devuelve una copia del poder rival, desde donde estaba el espejo. */
+  private reflect(mirror: Projectile, shot: Projectile): void {
+    const { delay: _d, fork: _f, split: _s, orbit: _o, phase: _p, ...spec } = shot.spec;
+    const copy = new Projectile(this, this.fx, mirror.owner, spec, mirror.color);
+    copy.placeAt(mirror.x, mirror.z);
+    this.projectiles.push(copy);
+    this.fx.hit(mirror.x, mirror.y, COLORS.white, true);
+    Audio.sfx(this, 'punch', 0.6, 1.3);
+    shot.destroy();
+    mirror.shatter();
   }
 
   /** Feedback de un impacto: hitstop, chispas, sonido, sacudida, combo y empuje en la esquina. */
@@ -668,7 +744,7 @@ export class FightScene extends Phaser.Scene implements Arena {
     const projectile = !!opts.projectile;
     this.training?.onImpact(a, b, move, result, damage);
     // Un golpe sin bloquear rompe el escudo de corazones (Kimberly): si no, sería imbatible de cerca.
-    if (result === 'hit') for (const p of this.projectiles) if (p.owner === b && p.orbiting) p.shatter();
+    if (result === 'hit') for (const p of this.projectiles) if (p.owner === b && p.orbiting && !p.spec.charge) p.shatter();
     const heavy = move.knockdown || move.id === 'kick' || !!opts.heavy;
     if (result === 'block') {
       this.hitstopUntil = this.time.now + move.hitstop * 0.6;
@@ -696,9 +772,9 @@ export class FightScene extends Phaser.Scene implements Arena {
   /** Vuelve a colocar a los luchadores, separados `gap` px y listos para pelear. */
   resetPositions(gap = START_X[1] - START_X[0]): void {
     this.endSolo();
-    this.cancelClash();
     this.ultOwner = null;
     for (const p of this.projectiles) p.destroy();
+    this.clearCages();
     this.projectiles = [];
     const mid = GAME_WIDTH / 2;
     this.p1.reset(mid - gap / 2, 1);
@@ -737,23 +813,7 @@ export class FightScene extends Phaser.Scene implements Arena {
     for (const p of this.projectiles) g.lineStyle(3, 0xff3b4e, 1).strokeCircle(p.x, p.y, p.radius);
   }
 
-  /** Vitrina: reinicia con otro luchador. */
-  showcaseFighter(p1: FighterId): void {
-    this.scene.stop(SCENES.Hud);
-    this.scene.stop(SCENES.Showcase);
-    this.scene.start(SCENES.Fight, { ...this.data0, p1, p2: p1 === 'mayin' ? 'erp' : 'mayin' });
-  }
-
-  /** Vitrina: vuelve al laboratorio con el mismo personaje. */
-  backToLab(): void {
-    Audio.stopMusic(300);
-    this.scene.stop(SCENES.Hud);
-    this.scene.stop(SCENES.Showcase);
-    this.scene.stop(SCENES.SuperCutIn);
-    goTo(this, SCENES.Lab, { char: this.data0.p1, tab: 'specials' }, 200);
-  }
-
-  /** Laboratorio: roster encima de la pelea pausada. */
+  /** Laboratorio: menú de luchadores y escenario encima de la pelea pausada. */
   private openLabPick(): void {
     this.scene.pause();
     this.scene.pause(SCENES.Hud);

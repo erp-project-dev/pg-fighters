@@ -55,7 +55,8 @@ def extract(path, poses, cols, row_counts=None, component_splits=None):
         if len(matches) != 1:
             raise ValueError(f'{path}: component split does not match source bounds')
         comp = matches[0]
-        parts = [[v for v in comp['points'] if (v % w < split['x']) == side]
+        axis = 'y' if 'y' in split else 'x'
+        parts = [[v for v in comp['points'] if ((v // w if axis == 'y' else v % w) < split[axis]) == side]
                  for side in (True, False)]
         if any(not points for points in parts):
             raise ValueError(f'{path}: empty component split')

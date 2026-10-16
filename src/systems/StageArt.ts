@@ -33,6 +33,10 @@ export const buildStage = (scene: Phaser.Scene, stage: StageDef, animate = true)
   else if (stage.id === 'chino') drawChinatown(scene, c, animate);
   else if (stage.id === 'mall') drawMall(scene, c, animate);
   else if (stage.id === 'arenal') drawArenal(scene, c, animate);
+  else if (stage.id === 'casona') drawCasona(scene, c, animate);
+  else if (stage.id === 'ciudadela') drawCitadel(scene, c, animate);
+  else if (stage.id === 'rio') drawRiver(scene, c, animate);
+  else if (stage.id === 'laboratorio') drawRockLab(scene, c, animate);
   else if (stage.id === 'ampli') drawAmpInside(scene, c, animate);
   else c.add(scene.add.rectangle(0, 0, W, H, 0x1b1a21).setOrigin(0));
   return c;
@@ -594,6 +598,198 @@ function drawTomato(scene: Phaser.Scene, c: Phaser.GameObjects.Container, animat
   }
 }
 
+/** Salón del Virrey: casona colonial convertida en bar de rock. Muro granate, balcones de cajón, retratos al óleo con lentes oscuros, candelabros y amplis dorados. */
+function drawCasona(scene: Phaser.Scene, c: Phaser.GameObjects.Container, animate: boolean): void {
+  const g = scene.add.graphics();
+  c.add(g);
+  g.fillGradientStyle(0x3a0d14, 0x3a0d14, 0x5c1620, 0x5c1620, 1).fillRect(0, 0, W, 640);
+  // Zócalo de azulejos sevillanos
+  for (let x = 0; x < W; x += 48) {
+    g.fillStyle((x / 48) % 2 ? 0x1f4f8a : 0xe9dfc4, 1).fillRect(x, 540, 48, 48);
+    g.fillStyle((x / 48) % 2 ? 0xe9dfc4 : 0x1f4f8a, 1).fillRect(x, 588, 48, 52);
+  }
+  // Balcones de cajón tallados, a los costados
+  for (const x of [60, W - 380]) {
+    g.fillStyle(0x3b2414, 1).fillRect(x, 90, 320, 300);
+    g.fillStyle(0x24150b, 1).fillRect(x - 20, 380, 360, 24).fillRect(x - 20, 70, 360, 24);
+    g.fillStyle(0x5a3820, 1);
+    for (let k = 0; k < 6; k++) g.fillRect(x + 14 + k * 51, 110, 40, 120).fillRect(x + 14 + k * 51, 244, 40, 120);
+    g.lineStyle(2, 0x24150b, 1);
+    for (let k = 0; k < 6; k++) for (let y = 120; y < 360; y += 16) g.lineBetween(x + 18 + k * 51, y, x + 50 + k * 51, y + 8);
+  }
+  // Retratos de virreyes al óleo (con lentes oscuros) en marcos dorados
+  for (const x of [620, 960, 1300]) {
+    g.fillStyle(0xc9a227, 1).fillRect(x - 110, 110, 220, 280);
+    g.fillStyle(0x1d140c, 1).fillRect(x - 92, 128, 184, 244);
+    g.fillStyle(0xf1f0ea, 1).fillCircle(x, 205, 46).fillCircle(x - 38, 200, 24).fillCircle(x + 38, 200, 24); // peluca
+    g.fillStyle(0xd9a77c, 1).fillCircle(x, 222, 30);
+    g.fillStyle(0x0b0b0b, 1).fillRect(x - 26, 214, 22, 10).fillRect(x + 4, 214, 22, 10).fillRect(x - 6, 216, 12, 3);
+    g.fillStyle(0x7a1020, 1).fillTriangle(x - 80, 372, x + 80, 372, x, 262);
+    g.fillStyle(0xf1f0ea, 1).fillTriangle(x - 18, 262, x + 18, 262, x, 300);
+  }
+  // Escenario con amplis dorados y alfombra roja
+  g.fillStyle(0x24150b, 1).fillRect(440, 520, 1040, 120);
+  for (const x of [500, 640, 1180, 1320]) {
+    g.fillStyle(0xc9a227, 1).fillRect(x, 420, 110, 110);
+    g.fillStyle(0x1a1208, 1).fillRect(x + 8, 438, 94, 84);
+    g.fillStyle(0xc9a227, 1).fillRect(x + 8, 426, 94, 8);
+  }
+  // Piso de damero y alfombra
+  g.fillStyle(0x1b1410, 1).fillRect(0, 640, W, H - 640);
+  for (let y = 640; y < H; y += 60) for (let x = (y / 60) % 2 ? 0 : 60; x < W; x += 120) g.fillStyle(0xd8cbb0, 1).fillRect(x, y, 60, 60);
+  g.fillStyle(0x8c0f22, 1).fillPoints([{ x: 820, y: 640 }, { x: 1100, y: 640 }, { x: 1280, y: H }, { x: 640, y: H }] as Phaser.Math.Vector2[], true);
+  g.fillStyle(0xc9a227, 1).fillRect(820, 640, 280, 6);
+  // Candelabros con velas que titilan
+  const flames = scene.add.graphics().setBlendMode(Phaser.BlendModes.ADD);
+  c.add(flames);
+  for (const x of [480, 960, 1440]) {
+    g.lineStyle(4, 0xc9a227, 1).lineBetween(x, 0, x, 40);
+    g.fillStyle(0xc9a227, 1).fillEllipse(x, 56, 220, 22);
+    for (let k = -2; k <= 2; k++) g.fillStyle(0xf4ead5, 1).fillRect(x + k * 44 - 4, 26, 8, 26);
+  }
+  const drawFlames = (f: number) => {
+    flames.clear();
+    for (const x of [480, 960, 1440]) {
+      for (let k = -2; k <= 2; k++) {
+        const fx = x + k * 44;
+        flames.fillStyle(0xffb347, 0.12).fillCircle(fx, 18, 34 + f * 6);
+        flames.fillStyle(0xffe08a, 0.9).fillEllipse(fx, 18, 10, 18 + f * 4);
+      }
+    }
+  };
+  drawFlames(0);
+  if (animate) {
+    const t = { f: 0 };
+    scene.tweens.add({ targets: t, f: 1, duration: 140, yoyo: true, repeat: -1, onUpdate: () => drawFlames(t.f) });
+  }
+}
+
+/** Ciudadela del Sol: ciudadela inca de piedra entre nubes, al atardecer, con andenes, amplis entre las piedras y un sol enorme. */
+function drawCitadel(scene: Phaser.Scene, c: Phaser.GameObjects.Container, animate: boolean): void {
+  const g = scene.add.graphics();
+  c.add(g);
+  g.fillGradientStyle(0x3a2a6b, 0x3a2a6b, 0xff9f6b, 0xff9f6b, 1).fillRect(0, 0, W, 640);
+  // Sol gigante detrás de la montaña
+  const sun = scene.add.graphics().setBlendMode(Phaser.BlendModes.ADD);
+  for (let r = 300; r > 150; r -= 15) sun.fillStyle(0xffb347, 0.06).fillCircle(W / 2, 330, r);
+  sun.fillStyle(0xffd166, 1).fillCircle(W / 2, 330, 150);
+  c.add(sun);
+  // Picos verdes en punta
+  const peaks = scene.add.graphics();
+  c.add(peaks);
+  peaks.fillStyle(0x2f4a3a, 1).fillTriangle(1250, 640, 1650, 640, 1430, 120);
+  peaks.fillStyle(0x3d5c45, 1).fillTriangle(260, 640, 640, 640, 440, 210);
+  peaks.fillStyle(0x24382c, 1).fillTriangle(1550, 640, 1920, 640, 1780, 260);
+  // Andenes de piedra (terrazas) hacia el centro
+  const terraces = scene.add.graphics();
+  c.add(terraces);
+  for (let k = 0; k < 5; k++) {
+    const y = 470 + k * 34;
+    terraces.fillStyle(k % 2 ? 0x8a8170 : 0x9b927f, 1).fillRect(0, y, 520 - k * 60, 34).fillRect(W - 520 + k * 60, y, 520 - k * 60, 34);
+    terraces.fillStyle(0x5f8f4a, 1).fillRect(0, y, 520 - k * 60, 6).fillRect(W - 520 + k * 60, y, 520 - k * 60, 6);
+  }
+  // Muros incas: piedras poligonales encajadas, con una portada trapezoidal
+  const rnd = new Phaser.Math.RandomDataGenerator(['ciudadela']);
+  for (const x0 of [600, 1100]) {
+    for (let y = 440; y < 640; y += 40) {
+      for (let x = x0 + ((y / 40) % 2) * 30; x < x0 + 220; x += rnd.between(50, 80)) {
+        terraces.fillStyle(rnd.pick([0xa59b86, 0x948a76, 0xb3aa94]), 1).fillRoundedRect(x, y, rnd.between(46, 76), 38, 8);
+      }
+    }
+  }
+  terraces.fillStyle(0x2b2620, 1).fillPoints([{ x: 900, y: 640 }, { x: 1020, y: 640 }, { x: 1000, y: 480 }, { x: 920, y: 480 }] as Phaser.Math.Vector2[], true);
+  terraces.fillStyle(0x9b927f, 1).fillRect(880, 456, 160, 26);
+  // Amplis escondidos entre las piedras
+  for (const x of [700, 1150]) {
+    terraces.fillStyle(0x1b1b1b, 1).fillRect(x, 560, 100, 80);
+    terraces.fillStyle(0x3a3a3a, 1).fillCircle(x + 50, 600, 28);
+  }
+  // Piso de piedra pulida
+  g.fillStyle(0x857b68, 1).fillRect(0, 640, W, H - 640);
+  g.lineStyle(3, 0x6b6253, 1);
+  for (let y = 660; y < H; y += 46) for (let x = (y / 46) % 2 ? 0 : 70; x < W; x += 140) g.strokeRoundedRect(x, y, 136, 42, 10);
+  // Llama mirando desde un andén
+  terraces.fillStyle(0xf4ead5, 1).fillEllipse(220, 455, 90, 46).fillRect(246, 380, 18, 70).fillEllipse(262, 378, 34, 24);
+  terraces.fillStyle(0xf4ead5, 1).fillRect(186, 466, 10, 40).fillRect(240, 466, 10, 40);
+  terraces.fillStyle(0xd9481e, 1).fillTriangle(250, 366, 256, 350, 262, 366).fillTriangle(266, 366, 272, 350, 278, 366);
+  // Nubes que pasan por delante de los picos
+  const clouds = scene.add.graphics();
+  for (let i = 0; i < 9; i++) clouds.fillStyle(0xffe6d0, 0.35).fillEllipse(rnd.between(0, W), rnd.between(330, 520), rnd.between(260, 520), rnd.between(40, 80));
+  c.add(clouds);
+  if (animate) {
+    scene.tweens.add({ targets: clouds, x: 220, duration: 9000, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
+    scene.tweens.add({ targets: sun, alpha: 0.82, duration: 1800, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
+  }
+}
+
+/** Muelle del Río: muelle de madera de noche en un río amazónico, selva verde, un manguaré gigante, peque-peque con parlantes y luciérnagas. */
+function drawRiver(scene: Phaser.Scene, c: Phaser.GameObjects.Container, animate: boolean): void {
+  const g = scene.add.graphics();
+  c.add(g);
+  g.fillGradientStyle(0x050d1f, 0x050d1f, 0x123a3a, 0x123a3a, 1).fillRect(0, 0, W, 640);
+  g.fillStyle(0xf4f1d0, 1).fillCircle(1500, 130, 54);
+  const rnd = new Phaser.Math.RandomDataGenerator(['rio']);
+  for (let i = 0; i < 60; i++) g.fillStyle(0xffffff, rnd.realInRange(0.3, 0.9)).fillCircle(rnd.between(0, W), rnd.between(10, 300), rnd.between(1, 2));
+  // Selva en capas: copas redondas sobre la orilla de enfrente
+  for (const [base, color, r] of [[400, 0x0d3326, 90], [470, 0x13472f, 70]] as const) {
+    for (let x = -40; x < W + 80; x += r * 1.1) g.fillStyle(color, 1).fillCircle(x, base - rnd.between(0, 60), r + rnd.between(-10, 20));
+    g.fillStyle(color, 1).fillRect(0, base, W, 60);
+  }
+  // Palmeras de aguaje
+  for (const x of [140, 1760, 380]) {
+    g.fillStyle(0x3b2a1a, 1).fillRect(x - 8, 220, 16, 320);
+    g.fillStyle(0x1f6b3a, 1);
+    for (let k = 0; k < 7; k++) {
+      const a = -Math.PI + (k / 6) * Math.PI;
+      g.fillTriangle(x, 220, x + Math.cos(a) * 140, 220 + Math.sin(a) * 50 + 60, x + Math.cos(a) * 120, 220 + Math.sin(a) * 50 + 40);
+    }
+  }
+  // Río con reflejo de la luna
+  g.fillStyle(0x0b2a33, 1).fillRect(0, 520, W, 120);
+  const shine = scene.add.graphics().setBlendMode(Phaser.BlendModes.ADD);
+  for (let i = 0; i < 8; i++) shine.fillStyle(0xf4f1d0, 0.18).fillRect(1500 - 80 + rnd.between(-40, 40), 530 + i * 13, rnd.between(80, 180), 3);
+  c.add(shine);
+  // Peque-peque con parlantes
+  g.fillStyle(0x8c3b1e, 1).fillPoints([{ x: 1120, y: 560 }, { x: 1480, y: 560 }, { x: 1440, y: 600 }, { x: 1150, y: 600 }] as Phaser.Math.Vector2[], true);
+  g.fillStyle(0x1b1b1b, 1).fillRect(1200, 510, 70, 50).fillRect(1300, 510, 70, 50);
+  g.fillStyle(0x3a3a3a, 1).fillCircle(1235, 535, 18).fillCircle(1335, 535, 18);
+  g.fillStyle(0xe9c48a, 1).fillRect(1160, 540, 330, 6);
+  // Delfín rosado saltando
+  const dolphin = scene.add.graphics();
+  dolphin.fillStyle(0xf2a0b8, 1).fillEllipse(0, 0, 120, 40).fillTriangle(50, 0, 80, -24, 80, 24).fillTriangle(-10, -16, 10, -16, 0, -40);
+  dolphin.fillStyle(0xf2a0b8, 1).fillEllipse(-70, 4, 40, 14);
+  dolphin.setPosition(700, 580).setAngle(-30);
+  c.add(dolphin);
+  // Muelle de madera (piso de pelea)
+  g.fillStyle(0x5a3a22, 1).fillRect(0, 640, W, H - 640);
+  g.lineStyle(3, 0x3b2414, 1);
+  for (let x = 0; x < W; x += 96) g.lineBetween(x, 640, x - 40, H);
+  for (let y = 640; y < H; y += 70) g.lineBetween(0, y, W, y);
+  g.fillStyle(0x3b2414, 1);
+  for (let x = 40; x < W; x += 320) g.fillRect(x, 610, 24, 40);
+  // Manguaré gigante: dos troncos tallados sobre un soporte, con pintura de achiote
+  for (const [x, w] of [[300, 300], [470, 240]] as const) {
+    g.fillStyle(0x7a4a22, 1).fillRoundedRect(x - w / 2, 560, w, 70, 34);
+    g.fillStyle(0x24150b, 1).fillRect(x - w / 2 + 30, 586, w - 60, 10);
+    g.fillStyle(0xd9481e, 1).fillRect(x - w / 2 + 14, 568, 10, 54).fillRect(x + w / 2 - 24, 568, 10, 54);
+  }
+  g.fillStyle(0x3b2414, 1).fillRect(160, 620, 16, 30).fillRect(600, 620, 16, 30);
+  // Luciérnagas
+  const flies = scene.add.graphics().setBlendMode(Phaser.BlendModes.ADD);
+  for (let i = 0; i < 40; i++) {
+    const x = rnd.between(0, W);
+    const y = rnd.between(260, 760);
+    flies.fillStyle(0xc8ff6b, 0.15).fillCircle(x, y, 10);
+    flies.fillStyle(0xeaffb0, 0.9).fillCircle(x, y, 2.5);
+  }
+  c.add(flies);
+  if (animate) {
+    scene.tweens.add({ targets: flies, alpha: 0.35, y: -16, duration: 1600, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
+    scene.tweens.add({ targets: shine, alpha: 0.4, duration: 900, yoyo: true, repeat: -1 });
+    scene.tweens.add({ targets: dolphin, y: 470, angle: 20, duration: 700, yoyo: true, repeat: -1, repeatDelay: 2600, ease: 'Sine.easeOut' });
+  }
+}
+
 /** Interior del ampli (jefe): vacío negro, parlantes gigantes y ondas de sonido que laten como un corazón. */
 function drawAmpInside(scene: Phaser.Scene, c: Phaser.GameObjects.Container, animate: boolean): void {
   const g = scene.add.graphics();
@@ -628,4 +824,101 @@ function drawAmpInside(scene: Phaser.Scene, c: Phaser.GameObjects.Container, ani
   g.lineStyle(2, 0x1c2233, 1);
   for (let y = 712; y < H; y += 18) g.lineBetween(0, y, W, y);
   g.lineStyle(3, 0x7df9ff, 0.35).lineBetween(0, 700, W, 700);
+}
+
+/**
+ * El Laboratorio del Rock (inspirado en NOSU): paneles cerámicos blancos con juntas negras, franjas de luz
+ * magenta, una pantalla gigante con la onda de un master, racks de servidores con LEDs, brazos robóticos
+ * que sostienen guitarras y piso negro brillante con rejilla de neón en perspectiva.
+ */
+function drawRockLab(scene: Phaser.Scene, c: Phaser.GameObjects.Container, animate: boolean): void {
+  const MAGENTA = 0xff2ba6;
+  const g = scene.add.graphics();
+  c.add(g);
+  g.fillGradientStyle(0x14111c, 0x14111c, 0x07060b, 0x07060b, 1).fillRect(0, 0, W, H);
+  // Muro de paneles cerámicos (la armadura de NOSU) con juntas negras.
+  for (let row = 0; row < 4; row++) {
+    for (let col = 0; col < 8; col++) {
+      const x = col * (W / 8) + 6;
+      const y = 60 + row * 150;
+      const shade = 0xd9dbe3 - row * 0x0b0b0b;
+      g.fillStyle(shade, 1).fillRoundedRect(x, y, W / 8 - 12, 138, 14);
+      g.fillStyle(0xffffff, 0.35).fillRoundedRect(x + 10, y + 8, W / 8 - 40, 18, 8);
+    }
+  }
+  // Franjas de luz magenta entre filas.
+  const strips = scene.add.graphics().setBlendMode(Phaser.BlendModes.ADD);
+  for (const y of [204, 504]) strips.fillStyle(MAGENTA, 0.85).fillRect(0, y, W, 6).fillStyle(MAGENTA, 0.18).fillRect(0, y - 10, W, 26);
+  c.add(strips);
+  if (animate) scene.tweens.add({ targets: strips, alpha: 0.55, duration: 1400, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
+
+  // Racks de servidores a los costados, con LEDs.
+  const leds = scene.add.graphics();
+  for (const x0 of [40, W - 300]) {
+    g.fillStyle(0x0c0b12, 1).fillRect(x0, 230, 260, 450);
+    g.lineStyle(3, 0x2a2836, 1).strokeRect(x0, 230, 260, 450);
+    for (let r = 0; r < 12; r++) {
+      g.fillStyle(0x17151f, 1).fillRect(x0 + 14, 246 + r * 36, 232, 26);
+      for (let k = 0; k < 6; k++) leds.fillStyle(k % 3 === 0 ? MAGENTA : 0x4dff88, 1).fillCircle(x0 + 30 + k * 16, 259 + r * 36, 3.5);
+    }
+  }
+  c.add(leds);
+  if (animate) scene.tweens.add({ targets: leds, alpha: 0.25, duration: 120, yoyo: true, repeat: -1, repeatDelay: 700 });
+
+  // Pantalla gigante al centro: la onda del master que NOSU ajusta en vivo.
+  const sx = W / 2 - 420;
+  g.fillStyle(0x0a0910, 1).fillRoundedRect(sx - 16, 96, 872, 392, 18);
+  g.lineStyle(4, MAGENTA, 0.9).strokeRoundedRect(sx - 16, 96, 872, 392, 18);
+  g.fillStyle(0x120c1c, 1).fillRect(sx, 112, 840, 360);
+  g.lineStyle(1, MAGENTA, 0.18);
+  for (let x = sx; x <= sx + 840; x += 60) g.lineBetween(x, 112, x, 472);
+  for (let y = 112; y <= 472; y += 60) g.lineBetween(sx, y, sx + 840, y);
+  c.add(label(scene, W / 2, 150, 'MASTERING AUTOMÁTICO · 99.9 %', 30, '#ffffff', { stroke: '#ff2ba6', strokeThickness: 3 }));
+  const wave = scene.add.graphics().setBlendMode(Phaser.BlendModes.ADD);
+  c.add(wave);
+  const drawWave = (t: number) => {
+    wave.clear().lineStyle(4, MAGENTA, 1);
+    wave.beginPath();
+    for (let i = 0; i <= 120; i++) {
+      const x = sx + 20 + (i / 120) * 800;
+      const y = 320 + Math.sin(i * 0.35 + t * 4) * 70 * Math.sin(i * 0.05 + t) + Math.sin(i * 1.3 + t * 9) * 12;
+      if (i === 0) wave.moveTo(x, y);
+      else wave.lineTo(x, y);
+    }
+    wave.strokePath();
+  };
+  drawWave(0);
+  if (animate) {
+    const tick = { t: 0 };
+    scene.tweens.add({ targets: tick, t: 1000, duration: 1_000_000, repeat: -1, onUpdate: () => drawWave(tick.t) });
+  }
+
+  // Brazos robóticos sosteniendo guitarras.
+  const arm = (bx: number, dir: 1 | -1) => {
+    g.fillStyle(0xe6e8ee, 1).fillRect(bx - 40, 620, 80, 60);
+    g.fillStyle(0x111018, 1).fillCircle(bx, 610, 26);
+    g.lineStyle(26, 0xe6e8ee, 1).lineBetween(bx, 610, bx + dir * 90, 470).lineBetween(bx + dir * 90, 470, bx + dir * 20, 360);
+    g.fillStyle(0x111018, 1).fillCircle(bx + dir * 90, 470, 18);
+    g.fillStyle(MAGENTA, 1).fillCircle(bx + dir * 90, 470, 6);
+    // Guitarra lisa, sin marcas.
+    g.fillStyle(0x1a1824, 1).fillEllipse(bx + dir * 20, 330, 90, 110).fillEllipse(bx + dir * 20, 270, 70, 80);
+    g.fillStyle(0x2a2a33, 1).fillRect(bx + dir * 20 - 7, 120, 14, 170);
+    g.fillStyle(MAGENTA, 0.9).fillRect(bx + dir * 20 - 20, 320, 40, 6);
+  };
+  arm(420, 1);
+  arm(W - 420, -1);
+
+  // Piso negro brillante con rejilla de neón en perspectiva.
+  const floorY = 680;
+  const floor = scene.add.graphics();
+  c.add(floor);
+  floor.fillStyle(0x07060b, 1).fillRect(0, floorY, W, H - floorY);
+  floor.lineStyle(2, MAGENTA, 0.35);
+  for (let x = -W; x <= 2 * W; x += 160) floor.lineBetween(W / 2 + (x - W / 2) * 0.25, floorY, x, H);
+  for (let k = 1; k < 9; k++) {
+    const y = floorY + (H - floorY) * (k / 9) ** 1.6;
+    floor.lineBetween(0, y, W, y);
+  }
+  floor.lineStyle(4, MAGENTA, 0.8).lineBetween(0, floorY, W, floorY);
+  floor.fillStyle(0xffffff, 0.06).fillRect(0, floorY + 6, W, 50);
 }

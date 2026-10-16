@@ -63,6 +63,10 @@ export interface ResolvedPose {
 }
 
 const FPS = 12;
+/** La entrada se lee mejor más lenta que el resto. */
+const INTRO_FPS = 7;
+/** En el piso: respira despacio (a 12 fps parecía temblar). */
+const DOWN_FPS = 5;
 
 /** Busca frames de una pose: animación (`pose-0..n`) o frame único. */
 const framesFor = (texture: Phaser.Textures.Texture, prefix: string, pose: Pose): string[] => {
@@ -80,12 +84,16 @@ export const resolvePose = (scene: Phaser.Scene, def: FighterDef, pose: Pose, t:
   for (let guard = 0; guard < 4; guard++) {
     const frames = framesFor(texture, def.art.prefix, p);
     if (frames.length) {
-      const fps = p === 'super' && def.superMove.solo === 'blues' ? 6 : FPS;
+      const fps = p === 'super' && def.superMove.solo === 'blues' ? 6 : p === 'intro' ? INTRO_FPS : p === 'down' ? DOWN_FPS : FPS;
       const dash = pose === 'dash' || pose === 'backdash' ? pose : null;
       const duration = dash === 'dash' ? 210 : 250;
       const progress = Math.max(0, Math.min(1, (loop ? t % duration : t) / duration));
       const i = dash ? Math.min(Math.floor(progress * frames.length), frames.length - 1) : Math.floor((t / 1000) * fps);
-      out.frame = frames[dash ? i : loop ? i % frames.length : Math.min(i, frames.length - 1)];
+      // Entrada: ida y vuelta (0…n-1…1) en vez de saltar del último cuadro al primero.
+      const pingPong = p === 'intro' && loop && frames.length > 2;
+      const period = frames.length * 2 - 2;
+      const k = i % period;
+      out.frame = frames[dash ? i : pingPong ? (k < frames.length ? k : period - k) : loop ? i % frames.length : Math.min(i, frames.length - 1)];
       const scale=poseScale.get(`${def.art.texture}/${out.frame}`)??1;
       out.sx*=scale;out.sy*=scale;
       return out;

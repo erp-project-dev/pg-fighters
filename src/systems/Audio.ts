@@ -27,6 +27,12 @@ export const MUSIC = {
   chino: 'music-stage-chino',
   /** El Mall del Rock: "La Disquería" (de RockStreet). */
   mall: 'music-stage-mall',
+  /** El Salón del Virrey: "La Coronación" (de RockStreet). */
+  casona: 'music-stage-casona',
+  /** La Ciudadela del Sol: "La Autopista" (de RockStreet). */
+  ciudadela: 'music-stage-ciudadela',
+  /** El Muelle del Río: "El Garage" (de RockStreet). */
+  rio: 'music-stage-rio',
   /** Pelea final contra El Acople: "Teeth in the Sink". */
   boss: 'music-boss-acople',
 } as const;
@@ -46,6 +52,9 @@ export const loadAudio = (scene: Phaser.Scene) => {
   scene.load.audio(MUSIC.arenal, 'assets/audio/music/stage-arenal.mp3');
   scene.load.audio(MUSIC.chino, 'assets/audio/music/stage-chino.mp3');
   scene.load.audio(MUSIC.mall, 'assets/audio/music/stage-mall.mp3');
+  scene.load.audio(MUSIC.casona, 'assets/audio/music/stage-casona.mp3');
+  scene.load.audio(MUSIC.ciudadela, 'assets/audio/music/stage-ciudadela.mp3');
+  scene.load.audio(MUSIC.rio, 'assets/audio/music/stage-rio.mp3');
   scene.load.audio(MUSIC.boss, 'assets/audio/music/boss-acople.mp3');
   for (const id of SFX) scene.load.audio(`sfx-${id}`, `assets/${id}.wav`);
 };
@@ -53,6 +62,8 @@ export const loadAudio = (scene: Phaser.Scene) => {
 type Track = Phaser.Sound.WebAudioSound | Phaser.Sound.HTML5AudioSound;
 let current: Track | null = null;
 let currentVolume = 0.5;
+/** Volumen de la música durante el súper, respecto del normal. */
+const ULTIMATE_MUSIC = 1.2;
 
 /** Fundido independiente de las escenas (sus tweens mueren al cambiar de escena). */
 const fade = (track: Track, to: number, ms: number, done?: () => void) => {
@@ -89,9 +100,9 @@ export const Audio = {
     fade(track, volume, 600);
   },
 
-  /** Baja la música mientras suena el solo del súper (y la restaura). */
-  duck(on: boolean): void {
-    if (current) fade(current, on ? currentVolume * 0.2 : currentVolume, on ? 150 : 600);
+  /** Durante el súper la música sube un poco (y luego vuelve a su volumen). */
+  boost(on: boolean): void {
+    if (current) fade(current, on ? currentVolume * ULTIMATE_MUSIC : currentVolume, on ? 150 : 600);
   },
 
   stopMusic(ms = 500): void {

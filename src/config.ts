@@ -50,7 +50,6 @@ export const SCENES = {
   Fight: 'Fight',
   Hud: 'Hud',
   TrainingHud: 'TrainingHud',
-  Showcase: 'Showcase',
   Lab: 'Lab',
   Pause: 'Pause',
   SuperCutIn: 'SuperCutIn',

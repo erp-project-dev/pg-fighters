@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1869,
+        "h": 775
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-airKick-0",
+          "frame": {
+            "x": 828,
+            "y": 8,
+            "w": 257,
+            "h": 364
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 257,
+            "h": 364
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 257,
+            "h": 364
+          },
+          "pivot": {
+            "x": 0.39883268482490275,
+            "y": 0.9917582417582418
+          }
+        },
+        {
+          "filename": "mimetico-airKick-1",
+          "frame": {
+            "x": 1101,
+            "y": 8,
+            "w": 302,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.5562913907284768,
+            "y": 0.9917355371900827
+          }
+        },
+        {
+          "filename": "mimetico-airKick-2",
+          "frame": {
+            "x": 1419,
+            "y": 8,
+            "w": 442,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 442,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 442,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.38461538461538464,
+            "y": 0.9917355371900827
+          }
+        },
+        {
+          "filename": "mimetico-airKick-3",
+          "frame": {
+            "x": 364,
+            "y": 8,
+            "w": 448,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 448,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 448,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.37276785714285715,
+            "y": 0.9918256130790191
+          }
+        },
+        {
+          "filename": "mimetico-airKick-4",
+          "frame": {
+            "x": 8,
+            "y": 414,
+            "w": 461,
+            "h": 353
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 461,
+            "h": 353
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 461,
+            "h": 353
+          },
+          "pivot": {
+            "x": 0.38177874186550975,
+            "y": 0.9915014164305949
+          }
+        },
+        {
+          "filename": "mimetico-airKick-5",
+          "frame": {
+            "x": 794,
+            "y": 414,
+            "w": 286,
+            "h": 348
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 348
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 348
+          },
+          "pivot": {
+            "x": 0.4632867132867133,
+            "y": 0.9913793103448276
+          }
+        },
+        {
+          "filename": "mimetico-airKick-6",
+          "frame": {
+            "x": 485,
+            "y": 414,
+            "w": 293,
+            "h": 350
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 293,
+            "h": 350
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 293,
+            "h": 350
+          },
+          "pivot": {
+            "x": 0.42662116040955633,
+            "y": 0.9914285714285714
+          }
+        },
+        {
+          "filename": "mimetico-airKick-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 340,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.5044117647058823,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "mimetico-airKick",
+          "frame": {
+            "x": 828,
+            "y": 8,
+            "w": 257,
+            "h": 364
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 257,
+            "h": 364
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 257,
+            "h": 364
+          },
+          "pivot": {
+            "x": 0.39883268482490275,
+            "y": 0.9917582417582418
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2011,
+        "h": 783
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-airPunch-0",
+          "frame": {
+            "x": 1724,
+            "y": 8,
+            "w": 279,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.44086021505376344,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "mimetico-airPunch-1",
+          "frame": {
+            "x": 682,
+            "y": 8,
+            "w": 318,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.5361635220125787,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "mimetico-airPunch-2",
+          "frame": {
+            "x": 1309,
+            "y": 8,
+            "w": 399,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 399,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 399,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.34210526315789475,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "mimetico-airPunch-3",
+          "frame": {
+            "x": 307,
+            "y": 8,
+            "w": 359,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.3955431754874652,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "mimetico-airPunch-4",
+          "frame": {
+            "x": 292,
+            "y": 414,
+            "w": 358,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.41480446927374304,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "mimetico-airPunch-5",
+          "frame": {
+            "x": 1016,
+            "y": 8,
+            "w": 277,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.34657039711191334,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "mimetico-airPunch-6",
+          "frame": {
+            "x": 8,
+            "y": 414,
+            "w": 268,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 268,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 268,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.5261194029850746,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "mimetico-airPunch-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 283,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.568904593639576,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "mimetico-airPunch",
+          "frame": {
+            "x": 1724,
+            "y": 8,
+            "w": 279,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.44086021505376344,
+            "y": 0.991869918699187
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1700,
+        "h": 805
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-backdash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 355,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "mimetico-backdash-1",
+          "frame": {
+            "x": 1079,
+            "y": 8,
+            "w": 270,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 270,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 270,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.3907407407407407,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "mimetico-backdash-2",
+          "frame": {
+            "x": 379,
+            "y": 8,
+            "w": 359,
+            "h": 374
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 374
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 374
+          },
+          "pivot": {
+            "x": 0.41086350974930363,
+            "y": 0.9919786096256684
+          }
+        },
+        {
+          "filename": "mimetico-backdash-3",
+          "frame": {
+            "x": 455,
+            "y": 432,
+            "w": 283,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.27385159010600707,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "mimetico-backdash-4",
+          "frame": {
+            "x": 8,
+            "y": 432,
+            "w": 431,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 431,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 431,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.46403712296983757,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "mimetico-backdash-5",
+          "frame": {
+            "x": 754,
+            "y": 432,
+            "w": 337,
+            "h": 355
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 355
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915492957746479
+          }
+        },
+        {
+          "filename": "mimetico-backdash-6",
+          "frame": {
+            "x": 754,
+            "y": 8,
+            "w": 309,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "mimetico-backdash-7",
+          "frame": {
+            "x": 1365,
+            "y": 8,
+            "w": 327,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "mimetico-backdash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 355,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2046,
+        "h": 814
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-special-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 345,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "mimetico-special-1",
+          "frame": {
+            "x": 8,
+            "y": 432,
+            "w": 409,
+            "h": 374
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 374
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 374
+          },
+          "pivot": {
+            "x": 0.49144254278728605,
+            "y": 0.9919786096256684
+          }
+        },
+        {
+          "filename": "mimetico-special-2",
+          "frame": {
+            "x": 433,
+            "y": 432,
+            "w": 372,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917355371900827
+          }
+        },
+        {
+          "filename": "mimetico-special-3",
+          "frame": {
+            "x": 821,
+            "y": 432,
+            "w": 441,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 441,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 441,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.48072562358276644,
+            "y": 0.9916666666666667
+          }
+        },
+        {
+          "filename": "mimetico-special-4",
+          "frame": {
+            "x": 1163,
+            "y": 8,
+            "w": 465,
+            "h": 386
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 465,
+            "h": 386
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 465,
+            "h": 386
+          },
+          "pivot": {
+            "x": 0.4258064516129032,
+            "y": 0.9922279792746114
+          }
+        },
+        {
+          "filename": "mimetico-special-5",
+          "frame": {
+            "x": 1644,
+            "y": 8,
+            "w": 394,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 394,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 394,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "mimetico-special-6",
+          "frame": {
+            "x": 766,
+            "y": 8,
+            "w": 381,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "mimetico-special-7",
+          "frame": {
+            "x": 369,
+            "y": 8,
+            "w": 381,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "mimetico-special",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 345,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1785,
+        "h": 861
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-block-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 340,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "mimetico-block-1",
+          "frame": {
+            "x": 364,
+            "y": 8,
+            "w": 343,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "mimetico-block-2",
+          "frame": {
+            "x": 723,
+            "y": 8,
+            "w": 351,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "mimetico-block-3",
+          "frame": {
+            "x": 693,
+            "y": 453,
+            "w": 290,
+            "h": 371
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 371
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 371
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919137466307277
+          }
+        },
+        {
+          "filename": "mimetico-block-4",
+          "frame": {
+            "x": 391,
+            "y": 453,
+            "w": 286,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "mimetico-block-5",
+          "frame": {
+            "x": 1090,
+            "y": 8,
+            "w": 343,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "mimetico-block-6",
+          "frame": {
+            "x": 8,
+            "y": 453,
+            "w": 367,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.4782016348773842,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "mimetico-block-7",
+          "frame": {
+            "x": 1449,
+            "y": 8,
+            "w": 328,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "mimetico-block",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 340,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1880,
+        "h": 797
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-crouch-0",
+          "frame": {
+            "x": 761,
+            "y": 8,
+            "w": 360,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "mimetico-crouch-1",
+          "frame": {
+            "x": 386,
+            "y": 8,
+            "w": 359,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "mimetico-crouch-2",
+          "frame": {
+            "x": 1509,
+            "y": 8,
+            "w": 363,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "mimetico-crouch-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 362,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "mimetico-crouch-4",
+          "frame": {
+            "x": 8,
+            "y": 417,
+            "w": 350,
+            "h": 372
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 372
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 372
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919354838709677
+          }
+        },
+        {
+          "filename": "mimetico-crouch-5",
+          "frame": {
+            "x": 1137,
+            "y": 8,
+            "w": 356,
+            "h": 386
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 386
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 386
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922279792746114
+          }
+        },
+        {
+          "filename": "mimetico-crouch-6",
+          "frame": {
+            "x": 374,
+            "y": 417,
+            "w": 359,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "mimetico-crouch-7",
+          "frame": {
+            "x": 749,
+            "y": 417,
+            "w": 358,
+            "h": 366
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 366
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 366
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918032786885246
+          }
+        },
+        {
+          "filename": "mimetico-crouch",
+          "frame": {
+            "x": 761,
+            "y": 8,
+            "w": 360,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1770,
+        "h": 776
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-crouchBlock-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 342,
+            "h": 383
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 383
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 383
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921671018276762
+          }
+        },
+        {
+          "filename": "mimetico-crouchBlock-1",
+          "frame": {
+            "x": 1060,
+            "y": 8,
+            "w": 339,
+            "h": 374
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 374
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 374
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919786096256684
+          }
+        },
+        {
+          "filename": "mimetico-crouchBlock-2",
+          "frame": {
+            "x": 708,
+            "y": 8,
+            "w": 336,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "mimetico-crouchBlock-3",
+          "frame": {
+            "x": 366,
+            "y": 8,
+            "w": 326,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "mimetico-crouchBlock-4",
+          "frame": {
+            "x": 8,
+            "y": 407,
+            "w": 333,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.496996996996997,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "mimetico-crouchBlock-5",
+          "frame": {
+            "x": 1415,
+            "y": 8,
+            "w": 347,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.4812680115273775,
+            "y": 0.9918256130790191
+          }
+        },
+        {
+          "filename": "mimetico-crouchBlock-6",
+          "frame": {
+            "x": 709,
+            "y": 407,
+            "w": 334,
+            "h": 356
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 356
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 356
+          },
+          "pivot": {
+            "x": 0.49251497005988026,
+            "y": 0.9915730337078652
+          }
+        },
+        {
+          "filename": "mimetico-crouchBlock-7",
+          "frame": {
+            "x": 357,
+            "y": 407,
+            "w": 336,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "mimetico-crouchBlock",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 342,
+            "h": 383
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 383
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 383
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921671018276762
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1886,
+        "h": 730
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-crouchHurt-0",
+          "frame": {
+            "x": 789,
+            "y": 8,
+            "w": 339,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.47345132743362833,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "mimetico-crouchHurt-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 363,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.5151515151515151,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "mimetico-crouchHurt-2",
+          "frame": {
+            "x": 387,
+            "y": 8,
+            "w": 386,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.44430051813471505,
+            "y": 0.9916666666666667
+          }
+        },
+        {
+          "filename": "mimetico-crouchHurt-3",
+          "frame": {
+            "x": 1144,
+            "y": 8,
+            "w": 371,
+            "h": 356
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 356
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 356
+          },
+          "pivot": {
+            "x": 0.5242587601078167,
+            "y": 0.9915730337078652
+          }
+        },
+        {
+          "filename": "mimetico-crouchHurt-4",
+          "frame": {
+            "x": 362,
+            "y": 386,
+            "w": 345,
+            "h": 335
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 335
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 335
+          },
+          "pivot": {
+            "x": 0.463768115942029,
+            "y": 0.991044776119403
+          }
+        },
+        {
+          "filename": "mimetico-crouchHurt-5",
+          "frame": {
+            "x": 1531,
+            "y": 8,
+            "w": 347,
+            "h": 340
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 340
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 340
+          },
+          "pivot": {
+            "x": 0.46253602305475505,
+            "y": 0.9911764705882353
+          }
+        },
+        {
+          "filename": "mimetico-crouchHurt-6",
+          "frame": {
+            "x": 8,
+            "y": 386,
+            "w": 338,
+            "h": 336
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 336
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 336
+          },
+          "pivot": {
+            "x": 0.46597633136094674,
+            "y": 0.9910714285714286
+          }
+        },
+        {
+          "filename": "mimetico-crouchHurt-7",
+          "frame": {
+            "x": 723,
+            "y": 386,
+            "w": 346,
+            "h": 335
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 335
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 335
+          },
+          "pivot": {
+            "x": 0.4638728323699422,
+            "y": 0.991044776119403
+          }
+        },
+        {
+          "filename": "mimetico-crouchHurt",
+          "frame": {
+            "x": 789,
+            "y": 8,
+            "w": 339,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.47345132743362833,
+            "y": 0.9916434540389972
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1902,
+        "h": 766
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-crouchPunch-0",
+          "frame": {
+            "x": 733,
+            "y": 8,
+            "w": 330,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.48333333333333334,
+            "y": 0.9917355371900827
+          }
+        },
+        {
+          "filename": "mimetico-crouchPunch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 360,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.4666666666666667,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "mimetico-crouchPunch-2",
+          "frame": {
+            "x": 1500,
+            "y": 8,
+            "w": 394,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 394,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 394,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.4149746192893401,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "mimetico-crouchPunch-3",
+          "frame": {
+            "x": 1079,
+            "y": 8,
+            "w": 405,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 405,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 405,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.40370370370370373,
+            "y": 0.9917355371900827
+          }
+        },
+        {
+          "filename": "mimetico-crouchPunch-4",
+          "frame": {
+            "x": 733,
+            "y": 397,
+            "w": 343,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.4737609329446064,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "mimetico-crouchPunch-5",
+          "frame": {
+            "x": 8,
+            "y": 397,
+            "w": 352,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.4715909090909091,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "mimetico-crouchPunch-6",
+          "frame": {
+            "x": 376,
+            "y": 397,
+            "w": 341,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.4809384164222874,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "mimetico-crouchPunch-7",
+          "frame": {
+            "x": 384,
+            "y": 8,
+            "w": 333,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.484984984984985,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "mimetico-crouchPunch",
+          "frame": {
+            "x": 733,
+            "y": 8,
+            "w": 330,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.48333333333333334,
+            "y": 0.9917355371900827
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1967,
+        "h": 708
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-dash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 298,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "mimetico-dash-1",
+          "frame": {
+            "x": 1427,
+            "y": 8,
+            "w": 266,
+            "h": 321
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 266,
+            "h": 321
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 266,
+            "h": 321
+          },
+          "pivot": {
+            "x": 0.33458646616541354,
+            "y": 0.9906542056074766
+          }
+        },
+        {
+          "filename": "mimetico-dash-2",
+          "frame": {
+            "x": 322,
+            "y": 8,
+            "w": 324,
+            "h": 340
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 340
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 340
+          },
+          "pivot": {
+            "x": 0.4367283950617284,
+            "y": 0.9911764705882353
+          }
+        },
+        {
+          "filename": "mimetico-dash-3",
+          "frame": {
+            "x": 662,
+            "y": 8,
+            "w": 437,
+            "h": 334
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 437,
+            "h": 334
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 437,
+            "h": 334
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9910179640718563
+          }
+        },
+        {
+          "filename": "mimetico-dash-4",
+          "frame": {
+            "x": 329,
+            "y": 386,
+            "w": 341,
+            "h": 313
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 313
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 313
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9904153354632588
+          }
+        },
+        {
+          "filename": "mimetico-dash-5",
+          "frame": {
+            "x": 1709,
+            "y": 8,
+            "w": 250,
+            "h": 318
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 250,
+            "h": 318
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 250,
+            "h": 318
+          },
+          "pivot": {
+            "x": 0.312,
+            "y": 0.9905660377358491
+          }
+        },
+        {
+          "filename": "mimetico-dash-6",
+          "frame": {
+            "x": 8,
+            "y": 386,
+            "w": 305,
+            "h": 314
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 314
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 314
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9904458598726115
+          }
+        },
+        {
+          "filename": "mimetico-dash-7",
+          "frame": {
+            "x": 1115,
+            "y": 8,
+            "w": 296,
+            "h": 329
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 296,
+            "h": 329
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 329
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9908814589665653
+          }
+        },
+        {
+          "filename": "mimetico-dash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 298,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917127071823204
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1730,
+        "h": 659
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 272,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 272,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 272,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "mimetico-ko-1",
+          "frame": {
+            "x": 296,
+            "y": 8,
+            "w": 257,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 257,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 257,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "mimetico-ko-2",
+          "frame": {
+            "x": 569,
+            "y": 8,
+            "w": 323,
+            "h": 317
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 317
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 317
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9905362776025236
+          }
+        },
+        {
+          "filename": "mimetico-ko-3",
+          "frame": {
+            "x": 1350,
+            "y": 8,
+            "w": 372,
+            "h": 260
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 260
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 260
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9884615384615385
+          }
+        },
+        {
+          "filename": "mimetico-ko-4",
+          "frame": {
+            "x": 908,
+            "y": 8,
+            "w": 426,
+            "h": 267
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 426,
+            "h": 267
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 426,
+            "h": 267
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9887640449438202
+          }
+        },
+        {
+          "filename": "mimetico-ko-5",
+          "frame": {
+            "x": 8,
+            "y": 440,
+            "w": 386,
+            "h": 211
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 211
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 211
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.985781990521327
+          }
+        },
+        {
+          "filename": "mimetico-ko-6",
+          "frame": {
+            "x": 410,
+            "y": 440,
+            "w": 394,
+            "h": 156
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 394,
+            "h": 156
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 394,
+            "h": 156
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9807692307692307
+          }
+        },
+        {
+          "filename": "mimetico-ko-7",
+          "frame": {
+            "x": 820,
+            "y": 440,
+            "w": 431,
+            "h": 148
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 431,
+            "h": 148
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 431,
+            "h": 148
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9797297297297297
+          }
+        },
+        {
+          "filename": "mimetico-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 272,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 272,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 272,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1789,
+        "h": 373
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-down-0",
+          "frame": {
+            "x": 1329,
+            "y": 200,
+            "w": 424,
+            "h": 163
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 424,
+            "h": 163
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 424,
+            "h": 163
+          },
+          "pivot": {
+            "x": 0.4988207547169811,
+            "y": 0.9815950920245399
+          }
+        },
+        {
+          "filename": "mimetico-down-1",
+          "frame": {
+            "x": 454,
+            "y": 8,
+            "w": 428,
+            "h": 167
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 167
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 167
+          },
+          "pivot": {
+            "x": 0.49649532710280375,
+            "y": 0.9820359281437125
+          }
+        },
+        {
+          "filename": "mimetico-down-2",
+          "frame": {
+            "x": 443,
+            "y": 200,
+            "w": 426,
+            "h": 164
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 426,
+            "h": 164
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 426,
+            "h": 164
+          },
+          "pivot": {
+            "x": 0.4964788732394366,
+            "y": 0.9817073170731707
+          }
+        },
+        {
+          "filename": "mimetico-down-3",
+          "frame": {
+            "x": 8,
+            "y": 200,
+            "w": 419,
+            "h": 165
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 419,
+            "h": 165
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 165
+          },
+          "pivot": {
+            "x": 0.49761336515513127,
+            "y": 0.9818181818181818
+          }
+        },
+        {
+          "filename": "mimetico-down-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 430,
+            "h": 176
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 430,
+            "h": 176
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 430,
+            "h": 176
+          },
+          "pivot": {
+            "x": 0.4941860465116279,
+            "y": 0.9829545454545454
+          }
+        },
+        {
+          "filename": "mimetico-down-5",
+          "frame": {
+            "x": 898,
+            "y": 8,
+            "w": 430,
+            "h": 167
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 430,
+            "h": 167
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 430,
+            "h": 167
+          },
+          "pivot": {
+            "x": 0.49767441860465117,
+            "y": 0.9820359281437125
+          }
+        },
+        {
+          "filename": "mimetico-down-6",
+          "frame": {
+            "x": 1344,
+            "y": 8,
+            "w": 437,
+            "h": 166
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 437,
+            "h": 166
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 437,
+            "h": 166
+          },
+          "pivot": {
+            "x": 0.494279176201373,
+            "y": 0.9819277108433735
+          }
+        },
+        {
+          "filename": "mimetico-down-7",
+          "frame": {
+            "x": 885,
+            "y": 200,
+            "w": 428,
+            "h": 164
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 164
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 164
+          },
+          "pivot": {
+            "x": 0.49649532710280375,
+            "y": 0.9817073170731707
+          }
+        },
+        {
+          "filename": "mimetico-down",
+          "frame": {
+            "x": 1329,
+            "y": 200,
+            "w": 424,
+            "h": 163
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 424,
+            "h": 163
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 424,
+            "h": 163
+          },
+          "pivot": {
+            "x": 0.4988207547169811,
+            "y": 0.9815950920245399
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1844,
+        "h": 848
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-fall-0",
+          "frame": {
+            "x": 265,
+            "y": 472,
+            "w": 236,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 236,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 236,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.3601694915254237,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "mimetico-fall-1",
+          "frame": {
+            "x": 8,
+            "y": 472,
+            "w": 241,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 241,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 241,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.38381742738589214,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "mimetico-fall-2",
+          "frame": {
+            "x": 299,
+            "y": 8,
+            "w": 243,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 243,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 243,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5349794238683128,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "mimetico-fall-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 275,
+            "h": 448
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 275,
+            "h": 448
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 275,
+            "h": 448
+          },
+          "pivot": {
+            "x": 0.5509090909090909,
+            "y": 0.9933035714285714
+          }
+        },
+        {
+          "filename": "mimetico-fall-4",
+          "frame": {
+            "x": 558,
+            "y": 8,
+            "w": 344,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.5712209302325582,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "mimetico-fall-5",
+          "frame": {
+            "x": 918,
+            "y": 8,
+            "w": 343,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5816326530612245,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "mimetico-fall-6",
+          "frame": {
+            "x": 1544,
+            "y": 8,
+            "w": 292,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 292,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 292,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.5633561643835616,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "mimetico-fall-7",
+          "frame": {
+            "x": 1277,
+            "y": 8,
+            "w": 251,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 251,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 251,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.5059760956175299,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "mimetico-fall",
+          "frame": {
+            "x": 265,
+            "y": 472,
+            "w": 236,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 236,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 236,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.3601694915254237,
+            "y": 0.9917127071823204
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2002,
+        "h": 576
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-getup-0",
+          "frame": {
+            "x": 415,
+            "y": 379,
+            "w": 392,
+            "h": 136
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 392,
+            "h": 136
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 392,
+            "h": 136
+          },
+          "pivot": {
+            "x": 0.4987244897959184,
+            "y": 0.9779411764705882
+          }
+        },
+        {
+          "filename": "mimetico-getup-1",
+          "frame": {
+            "x": 8,
+            "y": 379,
+            "w": 391,
+            "h": 189
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 391,
+            "h": 189
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 391,
+            "h": 189
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9841269841269841
+          }
+        },
+        {
+          "filename": "mimetico-getup-2",
+          "frame": {
+            "x": 1630,
+            "y": 8,
+            "w": 364,
+            "h": 252
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 252
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 252
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9880952380952381
+          }
+        },
+        {
+          "filename": "mimetico-getup-3",
+          "frame": {
+            "x": 931,
+            "y": 8,
+            "w": 345,
+            "h": 279
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 279
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 279
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.989247311827957
+          }
+        },
+        {
+          "filename": "mimetico-getup-4",
+          "frame": {
+            "x": 1292,
+            "y": 8,
+            "w": 322,
+            "h": 266
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 266
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 266
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9887218045112782
+          }
+        },
+        {
+          "filename": "mimetico-getup-5",
+          "frame": {
+            "x": 632,
+            "y": 8,
+            "w": 283,
+            "h": 331
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 331
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 331
+          },
+          "pivot": {
+            "x": 0.5335689045936396,
+            "y": 0.9909365558912386
+          }
+        },
+        {
+          "filename": "mimetico-getup-6",
+          "frame": {
+            "x": 332,
+            "y": 8,
+            "w": 284,
+            "h": 336
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 284,
+            "h": 336
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 284,
+            "h": 336
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9910714285714286
+          }
+        },
+        {
+          "filename": "mimetico-getup-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 308,
+            "h": 355
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 355
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915492957746479
+          }
+        },
+        {
+          "filename": "mimetico-getup",
+          "frame": {
+            "x": 415,
+            "y": 379,
+            "w": 392,
+            "h": 136
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 392,
+            "h": 136
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 392,
+            "h": 136
+          },
+          "pivot": {
+            "x": 0.4987244897959184,
+            "y": 0.9779411764705882
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1851,
+        "h": 837
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-hurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 353,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "mimetico-hurt-1",
+          "frame": {
+            "x": 377,
+            "y": 8,
+            "w": 344,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "mimetico-hurt-2",
+          "frame": {
+            "x": 737,
+            "y": 8,
+            "w": 372,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5309139784946236,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "mimetico-hurt-3",
+          "frame": {
+            "x": 374,
+            "y": 442,
+            "w": 357,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.5560224089635855,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "mimetico-hurt-4",
+          "frame": {
+            "x": 747,
+            "y": 442,
+            "w": 357,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "mimetico-hurt-5",
+          "frame": {
+            "x": 8,
+            "y": 442,
+            "w": 350,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "mimetico-hurt-6",
+          "frame": {
+            "x": 1125,
+            "y": 8,
+            "w": 351,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "mimetico-hurt-7",
+          "frame": {
+            "x": 1492,
+            "y": 8,
+            "w": 351,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "mimetico-hurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 353,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992822966507177
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1893,
+        "h": 873
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-idle-0",
+          "frame": {
+            "x": 764,
+            "y": 8,
+            "w": 366,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "mimetico-idle-1",
+          "frame": {
+            "x": 385,
+            "y": 8,
+            "w": 363,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "mimetico-idle-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 361,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "mimetico-idle-3",
+          "frame": {
+            "x": 1146,
+            "y": 8,
+            "w": 360,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "mimetico-idle-4",
+          "frame": {
+            "x": 8,
+            "y": 462,
+            "w": 364,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "mimetico-idle-5",
+          "frame": {
+            "x": 1522,
+            "y": 8,
+            "w": 363,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "mimetico-idle-6",
+          "frame": {
+            "x": 388,
+            "y": 462,
+            "w": 360,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "mimetico-idle-7",
+          "frame": {
+            "x": 764,
+            "y": 462,
+            "w": 359,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "mimetico-idle",
+          "frame": {
+            "x": 764,
+            "y": 8,
+            "w": 366,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1760,
+        "h": 929
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-intro-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 257,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 257,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 257,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "mimetico-intro-1",
+          "frame": {
+            "x": 556,
+            "y": 8,
+            "w": 259,
+            "h": 477
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 259,
+            "h": 477
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 259,
+            "h": 477
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937106918238994
+          }
+        },
+        {
+          "filename": "mimetico-intro-2",
+          "frame": {
+            "x": 281,
+            "y": 8,
+            "w": 259,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 259,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 259,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "mimetico-intro-3",
+          "frame": {
+            "x": 831,
+            "y": 8,
+            "w": 288,
+            "h": 475
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 475
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 475
+          },
+          "pivot": {
+            "x": 0.4618055555555556,
+            "y": 0.9936842105263158
+          }
+        },
+        {
+          "filename": "mimetico-intro-4",
+          "frame": {
+            "x": 1135,
+            "y": 8,
+            "w": 278,
+            "h": 448
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 278,
+            "h": 448
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 278,
+            "h": 448
+          },
+          "pivot": {
+            "x": 0.4856115107913669,
+            "y": 0.9933035714285714
+          }
+        },
+        {
+          "filename": "mimetico-intro-5",
+          "frame": {
+            "x": 8,
+            "y": 509,
+            "w": 323,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "mimetico-intro-6",
+          "frame": {
+            "x": 347,
+            "y": 509,
+            "w": 335,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "mimetico-intro-7",
+          "frame": {
+            "x": 1429,
+            "y": 8,
+            "w": 323,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "mimetico-intro",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 257,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 257,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 257,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1998,
+        "h": 798
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-jump-0",
+          "frame": {
+            "x": 900,
+            "y": 8,
+            "w": 325,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "mimetico-jump-1",
+          "frame": {
+            "x": 1739,
+            "y": 8,
+            "w": 251,
+            "h": 331
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 251,
+            "h": 331
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 251,
+            "h": 331
+          },
+          "pivot": {
+            "x": 0.4402390438247012,
+            "y": 0.9909365558912386
+          }
+        },
+        {
+          "filename": "mimetico-jump-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 272,
+            "h": 443
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 272,
+            "h": 443
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 272,
+            "h": 443
+          },
+          "pivot": {
+            "x": 0.5147058823529411,
+            "y": 0.9932279909706546
+          }
+        },
+        {
+          "filename": "mimetico-jump-3",
+          "frame": {
+            "x": 1241,
+            "y": 8,
+            "w": 238,
+            "h": 382
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 238,
+            "h": 382
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 238,
+            "h": 382
+          },
+          "pivot": {
+            "x": 0.3445378151260504,
+            "y": 0.9921465968586387
+          }
+        },
+        {
+          "filename": "mimetico-jump-4",
+          "frame": {
+            "x": 1495,
+            "y": 8,
+            "w": 228,
+            "h": 332
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 228,
+            "h": 332
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 228,
+            "h": 332
+          },
+          "pivot": {
+            "x": 0.3815789473684211,
+            "y": 0.9909638554216867
+          }
+        },
+        {
+          "filename": "mimetico-jump-5",
+          "frame": {
+            "x": 296,
+            "y": 8,
+            "w": 243,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 243,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 243,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5473251028806584,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "mimetico-jump-6",
+          "frame": {
+            "x": 8,
+            "y": 467,
+            "w": 276,
+            "h": 323
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 276,
+            "h": 323
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 276,
+            "h": 323
+          },
+          "pivot": {
+            "x": 0.4528985507246377,
+            "y": 0.9907120743034056
+          }
+        },
+        {
+          "filename": "mimetico-jump-7",
+          "frame": {
+            "x": 555,
+            "y": 8,
+            "w": 329,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "mimetico-jump",
+          "frame": {
+            "x": 900,
+            "y": 8,
+            "w": 325,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1768,
+        "h": 836
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-kick-0",
+          "frame": {
+            "x": 791,
+            "y": 8,
+            "w": 353,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "mimetico-kick-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 301,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.19435215946843853,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "mimetico-kick-2",
+          "frame": {
+            "x": 1160,
+            "y": 8,
+            "w": 228,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 228,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 228,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.35964912280701755,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "mimetico-kick-3",
+          "frame": {
+            "x": 325,
+            "y": 8,
+            "w": 450,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 450,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 450,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.21555555555555556,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "mimetico-kick-4",
+          "frame": {
+            "x": 8,
+            "y": 435,
+            "w": 466,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 466,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 466,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.15450643776824036,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "mimetico-kick-5",
+          "frame": {
+            "x": 490,
+            "y": 435,
+            "w": 228,
+            "h": 389
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 228,
+            "h": 389
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 228,
+            "h": 389
+          },
+          "pivot": {
+            "x": 0.35526315789473684,
+            "y": 0.9922879177377892
+          }
+        },
+        {
+          "filename": "mimetico-kick-6",
+          "frame": {
+            "x": 734,
+            "y": 435,
+            "w": 337,
+            "h": 383
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 383
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 383
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921671018276762
+          }
+        },
+        {
+          "filename": "mimetico-kick-7",
+          "frame": {
+            "x": 1404,
+            "y": 8,
+            "w": 356,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "mimetico-kick",
+          "frame": {
+            "x": 791,
+            "y": 8,
+            "w": 353,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1808,
+        "h": 744
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-knockdown-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 383,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933628318584071
+          }
+        },
+        {
+          "filename": "mimetico-knockdown-1",
+          "frame": {
+            "x": 407,
+            "y": 8,
+            "w": 350,
+            "h": 433
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 433
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 433
+          },
+          "pivot": {
+            "x": 0.5557142857142857,
+            "y": 0.9930715935334873
+          }
+        },
+        {
+          "filename": "mimetico-knockdown-2",
+          "frame": {
+            "x": 773,
+            "y": 8,
+            "w": 441,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 441,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 441,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.6893424036281179,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "mimetico-knockdown-3",
+          "frame": {
+            "x": 1230,
+            "y": 8,
+            "w": 438,
+            "h": 292
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 438,
+            "h": 292
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 438,
+            "h": 292
+          },
+          "pivot": {
+            "x": 0.5958904109589042,
+            "y": 0.9897260273972602
+          }
+        },
+        {
+          "filename": "mimetico-knockdown-4",
+          "frame": {
+            "x": 8,
+            "y": 476,
+            "w": 453,
+            "h": 260
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 453,
+            "h": 260
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 453,
+            "h": 260
+          },
+          "pivot": {
+            "x": 0.5121412803532008,
+            "y": 0.9884615384615385
+          }
+        },
+        {
+          "filename": "mimetico-knockdown-5",
+          "frame": {
+            "x": 477,
+            "y": 476,
+            "w": 447,
+            "h": 224
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 447,
+            "h": 224
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 447,
+            "h": 224
+          },
+          "pivot": {
+            "x": 0.5111856823266219,
+            "y": 0.9866071428571429
+          }
+        },
+        {
+          "filename": "mimetico-knockdown-6",
+          "frame": {
+            "x": 940,
+            "y": 476,
+            "w": 404,
+            "h": 156
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 404,
+            "h": 156
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 404,
+            "h": 156
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9807692307692307
+          }
+        },
+        {
+          "filename": "mimetico-knockdown-7",
+          "frame": {
+            "x": 1360,
+            "y": 476,
+            "w": 440,
+            "h": 147
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 440,
+            "h": 147
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 440,
+            "h": 147
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9795918367346939
+          }
+        },
+        {
+          "filename": "mimetico-knockdown",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 383,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933628318584071
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1926,
+        "h": 828
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-punch-0",
+          "frame": {
+            "x": 393,
+            "y": 8,
+            "w": 335,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "mimetico-punch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 369,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "mimetico-punch-2",
+          "frame": {
+            "x": 744,
+            "y": 8,
+            "w": 388,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.46649484536082475,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "mimetico-punch-3",
+          "frame": {
+            "x": 1148,
+            "y": 8,
+            "w": 401,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.45261845386533667,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "mimetico-punch-4",
+          "frame": {
+            "x": 761,
+            "y": 443,
+            "w": 366,
+            "h": 372
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 372
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 372
+          },
+          "pivot": {
+            "x": 0.49043715846994534,
+            "y": 0.9919354838709677
+          }
+        },
+        {
+          "filename": "mimetico-punch-5",
+          "frame": {
+            "x": 376,
+            "y": 443,
+            "w": 369,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "mimetico-punch-6",
+          "frame": {
+            "x": 8,
+            "y": 443,
+            "w": 352,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "mimetico-punch-7",
+          "frame": {
+            "x": 1565,
+            "y": 8,
+            "w": 353,
+            "h": 383
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 383
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 383
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921671018276762
+          }
+        },
+        {
+          "filename": "mimetico-punch",
+          "frame": {
+            "x": 393,
+            "y": 8,
+            "w": 335,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1717,
+        "h": 871
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-super-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 416,
+            "h": 455
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 455
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 455
+          },
+          "pivot": {
+            "x": 0.4519230769230769,
+            "y": 0.9934065934065934
+          }
+        },
+        {
+          "filename": "mimetico-super-1",
+          "frame": {
+            "x": 1239,
+            "y": 8,
+            "w": 409,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.4621026894865526,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "mimetico-super-2",
+          "frame": {
+            "x": 8,
+            "y": 479,
+            "w": 398,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 398,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 398,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.4836683417085427,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "mimetico-super-3",
+          "frame": {
+            "x": 842,
+            "y": 8,
+            "w": 381,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.4881889763779528,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "mimetico-super-4",
+          "frame": {
+            "x": 1292,
+            "y": 479,
+            "w": 417,
+            "h": 339
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 417,
+            "h": 339
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 417,
+            "h": 339
+          },
+          "pivot": {
+            "x": 0.4556354916067146,
+            "y": 0.9911504424778761
+          }
+        },
+        {
+          "filename": "mimetico-super-5",
+          "frame": {
+            "x": 422,
+            "y": 479,
+            "w": 419,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 419,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.47613365155131265,
+            "y": 0.9914040114613181
+          }
+        },
+        {
+          "filename": "mimetico-super-6",
+          "frame": {
+            "x": 857,
+            "y": 479,
+            "w": 419,
+            "h": 341
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 419,
+            "h": 341
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 341
+          },
+          "pivot": {
+            "x": 0.45465393794749404,
+            "y": 0.9912023460410557
+          }
+        },
+        {
+          "filename": "mimetico-super-7",
+          "frame": {
+            "x": 440,
+            "y": 8,
+            "w": 386,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.4844559585492228,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "mimetico-super",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 416,
+            "h": 455
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 455
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 455
+          },
+          "pivot": {
+            "x": 0.4519230769230769,
+            "y": 0.9934065934065934
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1869,
+        "h": 620
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-sweep-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 282,
+            "h": 314
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 314
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 314
+          },
+          "pivot": {
+            "x": 0.43439716312056736,
+            "y": 0.9904458598726115
+          }
+        },
+        {
+          "filename": "mimetico-sweep-1",
+          "frame": {
+            "x": 1183,
+            "y": 8,
+            "w": 301,
+            "h": 283
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 283
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 283
+          },
+          "pivot": {
+            "x": 0.43853820598006643,
+            "y": 0.9893992932862191
+          }
+        },
+        {
+          "filename": "mimetico-sweep-2",
+          "frame": {
+            "x": 418,
+            "y": 338,
+            "w": 494,
+            "h": 268
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 494,
+            "h": 268
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 494,
+            "h": 268
+          },
+          "pivot": {
+            "x": 0.4706477732793522,
+            "y": 0.9888059701492538
+          }
+        },
+        {
+          "filename": "mimetico-sweep-3",
+          "frame": {
+            "x": 8,
+            "y": 338,
+            "w": 394,
+            "h": 274
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 394,
+            "h": 274
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 394,
+            "h": 274
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9890510948905109
+          }
+        },
+        {
+          "filename": "mimetico-sweep-4",
+          "frame": {
+            "x": 1500,
+            "y": 8,
+            "w": 361,
+            "h": 278
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 278
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 278
+          },
+          "pivot": {
+            "x": 0.4930747922437673,
+            "y": 0.9892086330935251
+          }
+        },
+        {
+          "filename": "mimetico-sweep-5",
+          "frame": {
+            "x": 598,
+            "y": 8,
+            "w": 290,
+            "h": 290
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 290
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 290
+          },
+          "pivot": {
+            "x": 0.4724137931034483,
+            "y": 0.9896551724137931
+          }
+        },
+        {
+          "filename": "mimetico-sweep-6",
+          "frame": {
+            "x": 904,
+            "y": 8,
+            "w": 263,
+            "h": 290
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 263,
+            "h": 290
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 263,
+            "h": 290
+          },
+          "pivot": {
+            "x": 0.43346007604562736,
+            "y": 0.9896551724137931
+          }
+        },
+        {
+          "filename": "mimetico-sweep-7",
+          "frame": {
+            "x": 306,
+            "y": 8,
+            "w": 276,
+            "h": 297
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 276,
+            "h": 297
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 276,
+            "h": 297
+          },
+          "pivot": {
+            "x": 0.49094202898550726,
+            "y": 0.98989898989899
+          }
+        },
+        {
+          "filename": "mimetico-sweep",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 282,
+            "h": 314
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 314
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 314
+          },
+          "pivot": {
+            "x": 0.43439716312056736,
+            "y": 0.9904458598726115
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2013,
+        "h": 846
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-uppercut-0",
+          "frame": {
+            "x": 275,
+            "y": 8,
+            "w": 383,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "mimetico-uppercut-1",
+          "frame": {
+            "x": 8,
+            "y": 517,
+            "w": 308,
+            "h": 321
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 321
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 321
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9906542056074766
+          }
+        },
+        {
+          "filename": "mimetico-uppercut-2",
+          "frame": {
+            "x": 938,
+            "y": 8,
+            "w": 379,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "mimetico-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 251,
+            "h": 493
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 251,
+            "h": 493
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 251,
+            "h": 493
+          },
+          "pivot": {
+            "x": 0.36852589641434264,
+            "y": 0.9939148073022313
+          }
+        },
+        {
+          "filename": "mimetico-uppercut-4",
+          "frame": {
+            "x": 674,
+            "y": 8,
+            "w": 248,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 248,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 248,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.31451612903225806,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "mimetico-uppercut-5",
+          "frame": {
+            "x": 1333,
+            "y": 8,
+            "w": 306,
+            "h": 351
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 351
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 351
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9914529914529915
+          }
+        },
+        {
+          "filename": "mimetico-uppercut-6",
+          "frame": {
+            "x": 332,
+            "y": 517,
+            "w": 309,
+            "h": 318
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 318
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 318
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9905660377358491
+          }
+        },
+        {
+          "filename": "mimetico-uppercut-7",
+          "frame": {
+            "x": 1655,
+            "y": 8,
+            "w": 350,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9914040114613181
+          }
+        },
+        {
+          "filename": "mimetico-uppercut",
+          "frame": {
+            "x": 275,
+            "y": 8,
+            "w": 383,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1921,
+        "h": 828
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-win-0",
+          "frame": {
+            "x": 1590,
+            "y": 8,
+            "w": 323,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "mimetico-win-1",
+          "frame": {
+            "x": 1264,
+            "y": 8,
+            "w": 310,
+            "h": 383
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 383
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 383
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921671018276762
+          }
+        },
+        {
+          "filename": "mimetico-win-2",
+          "frame": {
+            "x": 334,
+            "y": 8,
+            "w": 272,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 272,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 272,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "mimetico-win-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 310,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "mimetico-win-4",
+          "frame": {
+            "x": 944,
+            "y": 8,
+            "w": 304,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "mimetico-win-5",
+          "frame": {
+            "x": 622,
+            "y": 8,
+            "w": 306,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "mimetico-win-6",
+          "frame": {
+            "x": 270,
+            "y": 459,
+            "w": 264,
+            "h": 353
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 264,
+            "h": 353
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 264,
+            "h": 353
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915014164305949
+          }
+        },
+        {
+          "filename": "mimetico-win-7",
+          "frame": {
+            "x": 8,
+            "y": 459,
+            "w": 246,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 246,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 246,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "mimetico-win",
+          "frame": {
+            "x": 1590,
+            "y": 8,
+            "w": 323,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.991869918699187
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1871,
+        "h": 845
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-walk-0",
+          "frame": {
+            "x": 586,
+            "y": 8,
+            "w": 338,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "mimetico-walk-1",
+          "frame": {
+            "x": 940,
+            "y": 8,
+            "w": 275,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 275,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 275,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5127272727272727,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "mimetico-walk-2",
+          "frame": {
+            "x": 359,
+            "y": 8,
+            "w": 211,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 211,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 211,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.466824644549763,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "mimetico-walk-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 335,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.49850746268656715,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "mimetico-walk-4",
+          "frame": {
+            "x": 232,
+            "y": 448,
+            "w": 342,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "mimetico-walk-5",
+          "frame": {
+            "x": 1231,
+            "y": 8,
+            "w": 266,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 266,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 266,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "mimetico-walk-6",
+          "frame": {
+            "x": 8,
+            "y": 448,
+            "w": 208,
+            "h": 389
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 208,
+            "h": 389
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 208,
+            "h": 389
+          },
+          "pivot": {
+            "x": 0.46875,
+            "y": 0.9922879177377892
+          }
+        },
+        {
+          "filename": "mimetico-walk-7",
+          "frame": {
+            "x": 1513,
+            "y": 8,
+            "w": 350,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "mimetico-walk",
+          "frame": {
+            "x": 586,
+            "y": 8,
+            "w": 338,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992822966507177
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2009,
+        "h": 879
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mimetico-walkBack-0",
+          "frame": {
+            "x": 1310,
+            "y": 8,
+            "w": 337,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "mimetico-walkBack-1",
+          "frame": {
+            "x": 234,
+            "y": 451,
+            "w": 347,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "mimetico-walkBack-2",
+          "frame": {
+            "x": 265,
+            "y": 8,
+            "w": 389,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 389,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 389,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "mimetico-walkBack-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 241,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 241,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 241,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.3962655601659751,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "mimetico-walkBack-4",
+          "frame": {
+            "x": 8,
+            "y": 451,
+            "w": 210,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 210,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 210,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "mimetico-walkBack-5",
+          "frame": {
+            "x": 1663,
+            "y": 8,
+            "w": 338,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5088757396449705,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "mimetico-walkBack-6",
+          "frame": {
+            "x": 670,
+            "y": 8,
+            "w": 293,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 293,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 293,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5017064846416383,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "mimetico-walkBack-7",
+          "frame": {
+            "x": 979,
+            "y": 8,
+            "w": 315,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "mimetico-walkBack",
+          "frame": {
+            "x": 1310,
+            "y": 8,
+            "w": 337,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}

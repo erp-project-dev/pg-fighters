@@ -3,23 +3,26 @@ import { COLORS, CSS, GAME_HEIGHT, GAME_WIDTH, SCENES } from '../config';
 import { Audio } from '../systems/Audio';
 import { Input } from '../systems/Input';
 import { Menu, footer, text } from '../ui/ui';
+import { FIGHTERS, type FighterDef } from '../data/fighters';
+import { TRAITS, powerInfo } from '../data/moveset';
 import type { FightData } from './FightScene';
 
 /** El laboratorio de sprites se abre con ?sprites en la URL. */
 const LAB = new URLSearchParams(location.search).has('sprites');
 
-const MOVES_LIST: [string, string][] = [
-  ['PUÑO / PATADA', 'CLIC IZQ / CLIC DER'],
-  ['PODER', 'S → D + CLIC IZQ'],
-  ['UPPERCUT', 'D → S → S+D + CLIC IZQ'],
-  ['ULTIMATE (barra llena)', 'E'],
-  ['BARRIDA', 'S + CLIC DER'],
-  ['DASH / ATRÁS', 'D D / A A'],
-  ['BLOQUEAR', 'mantener A'],
-];
+/** [tipo, entrada, nombre, qué hace] de cada movimiento propio del luchador. */
+const movesOf = (def: FighterDef): [string, string, string, string][] => {
+  const trait = TRAITS[def.id];
+  return [
+    ['PODER', 'S → D + CLIC IZQ', def.moves.special, powerInfo(def.id)],
+    ['UPPERCUT', 'D → S → S+D + CLIC IZQ', def.moves.uppercut, 'Antiaéreo invulnerable al arrancar.'],
+    ['ULTIMATE', 'E', def.moves.super, 'Con la barra ULTIMATE llena.'],
+    ...(trait ? [['RASGO', '', trait.name, trait.desc] as [string, string, string, string]] : []),
+  ];
+};
 
 
-/** Pausa sobre la pelea: continuar, reiniciar, cambiar de luchador o salir. Muestra la lista de movimientos. */
+/** Pausa sobre la pelea: continuar, reiniciar, cambiar de luchador o salir. Muestra los movimientos de tu luchador. */
 export class PauseScene extends Phaser.Scene {
   private input2!: Input;
   private menu!: Menu;
@@ -48,14 +51,21 @@ export class PauseScene extends Phaser.Scene {
 
     const px = 1040;
     const g = this.add.graphics();
-    g.fillStyle(COLORS.panel, 0.95).fillRect(px, 150, 760, 700);
+    g.fillStyle(COLORS.panel, 0.95).fillRect(px, 150, 760, 760);
     g.fillStyle(COLORS.lime, 1).fillRect(px, 150, 760, 6);
-    text(this, px + 40, 205, 'MOVIMIENTOS  ·  MIRANDO A LA DERECHA', { size: 30, italic: true, weight: '900', origin: [0, 0.5], spacing: 2 });
-    MOVES_LIST.forEach(([name, input], i) => {
-      const y = 290 + i * 76;
-      text(this, px + 40, y, name, { size: 30, weight: '800', color: CSS.lime, origin: [0, 0.5] });
-      text(this, px + 720, y, input, { size: 30, weight: '700', origin: [1, 0.5] });
-    });
+    const def = FIGHTERS[this.fight.p1];
+    text(this, px + 40, 200, `MOVIMIENTOS  ·  ${def.name}`, { size: 30, italic: true, weight: '900', origin: [0, 0.5], spacing: 2 });
+    text(this, px + 40, 236, 'Mirando a la derecha', { size: 20, font: 'body', color: CSS.grey, origin: [0, 0.5] });
+    let y = 272;
+    for (const [kind, input, name, desc] of movesOf(def)) {
+      text(this, px + 40, y + 12, kind, { size: 20, weight: '800', color: CSS.grey, origin: [0, 0.5], spacing: 3 });
+      if (input) text(this, px + 720, y + 12, input, { size: 24, weight: '700', origin: [1, 0.5] });
+      const n = text(this, px + 40, y + 30, name, { size: 30, italic: true, weight: '900', color: CSS.lime, origin: [0, 0], wrap: 680 });
+      y = n.y + n.height + 4;
+      const d = text(this, px + 40, y, desc, { size: 21, font: 'body', color: '#cfccc0', origin: [0, 0], wrap: 680 }).setLineSpacing(3);
+      y = d.y + d.height + 22;
+    }
+    text(this, px + 40, 876, 'Golpes básicos, barrida, cadena y dash: menú CONTROLES.', { size: 20, font: 'body', color: CSS.grey, origin: [0, 0.5] });
     footer(this, 'W S  ELEGIR      ENTER  CONFIRMAR      ESC  CONTINUAR');
   }
 

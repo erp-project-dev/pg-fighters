@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1915,
+        "h": 898
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-airKick-0",
+          "frame": {
+            "x": 739,
+            "y": 8,
+            "w": 290,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.3258620689655172,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "amu-airKick-1",
+          "frame": {
+            "x": 1624,
+            "y": 8,
+            "w": 283,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5017667844522968,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "amu-airKick-2",
+          "frame": {
+            "x": 364,
+            "y": 485,
+            "w": 522,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 522,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 522,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.3381226053639847,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "amu-airKick-3",
+          "frame": {
+            "x": 1045,
+            "y": 8,
+            "w": 267,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 267,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 267,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.4606741573033708,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "amu-airKick-4",
+          "frame": {
+            "x": 1328,
+            "y": 8,
+            "w": 280,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5142857142857142,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "amu-airKick-5",
+          "frame": {
+            "x": 8,
+            "y": 485,
+            "w": 340,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.4161764705882353,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "amu-airKick-6",
+          "frame": {
+            "x": 311,
+            "y": 8,
+            "w": 412,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 412,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 412,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.6783980582524272,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "amu-airKick-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 287,
+            "h": 461
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 287,
+            "h": 461
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 287,
+            "h": 461
+          },
+          "pivot": {
+            "x": 0.662020905923345,
+            "y": 0.9934924078091106
+          }
+        },
+        {
+          "filename": "amu-airKick",
+          "frame": {
+            "x": 739,
+            "y": 8,
+            "w": 290,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.3258620689655172,
+            "y": 0.9930875576036866
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1772,
+        "h": 947
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-airPunch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 306,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.2761437908496732,
+            "y": 0.9936974789915967
+          }
+        },
+        {
+          "filename": "amu-airPunch-1",
+          "frame": {
+            "x": 330,
+            "y": 8,
+            "w": 365,
+            "h": 471
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 471
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 471
+          },
+          "pivot": {
+            "x": 0.09452054794520548,
+            "y": 0.9936305732484076
+          }
+        },
+        {
+          "filename": "amu-airPunch-2",
+          "frame": {
+            "x": 711,
+            "y": 8,
+            "w": 437,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 437,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 437,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.12700228832951946,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "amu-airPunch-3",
+          "frame": {
+            "x": 1164,
+            "y": 8,
+            "w": 300,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.37666666666666665,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "amu-airPunch-4",
+          "frame": {
+            "x": 319,
+            "y": 500,
+            "w": 295,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.3101694915254237,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "amu-airPunch-5",
+          "frame": {
+            "x": 630,
+            "y": 500,
+            "w": 261,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 261,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 261,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.4099616858237548,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "amu-airPunch-6",
+          "frame": {
+            "x": 1480,
+            "y": 8,
+            "w": 284,
+            "h": 458
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 284,
+            "h": 458
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 284,
+            "h": 458
+          },
+          "pivot": {
+            "x": 0.3485915492957746,
+            "y": 0.9934497816593887
+          }
+        },
+        {
+          "filename": "amu-airPunch-7",
+          "frame": {
+            "x": 8,
+            "y": 500,
+            "w": 295,
+            "h": 439
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 439
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 439
+          },
+          "pivot": {
+            "x": 0.5440677966101695,
+            "y": 0.9931662870159453
+          }
+        },
+        {
+          "filename": "amu-airPunch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 306,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.2761437908496732,
+            "y": 0.9936974789915967
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2045,
+        "h": 985
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-backdash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 333,
+            "h": 498
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 498
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 498
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939759036144579
+          }
+        },
+        {
+          "filename": "amu-backdash-1",
+          "frame": {
+            "x": 995,
+            "y": 8,
+            "w": 305,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "amu-backdash-2",
+          "frame": {
+            "x": 1316,
+            "y": 8,
+            "w": 334,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.40718562874251496,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "amu-backdash-3",
+          "frame": {
+            "x": 8,
+            "y": 522,
+            "w": 409,
+            "h": 455
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 455
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 455
+          },
+          "pivot": {
+            "x": 0.37775061124694376,
+            "y": 0.9934065934065934
+          }
+        },
+        {
+          "filename": "amu-backdash-4",
+          "frame": {
+            "x": 1666,
+            "y": 8,
+            "w": 371,
+            "h": 460
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 460
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 460
+          },
+          "pivot": {
+            "x": 0.42452830188679247,
+            "y": 0.9934782608695653
+          }
+        },
+        {
+          "filename": "amu-backdash-5",
+          "frame": {
+            "x": 685,
+            "y": 8,
+            "w": 294,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 294,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 294,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.48639455782312924,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "amu-backdash-6",
+          "frame": {
+            "x": 433,
+            "y": 522,
+            "w": 350,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "amu-backdash-7",
+          "frame": {
+            "x": 357,
+            "y": 8,
+            "w": 312,
+            "h": 477
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 477
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 477
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937106918238994
+          }
+        },
+        {
+          "filename": "amu-backdash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 333,
+            "h": 498
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 498
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 498
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939759036144579
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2017,
+        "h": 972
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-special-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 235,
+            "h": 499
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 235,
+            "h": 499
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 235,
+            "h": 499
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939879759519038
+          }
+        },
+        {
+          "filename": "amu-special-1",
+          "frame": {
+            "x": 259,
+            "y": 8,
+            "w": 318,
+            "h": 475
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 475
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 475
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936842105263158
+          }
+        },
+        {
+          "filename": "amu-special-2",
+          "frame": {
+            "x": 8,
+            "y": 523,
+            "w": 434,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 434,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 434,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.43894009216589863,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "amu-special-3",
+          "frame": {
+            "x": 593,
+            "y": 8,
+            "w": 340,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.49558823529411766,
+            "y": 0.9934640522875817
+          }
+        },
+        {
+          "filename": "amu-special-4",
+          "frame": {
+            "x": 949,
+            "y": 8,
+            "w": 325,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934640522875817
+          }
+        },
+        {
+          "filename": "amu-special-5",
+          "frame": {
+            "x": 1290,
+            "y": 8,
+            "w": 342,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932885906040269
+          }
+        },
+        {
+          "filename": "amu-special-6",
+          "frame": {
+            "x": 458,
+            "y": 523,
+            "w": 414,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 414,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 414,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.47101449275362317,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "amu-special-7",
+          "frame": {
+            "x": 1648,
+            "y": 8,
+            "w": 361,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "amu-special",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 235,
+            "h": 499
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 235,
+            "h": 499
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 235,
+            "h": 499
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939879759519038
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1796,
+        "h": 1006
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-block-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 328,
+            "h": 503
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 503
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 503
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940357852882704
+          }
+        },
+        {
+          "filename": "amu-block-1",
+          "frame": {
+            "x": 352,
+            "y": 8,
+            "w": 336,
+            "h": 494
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 494
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 494
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939271255060729
+          }
+        },
+        {
+          "filename": "amu-block-2",
+          "frame": {
+            "x": 8,
+            "y": 527,
+            "w": 352,
+            "h": 471
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 471
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 471
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936305732484076
+          }
+        },
+        {
+          "filename": "amu-block-3",
+          "frame": {
+            "x": 742,
+            "y": 527,
+            "w": 348,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "amu-block-4",
+          "frame": {
+            "x": 376,
+            "y": 527,
+            "w": 350,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "amu-block-5",
+          "frame": {
+            "x": 1456,
+            "y": 8,
+            "w": 332,
+            "h": 479
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 479
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 479
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937369519832986
+          }
+        },
+        {
+          "filename": "amu-block-6",
+          "frame": {
+            "x": 1048,
+            "y": 8,
+            "w": 392,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 392,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 392,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.4630102040816326,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "amu-block-7",
+          "frame": {
+            "x": 704,
+            "y": 8,
+            "w": 328,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "amu-block",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 328,
+            "h": 503
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 503
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 503
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940357852882704
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1769,
+        "h": 904
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-crouch-0",
+          "frame": {
+            "x": 8,
+            "y": 487,
+            "w": 333,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "amu-crouch-1",
+          "frame": {
+            "x": 361,
+            "y": 8,
+            "w": 340,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "amu-crouch-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 337,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "amu-crouch-3",
+          "frame": {
+            "x": 717,
+            "y": 8,
+            "w": 339,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "amu-crouch-4",
+          "frame": {
+            "x": 357,
+            "y": 487,
+            "w": 332,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "amu-crouch-5",
+          "frame": {
+            "x": 1425,
+            "y": 8,
+            "w": 336,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "amu-crouch-6",
+          "frame": {
+            "x": 1072,
+            "y": 8,
+            "w": 337,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "amu-crouch-7",
+          "frame": {
+            "x": 705,
+            "y": 487,
+            "w": 339,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "amu-crouch",
+          "frame": {
+            "x": 8,
+            "y": 487,
+            "w": 333,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1945,
+        "h": 912
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-crouchBlock-0",
+          "frame": {
+            "x": 8,
+            "y": 474,
+            "w": 368,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "amu-crouchBlock-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 366,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "amu-crouchBlock-2",
+          "frame": {
+            "x": 774,
+            "y": 8,
+            "w": 365,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "amu-crouchBlock-3",
+          "frame": {
+            "x": 390,
+            "y": 8,
+            "w": 368,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "amu-crouchBlock-4",
+          "frame": {
+            "x": 392,
+            "y": 474,
+            "w": 370,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "amu-crouchBlock-5",
+          "frame": {
+            "x": 1155,
+            "y": 8,
+            "w": 370,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "amu-crouchBlock-6",
+          "frame": {
+            "x": 1541,
+            "y": 8,
+            "w": 396,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 396,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 396,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.47853535353535354,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "amu-crouchBlock-7",
+          "frame": {
+            "x": 778,
+            "y": 474,
+            "w": 364,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "amu-crouchBlock",
+          "frame": {
+            "x": 8,
+            "y": 474,
+            "w": 368,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1840,
+        "h": 829
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-crouchHurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 342,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.4415204678362573,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "amu-crouchHurt-1",
+          "frame": {
+            "x": 1119,
+            "y": 8,
+            "w": 362,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.4198895027624309,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "amu-crouchHurt-2",
+          "frame": {
+            "x": 366,
+            "y": 8,
+            "w": 374,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.41711229946524064,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "amu-crouchHurt-3",
+          "frame": {
+            "x": 691,
+            "y": 431,
+            "w": 349,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.43982808022922637,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "amu-crouchHurt-4",
+          "frame": {
+            "x": 756,
+            "y": 8,
+            "w": 347,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.43371757925072046,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "amu-crouchHurt-5",
+          "frame": {
+            "x": 8,
+            "y": 431,
+            "w": 319,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.4592476489028213,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "amu-crouchHurt-6",
+          "frame": {
+            "x": 343,
+            "y": 431,
+            "w": 332,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.4563253012048193,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "amu-crouchHurt-7",
+          "frame": {
+            "x": 1497,
+            "y": 8,
+            "w": 335,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.45671641791044776,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "amu-crouchHurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 342,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.4415204678362573,
+            "y": 0.9926289926289926
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1930,
+        "h": 883
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-crouchPunch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 352,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "amu-crouchPunch-1",
+          "frame": {
+            "x": 376,
+            "y": 8,
+            "w": 352,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "amu-crouchPunch-2",
+          "frame": {
+            "x": 744,
+            "y": 8,
+            "w": 415,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 415,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 415,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.43012048192771085,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "amu-crouchPunch-3",
+          "frame": {
+            "x": 1175,
+            "y": 8,
+            "w": 374,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.4772727272727273,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "amu-crouchPunch-4",
+          "frame": {
+            "x": 8,
+            "y": 453,
+            "w": 356,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "amu-crouchPunch-5",
+          "frame": {
+            "x": 1565,
+            "y": 8,
+            "w": 357,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "amu-crouchPunch-6",
+          "frame": {
+            "x": 747,
+            "y": 453,
+            "w": 353,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "amu-crouchPunch-7",
+          "frame": {
+            "x": 380,
+            "y": 453,
+            "w": 351,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "amu-crouchPunch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 352,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2010,
+        "h": 921
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-dash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 289,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "amu-dash-1",
+          "frame": {
+            "x": 611,
+            "y": 8,
+            "w": 307,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.4576547231270358,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "amu-dash-2",
+          "frame": {
+            "x": 934,
+            "y": 8,
+            "w": 290,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.3620689655172414,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "amu-dash-3",
+          "frame": {
+            "x": 1240,
+            "y": 8,
+            "w": 425,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 425,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 425,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5058823529411764,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "amu-dash-4",
+          "frame": {
+            "x": 379,
+            "y": 509,
+            "w": 459,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 459,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 459,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "amu-dash-5",
+          "frame": {
+            "x": 8,
+            "y": 509,
+            "w": 355,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5112676056338028,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "amu-dash-6",
+          "frame": {
+            "x": 1681,
+            "y": 8,
+            "w": 321,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "amu-dash-7",
+          "frame": {
+            "x": 313,
+            "y": 8,
+            "w": 282,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "amu-dash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 289,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1783,
+        "h": 814
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 260,
+            "h": 534
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 260,
+            "h": 534
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 260,
+            "h": 534
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9943820224719101
+          }
+        },
+        {
+          "filename": "amu-ko-1",
+          "frame": {
+            "x": 284,
+            "y": 8,
+            "w": 277,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.4711191335740072,
+            "y": 0.9940239043824701
+          }
+        },
+        {
+          "filename": "amu-ko-2",
+          "frame": {
+            "x": 577,
+            "y": 8,
+            "w": 342,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.48830409356725146,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "amu-ko-3",
+          "frame": {
+            "x": 935,
+            "y": 8,
+            "w": 370,
+            "h": 302
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 302
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 302
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9900662251655629
+          }
+        },
+        {
+          "filename": "amu-ko-4",
+          "frame": {
+            "x": 1321,
+            "y": 8,
+            "w": 454,
+            "h": 287
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 454,
+            "h": 287
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 454,
+            "h": 287
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9895470383275261
+          }
+        },
+        {
+          "filename": "amu-ko-5",
+          "frame": {
+            "x": 8,
+            "y": 558,
+            "w": 298,
+            "h": 248
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 248
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 248
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9879032258064516
+          }
+        },
+        {
+          "filename": "amu-ko-6",
+          "frame": {
+            "x": 322,
+            "y": 558,
+            "w": 394,
+            "h": 144
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 394,
+            "h": 144
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 394,
+            "h": 144
+          },
+          "pivot": {
+            "x": 0.501269035532995,
+            "y": 0.9791666666666666
+          }
+        },
+        {
+          "filename": "amu-ko-7",
+          "frame": {
+            "x": 732,
+            "y": 558,
+            "w": 350,
+            "h": 137
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 137
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 137
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9781021897810219
+          }
+        },
+        {
+          "filename": "amu-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 260,
+            "h": 534
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 260,
+            "h": 534
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 260,
+            "h": 534
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9943820224719101
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1920,
+        "h": 411
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-down-0",
+          "frame": {
+            "x": 408,
+            "y": 243,
+            "w": 401,
+            "h": 157
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 157
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 157
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9808917197452229
+          }
+        },
+        {
+          "filename": "amu-down-1",
+          "frame": {
+            "x": 1140,
+            "y": 8,
+            "w": 383,
+            "h": 166
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 166
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 166
+          },
+          "pivot": {
+            "x": 0.49216710182767626,
+            "y": 0.9819277108433735
+          }
+        },
+        {
+          "filename": "amu-down-2",
+          "frame": {
+            "x": 370,
+            "y": 8,
+            "w": 340,
+            "h": 202
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 202
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 202
+          },
+          "pivot": {
+            "x": 0.4764705882352941,
+            "y": 0.9851485148514851
+          }
+        },
+        {
+          "filename": "amu-down-3",
+          "frame": {
+            "x": 8,
+            "y": 243,
+            "w": 384,
+            "h": 160
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 160
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 160
+          },
+          "pivot": {
+            "x": 0.4908854166666667,
+            "y": 0.98125
+          }
+        },
+        {
+          "filename": "amu-down-4",
+          "frame": {
+            "x": 726,
+            "y": 8,
+            "w": 398,
+            "h": 175
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 398,
+            "h": 175
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 398,
+            "h": 175
+          },
+          "pivot": {
+            "x": 0.49246231155778897,
+            "y": 0.9828571428571429
+          }
+        },
+        {
+          "filename": "amu-down-5",
+          "frame": {
+            "x": 1539,
+            "y": 8,
+            "w": 373,
+            "h": 163
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 163
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 163
+          },
+          "pivot": {
+            "x": 0.49865951742627346,
+            "y": 0.9815950920245399
+          }
+        },
+        {
+          "filename": "amu-down-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 346,
+            "h": 219
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 219
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 219
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9863013698630136
+          }
+        },
+        {
+          "filename": "amu-down-7",
+          "frame": {
+            "x": 825,
+            "y": 243,
+            "w": 410,
+            "h": 154
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 410,
+            "h": 154
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 410,
+            "h": 154
+          },
+          "pivot": {
+            "x": 0.49878048780487805,
+            "y": 0.9805194805194806
+          }
+        },
+        {
+          "filename": "amu-down",
+          "frame": {
+            "x": 408,
+            "y": 243,
+            "w": 401,
+            "h": 157
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 157
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 157
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9808917197452229
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1966,
+        "h": 950
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-fall-0",
+          "frame": {
+            "x": 726,
+            "y": 498,
+            "w": 342,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.2646198830409357,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "amu-fall-1",
+          "frame": {
+            "x": 370,
+            "y": 498,
+            "w": 340,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.3,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "amu-fall-2",
+          "frame": {
+            "x": 8,
+            "y": 498,
+            "w": 346,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.21098265895953758,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "amu-fall-3",
+          "frame": {
+            "x": 772,
+            "y": 8,
+            "w": 418,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 418,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 418,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.29904306220095694,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "amu-fall-4",
+          "frame": {
+            "x": 1206,
+            "y": 8,
+            "w": 402,
+            "h": 453
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 453
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 453
+          },
+          "pivot": {
+            "x": 0.5124378109452736,
+            "y": 0.9933774834437086
+          }
+        },
+        {
+          "filename": "amu-fall-5",
+          "frame": {
+            "x": 368,
+            "y": 8,
+            "w": 388,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.5038659793814433,
+            "y": 0.9934640522875817
+          }
+        },
+        {
+          "filename": "amu-fall-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 344,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.43023255813953487,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "amu-fall-7",
+          "frame": {
+            "x": 1624,
+            "y": 8,
+            "w": 334,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.468562874251497,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "amu-fall",
+          "frame": {
+            "x": 726,
+            "y": 498,
+            "w": 342,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.2646198830409357,
+            "y": 0.9923857868020305
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1880,
+        "h": 825
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-getup-0",
+          "frame": {
+            "x": 788,
+            "y": 518,
+            "w": 404,
+            "h": 153
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 404,
+            "h": 153
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 404,
+            "h": 153
+          },
+          "pivot": {
+            "x": 0.4962871287128713,
+            "y": 0.9803921568627451
+          }
+        },
+        {
+          "filename": "amu-getup-1",
+          "frame": {
+            "x": 356,
+            "y": 518,
+            "w": 416,
+            "h": 212
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 212
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 212
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9858490566037735
+          }
+        },
+        {
+          "filename": "amu-getup-2",
+          "frame": {
+            "x": 8,
+            "y": 518,
+            "w": 332,
+            "h": 299
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 299
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 299
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9899665551839465
+          }
+        },
+        {
+          "filename": "amu-getup-3",
+          "frame": {
+            "x": 1512,
+            "y": 8,
+            "w": 360,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "amu-getup-4",
+          "frame": {
+            "x": 1126,
+            "y": 8,
+            "w": 370,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.49594594594594593,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "amu-getup-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 332,
+            "h": 494
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 494
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 494
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939271255060729
+          }
+        },
+        {
+          "filename": "amu-getup-6",
+          "frame": {
+            "x": 757,
+            "y": 8,
+            "w": 353,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "amu-getup-7",
+          "frame": {
+            "x": 356,
+            "y": 8,
+            "w": 385,
+            "h": 487
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 487
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 487
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938398357289527
+          }
+        },
+        {
+          "filename": "amu-getup",
+          "frame": {
+            "x": 788,
+            "y": 518,
+            "w": 404,
+            "h": 153
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 404,
+            "h": 153
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 404,
+            "h": 153
+          },
+          "pivot": {
+            "x": 0.4962871287128713,
+            "y": 0.9803921568627451
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1708,
+        "h": 1009
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-hurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 336,
+            "h": 508
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 508
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 508
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940944881889764
+          }
+        },
+        {
+          "filename": "amu-hurt-1",
+          "frame": {
+            "x": 360,
+            "y": 8,
+            "w": 325,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "amu-hurt-2",
+          "frame": {
+            "x": 355,
+            "y": 532,
+            "w": 332,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.4954819277108434,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "amu-hurt-3",
+          "frame": {
+            "x": 703,
+            "y": 532,
+            "w": 343,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.4868804664723032,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "amu-hurt-4",
+          "frame": {
+            "x": 701,
+            "y": 8,
+            "w": 312,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "amu-hurt-5",
+          "frame": {
+            "x": 1029,
+            "y": 8,
+            "w": 327,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "amu-hurt-6",
+          "frame": {
+            "x": 8,
+            "y": 532,
+            "w": 331,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "amu-hurt-7",
+          "frame": {
+            "x": 1372,
+            "y": 8,
+            "w": 328,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "amu-hurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 336,
+            "h": 508
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 508
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 508
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940944881889764
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1815,
+        "h": 1019
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-idle-0",
+          "frame": {
+            "x": 298,
+            "y": 8,
+            "w": 281,
+            "h": 501
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 501
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 501
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940119760479041
+          }
+        },
+        {
+          "filename": "amu-idle-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 274,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 274,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 274,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940239043824701
+          }
+        },
+        {
+          "filename": "amu-idle-2",
+          "frame": {
+            "x": 897,
+            "y": 8,
+            "w": 283,
+            "h": 499
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 499
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 499
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939879759519038
+          }
+        },
+        {
+          "filename": "amu-idle-3",
+          "frame": {
+            "x": 595,
+            "y": 8,
+            "w": 286,
+            "h": 500
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 500
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 500
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994
+          }
+        },
+        {
+          "filename": "amu-idle-4",
+          "frame": {
+            "x": 1196,
+            "y": 8,
+            "w": 291,
+            "h": 487
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 291,
+            "h": 487
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 291,
+            "h": 487
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938398357289527
+          }
+        },
+        {
+          "filename": "amu-idle-5",
+          "frame": {
+            "x": 8,
+            "y": 526,
+            "w": 283,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "amu-idle-6",
+          "frame": {
+            "x": 307,
+            "y": 526,
+            "w": 302,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.4900662251655629,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "amu-idle-7",
+          "frame": {
+            "x": 1503,
+            "y": 8,
+            "w": 304,
+            "h": 486
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 486
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 486
+          },
+          "pivot": {
+            "x": 0.4901315789473684,
+            "y": 0.9938271604938271
+          }
+        },
+        {
+          "filename": "amu-idle",
+          "frame": {
+            "x": 298,
+            "y": 8,
+            "w": 281,
+            "h": 501
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 501
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 501
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940119760479041
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2013,
+        "h": 1013
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-intro-0",
+          "frame": {
+            "x": 423,
+            "y": 8,
+            "w": 207,
+            "h": 534
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 207,
+            "h": 534
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 207,
+            "h": 534
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9943820224719101
+          }
+        },
+        {
+          "filename": "amu-intro-1",
+          "frame": {
+            "x": 646,
+            "y": 8,
+            "w": 217,
+            "h": 534
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 217,
+            "h": 534
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 217,
+            "h": 534
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9943820224719101
+          }
+        },
+        {
+          "filename": "amu-intro-2",
+          "frame": {
+            "x": 879,
+            "y": 8,
+            "w": 370,
+            "h": 532
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 532
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 532
+          },
+          "pivot": {
+            "x": 0.4554054054054054,
+            "y": 0.9943609022556391
+          }
+        },
+        {
+          "filename": "amu-intro-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 399,
+            "h": 544
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 399,
+            "h": 544
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 399,
+            "h": 544
+          },
+          "pivot": {
+            "x": 0.5087719298245614,
+            "y": 0.9944852941176471
+          }
+        },
+        {
+          "filename": "amu-intro-4",
+          "frame": {
+            "x": 1265,
+            "y": 8,
+            "w": 364,
+            "h": 467
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 467
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 467
+          },
+          "pivot": {
+            "x": 0.4876373626373626,
+            "y": 0.9935760171306209
+          }
+        },
+        {
+          "filename": "amu-intro-5",
+          "frame": {
+            "x": 371,
+            "y": 568,
+            "w": 391,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 391,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 391,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.4680306905370844,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "amu-intro-6",
+          "frame": {
+            "x": 8,
+            "y": 568,
+            "w": 347,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "amu-intro-7",
+          "frame": {
+            "x": 1645,
+            "y": 8,
+            "w": 360,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "amu-intro",
+          "frame": {
+            "x": 423,
+            "y": 8,
+            "w": 207,
+            "h": 534
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 207,
+            "h": 534
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 207,
+            "h": 534
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9943820224719101
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1900,
+        "h": 942
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-jump-0",
+          "frame": {
+            "x": 923,
+            "y": 8,
+            "w": 290,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934640522875817
+          }
+        },
+        {
+          "filename": "amu-jump-1",
+          "frame": {
+            "x": 8,
+            "y": 539,
+            "w": 295,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.46440677966101696,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "amu-jump-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 296,
+            "h": 515
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 296,
+            "h": 515
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 515
+          },
+          "pivot": {
+            "x": 0.2668918918918919,
+            "y": 0.9941747572815534
+          }
+        },
+        {
+          "filename": "amu-jump-3",
+          "frame": {
+            "x": 320,
+            "y": 8,
+            "w": 268,
+            "h": 486
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 268,
+            "h": 486
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 268,
+            "h": 486
+          },
+          "pivot": {
+            "x": 0.43470149253731344,
+            "y": 0.9938271604938271
+          }
+        },
+        {
+          "filename": "amu-jump-4",
+          "frame": {
+            "x": 319,
+            "y": 539,
+            "w": 294,
+            "h": 345
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 294,
+            "h": 345
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 294,
+            "h": 345
+          },
+          "pivot": {
+            "x": 0.5459183673469388,
+            "y": 0.991304347826087
+          }
+        },
+        {
+          "filename": "amu-jump-5",
+          "frame": {
+            "x": 604,
+            "y": 8,
+            "w": 303,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 303,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 303,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.8514851485148515,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "amu-jump-6",
+          "frame": {
+            "x": 1229,
+            "y": 8,
+            "w": 340,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.46911764705882353,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "amu-jump-7",
+          "frame": {
+            "x": 1585,
+            "y": 8,
+            "w": 307,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "amu-jump",
+          "frame": {
+            "x": 923,
+            "y": 8,
+            "w": 290,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934640522875817
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1876,
+        "h": 991
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-kick-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 317,
+            "h": 492
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 492
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 492
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939024390243902
+          }
+        },
+        {
+          "filename": "amu-kick-1",
+          "frame": {
+            "x": 341,
+            "y": 8,
+            "w": 258,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 258,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 258,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.4321705426356589,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "amu-kick-2",
+          "frame": {
+            "x": 838,
+            "y": 8,
+            "w": 473,
+            "h": 477
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 473,
+            "h": 477
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 473,
+            "h": 477
+          },
+          "pivot": {
+            "x": 0.2822410147991543,
+            "y": 0.9937106918238994
+          }
+        },
+        {
+          "filename": "amu-kick-3",
+          "frame": {
+            "x": 615,
+            "y": 8,
+            "w": 207,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 207,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 207,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5024154589371981,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "amu-kick-4",
+          "frame": {
+            "x": 1649,
+            "y": 8,
+            "w": 219,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 219,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 219,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.3744292237442922,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "amu-kick-5",
+          "frame": {
+            "x": 8,
+            "y": 516,
+            "w": 289,
+            "h": 467
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 467
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 467
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935760171306209
+          }
+        },
+        {
+          "filename": "amu-kick-6",
+          "frame": {
+            "x": 313,
+            "y": 516,
+            "w": 311,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "amu-kick-7",
+          "frame": {
+            "x": 1327,
+            "y": 8,
+            "w": 306,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "amu-kick",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 317,
+            "h": 492
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 492
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 492
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939024390243902
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1915,
+        "h": 772
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-knockdown-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 327,
+            "h": 523
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 523
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 523
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994263862332696
+          }
+        },
+        {
+          "filename": "amu-knockdown-1",
+          "frame": {
+            "x": 351,
+            "y": 8,
+            "w": 338,
+            "h": 511
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 511
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 511
+          },
+          "pivot": {
+            "x": 0.5118343195266272,
+            "y": 0.9941291585127201
+          }
+        },
+        {
+          "filename": "amu-knockdown-2",
+          "frame": {
+            "x": 705,
+            "y": 8,
+            "w": 379,
+            "h": 460
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 460
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 460
+          },
+          "pivot": {
+            "x": 0.7058047493403694,
+            "y": 0.9934782608695653
+          }
+        },
+        {
+          "filename": "amu-knockdown-3",
+          "frame": {
+            "x": 1100,
+            "y": 8,
+            "w": 420,
+            "h": 351
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 420,
+            "h": 351
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 420,
+            "h": 351
+          },
+          "pivot": {
+            "x": 0.680952380952381,
+            "y": 0.9914529914529915
+          }
+        },
+        {
+          "filename": "amu-knockdown-4",
+          "frame": {
+            "x": 1536,
+            "y": 8,
+            "w": 371,
+            "h": 267
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 267
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 267
+          },
+          "pivot": {
+            "x": 0.5444743935309974,
+            "y": 0.9887640449438202
+          }
+        },
+        {
+          "filename": "amu-knockdown-5",
+          "frame": {
+            "x": 8,
+            "y": 547,
+            "w": 392,
+            "h": 217
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 392,
+            "h": 217
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 392,
+            "h": 217
+          },
+          "pivot": {
+            "x": 0.5573979591836735,
+            "y": 0.9861751152073732
+          }
+        },
+        {
+          "filename": "amu-knockdown-6",
+          "frame": {
+            "x": 416,
+            "y": 547,
+            "w": 304,
+            "h": 200
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 200
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 200
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.985
+          }
+        },
+        {
+          "filename": "amu-knockdown-7",
+          "frame": {
+            "x": 736,
+            "y": 547,
+            "w": 452,
+            "h": 137
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 452,
+            "h": 137
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 452,
+            "h": 137
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9781021897810219
+          }
+        },
+        {
+          "filename": "amu-knockdown",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 327,
+            "h": 523
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 523
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 523
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994263862332696
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1845,
+        "h": 1027
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-punch-0",
+          "frame": {
+            "x": 390,
+            "y": 8,
+            "w": 335,
+            "h": 501
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 501
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 501
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940119760479041
+          }
+        },
+        {
+          "filename": "amu-punch-1",
+          "frame": {
+            "x": 1147,
+            "y": 8,
+            "w": 350,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939393939393939
+          }
+        },
+        {
+          "filename": "amu-punch-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 366,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.453551912568306,
+            "y": 0.9940239043824701
+          }
+        },
+        {
+          "filename": "amu-punch-3",
+          "frame": {
+            "x": 741,
+            "y": 8,
+            "w": 390,
+            "h": 498
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 390,
+            "h": 498
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 498
+          },
+          "pivot": {
+            "x": 0.46923076923076923,
+            "y": 0.9939759036144579
+          }
+        },
+        {
+          "filename": "amu-punch-4",
+          "frame": {
+            "x": 727,
+            "y": 526,
+            "w": 367,
+            "h": 489
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 489
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 489
+          },
+          "pivot": {
+            "x": 0.4536784741144414,
+            "y": 0.9938650306748467
+          }
+        },
+        {
+          "filename": "amu-punch-5",
+          "frame": {
+            "x": 362,
+            "y": 526,
+            "w": 349,
+            "h": 490
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 490
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 490
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938775510204082
+          }
+        },
+        {
+          "filename": "amu-punch-6",
+          "frame": {
+            "x": 1513,
+            "y": 8,
+            "w": 324,
+            "h": 494
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 494
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 494
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939271255060729
+          }
+        },
+        {
+          "filename": "amu-punch-7",
+          "frame": {
+            "x": 8,
+            "y": 526,
+            "w": 338,
+            "h": 493
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 493
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 493
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939148073022313
+          }
+        },
+        {
+          "filename": "amu-punch",
+          "frame": {
+            "x": 390,
+            "y": 8,
+            "w": 335,
+            "h": 501
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 501
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 501
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940119760479041
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1830,
+        "h": 993
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-super-0",
+          "frame": {
+            "x": 1107,
+            "y": 8,
+            "w": 333,
+            "h": 475
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 475
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 475
+          },
+          "pivot": {
+            "x": 0.4984984984984985,
+            "y": 0.9936842105263158
+          }
+        },
+        {
+          "filename": "amu-super-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 365,
+            "h": 511
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 511
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 511
+          },
+          "pivot": {
+            "x": 0.4931506849315068,
+            "y": 0.9941291585127201
+          }
+        },
+        {
+          "filename": "amu-super-2",
+          "frame": {
+            "x": 1456,
+            "y": 8,
+            "w": 366,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.49863387978142076,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "amu-super-3",
+          "frame": {
+            "x": 756,
+            "y": 8,
+            "w": 335,
+            "h": 496
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 496
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 496
+          },
+          "pivot": {
+            "x": 0.491044776119403,
+            "y": 0.9939516129032258
+          }
+        },
+        {
+          "filename": "amu-super-4",
+          "frame": {
+            "x": 751,
+            "y": 535,
+            "w": 364,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.49725274725274726,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "amu-super-5",
+          "frame": {
+            "x": 389,
+            "y": 8,
+            "w": 351,
+            "h": 501
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 501
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 501
+          },
+          "pivot": {
+            "x": 0.4985754985754986,
+            "y": 0.9940119760479041
+          }
+        },
+        {
+          "filename": "amu-super-6",
+          "frame": {
+            "x": 365,
+            "y": 535,
+            "w": 370,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.4905405405405405,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "amu-super-7",
+          "frame": {
+            "x": 8,
+            "y": 535,
+            "w": 341,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.49266862170087977,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "amu-super",
+          "frame": {
+            "x": 1107,
+            "y": 8,
+            "w": 333,
+            "h": 475
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 475
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 475
+          },
+          "pivot": {
+            "x": 0.4984984984984985,
+            "y": 0.9936842105263158
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1720,
+        "h": 805
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-sweep-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 317,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "amu-sweep-1",
+          "frame": {
+            "x": 8,
+            "y": 461,
+            "w": 376,
+            "h": 336
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 336
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 336
+          },
+          "pivot": {
+            "x": 0.33111702127659576,
+            "y": 0.9910714285714286
+          }
+        },
+        {
+          "filename": "amu-sweep-2",
+          "frame": {
+            "x": 768,
+            "y": 461,
+            "w": 497,
+            "h": 287
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 497,
+            "h": 287
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 497,
+            "h": 287
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9895470383275261
+          }
+        },
+        {
+          "filename": "amu-sweep-3",
+          "frame": {
+            "x": 400,
+            "y": 461,
+            "w": 352,
+            "h": 302
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 302
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 302
+          },
+          "pivot": {
+            "x": 0.4090909090909091,
+            "y": 0.9900662251655629
+          }
+        },
+        {
+          "filename": "amu-sweep-4",
+          "frame": {
+            "x": 1305,
+            "y": 8,
+            "w": 407,
+            "h": 337
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 407,
+            "h": 337
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 407,
+            "h": 337
+          },
+          "pivot": {
+            "x": 0.5700245700245701,
+            "y": 0.9910979228486647
+          }
+        },
+        {
+          "filename": "amu-sweep-5",
+          "frame": {
+            "x": 992,
+            "y": 8,
+            "w": 297,
+            "h": 348
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 297,
+            "h": 348
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 297,
+            "h": 348
+          },
+          "pivot": {
+            "x": 0.5336700336700336,
+            "y": 0.9913793103448276
+          }
+        },
+        {
+          "filename": "amu-sweep-6",
+          "frame": {
+            "x": 671,
+            "y": 8,
+            "w": 305,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "amu-sweep-7",
+          "frame": {
+            "x": 341,
+            "y": 8,
+            "w": 314,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "amu-sweep",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 317,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1914,
+        "h": 930
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-uppercut-0",
+          "frame": {
+            "x": 559,
+            "y": 8,
+            "w": 318,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "amu-uppercut-1",
+          "frame": {
+            "x": 330,
+            "y": 551,
+            "w": 330,
+            "h": 353
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 353
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 353
+          },
+          "pivot": {
+            "x": 0.4772727272727273,
+            "y": 0.9915014164305949
+          }
+        },
+        {
+          "filename": "amu-uppercut-2",
+          "frame": {
+            "x": 893,
+            "y": 8,
+            "w": 340,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "amu-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 233,
+            "h": 527
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 233,
+            "h": 527
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 233,
+            "h": 527
+          },
+          "pivot": {
+            "x": 0.40987124463519314,
+            "y": 0.9943074003795066
+          }
+        },
+        {
+          "filename": "amu-uppercut-4",
+          "frame": {
+            "x": 257,
+            "y": 8,
+            "w": 286,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.40734265734265734,
+            "y": 0.9932885906040269
+          }
+        },
+        {
+          "filename": "amu-uppercut-5",
+          "frame": {
+            "x": 1249,
+            "y": 8,
+            "w": 322,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "amu-uppercut-6",
+          "frame": {
+            "x": 8,
+            "y": 551,
+            "w": 306,
+            "h": 371
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 371
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 371
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919137466307277
+          }
+        },
+        {
+          "filename": "amu-uppercut-7",
+          "frame": {
+            "x": 1587,
+            "y": 8,
+            "w": 319,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "amu-uppercut",
+          "frame": {
+            "x": 559,
+            "y": 8,
+            "w": 318,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1750,
+        "h": 1018
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-win-0",
+          "frame": {
+            "x": 1436,
+            "y": 8,
+            "w": 306,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "amu-win-1",
+          "frame": {
+            "x": 839,
+            "y": 8,
+            "w": 227,
+            "h": 500
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 227,
+            "h": 500
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 227,
+            "h": 500
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994
+          }
+        },
+        {
+          "filename": "amu-win-2",
+          "frame": {
+            "x": 589,
+            "y": 8,
+            "w": 234,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 234,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 234,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940239043824701
+          }
+        },
+        {
+          "filename": "amu-win-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 295,
+            "h": 520
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 520
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 520
+          },
+          "pivot": {
+            "x": 0.46440677966101696,
+            "y": 0.9942307692307693
+          }
+        },
+        {
+          "filename": "amu-win-4",
+          "frame": {
+            "x": 8,
+            "y": 544,
+            "w": 395,
+            "h": 466
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 395,
+            "h": 466
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 395,
+            "h": 466
+          },
+          "pivot": {
+            "x": 0.5240506329113924,
+            "y": 0.9935622317596566
+          }
+        },
+        {
+          "filename": "amu-win-5",
+          "frame": {
+            "x": 1082,
+            "y": 8,
+            "w": 338,
+            "h": 500
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 500
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 500
+          },
+          "pivot": {
+            "x": 0.5192307692307693,
+            "y": 0.994
+          }
+        },
+        {
+          "filename": "amu-win-6",
+          "frame": {
+            "x": 419,
+            "y": 544,
+            "w": 248,
+            "h": 458
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 248,
+            "h": 458
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 248,
+            "h": 458
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934497816593887
+          }
+        },
+        {
+          "filename": "amu-win-7",
+          "frame": {
+            "x": 319,
+            "y": 8,
+            "w": 254,
+            "h": 503
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 254,
+            "h": 503
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 254,
+            "h": 503
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940357852882704
+          }
+        },
+        {
+          "filename": "amu-win",
+          "frame": {
+            "x": 1436,
+            "y": 8,
+            "w": 306,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99375
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2040,
+        "h": 1016
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-walk-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 315,
+            "h": 499
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 499
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 499
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939879759519038
+          }
+        },
+        {
+          "filename": "amu-walk-1",
+          "frame": {
+            "x": 677,
+            "y": 8,
+            "w": 310,
+            "h": 497
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 497
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 497
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993963782696177
+          }
+        },
+        {
+          "filename": "amu-walk-2",
+          "frame": {
+            "x": 339,
+            "y": 8,
+            "w": 322,
+            "h": 498
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 498
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 498
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939759036144579
+          }
+        },
+        {
+          "filename": "amu-walk-3",
+          "frame": {
+            "x": 1003,
+            "y": 8,
+            "w": 330,
+            "h": 497
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 497
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 497
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993963782696177
+          }
+        },
+        {
+          "filename": "amu-walk-4",
+          "frame": {
+            "x": 351,
+            "y": 523,
+            "w": 320,
+            "h": 484
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 320,
+            "h": 484
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 320,
+            "h": 484
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993801652892562
+          }
+        },
+        {
+          "filename": "amu-walk-5",
+          "frame": {
+            "x": 1701,
+            "y": 8,
+            "w": 331,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5045317220543807,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "amu-walk-6",
+          "frame": {
+            "x": 8,
+            "y": 523,
+            "w": 327,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5061162079510704,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "amu-walk-7",
+          "frame": {
+            "x": 1349,
+            "y": 8,
+            "w": 336,
+            "h": 489
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 489
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 489
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938650306748467
+          }
+        },
+        {
+          "filename": "amu-walk",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 315,
+            "h": 499
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 499
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 499
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939879759519038
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1955,
+        "h": 1018
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "amu-walkBack-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 301,
+            "h": 503
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 503
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 503
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940357852882704
+          }
+        },
+        {
+          "filename": "amu-walkBack-1",
+          "frame": {
+            "x": 882,
+            "y": 8,
+            "w": 329,
+            "h": 491
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 491
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 491
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938900203665988
+          }
+        },
+        {
+          "filename": "amu-walkBack-2",
+          "frame": {
+            "x": 1227,
+            "y": 8,
+            "w": 351,
+            "h": 486
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 486
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 486
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938271604938271
+          }
+        },
+        {
+          "filename": "amu-walkBack-3",
+          "frame": {
+            "x": 566,
+            "y": 8,
+            "w": 300,
+            "h": 492
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 492
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 492
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939024390243902
+          }
+        },
+        {
+          "filename": "amu-walkBack-4",
+          "frame": {
+            "x": 325,
+            "y": 8,
+            "w": 225,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 225,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 225,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.4533333333333333,
+            "y": 0.9939393939393939
+          }
+        },
+        {
+          "filename": "amu-walkBack-5",
+          "frame": {
+            "x": 1594,
+            "y": 8,
+            "w": 353,
+            "h": 486
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 486
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 486
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938271604938271
+          }
+        },
+        {
+          "filename": "amu-walkBack-6",
+          "frame": {
+            "x": 8,
+            "y": 527,
+            "w": 276,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 276,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 276,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.49818840579710144,
+            "y": 0.9937888198757764
+          }
+        },
+        {
+          "filename": "amu-walkBack-7",
+          "frame": {
+            "x": 300,
+            "y": 527,
+            "w": 341,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937888198757764
+          }
+        },
+        {
+          "filename": "amu-walkBack",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 301,
+            "h": 503
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 503
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 503
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940357852882704
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}

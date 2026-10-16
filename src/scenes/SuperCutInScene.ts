@@ -1,10 +1,7 @@
 import Phaser from 'phaser';
 import { CSS, GAME_HEIGHT, GAME_WIDTH, SCENES } from '../config';
 import type { FighterDef } from '../data/fighters';
-import { Audio } from '../systems/Audio';
 import { addPortrait } from '../systems/FighterArt';
-import { strumChord } from '../systems/Licks';
-import { SOLOS } from '../data/solos';
 import { fitText, pts, text, visibleWidth } from '../ui/ui';
 
 export interface CutInData {
@@ -98,8 +95,6 @@ export class SuperCutInScene extends Phaser.Scene {
     this.quote = quote;
 
     this.cameras.main.flash(160, 255, 255, 255);
-    strumChord(this, SOLOS[def.superMove.solo]);
-    Audio.tone(this, 110, 0.5, 'sawtooth', 0.06);
     this.time.delayedCall(duration - 220, () => this.close());
     // ENTER o clic: completa la frase al instante, o pasa al solo si ya está escrita.
     const skip = () => {
@@ -125,7 +120,6 @@ export class SuperCutInScene extends Phaser.Scene {
     // La frase se escribe letra por letra.
     const chars = this.skipTyping ? this.full.length : Math.max(0, Math.min(this.full.length, Math.floor((this.elapsed - TYPE_DELAY) / TYPE_MS)));
     if (chars !== this.typed) {
-      if (chars % 3 === 0 && !this.skipTyping) Audio.tone(this, 900 + (chars % 5) * 60, 0.03, 'square', 0.015);
       this.typed = chars;
       this.quote.setText(this.full.slice(0, chars));
     }

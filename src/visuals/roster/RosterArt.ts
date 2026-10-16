@@ -1,3 +1,4 @@
+import { REGENERATED_ART_IDS } from './RegeneratedArt';
 import { ULTIMATE_BODY_IDS } from './UltimateBodies';
 import Phaser from 'phaser';
 import { FIGHTERS, type FighterDef } from '../../data/fighters';
@@ -7,7 +8,7 @@ import { poseScale } from '../../systems/AnimeAtlas';
 export const ROSTER_ART_IDS = [
   'george', 'pepper', 'slandor', 'pentalick', 'mimetico', 'clavito',
   'chantal', 'jeanpierre', 'ferdex', 'turboshred', 'toxicity', 'rematada', 'acople',
-  'markus', 'jesex', 'escalas', 'tayloy', 'platanero', 'kimberly', 'ricardo',
+  'markus', 'jesex', 'escalas', 'tayloy', 'platanero', 'kimberly', 'ricardo', 'nosu', 'virrey', 'inti', 'amu',
 ] as const;
 
 /** Recorte cuadrado [x, y, lado] de la cara en el portrait de 512 px; por defecto [100, 0, 340]. */
@@ -62,6 +63,11 @@ const SUPER_HEIGHT = 1.05;
 export function preloadRosterArt(scene: Phaser.Scene): void {
   for (const id of ROSTER_ART_IDS) {
     const root = `assets/characters/${id}`;
+    if (REGENERATED_ART_IDS.includes(id) && ['nosu', 'virrey', 'inti', 'amu'].includes(id)) {
+      // New fighters have independent animation pages, loaded in the fight/lab scene.
+      scene.load.image(`super-cutin-${id}`, `${root}/portrait.png`);
+      continue;
+    }
     // Siempre el atlas de siempre; el de cuerpos animados del ultimate se usa solo si ya existe.
     scene.load.atlas(`roster-${id}`, `${root}/atlas.png`, `${root}/atlas.json`);
     if (ULTIMATE_BODY_IDS.some((fighter) => fighter === id)) {
@@ -76,6 +82,14 @@ export function preloadRosterArt(scene: Phaser.Scene): void {
 export function registerRosterArt(scene: Phaser.Scene): void {
   const fighters = FIGHTERS as Partial<Record<string, FighterDef>>;
   for (const id of ROSTER_ART_IDS) {
+    const portraitKey = `super-cutin-${id}`;
+    if (scene.textures.exists(portraitKey)) {
+      const portrait = scene.textures.get(portraitKey);
+      if (!portrait.has('face')) {
+        const [x, y, size] = FACE_CROPS[id] ?? [100, 0, 340];
+        portrait.add('face', 0, x, y, size, size);
+      }
+    }
     const usable = (key: string) => scene.textures.exists(key) && scene.textures.get(key).has(`${id}-idle`);
     const texture = usable(`roster-ult-${id}`) ? `roster-ult-${id}` : `roster-${id}`;
     if (!usable(texture)) continue;
@@ -108,14 +122,6 @@ export function registerRosterArt(scene: Phaser.Scene): void {
       if (id === 'acople') {
         def.color = 0xe83240;
         def.css = '#e83240';
-      }
-    }
-    const portraitKey = `super-cutin-${id}`;
-    if (scene.textures.exists(portraitKey)) {
-      const portrait = scene.textures.get(portraitKey);
-      if (!portrait.has('face')) {
-        const [x, y, size] = FACE_CROPS[id] ?? [100, 0, 340];
-        portrait.add('face', 0, x, y, size, size);
       }
     }
   }

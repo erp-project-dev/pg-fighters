@@ -7,28 +7,41 @@ import { Input } from '../systems/Input';
 import { levelLabel } from '../systems/Ranking';
 import { DIFFICULTY_LABEL, Settings, type Difficulty } from '../systems/Settings';
 import { StoryRun } from '../systems/StoryRun';
-import { footer, goTo, pts, scanlines, speedStripes, stageBackdrop, text } from '../ui/ui';
+import { bottomOf, fitText, footer, goTo, pts, scanlines, speedStripes, stageBackdrop, text } from '../ui/ui';
 
-/** Roster en cuadrícula por filas (estilo Marvel vs Capcom 3): casillas inclinadas, filas alternadas. */
-const SLOT = 98;
-const SLOT_GAP = 12;
-const SKEW = 14;
-/** Última casilla: rival al azar (solo al elegir el rival de la CPU). */
+/** Roster en cuadrícula al centro (estilo Marvel vs Capcom): casillas cuadradas en columnas. */
+const SLOT = 112;
+const SLOT_GAP = 10;
+/** Inclinación de las casillas (0 = cuadradas). */
+const SKEW = 0;
+/** Última casilla: luchador al azar (para ti o para el rival de la CPU). */
 const RANDOM = 'random';
 type Slot = FighterId | typeof RANDOM;
 const SLOTS: Slot[] = [...ROSTER, RANDOM];
-/** Dos filas: se reparten mitad y mitad según el tamaño del roster. */
-const PER_ROW = Math.ceil(SLOTS.length / 2);
-const ROW_Y = [850, 952];
-/** Ficha del jugador (columna izquierda). */
-const INFO_X = 60;
-const INFO_W = 600;
-/** Figuras: jugador al centro-izquierda, CPU a la derecha. */
-const P1_X = 930;
-const CPU_X = 1560;
-const FIG_Y = 800;
+const COLS = 5;
+/** Centro de la primera fila de la cuadrícula. */
+const GRID_TOP = 262;
+/** Cada lado (jugador a la izquierda, rival a la derecha): retrato, nombre, título y lore, centrados en su columna. */
+const SIDE_W = 560;
+const P1_X = (GAME_WIDTH / 2 - (COLS * (SLOT + SLOT_GAP)) / 2) / 2;
+const CPU_X = GAME_WIDTH - P1_X;
+/** Placa P1 / CPU: su borde de arriba alineado con el de la cuadrícula. */
+const BADGE_Y = GRID_TOP - SLOT / 2 + 36;
+/** Pie del retrato. */
+const FIG_Y = 748;
 /** Alto del retrato en busto en la selección. */
-const BUST_H = 560;
+const BUST_H = 440;
+const NAME_Y = 788;
+const NAME_SIZE = 52;
+const TAG_Y = 830;
+/** El lore arranca aquí y no baja de LORE_BOTTOM (si no entra, se achica la letra). */
+const LORE_Y = 858;
+const LORE_BOTTOM = 1012;
+const LORE_SIZE = 19;
+/** Aleatorio: barra ancha debajo de la cuadrícula (los 25 luchadores forman un 5×5 exacto). */
+const ROSTER_ROWS = Math.ceil(ROSTER.length / COLS);
+const RANDOM_H = 96;
+const RANDOM_Y = GRID_TOP + (ROSTER_ROWS - 1) * (SLOT + SLOT_GAP) + SLOT / 2 + 14 + RANDOM_H / 2;
 const DIFFICULTIES: { id: Difficulty; note: string }[] = [
   { id: 'easy', note: 'PARA CALENTAR LOS DEDOS' },
   { id: 'normal', note: 'PELEA PAREJA' },
@@ -38,15 +51,30 @@ const DIFFICULTIES: { id: Difficulty; note: string }[] = [
 /** Fases de la selección: tu luchador, el rival de la CPU y la dificultad (historia: continuar o empezar de nuevo). */
 type Phase = 'p1' | 'cpu' | 'difficulty' | 'run';
 
-/** Último rival que tocó al azar, para no repetirlo en la siguiente pelea. */
+/** Últimos luchadores que tocaron al azar (el tuyo y el del rival), para no repetirlos en la siguiente pelea. */
 let lastRandom: FighterId | null = null;
+let lastRandomP1: FighterId | null = null;
 
 interface Figure {
   fig: Phaser.GameObjects.Image;
   glow: Phaser.GameObjects.Image;
 }
 
-/** Selección de personaje: roster completo, ficha satírica del luchador resaltado, rival de la CPU (elegido o al azar) y dificultad. */
+/** Un lado de la pantalla: placa, retrato y, debajo, nombre, título y lore (todo en `box`). */
+interface Side {
+  x: number;
+  box: Phaser.GameObjects.Container;
+  figure: Figure;
+  label: Phaser.GameObjects.Text;
+  name: Phaser.GameObjects.Text;
+  tag: Phaser.GameObjects.Text;
+  lore: Phaser.GameObjects.Text;
+}
+
+/**
+ * Selección de personaje: roster en cuadrícula al centro; a la izquierda tu luchador y a la derecha el rival
+ * de la CPU (elegido o al azar), cada uno con su retrato, nombre y lore. Después, la dificultad.
+ */
 export class SelectScene extends Phaser.Scene {
   private input2!: Input;
   private index = 0;
@@ -62,23 +90,11 @@ export class SelectScene extends Phaser.Scene {
   private training = false;
   private story = false;
   private cursor!: Phaser.GameObjects.Graphics;
-  private p1Fig!: Figure;
-  private cpuFig!: Figure;
+  private p1Side!: Side;
+  private cpuSide!: Side;
   private cpuMystery!: Phaser.GameObjects.Text;
-  private cpuName!: Phaser.GameObjects.Text;
-  private cpuTag!: Phaser.GameObjects.Text;
+  private p1Mystery!: Phaser.GameObjects.Text;
   private pending!: Phaser.GameObjects.Text;
-  private info!: {
-    number: Phaser.GameObjects.Text;
-    name: Phaser.GameObjects.Text;
-    tag: Phaser.GameObjects.Text;
-    bio: Phaser.GameObjects.Text;
-    quote: Phaser.GameObjects.Text;
-    style: Phaser.GameObjects.Text;
-    moves: Phaser.GameObjects.Text;
-    bars: Phaser.GameObjects.Graphics;
-    labels: Phaser.GameObjects.Text[];
-  };
 
   constructor() {
     super(SCENES.Select);
@@ -99,50 +115,33 @@ export class SelectScene extends Phaser.Scene {
     this.input2 = new Input(this);
 
     this.title = text(this, GAME_WIDTH / 2, 62, 'ELIGE TU LUCHADOR', { size: 84, italic: true, weight: '900', color: CSS.lime, origin: [0.5, 0.5], shadow: true });
-    text(this, GAME_WIDTH / 2, 128, this.story ? 'MODO HISTORIA  ·  LIBERA A LA ESCENA DEL ODIO' : this.training ? 'MODO ENTRENAMIENTO  ·  SIN TIEMPO NI K.O.' : 'ARCADE  ·  1 JUGADOR VS CPU  ·  MEJOR DE 3', { size: 24, weight: '700', origin: [0.5, 0.5], spacing: 5 });
+    text(this, GAME_WIDTH / 2, 128, this.story ? 'MODO HISTORIA  ·  LIBERA A LA ESCENA DEL ODIO' : this.training ? 'MODO ENTRENAMIENTO  ·  SIN TIEMPO NI K.O.' : 'VS CPU  ·  MEJOR DE 3', { size: 24, weight: '700', origin: [0.5, 0.5], spacing: 5 });
 
-    // Figuras (detrás de los textos)
-    this.p1Fig = this.makeFigure(P1_X, false);
-    this.cpuFig = this.makeFigure(CPU_X, true);
-    this.cpuMystery = text(this, CPU_X, 520, '?', { size: 320, italic: true, weight: '900', color: '#2b2a30', origin: [0.5, 0.5] });
-    text(this, (P1_X + CPU_X) / 2 + 10, 520, 'VS', { size: 120, italic: true, weight: '900', color: CSS.rust, origin: [0.5, 0.5], shadow: true });
+    // Los dos lados: tú a la izquierda, el rival a la derecha.
+    this.p1Side = this.makeSide(P1_X, false, 'P1', COLORS.lime);
+    this.cpuSide = this.makeSide(CPU_X, true, 'CPU', COLORS.red);
+    this.cpuMystery = text(this, CPU_X, FIG_Y - BUST_H / 2, '?', { size: 280, italic: true, weight: '900', color: '#2b2a30', origin: [0.5, 0.5] });
+    this.p1Mystery = text(this, P1_X, FIG_Y - BUST_H / 2, '?', { size: 280, italic: true, weight: '900', color: '#2b2a30', origin: [0.5, 0.5] }).setVisible(false);
     this.pending = text(this, P1_X, FIG_Y - 20, 'ARTE PENDIENTE', { size: 22, weight: '800', color: CSS.rust, origin: [0.5, 0.5], spacing: 3, shadow: true });
-
-    // CPU: nombre y título arriba a la derecha
-    text(this, GAME_WIDTH - 60, 200, 'CPU', { size: 26, weight: '800', color: CSS.grey, origin: [1, 0.5], spacing: 4 });
-    this.cpuName = text(this, GAME_WIDTH - 60, 252, '???', { size: 64, italic: true, weight: '900', color: '#4a4942', origin: [1, 0.5], shadow: true });
-    this.cpuTag = text(this, GAME_WIDTH - 60, 300, '', { size: 22, weight: '700', origin: [1, 0.5], spacing: 3 });
-
-    // Ficha del jugador
-    const panel = this.add.graphics();
-    panel.fillStyle(COLORS.bg, 0.72).fillRect(INFO_X - 24, 168, INFO_W + 48, 630);
-    text(this, INFO_X, 200, '1P', { size: 26, weight: '800', color: CSS.lime, origin: [0, 0.5], spacing: 4 });
-    this.info = {
-      number: text(this, INFO_X + 60, 200, '', { size: 26, weight: '800', color: CSS.grey, origin: [0, 0.5], spacing: 3 }),
-      name: text(this, INFO_X, 256, '', { size: 70, italic: true, weight: '900', origin: [0, 0.5], shadow: true }),
-      tag: text(this, INFO_X, 310, '', { size: 24, weight: '800', origin: [0, 0.5], spacing: 3 }),
-      bio: text(this, INFO_X, 340, '', { size: 23, font: 'body', weight: '500', color: '#d6d3c7', origin: [0, 0], wrap: INFO_W }).setLineSpacing(4),
-      quote: text(this, INFO_X, 0, '', { size: 28, italic: true, weight: '800', color: CSS.lime, origin: [0, 0], wrap: INFO_W }),
-      style: text(this, INFO_X, 0, '', { size: 21, weight: '800', origin: [0, 0], spacing: 2 }),
-      moves: text(this, INFO_X, 0, '', { size: 20, font: 'body', weight: '600', color: '#cfccc0', origin: [0, 0], wrap: INFO_W }).setLineSpacing(4),
-      bars: this.add.graphics(),
-      labels: ['POTENCIA', 'VELOCIDAD', 'ALCANCE', 'TÉCNICA'].map((l) => text(this, 0, 0, l, { size: 17, weight: '700', color: CSS.grey, origin: [0, 0.5], spacing: 2 })),
-    };
+    // Van con su columna cuando se centra.
+    this.cpuSide.box.addAt(this.cpuMystery, 2);
+    this.p1Side.box.addAt(this.p1Mystery, 2);
+    this.p1Side.box.add(this.pending);
 
     // Roster en cuadrícula por filas
     SLOTS.forEach((id, i) => {
       const { x, y } = this.slotPos(i);
       const g = this.add.graphics();
-      g.fillStyle(COLORS.panel, 1).fillPoints(pts(this.tile(x, y, 0)), true);
+      g.fillStyle(COLORS.panel, 1).fillPoints(pts(this.slotRect(i, 0)), true);
       const frame = this.add.graphics();
       if (id === RANDOM) {
-        text(this, x, y, '?', { size: 70, italic: true, weight: '900', color: CSS.grey, origin: [0.5, 0.5] });
-        frame.lineStyle(3, COLORS.grey, 0.9).strokePoints(pts(this.tile(x, y, 0)), true);
+        text(this, x, y, '?  ALEATORIO', { size: 46, italic: true, weight: '900', color: CSS.grey, origin: [0.5, 0.5], spacing: 4 });
+        frame.lineStyle(3, COLORS.grey, 0.9).strokePoints(pts(this.slotRect(i, 0)), true);
       } else {
         const def = FIGHTERS[id];
-        g.fillStyle(def.color, 0.35).fillPoints(pts(this.tile(x, y, 0)), true);
+        g.fillStyle(def.color, 0.35).fillPoints(pts(this.slotRect(i, 0)), true);
         addPortrait(this, def, x, y, SLOT - 2 * SKEW - 4);
-        frame.lineStyle(3, def.color, 0.9).strokePoints(pts(this.tile(x, y, 0)), true);
+        frame.lineStyle(3, def.color, 0.9).strokePoints(pts(this.slotRect(i, 0)), true);
         frame.fillStyle(0x000000, 0.8).fillRect(x - SLOT / 2 + SKEW, y + SLOT / 2 - 20, 30, 18);
         text(this, x - SLOT / 2 + SKEW + 15, y + SLOT / 2 - 11, def.number, { size: 14, weight: '800', color: def.css, origin: [0.5, 0.5] });
         // Historia: el personaje de la partida guardada muestra en qué pelea va.
@@ -155,9 +154,10 @@ export class SelectScene extends Phaser.Scene {
       }
       // Velo para las casillas que no se pueden elegir en la fase actual.
       const dim = this.add.graphics().setDepth(2);
-      dim.fillStyle(0x000000, 0.7).fillPoints(pts(this.tile(x, y, 0)), true);
+      dim.fillStyle(0x000000, 0.7).fillPoints(pts(this.slotRect(i, 0)), true);
       this.dims.push(dim);
-      const zone = this.add.zone(x, y, SLOT, SLOT).setInteractive({ useHandCursor: true });
+      const size = this.slotSize(i);
+      const zone = this.add.zone(x, y, size.w, size.h).setInteractive({ useHandCursor: true });
       zone.on('pointerover', () => {
         if (!this.disabled(i)) this.pick(i);
       });
@@ -178,14 +178,9 @@ export class SelectScene extends Phaser.Scene {
     scanlines(this, 0.06);
   }
 
-  /**
-   * Casilla que no se puede elegir: el aleatorio al elegir tu luchador;
-   * tu propio luchador al elegir el rival.
-   */
+  /** Casilla que no se puede elegir: tu propio luchador al elegir el rival. */
   private disabled(i: number): boolean {
-    const slot = SLOTS[i];
-    if (this.phase !== 'p1') return slot === this.p1;
-    return slot === RANDOM;
+    return this.phase !== 'p1' && SLOTS[i] === this.p1;
   }
 
   private refreshDims(): void {
@@ -200,21 +195,30 @@ export class SelectScene extends Phaser.Scene {
     this.footerRow.setDepth(30);
   }
 
-  /** Fila y columna de cada casilla: filas de PER_ROW, centradas; la fila de abajo queda corrida media casilla. */
+  /** Fila y columna de cada casilla: filas de COLS centradas en la pantalla; el aleatorio, una barra debajo. */
   private slotPos(i: number): { x: number; y: number; row: number } {
-    const row = Math.floor(i / PER_ROW);
-    const count = Math.min(PER_ROW, SLOTS.length - row * PER_ROW);
-    const col = i - row * PER_ROW;
+    if (SLOTS[i] === RANDOM) return { x: GAME_WIDTH / 2, y: RANDOM_Y, row: ROSTER_ROWS };
+    const row = Math.floor(i / COLS);
+    const count = Math.min(COLS, SLOTS.length - row * COLS);
+    const col = i - row * COLS;
     const x = GAME_WIDTH / 2 + (col - (count - 1) / 2) * (SLOT + SLOT_GAP);
-    return { x, y: ROW_Y[row] ?? ROW_Y[0] + row * (SLOT + 6), row };
+    return { x, y: GRID_TOP + row * (SLOT + SLOT_GAP), row };
   }
 
-  /** Casilla inclinada (paralelogramo) centrada en (x, y), agrandada `pad` px. */
-  private tile(x: number, y: number, pad: number): { x: number; y: number }[] {
-    const h = SLOT / 2 + pad;
+  /** Tamaño de la casilla `i` (el aleatorio es una barra del ancho de la cuadrícula). */
+  private slotSize(i: number): { w: number; h: number } {
+    return SLOTS[i] === RANDOM ? { w: COLS * (SLOT + SLOT_GAP) - SLOT_GAP, h: RANDOM_H } : { w: SLOT, h: SLOT };
+  }
+
+  /** Casilla `i` (paralelogramo si SKEW > 0), agrandada `pad` px. */
+  private slotRect(i: number, pad: number): { x: number; y: number }[] {
+    const { x, y } = this.slotPos(i);
+    const { w, h } = this.slotSize(i);
+    const hw = w / 2 + pad;
+    const hh = h / 2 + pad;
     return [
-      { x: x - h + SKEW, y: y - h }, { x: x + h + SKEW, y: y - h },
-      { x: x + h - SKEW, y: y + h }, { x: x - h - SKEW, y: y + h },
+      { x: x - hw + SKEW, y: y - hh }, { x: x + hw + SKEW, y: y - hh },
+      { x: x + hw - SKEW, y: y + hh }, { x: x - hw - SKEW, y: y + hh },
     ];
   }
 
@@ -224,6 +228,47 @@ export class SelectScene extends Phaser.Scene {
     glow.setTintMode(Phaser.TintModes.FILL).setBlendMode(Phaser.BlendModes.ADD).setAlpha(0.5);
     const fig = this.add.image(x, FIG_Y, def.art.texture, `${def.art.prefix}idle`).setFlipX(flip);
     return { fig, glow };
+  }
+
+  /** Columna de un lado: placa (P1 / CPU) arriba, retrato y, debajo, nombre, título y lore centrados. */
+  private makeSide(x: number, flip: boolean, label: string, color: number): Side {
+    const figure = this.makeFigure(x, flip);
+    // Placa inclinada del color del lado, con el texto oscuro encima: se lee de un vistazo quién es quién.
+    const y = BADGE_Y;
+    const w = label.length > 2 ? 190 : 150;
+    const h = 72;
+    const badge = this.add.graphics();
+    badge.fillStyle(0x000000, 0.5).fillPoints(pts([
+      { x: x - w / 2 + 14 + 6, y: y - h / 2 + 6 }, { x: x + w / 2 + 14 + 6, y: y - h / 2 + 6 },
+      { x: x + w / 2 - 14 + 6, y: y + h / 2 + 6 }, { x: x - w / 2 - 14 + 6, y: y + h / 2 + 6 },
+    ]), true);
+    badge.fillStyle(color, 1).fillPoints(pts([
+      { x: x - w / 2 + 14, y: y - h / 2 }, { x: x + w / 2 + 14, y: y - h / 2 },
+      { x: x + w / 2 - 14, y: y + h / 2 }, { x: x - w / 2 - 14, y: y + h / 2 },
+    ]), true);
+    const side: Side = {
+      x,
+      box: this.add.container(0, 0),
+      figure,
+      label: text(this, x, y, label, { size: 60, italic: true, weight: '900', color: CSS.dark, origin: [0.5, 0.5], spacing: 4 }),
+      name: text(this, x, NAME_Y, '', { size: NAME_SIZE, italic: true, weight: '900', origin: [0.5, 0.5], shadow: true }),
+      tag: text(this, x, TAG_Y, '', { size: 18, weight: '800', origin: [0.5, 0.5], spacing: 3 }),
+      lore: text(this, x, LORE_Y, '', { size: LORE_SIZE, font: 'body', weight: '500', color: '#d6d3c7', origin: [0.5, 0], align: 'center', wrap: SIDE_W, shadow: true }).setLineSpacing(4),
+    };
+    side.box.add([figure.glow, figure.fig, badge, side.label, side.name, side.tag, side.lore]);
+    return side;
+  }
+
+
+
+  /** Nombre, título y lore de un lado (sin luchador: solo el nombre y el título dados). */
+  private showText(side: Side, name: string, nameColor: string, tag: string, tagColor: string, lore: string): void {
+    fitText(side.name.setFontSize(NAME_SIZE).setText(name).setColor(nameColor), SIDE_W, 32);
+    side.tag.setText(tag).setColor(tagColor);
+    // Lore largo: se achica la letra hasta que no baje del límite (por encima de los controles).
+    let size = LORE_SIZE;
+    side.lore.setFontSize(size).setText(lore);
+    while (bottomOf(side.lore) > LORE_BOTTOM && size > 14) side.lore.setFontSize(--size);
   }
 
   /** Retrato en busto (los retratos miran a la derecha; el de la CPU se voltea) o, sin retrato, la guardia de cuerpo entero. */
@@ -240,52 +285,27 @@ export class SelectScene extends Phaser.Scene {
       img.setFlipX(flip);
     }
     f.glow.setTint(def.color).setVisible(!hidden);
-    f.fig.setTint(hidden ? 0x000000 : tintOf(def)).setAlpha(hidden ? 0.7 : 1);
-  }
-
-  /** Ficha del luchador resaltado: se actualiza al moverse por el roster. */
-  private showInfo(def: FighterDef): void {
-    const i = this.info;
-    i.number.setText(`Nº ${def.number}`);
-    i.name.setText(def.name);
-    i.tag.setText(def.tag).setColor(def.css);
-    i.bio.setText(def.bio);
-    let y = i.bio.y + i.bio.height - (i.bio.padding.top ?? 0) * 2 + 14;
-    i.quote.setText(`«${def.quote}»`).setY(y);
-    y += i.quote.height - (i.quote.padding.top ?? 0) * 2 + 12;
-    i.style.setText(`ESTILO: ${def.style}`).setColor(def.css).setY(y);
-    y += 34;
-    i.moves.setText(`PODER: ${def.moves.special}  ·  S → D + CLIC IZQ\nULTIMATE: ${def.moves.super}  ·  E`).setY(y);
-    y += i.moves.height - (i.moves.padding.top ?? 0) * 2 + 18;
-
-    const g = i.bars;
-    g.clear();
-    const stats = [def.rating.potencia, def.rating.velocidad, def.rating.alcance, def.rating.tecnica];
-    stats.forEach((v, k) => {
-      const bx = INFO_X + (k % 2) * 300;
-      const by = y + Math.floor(k / 2) * 30;
-      for (let s = 0; s < 5; s++) g.fillStyle(s < v ? def.color : 0x2a2930, 1).fillRect(bx + s * 24, by, 20, 12);
-      i.labels[k].setPosition(bx + 5 * 24 + 4, by + 6);
-    });
+    // El retrato es arte final: sin tinte (el tinte de color es solo para los cuerpos provisionales).
+    f.fig.setTint(hidden ? 0x000000 : bust ? 0xffffff : tintOf(def)).setAlpha(hidden ? 0.7 : 1);
   }
 
   private hideCpu(): void {
-    this.showFigure(this.cpuFig, FIGHTERS.erp, true, true);
-    this.cpuFig.glow.setVisible(false);
+    this.showFigure(this.cpuSide.figure, FIGHTERS.erp, true, true);
+    this.cpuSide.figure.glow.setVisible(false);
     this.cpuMystery.setVisible(true);
-    this.cpuName.setText('???').setColor('#4a4942');
-    this.cpuTag.setText('');
+    // Mientras no hay rival, una pista de qué toca (para que el lado no quede vacío).
+    this.showText(this.cpuSide, '???', CSS.grey, this.phase === 'cpu' ? 'ELIGE A TU RIVAL' : 'TU RIVAL VA DESPUÉS', CSS.grey, '');
   }
 
   /** Muestra al rival de la CPU (con un pequeño desliz al cambiar). */
   private showCpu(def: FighterDef): void {
     this.cpuMystery.setVisible(false);
-    this.showFigure(this.cpuFig, def, true);
-    this.cpuName.setText(def.name).setColor(CSS.cream);
-    this.cpuTag.setText(def.tag).setColor(def.css);
-    this.tweens.killTweensOf([this.cpuFig.fig, this.cpuFig.glow]);
-    this.cpuFig.fig.setX(CPU_X + 40);
-    this.tweens.add({ targets: [this.cpuFig.fig, this.cpuFig.glow], x: CPU_X, duration: 160, ease: 'Cubic.easeOut' });
+    const f = this.cpuSide.figure;
+    this.showFigure(f, def, true);
+    this.showText(this.cpuSide, def.name, CSS.cream, def.tag, def.css, def.bio);
+    this.tweens.killTweensOf([f.fig, f.glow]);
+    f.fig.setX(CPU_X + 40);
+    this.tweens.add({ targets: [f.fig, f.glow], x: CPU_X, duration: 160, ease: 'Cubic.easeOut' });
   }
 
   /** Marco inclinado alrededor de la casilla `i` con su etiqueta (1P a la izquierda, CPU a la derecha). */
@@ -294,13 +314,15 @@ export class SelectScene extends Phaser.Scene {
     const color = cpu ? COLORS.red : COLORS.lime;
     const name = cpu ? 'cursor-cpu' : 'cursor-1p';
     g.clear();
-    g.lineStyle(6, color, 1).strokePoints(pts(this.tile(x, y, cpu ? 9 : 5)), true);
-    // Etiqueta al costado (arriba taparía la otra fila).
-    const w = cpu ? 64 : 44;
-    const lx = cpu ? x + SLOT / 2 + SKEW + 8 : x - SLOT / 2 - SKEW - 8 - w;
-    g.fillStyle(color, 1).fillRect(lx, y - 14, w, 28);
+    g.lineStyle(6, color, 1).strokePoints(pts(this.slotRect(i, cpu ? 7 : 3)), true);
+    // Etiqueta en la esquina de arriba (P1 a la izquierda, CPU a la derecha) para no tapar casillas vecinas.
+    const size = this.slotSize(i);
+    const w = cpu ? 50 : 36;
+    const lx = cpu ? x + size.w / 2 - w : x - size.w / 2;
+    const ly = y - size.h / 2;
+    g.fillStyle(color, 1).fillRect(lx, ly, w, 22);
     this.children.getByName(name)?.destroy();
-    text(this, lx + w / 2, y, cpu ? 'CPU' : '1P', { size: 22, weight: '900', color: CSS.dark, origin: [0.5, 0.5] }).setName(name).setDepth(6);
+    text(this, lx + w / 2, ly + 11, cpu ? 'CPU' : 'P1', { size: 17, weight: '900', color: CSS.dark, origin: [0.5, 0.5] }).setName(name).setDepth(6);
   }
 
   private pick(i: number, silent = false): void {
@@ -311,24 +333,31 @@ export class SelectScene extends Phaser.Scene {
     if (this.phase === 'cpu') {
       if (slot === RANDOM) {
         this.hideCpu();
-        this.cpuName.setText('ALEATORIO').setColor(CSS.cream);
-        this.cpuTag.setText('QUE DECIDA LA CALLE').setColor(CSS.grey);
+        this.showText(this.cpuSide, 'ALEATORIO', CSS.cream, 'QUE DECIDA LA CALLE', CSS.grey, '');
       } else {
         this.showCpu(FIGHTERS[slot]);
       }
       this.drawCursor(this.cursor, i, true);
       return;
     }
-    if (slot === RANDOM) return;
-    const def = FIGHTERS[slot];
-    if (this.story) {
-      this.cpuTag.setText('PARTIDA NUEVA').setColor(CSS.grey);
+    if (slot === RANDOM) {
+      this.showFigure(this.p1Side.figure, FIGHTERS.erp, false, true);
+      this.p1Side.figure.glow.setVisible(false);
+      this.p1Mystery.setVisible(true);
+      this.pending.setVisible(false);
+      this.showText(this.p1Side, 'ALEATORIO', CSS.cream, 'QUE DECIDA LA CALLE', CSS.grey, '');
+      this.drawCursor(this.cursor, i, false);
+      return;
     }
-    this.showFigure(this.p1Fig, def, false);
-    this.showInfo(def);
+    this.p1Mystery.setVisible(false);
+    const def = FIGHTERS[slot];
+    if (this.story) this.cpuSide.tag.setText('PARTIDA NUEVA').setColor(CSS.grey);
+    const f = this.p1Side.figure;
+    this.showFigure(f, def, false);
+    this.showText(this.p1Side, def.name, CSS.cream, def.tag, def.css, def.bio);
     this.pending.setVisible(!!def.art.placeholder && !bustKey(this, def));
-    this.p1Fig.fig.setX(P1_X - 40);
-    this.tweens.add({ targets: [this.p1Fig.fig, this.p1Fig.glow], x: P1_X, duration: 160, ease: 'Cubic.easeOut' });
+    f.fig.setX(P1_X - 40);
+    this.tweens.add({ targets: [f.fig, f.glow], x: P1_X, duration: 160, ease: 'Cubic.easeOut' });
     this.drawCursor(this.cursor, i, false);
   }
 
@@ -340,9 +369,9 @@ export class SelectScene extends Phaser.Scene {
     this.pick(i);
   }
 
-  /** W S: salta a la casilla elegible más cercana de la otra fila. */
+  /** W S: salta a la casilla elegible más cercana de la fila de arriba o de abajo. */
   private moveRow(dir: number): void {
-    const rows = Math.ceil(SLOTS.length / PER_ROW);
+    const rows = Math.ceil(SLOTS.length / COLS);
     const cur = this.slotPos(this.index);
     const target = (cur.row + dir + rows) % rows;
     let best = this.index;
@@ -366,11 +395,25 @@ export class SelectScene extends Phaser.Scene {
 
   private confirmP1(): void {
     const slot = SLOTS[this.index];
-    if (slot === RANDOM) return;
+    if (slot !== RANDOM) return this.lockP1(slot);
+    // Aleatorio: sortea, muestra cuál tocó (el cursor salta a su casilla) y sigue tras una pausa.
+    const pool = ROSTER.filter((f) => f !== lastRandomP1);
+    lastRandomP1 = Phaser.Utils.Array.GetRandom(pool);
+    this.pick(ROSTER.indexOf(lastRandomP1), true);
+    this.locked = true;
+    Audio.tone(this, 660, 0.25, 'sawtooth', 0.06);
+    this.time.delayedCall(700, () => {
+      this.locked = false;
+      this.lockP1(lastRandomP1!);
+    });
+  }
+
+  /** Fija tu luchador y pasa a elegir al rival (en la historia, a la partida). */
+  private lockP1(slot: FighterId): void {
     this.p1 = slot;
     Audio.tone(this, 660, 0.25, 'sawtooth', 0.06);
     this.cameras.main.flash(180, 223, 255, 0);
-    this.tweens.add({ targets: this.p1Fig.fig, scale: this.p1Fig.fig.scale * 1.06, duration: 120, yoyo: true });
+    this.tweens.add({ targets: this.p1Side.figure.fig, scale: this.p1Side.figure.fig.scale * 1.06, duration: 120, yoyo: true });
     if (this.story) {
       // Historia: sin rival a elegir. Si ya hay una partida guardada, avisa que se borra.
       if (StoryRun.run) return this.openRunChoice();
@@ -422,7 +465,7 @@ export class SelectScene extends Phaser.Scene {
       this.showCpu(FIGHTERS[this.p2]);
       this.drawCursor(this.cursor, ROSTER.indexOf(this.p2), true);
     }
-    this.tweens.add({ targets: this.cpuFig.fig, scale: this.cpuFig.fig.scale * 1.06, duration: 120, yoyo: true });
+    this.tweens.add({ targets: this.cpuSide.figure.fig, scale: this.cpuSide.figure.fig.scale * 1.06, duration: 120, yoyo: true });
     // En entrenamiento la CPU no pelea: no hay dificultad que elegir.
     if (this.training) {
       this.time.delayedCall(700, () => goTo(this, SCENES.StageSelect, { p1: this.p1, p2: this.p2, training: true }, 300));

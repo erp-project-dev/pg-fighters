@@ -13,7 +13,6 @@ import { PauseScene } from './scenes/PauseScene';
 import { PreloadScene } from './scenes/PreloadScene';
 import { ResultsScene } from './scenes/ResultsScene';
 import { SelectScene } from './scenes/SelectScene';
-import { ShowcaseScene } from './scenes/ShowcaseScene';
 import { StageSelectScene } from './scenes/StageSelectScene';
 import { SuperCutInScene } from './scenes/SuperCutInScene';
 import { TitleScene } from './scenes/TitleScene';
@@ -31,7 +30,7 @@ export const startGame = (): void => {
   const game = new Phaser.Game({
     ...GAME_CONFIG_BASE,
     parent: 'game',
-    scene: [BootScene, PreloadScene, TitleScene, ControlsScene, SelectScene, StageSelectScene, VersusScene, FightScene, HudScene, TrainingHudScene, ShowcaseScene, SuperCutInScene, PauseScene, ResultsScene, StoryScene, StoryProgressScene, ContinueScene, LoginScene, NameEntryScene, RankingScene, CreditsScene, DisclaimerScene, LabScene, LabPickScene],
+    scene: [BootScene, PreloadScene, TitleScene, ControlsScene, SelectScene, StageSelectScene, VersusScene, FightScene, HudScene, TrainingHudScene, SuperCutInScene, PauseScene, ResultsScene, StoryScene, StoryProgressScene, ContinueScene, LoginScene, NameEntryScene, RankingScene, CreditsScene, DisclaimerScene, LabScene, LabPickScene],
   });
 
   // Acceso desde la consola del navegador en desarrollo.

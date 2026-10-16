@@ -1,6 +1,6 @@
 import { MUSIC, type MusicKey } from '../systems/Audio';
 
-export type StageId = 'barrio' | 'metro' | 'bar' | 'tienda' | 'festival' | 'azotea' | 'tomate' | 'biblioteca' | 'chino' | 'mall' | 'arenal'
+export type StageId = 'barrio' | 'metro' | 'bar' | 'tienda' | 'festival' | 'azotea' | 'tomate' | 'biblioteca' | 'chino' | 'mall' | 'arenal' | 'casona' | 'ciudadela' | 'rio' | 'laboratorio'
   /** Exclusivo del jefe del modo historia (no aparece en la selección de escenario). */
   | 'ampli';
 
@@ -145,6 +145,51 @@ export const STAGES: Record<StageId, StageDef> = {
     color: 0xf2b45a,
     css: '#f2b45a',
   },
+  casona: {
+    id: 'casona',
+    number: '12',
+    name: 'EL SALÓN DEL VIRREY',
+    place: 'CASONA COLONIAL · CENTRO DE LIMA',
+    texture: 'stage-casona',
+    image: 'assets/stages/casona.png',
+    music: MUSIC.casona,
+    color: 0xc9a227,
+    css: '#e0b53a',
+  },
+  ciudadela: {
+    id: 'ciudadela',
+    number: '13',
+    name: 'LA CIUDADELA DEL SOL',
+    place: 'ENTRE LAS NUBES · CUSCO, PERÚ',
+    texture: 'stage-ciudadela',
+    image: 'assets/stages/ciudadela.png',
+    music: MUSIC.ciudadela,
+    color: 0xff9f1c,
+    css: '#ff9f1c',
+  },
+  rio: {
+    id: 'rio',
+    number: '14',
+    name: 'EL MUELLE DEL RÍO',
+    place: 'AMAZONÍA PERUANA · DE NOCHE',
+    texture: 'stage-rio',
+    image: 'assets/stages/rio.png',
+    music: MUSIC.rio,
+    color: 0x2ecc71,
+    css: '#2ecc71',
+  },
+  /** Escondido hasta que llegue su arte final: no está en STAGE_ORDER ni en la historia (se prueba con ?lab&stage=laboratorio). */
+  laboratorio: {
+    id: 'laboratorio',
+    number: '15',
+    name: 'EL LABORATORIO DEL ROCK',
+    place: 'DONDE NACIÓ NOSU · LIMA DEL FUTURO',
+    texture: 'stage-laboratorio',
+    // image: 'assets/stages/laboratorio.png',
+    music: MUSIC.stage,
+    color: 0xff2ba6,
+    css: '#ff2ba6',
+  },
   ampli: {
     id: 'ampli',
     number: '??',
@@ -158,4 +203,4 @@ export const STAGES: Record<StageId, StageDef> = {
   },
 };
 
-export const STAGE_ORDER: StageId[] = ['barrio', 'metro', 'bar', 'tienda', 'festival', 'azotea', 'tomate', 'biblioteca', 'chino', 'mall', 'arenal'];
+export const STAGE_ORDER: StageId[] = ['barrio', 'metro', 'bar', 'tienda', 'festival', 'azotea', 'tomate', 'biblioteca', 'chino', 'mall', 'arenal', 'casona', 'ciudadela', 'rio'];

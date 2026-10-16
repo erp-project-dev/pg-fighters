@@ -7,6 +7,8 @@ export interface LookObj {
   obj: Phaser.GameObjects.Image | Phaser.GameObjects.Text | Phaser.GameObjects.Container;
   spin: number;
   aim: boolean;
+  /** Tiembla en su sitio (grados de vaivén) en vez de girar. */
+  jitter?: number;
 }
 
 /** Radio de referencia de las texturas (la escala sale de radio / BASE). */
@@ -52,12 +54,12 @@ const TEX: Partial<Record<PowerLook, (s: Phaser.Scene) => string>> = {
     g.fillStyle(0xffd166, 1).fillCircle(55, 55, 26);
     g.fillStyle(0xffffff, 1).fillCircle(50, 50, 11);
   }),
-  tray: (s) => tex(s, 'pw-tray', 130, 100, (g) => {
-    g.fillStyle(0xffffff, 1).fillEllipse(65, 78, 128, 32);
-    g.fillStyle(0xd9dde3, 1).fillEllipse(65, 74, 96, 20);
-    g.fillStyle(0xc0c6cf, 1).fillEllipse(65, 52, 96, 76);
-    g.fillStyle(0xe8ecf1, 1).fillEllipse(54, 40, 40, 28);
-    g.fillStyle(0x8a9099, 1).fillCircle(65, 12, 8);
+  tray: (s) => tex(s, 'pw-tray', 130, 60, (g) => {
+    // Bandeja sola, sin tapa: borde, fondo y un reflejo.
+    g.fillStyle(0x8a9099, 1).fillEllipse(65, 32, 128, 44);
+    g.fillStyle(0xe8ecf1, 1).fillEllipse(65, 30, 120, 36);
+    g.fillStyle(0xc0c6cf, 1).fillEllipse(65, 30, 96, 24);
+    g.fillStyle(0xffffff, 0.8).fillEllipse(48, 25, 34, 8);
   }),
   kiss: (s) => tex(s, 'pw-kiss', 110, 100, (g) => {
     glow(g, 55, 50, 50, 0xff8fab);
@@ -135,6 +137,142 @@ const TEX: Partial<Record<PowerLook, (s: Phaser.Scene) => string>> = {
     g.lineStyle(5, 0xff173d, 1).strokeCircle(60, 60, 31);
     g.lineStyle(3, 0x6a00ff, 0.9).strokeCircle(60, 60, 22);
   }),
+  soundwave: (s) => tex(s, 'pw-soundwave', 120, 140, (g) => {
+    // Tres arcos de onda que se abren hacia adelante, con un brillo y bits de datos alrededor.
+    const arc = (r: number, w: number, a: number) => {
+      g.lineStyle(w, 0xffffff, a);
+      g.beginPath();
+      g.arc(-10, 70, r, -0.55, 0.55);
+      g.strokePath();
+    };
+    for (const r of [52, 84, 116]) {
+      arc(r, 18, 0.22);
+      arc(r, 7, 1);
+    }
+    g.fillStyle(0xffffff, 0.85);
+    for (const [x, y] of [[60, 18], [92, 34], [100, 104], [70, 122], [40, 40], [44, 100]]) g.fillRect(x, y, 8, 8);
+  }),
+  decree: (s) => tex(s, 'pw-decree', 130, 110, (g) => {
+    // Pergamino enrollado en los extremos, con líneas de texto y el sello rojo de la Corona.
+    glow(g, 65, 55, 54, 0xffd166);
+    g.fillStyle(0xf3e2b3, 1).fillRect(22, 18, 86, 74);
+    g.fillStyle(0xc9a227, 1).fillRoundedRect(10, 10, 22, 90, 10).fillRoundedRect(98, 10, 22, 90, 10);
+    g.fillStyle(0x8a6a10, 1).fillRect(18, 4, 6, 102).fillRect(106, 4, 6, 102);
+    g.fillStyle(0x6b4a2a, 1);
+    for (const y of [30, 42, 54]) g.fillRect(38, y, 54, 4);
+    g.fillStyle(0xb3122e, 1).fillCircle(65, 76, 12);
+    g.fillStyle(0xff5a6e, 1).fillCircle(62, 73, 4);
+  }),
+  sun: (s) => tex(s, 'pw-sun', 130, 130, (g) => {
+    // Disco de oro de Inti: rayos en punta, anillo y cara grabada.
+    glow(g, 65, 65, 64, 0xff9f1c);
+    g.fillStyle(0xffb703, 1).fillPoints(star(65, 65, 60, 38, 12), true);
+    g.fillStyle(0xffd166, 1).fillCircle(65, 65, 36);
+    g.lineStyle(4, 0xc77700, 1).strokeCircle(65, 65, 30);
+    g.fillStyle(0xc77700, 1).fillRect(52, 56, 9, 5).fillRect(69, 56, 9, 5).fillRect(55, 74, 20, 4);
+  }),
+  drum: (s) => tex(s, 'pw-drum', 110, 110, (g) => {
+    // Onda del manguaré: anillos de vibración verde y rojo achiote alrededor de un golpe de madera.
+    for (const [r, c, a] of [[50, 0x2ecc71, 0.5], [38, 0xd9481e, 0.8], [26, 0x2ecc71, 0.9]] as const) g.lineStyle(6, c, a).strokeCircle(55, 55, r);
+    g.fillStyle(0x7a4a22, 1).fillCircle(55, 55, 15);
+    g.fillStyle(0xe9c48a, 1).fillCircle(51, 51, 6);
+  }),
+  marble: (s) => tex(s, 'pw-marble', 100, 100, (g) => {
+    // Canica de vidrio: cuerpo celeste, remolino de color adentro y brillo.
+    glow(g, 50, 50, 48, 0x9ad7ff);
+    g.fillStyle(0x6fc3ff, 0.9).fillCircle(50, 50, 28);
+    g.lineStyle(7, 0xff4d79, 1);
+    g.beginPath();
+    g.arc(50, 50, 15, 0.2, Math.PI * 1.3);
+    g.strokePath();
+    g.lineStyle(3, 0xffffff, 0.8).strokeCircle(50, 50, 28);
+    g.fillStyle(0xffffff, 0.95).fillCircle(40, 39, 7);
+  }),
+  cross: (s) => tex(s, 'pw-cross', 110, 140, (g) => {
+    // Cruz de luz con borde dorado.
+    glow(g, 55, 62, 54, 0xbfe9ff);
+    g.fillStyle(0xc9a227, 1).fillRect(41, 6, 28, 128).fillRect(9, 36, 92, 28);
+    g.fillStyle(0xf4fbff, 1).fillRect(46, 11, 18, 118).fillRect(14, 41, 82, 18);
+  }),
+  needle: (s) => tex(s, 'pw-needle', 140, 40, (g) => {
+    // Aguja de jade apuntando a la derecha (se gira hacia donde va).
+    for (let k = 18; k > 4; k -= 3) g.fillStyle(0x2fd08f, 0.08).fillEllipse(70, 20, k * 7, k * 2);
+    g.fillStyle(0x19b37a, 1).fillTriangle(8, 14, 8, 26, 136, 20);
+    g.fillStyle(0xd8fff0, 1).fillTriangle(20, 18, 20, 22, 120, 20);
+    g.fillStyle(0xffd166, 1).fillRect(4, 12, 8, 16);
+  }),
+  coin: (s) => tex(s, 'pw-coin', 100, 100, (g) => {
+    // Moneda de oro con el signo de dólar.
+    glow(g, 50, 50, 48, 0xffd166);
+    g.fillStyle(0xb8860b, 1).fillCircle(50, 50, 32);
+    g.fillStyle(0xffd23f, 1).fillCircle(50, 50, 27);
+    g.lineStyle(3, 0xb8860b, 1).strokeCircle(50, 50, 21);
+    g.fillStyle(0xb8860b, 1).fillRect(46, 32, 8, 36).fillRect(38, 38, 22, 6).fillRect(40, 47, 20, 6).fillRect(40, 56, 22, 6);
+  }),
+  mirror: (s) => tex(s, 'pw-mirror', 100, 140, (g) => {
+    // Espejo de mano: marco verde, vidrio con reflejos y mango.
+    glow(g, 50, 56, 50, 0x4dff88);
+    g.fillStyle(0x1f7a46, 1).fillEllipse(50, 56, 78, 100);
+    g.fillStyle(0xdff7ff, 1).fillEllipse(50, 56, 62, 84);
+    g.fillStyle(0xffffff, 0.9).fillTriangle(30, 40, 44, 22, 40, 60);
+    g.fillStyle(0xaee9ff, 0.8).fillTriangle(56, 80, 70, 58, 68, 88);
+    g.fillStyle(0x1f7a46, 1).fillRect(44, 104, 12, 32);
+  }),
+  ring: (s) => tex(s, 'pw-ring', 70, 150, (g) => {
+    // Onda de audio: aro vertical (de canto, como una onda que sale de un parlante), con halo y un aro fino adentro.
+    // Se tiñe del color del luchador.
+    for (const [w, a] of [[16, 0.18], [9, 0.4], [5, 1]] as const) g.lineStyle(w, 0xffffff, a).strokeEllipse(35, 75, 44, 128);
+    g.lineStyle(3, 0xffffff, 0.5).strokeEllipse(35, 75, 22, 96);
+  }),
+  dagger: (s) => tex(s, 'pw-dagger', 150, 50, (g) => {
+    // Daga de la Corona apuntando a la derecha (se gira hacia donde va): hoja de plata, guarda y pomo de oro.
+    for (let k = 20; k > 4; k -= 4) g.fillStyle(0xffe9a8, 0.07).fillEllipse(90, 25, k * 7, k * 2);
+    g.fillStyle(0xc9ced6, 1).fillTriangle(52, 15, 52, 35, 146, 25);
+    g.fillStyle(0xffffff, 1).fillTriangle(56, 22, 56, 26, 136, 25);
+    g.fillStyle(0xc9a227, 1).fillRect(44, 6, 9, 38);
+    g.fillStyle(0x6b1a2a, 1).fillRect(16, 19, 28, 12);
+    g.fillStyle(0xc9a227, 1).fillCircle(12, 25, 8);
+    g.fillStyle(0xb3122e, 1).fillCircle(48, 25, 4);
+  }),
+  spear: (s) => tex(s, 'pw-spear', 240, 64, (g) => {
+    // Lanza de chonta apuntando a la derecha: asta gruesa de madera con franjas de achiote, plumas y punta de piedra.
+    for (let k = 28; k > 6; k -= 5) g.fillStyle(0x2ecc71, 0.07).fillEllipse(130, 32, k * 9, k * 2);
+    g.fillStyle(0x3a2410, 1).fillRect(20, 26, 172, 12);
+    g.fillStyle(0x7a4a22, 1).fillRect(20, 28, 172, 6);
+    g.fillStyle(0xd9481e, 1).fillRect(64, 25, 10, 14).fillRect(92, 25, 10, 14).fillRect(120, 25, 10, 14);
+    g.fillStyle(0x2ecc71, 1).fillTriangle(2, 8, 34, 28, 16, 32).fillTriangle(2, 56, 34, 36, 16, 32);
+    g.fillStyle(0xffe14d, 1).fillTriangle(10, 20, 30, 30, 18, 32).fillTriangle(10, 44, 30, 34, 18, 32);
+    g.fillStyle(0x2b2b2b, 1).fillTriangle(186, 10, 186, 54, 238, 32);
+    g.fillStyle(0xd0d0d0, 1).fillTriangle(192, 20, 192, 44, 228, 32);
+    g.fillStyle(0xffffff, 0.9).fillTriangle(196, 26, 196, 32, 222, 32);
+  }),
+  buster: (s) => tex(s, 'pw-buster', 130, 90, (g) => {
+    // Disparo de buster (mirando a la derecha): óvalo de energía morada con núcleo blanco y una estela corta atrás.
+    for (let k = 0; k < 6; k++) g.fillStyle(0x9b30ff, 0.07).fillEllipse(62 - k * 4, 45, 120 - k * 10, 84 - k * 9);
+    g.fillStyle(0x7a1fd6, 0.5).fillEllipse(34, 45, 46, 26).fillEllipse(18, 45, 26, 14);
+    g.fillStyle(0xb44dff, 1).fillEllipse(74, 45, 74, 54);
+    g.fillStyle(0xe2b8ff, 1).fillEllipse(78, 45, 52, 36);
+    g.fillStyle(0xffffff, 1).fillEllipse(82, 43, 32, 20);
+  }),
+  slash: (s) => tex(s, 'pw-slash', 150, 520, (g) => {
+    // Corte de sable (hacia la derecha): media luna alta y fina, filo blanco, borde dorado y halo.
+    const crescent = (out: number, inn: number, shift: number, h: number) => {
+      const pts: Phaser.Math.Vector2[] = [];
+      for (let i = 0; i <= 24; i++) {
+        const a = -Math.PI / 2 + (i / 24) * Math.PI;
+        pts.push(new Phaser.Math.Vector2(40 + Math.cos(a) * out, 260 + Math.sin(a) * h));
+      }
+      for (let i = 24; i >= 0; i--) {
+        const a = -Math.PI / 2 + (i / 24) * Math.PI;
+        pts.push(new Phaser.Math.Vector2(40 - shift + Math.cos(a) * inn, 260 + Math.sin(a) * h * 0.96));
+      }
+      return pts;
+    };
+    g.fillStyle(0xffe9a8, 0.18).fillPoints(crescent(104, 40, 14, 256), true);
+    g.fillStyle(0xc9a227, 0.85).fillPoints(crescent(92, 54, 12, 244), true);
+    g.fillStyle(0xfff6d8, 1).fillPoints(crescent(84, 62, 10, 236), true);
+    g.fillStyle(0xffffff, 1).fillPoints(crescent(80, 70, 6, 228), true);
+  }),
   shriek: (s) => tex(s, 'pw-shriek', 120, 120, (g) => {
     for (const [r, c] of [[52, 0xff173d], [38, 0x6a00ff], [24, 0xff173d]] as const) g.lineStyle(6, c, 0.9).strokeCircle(60, 60, r);
     g.fillStyle(0xffd0d8, 1).fillCircle(60, 60, 9);
@@ -142,7 +280,7 @@ const TEX: Partial<Record<PowerLook, (s: Phaser.Scene) => string>> = {
 };
 
 /** Looks blancos que se tiñen con el color del luchador. */
-const TINTED: PowerLook[] = ['note', 'wave', 'miniNote'];
+const TINTED: PowerLook[] = ['note', 'wave', 'miniNote', 'soundwave', 'ring'];
 
 const CODE_TOKENS = ['</>', '{ }', 'fork()', '0x1F', '=>'];
 
@@ -167,7 +305,7 @@ export const buildLook = (scene: Phaser.Scene, look: PowerLook, color: number, r
   const key = TEX[look]?.(scene) ?? TEX.darkOrb!(scene);
   const img = scene.add.image(x, y, key).setScale(r / BASE);
   if (TINTED.includes(look)) img.setTint(color);
-  if (['meteor', 'kiss', 'redStar', 'pearl', 'star8', 'firefly', 'darkOrb', 'shriek', 'miniNote', 'wave'].includes(look)) img.setBlendMode(Phaser.BlendModes.ADD);
-  const spin = look === 'banana' ? 720 : look === 'pick' ? 900 : look === 'book' ? 360 : look === 'tray' ? 0 : look === 'redStar' ? 400 : look === 'star8' ? 300 : look === 'flask' ? 420 : 0;
-  return { obj: img, spin, aim: look === 'wave' };
+  if (['meteor', 'kiss', 'redStar', 'pearl', 'star8', 'firefly', 'darkOrb', 'shriek', 'miniNote', 'wave', 'soundwave', 'sun', 'marble', 'needle', 'ring', 'buster', 'slash'].includes(look)) img.setBlendMode(Phaser.BlendModes.ADD);
+  const spin = look === 'banana' ? 720 : look === 'pick' ? 900 : look === 'book' ? 360 : look === 'tray' ? 0 : look === 'redStar' ? 400 : look === 'star8' ? 300 : look === 'flask' ? 420 : look === 'sun' ? 160 : look === 'marble' ? 540 : look === 'coin' ? 1080 : 0;
+  return { obj: img, spin, aim: look === 'wave' || look === 'needle' || look === 'dagger' || look === 'spear', jitter: look === 'cross' ? 3 : 0 };
 };

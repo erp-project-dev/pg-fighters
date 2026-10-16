@@ -1,7 +1,11 @@
+import { attackFrameIndex } from '../visuals/roster/AnimationTiming';
+import { animationMetadata } from '../visuals/roster/RegeneratedArt';
 import Phaser from 'phaser';
 import { GROUND_Y, STAGE_LEFT, STAGE_RIGHT } from '../config';
 import { tintOf, type FighterDef } from '../data/fighters';
-import { CHAIN_FINISHER, CHAIN_FINISHER_BONUS, MOVES, comboScale, type MoveDef, type MoveId } from '../data/moves';
+import { CHAIN_FINISHER_BONUS, MOVES, comboScale, type MoveDef, type MoveId } from '../data/moves';
+import { chainOf, kitOf, moveFor } from '../data/moveset';
+import { POWERS } from '../data/powers';
 import { SOLOS } from '../data/solos';
 import { superMotion } from '../visuals/supers/choreography';
 import { artScale, poseFrames, resolvePose, type Pose } from '../systems/FighterArt';
@@ -18,6 +22,8 @@ export interface Intent {
   dash: boolean;
   /** Botón de súper (E): sale con la barra llena. */
   super: boolean;
+  /** Puño mantenido (clic izquierdo apretado): carga los poderes que se cargan (Pepper). */
+  punchHeld?: boolean;
 }
 
 export const NO_INTENT: Intent = { left: false, right: false, up: false, down: false, punch: false, kick: false, dash: false, super: false };
@@ -42,6 +48,10 @@ export interface Arena {
 
 export type HitResult = 'hit' | 'block' | 'whiff';
 
+/** Golpes normales (no poderes, uppercut ni ultimate): los que carga el golpe de oro. */
+export const isNormal = (move: MoveDef): boolean =>
+  move.id === 'jab' || move.id === 'kick' || move.id === 'crouchJab' || move.id === 'sweep' || move.id === 'airPunch' || move.id === 'airKick';
+
 const GRAVITY = 4300;
 const JUMP_VZ = 1600;
 const JUMP_VX = 430;
@@ -53,6 +63,8 @@ const MAX_HP = 1000;
 export const MAX_METER = 100;
 /** Recarga del poder básico (ms): evita lanzarlo una y otra vez sin parar. */
 export const POWER_COOLDOWN = 1400;
+/** Carga máxima de los poderes que se cargan manteniendo el clic (ms). */
+export const CHARGE_MS = 2000;
 /** Una pulsación espera hasta este tiempo a que el luchador quede libre (p. ej. durante la recuperación de un golpe). */
 const BUFFER_MS = 260;
 /** Con arte de un solo cuadro, el golpe vuelve a la guardia pasada esta fracción de la recuperación. */
@@ -119,10 +131,16 @@ export class Fighter {
   /** El golpe actual ya resolvió su impacto (no vuelve a pegar). */
   moveDone = false;
   private moveSpawned = false;
+  /** Poder que se carga: momento en que empezó a cargar (-1 = no carga) y carga al soltar (0–1). */
+  private chargeFrom = -1;
+  private chargeStep = 0;
+  shotCharge = 0;
   chainCount = 0;
   /** El golpe actual es el remate de una cadena (tumba y pega más). */
   finisher = false;
   private airAttackUsed = false;
+  /** El golpe actual ya aguantó su impacto (armadura). */
+  private armorUsed = false;
   invulnUntil = 0;
   /** Momento desde el que se puede volver a lanzar el poder básico. */
   powerReadyAt = 0;
@@ -132,6 +150,16 @@ export class Fighter {
    */
   blockLocked = false;
   flashUntil = 0;
+  /** Nivel del lick de Pentalick (0 = primero): sube con cada lick que pega. */
+  lickLevel = 0;
+  /** Golpe de oro cargado (Slandor): multiplicador del próximo golpe normal que conecte (0 = sin cargar). */
+  gold = 0;
+  /** El golpe de oro se apaga solo en este momento. */
+  goldUntil = 0;
+  /** Envenenado (lanza de Amu): se ve medio verde hasta este momento. */
+  poisonUntil = 0;
+  /** Jaula de NOSU: vuelve a estar lista en este momento (mientras tanto dispara la esfera lisa). */
+  cageReadyAt = 0;
   /** Golpes seguidos recibidos (para el contador de combo del rival). */
   comboTaken = 0;
   intent: Intent = NO_INTENT;
@@ -187,9 +215,14 @@ export class Fighter {
     return this.state === 'crouch' || (this.state === 'block' && this.intent.down) || (this.state === 'attack' && (this.move?.id === 'crouchJab' || this.move?.id === 'sweep'));
   }
 
-  /** Carga del poder básico (0 = recién lanzado, 1 = listo). */
+  /** Recarga del poder básico de este luchador (ms). */
+  get powerCooldown(): number {
+    return kitOf(this.def.id).powerCooldown ?? POWER_COOLDOWN;
+  }
+
+  /** Carga del poder básico (0 = recién lanzado o con el escudo activo, 1 = listo). */
   get powerCharge(): number {
-    return this.powerReadyAt <= this.now ? 1 : 1 - (this.powerReadyAt - this.now) / POWER_COOLDOWN;
+    return this.powerReadyAt <= this.now ? 1 : Math.max(0, 1 - (this.powerReadyAt - this.now) / this.powerCooldown);
   }
 
   get invulnerable(): boolean {
@@ -237,6 +270,10 @@ export class Fighter {
     this.comboTaken = 0;
     this.chainCount = 0;
     this.invulnUntil = 0;
+    this.poisonUntil = 0;
+    this.gold = 0;
+    this.lickLevel = 0;
+    this.cageReadyAt = 0;
     this.entrance = null;
     this.sprite.setAlpha(1).setTint(this.tintOverride ?? tintOf(this.def));
     this.setState('intro');
@@ -368,7 +405,7 @@ export class Fighter {
       id = btn === 'kick' ? 'airKick' : 'airPunch';
     } else if (btn !== 'kick' && this.matches('uppercut')) {
       id = 'uppercut';
-    } else if (btn !== 'kick' && this.matches('special') && !this.arena.hasProjectile(this) && this.now >= this.powerReadyAt) {
+    } else if (btn !== 'kick' && this.matches('special') && (kitOf(this.def.id).multi || !this.arena.hasProjectile(this)) && !this.gold && this.now >= this.powerReadyAt) {
       id = 'special';
     } else if (this.intent.down) {
       id = btn === 'kick' ? 'sweep' : 'crouchJab';
@@ -379,20 +416,24 @@ export class Fighter {
     const special = id === 'special' || id === 'uppercut';
     if (cancel) {
       const current = this.move!;
-      if (special ? !current.cancel : !current.chain?.includes(id) || this.chainCount >= CHAIN_FINISHER) return false;
+      if (special ? !current.cancel : !current.chain?.includes(id) || this.chainCount >= chainOf(this.def.id)) return false;
     }
-    this.startMove(MOVES[id], cancel && !special);
+    this.startMove(moveFor(this.def.id, id), cancel && !special);
     return true;
   }
 
   private startMove(move: MoveDef, chained: boolean): void {
     this.chainCount = chained ? this.chainCount + 1 : 1;
-    this.finisher = chained && this.chainCount >= CHAIN_FINISHER;
+    this.finisher = chained && this.chainCount >= chainOf(this.def.id);
     this.move = move;
+    this.armorUsed = false;
     this.moveStart = this.now;
     this.moveConnected = false;
     this.moveDone = false;
     this.moveSpawned = false;
+    this.chargeFrom = -1;
+    this.chargeStep = 0;
+    this.shotCharge = 0;
     if (move.air) this.airAttackUsed = true;
     if (!move.air) this.vx = this.grounded ? this.facing * (move.lunge ?? 0) : this.vx;
     if (move.invuln) this.invulnUntil = this.now + move.invuln;
@@ -426,7 +467,8 @@ export class Fighter {
   /** Daño final de un golpe de este luchador contra `target`. */
   damageAgainst(target: Fighter, move: MoveDef, hitNumber: number): number {
     const bonus = this.finisher && this.move === move ? CHAIN_FINISHER_BONUS : 1;
-    return Math.round(move.damage * this.def.stats.damage * (this.rage ? 1.15 : 1) * target.def.stats.defense * comboScale(hitNumber) * bonus);
+    const gold = this.gold && isNormal(move) ? this.gold : 1;
+    return Math.round(move.damage * this.def.stats.damage * (this.rage ? 1.15 : 1) * target.def.stats.defense * comboScale(hitNumber) * bonus * gold);
   }
 
   /** ¿Está bloqueando un golpe de `level` que viene desde `fromX`? */
@@ -444,10 +486,12 @@ export class Fighter {
    * Recibe un golpe. `dir` = sentido del empuje. `chip` = fracción del daño que pasa al bloquear.
    * Devuelve el resultado y el daño aplicado.
    */
-  receive(attacker: Fighter, move: MoveDef, opts: { dir: 1 | -1; chip?: number; fromX: number; finisher?: boolean; damage?: number }): { result: HitResult; damage: number } {
+  receive(attacker: Fighter, move: MoveDef, opts: { dir: 1 | -1; chip?: number; fromX: number; finisher?: boolean; damage?: number; unblockable?: boolean }): { result: HitResult; damage: number } {
     if (this.invulnerable) return { result: 'whiff', damage: 0 };
+    const armored = this.absorb(attacker, move, opts.damage);
+    if (armored) return armored;
 
-    if (this.blocks(move.level, opts.fromX)) {
+    if (!opts.unblockable && this.blocks(move.level, opts.fromX)) {
       const chip = Math.round((opts.damage ?? move.damage) * (opts.chip ?? 0));
       this.hp = Math.max(1, this.hp - chip); // el bloqueo no remata
       this.setState('block', move.blockstun);
@@ -457,11 +501,13 @@ export class Fighter {
       return { result: 'block', damage: chip };
     }
 
+    // Golpe de oro: se pierde si le pegan limpio.
+    if (this.gold) this.loseGold();
     const juggling = this.state === 'hurt' || this.state === 'knockdown';
     this.comboTaken = juggling ? this.comboTaken + 1 : 1;
-    const damage = opts.damage !== undefined
-      ? Math.round(opts.damage * comboScale(this.comboTaken))
-      : attacker.damageAgainst(this, move, this.comboTaken);
+    const damage = Math.round(opts.damage !== undefined
+      ? opts.damage * comboScale(this.comboTaken)
+      : attacker.damageAgainst(this, move, this.comboTaken));
     this.hp = Math.max(this.minHp, this.hp - damage);
     this.flashUntil = this.now + 70;
     this.move = null;
@@ -480,6 +526,61 @@ export class Fighter {
       this.vx = opts.dir * move.push;
     }
     return { result: 'hit', damage };
+  }
+
+  /**
+   * Armadura (Mayin): durante un golpe con armadura aguanta un impacto sin cortarse.
+   * Recibe el daño igual, pero sigue con su golpe. No aguanta las notas del ultimate ni un golpe que lo deja K.O.
+   */
+  private absorb(attacker: Fighter, move: MoveDef, fixed?: number): { result: HitResult; damage: number } | null {
+    const m = this.move;
+    if (this.state !== 'attack' || !m || this.armorUsed || move.id === 'superNote' || this.phase === 'recovery') return null;
+    if (!kitOf(this.def.id).armor?.includes(m.id)) return null;
+    const damage = fixed !== undefined ? fixed : attacker.damageAgainst(this, move, 1);
+    if (this.hp - damage <= this.minHp) return null;
+    this.armorUsed = true;
+    this.hp -= damage;
+    this.flashUntil = this.now + 90;
+    this.meter = Math.min(MAX_METER, this.meter + move.meter / 2);
+    attacker.meter = Math.min(MAX_METER, attacker.meter + move.meter);
+    this.arena.fx.ring(this.x, GROUND_Y - this.z - this.def.art.height * 0.5, 0xffb347, 150, 0.25);
+    return { result: 'hit', damage };
+  }
+
+  get chargeable(): boolean {
+    return !!POWERS[this.def.id]?.some((s) => s.charged);
+  }
+
+  /**
+   * Carga del poder (Pepper): sigue cargando mientras el clic está apretado y no pasaron CHARGE_MS.
+   * Brillo en el puño que crece; destello al llegar al máximo. Devuelve true mientras siga cargando.
+   */
+  private holdCharge(now: number): boolean {
+    if (this.chargeFrom < 0) this.chargeFrom = now;
+    const k = Math.min(1, (now - this.chargeFrom) / CHARGE_MS);
+    this.shotCharge = k;
+    if (!this.intent.punchHeld || k >= 1) return false;
+    const h = this.def.art.height;
+    const x = this.x + this.facing * h * 0.34;
+    const y = GROUND_Y - this.z - h * 0.58;
+    if (Math.random() < 0.8) this.arena.fx.trail(x, y, this.def.color, 18 + 50 * k);
+    // Cada cuarto de carga, un anillo (el último, blanco: carga completa).
+    const step = Math.floor(k * 4);
+    if (step > this.chargeStep) this.arena.fx.ring(x, y, step >= 3 ? 0xffffff : this.def.color, 50 + step * 25, 0.2);
+    this.chargeStep = step;
+    return true;
+  }
+
+  /** Carga el golpe de oro por `ms` (Slandor). */
+  chargeGold(mult: number, ms: number): void {
+    this.gold = mult;
+    this.goldUntil = this.now + ms;
+  }
+
+  /** Se apaga el golpe de oro sin usarlo (le pegaron o se acabó el tiempo). */
+  private loseGold(): void {
+    this.gold = 0;
+    this.arena.fx.ring(this.x, GROUND_Y - this.z - this.def.art.height * 0.5, 0x8a7a40, 120, 0.25);
   }
 
   /** Empuje al rival contra la pared: retrocede el atacante. */
@@ -526,11 +627,14 @@ export class Fighter {
     if (this.state === 'attack' && this.move) {
       const m = this.move;
       const e = now - this.moveStart;
-      if (!this.moveSpawned && e >= m.startup) {
+      if (!this.moveSpawned && e >= m.startup && m.id === 'special' && this.chargeable && this.holdCharge(now)) {
+        // Cargando: el golpe se queda en su pose hasta soltar el clic.
+        this.moveStart = now - m.startup;
+      } else if (!this.moveSpawned && e >= m.startup) {
         this.moveSpawned = true;
         if (m.id === 'special') {
+          this.powerReadyAt = now + this.powerCooldown;
           this.arena.spawnProjectile(this);
-          this.powerReadyAt = now + POWER_COOLDOWN;
         }
         if (m.id === 'super') this.arena.startSolo(this);
         if (m.id === 'uppercut') {
@@ -579,6 +683,11 @@ export class Fighter {
       this.facing = this.opponent.x >= this.x ? 1 : -1;
     }
 
+    // Golpe de oro cargado: chispas doradas que suben; se apaga solo al cumplir su tiempo.
+    if (this.gold && now >= this.goldUntil) this.loseGold();
+    if (this.gold && Math.random() < dt * 14) {
+      this.arena.fx.rise(this.x + Phaser.Math.Between(-60, 60), GROUND_Y - this.z - Phaser.Math.Between(80, this.def.art.height), 0xffd23f);
+    }
     if (this.state === 'dash' && now - this.lastGhost > 40) {
       this.lastGhost = now;
       this.arena.fx.ghost(this.sprite, this.def.color, 0.45);
@@ -608,12 +717,6 @@ export class Fighter {
       // La recuperación del uppercut corre al caer.
       this.vx = 0;
     }
-  }
-
-  /** Ganó el choque de ultimates: lanza el suyo completo (la barra ya se había gastado en el choque). */
-  forceUltimate(): void {
-    this.buffer = null;
-    this.startMove(MOVES.super, false);
   }
 
   /** Termina el súper cuando acaba el solo. */
@@ -677,6 +780,7 @@ export class Fighter {
       if (this.state === 'attack') this.animMove = this.moveStart;
     }
     const t = now - this.poseStart;
+    const regenerated = !!animationMetadata(this.scene, this.def);
     // Golpes en el suelo: la animación sigue las fases del golpe (preparación → impacto → recuperación)
     // en vez de repetirse en bucle; así cada golpe se ve completo y termina limpio.
     const m = this.state === 'attack' ? this.move : null;
@@ -689,10 +793,14 @@ export class Fighter {
     if (walking) visualTime = (Math.floor(steps) % Math.max(1, poseFrames(this.scene, this.def, pose).length)) * (1000 / 12) + 1;
     if (phased && frames > 1) {
       const FRAME = 1000 / 12;
-      const index = this.phase === 'startup' ? 0 : this.phase === 'active' ? Math.min(frames - 1, Math.ceil((frames - 1) / 2)) : frames - 1;
+      let index = this.phase === 'startup' ? 0 : this.phase === 'active' ? Math.min(frames - 1, Math.ceil((frames - 1) / 2)) : frames - 1;
+      const metadata = animationMetadata(this.scene, this.def);
+      if (metadata && m && this.phase) {
+        index = attackFrameIndex(now - this.moveStart, this.phase, m, frames, metadata.phaseFrames[pose]);
+      }
       visualTime = index * FRAME + 1;
     }
-    const loops = !phased && pose !== 'dash' && pose !== 'backdash' && pose !== 'knockdown' && pose !== 'getup' && pose !== 'ko';
+    const loops = !phased && !(regenerated && m?.air) && pose !== 'dash' && pose !== 'backdash' && pose !== 'knockdown' && pose !== 'getup' && pose !== 'ko';
     const r = resolvePose(this.scene, this.def, pose, visualTime, loops);
     if (this.sprite.frame.name !== r.frame) this.sprite.setFrame(r.frame);
 
@@ -702,15 +810,15 @@ export class Fighter {
     let oy = r.dy;
     let angle = r.angle;
     const breathing = pose === 'idle' || pose === 'crouch' || pose === 'intro' || pose === 'block' || pose === 'crouchBlock';
-    if (breathing) sy *= 1 + Math.sin(now / 240 + this.side) * 0.014;
-    if (walking) {
+    if (breathing && !regenerated) sy *= 1 + Math.sin(now / 240 + this.side) * 0.014;
+    if (walking && !regenerated) {
       // Un rebote por paso, en sincronía con el cambio de cuadro, e inclinación según la dirección.
       const stepPhase = steps % 1;
       oy -= Math.sin(stepPhase * Math.PI) * 9;
       angle += pose === 'walk' ? 2.5 : -3;
       sy *= 1 - Math.sin(stepPhase * Math.PI) * 0.012;
     }
-    if (pose === 'backdash' || pose === 'dash') {
+    if (!regenerated && (pose === 'backdash' || pose === 'dash')) {
       const p = Phaser.Math.Clamp((now - this.stateStart) / (pose === 'dash' ? DASH_MS : BACKDASH_MS), 0, 1);
       if (pose === 'backdash') {
         // Saltito hacia atrás: arco, inclinado hacia atrás y enderezándose al caer.
@@ -723,16 +831,16 @@ export class Fighter {
       }
     }
     if (this.state === 'hurt' && t < 140) ox = Math.sin(now * 0.09) * 7;
-    if (this.state === 'attack' && this.phase === 'active' && !this.move?.air) sx *= 1.03;
+    if (!regenerated && this.state === 'attack' && this.phase === 'active' && !this.move?.air) sx *= 1.03;
     // Golpe de un solo cuadro: breve preparación hacia atrás antes del impacto.
     if (phased && frames <= 1 && this.phase === 'startup') {
       sx *= 0.95;
       angle -= 5;
     }
     if (this.state === 'attack' && this.phase === 'startup' && this.move?.id === 'super') ox = Math.sin(now * 0.12) * 4;
-    if (pose === 'win') oy -= Math.abs(Math.sin(now / 180)) * 18;
+    if (pose === 'win' && !regenerated) oy -= Math.abs(Math.sin(now / 180)) * 18;
     // Uppercut en el aire: se inclina hacia adelante al subir y se endereza al caer.
-    if (this.state === 'attack' && this.move?.id === 'uppercut' && !this.grounded) angle += Phaser.Math.Clamp(this.vz / 290, -3, 8);
+    if (!regenerated && this.state === 'attack' && this.move?.id === 'uppercut' && !this.grounded) angle += Phaser.Math.Clamp(this.vz / 290, -3, 8);
     if (pose === 'super' && this.soloVisualTime !== null) {
       const t = this.soloVisualTime;
       const motion = superMotion(this.def.id, t, SOLOS[this.def.superMove.solo].duration,
@@ -747,7 +855,7 @@ export class Fighter {
     if (this.def.boss && pose !== 'down' && pose !== 'ko' && pose !== 'knockdown') sx *= 1 + Math.sin(now / 90) * 0.012;
     oy -= this.visualLift;
     // Aterrizaje: aplastamiento breve.
-    if (this.state === 'idle' && now < this.stateUntil) sy *= 0.94;
+    if (!regenerated && this.state === 'idle' && now < this.stateUntil) sy *= 0.94;
 
     this.sprite
       .setScale(this.scale * sx, this.scale * sy)
@@ -757,7 +865,10 @@ export class Fighter {
       .setDepth(this.state === 'attack' ? 22 : 20);
 
     if (now < this.flashUntil) this.sprite.setTint(0xffffff).setTintMode(Phaser.TintModes.FILL);
+    else if (now < this.poisonUntil) this.sprite.setTint(0x9dff6a).setTintMode(Phaser.TintModes.MULTIPLY);
     else if (this.state === 'block') this.sprite.setTint(0x9cc8ff).setTintMode(Phaser.TintModes.MULTIPLY);
+    // Golpe de oro: dorado, y parpadea el último segundo antes de apagarse.
+    else if (this.gold && !(this.goldUntil - now < 1000 && Math.floor(now / 90) % 2 === 0)) this.sprite.setTint(0xffe27a).setTintMode(Phaser.TintModes.MULTIPLY);
     else if (this.def.boss && this.def.art.placeholder) {
       // Entidad de sonido: silueta de luz (cian; roja al enfurecerse) que flota.
       this.sprite.setTint(this.rage ? 0xff4d6d : this.def.color).setTintMode(Phaser.TintModes.FILL);

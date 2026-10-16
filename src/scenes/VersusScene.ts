@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { preloadRegeneratedArt, registerRegeneratedArt } from '../visuals/roster/RegeneratedArt';
 import { CSS, GAME_HEIGHT, GAME_WIDTH, SCENES } from '../config';
 import { FIGHTERS, tintOf, type FighterId } from '../data/fighters';
 import { STAGES, type StageId } from '../data/stages';
@@ -28,7 +29,17 @@ export class VersusScene extends Phaser.Scene {
     super(SCENES.Versus);
   }
 
+  init(data: VersusData) {
+    this.data0 = data;
+  }
+
+  /** Arte nuevo (NOSU, Virrey, Amu…): sus poses se cargan aquí para que no salga el cuerpo provisional. */
+  preload() {
+    preloadRegeneratedArt(this, [this.data0.p1, this.data0.p2]);
+  }
+
   create(data: VersusData) {
+    registerRegeneratedArt(this, [data.p1, data.p2]);
     this.data0 = data;
     this.cameras.main.fadeIn(200, 11, 10, 14);
     Audio.stopMusic(600);

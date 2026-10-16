@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1954,
+        "h": 846
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-airKick-0",
+          "frame": {
+            "x": 335,
+            "y": 8,
+            "w": 295,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.4186440677966102,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "george-airKick-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 311,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5530546623794212,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "george-airKick-2",
+          "frame": {
+            "x": 8,
+            "y": 439,
+            "w": 447,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 447,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 447,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.34563758389261745,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "george-airKick-3",
+          "frame": {
+            "x": 646,
+            "y": 8,
+            "w": 451,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 451,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 451,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.4467849223946785,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "george-airKick-4",
+          "frame": {
+            "x": 1113,
+            "y": 8,
+            "w": 499,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 499,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 499,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.3557114228456914,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "george-airKick-5",
+          "frame": {
+            "x": 471,
+            "y": 439,
+            "w": 306,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5490196078431373,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "george-airKick-6",
+          "frame": {
+            "x": 793,
+            "y": 439,
+            "w": 285,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5052631578947369,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "george-airKick-7",
+          "frame": {
+            "x": 1628,
+            "y": 8,
+            "w": 318,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.4386792452830189,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "george-airKick",
+          "frame": {
+            "x": 335,
+            "y": 8,
+            "w": 295,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.4186440677966102,
+            "y": 0.9926650366748166
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1825,
+        "h": 994
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-airPunch-0",
+          "frame": {
+            "x": 484,
+            "y": 530,
+            "w": 328,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.40853658536585363,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "george-airPunch-1",
+          "frame": {
+            "x": 1462,
+            "y": 8,
+            "w": 355,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.4028169014084507,
+            "y": 0.9934640522875817
+          }
+        },
+        {
+          "filename": "george-airPunch-2",
+          "frame": {
+            "x": 8,
+            "y": 530,
+            "w": 460,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 460,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 460,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.38913043478260867,
+            "y": 0.993421052631579
+          }
+        },
+        {
+          "filename": "george-airPunch-3",
+          "frame": {
+            "x": 695,
+            "y": 8,
+            "w": 392,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 392,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 392,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.36096938775510207,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "george-airPunch-4",
+          "frame": {
+            "x": 1103,
+            "y": 8,
+            "w": 343,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.4198250728862974,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "george-airPunch-5",
+          "frame": {
+            "x": 828,
+            "y": 530,
+            "w": 338,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.4363905325443787,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "george-airPunch-6",
+          "frame": {
+            "x": 361,
+            "y": 8,
+            "w": 318,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.6336477987421384,
+            "y": 0.9940239043824701
+          }
+        },
+        {
+          "filename": "george-airPunch-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 337,
+            "h": 506
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 506
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 506
+          },
+          "pivot": {
+            "x": 0.787833827893175,
+            "y": 0.9940711462450593
+          }
+        },
+        {
+          "filename": "george-airPunch",
+          "frame": {
+            "x": 484,
+            "y": 530,
+            "w": 328,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.40853658536585363,
+            "y": 0.9933920704845814
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1799,
+        "h": 938
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-backdash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 323,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.4969040247678019,
+            "y": 0.9936974789915967
+          }
+        },
+        {
+          "filename": "george-backdash-1",
+          "frame": {
+            "x": 711,
+            "y": 500,
+            "w": 270,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 270,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 270,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.3685185185185185,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "george-backdash-2",
+          "frame": {
+            "x": 8,
+            "y": 500,
+            "w": 369,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.46747967479674796,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "george-backdash-3",
+          "frame": {
+            "x": 694,
+            "y": 8,
+            "w": 350,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.31,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "george-backdash-4",
+          "frame": {
+            "x": 1410,
+            "y": 8,
+            "w": 381,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.41601049868766404,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "george-backdash-5",
+          "frame": {
+            "x": 393,
+            "y": 500,
+            "w": 302,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.3294701986754967,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "george-backdash-6",
+          "frame": {
+            "x": 1060,
+            "y": 8,
+            "w": 334,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "george-backdash-7",
+          "frame": {
+            "x": 347,
+            "y": 8,
+            "w": 331,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "george-backdash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 323,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.4969040247678019,
+            "y": 0.9936974789915967
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1883,
+        "h": 952
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-special-0",
+          "frame": {
+            "x": 361,
+            "y": 8,
+            "w": 331,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.5015105740181269,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "george-special-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 337,
+            "h": 466
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 466
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 466
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935622317596566
+          }
+        },
+        {
+          "filename": "george-special-2",
+          "frame": {
+            "x": 708,
+            "y": 8,
+            "w": 431,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 431,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 431,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.4582366589327146,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "george-special-3",
+          "frame": {
+            "x": 1498,
+            "y": 8,
+            "w": 377,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "george-special-4",
+          "frame": {
+            "x": 710,
+            "y": 490,
+            "w": 346,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "george-special-5",
+          "frame": {
+            "x": 8,
+            "y": 490,
+            "w": 334,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "george-special-6",
+          "frame": {
+            "x": 358,
+            "y": 490,
+            "w": 336,
+            "h": 453
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 453
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 453
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933774834437086
+          }
+        },
+        {
+          "filename": "george-special-7",
+          "frame": {
+            "x": 1155,
+            "y": 8,
+            "w": 327,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "george-special",
+          "frame": {
+            "x": 361,
+            "y": 8,
+            "w": 331,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.5015105740181269,
+            "y": 0.9935483870967742
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1760,
+        "h": 998
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-block-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 322,
+            "h": 496
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 496
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 496
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939516129032258
+          }
+        },
+        {
+          "filename": "george-block-1",
+          "frame": {
+            "x": 346,
+            "y": 8,
+            "w": 340,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "george-block-2",
+          "frame": {
+            "x": 8,
+            "y": 520,
+            "w": 336,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "george-block-3",
+          "frame": {
+            "x": 719,
+            "y": 520,
+            "w": 338,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "george-block-4",
+          "frame": {
+            "x": 1052,
+            "y": 8,
+            "w": 340,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "george-block-5",
+          "frame": {
+            "x": 360,
+            "y": 520,
+            "w": 343,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.5014577259475219,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "george-block-6",
+          "frame": {
+            "x": 1408,
+            "y": 8,
+            "w": 344,
+            "h": 471
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 471
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 471
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936305732484076
+          }
+        },
+        {
+          "filename": "george-block-7",
+          "frame": {
+            "x": 702,
+            "y": 8,
+            "w": 334,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "george-block",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 322,
+            "h": 496
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 496
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 496
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939516129032258
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1773,
+        "h": 881
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-crouch-0",
+          "frame": {
+            "x": 1061,
+            "y": 8,
+            "w": 342,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "george-crouch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 324,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "george-crouch-2",
+          "frame": {
+            "x": 348,
+            "y": 8,
+            "w": 335,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.5029850746268657,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "george-crouch-3",
+          "frame": {
+            "x": 699,
+            "y": 8,
+            "w": 346,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "george-crouch-4",
+          "frame": {
+            "x": 1419,
+            "y": 8,
+            "w": 346,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "george-crouch-5",
+          "frame": {
+            "x": 362,
+            "y": 458,
+            "w": 338,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.5059171597633136,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "george-crouch-6",
+          "frame": {
+            "x": 8,
+            "y": 458,
+            "w": 338,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "george-crouch-7",
+          "frame": {
+            "x": 716,
+            "y": 458,
+            "w": 348,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "george-crouch",
+          "frame": {
+            "x": 1061,
+            "y": 8,
+            "w": 342,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1904,
+        "h": 803
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-crouchBlock-0",
+          "frame": {
+            "x": 419,
+            "y": 8,
+            "w": 365,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "george-crouchBlock-1",
+          "frame": {
+            "x": 8,
+            "y": 425,
+            "w": 344,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "george-crouchBlock-2",
+          "frame": {
+            "x": 736,
+            "y": 425,
+            "w": 359,
+            "h": 338
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 338
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 338
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911242603550295
+          }
+        },
+        {
+          "filename": "george-crouchBlock-3",
+          "frame": {
+            "x": 368,
+            "y": 425,
+            "w": 352,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918256130790191
+          }
+        },
+        {
+          "filename": "george-crouchBlock-4",
+          "frame": {
+            "x": 800,
+            "y": 8,
+            "w": 364,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.48626373626373626,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "george-crouchBlock-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 395,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 395,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 395,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.43670886075949367,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "george-crouchBlock-6",
+          "frame": {
+            "x": 1544,
+            "y": 8,
+            "w": 352,
+            "h": 383
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 383
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 383
+          },
+          "pivot": {
+            "x": 0.4971590909090909,
+            "y": 0.9921671018276762
+          }
+        },
+        {
+          "filename": "george-crouchBlock-7",
+          "frame": {
+            "x": 1180,
+            "y": 8,
+            "w": 348,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.5014367816091954,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "george-crouchBlock",
+          "frame": {
+            "x": 419,
+            "y": 8,
+            "w": 365,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924433249370277
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1948,
+        "h": 960
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-crouchHurt-0",
+          "frame": {
+            "x": 810,
+            "y": 8,
+            "w": 374,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.46390374331550804,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "george-crouchHurt-1",
+          "frame": {
+            "x": 1576,
+            "y": 8,
+            "w": 364,
+            "h": 453
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 453
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 453
+          },
+          "pivot": {
+            "x": 0.4491758241758242,
+            "y": 0.9933774834437086
+          }
+        },
+        {
+          "filename": "george-crouchHurt-2",
+          "frame": {
+            "x": 430,
+            "y": 8,
+            "w": 364,
+            "h": 471
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 471
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 471
+          },
+          "pivot": {
+            "x": 0.4574175824175824,
+            "y": 0.9936305732484076
+          }
+        },
+        {
+          "filename": "george-crouchHurt-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 406,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 406,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 406,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.5012315270935961,
+            "y": 0.9936974789915967
+          }
+        },
+        {
+          "filename": "george-crouchHurt-4",
+          "frame": {
+            "x": 793,
+            "y": 500,
+            "w": 374,
+            "h": 439
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 439
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 439
+          },
+          "pivot": {
+            "x": 0.4532085561497326,
+            "y": 0.9931662870159453
+          }
+        },
+        {
+          "filename": "george-crouchHurt-5",
+          "frame": {
+            "x": 1200,
+            "y": 8,
+            "w": 360,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.45555555555555555,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "george-crouchHurt-6",
+          "frame": {
+            "x": 400,
+            "y": 500,
+            "w": 377,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.46153846153846156,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "george-crouchHurt-7",
+          "frame": {
+            "x": 8,
+            "y": 500,
+            "w": 376,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.44813829787234044,
+            "y": 0.9933628318584071
+          }
+        },
+        {
+          "filename": "george-crouchHurt",
+          "frame": {
+            "x": 810,
+            "y": 8,
+            "w": 374,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.46390374331550804,
+            "y": 0.9935205183585313
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1960,
+        "h": 852
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-crouchPunch-0",
+          "frame": {
+            "x": 397,
+            "y": 8,
+            "w": 361,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.4930747922437673,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "george-crouchPunch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 373,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.4745308310991957,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "george-crouchPunch-2",
+          "frame": {
+            "x": 1173,
+            "y": 8,
+            "w": 398,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 398,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 398,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.4396984924623116,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "george-crouchPunch-3",
+          "frame": {
+            "x": 774,
+            "y": 8,
+            "w": 383,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.4490861618798956,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "george-crouchPunch-4",
+          "frame": {
+            "x": 8,
+            "y": 439,
+            "w": 367,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.48637602179836514,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "george-crouchPunch-5",
+          "frame": {
+            "x": 1587,
+            "y": 8,
+            "w": 365,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.4794520547945205,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "george-crouchPunch-6",
+          "frame": {
+            "x": 391,
+            "y": 439,
+            "w": 361,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.48337950138504154,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "george-crouchPunch-7",
+          "frame": {
+            "x": 768,
+            "y": 439,
+            "w": 353,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.49291784702549574,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "george-crouchPunch",
+          "frame": {
+            "x": 397,
+            "y": 8,
+            "w": 361,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.4930747922437673,
+            "y": 0.9927536231884058
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2020,
+        "h": 877
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-dash-0",
+          "frame": {
+            "x": 352,
+            "y": 8,
+            "w": 309,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "george-dash-1",
+          "frame": {
+            "x": 1708,
+            "y": 8,
+            "w": 304,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.36348684210526316,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "george-dash-2",
+          "frame": {
+            "x": 8,
+            "y": 465,
+            "w": 355,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.37464788732394366,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "george-dash-3",
+          "frame": {
+            "x": 379,
+            "y": 465,
+            "w": 406,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 406,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 406,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "george-dash-4",
+          "frame": {
+            "x": 1274,
+            "y": 8,
+            "w": 418,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 418,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 418,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "george-dash-5",
+          "frame": {
+            "x": 677,
+            "y": 8,
+            "w": 255,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 255,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 255,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.5078431372549019,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "george-dash-6",
+          "frame": {
+            "x": 948,
+            "y": 8,
+            "w": 310,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.4467741935483871,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "george-dash-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 328,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "george-dash",
+          "frame": {
+            "x": 352,
+            "y": 8,
+            "w": 309,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1699,
+        "h": 822
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 255,
+            "h": 567
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 255,
+            "h": 567
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 255,
+            "h": 567
+          },
+          "pivot": {
+            "x": 0.5117647058823529,
+            "y": 0.9947089947089947
+          }
+        },
+        {
+          "filename": "george-ko-1",
+          "frame": {
+            "x": 279,
+            "y": 8,
+            "w": 254,
+            "h": 512
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 254,
+            "h": 512
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 254,
+            "h": 512
+          },
+          "pivot": {
+            "x": 0.5059055118110236,
+            "y": 0.994140625
+          }
+        },
+        {
+          "filename": "george-ko-2",
+          "frame": {
+            "x": 549,
+            "y": 8,
+            "w": 282,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.4858156028368794,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "george-ko-3",
+          "frame": {
+            "x": 847,
+            "y": 8,
+            "w": 414,
+            "h": 342
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 414,
+            "h": 342
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 414,
+            "h": 342
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9912280701754386
+          }
+        },
+        {
+          "filename": "george-ko-4",
+          "frame": {
+            "x": 1277,
+            "y": 8,
+            "w": 414,
+            "h": 292
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 414,
+            "h": 292
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 414,
+            "h": 292
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9897260273972602
+          }
+        },
+        {
+          "filename": "george-ko-5",
+          "frame": {
+            "x": 8,
+            "y": 591,
+            "w": 402,
+            "h": 223
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 223
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 223
+          },
+          "pivot": {
+            "x": 0.5099502487562189,
+            "y": 0.9865470852017937
+          }
+        },
+        {
+          "filename": "george-ko-6",
+          "frame": {
+            "x": 426,
+            "y": 591,
+            "w": 371,
+            "h": 166
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 166
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 166
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9819277108433735
+          }
+        },
+        {
+          "filename": "george-ko-7",
+          "frame": {
+            "x": 813,
+            "y": 591,
+            "w": 379,
+            "h": 156
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 156
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 156
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9807692307692307
+          }
+        },
+        {
+          "filename": "george-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 255,
+            "h": 567
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 255,
+            "h": 567
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 255,
+            "h": 567
+          },
+          "pivot": {
+            "x": 0.5117647058823529,
+            "y": 0.9947089947089947
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1925,
+        "h": 423
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-down-0",
+          "frame": {
+            "x": 391,
+            "y": 250,
+            "w": 392,
+            "h": 164
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 392,
+            "h": 164
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 392,
+            "h": 164
+          },
+          "pivot": {
+            "x": 0.4885204081632653,
+            "y": 0.9817073170731707
+          }
+        },
+        {
+          "filename": "george-down-1",
+          "frame": {
+            "x": 1163,
+            "y": 8,
+            "w": 370,
+            "h": 188
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 188
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 188
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9840425531914894
+          }
+        },
+        {
+          "filename": "george-down-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 355,
+            "h": 226
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 226
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 226
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9867256637168141
+          }
+        },
+        {
+          "filename": "george-down-3",
+          "frame": {
+            "x": 1549,
+            "y": 8,
+            "w": 368,
+            "h": 176
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 176
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 176
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9829545454545454
+          }
+        },
+        {
+          "filename": "george-down-4",
+          "frame": {
+            "x": 379,
+            "y": 8,
+            "w": 387,
+            "h": 202
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 202
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 202
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9851485148514851
+          }
+        },
+        {
+          "filename": "george-down-5",
+          "frame": {
+            "x": 782,
+            "y": 8,
+            "w": 365,
+            "h": 199
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 199
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 199
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9849246231155779
+          }
+        },
+        {
+          "filename": "george-down-6",
+          "frame": {
+            "x": 8,
+            "y": 250,
+            "w": 367,
+            "h": 165
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 165
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 165
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9818181818181818
+          }
+        },
+        {
+          "filename": "george-down-7",
+          "frame": {
+            "x": 799,
+            "y": 250,
+            "w": 381,
+            "h": 157
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 157
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 157
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9808917197452229
+          }
+        },
+        {
+          "filename": "george-down",
+          "frame": {
+            "x": 391,
+            "y": 250,
+            "w": 392,
+            "h": 164
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 392,
+            "h": 164
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 392,
+            "h": 164
+          },
+          "pivot": {
+            "x": 0.4885204081632653,
+            "y": 0.9817073170731707
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2025,
+        "h": 915
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-fall-0",
+          "frame": {
+            "x": 309,
+            "y": 512,
+            "w": 306,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.5049019607843137,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "george-fall-1",
+          "frame": {
+            "x": 8,
+            "y": 512,
+            "w": 285,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.4368421052631579,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "george-fall-2",
+          "frame": {
+            "x": 306,
+            "y": 8,
+            "w": 287,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 287,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 287,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.6219512195121951,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "george-fall-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 282,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.5177304964539007,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "george-fall-4",
+          "frame": {
+            "x": 609,
+            "y": 8,
+            "w": 369,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.6436314363143631,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "george-fall-5",
+          "frame": {
+            "x": 1639,
+            "y": 8,
+            "w": 378,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.6521164021164021,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "george-fall-6",
+          "frame": {
+            "x": 994,
+            "y": 8,
+            "w": 323,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.6006191950464397,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "george-fall-7",
+          "frame": {
+            "x": 1333,
+            "y": 8,
+            "w": 290,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5103448275862069,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "george-fall",
+          "frame": {
+            "x": 309,
+            "y": 512,
+            "w": 306,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.5049019607843137,
+            "y": 0.9915966386554622
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2038,
+        "h": 713
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-getup-0",
+          "frame": {
+            "x": 399,
+            "y": 484,
+            "w": 380,
+            "h": 162
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 380,
+            "h": 162
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 380,
+            "h": 162
+          },
+          "pivot": {
+            "x": 0.4986842105263158,
+            "y": 0.9814814814814815
+          }
+        },
+        {
+          "filename": "george-getup-1",
+          "frame": {
+            "x": 8,
+            "y": 484,
+            "w": 375,
+            "h": 221
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 221
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 221
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9864253393665159
+          }
+        },
+        {
+          "filename": "george-getup-2",
+          "frame": {
+            "x": 1675,
+            "y": 8,
+            "w": 355,
+            "h": 296
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 296
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 296
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9898648648648649
+          }
+        },
+        {
+          "filename": "george-getup-3",
+          "frame": {
+            "x": 1355,
+            "y": 8,
+            "w": 304,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "george-getup-4",
+          "frame": {
+            "x": 1012,
+            "y": 8,
+            "w": 327,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.4740061162079511,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "george-getup-5",
+          "frame": {
+            "x": 708,
+            "y": 8,
+            "w": 288,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.4913194444444444,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "george-getup-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 320,
+            "h": 460
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 320,
+            "h": 460
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 320,
+            "h": 460
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934782608695653
+          }
+        },
+        {
+          "filename": "george-getup-7",
+          "frame": {
+            "x": 344,
+            "y": 8,
+            "w": 348,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934640522875817
+          }
+        },
+        {
+          "filename": "george-getup",
+          "frame": {
+            "x": 399,
+            "y": 484,
+            "w": 380,
+            "h": 162
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 380,
+            "h": 162
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 380,
+            "h": 162
+          },
+          "pivot": {
+            "x": 0.4986842105263158,
+            "y": 0.9814814814814815
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1770,
+        "h": 1007
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-hurt-0",
+          "frame": {
+            "x": 710,
+            "y": 8,
+            "w": 315,
+            "h": 498
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 498
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 498
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939759036144579
+          }
+        },
+        {
+          "filename": "george-hurt-1",
+          "frame": {
+            "x": 8,
+            "y": 527,
+            "w": 334,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936440677966102
+          }
+        },
+        {
+          "filename": "george-hurt-2",
+          "frame": {
+            "x": 358,
+            "y": 527,
+            "w": 355,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.5408450704225352,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "george-hurt-3",
+          "frame": {
+            "x": 729,
+            "y": 527,
+            "w": 337,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.5311572700296736,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "george-hurt-4",
+          "frame": {
+            "x": 1409,
+            "y": 8,
+            "w": 353,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "george-hurt-5",
+          "frame": {
+            "x": 360,
+            "y": 8,
+            "w": 334,
+            "h": 500
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 500
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 500
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994
+          }
+        },
+        {
+          "filename": "george-hurt-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 336,
+            "h": 503
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 503
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 503
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940357852882704
+          }
+        },
+        {
+          "filename": "george-hurt-7",
+          "frame": {
+            "x": 1041,
+            "y": 8,
+            "w": 352,
+            "h": 494
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 494
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 494
+          },
+          "pivot": {
+            "x": 0.5014204545454546,
+            "y": 0.9939271255060729
+          }
+        },
+        {
+          "filename": "george-hurt",
+          "frame": {
+            "x": 710,
+            "y": 8,
+            "w": 315,
+            "h": 498
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 498
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 498
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939759036144579
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1709,
+        "h": 1010
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-idle-0",
+          "frame": {
+            "x": 347,
+            "y": 8,
+            "w": 322,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939393939393939
+          }
+        },
+        {
+          "filename": "george-idle-1",
+          "frame": {
+            "x": 685,
+            "y": 8,
+            "w": 323,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939393939393939
+          }
+        },
+        {
+          "filename": "george-idle-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 323,
+            "h": 497
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 497
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 497
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993963782696177
+          }
+        },
+        {
+          "filename": "george-idle-3",
+          "frame": {
+            "x": 1024,
+            "y": 8,
+            "w": 332,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "george-idle-4",
+          "frame": {
+            "x": 1372,
+            "y": 8,
+            "w": 329,
+            "h": 484
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 484
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 484
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993801652892562
+          }
+        },
+        {
+          "filename": "george-idle-5",
+          "frame": {
+            "x": 8,
+            "y": 521,
+            "w": 326,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "george-idle-6",
+          "frame": {
+            "x": 711,
+            "y": 521,
+            "w": 326,
+            "h": 473
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 473
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 473
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936575052854123
+          }
+        },
+        {
+          "filename": "george-idle-7",
+          "frame": {
+            "x": 350,
+            "y": 521,
+            "w": 345,
+            "h": 479
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 479
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 479
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937369519832986
+          }
+        },
+        {
+          "filename": "george-idle",
+          "frame": {
+            "x": 347,
+            "y": 8,
+            "w": 322,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939393939393939
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1768,
+        "h": 1003
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-intro-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 281,
+            "h": 520
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 520
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 520
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9942307692307693
+          }
+        },
+        {
+          "filename": "george-intro-1",
+          "frame": {
+            "x": 740,
+            "y": 8,
+            "w": 283,
+            "h": 513
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 513
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 513
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941520467836257
+          }
+        },
+        {
+          "filename": "george-intro-2",
+          "frame": {
+            "x": 1039,
+            "y": 8,
+            "w": 377,
+            "h": 506
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 506
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 506
+          },
+          "pivot": {
+            "x": 0.5026525198938993,
+            "y": 0.9940711462450593
+          }
+        },
+        {
+          "filename": "george-intro-3",
+          "frame": {
+            "x": 305,
+            "y": 8,
+            "w": 419,
+            "h": 516
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 419,
+            "h": 516
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 516
+          },
+          "pivot": {
+            "x": 0.5035799522673031,
+            "y": 0.9941860465116279
+          }
+        },
+        {
+          "filename": "george-intro-4",
+          "frame": {
+            "x": 1432,
+            "y": 8,
+            "w": 328,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.5045731707317073,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "george-intro-5",
+          "frame": {
+            "x": 768,
+            "y": 544,
+            "w": 342,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.46345029239766083,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "george-intro-6",
+          "frame": {
+            "x": 409,
+            "y": 544,
+            "w": 343,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.5058309037900874,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "george-intro-7",
+          "frame": {
+            "x": 8,
+            "y": 544,
+            "w": 385,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "george-intro",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 281,
+            "h": 520
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 520
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 520
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9942307692307693
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1859,
+        "h": 902
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-jump-0",
+          "frame": {
+            "x": 403,
+            "y": 8,
+            "w": 345,
+            "h": 473
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 473
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 473
+          },
+          "pivot": {
+            "x": 0.5014492753623189,
+            "y": 0.9936575052854123
+          }
+        },
+        {
+          "filename": "george-jump-1",
+          "frame": {
+            "x": 8,
+            "y": 523,
+            "w": 292,
+            "h": 371
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 292,
+            "h": 371
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 292,
+            "h": 371
+          },
+          "pivot": {
+            "x": 0.4434931506849315,
+            "y": 0.9919137466307277
+          }
+        },
+        {
+          "filename": "george-jump-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 379,
+            "h": 499
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 499
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 499
+          },
+          "pivot": {
+            "x": 0.2836411609498681,
+            "y": 0.9939879759519038
+          }
+        },
+        {
+          "filename": "george-jump-3",
+          "frame": {
+            "x": 1546,
+            "y": 8,
+            "w": 305,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5180327868852459,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "george-jump-4",
+          "frame": {
+            "x": 316,
+            "y": 523,
+            "w": 335,
+            "h": 343
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 343
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 343
+          },
+          "pivot": {
+            "x": 0.4925373134328358,
+            "y": 0.9912536443148688
+          }
+        },
+        {
+          "filename": "george-jump-5",
+          "frame": {
+            "x": 1121,
+            "y": 8,
+            "w": 409,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.6638141809290954,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "george-jump-6",
+          "frame": {
+            "x": 667,
+            "y": 523,
+            "w": 361,
+            "h": 332
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 332
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 332
+          },
+          "pivot": {
+            "x": 0.45706371191135736,
+            "y": 0.9909638554216867
+          }
+        },
+        {
+          "filename": "george-jump-7",
+          "frame": {
+            "x": 764,
+            "y": 8,
+            "w": 341,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936440677966102
+          }
+        },
+        {
+          "filename": "george-jump",
+          "frame": {
+            "x": 403,
+            "y": 8,
+            "w": 345,
+            "h": 473
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 473
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 473
+          },
+          "pivot": {
+            "x": 0.5014492753623189,
+            "y": 0.9936575052854123
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1906,
+        "h": 974
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-kick-0",
+          "frame": {
+            "x": 645,
+            "y": 8,
+            "w": 319,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936974789915967
+          }
+        },
+        {
+          "filename": "george-kick-1",
+          "frame": {
+            "x": 1260,
+            "y": 8,
+            "w": 296,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 296,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.44763513513513514,
+            "y": 0.9936440677966102
+          }
+        },
+        {
+          "filename": "george-kick-2",
+          "frame": {
+            "x": 411,
+            "y": 502,
+            "w": 452,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 452,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 452,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.3606194690265487,
+            "y": 0.993421052631579
+          }
+        },
+        {
+          "filename": "george-kick-3",
+          "frame": {
+            "x": 8,
+            "y": 502,
+            "w": 387,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.3397932816537468,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "george-kick-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 288,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.359375,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "george-kick-5",
+          "frame": {
+            "x": 980,
+            "y": 8,
+            "w": 264,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 264,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 264,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.21022727272727273,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "george-kick-6",
+          "frame": {
+            "x": 312,
+            "y": 8,
+            "w": 317,
+            "h": 477
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 477
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 477
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937106918238994
+          }
+        },
+        {
+          "filename": "george-kick-7",
+          "frame": {
+            "x": 1572,
+            "y": 8,
+            "w": 326,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "george-kick",
+          "frame": {
+            "x": 645,
+            "y": 8,
+            "w": 319,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936974789915967
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1897,
+        "h": 707
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-knockdown-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 302,
+            "h": 482
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 482
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 482
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937759336099585
+          }
+        },
+        {
+          "filename": "george-knockdown-1",
+          "frame": {
+            "x": 737,
+            "y": 8,
+            "w": 344,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5770348837209303,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "george-knockdown-2",
+          "frame": {
+            "x": 326,
+            "y": 8,
+            "w": 395,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 395,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 395,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5569620253164557,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "george-knockdown-3",
+          "frame": {
+            "x": 1097,
+            "y": 8,
+            "w": 408,
+            "h": 337
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 408,
+            "h": 337
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 408,
+            "h": 337
+          },
+          "pivot": {
+            "x": 0.6654411764705882,
+            "y": 0.9910979228486647
+          }
+        },
+        {
+          "filename": "george-knockdown-4",
+          "frame": {
+            "x": 1521,
+            "y": 8,
+            "w": 368,
+            "h": 319
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 319
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 319
+          },
+          "pivot": {
+            "x": 0.5366847826086957,
+            "y": 0.9905956112852664
+          }
+        },
+        {
+          "filename": "george-knockdown-5",
+          "frame": {
+            "x": 371,
+            "y": 506,
+            "w": 402,
+            "h": 170
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 170
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 170
+          },
+          "pivot": {
+            "x": 0.5012437810945274,
+            "y": 0.9823529411764705
+          }
+        },
+        {
+          "filename": "george-knockdown-6",
+          "frame": {
+            "x": 8,
+            "y": 506,
+            "w": 347,
+            "h": 193
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 193
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 193
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9844559585492227
+          }
+        },
+        {
+          "filename": "george-knockdown-7",
+          "frame": {
+            "x": 789,
+            "y": 506,
+            "w": 418,
+            "h": 124
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 418,
+            "h": 124
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 418,
+            "h": 124
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9758064516129032
+          }
+        },
+        {
+          "filename": "george-knockdown",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 302,
+            "h": 482
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 482
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 482
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937759336099585
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1809,
+        "h": 939
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-punch-0",
+          "frame": {
+            "x": 1467,
+            "y": 8,
+            "w": 334,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933628318584071
+          }
+        },
+        {
+          "filename": "george-punch-1",
+          "frame": {
+            "x": 8,
+            "y": 481,
+            "w": 337,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "george-punch-2",
+          "frame": {
+            "x": 745,
+            "y": 481,
+            "w": 358,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.49441340782122906,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "george-punch-3",
+          "frame": {
+            "x": 361,
+            "y": 481,
+            "w": 368,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.48777173913043476,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "george-punch-4",
+          "frame": {
+            "x": 1077,
+            "y": 8,
+            "w": 374,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.4799465240641711,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "george-punch-5",
+          "frame": {
+            "x": 356,
+            "y": 8,
+            "w": 354,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993421052631579
+          }
+        },
+        {
+          "filename": "george-punch-6",
+          "frame": {
+            "x": 726,
+            "y": 8,
+            "w": 335,
+            "h": 455
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 455
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 455
+          },
+          "pivot": {
+            "x": 0.5014925373134328,
+            "y": 0.9934065934065934
+          }
+        },
+        {
+          "filename": "george-punch-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 332,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "george-punch",
+          "frame": {
+            "x": 1467,
+            "y": 8,
+            "w": 334,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933628318584071
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1878,
+        "h": 945
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-super-0",
+          "frame": {
+            "x": 426,
+            "y": 8,
+            "w": 357,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.40476190476190477,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "george-super-1",
+          "frame": {
+            "x": 1159,
+            "y": 8,
+            "w": 354,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.4406779661016949,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "george-super-2",
+          "frame": {
+            "x": 8,
+            "y": 494,
+            "w": 368,
+            "h": 443
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 443
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 443
+          },
+          "pivot": {
+            "x": 0.44565217391304346,
+            "y": 0.9932279909706546
+          }
+        },
+        {
+          "filename": "george-super-3",
+          "frame": {
+            "x": 799,
+            "y": 8,
+            "w": 344,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.4752906976744186,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "george-super-4",
+          "frame": {
+            "x": 739,
+            "y": 494,
+            "w": 403,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 403,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 403,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.47642679900744417,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "george-super-5",
+          "frame": {
+            "x": 392,
+            "y": 494,
+            "w": 331,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.4984894259818731,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "george-super-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 402,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "george-super-7",
+          "frame": {
+            "x": 1529,
+            "y": 8,
+            "w": 341,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.4809384164222874,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "george-super",
+          "frame": {
+            "x": 426,
+            "y": 8,
+            "w": 357,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.40476190476190477,
+            "y": 0.9935897435897436
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2014,
+        "h": 801
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-sweep-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 329,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "george-sweep-1",
+          "frame": {
+            "x": 1381,
+            "y": 8,
+            "w": 308,
+            "h": 323
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 323
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 323
+          },
+          "pivot": {
+            "x": 0.4675324675324675,
+            "y": 0.9907120743034056
+          }
+        },
+        {
+          "filename": "george-sweep-2",
+          "frame": {
+            "x": 8,
+            "y": 481,
+            "w": 453,
+            "h": 312
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 453,
+            "h": 312
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 453,
+            "h": 312
+          },
+          "pivot": {
+            "x": 0.3830022075055188,
+            "y": 0.9903846153846154
+          }
+        },
+        {
+          "filename": "george-sweep-3",
+          "frame": {
+            "x": 477,
+            "y": 481,
+            "w": 347,
+            "h": 304
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 304
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 304
+          },
+          "pivot": {
+            "x": 0.5288184438040345,
+            "y": 0.9901315789473685
+          }
+        },
+        {
+          "filename": "george-sweep-4",
+          "frame": {
+            "x": 1705,
+            "y": 8,
+            "w": 301,
+            "h": 323
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 323
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 323
+          },
+          "pivot": {
+            "x": 0.5897009966777409,
+            "y": 0.9907120743034056
+          }
+        },
+        {
+          "filename": "george-sweep-5",
+          "frame": {
+            "x": 697,
+            "y": 8,
+            "w": 319,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.4780564263322884,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "george-sweep-6",
+          "frame": {
+            "x": 1032,
+            "y": 8,
+            "w": 333,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "george-sweep-7",
+          "frame": {
+            "x": 353,
+            "y": 8,
+            "w": 328,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993421052631579
+          }
+        },
+        {
+          "filename": "george-sweep",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 329,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934354485776805
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1977,
+        "h": 954
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-uppercut-0",
+          "frame": {
+            "x": 943,
+            "y": 8,
+            "w": 333,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "george-uppercut-1",
+          "frame": {
+            "x": 343,
+            "y": 526,
+            "w": 314,
+            "h": 358
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 358
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916201117318436
+          }
+        },
+        {
+          "filename": "george-uppercut-2",
+          "frame": {
+            "x": 588,
+            "y": 8,
+            "w": 339,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993421052631579
+          }
+        },
+        {
+          "filename": "george-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 243,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 243,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 243,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.32510288065843623,
+            "y": 0.9940239043824701
+          }
+        },
+        {
+          "filename": "george-uppercut-4",
+          "frame": {
+            "x": 267,
+            "y": 8,
+            "w": 305,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.4967213114754098,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "george-uppercut-5",
+          "frame": {
+            "x": 8,
+            "y": 526,
+            "w": 319,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "george-uppercut-6",
+          "frame": {
+            "x": 1640,
+            "y": 8,
+            "w": 329,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "george-uppercut-7",
+          "frame": {
+            "x": 1292,
+            "y": 8,
+            "w": 332,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "george-uppercut",
+          "frame": {
+            "x": 943,
+            "y": 8,
+            "w": 333,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932735426008968
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2006,
+        "h": 995
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-win-0",
+          "frame": {
+            "x": 329,
+            "y": 526,
+            "w": 311,
+            "h": 458
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 458
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 458
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934497816593887
+          }
+        },
+        {
+          "filename": "george-win-1",
+          "frame": {
+            "x": 8,
+            "y": 526,
+            "w": 305,
+            "h": 461
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 461
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 461
+          },
+          "pivot": {
+            "x": 0.5032786885245901,
+            "y": 0.9934924078091106
+          }
+        },
+        {
+          "filename": "george-win-2",
+          "frame": {
+            "x": 349,
+            "y": 8,
+            "w": 286,
+            "h": 479
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 479
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 479
+          },
+          "pivot": {
+            "x": 0.5244755244755245,
+            "y": 0.9937369519832986
+          }
+        },
+        {
+          "filename": "george-win-3",
+          "frame": {
+            "x": 651,
+            "y": 8,
+            "w": 317,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.5094637223974764,
+            "y": 0.9936974789915967
+          }
+        },
+        {
+          "filename": "george-win-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 325,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940239043824701
+          }
+        },
+        {
+          "filename": "george-win-5",
+          "frame": {
+            "x": 1617,
+            "y": 8,
+            "w": 381,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.5590551181102362,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "george-win-6",
+          "frame": {
+            "x": 984,
+            "y": 8,
+            "w": 303,
+            "h": 475
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 303,
+            "h": 475
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 303,
+            "h": 475
+          },
+          "pivot": {
+            "x": 0.5313531353135313,
+            "y": 0.9936842105263158
+          }
+        },
+        {
+          "filename": "george-win-7",
+          "frame": {
+            "x": 1303,
+            "y": 8,
+            "w": 298,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.5218120805369127,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "george-win",
+          "frame": {
+            "x": 329,
+            "y": 526,
+            "w": 311,
+            "h": 458
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 458
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 458
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934497816593887
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1815,
+        "h": 951
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-walk-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 359,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "george-walk-1",
+          "frame": {
+            "x": 8,
+            "y": 494,
+            "w": 277,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.4981949458483754,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "george-walk-2",
+          "frame": {
+            "x": 1523,
+            "y": 8,
+            "w": 284,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 284,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 284,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.5140845070422535,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "george-walk-3",
+          "frame": {
+            "x": 301,
+            "y": 494,
+            "w": 354,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "george-walk-4",
+          "frame": {
+            "x": 383,
+            "y": 8,
+            "w": 382,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "george-walk-5",
+          "frame": {
+            "x": 781,
+            "y": 8,
+            "w": 342,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "george-walk-6",
+          "frame": {
+            "x": 671,
+            "y": 494,
+            "w": 283,
+            "h": 443
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 443
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 443
+          },
+          "pivot": {
+            "x": 0.5123674911660777,
+            "y": 0.9932279909706546
+          }
+        },
+        {
+          "filename": "george-walk-7",
+          "frame": {
+            "x": 1139,
+            "y": 8,
+            "w": 368,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "george-walk",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 359,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936170212765958
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1690,
+        "h": 965
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "george-walkBack-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 318,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "george-walkBack-1",
+          "frame": {
+            "x": 608,
+            "y": 8,
+            "w": 371,
+            "h": 462
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 462
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 462
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935064935064936
+          }
+        },
+        {
+          "filename": "george-walkBack-2",
+          "frame": {
+            "x": 8,
+            "y": 502,
+            "w": 343,
+            "h": 455
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 455
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 455
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934065934065934
+          }
+        },
+        {
+          "filename": "george-walkBack-3",
+          "frame": {
+            "x": 342,
+            "y": 8,
+            "w": 250,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 250,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 250,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.492,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "george-walkBack-4",
+          "frame": {
+            "x": 995,
+            "y": 8,
+            "w": 383,
+            "h": 458
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 458
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 458
+          },
+          "pivot": {
+            "x": 0.5013054830287206,
+            "y": 0.9934497816593887
+          }
+        },
+        {
+          "filename": "george-walkBack-5",
+          "frame": {
+            "x": 1394,
+            "y": 8,
+            "w": 288,
+            "h": 458
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 458
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 458
+          },
+          "pivot": {
+            "x": 0.5034722222222222,
+            "y": 0.9934497816593887
+          }
+        },
+        {
+          "filename": "george-walkBack-6",
+          "frame": {
+            "x": 729,
+            "y": 502,
+            "w": 326,
+            "h": 448
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 448
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 448
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933035714285714
+          }
+        },
+        {
+          "filename": "george-walkBack-7",
+          "frame": {
+            "x": 367,
+            "y": 502,
+            "w": 346,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933628318584071
+          }
+        },
+        {
+          "filename": "george-walkBack",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 318,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}

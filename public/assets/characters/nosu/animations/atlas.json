@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1923,
+        "h": 875
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-airKick-0",
+          "frame": {
+            "x": 1395,
+            "y": 8,
+            "w": 212,
+            "h": 462
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 212,
+            "h": 462
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 212,
+            "h": 462
+          },
+          "pivot": {
+            "x": 0.1721698113207547,
+            "y": 0.9935064935064936
+          }
+        },
+        {
+          "filename": "nosu-airKick-1",
+          "frame": {
+            "x": 1623,
+            "y": 8,
+            "w": 292,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 292,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 292,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.4486301369863014,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "nosu-airKick-2",
+          "frame": {
+            "x": 8,
+            "y": 513,
+            "w": 468,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 468,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 468,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.297008547008547,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "nosu-airKick-3",
+          "frame": {
+            "x": 889,
+            "y": 8,
+            "w": 231,
+            "h": 471
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 231,
+            "h": 471
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 231,
+            "h": 471
+          },
+          "pivot": {
+            "x": 0.645021645021645,
+            "y": 0.9936305732484076
+          }
+        },
+        {
+          "filename": "nosu-airKick-4",
+          "frame": {
+            "x": 1136,
+            "y": 8,
+            "w": 243,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 243,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 243,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.6296296296296297,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "nosu-airKick-5",
+          "frame": {
+            "x": 316,
+            "y": 8,
+            "w": 266,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 266,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 266,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.8308270676691729,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "nosu-airKick-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 292,
+            "h": 489
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 292,
+            "h": 489
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 292,
+            "h": 489
+          },
+          "pivot": {
+            "x": 0.8287671232876712,
+            "y": 0.9938650306748467
+          }
+        },
+        {
+          "filename": "nosu-airKick-7",
+          "frame": {
+            "x": 598,
+            "y": 8,
+            "w": 275,
+            "h": 479
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 275,
+            "h": 479
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 275,
+            "h": 479
+          },
+          "pivot": {
+            "x": 0.7018181818181818,
+            "y": 0.9937369519832986
+          }
+        },
+        {
+          "filename": "nosu-airKick",
+          "frame": {
+            "x": 1395,
+            "y": 8,
+            "w": 212,
+            "h": 462
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 212,
+            "h": 462
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 212,
+            "h": 462
+          },
+          "pivot": {
+            "x": 0.1721698113207547,
+            "y": 0.9935064935064936
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1807,
+        "h": 949
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-airPunch-0",
+          "frame": {
+            "x": 729,
+            "y": 8,
+            "w": 245,
+            "h": 461
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 245,
+            "h": 461
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 245,
+            "h": 461
+          },
+          "pivot": {
+            "x": 0.29183673469387755,
+            "y": 0.9934924078091106
+          }
+        },
+        {
+          "filename": "nosu-airPunch-1",
+          "frame": {
+            "x": 990,
+            "y": 8,
+            "w": 279,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.3172043010752688,
+            "y": 0.9934640522875817
+          }
+        },
+        {
+          "filename": "nosu-airPunch-2",
+          "frame": {
+            "x": 358,
+            "y": 8,
+            "w": 355,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.22253521126760564,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "nosu-airPunch-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 334,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.27994011976047906,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "nosu-airPunch-4",
+          "frame": {
+            "x": 1285,
+            "y": 8,
+            "w": 269,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.3159851301115242,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "nosu-airPunch-5",
+          "frame": {
+            "x": 262,
+            "y": 489,
+            "w": 246,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 246,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 246,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.3089430894308943,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "nosu-airPunch-6",
+          "frame": {
+            "x": 8,
+            "y": 489,
+            "w": 238,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 238,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 238,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.31092436974789917,
+            "y": 0.9933628318584071
+          }
+        },
+        {
+          "filename": "nosu-airPunch-7",
+          "frame": {
+            "x": 1570,
+            "y": 8,
+            "w": 229,
+            "h": 453
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 229,
+            "h": 453
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 229,
+            "h": 453
+          },
+          "pivot": {
+            "x": 0.32532751091703055,
+            "y": 0.9933774834437086
+          }
+        },
+        {
+          "filename": "nosu-airPunch",
+          "frame": {
+            "x": 729,
+            "y": 8,
+            "w": 245,
+            "h": 461
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 245,
+            "h": 461
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 245,
+            "h": 461
+          },
+          "pivot": {
+            "x": 0.29183673469387755,
+            "y": 0.9934924078091106
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1873,
+        "h": 915
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-backdash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 287,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 287,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 287,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "nosu-backdash-1",
+          "frame": {
+            "x": 1581,
+            "y": 8,
+            "w": 284,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 284,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 284,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "nosu-backdash-2",
+          "frame": {
+            "x": 940,
+            "y": 8,
+            "w": 324,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.10802469135802469,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "nosu-backdash-3",
+          "frame": {
+            "x": 299,
+            "y": 488,
+            "w": 370,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.377027027027027,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "nosu-backdash-4",
+          "frame": {
+            "x": 610,
+            "y": 8,
+            "w": 314,
+            "h": 458
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 458
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 458
+          },
+          "pivot": {
+            "x": 0.445859872611465,
+            "y": 0.9934497816593887
+          }
+        },
+        {
+          "filename": "nosu-backdash-5",
+          "frame": {
+            "x": 1280,
+            "y": 8,
+            "w": 285,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "nosu-backdash-6",
+          "frame": {
+            "x": 8,
+            "y": 488,
+            "w": 275,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 275,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 275,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "nosu-backdash-7",
+          "frame": {
+            "x": 311,
+            "y": 8,
+            "w": 283,
+            "h": 462
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 462
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 462
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935064935064936
+          }
+        },
+        {
+          "filename": "nosu-backdash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 287,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 287,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 287,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935344827586207
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1923,
+        "h": 1001
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-special-0",
+          "frame": {
+            "x": 1626,
+            "y": 8,
+            "w": 289,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937888198757764
+          }
+        },
+        {
+          "filename": "nosu-special-1",
+          "frame": {
+            "x": 322,
+            "y": 8,
+            "w": 291,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 291,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 291,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "nosu-special-2",
+          "frame": {
+            "x": 8,
+            "y": 510,
+            "w": 291,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 291,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 291,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937888198757764
+          }
+        },
+        {
+          "filename": "nosu-special-3",
+          "frame": {
+            "x": 315,
+            "y": 510,
+            "w": 328,
+            "h": 482
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 482
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 482
+          },
+          "pivot": {
+            "x": 0.47560975609756095,
+            "y": 0.9937759336099585
+          }
+        },
+        {
+          "filename": "nosu-special-4",
+          "frame": {
+            "x": 629,
+            "y": 8,
+            "w": 346,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.4407514450867052,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "nosu-special-5",
+          "frame": {
+            "x": 991,
+            "y": 8,
+            "w": 303,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 303,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 303,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "nosu-special-6",
+          "frame": {
+            "x": 1310,
+            "y": 8,
+            "w": 300,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "nosu-special-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 298,
+            "h": 486
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 486
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 486
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938271604938271
+          }
+        },
+        {
+          "filename": "nosu-special",
+          "frame": {
+            "x": 1626,
+            "y": 8,
+            "w": 289,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937888198757764
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1783,
+        "h": 973
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-block-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 282,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "nosu-block-1",
+          "frame": {
+            "x": 1496,
+            "y": 8,
+            "w": 279,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "nosu-block-2",
+          "frame": {
+            "x": 8,
+            "y": 504,
+            "w": 282,
+            "h": 461
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 461
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 461
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934924078091106
+          }
+        },
+        {
+          "filename": "nosu-block-3",
+          "frame": {
+            "x": 306,
+            "y": 504,
+            "w": 289,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "nosu-block-4",
+          "frame": {
+            "x": 306,
+            "y": 8,
+            "w": 281,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "nosu-block-5",
+          "frame": {
+            "x": 603,
+            "y": 8,
+            "w": 281,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "nosu-block-6",
+          "frame": {
+            "x": 900,
+            "y": 8,
+            "w": 281,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "nosu-block-7",
+          "frame": {
+            "x": 1197,
+            "y": 8,
+            "w": 283,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "nosu-block",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 282,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99375
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1806,
+        "h": 911
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-crouch-0",
+          "frame": {
+            "x": 1211,
+            "y": 8,
+            "w": 287,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 287,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 287,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "nosu-crouch-1",
+          "frame": {
+            "x": 611,
+            "y": 8,
+            "w": 283,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "nosu-crouch-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 285,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "nosu-crouch-3",
+          "frame": {
+            "x": 1514,
+            "y": 8,
+            "w": 284,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 284,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 284,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "nosu-crouch-4",
+          "frame": {
+            "x": 8,
+            "y": 481,
+            "w": 287,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 287,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 287,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "nosu-crouch-5",
+          "frame": {
+            "x": 910,
+            "y": 8,
+            "w": 285,
+            "h": 439
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 439
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 439
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931662870159453
+          }
+        },
+        {
+          "filename": "nosu-crouch-6",
+          "frame": {
+            "x": 309,
+            "y": 8,
+            "w": 286,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "nosu-crouch-7",
+          "frame": {
+            "x": 311,
+            "y": 481,
+            "w": 290,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "nosu-crouch",
+          "frame": {
+            "x": 1211,
+            "y": 8,
+            "w": 287,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 287,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 287,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1820,
+        "h": 859
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-crouchBlock-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 353,
+            "h": 433
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 433
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 433
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930715935334873
+          }
+        },
+        {
+          "filename": "nosu-crouchBlock-1",
+          "frame": {
+            "x": 377,
+            "y": 8,
+            "w": 344,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5159883720930233,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "nosu-crouchBlock-2",
+          "frame": {
+            "x": 737,
+            "y": 8,
+            "w": 354,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.5254237288135594,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "nosu-crouchBlock-3",
+          "frame": {
+            "x": 742,
+            "y": 457,
+            "w": 337,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.5148367952522255,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "nosu-crouchBlock-4",
+          "frame": {
+            "x": 1107,
+            "y": 8,
+            "w": 343,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.49271137026239065,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "nosu-crouchBlock-5",
+          "frame": {
+            "x": 1466,
+            "y": 8,
+            "w": 346,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5072254335260116,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "nosu-crouchBlock-6",
+          "frame": {
+            "x": 374,
+            "y": 457,
+            "w": 352,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.5170454545454546,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "nosu-crouchBlock-7",
+          "frame": {
+            "x": 8,
+            "y": 457,
+            "w": 350,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5142857142857142,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "nosu-crouchBlock",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 353,
+            "h": 433
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 433
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 433
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930715935334873
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2008,
+        "h": 899
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-crouchHurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 302,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.47019867549668876,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "nosu-crouchHurt-1",
+          "frame": {
+            "x": 331,
+            "y": 489,
+            "w": 376,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.5106382978723404,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "nosu-crouchHurt-2",
+          "frame": {
+            "x": 969,
+            "y": 8,
+            "w": 401,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.45885286783042395,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "nosu-crouchHurt-3",
+          "frame": {
+            "x": 8,
+            "y": 489,
+            "w": 307,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.43322475570032576,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "nosu-crouchHurt-4",
+          "frame": {
+            "x": 326,
+            "y": 8,
+            "w": 310,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.4241935483870968,
+            "y": 0.993421052631579
+          }
+        },
+        {
+          "filename": "nosu-crouchHurt-5",
+          "frame": {
+            "x": 652,
+            "y": 8,
+            "w": 301,
+            "h": 443
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 443
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 443
+          },
+          "pivot": {
+            "x": 0.4435215946843854,
+            "y": 0.9932279909706546
+          }
+        },
+        {
+          "filename": "nosu-crouchHurt-6",
+          "frame": {
+            "x": 1386,
+            "y": 8,
+            "w": 301,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.4418604651162791,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "nosu-crouchHurt-7",
+          "frame": {
+            "x": 1703,
+            "y": 8,
+            "w": 297,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 297,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 297,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.4393939393939394,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "nosu-crouchHurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 302,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.47019867549668876,
+            "y": 0.9935483870967742
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1729,
+        "h": 843
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-crouchPunch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 327,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "nosu-crouchPunch-1",
+          "frame": {
+            "x": 8,
+            "y": 431,
+            "w": 327,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "nosu-crouchPunch-2",
+          "frame": {
+            "x": 351,
+            "y": 431,
+            "w": 336,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.48660714285714285,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "nosu-crouchPunch-3",
+          "frame": {
+            "x": 703,
+            "y": 431,
+            "w": 364,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.4519230769230769,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "nosu-crouchPunch-4",
+          "frame": {
+            "x": 695,
+            "y": 8,
+            "w": 328,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "nosu-crouchPunch-5",
+          "frame": {
+            "x": 351,
+            "y": 8,
+            "w": 328,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "nosu-crouchPunch-6",
+          "frame": {
+            "x": 1039,
+            "y": 8,
+            "w": 338,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "nosu-crouchPunch-7",
+          "frame": {
+            "x": 1393,
+            "y": 8,
+            "w": 328,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "nosu-crouchPunch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 327,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926289926289926
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1725,
+        "h": 879
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-dash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 282,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936440677966102
+          }
+        },
+        {
+          "filename": "nosu-dash-1",
+          "frame": {
+            "x": 1433,
+            "y": 8,
+            "w": 284,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 284,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 284,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.44014084507042256,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "nosu-dash-2",
+          "frame": {
+            "x": 8,
+            "y": 496,
+            "w": 377,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.35543766578249336,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "nosu-dash-3",
+          "frame": {
+            "x": 401,
+            "y": 496,
+            "w": 440,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 440,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 440,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.0875,
+            "y": 0.9917355371900827
+          }
+        },
+        {
+          "filename": "nosu-dash-4",
+          "frame": {
+            "x": 1081,
+            "y": 8,
+            "w": 336,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5297619047619048,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "nosu-dash-5",
+          "frame": {
+            "x": 602,
+            "y": 8,
+            "w": 219,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 219,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 219,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.19863013698630136,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "nosu-dash-6",
+          "frame": {
+            "x": 837,
+            "y": 8,
+            "w": 228,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 228,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 228,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.41885964912280704,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "nosu-dash-7",
+          "frame": {
+            "x": 306,
+            "y": 8,
+            "w": 280,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "nosu-dash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 282,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936440677966102
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2014,
+        "h": 695
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 270,
+            "h": 513
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 270,
+            "h": 513
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 270,
+            "h": 513
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941520467836257
+          }
+        },
+        {
+          "filename": "nosu-ko-1",
+          "frame": {
+            "x": 294,
+            "y": 8,
+            "w": 279,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.482078853046595,
+            "y": 0.993421052631579
+          }
+        },
+        {
+          "filename": "nosu-ko-2",
+          "frame": {
+            "x": 589,
+            "y": 8,
+            "w": 296,
+            "h": 386
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 296,
+            "h": 386
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 386
+          },
+          "pivot": {
+            "x": 0.44594594594594594,
+            "y": 0.9922279792746114
+          }
+        },
+        {
+          "filename": "nosu-ko-3",
+          "frame": {
+            "x": 901,
+            "y": 8,
+            "w": 328,
+            "h": 315
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 315
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 315
+          },
+          "pivot": {
+            "x": 0.49390243902439024,
+            "y": 0.9904761904761905
+          }
+        },
+        {
+          "filename": "nosu-ko-4",
+          "frame": {
+            "x": 1245,
+            "y": 8,
+            "w": 375,
+            "h": 301
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 301
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9900332225913622
+          }
+        },
+        {
+          "filename": "nosu-ko-5",
+          "frame": {
+            "x": 1636,
+            "y": 8,
+            "w": 370,
+            "h": 234
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 234
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 234
+          },
+          "pivot": {
+            "x": 0.5256756756756756,
+            "y": 0.9871794871794872
+          }
+        },
+        {
+          "filename": "nosu-ko-6",
+          "frame": {
+            "x": 8,
+            "y": 537,
+            "w": 349,
+            "h": 150
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 150
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 150
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.98
+          }
+        },
+        {
+          "filename": "nosu-ko-7",
+          "frame": {
+            "x": 373,
+            "y": 537,
+            "w": 364,
+            "h": 129
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 129
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 129
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9767441860465116
+          }
+        },
+        {
+          "filename": "nosu-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 270,
+            "h": 513
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 270,
+            "h": 513
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 270,
+            "h": 513
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941520467836257
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1909,
+        "h": 410
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-down-0",
+          "frame": {
+            "x": 389,
+            "y": 8,
+            "w": 365,
+            "h": 189
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 189
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 189
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9841269841269841
+          }
+        },
+        {
+          "filename": "nosu-down-1",
+          "frame": {
+            "x": 770,
+            "y": 8,
+            "w": 369,
+            "h": 189
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 189
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 189
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9841269841269841
+          }
+        },
+        {
+          "filename": "nosu-down-2",
+          "frame": {
+            "x": 1155,
+            "y": 8,
+            "w": 365,
+            "h": 189
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 189
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 189
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9841269841269841
+          }
+        },
+        {
+          "filename": "nosu-down-3",
+          "frame": {
+            "x": 769,
+            "y": 218,
+            "w": 356,
+            "h": 169
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 169
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 169
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9822485207100592
+          }
+        },
+        {
+          "filename": "nosu-down-4",
+          "frame": {
+            "x": 1536,
+            "y": 8,
+            "w": 365,
+            "h": 186
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 186
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 186
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9838709677419355
+          }
+        },
+        {
+          "filename": "nosu-down-5",
+          "frame": {
+            "x": 8,
+            "y": 218,
+            "w": 365,
+            "h": 184
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 184
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 184
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9836956521739131
+          }
+        },
+        {
+          "filename": "nosu-down-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 365,
+            "h": 194
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 194
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 194
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9845360824742269
+          }
+        },
+        {
+          "filename": "nosu-down-7",
+          "frame": {
+            "x": 389,
+            "y": 218,
+            "w": 364,
+            "h": 179
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 179
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 179
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9832402234636871
+          }
+        },
+        {
+          "filename": "nosu-down",
+          "frame": {
+            "x": 389,
+            "y": 8,
+            "w": 365,
+            "h": 189
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 189
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 189
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9841269841269841
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1869,
+        "h": 957
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-fall-0",
+          "frame": {
+            "x": 8,
+            "y": 542,
+            "w": 221,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 221,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 221,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.33710407239819007,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "nosu-fall-1",
+          "frame": {
+            "x": 1643,
+            "y": 8,
+            "w": 218,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 218,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 218,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.25688073394495414,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "nosu-fall-2",
+          "frame": {
+            "x": 264,
+            "y": 8,
+            "w": 243,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 243,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 243,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.294238683127572,
+            "y": 0.9939393939393939
+          }
+        },
+        {
+          "filename": "nosu-fall-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 240,
+            "h": 518
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 240,
+            "h": 518
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 240,
+            "h": 518
+          },
+          "pivot": {
+            "x": 0.5375,
+            "y": 0.9942084942084942
+          }
+        },
+        {
+          "filename": "nosu-fall-4",
+          "frame": {
+            "x": 523,
+            "y": 8,
+            "w": 269,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5576208178438662,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "nosu-fall-5",
+          "frame": {
+            "x": 808,
+            "y": 8,
+            "w": 254,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 254,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 254,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5118110236220472,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "nosu-fall-6",
+          "frame": {
+            "x": 1078,
+            "y": 8,
+            "w": 266,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 266,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 266,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5018796992481203,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "nosu-fall-7",
+          "frame": {
+            "x": 1360,
+            "y": 8,
+            "w": 267,
+            "h": 467
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 267,
+            "h": 467
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 267,
+            "h": 467
+          },
+          "pivot": {
+            "x": 0.5205992509363296,
+            "y": 0.9935760171306209
+          }
+        },
+        {
+          "filename": "nosu-fall",
+          "frame": {
+            "x": 8,
+            "y": 542,
+            "w": 221,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 221,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 221,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.33710407239819007,
+            "y": 0.9926289926289926
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1862,
+        "h": 770
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-getup-0",
+          "frame": {
+            "x": 438,
+            "y": 524,
+            "w": 391,
+            "h": 192
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 391,
+            "h": 192
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 391,
+            "h": 192
+          },
+          "pivot": {
+            "x": 0.489769820971867,
+            "y": 0.984375
+          }
+        },
+        {
+          "filename": "nosu-getup-1",
+          "frame": {
+            "x": 8,
+            "y": 524,
+            "w": 414,
+            "h": 238
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 414,
+            "h": 238
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 414,
+            "h": 238
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9873949579831933
+          }
+        },
+        {
+          "filename": "nosu-getup-2",
+          "frame": {
+            "x": 1539,
+            "y": 8,
+            "w": 315,
+            "h": 328
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 328
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 328
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9908536585365854
+          }
+        },
+        {
+          "filename": "nosu-getup-3",
+          "frame": {
+            "x": 1210,
+            "y": 8,
+            "w": 313,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.5015974440894568,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "nosu-getup-4",
+          "frame": {
+            "x": 877,
+            "y": 8,
+            "w": 317,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.45110410094637227,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "nosu-getup-5",
+          "frame": {
+            "x": 608,
+            "y": 8,
+            "w": 253,
+            "h": 490
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 253,
+            "h": 490
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 253,
+            "h": 490
+          },
+          "pivot": {
+            "x": 0.4980237154150198,
+            "y": 0.9938775510204082
+          }
+        },
+        {
+          "filename": "nosu-getup-6",
+          "frame": {
+            "x": 309,
+            "y": 8,
+            "w": 283,
+            "h": 497
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 497
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 497
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993963782696177
+          }
+        },
+        {
+          "filename": "nosu-getup-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 285,
+            "h": 500
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 500
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 500
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994
+          }
+        },
+        {
+          "filename": "nosu-getup",
+          "frame": {
+            "x": 438,
+            "y": 524,
+            "w": 391,
+            "h": 192
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 391,
+            "h": 192
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 391,
+            "h": 192
+          },
+          "pivot": {
+            "x": 0.489769820971867,
+            "y": 0.984375
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1856,
+        "h": 957
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-hurt-0",
+          "frame": {
+            "x": 630,
+            "y": 8,
+            "w": 286,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "nosu-hurt-1",
+          "frame": {
+            "x": 1559,
+            "y": 8,
+            "w": 289,
+            "h": 453
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 453
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 453
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933774834437086
+          }
+        },
+        {
+          "filename": "nosu-hurt-2",
+          "frame": {
+            "x": 8,
+            "y": 508,
+            "w": 338,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5295857988165681,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "nosu-hurt-3",
+          "frame": {
+            "x": 362,
+            "y": 508,
+            "w": 374,
+            "h": 433
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 433
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 433
+          },
+          "pivot": {
+            "x": 0.5882352941176471,
+            "y": 0.9930715935334873
+          }
+        },
+        {
+          "filename": "nosu-hurt-4",
+          "frame": {
+            "x": 1247,
+            "y": 8,
+            "w": 296,
+            "h": 477
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 296,
+            "h": 477
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 477
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937106918238994
+          }
+        },
+        {
+          "filename": "nosu-hurt-5",
+          "frame": {
+            "x": 932,
+            "y": 8,
+            "w": 299,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 299,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 299,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "nosu-hurt-6",
+          "frame": {
+            "x": 318,
+            "y": 8,
+            "w": 296,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 296,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "nosu-hurt-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 294,
+            "h": 484
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 294,
+            "h": 484
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 294,
+            "h": 484
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993801652892562
+          }
+        },
+        {
+          "filename": "nosu-hurt",
+          "frame": {
+            "x": 630,
+            "y": 8,
+            "w": 286,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1998,
+        "h": 954
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-idle-0",
+          "frame": {
+            "x": 864,
+            "y": 8,
+            "w": 266,
+            "h": 462
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 266,
+            "h": 462
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 266,
+            "h": 462
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935064935064936
+          }
+        },
+        {
+          "filename": "nosu-idle-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 270,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 270,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 270,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "nosu-idle-2",
+          "frame": {
+            "x": 294,
+            "y": 8,
+            "w": 269,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "nosu-idle-3",
+          "frame": {
+            "x": 579,
+            "y": 8,
+            "w": 269,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "nosu-idle-4",
+          "frame": {
+            "x": 8,
+            "y": 487,
+            "w": 271,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 271,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 271,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934640522875817
+          }
+        },
+        {
+          "filename": "nosu-idle-5",
+          "frame": {
+            "x": 1434,
+            "y": 8,
+            "w": 273,
+            "h": 460
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 273,
+            "h": 460
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 273,
+            "h": 460
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934782608695653
+          }
+        },
+        {
+          "filename": "nosu-idle-6",
+          "frame": {
+            "x": 1723,
+            "y": 8,
+            "w": 267,
+            "h": 460
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 267,
+            "h": 460
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 267,
+            "h": 460
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934782608695653
+          }
+        },
+        {
+          "filename": "nosu-idle-7",
+          "frame": {
+            "x": 1146,
+            "y": 8,
+            "w": 272,
+            "h": 461
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 272,
+            "h": 461
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 272,
+            "h": 461
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934924078091106
+          }
+        },
+        {
+          "filename": "nosu-idle",
+          "frame": {
+            "x": 864,
+            "y": 8,
+            "w": 266,
+            "h": 462
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 266,
+            "h": 462
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 266,
+            "h": 462
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935064935064936
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1757,
+        "h": 1019
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-intro-0",
+          "frame": {
+            "x": 839,
+            "y": 8,
+            "w": 236,
+            "h": 511
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 236,
+            "h": 511
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 236,
+            "h": 511
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941291585127201
+          }
+        },
+        {
+          "filename": "nosu-intro-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 250,
+            "h": 514
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 250,
+            "h": 514
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 250,
+            "h": 514
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941634241245136
+          }
+        },
+        {
+          "filename": "nosu-intro-2",
+          "frame": {
+            "x": 567,
+            "y": 8,
+            "w": 256,
+            "h": 512
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 256,
+            "h": 512
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 512
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994140625
+          }
+        },
+        {
+          "filename": "nosu-intro-3",
+          "frame": {
+            "x": 274,
+            "y": 8,
+            "w": 277,
+            "h": 513
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 513
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 513
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941520467836257
+          }
+        },
+        {
+          "filename": "nosu-intro-4",
+          "frame": {
+            "x": 1091,
+            "y": 8,
+            "w": 336,
+            "h": 473
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 473
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 473
+          },
+          "pivot": {
+            "x": 0.46726190476190477,
+            "y": 0.9936575052854123
+          }
+        },
+        {
+          "filename": "nosu-intro-5",
+          "frame": {
+            "x": 335,
+            "y": 538,
+            "w": 325,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.4815384615384615,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "nosu-intro-6",
+          "frame": {
+            "x": 1443,
+            "y": 8,
+            "w": 306,
+            "h": 473
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 473
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 473
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936575052854123
+          }
+        },
+        {
+          "filename": "nosu-intro-7",
+          "frame": {
+            "x": 8,
+            "y": 538,
+            "w": 311,
+            "h": 473
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 473
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 473
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936575052854123
+          }
+        },
+        {
+          "filename": "nosu-intro",
+          "frame": {
+            "x": 839,
+            "y": 8,
+            "w": 236,
+            "h": 511
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 236,
+            "h": 511
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 236,
+            "h": 511
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941291585127201
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1851,
+        "h": 873
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-jump-0",
+          "frame": {
+            "x": 786,
+            "y": 8,
+            "w": 288,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "nosu-jump-1",
+          "frame": {
+            "x": 1598,
+            "y": 8,
+            "w": 245,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 245,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 245,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.45918367346938777,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "nosu-jump-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 220,
+            "h": 494
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 220,
+            "h": 494
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 220,
+            "h": 494
+          },
+          "pivot": {
+            "x": 0.45681818181818185,
+            "y": 0.9939271255060729
+          }
+        },
+        {
+          "filename": "nosu-jump-3",
+          "frame": {
+            "x": 1090,
+            "y": 8,
+            "w": 217,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 217,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 217,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.315668202764977,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "nosu-jump-4",
+          "frame": {
+            "x": 8,
+            "y": 518,
+            "w": 209,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 209,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 209,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.361244019138756,
+            "y": 0.9913544668587896
+          }
+        },
+        {
+          "filename": "nosu-jump-5",
+          "frame": {
+            "x": 244,
+            "y": 8,
+            "w": 229,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 229,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 229,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.4126637554585153,
+            "y": 0.9936974789915967
+          }
+        },
+        {
+          "filename": "nosu-jump-6",
+          "frame": {
+            "x": 1323,
+            "y": 8,
+            "w": 259,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 259,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 259,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.4806949806949807,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "nosu-jump-7",
+          "frame": {
+            "x": 489,
+            "y": 8,
+            "w": 281,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936440677966102
+          }
+        },
+        {
+          "filename": "nosu-jump",
+          "frame": {
+            "x": 786,
+            "y": 8,
+            "w": 288,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935205183585313
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1697,
+        "h": 993
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-kick-0",
+          "frame": {
+            "x": 555,
+            "y": 8,
+            "w": 276,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 276,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 276,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "nosu-kick-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 224,
+            "h": 483
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 224,
+            "h": 483
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 224,
+            "h": 483
+          },
+          "pivot": {
+            "x": 0.6049107142857143,
+            "y": 0.9937888198757764
+          }
+        },
+        {
+          "filename": "nosu-kick-2",
+          "frame": {
+            "x": 1325,
+            "y": 8,
+            "w": 364,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.35027472527472525,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "nosu-kick-3",
+          "frame": {
+            "x": 380,
+            "y": 507,
+            "w": 366,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.4849726775956284,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "nosu-kick-4",
+          "frame": {
+            "x": 8,
+            "y": 507,
+            "w": 356,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.398876404494382,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "nosu-kick-5",
+          "frame": {
+            "x": 847,
+            "y": 8,
+            "w": 211,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 211,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 211,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.48104265402843605,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "nosu-kick-6",
+          "frame": {
+            "x": 1074,
+            "y": 8,
+            "w": 235,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 235,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 235,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5936170212765958,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "nosu-kick-7",
+          "frame": {
+            "x": 248,
+            "y": 8,
+            "w": 291,
+            "h": 482
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 291,
+            "h": 482
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 291,
+            "h": 482
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937759336099585
+          }
+        },
+        {
+          "filename": "nosu-kick",
+          "frame": {
+            "x": 555,
+            "y": 8,
+            "w": 276,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 276,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 276,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99375
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1976,
+        "h": 757
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-knockdown-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 280,
+            "h": 511
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 511
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 511
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941291585127201
+          }
+        },
+        {
+          "filename": "nosu-knockdown-1",
+          "frame": {
+            "x": 304,
+            "y": 8,
+            "w": 369,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.5813008130081301,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "nosu-knockdown-2",
+          "frame": {
+            "x": 689,
+            "y": 8,
+            "w": 397,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 397,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 397,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.4760705289672544,
+            "y": 0.9932885906040269
+          }
+        },
+        {
+          "filename": "nosu-knockdown-3",
+          "frame": {
+            "x": 1102,
+            "y": 8,
+            "w": 457,
+            "h": 353
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 457,
+            "h": 353
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 457,
+            "h": 353
+          },
+          "pivot": {
+            "x": 0.8894967177242888,
+            "y": 0.9915014164305949
+          }
+        },
+        {
+          "filename": "nosu-knockdown-4",
+          "frame": {
+            "x": 1575,
+            "y": 8,
+            "w": 393,
+            "h": 294
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 294
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 294
+          },
+          "pivot": {
+            "x": 0.5801526717557252,
+            "y": 0.9897959183673469
+          }
+        },
+        {
+          "filename": "nosu-knockdown-5",
+          "frame": {
+            "x": 8,
+            "y": 535,
+            "w": 432,
+            "h": 214
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 432,
+            "h": 214
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 432,
+            "h": 214
+          },
+          "pivot": {
+            "x": 0.5717592592592593,
+            "y": 0.985981308411215
+          }
+        },
+        {
+          "filename": "nosu-knockdown-6",
+          "frame": {
+            "x": 456,
+            "y": 535,
+            "w": 382,
+            "h": 182
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 182
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 182
+          },
+          "pivot": {
+            "x": 0.5484293193717278,
+            "y": 0.9835164835164835
+          }
+        },
+        {
+          "filename": "nosu-knockdown-7",
+          "frame": {
+            "x": 854,
+            "y": 535,
+            "w": 379,
+            "h": 140
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 140
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 140
+          },
+          "pivot": {
+            "x": 0.5408970976253298,
+            "y": 0.9785714285714285
+          }
+        },
+        {
+          "filename": "nosu-knockdown",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 280,
+            "h": 511
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 511
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 511
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941291585127201
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1941,
+        "h": 985
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-punch-0",
+          "frame": {
+            "x": 324,
+            "y": 8,
+            "w": 288,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "nosu-punch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 300,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "nosu-punch-2",
+          "frame": {
+            "x": 628,
+            "y": 8,
+            "w": 364,
+            "h": 476
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 476
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 476
+          },
+          "pivot": {
+            "x": 0.44505494505494503,
+            "y": 0.9936974789915967
+          }
+        },
+        {
+          "filename": "nosu-punch-3",
+          "frame": {
+            "x": 312,
+            "y": 505,
+            "w": 324,
+            "h": 470
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 470
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 470
+          },
+          "pivot": {
+            "x": 0.48302469135802467,
+            "y": 0.9936170212765958
+          }
+        },
+        {
+          "filename": "nosu-punch-4",
+          "frame": {
+            "x": 1008,
+            "y": 8,
+            "w": 300,
+            "h": 473
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 473
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 473
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936575052854123
+          }
+        },
+        {
+          "filename": "nosu-punch-5",
+          "frame": {
+            "x": 1324,
+            "y": 8,
+            "w": 295,
+            "h": 473
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 473
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 473
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936575052854123
+          }
+        },
+        {
+          "filename": "nosu-punch-6",
+          "frame": {
+            "x": 1635,
+            "y": 8,
+            "w": 298,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936440677966102
+          }
+        },
+        {
+          "filename": "nosu-punch-7",
+          "frame": {
+            "x": 8,
+            "y": 505,
+            "w": 288,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936440677966102
+          }
+        },
+        {
+          "filename": "nosu-punch",
+          "frame": {
+            "x": 324,
+            "y": 8,
+            "w": 288,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2019,
+        "h": 963
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-super-0",
+          "frame": {
+            "x": 328,
+            "y": 8,
+            "w": 327,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.463302752293578,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "nosu-super-1",
+          "frame": {
+            "x": 671,
+            "y": 8,
+            "w": 319,
+            "h": 477
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 477
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 477
+          },
+          "pivot": {
+            "x": 0.46865203761755486,
+            "y": 0.9937106918238994
+          }
+        },
+        {
+          "filename": "nosu-super-2",
+          "frame": {
+            "x": 1664,
+            "y": 8,
+            "w": 347,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.4365994236311239,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "nosu-super-3",
+          "frame": {
+            "x": 1359,
+            "y": 8,
+            "w": 289,
+            "h": 466
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 466
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 466
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935622317596566
+          }
+        },
+        {
+          "filename": "nosu-super-4",
+          "frame": {
+            "x": 366,
+            "y": 535,
+            "w": 367,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.48637602179836514,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "nosu-super-5",
+          "frame": {
+            "x": 1006,
+            "y": 8,
+            "w": 337,
+            "h": 475
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 475
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 475
+          },
+          "pivot": {
+            "x": 0.45103857566765576,
+            "y": 0.9936842105263158
+          }
+        },
+        {
+          "filename": "nosu-super-6",
+          "frame": {
+            "x": 8,
+            "y": 535,
+            "w": 342,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.46637426900584794,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "nosu-super-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 304,
+            "h": 511
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 511
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 511
+          },
+          "pivot": {
+            "x": 0.5016447368421053,
+            "y": 0.9941291585127201
+          }
+        },
+        {
+          "filename": "nosu-super",
+          "frame": {
+            "x": 328,
+            "y": 8,
+            "w": 327,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.463302752293578,
+            "y": 0.9937629937629938
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1758,
+        "h": 728
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-sweep-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 279,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "nosu-sweep-1",
+          "frame": {
+            "x": 1492,
+            "y": 8,
+            "w": 258,
+            "h": 310
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 258,
+            "h": 310
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 258,
+            "h": 310
+          },
+          "pivot": {
+            "x": 0.4844961240310077,
+            "y": 0.9903225806451613
+          }
+        },
+        {
+          "filename": "nosu-sweep-2",
+          "frame": {
+            "x": 399,
+            "y": 415,
+            "w": 451,
+            "h": 302
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 451,
+            "h": 302
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 451,
+            "h": 302
+          },
+          "pivot": {
+            "x": 0.270509977827051,
+            "y": 0.9900662251655629
+          }
+        },
+        {
+          "filename": "nosu-sweep-3",
+          "frame": {
+            "x": 8,
+            "y": 415,
+            "w": 375,
+            "h": 305
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 305
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 305
+          },
+          "pivot": {
+            "x": 0.49733333333333335,
+            "y": 0.9901639344262295
+          }
+        },
+        {
+          "filename": "nosu-sweep-4",
+          "frame": {
+            "x": 1177,
+            "y": 8,
+            "w": 299,
+            "h": 331
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 299,
+            "h": 331
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 299,
+            "h": 331
+          },
+          "pivot": {
+            "x": 0.4531772575250836,
+            "y": 0.9909365558912386
+          }
+        },
+        {
+          "filename": "nosu-sweep-5",
+          "frame": {
+            "x": 892,
+            "y": 8,
+            "w": 269,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.46096654275092935,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "nosu-sweep-6",
+          "frame": {
+            "x": 303,
+            "y": 8,
+            "w": 280,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "nosu-sweep-7",
+          "frame": {
+            "x": 599,
+            "y": 8,
+            "w": 277,
+            "h": 383
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 383
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 383
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921671018276762
+          }
+        },
+        {
+          "filename": "nosu-sweep",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 279,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923273657289002
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1979,
+        "h": 903
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-uppercut-0",
+          "frame": {
+            "x": 542,
+            "y": 8,
+            "w": 286,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "nosu-uppercut-1",
+          "frame": {
+            "x": 8,
+            "y": 534,
+            "w": 274,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 274,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 274,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "nosu-uppercut-2",
+          "frame": {
+            "x": 844,
+            "y": 8,
+            "w": 263,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 263,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 263,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.49049429657794674,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "nosu-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 234,
+            "h": 510
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 234,
+            "h": 510
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 234,
+            "h": 510
+          },
+          "pivot": {
+            "x": 0.33974358974358976,
+            "y": 0.9941176470588236
+          }
+        },
+        {
+          "filename": "nosu-uppercut-4",
+          "frame": {
+            "x": 258,
+            "y": 8,
+            "w": 268,
+            "h": 477
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 268,
+            "h": 477
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 268,
+            "h": 477
+          },
+          "pivot": {
+            "x": 0.39365671641791045,
+            "y": 0.9937106918238994
+          }
+        },
+        {
+          "filename": "nosu-uppercut-5",
+          "frame": {
+            "x": 1405,
+            "y": 8,
+            "w": 279,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "nosu-uppercut-6",
+          "frame": {
+            "x": 1700,
+            "y": 8,
+            "w": 271,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 271,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 271,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "nosu-uppercut-7",
+          "frame": {
+            "x": 1123,
+            "y": 8,
+            "w": 266,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 266,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 266,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "nosu-uppercut",
+          "frame": {
+            "x": 542,
+            "y": 8,
+            "w": 286,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1979,
+        "h": 999
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-win-0",
+          "frame": {
+            "x": 1699,
+            "y": 8,
+            "w": 272,
+            "h": 466
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 272,
+            "h": 466
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 272,
+            "h": 466
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935622317596566
+          }
+        },
+        {
+          "filename": "nosu-win-1",
+          "frame": {
+            "x": 897,
+            "y": 8,
+            "w": 261,
+            "h": 468
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 261,
+            "h": 468
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 261,
+            "h": 468
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935897435897436
+          }
+        },
+        {
+          "filename": "nosu-win-2",
+          "frame": {
+            "x": 312,
+            "y": 8,
+            "w": 232,
+            "h": 473
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 232,
+            "h": 473
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 232,
+            "h": 473
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936575052854123
+          }
+        },
+        {
+          "filename": "nosu-win-3",
+          "frame": {
+            "x": 1174,
+            "y": 8,
+            "w": 248,
+            "h": 467
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 248,
+            "h": 467
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 248,
+            "h": 467
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935760171306209
+          }
+        },
+        {
+          "filename": "nosu-win-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 288,
+            "h": 503
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 503
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 503
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940357852882704
+          }
+        },
+        {
+          "filename": "nosu-win-5",
+          "frame": {
+            "x": 560,
+            "y": 8,
+            "w": 321,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.4236760124610592,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "nosu-win-6",
+          "frame": {
+            "x": 8,
+            "y": 527,
+            "w": 233,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 233,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 233,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.5150214592274678,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "nosu-win-7",
+          "frame": {
+            "x": 1438,
+            "y": 8,
+            "w": 245,
+            "h": 467
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 245,
+            "h": 467
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 245,
+            "h": 467
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935760171306209
+          }
+        },
+        {
+          "filename": "nosu-win",
+          "frame": {
+            "x": 1699,
+            "y": 8,
+            "w": 272,
+            "h": 466
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 272,
+            "h": 466
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 272,
+            "h": 466
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935622317596566
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1783,
+        "h": 1010
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-walk-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 490
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 490
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 490
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938775510204082
+          }
+        },
+        {
+          "filename": "nosu-walk-1",
+          "frame": {
+            "x": 616,
+            "y": 8,
+            "w": 251,
+            "h": 489
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 251,
+            "h": 489
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 251,
+            "h": 489
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938650306748467
+          }
+        },
+        {
+          "filename": "nosu-walk-2",
+          "frame": {
+            "x": 883,
+            "y": 8,
+            "w": 273,
+            "h": 489
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 273,
+            "h": 489
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 273,
+            "h": 489
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938650306748467
+          }
+        },
+        {
+          "filename": "nosu-walk-3",
+          "frame": {
+            "x": 334,
+            "y": 514,
+            "w": 337,
+            "h": 487
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 487
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 487
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938398357289527
+          }
+        },
+        {
+          "filename": "nosu-walk-4",
+          "frame": {
+            "x": 1172,
+            "y": 8,
+            "w": 312,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "nosu-walk-5",
+          "frame": {
+            "x": 331,
+            "y": 8,
+            "w": 269,
+            "h": 490
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 490
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 490
+          },
+          "pivot": {
+            "x": 0.5074349442379182,
+            "y": 0.9938775510204082
+          }
+        },
+        {
+          "filename": "nosu-walk-6",
+          "frame": {
+            "x": 1500,
+            "y": 8,
+            "w": 275,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 275,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 275,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.5309090909090909,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "nosu-walk-7",
+          "frame": {
+            "x": 8,
+            "y": 514,
+            "w": 310,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "nosu-walk",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 490
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 490
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 490
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938775510204082
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1810,
+        "h": 998
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "nosu-walkBack-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 282,
+            "h": 487
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 487
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 487
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938398357289527
+          }
+        },
+        {
+          "filename": "nosu-walkBack-1",
+          "frame": {
+            "x": 1181,
+            "y": 8,
+            "w": 305,
+            "h": 481
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 481
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 481
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937629937629938
+          }
+        },
+        {
+          "filename": "nosu-walkBack-2",
+          "frame": {
+            "x": 306,
+            "y": 8,
+            "w": 292,
+            "h": 486
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 292,
+            "h": 486
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 292,
+            "h": 486
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938271604938271
+          }
+        },
+        {
+          "filename": "nosu-walkBack-3",
+          "frame": {
+            "x": 614,
+            "y": 8,
+            "w": 247,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 247,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 247,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "nosu-walkBack-4",
+          "frame": {
+            "x": 264,
+            "y": 511,
+            "w": 190,
+            "h": 477
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 190,
+            "h": 477
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 190,
+            "h": 477
+          },
+          "pivot": {
+            "x": 0.46842105263157896,
+            "y": 0.9937106918238994
+          }
+        },
+        {
+          "filename": "nosu-walkBack-5",
+          "frame": {
+            "x": 877,
+            "y": 8,
+            "w": 288,
+            "h": 482
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 288,
+            "h": 482
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 482
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937759336099585
+          }
+        },
+        {
+          "filename": "nosu-walkBack-6",
+          "frame": {
+            "x": 8,
+            "y": 511,
+            "w": 240,
+            "h": 479
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 240,
+            "h": 479
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 240,
+            "h": 479
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937369519832986
+          }
+        },
+        {
+          "filename": "nosu-walkBack-7",
+          "frame": {
+            "x": 1502,
+            "y": 8,
+            "w": 300,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "nosu-walkBack",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 282,
+            "h": 487
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 487
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 487
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938398357289527
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}

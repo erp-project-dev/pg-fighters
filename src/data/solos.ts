@@ -3,7 +3,8 @@ import { comboScale } from './moves';
 /** Solo del súper de cada luchador (FighterDef.superMove.solo). */
 export type SoloStyle =
   | 'shred' | 'blues' | 'fusion' | 'sub' | 'three' | 'lickA' | 'lickB'
-  | 'dembow' | 'andean' | 'musette' | 'latin' | 'sweep' | 'tritone' | 'sixth' | 'treatise' | 'jade' | 'jetset' | 'maqam' | 'ascension' | 'roots' | 'viral'
+  | 'dembow' | 'andean' | 'musette' | 'latin' | 'sweep' | 'tritone' | 'sixth' | 'treatise' | 'jade' | 'jetset' | 'maqam' | 'ascension' | 'roots' | 'viral' | 'quantized'
+  | 'minuet' | 'inca' | 'manguare'
   /** El Acople: arpegios disminuidos. */
   | 'feedback';
 
@@ -11,7 +12,7 @@ export type SoloStyle =
 export const SOLO_LABEL: Record<SoloStyle, string> = {
   shred: 'Shred en Mi menor armónica',
   blues: 'Blues en La de cinco cuerdas',
-  fusion: 'Fraseo de jazz fusión',
+  fusion: 'Jazz fusión en Re menor melódica',
   sub: 'Notas súper graves',
   three: 'Tres notas y ya',
   lickA: 'Lick de metal con nota pedal',
@@ -30,11 +31,21 @@ export const SOLO_LABEL: Record<SoloStyle, string> = {
   jetset: 'Rock de estadio con bends de millonario',
   maqam: 'Maqam Hiyaz con segunda aumentada y remate explosivo',
   ascension: 'Lección de VHS: melodía lenta… que nunca termina de afinar',
+  quantized: 'Arpegios de chiptune cuadrados al milímetro: el hit perfecto (y genérico)',
+  minuet: 'Clavecín barroco en Re menor armónica con nota pedal, por decreto real',
+  inca: 'Rock andino: charango eléctrico en huayno y quena distorsionada',
+  manguare: 'Golpes de tronco del manguaré que aceleran hasta retumbar',
   feedback: 'Arpegios de séptima disminuida en Mi',
 };
 
-/** Timbre del "amplificador" sintetizado (systems/Licks.ts). */
-export type SoloTone = 'heavy' | 'chug' | 'smooth' | 'warm' | 'clean' | 'sub' | 'synth';
+/** Timbre del "amplificador" (datos del sonido del solo; hoy el ultimate no lo reproduce). */
+export type SoloTone = 'heavy' | 'chug' | 'smooth' | 'warm' | 'clean' | 'sub' | 'synth' | 'bright' | 'breath' | 'wood';
+
+/**
+ * Instrumento de cada nota: guitarra (por defecto), clavecín pulsado, quena soplada,
+ * tronco de manguaré golpeado o chiptune de pulso cuadrado.
+ */
+export type SoloTimbre = 'guitar' | 'harpsichord' | 'quena' | 'logdrum' | 'chip';
 
 export interface SoloNote {
   /** Momento (ms desde que empieza el solo). */
@@ -73,6 +84,10 @@ export interface SoloDef {
   wave: OscillatorType;
   /** Vibrato en todas las notas (fuelle de acordeón), como fracción de la frecuencia. */
   vibrato?: number;
+  /** Instrumento (por defecto, guitarra con la forma de onda `wave`). */
+  timbre?: SoloTimbre;
+  /** Segundo instrumento para las notas desde `from` (MIDI) hacia arriba, con su propio amplificador. */
+  lead?: { from: number; timbre: SoloTimbre; tone: SoloTone };
   /** Guitarra provisional dibujada por código: eléctrica puntiaguda o caja hueca. */
   guitar: 'pointy' | 'hollow';
   strings: number;
@@ -160,12 +175,15 @@ const blues = (): SoloNote[] => [
   { t: 2200, midi: 81, len: 700, hit: true, final: true, bend: true },
 ];
 
-/** GEORGE: fraseo de jazz fusión en Re dórico, con cromatismos ligados y una nota final "bien afinada". */
+/**
+ * GEORGE: jazz fusión en Re menor melódica (Re Mi Fa Sol La Si Do#): sube la escala, baja con
+ * aproximaciones, remarca la sexta y la séptima mayores, y cierra en Re menor con séptima mayor "bien afinado".
+ */
 const fusion = (): SoloNote[] => phrase([
-  [62, 90], [64, 90], [65, 90, 'h'], [67, 90], [69, 90], [72, 90, 'h'], [71, 90], [69, 90],
-  [68, 90, 'h'], [67, 90], [65, 90], [64, 90, 'h'], [62, 90], [61, 90], [62, 180, 'hl'], [null, 90],
-  [74, 75], [73, 75], [72, 75, 'h'], [70, 75], [69, 75], [67, 75, 'h'], [66, 75], [65, 75],
-  [64, 150, 'h'], [69, 120], [76, 140, 'hs'], [74, 700, 'fb'],
+  [62, 90], [64, 90], [65, 90, 'h'], [67, 90], [69, 90], [71, 90, 'h'], [73, 90], [74, 180, 'hl'], [null, 90],
+  [77, 75], [76, 75], [74, 75, 'h'], [73, 75], [71, 75], [69, 75, 'h'], [67, 75], [65, 75], [64, 75, 'h'], [61, 75], [62, 150, 'hl'],
+  [69, 120], [71, 120, 's'], [73, 120, 'h'], [76, 240, 'hb'], [74, 120], [73, 120], [71, 240, 'h'],
+  [[50, 62, 65, 69, 73], 900, 'f'],
 ]);
 
 /** PEPPER: notas súper graves, lentas y con todo el peso del sub. */
@@ -340,6 +358,64 @@ const viral = (): SoloNote[] => phrase([
   [[64, 68, 71, 76], 800, 'f'],
 ]);
 
+/** NOSU: la progresión de todos los hits (La menor, Fa, Do, Sol) en arpegios cuadrados al milímetro. */
+const QUANT_MS = 110;
+const quantized = (): SoloNote[] => {
+  const chords = [[57, 60, 64, 69], [53, 57, 60, 65], [60, 64, 67, 72], [55, 59, 62, 67]];
+  const notes: SoloNote[] = [];
+  for (let bar = 0; bar < 4; bar++) {
+    const ch = chords[bar % 4];
+    const up = bar >= 2 ? 12 : 0;
+    [0, 1, 2, 3, 2, 1].forEach((k, i) => notes.push({ t: (bar * 6 + i) * QUANT_MS, midi: ch[k] + up, len: QUANT_MS * 0.8 }));
+  }
+  notes.push({ t: 24 * QUANT_MS, midi: 45, chord: [7, 12, 15, 19, 24], len: 900 });
+  return hitsEvery(notes, 3);
+};
+
+/** Bombo en negras y caja en 2 y 4: el ritmo perfecto que NOSU le "corrige" a todos. */
+const quantizedDrums = (): SoloDrum[] =>
+  Array.from({ length: 13 }, (_, i) => ({ t: i * QUANT_MS * 2, kind: i % 2 ? 'snare' : 'kick' }) as SoloDrum);
+
+/** EL VIRREY: shred barroco en Re menor armónica sobre nota pedal (Re, Sol menor, La7), con trino de clave y remate en Re menor. */
+const minuet = (): SoloNote[] => {
+  const cells = [
+    [74, 73, 74, 69, 65, 69, 62, 69], [74, 72, 74, 70, 67, 70, 62, 70],
+    [73, 71, 73, 69, 64, 69, 61, 69], [74, 73, 74, 77, 81, 77, 74, 69],
+  ];
+  const notes: SoloNote[] = cells.flat().map((midi, i) => ({ t: i * 68, midi, len: 80 }));
+  let t = notes.length * 68;
+  for (let i = 0; i < 8; i++, t += 50) notes.push({ t, midi: i % 2 ? 82 : 81, len: 56 });
+  notes.push({ t: t + 40, midi: 50, chord: [7, 12, 15, 19], len: 800 });
+  return hitsEvery(notes, 4);
+};
+
+/** INTI: rock andino en Mi menor: power chords con ritmo de huayno (largo-corto) y una quena distorsionada encima. */
+const inca = (): SoloNote[] => phrase([
+  [[40, 47], 240, 'h'], [[40, 47], 120], [[43, 50], 240, 'h'], [[45, 52], 120],
+  [[47, 54], 240, 'h'], [[45, 52], 120], [[43, 50], 240, 'h'], [[40, 47], 120],
+  [76, 190, 's'], [79, 100], [81, 190, 'h'], [79, 100], [76, 190], [74, 100, 'h'],
+  [76, 190, 'b'], [71, 100], [74, 190, 'h'], [76, 100], [79, 190], [81, 100, 'h'], [83, 300, 'bl'],
+  [[40, 47, 52], 900, 'f'],
+]);
+
+/** AMU: los dos tonos del manguaré, que empiezan espaciados y aceleran hasta retumbar; remate grave. */
+const manguare = (): SoloNote[] => {
+  const pitches = [45, 50, 45, 52, 45, 50, 48, 50];
+  const notes: SoloNote[] = [];
+  let t = 0;
+  let gap = 380;
+  for (let i = 0; i < 26; i++) {
+    notes.push({ t, midi: pitches[i % pitches.length], len: Math.max(gap * 0.8, 90) });
+    t += gap;
+    gap = Math.max(85, gap * 0.9);
+  }
+  notes.push({ t: t + 60, midi: 38, chord: [7, 12], len: 900 });
+  return hitsEvery(notes, 3);
+};
+const MANGUARE = manguare();
+/** Bombo que dobla un golpe sí y otro no: el tronco del manguaré retumbando en el piso. */
+const manguareDrums = (): SoloDrum[] => MANGUARE.filter((_, i) => i % 2 === 0).map((n) => ({ t: n.t, kind: 'kick' }));
+
 /** EL ACOPLE: barridos fluidos de Mi disminuido a semicorcheas (~234 BPM).
  * Mantiene 41 notas y 11 impactos; el remate deja respirar el acorde. */
 export const ACOPLE_NOTE_MS = 64;
@@ -376,5 +452,13 @@ export const SOLOS: Record<SoloStyle, SoloDef> = {
   ascension: solo({ style: 'ascension', tone: 'smooth', wave: 'triangle', guitar: 'pointy', strings: 6, speed: 780, wobble: 70 }, ascension()),
   roots: solo({ style: 'roots', tone: 'heavy', ...ELECTRIC, speed: 1100, wobble: 40 }, roots()),
   viral: solo({ style: 'viral', tone: 'clean', wave: 'triangle', guitar: 'pointy', strings: 6, speed: 950, wobble: 50 }, viral()),
+  // NOSU: chiptune de pulso cuadrado, sin vibrato ni caída: cada nota cortada al milímetro.
+  quantized: { ...solo({ style: 'quantized', tone: 'synth', ...ELECTRIC, wave: 'square', timbre: 'chip', speed: 1150, wobble: 0 }, quantized()), drums: quantizedDrums() },
+  // EL VIRREY: clavecín de corte, brillante y frío.
+  minuet: solo({ style: 'minuet', tone: 'bright', ...ELECTRIC, timbre: 'harpsichord', speed: 1400, wobble: 25 }, minuet()),
+  // INTI: charango eléctrico en los acordes y quena distorsionada en la melodía.
+  inca: solo({ style: 'inca', tone: 'heavy', wave: 'sawtooth', guitar: 'hollow', strings: 5, lead: { from: 70, timbre: 'quena', tone: 'breath' }, speed: 1050, wobble: 45 }, inca()),
+  // AMU: el tronco del manguaré golpeado, no una guitarra.
+  manguare: { ...solo({ style: 'manguare', tone: 'wood', wave: 'sine', timbre: 'logdrum', guitar: 'hollow', strings: 4, speed: 1100, wobble: 30 }, MANGUARE), drums: manguareDrums() },
   feedback: solo({ style: 'feedback', tone: 'heavy', vibrato: 0, ...ELECTRIC, speed: 1250, wobble: 60 }, diminished()),
 };

@@ -65,7 +65,8 @@ export class PreloadScene extends Phaser.Scene {
     const pick = (key: string) => Object.values(FIGHTERS).find((def) => def.id === query.get(key))?.id;
     if (query.has('lab')) {
       const p1 = pick('lab') ?? 'erp';
-      this.scene.start(SCENES.Fight, { p1, p2: defaultOpponent(p1), training: true, lab: true, stage: 'barrio' });
+      const stage = Object.values(STAGES).find((def) => def.id === query.get('stage'))?.id ?? 'barrio';
+      this.scene.start(SCENES.Fight, { p1, p2: defaultOpponent(p1), training: true, lab: true, stage });
     } else if (query.has('sprites')) {
       const char = pick('sprites');
       this.scene.start(SCENES.Lab, char ? { char } : {});
