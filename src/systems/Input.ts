@@ -17,6 +17,15 @@ const BINDINGS: Record<string, Action[]> = {
   Escape: ['back', 'pause'],
 };
 
+/** Flechas: solo en los menús (en la pelea se juega con WASD). */
+const MENU_BINDINGS: Record<string, Action[]> = {
+  ...BINDINGS,
+  ArrowLeft: ['left'],
+  ArrowRight: ['right'],
+  ArrowUp: ['up'],
+  ArrowDown: ['down'],
+};
+
 /**
  * Teclas físicas apretadas ahora mismo, en todo el juego. Se registran una sola vez para que
  * una tecla mantenida desde la pantalla anterior (o durante el anuncio de la ronda) cuente
@@ -35,11 +44,14 @@ window.addEventListener('blur', () => heldCodes.clear());
  */
 export class Input {
   private pressed = new Set<Action>();
+  private bindings: Record<string, Action[]>;
 
+  /** `mouseAttacks`: la pelea (clic = puño / patada, sin flechas). Si no, un menú (también con flechas). */
   constructor(scene: Phaser.Scene, mouseAttacks = false) {
+    const bindings = (this.bindings = mouseAttacks ? BINDINGS : MENU_BINDINGS);
     const down = (e: KeyboardEvent) => {
       if (e.repeat) return;
-      for (const a of BINDINGS[e.code] ?? []) this.pressed.add(a);
+      for (const a of bindings[e.code] ?? []) this.pressed.add(a);
     };
     window.addEventListener('keydown', down);
 
@@ -60,7 +72,7 @@ export class Input {
   }
 
   isDown(a: Action): boolean {
-    for (const code of heldCodes) if (BINDINGS[code]?.includes(a)) return true;
+    for (const code of heldCodes) if (this.bindings[code]?.includes(a)) return true;
     return false;
   }
 

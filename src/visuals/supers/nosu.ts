@@ -48,6 +48,8 @@ export const nosu: SuperShow = {
     const done = c.data.finalAt !== undefined;
     const goal = (c.data.hits ?? 0) / totalHits(c);
     c.data.progress += (goal - c.data.progress) * 0.35;
+    // El acercamiento nunca llega solo: sin esto se queda en 99,9 % y falta el último segmento.
+    if (Math.abs(goal - c.data.progress) < 0.002) c.data.progress = goal;
     const shown = Math.round(c.data.progress * 100);
     const perfect = done && (c.data.hits ?? 0) >= totalHits(c);
     const bar = c.data.bar as Phaser.GameObjects.Graphics;

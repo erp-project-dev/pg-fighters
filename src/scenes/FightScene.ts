@@ -308,7 +308,7 @@ export class FightScene extends Phaser.Scene implements Arena {
         const beaten = this.p2.def.id;
         const boss = !!this.p2.def.boss;
         StoryRun.win(this.stats);
-        goTo(this, boss ? SCENES.Story : SCENES.StoryProgress, boss ? { mode: 'finale' } : { justFreed: beaten }, 500);
+        goTo(this, boss ? SCENES.Ending : SCENES.StoryProgress, boss ? {} : { justFreed: beaten }, 500);
       } else goTo(this, SCENES.Continue, {}, 500);
       return;
     }

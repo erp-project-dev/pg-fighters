@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import { COLORS, CSS, GAME_HEIGHT, GAME_WIDTH, SCENES } from '../config';
 import { FIGHTERS, type FighterDef } from '../data/fighters';
 import { STAGES } from '../data/stages';
-import { BOSS_STAGE, EPILOGUES, FINALE, PROLOGUE, REVEAL, type StoryLine } from '../data/story';
+import { BOSS_STAGE, PROLOGUE, REVEAL, type StoryLine } from '../data/story';
 import { Audio, MUSIC } from '../systems/Audio';
 import { addPortrait } from '../systems/FighterArt';
 import { Input } from '../systems/Input';
@@ -10,7 +10,7 @@ import { buildStage } from '../systems/StageArt';
 import { BOSS, StoryRun } from '../systems/StoryRun';
 import { fitText, footer, goTo, scanlines, text } from '../ui/ui';
 
-export type StoryMode = 'prologue' | 'reveal' | 'finale';
+export type StoryMode = 'prologue' | 'reveal';
 
 const TYPE_MS = 30;
 const BOX_W = 1400;
@@ -19,8 +19,7 @@ const BOX_Y = 640;
 const BOX_H = 300;
 
 /**
- * Escenas de texto del modo historia: prólogo, revelación del jefe y final (con el epílogo del luchador
- * y el resumen). Paneles que se escriben letra por letra: ENTER completa o avanza, ESC salta todo.
+ * Escenas de texto del modo historia: prólogo y revelación del jefe. Paneles que se escriben letra por letra: ENTER completa o avanza, ESC salta todo.
  */
 export class StoryScene extends Phaser.Scene {
   private input2!: Input;
@@ -64,22 +63,17 @@ export class StoryScene extends Phaser.Scene {
     if (this.mode === 'prologue') {
       this.lines = PROLOGUE.map((t) => ({ speaker: 'narrator', text: fill(t) }));
       Audio.music(this, MUSIC.menu, 0.3);
-    } else if (this.mode === 'reveal') {
+    } else {
       this.lines = REVEAL.map((l) => ({ ...l, text: fill(l.text) }));
       Audio.stopMusic(800);
-    } else {
-      const epilogue = EPILOGUES[p.id] ?? '';
-      this.lines = [...FINALE, epilogue].map((t) => ({ speaker: 'narrator', text: fill(t) }));
-      this.lines.push({ speaker: 'narrator', text: this.summary() });
-      Audio.music(this, MUSIC.menu, 0.35);
     }
 
-    // Fondo: el barrio para el prólogo, el interior del ampli para la revelación, el festival al final.
-    const stage = STAGES[this.mode === 'reveal' ? BOSS_STAGE : this.mode === 'finale' ? 'festival' : 'barrio'];
+    // Fondo: el barrio para el prólogo y el interior del ampli para la revelación (el final es EndingScene).
+    const stage = STAGES[this.mode === 'reveal' ? BOSS_STAGE : 'barrio'];
     buildStage(this, stage, true);
     this.add.rectangle(0, 0, GAME_WIDTH, GAME_HEIGHT, 0x000000, this.mode === 'reveal' ? 0.45 : 0.62).setOrigin(0);
 
-    const title = this.mode === 'prologue' ? 'MODO HISTORIA' : this.mode === 'reveal' ? 'LA VERDAD' : 'EPÍLOGO';
+    const title = this.mode === 'prologue' ? 'MODO HISTORIA' : 'LA VERDAD';
     text(this, GAME_WIDTH / 2, 80, title, { size: 64, italic: true, weight: '900', color: CSS.lime, origin: [0.5, 0.5], shadow: true });
     text(this, GAME_WIDTH / 2, 138, 'EL ACOPLE', { size: 26, weight: '800', color: CSS.cream, origin: [0.5, 0.5], spacing: 8 });
 
@@ -93,13 +87,6 @@ export class StoryScene extends Phaser.Scene {
     footer(this, 'ENTER  SIGUIENTE      ESC  SALTAR');
     scanlines(this, 0.05);
     this.showLine();
-  }
-
-  private summary(): string {
-    const s = StoryRun.state!.stats;
-    const time = `${Math.floor(s.seconds / 60)}:${String(s.seconds % 60).padStart(2, '0')}`;
-    const score = StoryRun.state!.score.toLocaleString('es-PE');
-    return `FIN.  Puntaje final: ${score}  ·  Amigos liberados: ${StoryRun.friends}/${StoryRun.friends}  ·  Tiempo: ${time}  ·  Mejor combo: ${s.maxCombo}  ·  Perfects: ${s.perfects}  ·  Continues: ${s.continues}`;
   }
 
   private showLine(): void {
@@ -142,12 +129,7 @@ export class StoryScene extends Phaser.Scene {
     this.leaving = true;
     const run = StoryRun;
     if (this.mode === 'prologue') goTo(this, SCENES.StoryProgress, {}, 400);
-    else if (this.mode === 'reveal') {
-      goTo(this, SCENES.Versus, { p1: run.state!.player, p2: BOSS, stage: BOSS_STAGE, story: true, difficulty: run.difficulty }, 400);
-    } else {
-      run.clear();
-      goTo(this, SCENES.Title, { skipPress: true }, 600);
-    }
+    else goTo(this, SCENES.Versus, { p1: run.state!.player, p2: BOSS, stage: BOSS_STAGE, story: true, difficulty: run.difficulty }, 400);
   }
 
   update() {

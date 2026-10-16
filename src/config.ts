@@ -61,6 +61,7 @@ export const SCENES = {
   NameEntry: 'NameEntry',
   Ranking: 'Ranking',
   Saves: 'Saves',
+  Ending: 'Ending',
   Credits: 'Credits',
   Disclaimer: 'Disclaimer',
   LabPick: 'LabPick',

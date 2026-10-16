@@ -8,6 +8,8 @@ import { Input } from '../systems/Input';
 import { buildStage } from '../systems/StageArt';
 import { fitText, footer, text } from '../ui/ui';
 import type { FightData } from './FightScene';
+import { demoEnding } from './EndingScene';
+import { StoryRun } from '../systems/StoryRun';
 
 /** En el laboratorio también se puede jugar (y probar) con el jefe. */
 const CHOICES: FighterId[] = [...ROSTER, 'acople'];
@@ -60,11 +62,14 @@ export class LabPickScene extends Phaser.Scene {
     });
     const play = text(this, 1680, 200, '▶ PELEAR', { size: 44, italic: true, weight: '900', color: CSS.lime, origin: [0.5, 0.5] });
     play.setInteractive({ useHandCursor: true }).on('pointerdown', () => this.play());
+    const ending = text(this, 1680, 258, '▶ VER FINAL  (F)', { size: 26, italic: true, weight: '900', color: CSS.cream, origin: [0.5, 0.5] });
+    ending.setInteractive({ useHandCursor: true }).on('pointerdown', () => this.ending());
 
     this.cursor = this.add.graphics().setDepth(10);
     footer(this, 'W A S D  ELEGIR      ENTER  OK      TAB  TÚ / RIVAL / ESCENARIO      ESC  VOLVER');
 
     const onKey = (e: KeyboardEvent) => {
+      if (e.code === 'KeyF' && !e.repeat) return this.ending();
       if (e.code !== 'Tab' || e.repeat) return;
       e.preventDefault();
       this.setSection(SECTIONS[(SECTIONS.indexOf(this.section) + 1) % SECTIONS.length]);
@@ -173,6 +178,15 @@ export class LabPickScene extends Phaser.Scene {
     this.scene.stop(SCENES.Hud);
     this.scene.stop(SCENES.Fight);
     this.scene.start(SCENES.Fight, { ...this.fight, ...this.sel });
+  }
+
+  /** Final del modo historia con TÚ (partida de muestra: no se guarda ni va al ranking). */
+  private ending(): void {
+    Audio.blip(this, true);
+    StoryRun.state = demoEnding(this.sel.p1);
+    this.scene.stop(SCENES.Hud);
+    this.scene.stop(SCENES.Fight);
+    this.scene.start(SCENES.Ending, { lab: { ...this.fight, ...this.sel } });
   }
 
   private resume(): void {
