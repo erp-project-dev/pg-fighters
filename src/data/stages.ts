@@ -178,14 +178,13 @@ export const STAGES: Record<StageId, StageDef> = {
     color: 0x2ecc71,
     css: '#2ecc71',
   },
-  /** Escondido hasta que llegue su arte final: no está en STAGE_ORDER ni en la historia (se prueba con ?lab&stage=laboratorio). */
   laboratorio: {
     id: 'laboratorio',
     number: '15',
     name: 'EL LABORATORIO DEL ROCK',
     place: 'DONDE NACIÓ NOSU · LIMA DEL FUTURO',
     texture: 'stage-laboratorio',
-    // image: 'assets/stages/laboratorio.png',
+    image: 'assets/stages/laboratorio.png',
     music: MUSIC.stage,
     color: 0xff2ba6,
     css: '#ff2ba6',
@@ -203,4 +202,4 @@ export const STAGES: Record<StageId, StageDef> = {
   },
 };
 
-export const STAGE_ORDER: StageId[] = ['barrio', 'metro', 'bar', 'tienda', 'festival', 'azotea', 'tomate', 'biblioteca', 'chino', 'mall', 'arenal', 'casona', 'ciudadela', 'rio'];
+export const STAGE_ORDER: StageId[] = ['barrio', 'metro', 'bar', 'tienda', 'festival', 'azotea', 'tomate', 'biblioteca', 'chino', 'mall', 'arenal', 'casona', 'ciudadela', 'rio', 'laboratorio'];

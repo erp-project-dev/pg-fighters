@@ -25,7 +25,7 @@ export interface Kit {
 const POWER_INFO: Partial<Record<FighterId, string>> = {
   erp: 'Buster: un disparo recto y rapidísimo desde el puño. Simple y confiable.',
   mayin: 'Embestida: cruza más de media pantalla con la panza por delante, pegado al piso; sirve para acercarte y empuja lejos al rival. Se esquiva saltando; si te la bloquean, quedas vendido un momento.',
-  george: 'Onda afinada: va recta y corrige su altura hacia el rival. Si pega, lo silencia 3 s: no puede usar su poder. Pega poco.',
+  george: 'Contraataque: se pone en guardia un momento. Si le pegan (golpe o poder), recibe el daño igual pero no se corta: aparece junto al atacante y le devuelve un golpe que tumba. Si nadie ataca, queda expuesto. Recarga de 4 s al terminar la guardia; si activa el contraataque, 4,5 s desde la respuesta.',
   pepper: 'Láser de ecualizador que cruza toda la pantalla. Mantén el clic para cargarlo (hasta 2 s): sale más grueso, pega más y empuja lejos.',
   slandor: 'Golpe de oro: tu próximo golpe normal (puño, patada, barrida o aéreo) pega el doble. Se gasta al pegar; si fallas o te lo bloquean, lo conservas. Lo pierdes si te pegan o a los 5 s.',
   pentalick: 'El lick que funciona: cada vez que pega, el siguiente sale más grande y pega más (hasta nivel 3). Si falla o te lo bloquean, vuelve al nivel 1.',
@@ -37,7 +37,7 @@ const POWER_INFO: Partial<Record<FighterId, string>> = {
   turboshred: 'Tempo imposible: por 3 s caminas y golpeas más rápido, envuelto en viento. No pega por sí solo. La recarga empieza al terminar.',
   toxicity: 'Cruz que crece cada vez más hasta llegar al rival.',
   rematada: 'Latigazo de cuerda: si pega, jala al rival hasta tenerlo a distancia de golpe.',
-  escalas: 'Contraataque: se pone en guardia un momento. Si le pegan (golpe o poder), recibe el daño igual pero no se corta: aparece junto al atacante y le devuelve un golpe que tumba. Si nadie ataca, queda expuesto. Recarga larga, que empieza al terminar la guardia.',
+  escalas: 'Onda de silencio: corrige su altura hacia el rival. Si pega, lo silencia 3 s: no puede usar su poder especial ni activar el ultimate. Pega poco.',
   tayloy: 'Tres agujas de jade desde alturas distintas, directo al rival.',
   jesex: 'Moneda rápida: si pega, le roba un poco de vida al rival. Cada moneda sale más rápida que la anterior (+10 % y +25 %), y a la cuarta vuelve a empezar.',
   markus: 'Tornado de arena: avanza recto y, si pega, jala un poco al rival hacia ti. Recarga larga.',
@@ -51,14 +51,14 @@ const POWER_INFO: Partial<Record<FighterId, string>> = {
   acople: 'Uno de sus tres poderes robados, al azar.',
 };
 
-/** Sin poder propio todavía se usa el de George (data/powers.ts), y también su descripción. */
-export const powerInfo = (id: FighterId): string => POWER_INFO[id] ?? POWER_INFO.george!;
+/** Sin poder propio todavía se usa el de Escalas (data/powers.ts), y también su descripción. */
+export const powerInfo = (id: FighterId): string => POWER_INFO[id] ?? POWER_INFO.escalas!;
 
 /** Qué hace el ultimate de cada uno (pausa). Corto: el panel de movimientos tiene poco alto. Usar `superInfo`. */
 const SUPER_INFO: Partial<Record<FighterId, string>> = {
   erp: 'La imagen se descuadra en glitch y lanza ráfagas de píxeles. Remate: la pantalla se cuelga y revienta.',
   mayin: 'Cinco cuerdas de luz azul vibran y el rival se hunde de tristeza. Remate: una ola azul barre la pantalla.',
-  george: 'Ondas desafinadas que se van enderezando; el rival se ve doble. Remate: todo queda afinado a 0 cents.',
+  george: 'Ondas desafinadas que se van enderezando; el rival se ve doble. Remate: «El bend se respeta».',
   pepper: 'Barras de espectro gigantes y cada golpe aplasta al rival. Remate: todo se satura en rojo, CLIP.',
   slandor: 'Rayos dorados que van convirtiendo al rival en estatua de oro. Remate: estallido dorado.',
   pentalick: 'Cinco orbes de colores, siempre en el mismo orden; el rival queda en loop. Remate: los cinco a la vez.',
@@ -99,7 +99,7 @@ export const TRAITS: Partial<Record<FighterId, Trait>> = {
  */
 const COOLDOWNS: Partial<Record<FighterId, number>> = {
   erp: 1000,
-  george: 1800,
+  george: 4000,
   slandor: 2000,
   mimetico: 2000,
   clavito: 1600,
@@ -108,7 +108,7 @@ const COOLDOWNS: Partial<Record<FighterId, number>> = {
   ferdex: 1400,
   turboshred: 4500,
   rematada: 1800,
-  escalas: 4000,
+  escalas: 1800,
   jesex: 2000,
   markus: 2600,
   platanero: 1600,
@@ -134,8 +134,8 @@ const KITS: Partial<Record<FighterId, Kit>> = {
     moves: { special: { pose: 'punch', startup: 140, active: 460, recovery: 440, reach: 230, damage: 105, push: 600, hitstun: 420, blockstun: 220, sfx: 'punch', rush: { speed: 2600, trail: 0xe63a2e } } },
   },
   nosu: { moves: { sweep: { reach: 400 } } },
-  // "Eso está en el capítulo tres": guardia de contraataque. La recarga empieza cuando termina la guardia.
-  escalas: {
+  // "Cuidado ese bend": guardia de contraataque. La recarga empieza cuando termina la guardia.
+  george: {
     moves: { special: { pose: 'block', startup: 70, active: 650, recovery: 420, reach: 0, damage: 0, counter: true } },
   },
   inti: { multi: true },

@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { GAME_HEIGHT } from '../../config';
+import { GAME_HEIGHT, GAME_WIDTH } from '../../config';
 import { chest, slam, veil, type ShowCtx, type SuperShow } from './kit';
 import { ADD, colorFlash, echo, every, markHit, ringTex, shockwave, shot, spark, victim, wave } from './energy';
 
@@ -59,7 +59,11 @@ export const george: SuperShow = {
       for (let k = 0; k < 6; k++) c.scene.time.delayedCall(k * 60, () => c.fx.ring(t.x, t.y, k % 2 ? PALE : GREEN, 220 + k * 200, 0.6));
       c.fx.hit(t.x, t.y, GREEN, true);
       c.scene.cameras.main.shake(300, 0.014);
-      slam(c.scene, t.x, t.y - 300, '0 CENTS', '#4dff88', 140);
+      const textX = Phaser.Math.Clamp(t.x, 470, GAME_WIDTH - 470);
+      const textY = Math.max(270, t.y - 300);
+      slam(c.scene, textX, textY - 95, 'EL BEND SE', '#d6ffe4', 96, -4);
+      slam(c.scene, textX, textY + 60, 'RESPETA', '#4dff88', 190, -4)
+        .setShadow(0, 0, '#4dff88', 48, true, true);
     });
   },
 };

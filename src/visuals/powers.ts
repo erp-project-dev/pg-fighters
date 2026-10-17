@@ -269,11 +269,11 @@ const TEX: Partial<Record<PowerLook, (s: Phaser.Scene) => string>> = {
     g.fillStyle(0xffffff, 0.9).fillTriangle(196, 26, 196, 32, 222, 32);
   }),
   buster: (s) => tex(s, 'pw-buster', 130, 90, (g) => {
-    // Disparo de buster (mirando a la derecha): óvalo de energía morada con núcleo blanco y una estela corta atrás.
-    for (let k = 0; k < 6; k++) g.fillStyle(0x9b30ff, 0.07).fillEllipse(62 - k * 4, 45, 120 - k * 10, 84 - k * 9);
-    g.fillStyle(0x7a1fd6, 0.5).fillEllipse(34, 45, 46, 26).fillEllipse(18, 45, 26, 14);
-    g.fillStyle(0xb44dff, 1).fillEllipse(74, 45, 74, 54);
-    g.fillStyle(0xe2b8ff, 1).fillEllipse(78, 45, 52, 36);
+    // Disparo de buster (mirando a la derecha): óvalo de energía azul con núcleo blanco y una estela corta atrás.
+    for (let k = 0; k < 6; k++) g.fillStyle(0x168bff, 0.07).fillEllipse(62 - k * 4, 45, 120 - k * 10, 84 - k * 9);
+    g.fillStyle(0x0860d6, 0.5).fillEllipse(34, 45, 46, 26).fillEllipse(18, 45, 26, 14);
+    g.fillStyle(0x24baff, 1).fillEllipse(74, 45, 74, 54);
+    g.fillStyle(0xa6efff, 1).fillEllipse(78, 45, 52, 36);
     g.fillStyle(0xffffff, 1).fillEllipse(82, 43, 32, 20);
   }),
   slash: (s) => tex(s, 'pw-slash', 150, 520, (g) => {

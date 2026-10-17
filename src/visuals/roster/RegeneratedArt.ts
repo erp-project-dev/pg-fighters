@@ -3,7 +3,7 @@ import { FIGHTERS, type FighterDef } from '../../data/fighters';
 import { poseScale } from '../../systems/AnimeAtlas';
 
 /** Only complete, reviewed source sets belong here. Load pages for the active fighters. */
-export const REGENERATED_ART_IDS: readonly string[] = ['nosu', 'george', 'virrey', 'inti', 'amu', 'mimetico'];
+export const REGENERATED_ART_IDS: readonly string[] = ['nosu', 'george', 'virrey', 'inti', 'amu', 'mimetico', 'slandor', 'clavito', 'chantal', 'erp', 'mayin', 'jeanpierre'];
 
 export interface AnimationMetadata {
   animationVersion: 2;

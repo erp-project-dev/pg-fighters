@@ -127,16 +127,16 @@ export interface ShotSpec {
   drain?: number;
   /** Tributo: cada `every` aciertos de este poder, el disparo vuelve al que lo lanzó y lo cura `drain` × el daño. */
   tribute?: { every: number; drain: number };
-  /** Si pega, el rival no puede usar su poder básico estos ms (no se acumula mientras dura). */
+  /** Si pega, el rival no puede usar su poder básico ni activar el ultimate estos ms (no se acumula mientras dura). */
   silence?: number;
 }
 
 /** Poder básico de cada luchador. El Acople usa uno de sus tres al azar. */
 export const POWERS: Partial<Record<FighterId, ShotSpec[]>> = {
-  // Disparo de buster morado, recto y rapidísimo desde el puño: el poder más simple del juego.
-  erp: [{ look: 'buster', color: 0x9b30ff, speed: 2.2, size: 1.3, damage: 0.85 }],
-  // Onda afinada: va recta y corrige su altura hacia el pecho del rival. Si pega, silencia al rival 3 s.
-  george: [{ look: 'wave', damage: 0.7, track: 2.2, silence: 3000 }],
+  // Disparo de buster azul, recto y rapidísimo desde el puño: el poder más simple del juego.
+  erp: [{ look: 'buster', color: 0x168bff, speed: 2.2, size: 1.3, damage: 0.85 }],
+  // Onda de silencio: va recta y corrige su altura hacia el pecho del rival. Si pega, silencia al rival 3 s.
+  escalas: [{ look: 'wave', damage: 0.7, track: 2.2, silence: 3000 }],
   // Láser de ecualizador que cruza la pantalla. Manteniendo el clic se carga (hasta 2 s) y sale más grueso y fuerte.
   pepper: [{ look: 'laser', size: 0.6, damage: 0.75, beam: 260, charged: { size: 2.4, damage: 2, push: 2.5 } }],
   // Golpe de oro: su próximo golpe normal pega el doble (se gasta al conectar).
@@ -157,7 +157,7 @@ export const POWERS: Partial<Record<FighterId, ShotSpec[]>> = {
   toxicity: [{ look: 'cross', size: 0.55, damage: 1.1, grow: 5 }],
   // Latigazo de cuerda: si pega, jala al rival hacia ella.
   rematada: [{ look: 'lash', size: 0.7, damage: 1.2, beam: 120, range: 560, pull: true }],
-  // Doctor Escalas no lanza nada: su poder es un contraataque (data/moveset.ts, `counter`).
+  // George no lanza nada: su poder es un contraataque (data/moveset.ts, `counter`).
   // Tres agujas de jade desde alturas distintas, apuntadas al rival.
   tayloy: [[0, 240], [70, 0], [140, -150]].map(([delay, aimed]) => ({ look: 'needle' as const, size: 0.5, damage: 0.35, delay, aimed })),
   // Moneda rápida: si pega, le roba un poco de vida al rival (se cura el 60 % del daño). Sale cada vez más rápida: normal, +10 % y +25 %, y vuelve a empezar.
@@ -211,8 +211,8 @@ const chaos = (): ShotSpec[] => {
 const FIST: Partial<Record<FighterId, [number, number]>> = {
   // El Acople lanza con la mano abierta y el brazo alto, y su arte se ve más grande que su alto de guardia.
   acople: [0.38, 0.77],
-  // ERP dispara el buster con el puño a la altura del pecho.
-  erp: [0.36, 0.74],
+  // ERP dispara el buster desde la mano, ligeramente por debajo del pecho.
+  erp: [0.36, 0.69],
 };
 export const powerFist = (id: FighterId): [number, number] => FIST[id] ?? [0.34, 0.58];
 
@@ -221,5 +221,5 @@ export const powerFor = (id: FighterId): ShotSpec[] => {
   if (id === 'acople') return ACOPLE_POWERS[Math.floor(Math.random() * ACOPLE_POWERS.length)];
   // Clavito: caos, cada vez distinto.
   if (id === 'clavito') return chaos();
-  return POWERS[id] ?? POWERS.george!;
+  return POWERS[id] ?? POWERS.escalas!;
 };

@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1839,
+        "h": 757
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-airKick-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 317,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.56,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "clavito-airKick-1",
+          "frame": {
+            "x": 940,
+            "y": 404,
+            "w": 329,
+            "h": 335
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 335
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 335
+          },
+          "pivot": {
+            "x": 0.53,
+            "y": 0.991044776119403
+          }
+        },
+        {
+          "filename": "clavito-airKick-2",
+          "frame": {
+            "x": 8,
+            "y": 404,
+            "w": 544,
+            "h": 345
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 544,
+            "h": 345
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 544,
+            "h": 345
+          },
+          "pivot": {
+            "x": 0.4,
+            "y": 0.991304347826087
+          }
+        },
+        {
+          "filename": "clavito-airKick-3",
+          "frame": {
+            "x": 1378,
+            "y": 8,
+            "w": 453,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 453,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 453,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.4,
+            "y": 0.9913544668587896
+          }
+        },
+        {
+          "filename": "clavito-airKick-4",
+          "frame": {
+            "x": 568,
+            "y": 404,
+            "w": 356,
+            "h": 339
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 339
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 339
+          },
+          "pivot": {
+            "x": 0.51,
+            "y": 0.9911504424778761
+          }
+        },
+        {
+          "filename": "clavito-airKick-5",
+          "frame": {
+            "x": 1034,
+            "y": 8,
+            "w": 328,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.56,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "clavito-airKick-6",
+          "frame": {
+            "x": 697,
+            "y": 8,
+            "w": 321,
+            "h": 364
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 364
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 364
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9917582417582418
+          }
+        },
+        {
+          "filename": "clavito-airKick-7",
+          "frame": {
+            "x": 341,
+            "y": 8,
+            "w": 340,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "clavito-airKick",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 317,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.56,
+            "y": 0.9921052631578947
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1653,
+        "h": 817
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-airPunch-0",
+          "frame": {
+            "x": 1297,
+            "y": 8,
+            "w": 348,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "clavito-airPunch-1",
+          "frame": {
+            "x": 8,
+            "y": 419,
+            "w": 383,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.57,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "clavito-airPunch-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 475,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 475,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 475,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.45,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "clavito-airPunch-3",
+          "frame": {
+            "x": 897,
+            "y": 8,
+            "w": 384,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.57,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "clavito-airPunch-4",
+          "frame": {
+            "x": 868,
+            "y": 419,
+            "w": 367,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.57,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "clavito-airPunch-5",
+          "frame": {
+            "x": 1251,
+            "y": 419,
+            "w": 348,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "clavito-airPunch-6",
+          "frame": {
+            "x": 407,
+            "y": 419,
+            "w": 445,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 445,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 445,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.56,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "clavito-airPunch-7",
+          "frame": {
+            "x": 499,
+            "y": 8,
+            "w": 382,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.56,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "clavito-airPunch",
+          "frame": {
+            "x": 1297,
+            "y": 8,
+            "w": 348,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9923076923076923
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1922,
+        "h": 858
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-backdash-0",
+          "frame": {
+            "x": 352,
+            "y": 8,
+            "w": 374,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "clavito-backdash-1",
+          "frame": {
+            "x": 1095,
+            "y": 8,
+            "w": 392,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 392,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 392,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5471938775510204,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "clavito-backdash-2",
+          "frame": {
+            "x": 742,
+            "y": 8,
+            "w": 337,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.3367952522255193,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "clavito-backdash-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 328,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.4847560975609756,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "clavito-backdash-4",
+          "frame": {
+            "x": 1503,
+            "y": 8,
+            "w": 411,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 411,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 411,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "clavito-backdash-5",
+          "frame": {
+            "x": 706,
+            "y": 465,
+            "w": 362,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.5151933701657458,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "clavito-backdash-6",
+          "frame": {
+            "x": 8,
+            "y": 465,
+            "w": 320,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 320,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 320,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.56875,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "clavito-backdash-7",
+          "frame": {
+            "x": 344,
+            "y": 465,
+            "w": 346,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "clavito-backdash",
+          "frame": {
+            "x": 352,
+            "y": 8,
+            "w": 374,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2034,
+        "h": 862
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-special-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 385,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "clavito-special-1",
+          "frame": {
+            "x": 444,
+            "y": 454,
+            "w": 396,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 396,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 396,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "clavito-special-2",
+          "frame": {
+            "x": 409,
+            "y": 8,
+            "w": 380,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 380,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 380,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "clavito-special-3",
+          "frame": {
+            "x": 856,
+            "y": 454,
+            "w": 416,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.4735576923076923,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "clavito-special-4",
+          "frame": {
+            "x": 1198,
+            "y": 8,
+            "w": 429,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 429,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 429,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.4568764568764569,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "clavito-special-5",
+          "frame": {
+            "x": 8,
+            "y": 454,
+            "w": 420,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 420,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 420,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.46785714285714286,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "clavito-special-6",
+          "frame": {
+            "x": 1643,
+            "y": 8,
+            "w": 383,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "clavito-special-7",
+          "frame": {
+            "x": 805,
+            "y": 8,
+            "w": 377,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "clavito-special",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 385,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1947,
+        "h": 897
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-block-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 385,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "clavito-block-1",
+          "frame": {
+            "x": 409,
+            "y": 8,
+            "w": 372,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "clavito-block-2",
+          "frame": {
+            "x": 797,
+            "y": 8,
+            "w": 382,
+            "h": 433
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 433
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 433
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930715935334873
+          }
+        },
+        {
+          "filename": "clavito-block-3",
+          "frame": {
+            "x": 796,
+            "y": 469,
+            "w": 346,
+            "h": 382
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 382
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 382
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921465968586387
+          }
+        },
+        {
+          "filename": "clavito-block-4",
+          "frame": {
+            "x": 408,
+            "y": 469,
+            "w": 372,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "clavito-block-5",
+          "frame": {
+            "x": 1570,
+            "y": 8,
+            "w": 369,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "clavito-block-6",
+          "frame": {
+            "x": 8,
+            "y": 469,
+            "w": 384,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "clavito-block-7",
+          "frame": {
+            "x": 1195,
+            "y": 8,
+            "w": 359,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "clavito-block",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 385,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932584269662922
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1924,
+        "h": 761
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-crouch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 373,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "clavito-crouch-1",
+          "frame": {
+            "x": 397,
+            "y": 8,
+            "w": 368,
+            "h": 374
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 374
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 374
+          },
+          "pivot": {
+            "x": 0.5122282608695652,
+            "y": 0.9919786096256684
+          }
+        },
+        {
+          "filename": "clavito-crouch-2",
+          "frame": {
+            "x": 1161,
+            "y": 8,
+            "w": 381,
+            "h": 372
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 372
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 372
+          },
+          "pivot": {
+            "x": 0.5118110236220472,
+            "y": 0.9919354838709677
+          }
+        },
+        {
+          "filename": "clavito-crouch-3",
+          "frame": {
+            "x": 781,
+            "y": 8,
+            "w": 364,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.5164835164835165,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "clavito-crouch-4",
+          "frame": {
+            "x": 1558,
+            "y": 8,
+            "w": 358,
+            "h": 353
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 353
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 353
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915014164305949
+          }
+        },
+        {
+          "filename": "clavito-crouch-5",
+          "frame": {
+            "x": 378,
+            "y": 400,
+            "w": 350,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.5042857142857143,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "clavito-crouch-6",
+          "frame": {
+            "x": 744,
+            "y": 400,
+            "w": 379,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.5131926121372031,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "clavito-crouch-7",
+          "frame": {
+            "x": 8,
+            "y": 400,
+            "w": 354,
+            "h": 353
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 353
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 353
+          },
+          "pivot": {
+            "x": 0.5127118644067796,
+            "y": 0.9915014164305949
+          }
+        },
+        {
+          "filename": "clavito-crouch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 373,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920212765957447
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1961,
+        "h": 772
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-crouchBlock-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 379,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "clavito-crouchBlock-1",
+          "frame": {
+            "x": 403,
+            "y": 8,
+            "w": 380,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 380,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 380,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.5078947368421053,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "clavito-crouchBlock-2",
+          "frame": {
+            "x": 1178,
+            "y": 8,
+            "w": 387,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.5297157622739018,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "clavito-crouchBlock-3",
+          "frame": {
+            "x": 799,
+            "y": 8,
+            "w": 363,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.5344352617079889,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "clavito-crouchBlock-4",
+          "frame": {
+            "x": 1581,
+            "y": 8,
+            "w": 372,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.5067204301075269,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "clavito-crouchBlock-5",
+          "frame": {
+            "x": 402,
+            "y": 403,
+            "w": 401,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.5149625935162094,
+            "y": 0.9916666666666667
+          }
+        },
+        {
+          "filename": "clavito-crouchBlock-6",
+          "frame": {
+            "x": 819,
+            "y": 403,
+            "w": 389,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 389,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 389,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.5115681233933161,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "clavito-crouchBlock-7",
+          "frame": {
+            "x": 8,
+            "y": 403,
+            "w": 378,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.5158730158730159,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "clavito-crouchBlock",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 379,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920844327176781
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1945,
+        "h": 785
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-crouchHurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 361,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.5277008310249307,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "clavito-crouchHurt-1",
+          "frame": {
+            "x": 385,
+            "y": 8,
+            "w": 394,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 394,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 394,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.5215736040609137,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "clavito-crouchHurt-2",
+          "frame": {
+            "x": 755,
+            "y": 417,
+            "w": 401,
+            "h": 358
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 358
+          },
+          "pivot": {
+            "x": 0.5922693266832918,
+            "y": 0.9916201117318436
+          }
+        },
+        {
+          "filename": "clavito-crouchHurt-3",
+          "frame": {
+            "x": 1196,
+            "y": 8,
+            "w": 347,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.5273775216138329,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "clavito-crouchHurt-4",
+          "frame": {
+            "x": 795,
+            "y": 8,
+            "w": 385,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "clavito-crouchHurt-5",
+          "frame": {
+            "x": 1559,
+            "y": 8,
+            "w": 378,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.5198412698412699,
+            "y": 0.9916666666666667
+          }
+        },
+        {
+          "filename": "clavito-crouchHurt-6",
+          "frame": {
+            "x": 8,
+            "y": 417,
+            "w": 361,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.5318559556786704,
+            "y": 0.9916666666666667
+          }
+        },
+        {
+          "filename": "clavito-crouchHurt-7",
+          "frame": {
+            "x": 385,
+            "y": 417,
+            "w": 354,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.559322033898305,
+            "y": 0.9916666666666667
+          }
+        },
+        {
+          "filename": "clavito-crouchHurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 361,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.5277008310249307,
+            "y": 0.9923664122137404
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1658,
+        "h": 734
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-crouchPunch-0",
+          "frame": {
+            "x": 879,
+            "y": 8,
+            "w": 362,
+            "h": 351
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 351
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 351
+          },
+          "pivot": {
+            "x": 0.56353591160221,
+            "y": 0.9914529914529915
+          }
+        },
+        {
+          "filename": "clavito-crouchPunch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 379,
+            "h": 356
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 356
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 356
+          },
+          "pivot": {
+            "x": 0.5501319261213721,
+            "y": 0.9915730337078652
+          }
+        },
+        {
+          "filename": "clavito-crouchPunch-2",
+          "frame": {
+            "x": 403,
+            "y": 8,
+            "w": 460,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 460,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 460,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.4891304347826087,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "clavito-crouchPunch-3",
+          "frame": {
+            "x": 1257,
+            "y": 8,
+            "w": 393,
+            "h": 350
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 350
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 350
+          },
+          "pivot": {
+            "x": 0.5610687022900763,
+            "y": 0.9914285714285714
+          }
+        },
+        {
+          "filename": "clavito-crouchPunch-4",
+          "frame": {
+            "x": 8,
+            "y": 380,
+            "w": 387,
+            "h": 346
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 346
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 346
+          },
+          "pivot": {
+            "x": 0.5516795865633075,
+            "y": 0.9913294797687862
+          }
+        },
+        {
+          "filename": "clavito-crouchPunch-5",
+          "frame": {
+            "x": 790,
+            "y": 380,
+            "w": 390,
+            "h": 345
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 390,
+            "h": 345
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 345
+          },
+          "pivot": {
+            "x": 0.5461538461538461,
+            "y": 0.991304347826087
+          }
+        },
+        {
+          "filename": "clavito-crouchPunch-6",
+          "frame": {
+            "x": 1196,
+            "y": 380,
+            "w": 386,
+            "h": 342
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 342
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 342
+          },
+          "pivot": {
+            "x": 0.5634715025906736,
+            "y": 0.9912280701754386
+          }
+        },
+        {
+          "filename": "clavito-crouchPunch-7",
+          "frame": {
+            "x": 411,
+            "y": 380,
+            "w": 363,
+            "h": 346
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 346
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 346
+          },
+          "pivot": {
+            "x": 0.5647382920110193,
+            "y": 0.9913294797687862
+          }
+        },
+        {
+          "filename": "clavito-crouchPunch",
+          "frame": {
+            "x": 879,
+            "y": 8,
+            "w": 362,
+            "h": 351
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 351
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 351
+          },
+          "pivot": {
+            "x": 0.56353591160221,
+            "y": 0.9914529914529915
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2024,
+        "h": 785
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-dash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 352,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "clavito-dash-1",
+          "frame": {
+            "x": 495,
+            "y": 420,
+            "w": 340,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "clavito-dash-2",
+          "frame": {
+            "x": 757,
+            "y": 8,
+            "w": 384,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.3645833333333333,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "clavito-dash-3",
+          "frame": {
+            "x": 8,
+            "y": 420,
+            "w": 471,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 471,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 471,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "clavito-dash-4",
+          "frame": {
+            "x": 1623,
+            "y": 8,
+            "w": 393,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.44147582697201015,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "clavito-dash-5",
+          "frame": {
+            "x": 1157,
+            "y": 8,
+            "w": 450,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 450,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 450,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "clavito-dash-6",
+          "frame": {
+            "x": 851,
+            "y": 420,
+            "w": 365,
+            "h": 340
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 340
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 340
+          },
+          "pivot": {
+            "x": 0.5178082191780822,
+            "y": 0.9911764705882353
+          }
+        },
+        {
+          "filename": "clavito-dash-7",
+          "frame": {
+            "x": 376,
+            "y": 8,
+            "w": 365,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "clavito-dash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 352,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924242424242424
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1766,
+        "h": 670
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 273,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 273,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 273,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "clavito-ko-1",
+          "frame": {
+            "x": 297,
+            "y": 8,
+            "w": 300,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "clavito-ko-2",
+          "frame": {
+            "x": 613,
+            "y": 8,
+            "w": 313,
+            "h": 325
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 325
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 325
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9907692307692307
+          }
+        },
+        {
+          "filename": "clavito-ko-3",
+          "frame": {
+            "x": 942,
+            "y": 8,
+            "w": 387,
+            "h": 260
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 260
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 260
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9884615384615385
+          }
+        },
+        {
+          "filename": "clavito-ko-4",
+          "frame": {
+            "x": 1345,
+            "y": 8,
+            "w": 413,
+            "h": 246
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 413,
+            "h": 246
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 413,
+            "h": 246
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9878048780487805
+          }
+        },
+        {
+          "filename": "clavito-ko-5",
+          "frame": {
+            "x": 8,
+            "y": 465,
+            "w": 408,
+            "h": 197
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 408,
+            "h": 197
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 408,
+            "h": 197
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9847715736040609
+          }
+        },
+        {
+          "filename": "clavito-ko-6",
+          "frame": {
+            "x": 432,
+            "y": 465,
+            "w": 393,
+            "h": 187
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 187
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 187
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.983957219251337
+          }
+        },
+        {
+          "filename": "clavito-ko-7",
+          "frame": {
+            "x": 841,
+            "y": 465,
+            "w": 433,
+            "h": 173
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 433,
+            "h": 173
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 433,
+            "h": 173
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9826589595375722
+          }
+        },
+        {
+          "filename": "clavito-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 273,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 273,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 273,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1774,
+        "h": 451
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-down-0",
+          "frame": {
+            "x": 1338,
+            "y": 234,
+            "w": 428,
+            "h": 204
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 204
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 204
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9852941176470589
+          }
+        },
+        {
+          "filename": "clavito-down-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 428,
+            "h": 210
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 210
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 210
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9857142857142858
+          }
+        },
+        {
+          "filename": "clavito-down-2",
+          "frame": {
+            "x": 895,
+            "y": 8,
+            "w": 427,
+            "h": 209
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 427,
+            "h": 209
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 427,
+            "h": 209
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9856459330143541
+          }
+        },
+        {
+          "filename": "clavito-down-3",
+          "frame": {
+            "x": 1338,
+            "y": 8,
+            "w": 426,
+            "h": 209
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 426,
+            "h": 209
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 426,
+            "h": 209
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9856459330143541
+          }
+        },
+        {
+          "filename": "clavito-down-4",
+          "frame": {
+            "x": 895,
+            "y": 234,
+            "w": 427,
+            "h": 206
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 427,
+            "h": 206
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 427,
+            "h": 206
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9854368932038835
+          }
+        },
+        {
+          "filename": "clavito-down-5",
+          "frame": {
+            "x": 452,
+            "y": 8,
+            "w": 427,
+            "h": 210
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 427,
+            "h": 210
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 427,
+            "h": 210
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9857142857142858
+          }
+        },
+        {
+          "filename": "clavito-down-6",
+          "frame": {
+            "x": 8,
+            "y": 234,
+            "w": 427,
+            "h": 209
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 427,
+            "h": 209
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 427,
+            "h": 209
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9856459330143541
+          }
+        },
+        {
+          "filename": "clavito-down-7",
+          "frame": {
+            "x": 451,
+            "y": 234,
+            "w": 428,
+            "h": 207
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 207
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 207
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9855072463768116
+          }
+        },
+        {
+          "filename": "clavito-down",
+          "frame": {
+            "x": 1338,
+            "y": 234,
+            "w": 428,
+            "h": 204
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 204
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 204
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9852941176470589
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1852,
+        "h": 870
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-fall-0",
+          "frame": {
+            "x": 8,
+            "y": 477,
+            "w": 321,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.53,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "clavito-fall-1",
+          "frame": {
+            "x": 1526,
+            "y": 8,
+            "w": 318,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.53,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "clavito-fall-2",
+          "frame": {
+            "x": 360,
+            "y": 8,
+            "w": 321,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.52,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "clavito-fall-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 336,
+            "h": 453
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 453
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 453
+          },
+          "pivot": {
+            "x": 0.49,
+            "y": 0.9933774834437086
+          }
+        },
+        {
+          "filename": "clavito-fall-4",
+          "frame": {
+            "x": 697,
+            "y": 8,
+            "w": 431,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 431,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 431,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.45,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "clavito-fall-5",
+          "frame": {
+            "x": 1144,
+            "y": 8,
+            "w": 366,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.52,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "clavito-fall-6",
+          "frame": {
+            "x": 345,
+            "y": 477,
+            "w": 334,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.53,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "clavito-fall-7",
+          "frame": {
+            "x": 695,
+            "y": 477,
+            "w": 346,
+            "h": 366
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 366
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 366
+          },
+          "pivot": {
+            "x": 0.51,
+            "y": 0.9918032786885246
+          }
+        },
+        {
+          "filename": "clavito-fall",
+          "frame": {
+            "x": 8,
+            "y": 477,
+            "w": 321,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.53,
+            "y": 0.9922077922077922
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1846,
+        "h": 698
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-getup-0",
+          "frame": {
+            "x": 867,
+            "y": 429,
+            "w": 461,
+            "h": 203
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 461,
+            "h": 203
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 461,
+            "h": 203
+          },
+          "pivot": {
+            "x": 0.49891540130151846,
+            "y": 0.9852216748768473
+          }
+        },
+        {
+          "filename": "clavito-getup-1",
+          "frame": {
+            "x": 441,
+            "y": 429,
+            "w": 410,
+            "h": 214
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 410,
+            "h": 214
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 410,
+            "h": 214
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.985981308411215
+          }
+        },
+        {
+          "filename": "clavito-getup-2",
+          "frame": {
+            "x": 8,
+            "y": 429,
+            "w": 417,
+            "h": 261
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 417,
+            "h": 261
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 417,
+            "h": 261
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9885057471264368
+          }
+        },
+        {
+          "filename": "clavito-getup-3",
+          "frame": {
+            "x": 1113,
+            "y": 8,
+            "w": 318,
+            "h": 331
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 331
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 331
+          },
+          "pivot": {
+            "x": 0.5141509433962265,
+            "y": 0.9909365558912386
+          }
+        },
+        {
+          "filename": "clavito-getup-4",
+          "frame": {
+            "x": 1447,
+            "y": 8,
+            "w": 391,
+            "h": 328
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 391,
+            "h": 328
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 391,
+            "h": 328
+          },
+          "pivot": {
+            "x": 0.489769820971867,
+            "y": 0.9908536585365854
+          }
+        },
+        {
+          "filename": "clavito-getup-5",
+          "frame": {
+            "x": 760,
+            "y": 8,
+            "w": 337,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.4792284866468843,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "clavito-getup-6",
+          "frame": {
+            "x": 367,
+            "y": 8,
+            "w": 377,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "clavito-getup-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 343,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "clavito-getup",
+          "frame": {
+            "x": 867,
+            "y": 429,
+            "w": 461,
+            "h": 203
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 461,
+            "h": 203
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 461,
+            "h": 203
+          },
+          "pivot": {
+            "x": 0.49891540130151846,
+            "y": 0.9852216748768473
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1816,
+        "h": 944
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-hurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 366,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "clavito-hurt-1",
+          "frame": {
+            "x": 390,
+            "y": 8,
+            "w": 364,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.5192307692307693,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "clavito-hurt-2",
+          "frame": {
+            "x": 386,
+            "y": 498,
+            "w": 312,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5913461538461539,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "clavito-hurt-3",
+          "frame": {
+            "x": 8,
+            "y": 498,
+            "w": 362,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.6685082872928176,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "clavito-hurt-4",
+          "frame": {
+            "x": 1467,
+            "y": 8,
+            "w": 341,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "clavito-hurt-5",
+          "frame": {
+            "x": 770,
+            "y": 8,
+            "w": 337,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "clavito-hurt-6",
+          "frame": {
+            "x": 714,
+            "y": 498,
+            "w": 329,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "clavito-hurt-7",
+          "frame": {
+            "x": 1123,
+            "y": 8,
+            "w": 328,
+            "h": 443
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 443
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 443
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932279909706546
+          }
+        },
+        {
+          "filename": "clavito-hurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 366,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936708860759493
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1945,
+        "h": 883
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-idle-0",
+          "frame": {
+            "x": 782,
+            "y": 8,
+            "w": 372,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "clavito-idle-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 370,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "clavito-idle-2",
+          "frame": {
+            "x": 394,
+            "y": 8,
+            "w": 372,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "clavito-idle-3",
+          "frame": {
+            "x": 1170,
+            "y": 8,
+            "w": 375,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "clavito-idle-4",
+          "frame": {
+            "x": 399,
+            "y": 461,
+            "w": 379,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "clavito-idle-5",
+          "frame": {
+            "x": 8,
+            "y": 461,
+            "w": 375,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "clavito-idle-6",
+          "frame": {
+            "x": 794,
+            "y": 461,
+            "w": 376,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "clavito-idle-7",
+          "frame": {
+            "x": 1561,
+            "y": 8,
+            "w": 376,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "clavito-idle",
+          "frame": {
+            "x": 782,
+            "y": 8,
+            "w": 372,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2012,
+        "h": 921
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-intro-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 301,
+            "h": 498
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 498
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 498
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939759036144579
+          }
+        },
+        {
+          "filename": "clavito-intro-1",
+          "frame": {
+            "x": 1003,
+            "y": 8,
+            "w": 316,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 316,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 316,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "clavito-intro-2",
+          "frame": {
+            "x": 652,
+            "y": 8,
+            "w": 335,
+            "h": 489
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 489
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 489
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938650306748467
+          }
+        },
+        {
+          "filename": "clavito-intro-3",
+          "frame": {
+            "x": 325,
+            "y": 8,
+            "w": 311,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939393939393939
+          }
+        },
+        {
+          "filename": "clavito-intro-4",
+          "frame": {
+            "x": 1335,
+            "y": 8,
+            "w": 325,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "clavito-intro-5",
+          "frame": {
+            "x": 374,
+            "y": 522,
+            "w": 344,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "clavito-intro-6",
+          "frame": {
+            "x": 1676,
+            "y": 8,
+            "w": 328,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "clavito-intro-7",
+          "frame": {
+            "x": 8,
+            "y": 522,
+            "w": 350,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "clavito-intro",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 301,
+            "h": 498
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 498
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 498
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939759036144579
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1954,
+        "h": 834
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-jump-0",
+          "frame": {
+            "x": 313,
+            "y": 8,
+            "w": 353,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "clavito-jump-1",
+          "frame": {
+            "x": 1660,
+            "y": 8,
+            "w": 286,
+            "h": 338
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 338
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 338
+          },
+          "pivot": {
+            "x": 0.51,
+            "y": 0.9911242603550295
+          }
+        },
+        {
+          "filename": "clavito-jump-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 289,
+            "h": 469
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 469
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 469
+          },
+          "pivot": {
+            "x": 0.48,
+            "y": 0.9936034115138592
+          }
+        },
+        {
+          "filename": "clavito-jump-3",
+          "frame": {
+            "x": 1365,
+            "y": 8,
+            "w": 279,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.53,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "clavito-jump-4",
+          "frame": {
+            "x": 326,
+            "y": 493,
+            "w": 300,
+            "h": 323
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 323
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 323
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9907120743034056
+          }
+        },
+        {
+          "filename": "clavito-jump-5",
+          "frame": {
+            "x": 1038,
+            "y": 8,
+            "w": 311,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.53,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "clavito-jump-6",
+          "frame": {
+            "x": 8,
+            "y": 493,
+            "w": 302,
+            "h": 333
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 333
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 333
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.990990990990991
+          }
+        },
+        {
+          "filename": "clavito-jump-7",
+          "frame": {
+            "x": 682,
+            "y": 8,
+            "w": 340,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "clavito-jump",
+          "frame": {
+            "x": 313,
+            "y": 8,
+            "w": 353,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929906542056075
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1899,
+        "h": 822
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-kick-0",
+          "frame": {
+            "x": 309,
+            "y": 8,
+            "w": 347,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "clavito-kick-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 285,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.5368421052631579,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "clavito-kick-2",
+          "frame": {
+            "x": 672,
+            "y": 8,
+            "w": 442,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 442,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 442,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.20475113122171945,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "clavito-kick-3",
+          "frame": {
+            "x": 1130,
+            "y": 8,
+            "w": 411,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 411,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 411,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.2116788321167883,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "clavito-kick-4",
+          "frame": {
+            "x": 1557,
+            "y": 8,
+            "w": 334,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.31137724550898205,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "clavito-kick-5",
+          "frame": {
+            "x": 382,
+            "y": 430,
+            "w": 263,
+            "h": 383
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 263,
+            "h": 383
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 263,
+            "h": 383
+          },
+          "pivot": {
+            "x": 0.6653992395437263,
+            "y": 0.9921671018276762
+          }
+        },
+        {
+          "filename": "clavito-kick-6",
+          "frame": {
+            "x": 8,
+            "y": 430,
+            "w": 358,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.5307262569832403,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "clavito-kick-7",
+          "frame": {
+            "x": 661,
+            "y": 430,
+            "w": 350,
+            "h": 382
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 382
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 382
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921465968586387
+          }
+        },
+        {
+          "filename": "clavito-kick",
+          "frame": {
+            "x": 309,
+            "y": 8,
+            "w": 347,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1755,
+        "h": 699
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-knockdown-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 371,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "clavito-knockdown-1",
+          "frame": {
+            "x": 395,
+            "y": 8,
+            "w": 425,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 425,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 425,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.591764705882353,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "clavito-knockdown-2",
+          "frame": {
+            "x": 836,
+            "y": 8,
+            "w": 411,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 411,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 411,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.3686131386861314,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "clavito-knockdown-3",
+          "frame": {
+            "x": 1263,
+            "y": 8,
+            "w": 391,
+            "h": 307
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 391,
+            "h": 307
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 391,
+            "h": 307
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.990228013029316
+          }
+        },
+        {
+          "filename": "clavito-knockdown-4",
+          "frame": {
+            "x": 8,
+            "y": 451,
+            "w": 460,
+            "h": 240
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 460,
+            "h": 240
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 460,
+            "h": 240
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9875
+          }
+        },
+        {
+          "filename": "clavito-knockdown-5",
+          "frame": {
+            "x": 484,
+            "y": 451,
+            "w": 399,
+            "h": 205
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 399,
+            "h": 205
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 399,
+            "h": 205
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9853658536585366
+          }
+        },
+        {
+          "filename": "clavito-knockdown-6",
+          "frame": {
+            "x": 899,
+            "y": 451,
+            "w": 417,
+            "h": 164
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 417,
+            "h": 164
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 417,
+            "h": 164
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9817073170731707
+          }
+        },
+        {
+          "filename": "clavito-knockdown-7",
+          "frame": {
+            "x": 1332,
+            "y": 451,
+            "w": 415,
+            "h": 162
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 415,
+            "h": 162
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 415,
+            "h": 162
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9814814814814815
+          }
+        },
+        {
+          "filename": "clavito-knockdown",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 371,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1835,
+        "h": 843
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-punch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 346,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "clavito-punch-1",
+          "frame": {
+            "x": 370,
+            "y": 8,
+            "w": 352,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "clavito-punch-2",
+          "frame": {
+            "x": 738,
+            "y": 8,
+            "w": 350,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "clavito-punch-3",
+          "frame": {
+            "x": 1104,
+            "y": 8,
+            "w": 354,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "clavito-punch-4",
+          "frame": {
+            "x": 797,
+            "y": 432,
+            "w": 431,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 431,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 431,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.44547563805104406,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "clavito-punch-5",
+          "frame": {
+            "x": 385,
+            "y": 432,
+            "w": 396,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 396,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 396,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.4633838383838384,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "clavito-punch-6",
+          "frame": {
+            "x": 8,
+            "y": 432,
+            "w": 361,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "clavito-punch-7",
+          "frame": {
+            "x": 1474,
+            "y": 8,
+            "w": 353,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "clavito-punch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 346,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1752,
+        "h": 856
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-super-0",
+          "frame": {
+            "x": 829,
+            "y": 8,
+            "w": 401,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.4775561097256858,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "clavito-super-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 405,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 405,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 405,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "clavito-super-2",
+          "frame": {
+            "x": 1246,
+            "y": 8,
+            "w": 426,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 426,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 426,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.4847417840375587,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "clavito-super-3",
+          "frame": {
+            "x": 429,
+            "y": 8,
+            "w": 384,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.4934895833333333,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "clavito-super-4",
+          "frame": {
+            "x": 391,
+            "y": 454,
+            "w": 397,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 397,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 397,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "clavito-super-5",
+          "frame": {
+            "x": 804,
+            "y": 454,
+            "w": 439,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 439,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 439,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.4806378132118451,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "clavito-super-6",
+          "frame": {
+            "x": 1259,
+            "y": 454,
+            "w": 485,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 485,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 485,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "clavito-super-7",
+          "frame": {
+            "x": 8,
+            "y": 454,
+            "w": 367,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.21798365122615804,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "clavito-super",
+          "frame": {
+            "x": 829,
+            "y": 8,
+            "w": 401,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.4775561097256858,
+            "y": 0.9927536231884058
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1863,
+        "h": 671
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-sweep-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 365,
+            "h": 338
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 338
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 338
+          },
+          "pivot": {
+            "x": 0.5616438356164384,
+            "y": 0.9911242603550295
+          }
+        },
+        {
+          "filename": "clavito-sweep-1",
+          "frame": {
+            "x": 403,
+            "y": 362,
+            "w": 419,
+            "h": 292
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 419,
+            "h": 292
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 292
+          },
+          "pivot": {
+            "x": 0.5620525059665871,
+            "y": 0.9897260273972602
+          }
+        },
+        {
+          "filename": "clavito-sweep-2",
+          "frame": {
+            "x": 838,
+            "y": 362,
+            "w": 507,
+            "h": 256
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 507,
+            "h": 256
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 507,
+            "h": 256
+          },
+          "pivot": {
+            "x": 0.5355029585798816,
+            "y": 0.98828125
+          }
+        },
+        {
+          "filename": "clavito-sweep-3",
+          "frame": {
+            "x": 8,
+            "y": 362,
+            "w": 379,
+            "h": 301
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 301
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 301
+          },
+          "pivot": {
+            "x": 0.3403693931398417,
+            "y": 0.9900332225913622
+          }
+        },
+        {
+          "filename": "clavito-sweep-4",
+          "frame": {
+            "x": 1159,
+            "y": 8,
+            "w": 362,
+            "h": 315
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 315
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 315
+          },
+          "pivot": {
+            "x": 0.49171270718232046,
+            "y": 0.9904761904761905
+          }
+        },
+        {
+          "filename": "clavito-sweep-5",
+          "frame": {
+            "x": 1537,
+            "y": 8,
+            "w": 318,
+            "h": 307
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 307
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 307
+          },
+          "pivot": {
+            "x": 0.5628930817610063,
+            "y": 0.990228013029316
+          }
+        },
+        {
+          "filename": "clavito-sweep-6",
+          "frame": {
+            "x": 770,
+            "y": 8,
+            "w": 373,
+            "h": 326
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 326
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 326
+          },
+          "pivot": {
+            "x": 0.5201072386058981,
+            "y": 0.99079754601227
+          }
+        },
+        {
+          "filename": "clavito-sweep-7",
+          "frame": {
+            "x": 389,
+            "y": 8,
+            "w": 365,
+            "h": 329
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 329
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 329
+          },
+          "pivot": {
+            "x": 0.5616438356164384,
+            "y": 0.9908814589665653
+          }
+        },
+        {
+          "filename": "clavito-sweep",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 365,
+            "h": 338
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 338
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 338
+          },
+          "pivot": {
+            "x": 0.5616438356164384,
+            "y": 0.9911242603550295
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1787,
+        "h": 857
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-uppercut-0",
+          "frame": {
+            "x": 1038,
+            "y": 8,
+            "w": 381,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "clavito-uppercut-1",
+          "frame": {
+            "x": 656,
+            "y": 519,
+            "w": 308,
+            "h": 310
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 310
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 310
+          },
+          "pivot": {
+            "x": 0.487012987012987,
+            "y": 0.9903225806451613
+          }
+        },
+        {
+          "filename": "clavito-uppercut-2",
+          "frame": {
+            "x": 302,
+            "y": 8,
+            "w": 360,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "clavito-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 278,
+            "h": 495
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 278,
+            "h": 495
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 278,
+            "h": 495
+          },
+          "pivot": {
+            "x": 0.3669064748201439,
+            "y": 0.9939393939393939
+          }
+        },
+        {
+          "filename": "clavito-uppercut-4",
+          "frame": {
+            "x": 678,
+            "y": 8,
+            "w": 344,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "clavito-uppercut-5",
+          "frame": {
+            "x": 329,
+            "y": 519,
+            "w": 311,
+            "h": 328
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 328
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 328
+          },
+          "pivot": {
+            "x": 0.5112540192926045,
+            "y": 0.9908536585365854
+          }
+        },
+        {
+          "filename": "clavito-uppercut-6",
+          "frame": {
+            "x": 8,
+            "y": 519,
+            "w": 305,
+            "h": 330
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 330
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 330
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.990909090909091
+          }
+        },
+        {
+          "filename": "clavito-uppercut-7",
+          "frame": {
+            "x": 1435,
+            "y": 8,
+            "w": 344,
+            "h": 340
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 340
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 340
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911764705882353
+          }
+        },
+        {
+          "filename": "clavito-uppercut",
+          "frame": {
+            "x": 1038,
+            "y": 8,
+            "w": 381,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923469387755102
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1944,
+        "h": 935
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-win-0",
+          "frame": {
+            "x": 645,
+            "y": 8,
+            "w": 332,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "clavito-win-1",
+          "frame": {
+            "x": 993,
+            "y": 8,
+            "w": 304,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.5082236842105263,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "clavito-win-2",
+          "frame": {
+            "x": 349,
+            "y": 8,
+            "w": 280,
+            "h": 458
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 458
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 458
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934497816593887
+          }
+        },
+        {
+          "filename": "clavito-win-3",
+          "frame": {
+            "x": 1313,
+            "y": 8,
+            "w": 304,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "clavito-win-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 325,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "clavito-win-5",
+          "frame": {
+            "x": 353,
+            "y": 504,
+            "w": 409,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5293398533007335,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "clavito-win-6",
+          "frame": {
+            "x": 1633,
+            "y": 8,
+            "w": 303,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 303,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 303,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "clavito-win-7",
+          "frame": {
+            "x": 8,
+            "y": 504,
+            "w": 329,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5197568389057751,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "clavito-win",
+          "frame": {
+            "x": 645,
+            "y": 8,
+            "w": 332,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932735426008968
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2009,
+        "h": 837
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-walk-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 336,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "clavito-walk-1",
+          "frame": {
+            "x": 360,
+            "y": 8,
+            "w": 267,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 267,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 267,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5692883895131086,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "clavito-walk-2",
+          "frame": {
+            "x": 643,
+            "y": 8,
+            "w": 329,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5395136778115501,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "clavito-walk-3",
+          "frame": {
+            "x": 988,
+            "y": 8,
+            "w": 312,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "clavito-walk-4",
+          "frame": {
+            "x": 8,
+            "y": 439,
+            "w": 296,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 296,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.5084459459459459,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "clavito-walk-5",
+          "frame": {
+            "x": 320,
+            "y": 439,
+            "w": 261,
+            "h": 389
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 261,
+            "h": 389
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 261,
+            "h": 389
+          },
+          "pivot": {
+            "x": 0.4904214559386973,
+            "y": 0.9922879177377892
+          }
+        },
+        {
+          "filename": "clavito-walk-6",
+          "frame": {
+            "x": 1663,
+            "y": 8,
+            "w": 338,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.5355029585798816,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "clavito-walk-7",
+          "frame": {
+            "x": 1316,
+            "y": 8,
+            "w": 331,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "clavito-walk",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 336,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2033,
+        "h": 905
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "clavito-walkBack-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 347,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "clavito-walkBack-1",
+          "frame": {
+            "x": 783,
+            "y": 8,
+            "w": 365,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "clavito-walkBack-2",
+          "frame": {
+            "x": 371,
+            "y": 8,
+            "w": 396,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 396,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 396,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "clavito-walkBack-3",
+          "frame": {
+            "x": 1444,
+            "y": 8,
+            "w": 255,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 255,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 255,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5235294117647059,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "clavito-walkBack-4",
+          "frame": {
+            "x": 1164,
+            "y": 8,
+            "w": 264,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 264,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 264,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5189393939393939,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "clavito-walkBack-5",
+          "frame": {
+            "x": 1715,
+            "y": 8,
+            "w": 310,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5096774193548387,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "clavito-walkBack-6",
+          "frame": {
+            "x": 8,
+            "y": 466,
+            "w": 274,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 274,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 274,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.4981751824817518,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "clavito-walkBack-7",
+          "frame": {
+            "x": 298,
+            "y": 466,
+            "w": 281,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "clavito-walkBack",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 347,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}

@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1937,
+        "h": 802
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-airKick-0",
+          "frame": {
+            "x": 1219,
+            "y": 8,
+            "w": 277,
+            "h": 372
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 372
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 372
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9919354838709677
+          }
+        },
+        {
+          "filename": "chantal-airKick-1",
+          "frame": {
+            "x": 634,
+            "y": 8,
+            "w": 274,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 274,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 274,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "chantal-airKick-2",
+          "frame": {
+            "x": 1512,
+            "y": 8,
+            "w": 417,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 417,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 417,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.38,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "chantal-airKick-3",
+          "frame": {
+            "x": 327,
+            "y": 452,
+            "w": 433,
+            "h": 300
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 433,
+            "h": 300
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 433,
+            "h": 300
+          },
+          "pivot": {
+            "x": 0.34,
+            "y": 0.99
+          }
+        },
+        {
+          "filename": "chantal-airKick-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "chantal-airKick-5",
+          "frame": {
+            "x": 8,
+            "y": 452,
+            "w": 303,
+            "h": 342
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 303,
+            "h": 342
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 303,
+            "h": 342
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9912280701754386
+          }
+        },
+        {
+          "filename": "chantal-airKick-6",
+          "frame": {
+            "x": 331,
+            "y": 8,
+            "w": 287,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 287,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 287,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "chantal-airKick-7",
+          "frame": {
+            "x": 924,
+            "y": 8,
+            "w": 279,
+            "h": 382
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 382
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 382
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9921465968586387
+          }
+        },
+        {
+          "filename": "chantal-airKick",
+          "frame": {
+            "x": 1219,
+            "y": 8,
+            "w": 277,
+            "h": 372
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 372
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 372
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9919354838709677
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1865,
+        "h": 839
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-airPunch-0",
+          "frame": {
+            "x": 784,
+            "y": 8,
+            "w": 300,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "chantal-airPunch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 312,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.56,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "chantal-airPunch-2",
+          "frame": {
+            "x": 1425,
+            "y": 8,
+            "w": 432,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 432,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 432,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.42,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "chantal-airPunch-3",
+          "frame": {
+            "x": 336,
+            "y": 8,
+            "w": 432,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 432,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 432,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.42,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "chantal-airPunch-4",
+          "frame": {
+            "x": 640,
+            "y": 435,
+            "w": 314,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.56,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "chantal-airPunch-5",
+          "frame": {
+            "x": 1100,
+            "y": 8,
+            "w": 309,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "chantal-airPunch-6",
+          "frame": {
+            "x": 319,
+            "y": 435,
+            "w": 305,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "chantal-airPunch-7",
+          "frame": {
+            "x": 8,
+            "y": 435,
+            "w": 295,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "chantal-airPunch",
+          "frame": {
+            "x": 784,
+            "y": 8,
+            "w": 300,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9926470588235294
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1948,
+        "h": 836
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-backdash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 350,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "chantal-backdash-1",
+          "frame": {
+            "x": 708,
+            "y": 8,
+            "w": 286,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.6101398601398601,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "chantal-backdash-2",
+          "frame": {
+            "x": 1364,
+            "y": 8,
+            "w": 298,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.3808724832214765,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "chantal-backdash-3",
+          "frame": {
+            "x": 374,
+            "y": 8,
+            "w": 318,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.25157232704402516,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "chantal-backdash-4",
+          "frame": {
+            "x": 284,
+            "y": 446,
+            "w": 486,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 486,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 486,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "chantal-backdash-5",
+          "frame": {
+            "x": 1678,
+            "y": 8,
+            "w": 262,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 262,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 262,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.5687022900763359,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "chantal-backdash-6",
+          "frame": {
+            "x": 8,
+            "y": 446,
+            "w": 260,
+            "h": 382
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 260,
+            "h": 382
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 260,
+            "h": 382
+          },
+          "pivot": {
+            "x": 0.5076923076923077,
+            "y": 0.9921465968586387
+          }
+        },
+        {
+          "filename": "chantal-backdash-7",
+          "frame": {
+            "x": 1010,
+            "y": 8,
+            "w": 338,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "chantal-backdash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 350,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1661,
+        "h": 852
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-special-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 388,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.4793814432989691,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "chantal-special-1",
+          "frame": {
+            "x": 1282,
+            "y": 446,
+            "w": 349,
+            "h": 374
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 374
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 374
+          },
+          "pivot": {
+            "x": 0.4899713467048711,
+            "y": 0.9919786096256684
+          }
+        },
+        {
+          "filename": "chantal-special-2",
+          "frame": {
+            "x": 412,
+            "y": 8,
+            "w": 367,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "chantal-special-3",
+          "frame": {
+            "x": 1188,
+            "y": 8,
+            "w": 465,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 465,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 465,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.43870967741935485,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "chantal-special-4",
+          "frame": {
+            "x": 8,
+            "y": 446,
+            "w": 452,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 452,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 452,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.44026548672566373,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "chantal-special-5",
+          "frame": {
+            "x": 476,
+            "y": 446,
+            "w": 403,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 403,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 403,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.47146401985111663,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "chantal-special-6",
+          "frame": {
+            "x": 895,
+            "y": 446,
+            "w": 371,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "chantal-special-7",
+          "frame": {
+            "x": 795,
+            "y": 8,
+            "w": 377,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "chantal-special",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 388,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.4793814432989691,
+            "y": 0.9928909952606635
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1865,
+        "h": 865
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-block-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 366,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "chantal-block-1",
+          "frame": {
+            "x": 390,
+            "y": 8,
+            "w": 352,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "chantal-block-2",
+          "frame": {
+            "x": 758,
+            "y": 8,
+            "w": 353,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "chantal-block-3",
+          "frame": {
+            "x": 8,
+            "y": 449,
+            "w": 337,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "chantal-block-4",
+          "frame": {
+            "x": 361,
+            "y": 449,
+            "w": 361,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "chantal-block-5",
+          "frame": {
+            "x": 738,
+            "y": 449,
+            "w": 359,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "chantal-block-6",
+          "frame": {
+            "x": 1500,
+            "y": 8,
+            "w": 357,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "chantal-block-7",
+          "frame": {
+            "x": 1127,
+            "y": 8,
+            "w": 357,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "chantal-block",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 366,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1734,
+        "h": 736
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-crouch-0",
+          "frame": {
+            "x": 352,
+            "y": 8,
+            "w": 333,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.5180180180180181,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "chantal-crouch-1",
+          "frame": {
+            "x": 691,
+            "y": 380,
+            "w": 331,
+            "h": 330
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 330
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 330
+          },
+          "pivot": {
+            "x": 0.5362537764350453,
+            "y": 0.990909090909091
+          }
+        },
+        {
+          "filename": "chantal-crouch-2",
+          "frame": {
+            "x": 346,
+            "y": 380,
+            "w": 329,
+            "h": 346
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 346
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 346
+          },
+          "pivot": {
+            "x": 0.5243161094224924,
+            "y": 0.9913294797687862
+          }
+        },
+        {
+          "filename": "chantal-crouch-3",
+          "frame": {
+            "x": 8,
+            "y": 380,
+            "w": 322,
+            "h": 348
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 348
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 348
+          },
+          "pivot": {
+            "x": 0.5108695652173914,
+            "y": 0.9913793103448276
+          }
+        },
+        {
+          "filename": "chantal-crouch-4",
+          "frame": {
+            "x": 1051,
+            "y": 8,
+            "w": 333,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.5180180180180181,
+            "y": 0.9914040114613181
+          }
+        },
+        {
+          "filename": "chantal-crouch-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 328,
+            "h": 356
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 356
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 356
+          },
+          "pivot": {
+            "x": 0.5060975609756098,
+            "y": 0.9915730337078652
+          }
+        },
+        {
+          "filename": "chantal-crouch-6",
+          "frame": {
+            "x": 701,
+            "y": 8,
+            "w": 334,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.5254491017964071,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "chantal-crouch-7",
+          "frame": {
+            "x": 1400,
+            "y": 8,
+            "w": 326,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.5184049079754601,
+            "y": 0.9914040114613181
+          }
+        },
+        {
+          "filename": "chantal-crouch",
+          "frame": {
+            "x": 352,
+            "y": 8,
+            "w": 333,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.5180180180180181,
+            "y": 0.9914772727272727
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1740,
+        "h": 726
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-crouchBlock-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 311,
+            "h": 355
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 355
+          },
+          "pivot": {
+            "x": 0.4694533762057878,
+            "y": 0.9915492957746479
+          }
+        },
+        {
+          "filename": "chantal-crouchBlock-1",
+          "frame": {
+            "x": 335,
+            "y": 8,
+            "w": 330,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.46060606060606063,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "chantal-crouchBlock-2",
+          "frame": {
+            "x": 681,
+            "y": 8,
+            "w": 325,
+            "h": 348
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 348
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 348
+          },
+          "pivot": {
+            "x": 0.4753846153846154,
+            "y": 0.9913793103448276
+          }
+        },
+        {
+          "filename": "chantal-crouchBlock-3",
+          "frame": {
+            "x": 668,
+            "y": 379,
+            "w": 306,
+            "h": 329
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 329
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 329
+          },
+          "pivot": {
+            "x": 0.46405228758169936,
+            "y": 0.9908814589665653
+          }
+        },
+        {
+          "filename": "chantal-crouchBlock-4",
+          "frame": {
+            "x": 1022,
+            "y": 8,
+            "w": 306,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.4918300653594771,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "chantal-crouchBlock-5",
+          "frame": {
+            "x": 1344,
+            "y": 8,
+            "w": 388,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.38917525773195877,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "chantal-crouchBlock-6",
+          "frame": {
+            "x": 8,
+            "y": 379,
+            "w": 315,
+            "h": 339
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 339
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 339
+          },
+          "pivot": {
+            "x": 0.473015873015873,
+            "y": 0.9911504424778761
+          }
+        },
+        {
+          "filename": "chantal-crouchBlock-7",
+          "frame": {
+            "x": 339,
+            "y": 379,
+            "w": 313,
+            "h": 336
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 336
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 336
+          },
+          "pivot": {
+            "x": 0.4904153354632588,
+            "y": 0.9910714285714286
+          }
+        },
+        {
+          "filename": "chantal-crouchBlock",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 311,
+            "h": 355
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 355
+          },
+          "pivot": {
+            "x": 0.4694533762057878,
+            "y": 0.9915492957746479
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1857,
+        "h": 723
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-crouchHurt-0",
+          "frame": {
+            "x": 386,
+            "y": 8,
+            "w": 338,
+            "h": 353
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 353
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 353
+          },
+          "pivot": {
+            "x": 0.48668639053254437,
+            "y": 0.9915014164305949
+          }
+        },
+        {
+          "filename": "chantal-crouchHurt-1",
+          "frame": {
+            "x": 1145,
+            "y": 8,
+            "w": 344,
+            "h": 350
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 350
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 350
+          },
+          "pivot": {
+            "x": 0.498546511627907,
+            "y": 0.9914285714285714
+          }
+        },
+        {
+          "filename": "chantal-crouchHurt-2",
+          "frame": {
+            "x": 740,
+            "y": 8,
+            "w": 389,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 389,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 389,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.4717223650385604,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "chantal-crouchHurt-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 362,
+            "h": 355
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 355
+          },
+          "pivot": {
+            "x": 0.5207182320441989,
+            "y": 0.9915492957746479
+          }
+        },
+        {
+          "filename": "chantal-crouchHurt-4",
+          "frame": {
+            "x": 722,
+            "y": 379,
+            "w": 351,
+            "h": 323
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 323
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 323
+          },
+          "pivot": {
+            "x": 0.4829059829059829,
+            "y": 0.9907120743034056
+          }
+        },
+        {
+          "filename": "chantal-crouchHurt-5",
+          "frame": {
+            "x": 1505,
+            "y": 8,
+            "w": 344,
+            "h": 336
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 336
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 336
+          },
+          "pivot": {
+            "x": 0.49127906976744184,
+            "y": 0.9910714285714286
+          }
+        },
+        {
+          "filename": "chantal-crouchHurt-6",
+          "frame": {
+            "x": 8,
+            "y": 379,
+            "w": 344,
+            "h": 336
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 336
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 336
+          },
+          "pivot": {
+            "x": 0.4811046511627907,
+            "y": 0.9910714285714286
+          }
+        },
+        {
+          "filename": "chantal-crouchHurt-7",
+          "frame": {
+            "x": 368,
+            "y": 379,
+            "w": 338,
+            "h": 334
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 334
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 334
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9910179640718563
+          }
+        },
+        {
+          "filename": "chantal-crouchHurt",
+          "frame": {
+            "x": 386,
+            "y": 8,
+            "w": 338,
+            "h": 353
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 353
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 353
+          },
+          "pivot": {
+            "x": 0.48668639053254437,
+            "y": 0.9915014164305949
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1889,
+        "h": 688
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-crouchPunch-0",
+          "frame": {
+            "x": 712,
+            "y": 8,
+            "w": 325,
+            "h": 326
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 326
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 326
+          },
+          "pivot": {
+            "x": 0.5030769230769231,
+            "y": 0.99079754601227
+          }
+        },
+        {
+          "filename": "chantal-crouchPunch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 313,
+            "h": 334
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 334
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 334
+          },
+          "pivot": {
+            "x": 0.5031948881789138,
+            "y": 0.9910179640718563
+          }
+        },
+        {
+          "filename": "chantal-crouchPunch-2",
+          "frame": {
+            "x": 1468,
+            "y": 8,
+            "w": 413,
+            "h": 322
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 413,
+            "h": 322
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 413,
+            "h": 322
+          },
+          "pivot": {
+            "x": 0.38861985472154964,
+            "y": 0.9906832298136646
+          }
+        },
+        {
+          "filename": "chantal-crouchPunch-3",
+          "frame": {
+            "x": 1053,
+            "y": 8,
+            "w": 399,
+            "h": 323
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 399,
+            "h": 323
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 399,
+            "h": 323
+          },
+          "pivot": {
+            "x": 0.42105263157894735,
+            "y": 0.9907120743034056
+          }
+        },
+        {
+          "filename": "chantal-crouchPunch-4",
+          "frame": {
+            "x": 337,
+            "y": 8,
+            "w": 359,
+            "h": 332
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 332
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 332
+          },
+          "pivot": {
+            "x": 0.4596100278551532,
+            "y": 0.9909638554216867
+          }
+        },
+        {
+          "filename": "chantal-crouchPunch-5",
+          "frame": {
+            "x": 8,
+            "y": 358,
+            "w": 332,
+            "h": 322
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 322
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 322
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9906832298136646
+          }
+        },
+        {
+          "filename": "chantal-crouchPunch-6",
+          "frame": {
+            "x": 697,
+            "y": 358,
+            "w": 331,
+            "h": 321
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 321
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 321
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9906542056074766
+          }
+        },
+        {
+          "filename": "chantal-crouchPunch-7",
+          "frame": {
+            "x": 356,
+            "y": 358,
+            "w": 325,
+            "h": 322
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 322
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 322
+          },
+          "pivot": {
+            "x": 0.5076923076923077,
+            "y": 0.9906832298136646
+          }
+        },
+        {
+          "filename": "chantal-crouchPunch",
+          "frame": {
+            "x": 712,
+            "y": 8,
+            "w": 325,
+            "h": 326
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 326
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 326
+          },
+          "pivot": {
+            "x": 0.5030769230769231,
+            "y": 0.99079754601227
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1832,
+        "h": 805
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-dash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 343,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "chantal-dash-1",
+          "frame": {
+            "x": 694,
+            "y": 8,
+            "w": 314,
+            "h": 374
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 374
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 374
+          },
+          "pivot": {
+            "x": 0.43471337579617836,
+            "y": 0.9919786096256684
+          }
+        },
+        {
+          "filename": "chantal-dash-2",
+          "frame": {
+            "x": 1024,
+            "y": 8,
+            "w": 354,
+            "h": 374
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 374
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 374
+          },
+          "pivot": {
+            "x": 0.4576271186440678,
+            "y": 0.9919786096256684
+          }
+        },
+        {
+          "filename": "chantal-dash-3",
+          "frame": {
+            "x": 1394,
+            "y": 8,
+            "w": 430,
+            "h": 372
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 430,
+            "h": 372
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 430,
+            "h": 372
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919354838709677
+          }
+        },
+        {
+          "filename": "chantal-dash-4",
+          "frame": {
+            "x": 695,
+            "y": 443,
+            "w": 360,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.43333333333333335,
+            "y": 0.9914040114613181
+          }
+        },
+        {
+          "filename": "chantal-dash-5",
+          "frame": {
+            "x": 8,
+            "y": 443,
+            "w": 321,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.5218068535825545,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "chantal-dash-6",
+          "frame": {
+            "x": 345,
+            "y": 443,
+            "w": 334,
+            "h": 350
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 350
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 350
+          },
+          "pivot": {
+            "x": 0.49251497005988026,
+            "y": 0.9914285714285714
+          }
+        },
+        {
+          "filename": "chantal-dash-7",
+          "frame": {
+            "x": 367,
+            "y": 8,
+            "w": 311,
+            "h": 381
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 381
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 381
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921259842519685
+          }
+        },
+        {
+          "filename": "chantal-dash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 343,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1830,
+        "h": 661
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 325,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933628318584071
+          }
+        },
+        {
+          "filename": "chantal-ko-1",
+          "frame": {
+            "x": 349,
+            "y": 8,
+            "w": 315,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "chantal-ko-2",
+          "frame": {
+            "x": 680,
+            "y": 8,
+            "w": 316,
+            "h": 335
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 316,
+            "h": 335
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 316,
+            "h": 335
+          },
+          "pivot": {
+            "x": 0.47943037974683544,
+            "y": 0.991044776119403
+          }
+        },
+        {
+          "filename": "chantal-ko-3",
+          "frame": {
+            "x": 1012,
+            "y": 8,
+            "w": 387,
+            "h": 280
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 280
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 280
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9892857142857143
+          }
+        },
+        {
+          "filename": "chantal-ko-4",
+          "frame": {
+            "x": 1415,
+            "y": 8,
+            "w": 407,
+            "h": 249
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 407,
+            "h": 249
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 407,
+            "h": 249
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9879518072289156
+          }
+        },
+        {
+          "filename": "chantal-ko-5",
+          "frame": {
+            "x": 8,
+            "y": 476,
+            "w": 441,
+            "h": 177
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 441,
+            "h": 177
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 441,
+            "h": 177
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9830508474576272
+          }
+        },
+        {
+          "filename": "chantal-ko-6",
+          "frame": {
+            "x": 465,
+            "y": 476,
+            "w": 430,
+            "h": 149
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 430,
+            "h": 149
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 430,
+            "h": 149
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9798657718120806
+          }
+        },
+        {
+          "filename": "chantal-ko-7",
+          "frame": {
+            "x": 911,
+            "y": 476,
+            "w": 432,
+            "h": 148
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 432,
+            "h": 148
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 432,
+            "h": 148
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9797297297297297
+          }
+        },
+        {
+          "filename": "chantal-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 325,
+            "h": 452
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 452
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 452
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933628318584071
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1756,
+        "h": 406
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-down-0",
+          "frame": {
+            "x": 1298,
+            "y": 8,
+            "w": 428,
+            "h": 183
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 183
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 183
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9836065573770492
+          }
+        },
+        {
+          "filename": "chantal-down-1",
+          "frame": {
+            "x": 434,
+            "y": 8,
+            "w": 410,
+            "h": 192
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 410,
+            "h": 192
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 410,
+            "h": 192
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.984375
+          }
+        },
+        {
+          "filename": "chantal-down-2",
+          "frame": {
+            "x": 860,
+            "y": 8,
+            "w": 422,
+            "h": 184
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 422,
+            "h": 184
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 422,
+            "h": 184
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9836956521739131
+          }
+        },
+        {
+          "filename": "chantal-down-3",
+          "frame": {
+            "x": 8,
+            "y": 217,
+            "w": 418,
+            "h": 181
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 418,
+            "h": 181
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 418,
+            "h": 181
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9834254143646409
+          }
+        },
+        {
+          "filename": "chantal-down-4",
+          "frame": {
+            "x": 442,
+            "y": 217,
+            "w": 434,
+            "h": 181
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 434,
+            "h": 181
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 434,
+            "h": 181
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9834254143646409
+          }
+        },
+        {
+          "filename": "chantal-down-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 410,
+            "h": 193
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 410,
+            "h": 193
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 410,
+            "h": 193
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9844559585492227
+          }
+        },
+        {
+          "filename": "chantal-down-6",
+          "frame": {
+            "x": 892,
+            "y": 217,
+            "w": 418,
+            "h": 167
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 418,
+            "h": 167
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 418,
+            "h": 167
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9820359281437125
+          }
+        },
+        {
+          "filename": "chantal-down-7",
+          "frame": {
+            "x": 1326,
+            "y": 217,
+            "w": 422,
+            "h": 162
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 422,
+            "h": 162
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 422,
+            "h": 162
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9814814814814815
+          }
+        },
+        {
+          "filename": "chantal-down",
+          "frame": {
+            "x": 1298,
+            "y": 8,
+            "w": 428,
+            "h": 183
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 183
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 183
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9836065573770492
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1983,
+        "h": 820
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-fall-0",
+          "frame": {
+            "x": 280,
+            "y": 455,
+            "w": 240,
+            "h": 317
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 240,
+            "h": 317
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 240,
+            "h": 317
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9905362776025236
+          }
+        },
+        {
+          "filename": "chantal-fall-1",
+          "frame": {
+            "x": 8,
+            "y": 455,
+            "w": 256,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 256,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "chantal-fall-2",
+          "frame": {
+            "x": 1363,
+            "y": 8,
+            "w": 268,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 268,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 268,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "chantal-fall-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 303,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 303,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 303,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.46,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "chantal-fall-4",
+          "frame": {
+            "x": 1647,
+            "y": 8,
+            "w": 328,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.46,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "chantal-fall-5",
+          "frame": {
+            "x": 1012,
+            "y": 8,
+            "w": 335,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.48,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "chantal-fall-6",
+          "frame": {
+            "x": 665,
+            "y": 8,
+            "w": 331,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "chantal-fall-7",
+          "frame": {
+            "x": 327,
+            "y": 8,
+            "w": 322,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "chantal-fall",
+          "frame": {
+            "x": 280,
+            "y": 455,
+            "w": 240,
+            "h": 317
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 240,
+            "h": 317
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 240,
+            "h": 317
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9905362776025236
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1807,
+        "h": 693
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-getup-0",
+          "frame": {
+            "x": 828,
+            "y": 419,
+            "w": 440,
+            "h": 171
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 440,
+            "h": 171
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 440,
+            "h": 171
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9824561403508771
+          }
+        },
+        {
+          "filename": "chantal-getup-1",
+          "frame": {
+            "x": 431,
+            "y": 419,
+            "w": 381,
+            "h": 204
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 204
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 204
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9852941176470589
+          }
+        },
+        {
+          "filename": "chantal-getup-2",
+          "frame": {
+            "x": 8,
+            "y": 419,
+            "w": 407,
+            "h": 266
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 407,
+            "h": 266
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 407,
+            "h": 266
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9887218045112782
+          }
+        },
+        {
+          "filename": "chantal-getup-3",
+          "frame": {
+            "x": 1100,
+            "y": 8,
+            "w": 306,
+            "h": 343
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 343
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 343
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9912536443148688
+          }
+        },
+        {
+          "filename": "chantal-getup-4",
+          "frame": {
+            "x": 1422,
+            "y": 8,
+            "w": 377,
+            "h": 321
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 321
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 321
+          },
+          "pivot": {
+            "x": 0.4482758620689655,
+            "y": 0.9906542056074766
+          }
+        },
+        {
+          "filename": "chantal-getup-5",
+          "frame": {
+            "x": 731,
+            "y": 8,
+            "w": 353,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "chantal-getup-6",
+          "frame": {
+            "x": 353,
+            "y": 8,
+            "w": 362,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "chantal-getup-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 329,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "chantal-getup",
+          "frame": {
+            "x": 828,
+            "y": 419,
+            "w": 440,
+            "h": 171
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 440,
+            "h": 171
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 440,
+            "h": 171
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9824561403508771
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1771,
+        "h": 928
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-hurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 359,
+            "h": 460
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 460
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 460
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934782608695653
+          }
+        },
+        {
+          "filename": "chantal-hurt-1",
+          "frame": {
+            "x": 1117,
+            "y": 8,
+            "w": 336,
+            "h": 439
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 439
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 439
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931662870159453
+          }
+        },
+        {
+          "filename": "chantal-hurt-2",
+          "frame": {
+            "x": 383,
+            "y": 8,
+            "w": 363,
+            "h": 453
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 453
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 453
+          },
+          "pivot": {
+            "x": 0.5041322314049587,
+            "y": 0.9933774834437086
+          }
+        },
+        {
+          "filename": "chantal-hurt-3",
+          "frame": {
+            "x": 1469,
+            "y": 8,
+            "w": 294,
+            "h": 439
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 294,
+            "h": 439
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 294,
+            "h": 439
+          },
+          "pivot": {
+            "x": 0.4914965986394558,
+            "y": 0.9931662870159453
+          }
+        },
+        {
+          "filename": "chantal-hurt-4",
+          "frame": {
+            "x": 364,
+            "y": 484,
+            "w": 323,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "chantal-hurt-5",
+          "frame": {
+            "x": 8,
+            "y": 484,
+            "w": 340,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "chantal-hurt-6",
+          "frame": {
+            "x": 703,
+            "y": 484,
+            "w": 346,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "chantal-hurt-7",
+          "frame": {
+            "x": 762,
+            "y": 8,
+            "w": 339,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "chantal-hurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 359,
+            "h": 460
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 460
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 460
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934782608695653
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1801,
+        "h": 874
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-idle-0",
+          "frame": {
+            "x": 369,
+            "y": 8,
+            "w": 345,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "chantal-idle-1",
+          "frame": {
+            "x": 730,
+            "y": 8,
+            "w": 345,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "chantal-idle-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 345,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "chantal-idle-3",
+          "frame": {
+            "x": 1450,
+            "y": 8,
+            "w": 343,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "chantal-idle-4",
+          "frame": {
+            "x": 368,
+            "y": 450,
+            "w": 345,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "chantal-idle-5",
+          "frame": {
+            "x": 729,
+            "y": 450,
+            "w": 346,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "chantal-idle-6",
+          "frame": {
+            "x": 8,
+            "y": 450,
+            "w": 344,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "chantal-idle-7",
+          "frame": {
+            "x": 1091,
+            "y": 8,
+            "w": 343,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "chantal-idle",
+          "frame": {
+            "x": 369,
+            "y": 8,
+            "w": 345,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1914,
+        "h": 957
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-intro-0",
+          "frame": {
+            "x": 301,
+            "y": 8,
+            "w": 235,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 235,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 235,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940239043824701
+          }
+        },
+        {
+          "filename": "chantal-intro-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 277,
+            "h": 505
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 505
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 505
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.994059405940594
+          }
+        },
+        {
+          "filename": "chantal-intro-2",
+          "frame": {
+            "x": 552,
+            "y": 8,
+            "w": 346,
+            "h": 493
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 493
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 493
+          },
+          "pivot": {
+            "x": 0.4263005780346821,
+            "y": 0.9939148073022313
+          }
+        },
+        {
+          "filename": "chantal-intro-3",
+          "frame": {
+            "x": 914,
+            "y": 8,
+            "w": 305,
+            "h": 480
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 480
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 480
+          },
+          "pivot": {
+            "x": 0.5049180327868853,
+            "y": 0.99375
+          }
+        },
+        {
+          "filename": "chantal-intro-4",
+          "frame": {
+            "x": 1235,
+            "y": 8,
+            "w": 303,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 303,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 303,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "chantal-intro-5",
+          "frame": {
+            "x": 8,
+            "y": 529,
+            "w": 328,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "chantal-intro-6",
+          "frame": {
+            "x": 352,
+            "y": 529,
+            "w": 347,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "chantal-intro-7",
+          "frame": {
+            "x": 1554,
+            "y": 8,
+            "w": 352,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "chantal-intro",
+          "frame": {
+            "x": 301,
+            "y": 8,
+            "w": 235,
+            "h": 502
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 235,
+            "h": 502
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 235,
+            "h": 502
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9940239043824701
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1815,
+        "h": 793
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-jump-0",
+          "frame": {
+            "x": 901,
+            "y": 8,
+            "w": 325,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "chantal-jump-1",
+          "frame": {
+            "x": 278,
+            "y": 473,
+            "w": 268,
+            "h": 309
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 268,
+            "h": 309
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 268,
+            "h": 309
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9902912621359223
+          }
+        },
+        {
+          "filename": "chantal-jump-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 278,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 278,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 278,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "chantal-jump-3",
+          "frame": {
+            "x": 1242,
+            "y": 8,
+            "w": 269,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.52,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "chantal-jump-4",
+          "frame": {
+            "x": 8,
+            "y": 473,
+            "w": 254,
+            "h": 312
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 254,
+            "h": 312
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 254,
+            "h": 312
+          },
+          "pivot": {
+            "x": 0.52,
+            "y": 0.9903846153846154
+          }
+        },
+        {
+          "filename": "chantal-jump-5",
+          "frame": {
+            "x": 302,
+            "y": 8,
+            "w": 252,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 252,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 252,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.51,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "chantal-jump-6",
+          "frame": {
+            "x": 1527,
+            "y": 8,
+            "w": 280,
+            "h": 320
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 320
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 320
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.990625
+          }
+        },
+        {
+          "filename": "chantal-jump-7",
+          "frame": {
+            "x": 570,
+            "y": 8,
+            "w": 315,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "chantal-jump",
+          "frame": {
+            "x": 901,
+            "y": 8,
+            "w": 325,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926289926289926
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1986,
+        "h": 850
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-kick-0",
+          "frame": {
+            "x": 280,
+            "y": 8,
+            "w": 344,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "chantal-kick-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 256,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 256,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.421875,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "chantal-kick-2",
+          "frame": {
+            "x": 377,
+            "y": 446,
+            "w": 416,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.23076923076923078,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "chantal-kick-3",
+          "frame": {
+            "x": 640,
+            "y": 8,
+            "w": 401,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.24688279301745636,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "chantal-kick-4",
+          "frame": {
+            "x": 1057,
+            "y": 8,
+            "w": 273,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 273,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 273,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.49633699633699635,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "chantal-kick-5",
+          "frame": {
+            "x": 1709,
+            "y": 8,
+            "w": 269,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.5576208178438662,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "chantal-kick-6",
+          "frame": {
+            "x": 8,
+            "y": 446,
+            "w": 353,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "chantal-kick-7",
+          "frame": {
+            "x": 1346,
+            "y": 8,
+            "w": 347,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5115273775216138,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "chantal-kick",
+          "frame": {
+            "x": 280,
+            "y": 8,
+            "w": 344,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2018,
+        "h": 650
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-knockdown-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 365,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "chantal-knockdown-1",
+          "frame": {
+            "x": 389,
+            "y": 8,
+            "w": 385,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5623376623376624,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "chantal-knockdown-2",
+          "frame": {
+            "x": 790,
+            "y": 8,
+            "w": 366,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.5286885245901639,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "chantal-knockdown-3",
+          "frame": {
+            "x": 1172,
+            "y": 8,
+            "w": 401,
+            "h": 297
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 297
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 297
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.98989898989899
+          }
+        },
+        {
+          "filename": "chantal-knockdown-4",
+          "frame": {
+            "x": 1589,
+            "y": 8,
+            "w": 421,
+            "h": 223
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 421,
+            "h": 223
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 421,
+            "h": 223
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9865470852017937
+          }
+        },
+        {
+          "filename": "chantal-knockdown-5",
+          "frame": {
+            "x": 8,
+            "y": 474,
+            "w": 432,
+            "h": 168
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 432,
+            "h": 168
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 432,
+            "h": 168
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9821428571428571
+          }
+        },
+        {
+          "filename": "chantal-knockdown-6",
+          "frame": {
+            "x": 456,
+            "y": 474,
+            "w": 434,
+            "h": 138
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 434,
+            "h": 138
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 434,
+            "h": 138
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9782608695652174
+          }
+        },
+        {
+          "filename": "chantal-knockdown-7",
+          "frame": {
+            "x": 906,
+            "y": 474,
+            "w": 426,
+            "h": 138
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 426,
+            "h": 138
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 426,
+            "h": 138
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9782608695652174
+          }
+        },
+        {
+          "filename": "chantal-knockdown",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 365,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933333333333333
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1961,
+        "h": 868
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-punch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 361,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "chantal-punch-1",
+          "frame": {
+            "x": 385,
+            "y": 8,
+            "w": 371,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "chantal-punch-2",
+          "frame": {
+            "x": 772,
+            "y": 8,
+            "w": 384,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.4921875,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "chantal-punch-3",
+          "frame": {
+            "x": 1172,
+            "y": 8,
+            "w": 398,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 398,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 398,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.4824120603015075,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "chantal-punch-4",
+          "frame": {
+            "x": 8,
+            "y": 446,
+            "w": 368,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "chantal-punch-5",
+          "frame": {
+            "x": 1586,
+            "y": 8,
+            "w": 367,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "chantal-punch-6",
+          "frame": {
+            "x": 766,
+            "y": 446,
+            "w": 356,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "chantal-punch-7",
+          "frame": {
+            "x": 392,
+            "y": 446,
+            "w": 358,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "chantal-punch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 361,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1961,
+        "h": 844
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-super-0",
+          "frame": {
+            "x": 785,
+            "y": 8,
+            "w": 388,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.4729381443298969,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "chantal-super-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 375,
+            "h": 439
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 439
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 439
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931662870159453
+          }
+        },
+        {
+          "filename": "chantal-super-2",
+          "frame": {
+            "x": 1189,
+            "y": 8,
+            "w": 386,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.4792746113989637,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "chantal-super-3",
+          "frame": {
+            "x": 399,
+            "y": 8,
+            "w": 370,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "chantal-super-4",
+          "frame": {
+            "x": 8,
+            "y": 463,
+            "w": 410,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 410,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 410,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.45975609756097563,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "chantal-super-5",
+          "frame": {
+            "x": 834,
+            "y": 463,
+            "w": 388,
+            "h": 332
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 332
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 332
+          },
+          "pivot": {
+            "x": 0.5141752577319587,
+            "y": 0.9909638554216867
+          }
+        },
+        {
+          "filename": "chantal-super-6",
+          "frame": {
+            "x": 434,
+            "y": 463,
+            "w": 384,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.48046875,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "chantal-super-7",
+          "frame": {
+            "x": 1591,
+            "y": 8,
+            "w": 362,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "chantal-super",
+          "frame": {
+            "x": 785,
+            "y": 8,
+            "w": 388,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.4729381443298969,
+            "y": 0.993103448275862
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2035,
+        "h": 719
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-sweep-0",
+          "frame": {
+            "x": 1336,
+            "y": 8,
+            "w": 282,
+            "h": 305
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 305
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 305
+          },
+          "pivot": {
+            "x": 0.4698581560283688,
+            "y": 0.9901639344262295
+          }
+        },
+        {
+          "filename": "chantal-sweep-1",
+          "frame": {
+            "x": 8,
+            "y": 420,
+            "w": 452,
+            "h": 291
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 452,
+            "h": 291
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 452,
+            "h": 291
+          },
+          "pivot": {
+            "x": 0.497787610619469,
+            "y": 0.9896907216494846
+          }
+        },
+        {
+          "filename": "chantal-sweep-2",
+          "frame": {
+            "x": 476,
+            "y": 420,
+            "w": 480,
+            "h": 291
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 480,
+            "h": 291
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 480,
+            "h": 291
+          },
+          "pivot": {
+            "x": 0.29583333333333334,
+            "y": 0.9896907216494846
+          }
+        },
+        {
+          "filename": "chantal-sweep-3",
+          "frame": {
+            "x": 1634,
+            "y": 8,
+            "w": 393,
+            "h": 294
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 294
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 294
+          },
+          "pivot": {
+            "x": 0.5776081424936387,
+            "y": 0.9897959183673469
+          }
+        },
+        {
+          "filename": "chantal-sweep-4",
+          "frame": {
+            "x": 994,
+            "y": 8,
+            "w": 326,
+            "h": 318
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 318
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 318
+          },
+          "pivot": {
+            "x": 0.4831288343558282,
+            "y": 0.9905660377358491
+          }
+        },
+        {
+          "filename": "chantal-sweep-5",
+          "frame": {
+            "x": 703,
+            "y": 8,
+            "w": 275,
+            "h": 319
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 275,
+            "h": 319
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 275,
+            "h": 319
+          },
+          "pivot": {
+            "x": 0.4672727272727273,
+            "y": 0.9905956112852664
+          }
+        },
+        {
+          "filename": "chantal-sweep-6",
+          "frame": {
+            "x": 362,
+            "y": 8,
+            "w": 325,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "chantal-sweep-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 338,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "chantal-sweep",
+          "frame": {
+            "x": 1336,
+            "y": 8,
+            "w": 282,
+            "h": 305
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 305
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 305
+          },
+          "pivot": {
+            "x": 0.4698581560283688,
+            "y": 0.9901639344262295
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2027,
+        "h": 802
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-uppercut-0",
+          "frame": {
+            "x": 832,
+            "y": 8,
+            "w": 297,
+            "h": 366
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 297,
+            "h": 366
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 297,
+            "h": 366
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918032786885246
+          }
+        },
+        {
+          "filename": "chantal-uppercut-1",
+          "frame": {
+            "x": 1734,
+            "y": 8,
+            "w": 285,
+            "h": 310
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 310
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 310
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9903225806451613
+          }
+        },
+        {
+          "filename": "chantal-uppercut-2",
+          "frame": {
+            "x": 239,
+            "y": 8,
+            "w": 322,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "chantal-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 215,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 215,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 215,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5023255813953489,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "chantal-uppercut-4",
+          "frame": {
+            "x": 577,
+            "y": 8,
+            "w": 239,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 239,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 239,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.49581589958158995,
+            "y": 0.9918256130790191
+          }
+        },
+        {
+          "filename": "chantal-uppercut-5",
+          "frame": {
+            "x": 1444,
+            "y": 8,
+            "w": 274,
+            "h": 331
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 274,
+            "h": 331
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 274,
+            "h": 331
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9909365558912386
+          }
+        },
+        {
+          "filename": "chantal-uppercut-6",
+          "frame": {
+            "x": 8,
+            "y": 498,
+            "w": 267,
+            "h": 296
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 267,
+            "h": 296
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 267,
+            "h": 296
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9898648648648649
+          }
+        },
+        {
+          "filename": "chantal-uppercut-7",
+          "frame": {
+            "x": 1145,
+            "y": 8,
+            "w": 283,
+            "h": 332
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 332
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 332
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9909638554216867
+          }
+        },
+        {
+          "filename": "chantal-uppercut",
+          "frame": {
+            "x": 832,
+            "y": 8,
+            "w": 297,
+            "h": 366
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 297,
+            "h": 366
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 297,
+            "h": 366
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918032786885246
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1982,
+        "h": 954
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-win-0",
+          "frame": {
+            "x": 1308,
+            "y": 8,
+            "w": 326,
+            "h": 439
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 439
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 439
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931662870159453
+          }
+        },
+        {
+          "filename": "chantal-win-1",
+          "frame": {
+            "x": 1650,
+            "y": 8,
+            "w": 324,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "chantal-win-2",
+          "frame": {
+            "x": 341,
+            "y": 8,
+            "w": 272,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 272,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 272,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "chantal-win-3",
+          "frame": {
+            "x": 629,
+            "y": 8,
+            "w": 307,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.504885993485342,
+            "y": 0.9932885906040269
+          }
+        },
+        {
+          "filename": "chantal-win-4",
+          "frame": {
+            "x": 952,
+            "y": 8,
+            "w": 340,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "chantal-win-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 317,
+            "h": 486
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 486
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 486
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938271604938271
+          }
+        },
+        {
+          "filename": "chantal-win-6",
+          "frame": {
+            "x": 306,
+            "y": 510,
+            "w": 323,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "chantal-win-7",
+          "frame": {
+            "x": 8,
+            "y": 510,
+            "w": 282,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5053191489361702,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "chantal-win",
+          "frame": {
+            "x": 1308,
+            "y": 8,
+            "w": 326,
+            "h": 439
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 439
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 439
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931662870159453
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1823,
+        "h": 879
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-walk-0",
+          "frame": {
+            "x": 232,
+            "y": 8,
+            "w": 323,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "chantal-walk-1",
+          "frame": {
+            "x": 945,
+            "y": 8,
+            "w": 267,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 267,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 267,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "chantal-walk-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 208,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 208,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 208,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.4951923076923077,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "chantal-walk-3",
+          "frame": {
+            "x": 571,
+            "y": 8,
+            "w": 358,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "chantal-walk-4",
+          "frame": {
+            "x": 354,
+            "y": 458,
+            "w": 337,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "chantal-walk-5",
+          "frame": {
+            "x": 1574,
+            "y": 8,
+            "w": 241,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 241,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 241,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5062240663900415,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "chantal-walk-6",
+          "frame": {
+            "x": 1228,
+            "y": 8,
+            "w": 330,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "chantal-walk-7",
+          "frame": {
+            "x": 8,
+            "y": 458,
+            "w": 330,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "chantal-walk",
+          "frame": {
+            "x": 232,
+            "y": 8,
+            "w": 323,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1858,
+        "h": 890
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "chantal-walkBack-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 337,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "chantal-walkBack-1",
+          "frame": {
+            "x": 401,
+            "y": 455,
+            "w": 360,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "chantal-walkBack-2",
+          "frame": {
+            "x": 1495,
+            "y": 8,
+            "w": 355,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5183098591549296,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "chantal-walkBack-3",
+          "frame": {
+            "x": 1237,
+            "y": 8,
+            "w": 242,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 242,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 242,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5020661157024794,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "chantal-walkBack-4",
+          "frame": {
+            "x": 645,
+            "y": 8,
+            "w": 237,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 237,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 237,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5738396624472574,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "chantal-walkBack-5",
+          "frame": {
+            "x": 8,
+            "y": 455,
+            "w": 377,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "chantal-walkBack-6",
+          "frame": {
+            "x": 361,
+            "y": 8,
+            "w": 268,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 268,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 268,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5690298507462687,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "chantal-walkBack-7",
+          "frame": {
+            "x": 898,
+            "y": 8,
+            "w": 323,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "chantal-walkBack",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 337,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}

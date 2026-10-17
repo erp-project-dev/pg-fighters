@@ -6,6 +6,7 @@ import { poseScale } from '../../systems/AnimeAtlas';
 
 /** Visual-only asset catalog. Extra is ready for the gameplay owner's roster entry. */
 export const ROSTER_ART_IDS = [
+  'erp', 'mayin',
   'george', 'pepper', 'slandor', 'pentalick', 'mimetico', 'clavito',
   'chantal', 'jeanpierre', 'ferdex', 'turboshred', 'toxicity', 'rematada', 'acople',
   'markus', 'jesex', 'escalas', 'tayloy', 'platanero', 'kimberly', 'ricardo', 'nosu', 'virrey', 'inti', 'amu',
@@ -92,7 +93,7 @@ const SUPER_HEIGHT = 1.05;
 export function preloadRosterArt(scene: Phaser.Scene): void {
   for (const id of ROSTER_ART_IDS) {
     const root = `assets/characters/${id}`;
-    if (REGENERATED_ART_IDS.includes(id) && ['nosu', 'virrey', 'inti', 'amu'].includes(id)) {
+    if (REGENERATED_ART_IDS.includes(id) && ['nosu', 'virrey', 'inti', 'amu', 'erp', 'mayin'].includes(id)) {
       // New fighters have independent animation pages, loaded in the fight/lab scene.
       scene.load.image(`super-cutin-${id}`, `${root}/portrait.png`);
       continue;

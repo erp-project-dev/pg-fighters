@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1751,
+        "h": 723
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-airKick-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 246,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 246,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 246,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "jeanpierre-airKick-1",
+          "frame": {
+            "x": 813,
+            "y": 8,
+            "w": 252,
+            "h": 343
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 252,
+            "h": 343
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 252,
+            "h": 343
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9912536443148688
+          }
+        },
+        {
+          "filename": "jeanpierre-airKick-2",
+          "frame": {
+            "x": 1342,
+            "y": 8,
+            "w": 401,
+            "h": 333
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 333
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 333
+          },
+          "pivot": {
+            "x": 0.4,
+            "y": 0.990990990990991
+          }
+        },
+        {
+          "filename": "jeanpierre-airKick-3",
+          "frame": {
+            "x": 460,
+            "y": 394,
+            "w": 424,
+            "h": 311
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 424,
+            "h": 311
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 424,
+            "h": 311
+          },
+          "pivot": {
+            "x": 0.33,
+            "y": 0.9903536977491961
+          }
+        },
+        {
+          "filename": "jeanpierre-airKick-4",
+          "frame": {
+            "x": 8,
+            "y": 394,
+            "w": 436,
+            "h": 321
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 436,
+            "h": 321
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 436,
+            "h": 321
+          },
+          "pivot": {
+            "x": 0.33,
+            "y": 0.9906542056074766
+          }
+        },
+        {
+          "filename": "jeanpierre-airKick-5",
+          "frame": {
+            "x": 1081,
+            "y": 8,
+            "w": 245,
+            "h": 336
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 245,
+            "h": 336
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 245,
+            "h": 336
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9910714285714286
+          }
+        },
+        {
+          "filename": "jeanpierre-airKick-6",
+          "frame": {
+            "x": 270,
+            "y": 8,
+            "w": 248,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 248,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 248,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "jeanpierre-airKick-7",
+          "frame": {
+            "x": 534,
+            "y": 8,
+            "w": 263,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 263,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 263,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.54,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "jeanpierre-airKick",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 246,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 246,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 246,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9918918918918919
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1979,
+        "h": 812
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-airPunch-0",
+          "frame": {
+            "x": 1680,
+            "y": 8,
+            "w": 291,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 291,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 291,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "jeanpierre-airPunch-1",
+          "frame": {
+            "x": 304,
+            "y": 426,
+            "w": 316,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 316,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 316,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.56,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "jeanpierre-airPunch-2",
+          "frame": {
+            "x": 1281,
+            "y": 8,
+            "w": 383,
+            "h": 383
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 383
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 383
+          },
+          "pivot": {
+            "x": 0.4,
+            "y": 0.9921671018276762
+          }
+        },
+        {
+          "filename": "jeanpierre-airPunch-3",
+          "frame": {
+            "x": 270,
+            "y": 8,
+            "w": 406,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 406,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 406,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.4,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "jeanpierre-airPunch-4",
+          "frame": {
+            "x": 8,
+            "y": 426,
+            "w": 280,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.56,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "jeanpierre-airPunch-5",
+          "frame": {
+            "x": 692,
+            "y": 8,
+            "w": 283,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.56,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "jeanpierre-airPunch-6",
+          "frame": {
+            "x": 991,
+            "y": 8,
+            "w": 274,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 274,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 274,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "jeanpierre-airPunch-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 246,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 246,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 246,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "jeanpierre-airPunch",
+          "frame": {
+            "x": 1680,
+            "y": 8,
+            "w": 291,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 291,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 291,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9920634920634921
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1869,
+        "h": 810
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-backdash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 353,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "jeanpierre-backdash-1",
+          "frame": {
+            "x": 624,
+            "y": 440,
+            "w": 245,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 245,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 245,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.45510204081632655,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "jeanpierre-backdash-2",
+          "frame": {
+            "x": 377,
+            "y": 8,
+            "w": 375,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.3546666666666667,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "jeanpierre-backdash-3",
+          "frame": {
+            "x": 8,
+            "y": 440,
+            "w": 284,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 284,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 284,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.3362676056338028,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "jeanpierre-backdash-4",
+          "frame": {
+            "x": 1479,
+            "y": 8,
+            "w": 382,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918256130790191
+          }
+        },
+        {
+          "filename": "jeanpierre-backdash-5",
+          "frame": {
+            "x": 308,
+            "y": 440,
+            "w": 300,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "jeanpierre-backdash-6",
+          "frame": {
+            "x": 1116,
+            "y": 8,
+            "w": 347,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "jeanpierre-backdash-7",
+          "frame": {
+            "x": 768,
+            "y": 8,
+            "w": 332,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "jeanpierre-backdash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 353,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1921,
+        "h": 847
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-special-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 342,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "jeanpierre-special-1",
+          "frame": {
+            "x": 840,
+            "y": 447,
+            "w": 360,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.48194444444444445,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "jeanpierre-special-2",
+          "frame": {
+            "x": 366,
+            "y": 8,
+            "w": 349,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.504297994269341,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "jeanpierre-special-3",
+          "frame": {
+            "x": 8,
+            "y": 447,
+            "w": 407,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 407,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 407,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.43734643734643736,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "jeanpierre-special-4",
+          "frame": {
+            "x": 731,
+            "y": 8,
+            "w": 456,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 456,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 456,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.40131578947368424,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "jeanpierre-special-5",
+          "frame": {
+            "x": 431,
+            "y": 447,
+            "w": 393,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.4618320610687023,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "jeanpierre-special-6",
+          "frame": {
+            "x": 1203,
+            "y": 8,
+            "w": 341,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "jeanpierre-special-7",
+          "frame": {
+            "x": 1560,
+            "y": 8,
+            "w": 353,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "jeanpierre-special",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 342,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1829,
+        "h": 909
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-block-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 349,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932885906040269
+          }
+        },
+        {
+          "filename": "jeanpierre-block-1",
+          "frame": {
+            "x": 373,
+            "y": 8,
+            "w": 342,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "jeanpierre-block-2",
+          "frame": {
+            "x": 731,
+            "y": 8,
+            "w": 339,
+            "h": 433
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 433
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 433
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930715935334873
+          }
+        },
+        {
+          "filename": "jeanpierre-block-3",
+          "frame": {
+            "x": 1086,
+            "y": 8,
+            "w": 334,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "jeanpierre-block-4",
+          "frame": {
+            "x": 363,
+            "y": 471,
+            "w": 334,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "jeanpierre-block-5",
+          "frame": {
+            "x": 1436,
+            "y": 8,
+            "w": 385,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.4675324675324675,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "jeanpierre-block-6",
+          "frame": {
+            "x": 713,
+            "y": 471,
+            "w": 324,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "jeanpierre-block-7",
+          "frame": {
+            "x": 8,
+            "y": 471,
+            "w": 339,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "jeanpierre-block",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 349,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932885906040269
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1892,
+        "h": 769
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-crouch-0",
+          "frame": {
+            "x": 617,
+            "y": 8,
+            "w": 308,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.48538961038961037,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "jeanpierre-crouch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 286,
+            "h": 383
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 383
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 383
+          },
+          "pivot": {
+            "x": 0.49125874125874125,
+            "y": 0.9921671018276762
+          }
+        },
+        {
+          "filename": "jeanpierre-crouch-2",
+          "frame": {
+            "x": 941,
+            "y": 8,
+            "w": 301,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.49335548172757476,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "jeanpierre-crouch-3",
+          "frame": {
+            "x": 310,
+            "y": 8,
+            "w": 291,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 291,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 291,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.48281786941580757,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "jeanpierre-crouch-4",
+          "frame": {
+            "x": 1572,
+            "y": 8,
+            "w": 312,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.46955128205128205,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "jeanpierre-crouch-5",
+          "frame": {
+            "x": 1258,
+            "y": 8,
+            "w": 298,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.4899328859060403,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "jeanpierre-crouch-6",
+          "frame": {
+            "x": 322,
+            "y": 407,
+            "w": 313,
+            "h": 337
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 337
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 337
+          },
+          "pivot": {
+            "x": 0.4680511182108626,
+            "y": 0.9910979228486647
+          }
+        },
+        {
+          "filename": "jeanpierre-crouch-7",
+          "frame": {
+            "x": 8,
+            "y": 407,
+            "w": 298,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.49328859060402686,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "jeanpierre-crouch",
+          "frame": {
+            "x": 617,
+            "y": 8,
+            "w": 308,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.48538961038961037,
+            "y": 0.9920212765957447
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2036,
+        "h": 728
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-crouchBlock-0",
+          "frame": {
+            "x": 1019,
+            "y": 8,
+            "w": 299,
+            "h": 343
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 299,
+            "h": 343
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 299,
+            "h": 343
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9912536443148688
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchBlock-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 303,
+            "h": 358
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 303,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 303,
+            "h": 358
+          },
+          "pivot": {
+            "x": 0.49174917491749176,
+            "y": 0.9916201117318436
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchBlock-2",
+          "frame": {
+            "x": 332,
+            "y": 382,
+            "w": 299,
+            "h": 321
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 299,
+            "h": 321
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 299,
+            "h": 321
+          },
+          "pivot": {
+            "x": 0.48327759197324416,
+            "y": 0.9906542056074766
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchBlock-3",
+          "frame": {
+            "x": 327,
+            "y": 8,
+            "w": 283,
+            "h": 353
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 353
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 353
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915014164305949
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchBlock-4",
+          "frame": {
+            "x": 8,
+            "y": 382,
+            "w": 308,
+            "h": 338
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 338
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 338
+          },
+          "pivot": {
+            "x": 0.5227272727272727,
+            "y": 0.9911242603550295
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchBlock-5",
+          "frame": {
+            "x": 1334,
+            "y": 8,
+            "w": 371,
+            "h": 343
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 343
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 343
+          },
+          "pivot": {
+            "x": 0.41509433962264153,
+            "y": 0.9912536443148688
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchBlock-6",
+          "frame": {
+            "x": 626,
+            "y": 8,
+            "w": 377,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.46153846153846156,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchBlock-7",
+          "frame": {
+            "x": 1721,
+            "y": 8,
+            "w": 307,
+            "h": 339
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 339
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 339
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911504424778761
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchBlock",
+          "frame": {
+            "x": 1019,
+            "y": 8,
+            "w": 299,
+            "h": 343
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 299,
+            "h": 343
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 299,
+            "h": 343
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9912536443148688
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1759,
+        "h": 710
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-crouchHurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 290,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.4482758620689655,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchHurt-1",
+          "frame": {
+            "x": 628,
+            "y": 8,
+            "w": 355,
+            "h": 343
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 343
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 343
+          },
+          "pivot": {
+            "x": 0.4704225352112676,
+            "y": 0.9912536443148688
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchHurt-2",
+          "frame": {
+            "x": 999,
+            "y": 8,
+            "w": 432,
+            "h": 341
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 432,
+            "h": 341
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 432,
+            "h": 341
+          },
+          "pivot": {
+            "x": 0.5162037037037037,
+            "y": 0.9912023460410557
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchHurt-3",
+          "frame": {
+            "x": 314,
+            "y": 8,
+            "w": 298,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.42449664429530204,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchHurt-4",
+          "frame": {
+            "x": 1447,
+            "y": 8,
+            "w": 304,
+            "h": 337
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 337
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 337
+          },
+          "pivot": {
+            "x": 0.4161184210526316,
+            "y": 0.9910979228486647
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchHurt-5",
+          "frame": {
+            "x": 8,
+            "y": 368,
+            "w": 308,
+            "h": 334
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 334
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 334
+          },
+          "pivot": {
+            "x": 0.413961038961039,
+            "y": 0.9910179640718563
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchHurt-6",
+          "frame": {
+            "x": 332,
+            "y": 368,
+            "w": 304,
+            "h": 334
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 334
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 334
+          },
+          "pivot": {
+            "x": 0.44243421052631576,
+            "y": 0.9910179640718563
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchHurt-7",
+          "frame": {
+            "x": 652,
+            "y": 368,
+            "w": 299,
+            "h": 332
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 299,
+            "h": 332
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 299,
+            "h": 332
+          },
+          "pivot": {
+            "x": 0.4280936454849498,
+            "y": 0.9909638554216867
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchHurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 290,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 290,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 290,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.4482758620689655,
+            "y": 0.9912790697674418
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1976,
+        "h": 700
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-crouchPunch-0",
+          "frame": {
+            "x": 343,
+            "y": 8,
+            "w": 296,
+            "h": 335
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 296,
+            "h": 335
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 335
+          },
+          "pivot": {
+            "x": 0.4543918918918919,
+            "y": 0.991044776119403
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchPunch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 319,
+            "h": 338
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 338
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 338
+          },
+          "pivot": {
+            "x": 0.5047021943573667,
+            "y": 0.9911242603550295
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchPunch-2",
+          "frame": {
+            "x": 319,
+            "y": 362,
+            "w": 416,
+            "h": 325
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 325
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 325
+          },
+          "pivot": {
+            "x": 0.32091346153846156,
+            "y": 0.9907692307692307
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchPunch-3",
+          "frame": {
+            "x": 655,
+            "y": 8,
+            "w": 388,
+            "h": 335
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 335
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 335
+          },
+          "pivot": {
+            "x": 0.34536082474226804,
+            "y": 0.991044776119403
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchPunch-4",
+          "frame": {
+            "x": 1368,
+            "y": 8,
+            "w": 301,
+            "h": 332
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 332
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 332
+          },
+          "pivot": {
+            "x": 0.47840531561461797,
+            "y": 0.9909638554216867
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchPunch-5",
+          "frame": {
+            "x": 1685,
+            "y": 8,
+            "w": 283,
+            "h": 331
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 331
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 331
+          },
+          "pivot": {
+            "x": 0.46113074204946997,
+            "y": 0.9909365558912386
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchPunch-6",
+          "frame": {
+            "x": 8,
+            "y": 362,
+            "w": 295,
+            "h": 330
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 330
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 330
+          },
+          "pivot": {
+            "x": 0.45932203389830506,
+            "y": 0.990909090909091
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchPunch-7",
+          "frame": {
+            "x": 1059,
+            "y": 8,
+            "w": 293,
+            "h": 333
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 293,
+            "h": 333
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 293,
+            "h": 333
+          },
+          "pivot": {
+            "x": 0.45733788395904434,
+            "y": 0.990990990990991
+          }
+        },
+        {
+          "filename": "jeanpierre-crouchPunch",
+          "frame": {
+            "x": 343,
+            "y": 8,
+            "w": 296,
+            "h": 335
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 296,
+            "h": 335
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 296,
+            "h": 335
+          },
+          "pivot": {
+            "x": 0.4543918918918919,
+            "y": 0.991044776119403
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1886,
+        "h": 811
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-dash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 352,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "jeanpierre-dash-1",
+          "frame": {
+            "x": 1533,
+            "y": 8,
+            "w": 345,
+            "h": 372
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 372
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 372
+          },
+          "pivot": {
+            "x": 0.4318840579710145,
+            "y": 0.9919354838709677
+          }
+        },
+        {
+          "filename": "jeanpierre-dash-2",
+          "frame": {
+            "x": 811,
+            "y": 8,
+            "w": 362,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.42955801104972374,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "jeanpierre-dash-3",
+          "frame": {
+            "x": 376,
+            "y": 8,
+            "w": 419,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 419,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.48448687350835323,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "jeanpierre-dash-4",
+          "frame": {
+            "x": 682,
+            "y": 441,
+            "w": 475,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 475,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 475,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "jeanpierre-dash-5",
+          "frame": {
+            "x": 8,
+            "y": 441,
+            "w": 307,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "jeanpierre-dash-6",
+          "frame": {
+            "x": 331,
+            "y": 441,
+            "w": 335,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "jeanpierre-dash-7",
+          "frame": {
+            "x": 1189,
+            "y": 8,
+            "w": 328,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "jeanpierre-dash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 352,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1611,
+        "h": 694
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 273,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 273,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 273,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "jeanpierre-ko-1",
+          "frame": {
+            "x": 297,
+            "y": 8,
+            "w": 300,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.41833333333333333,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "jeanpierre-ko-2",
+          "frame": {
+            "x": 613,
+            "y": 8,
+            "w": 285,
+            "h": 343
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 343
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 343
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9912536443148688
+          }
+        },
+        {
+          "filename": "jeanpierre-ko-3",
+          "frame": {
+            "x": 914,
+            "y": 8,
+            "w": 293,
+            "h": 300
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 293,
+            "h": 300
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 293,
+            "h": 300
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99
+          }
+        },
+        {
+          "filename": "jeanpierre-ko-4",
+          "frame": {
+            "x": 1223,
+            "y": 8,
+            "w": 380,
+            "h": 252
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 380,
+            "h": 252
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 380,
+            "h": 252
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9880952380952381
+          }
+        },
+        {
+          "filename": "jeanpierre-ko-5",
+          "frame": {
+            "x": 8,
+            "y": 502,
+            "w": 444,
+            "h": 184
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 444,
+            "h": 184
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 444,
+            "h": 184
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9836956521739131
+          }
+        },
+        {
+          "filename": "jeanpierre-ko-6",
+          "frame": {
+            "x": 468,
+            "y": 502,
+            "w": 427,
+            "h": 161
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 427,
+            "h": 161
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 427,
+            "h": 161
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9813664596273292
+          }
+        },
+        {
+          "filename": "jeanpierre-ko-7",
+          "frame": {
+            "x": 911,
+            "y": 502,
+            "w": 414,
+            "h": 145
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 414,
+            "h": 145
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 414,
+            "h": 145
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9793103448275862
+          }
+        },
+        {
+          "filename": "jeanpierre-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 273,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 273,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 273,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1727,
+        "h": 367
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-down-0",
+          "frame": {
+            "x": 864,
+            "y": 8,
+            "w": 416,
+            "h": 160
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 160
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 160
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.98125
+          }
+        },
+        {
+          "filename": "jeanpierre-down-1",
+          "frame": {
+            "x": 1296,
+            "y": 8,
+            "w": 417,
+            "h": 160
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 417,
+            "h": 160
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 417,
+            "h": 160
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.98125
+          }
+        },
+        {
+          "filename": "jeanpierre-down-2",
+          "frame": {
+            "x": 442,
+            "y": 8,
+            "w": 406,
+            "h": 170
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 406,
+            "h": 170
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 406,
+            "h": 170
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9823529411764705
+          }
+        },
+        {
+          "filename": "jeanpierre-down-3",
+          "frame": {
+            "x": 882,
+            "y": 199,
+            "w": 409,
+            "h": 153
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 153
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 153
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9803921568627451
+          }
+        },
+        {
+          "filename": "jeanpierre-down-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 418,
+            "h": 175
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 418,
+            "h": 175
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 418,
+            "h": 175
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9828571428571429
+          }
+        },
+        {
+          "filename": "jeanpierre-down-5",
+          "frame": {
+            "x": 443,
+            "y": 199,
+            "w": 423,
+            "h": 155
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 423,
+            "h": 155
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 423,
+            "h": 155
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9806451612903225
+          }
+        },
+        {
+          "filename": "jeanpierre-down-6",
+          "frame": {
+            "x": 8,
+            "y": 199,
+            "w": 419,
+            "h": 160
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 419,
+            "h": 160
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 160
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.98125
+          }
+        },
+        {
+          "filename": "jeanpierre-down-7",
+          "frame": {
+            "x": 1307,
+            "y": 199,
+            "w": 412,
+            "h": 140
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 412,
+            "h": 140
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 412,
+            "h": 140
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9785714285714285
+          }
+        },
+        {
+          "filename": "jeanpierre-down",
+          "frame": {
+            "x": 864,
+            "y": 8,
+            "w": 416,
+            "h": 160
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 160
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 160
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.98125
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1934,
+        "h": 815
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-fall-0",
+          "frame": {
+            "x": 266,
+            "y": 475,
+            "w": 223,
+            "h": 305
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 223,
+            "h": 305
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 223,
+            "h": 305
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9901639344262295
+          }
+        },
+        {
+          "filename": "jeanpierre-fall-1",
+          "frame": {
+            "x": 8,
+            "y": 475,
+            "w": 242,
+            "h": 332
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 242,
+            "h": 332
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 242,
+            "h": 332
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9909638554216867
+          }
+        },
+        {
+          "filename": "jeanpierre-fall-2",
+          "frame": {
+            "x": 627,
+            "y": 8,
+            "w": 289,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.43,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "jeanpierre-fall-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 269,
+            "h": 451
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 451
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 451
+          },
+          "pivot": {
+            "x": 0.42,
+            "y": 0.9933481152993349
+          }
+        },
+        {
+          "filename": "jeanpierre-fall-4",
+          "frame": {
+            "x": 293,
+            "y": 8,
+            "w": 318,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.43,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "jeanpierre-fall-5",
+          "frame": {
+            "x": 932,
+            "y": 8,
+            "w": 317,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.48,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "jeanpierre-fall-6",
+          "frame": {
+            "x": 1583,
+            "y": 8,
+            "w": 343,
+            "h": 366
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 366
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 366
+          },
+          "pivot": {
+            "x": 0.43,
+            "y": 0.9918032786885246
+          }
+        },
+        {
+          "filename": "jeanpierre-fall-7",
+          "frame": {
+            "x": 1265,
+            "y": 8,
+            "w": 302,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.43,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "jeanpierre-fall",
+          "frame": {
+            "x": 266,
+            "y": 475,
+            "w": 223,
+            "h": 305
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 223,
+            "h": 305
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 223,
+            "h": 305
+          },
+          "pivot": {
+            "x": 0.55,
+            "y": 0.9901639344262295
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2034,
+        "h": 623
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-getup-0",
+          "frame": {
+            "x": 427,
+            "y": 426,
+            "w": 442,
+            "h": 178
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 442,
+            "h": 178
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 442,
+            "h": 178
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9831460674157303
+          }
+        },
+        {
+          "filename": "jeanpierre-getup-1",
+          "frame": {
+            "x": 8,
+            "y": 426,
+            "w": 403,
+            "h": 189
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 403,
+            "h": 189
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 403,
+            "h": 189
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9841269841269841
+          }
+        },
+        {
+          "filename": "jeanpierre-getup-2",
+          "frame": {
+            "x": 1653,
+            "y": 8,
+            "w": 373,
+            "h": 256
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 256
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 256
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.98828125
+          }
+        },
+        {
+          "filename": "jeanpierre-getup-3",
+          "frame": {
+            "x": 1330,
+            "y": 8,
+            "w": 307,
+            "h": 315
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 315
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 315
+          },
+          "pivot": {
+            "x": 0.4755700325732899,
+            "y": 0.9904761904761905
+          }
+        },
+        {
+          "filename": "jeanpierre-getup-4",
+          "frame": {
+            "x": 980,
+            "y": 8,
+            "w": 334,
+            "h": 337
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 337
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 337
+          },
+          "pivot": {
+            "x": 0.437125748502994,
+            "y": 0.9910979228486647
+          }
+        },
+        {
+          "filename": "jeanpierre-getup-5",
+          "frame": {
+            "x": 693,
+            "y": 8,
+            "w": 271,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 271,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 271,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.47232472324723246,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "jeanpierre-getup-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 324,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "jeanpierre-getup-7",
+          "frame": {
+            "x": 348,
+            "y": 8,
+            "w": 329,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "jeanpierre-getup",
+          "frame": {
+            "x": 427,
+            "y": 426,
+            "w": 442,
+            "h": 178
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 442,
+            "h": 178
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 442,
+            "h": 178
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9831460674157303
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1808,
+        "h": 940
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-hurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 364,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936708860759493
+          }
+        },
+        {
+          "filename": "jeanpierre-hurt-1",
+          "frame": {
+            "x": 388,
+            "y": 8,
+            "w": 346,
+            "h": 465
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 465
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 465
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935483870967742
+          }
+        },
+        {
+          "filename": "jeanpierre-hurt-2",
+          "frame": {
+            "x": 750,
+            "y": 8,
+            "w": 331,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5226586102719033,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "jeanpierre-hurt-3",
+          "frame": {
+            "x": 8,
+            "y": 498,
+            "w": 332,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.5692771084337349,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "jeanpierre-hurt-4",
+          "frame": {
+            "x": 717,
+            "y": 498,
+            "w": 336,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.47619047619047616,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "jeanpierre-hurt-5",
+          "frame": {
+            "x": 356,
+            "y": 498,
+            "w": 345,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "jeanpierre-hurt-6",
+          "frame": {
+            "x": 1457,
+            "y": 8,
+            "w": 343,
+            "h": 443
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 443
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 443
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932279909706546
+          }
+        },
+        {
+          "filename": "jeanpierre-hurt-7",
+          "frame": {
+            "x": 1097,
+            "y": 8,
+            "w": 344,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932885906040269
+          }
+        },
+        {
+          "filename": "jeanpierre-hurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 364,
+            "h": 474
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 474
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 474
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936708860759493
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1749,
+        "h": 882
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-idle-0",
+          "frame": {
+            "x": 1058,
+            "y": 8,
+            "w": 333,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "jeanpierre-idle-1",
+          "frame": {
+            "x": 357,
+            "y": 8,
+            "w": 333,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "jeanpierre-idle-2",
+          "frame": {
+            "x": 356,
+            "y": 451,
+            "w": 329,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "jeanpierre-idle-3",
+          "frame": {
+            "x": 701,
+            "y": 451,
+            "w": 332,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "jeanpierre-idle-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 333,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "jeanpierre-idle-5",
+          "frame": {
+            "x": 8,
+            "y": 451,
+            "w": 332,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "jeanpierre-idle-6",
+          "frame": {
+            "x": 1407,
+            "y": 8,
+            "w": 334,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "jeanpierre-idle-7",
+          "frame": {
+            "x": 706,
+            "y": 8,
+            "w": 336,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "jeanpierre-idle",
+          "frame": {
+            "x": 1058,
+            "y": 8,
+            "w": 333,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929245283018868
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1873,
+        "h": 967
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-intro-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 228,
+            "h": 519
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 228,
+            "h": 519
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 228,
+            "h": 519
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9942196531791907
+          }
+        },
+        {
+          "filename": "jeanpierre-intro-1",
+          "frame": {
+            "x": 252,
+            "y": 8,
+            "w": 293,
+            "h": 511
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 293,
+            "h": 511
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 293,
+            "h": 511
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941291585127201
+          }
+        },
+        {
+          "filename": "jeanpierre-intro-2",
+          "frame": {
+            "x": 843,
+            "y": 8,
+            "w": 356,
+            "h": 508
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 508
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 508
+          },
+          "pivot": {
+            "x": 0.45646067415730335,
+            "y": 0.9940944881889764
+          }
+        },
+        {
+          "filename": "jeanpierre-intro-3",
+          "frame": {
+            "x": 561,
+            "y": 8,
+            "w": 266,
+            "h": 509
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 266,
+            "h": 509
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 266,
+            "h": 509
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9941060903732809
+          }
+        },
+        {
+          "filename": "jeanpierre-intro-4",
+          "frame": {
+            "x": 1215,
+            "y": 8,
+            "w": 312,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "jeanpierre-intro-5",
+          "frame": {
+            "x": 1543,
+            "y": 8,
+            "w": 322,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "jeanpierre-intro-6",
+          "frame": {
+            "x": 367,
+            "y": 543,
+            "w": 359,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "jeanpierre-intro-7",
+          "frame": {
+            "x": 8,
+            "y": 543,
+            "w": 343,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "jeanpierre-intro",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 228,
+            "h": 519
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 228,
+            "h": 519
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 228,
+            "h": 519
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9942196531791907
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1809,
+        "h": 818
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-jump-0",
+          "frame": {
+            "x": 299,
+            "y": 8,
+            "w": 345,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "jeanpierre-jump-1",
+          "frame": {
+            "x": 1316,
+            "y": 8,
+            "w": 229,
+            "h": 328
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 229,
+            "h": 328
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 229,
+            "h": 328
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9908536585365854
+          }
+        },
+        {
+          "filename": "jeanpierre-jump-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 275,
+            "h": 471
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 275,
+            "h": 471
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 275,
+            "h": 471
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936305732484076
+          }
+        },
+        {
+          "filename": "jeanpierre-jump-3",
+          "frame": {
+            "x": 1561,
+            "y": 8,
+            "w": 240,
+            "h": 328
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 240,
+            "h": 328
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 240,
+            "h": 328
+          },
+          "pivot": {
+            "x": 0.53,
+            "y": 0.9908536585365854
+          }
+        },
+        {
+          "filename": "jeanpierre-jump-4",
+          "frame": {
+            "x": 275,
+            "y": 495,
+            "w": 237,
+            "h": 294
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 237,
+            "h": 294
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 237,
+            "h": 294
+          },
+          "pivot": {
+            "x": 0.53,
+            "y": 0.9897959183673469
+          }
+        },
+        {
+          "filename": "jeanpierre-jump-5",
+          "frame": {
+            "x": 1015,
+            "y": 8,
+            "w": 285,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.47,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "jeanpierre-jump-6",
+          "frame": {
+            "x": 8,
+            "y": 495,
+            "w": 251,
+            "h": 315
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 251,
+            "h": 315
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 251,
+            "h": 315
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9904761904761905
+          }
+        },
+        {
+          "filename": "jeanpierre-jump-7",
+          "frame": {
+            "x": 660,
+            "y": 8,
+            "w": 339,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "jeanpierre-jump",
+          "frame": {
+            "x": 299,
+            "y": 8,
+            "w": 345,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1995,
+        "h": 855
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-kick-0",
+          "frame": {
+            "x": 271,
+            "y": 8,
+            "w": 361,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "jeanpierre-kick-1",
+          "frame": {
+            "x": 648,
+            "y": 8,
+            "w": 230,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 230,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 230,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.32608695652173914,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "jeanpierre-kick-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 247,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 247,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 247,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5323886639676113,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "jeanpierre-kick-3",
+          "frame": {
+            "x": 894,
+            "y": 8,
+            "w": 384,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.28515625,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "jeanpierre-kick-4",
+          "frame": {
+            "x": 1294,
+            "y": 8,
+            "w": 414,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 414,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 414,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.27294685990338163,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "jeanpierre-kick-5",
+          "frame": {
+            "x": 8,
+            "y": 446,
+            "w": 237,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 237,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 237,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.30168776371308015,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "jeanpierre-kick-6",
+          "frame": {
+            "x": 1724,
+            "y": 8,
+            "w": 263,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 263,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 263,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.4467680608365019,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "jeanpierre-kick-7",
+          "frame": {
+            "x": 261,
+            "y": 446,
+            "w": 333,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "jeanpierre-kick",
+          "frame": {
+            "x": 271,
+            "y": 8,
+            "w": 361,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1980,
+        "h": 657
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-knockdown-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 358,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934354485776805
+          }
+        },
+        {
+          "filename": "jeanpierre-knockdown-1",
+          "frame": {
+            "x": 382,
+            "y": 8,
+            "w": 320,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 320,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 320,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5328125,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "jeanpierre-knockdown-2",
+          "frame": {
+            "x": 718,
+            "y": 8,
+            "w": 370,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.2959459459459459,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "jeanpierre-knockdown-3",
+          "frame": {
+            "x": 1104,
+            "y": 8,
+            "w": 440,
+            "h": 253
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 440,
+            "h": 253
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 440,
+            "h": 253
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9881422924901185
+          }
+        },
+        {
+          "filename": "jeanpierre-knockdown-4",
+          "frame": {
+            "x": 1560,
+            "y": 8,
+            "w": 412,
+            "h": 227
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 412,
+            "h": 227
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 412,
+            "h": 227
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.986784140969163
+          }
+        },
+        {
+          "filename": "jeanpierre-knockdown-5",
+          "frame": {
+            "x": 8,
+            "y": 481,
+            "w": 408,
+            "h": 168
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 408,
+            "h": 168
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 408,
+            "h": 168
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9821428571428571
+          }
+        },
+        {
+          "filename": "jeanpierre-knockdown-6",
+          "frame": {
+            "x": 432,
+            "y": 481,
+            "w": 429,
+            "h": 155
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 429,
+            "h": 155
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 429,
+            "h": 155
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9806451612903225
+          }
+        },
+        {
+          "filename": "jeanpierre-knockdown-7",
+          "frame": {
+            "x": 877,
+            "y": 481,
+            "w": 421,
+            "h": 141
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 421,
+            "h": 141
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 421,
+            "h": 141
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9787234042553191
+          }
+        },
+        {
+          "filename": "jeanpierre-knockdown",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 358,
+            "h": 457
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 457
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 457
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934354485776805
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1862,
+        "h": 843
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-punch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 326,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "jeanpierre-punch-1",
+          "frame": {
+            "x": 350,
+            "y": 8,
+            "w": 348,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "jeanpierre-punch-2",
+          "frame": {
+            "x": 1460,
+            "y": 8,
+            "w": 394,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 394,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 394,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.4733502538071066,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "jeanpierre-punch-3",
+          "frame": {
+            "x": 714,
+            "y": 8,
+            "w": 392,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 392,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 392,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.475765306122449,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "jeanpierre-punch-4",
+          "frame": {
+            "x": 373,
+            "y": 438,
+            "w": 371,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.4838274932614555,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "jeanpierre-punch-5",
+          "frame": {
+            "x": 760,
+            "y": 438,
+            "w": 346,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "jeanpierre-punch-6",
+          "frame": {
+            "x": 8,
+            "y": 438,
+            "w": 349,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "jeanpierre-punch-7",
+          "frame": {
+            "x": 1122,
+            "y": 8,
+            "w": 322,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "jeanpierre-punch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 326,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2017,
+        "h": 871
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-super-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 418,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 418,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 418,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.4605263157894737,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "jeanpierre-super-1",
+          "frame": {
+            "x": 1643,
+            "y": 8,
+            "w": 366,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.453551912568306,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "jeanpierre-super-2",
+          "frame": {
+            "x": 442,
+            "y": 8,
+            "w": 399,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 399,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 399,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "jeanpierre-super-3",
+          "frame": {
+            "x": 857,
+            "y": 8,
+            "w": 380,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 380,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 380,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "jeanpierre-super-4",
+          "frame": {
+            "x": 776,
+            "y": 456,
+            "w": 411,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 411,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 411,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.4391727493917275,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "jeanpierre-super-5",
+          "frame": {
+            "x": 1253,
+            "y": 8,
+            "w": 374,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "jeanpierre-super-6",
+          "frame": {
+            "x": 378,
+            "y": 456,
+            "w": 382,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "jeanpierre-super-7",
+          "frame": {
+            "x": 8,
+            "y": 456,
+            "w": 354,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.4872881355932203,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "jeanpierre-super",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 418,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 418,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 418,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.4605263157894737,
+            "y": 0.9930555555555556
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1772,
+        "h": 587
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-sweep-0",
+          "frame": {
+            "x": 1147,
+            "y": 8,
+            "w": 302,
+            "h": 275
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 275
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 275
+          },
+          "pivot": {
+            "x": 0.43543046357615894,
+            "y": 0.9890909090909091
+          }
+        },
+        {
+          "filename": "jeanpierre-sweep-1",
+          "frame": {
+            "x": 675,
+            "y": 8,
+            "w": 456,
+            "h": 277
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 456,
+            "h": 277
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 456,
+            "h": 277
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9891696750902527
+          }
+        },
+        {
+          "filename": "jeanpierre-sweep-2",
+          "frame": {
+            "x": 318,
+            "y": 311,
+            "w": 460,
+            "h": 266
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 460,
+            "h": 266
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 460,
+            "h": 266
+          },
+          "pivot": {
+            "x": 0.5315217391304348,
+            "y": 0.9887218045112782
+          }
+        },
+        {
+          "filename": "jeanpierre-sweep-3",
+          "frame": {
+            "x": 269,
+            "y": 8,
+            "w": 390,
+            "h": 279
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 390,
+            "h": 279
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 279
+          },
+          "pivot": {
+            "x": 0.5397435897435897,
+            "y": 0.989247311827957
+          }
+        },
+        {
+          "filename": "jeanpierre-sweep-4",
+          "frame": {
+            "x": 794,
+            "y": 311,
+            "w": 356,
+            "h": 261
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 261
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 261
+          },
+          "pivot": {
+            "x": 0.41853932584269665,
+            "y": 0.9885057471264368
+          }
+        },
+        {
+          "filename": "jeanpierre-sweep-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 245,
+            "h": 287
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 245,
+            "h": 287
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 245,
+            "h": 287
+          },
+          "pivot": {
+            "x": 0.4775510204081633,
+            "y": 0.9895470383275261
+          }
+        },
+        {
+          "filename": "jeanpierre-sweep-6",
+          "frame": {
+            "x": 1465,
+            "y": 8,
+            "w": 299,
+            "h": 272
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 299,
+            "h": 272
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 299,
+            "h": 272
+          },
+          "pivot": {
+            "x": 0.4414715719063545,
+            "y": 0.9889705882352942
+          }
+        },
+        {
+          "filename": "jeanpierre-sweep-7",
+          "frame": {
+            "x": 8,
+            "y": 311,
+            "w": 294,
+            "h": 268
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 294,
+            "h": 268
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 294,
+            "h": 268
+          },
+          "pivot": {
+            "x": 0.4370748299319728,
+            "y": 0.9888059701492538
+          }
+        },
+        {
+          "filename": "jeanpierre-sweep",
+          "frame": {
+            "x": 1147,
+            "y": 8,
+            "w": 302,
+            "h": 275
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 275
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 275
+          },
+          "pivot": {
+            "x": 0.43543046357615894,
+            "y": 0.9890909090909091
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1936,
+        "h": 781
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-uppercut-0",
+          "frame": {
+            "x": 718,
+            "y": 8,
+            "w": 309,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "jeanpierre-uppercut-1",
+          "frame": {
+            "x": 1360,
+            "y": 8,
+            "w": 263,
+            "h": 321
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 263,
+            "h": 321
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 263,
+            "h": 321
+          },
+          "pivot": {
+            "x": 0.4923954372623574,
+            "y": 0.9906542056074766
+          }
+        },
+        {
+          "filename": "jeanpierre-uppercut-2",
+          "frame": {
+            "x": 1043,
+            "y": 8,
+            "w": 301,
+            "h": 350
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 350
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 350
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9914285714285714
+          }
+        },
+        {
+          "filename": "jeanpierre-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 216,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 216,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 216,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.6273148148148148,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "jeanpierre-uppercut-4",
+          "frame": {
+            "x": 240,
+            "y": 8,
+            "w": 215,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 215,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 215,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.5441860465116279,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "jeanpierre-uppercut-5",
+          "frame": {
+            "x": 471,
+            "y": 8,
+            "w": 231,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 231,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 231,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "jeanpierre-uppercut-6",
+          "frame": {
+            "x": 8,
+            "y": 456,
+            "w": 281,
+            "h": 317
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 317
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 317
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9905362776025236
+          }
+        },
+        {
+          "filename": "jeanpierre-uppercut-7",
+          "frame": {
+            "x": 1639,
+            "y": 8,
+            "w": 289,
+            "h": 320
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 320
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 320
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.990625
+          }
+        },
+        {
+          "filename": "jeanpierre-uppercut",
+          "frame": {
+            "x": 718,
+            "y": 8,
+            "w": 309,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915966386554622
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1997,
+        "h": 951
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-win-0",
+          "frame": {
+            "x": 329,
+            "y": 506,
+            "w": 322,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "jeanpierre-win-1",
+          "frame": {
+            "x": 1709,
+            "y": 8,
+            "w": 280,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5196428571428572,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "jeanpierre-win-2",
+          "frame": {
+            "x": 1055,
+            "y": 8,
+            "w": 361,
+            "h": 461
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 461
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 461
+          },
+          "pivot": {
+            "x": 0.5221606648199446,
+            "y": 0.9934924078091106
+          }
+        },
+        {
+          "filename": "jeanpierre-win-3",
+          "frame": {
+            "x": 722,
+            "y": 8,
+            "w": 317,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "jeanpierre-win-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 325,
+            "h": 482
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 482
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 482
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937759336099585
+          }
+        },
+        {
+          "filename": "jeanpierre-win-5",
+          "frame": {
+            "x": 349,
+            "y": 8,
+            "w": 357,
+            "h": 479
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 479
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 479
+          },
+          "pivot": {
+            "x": 0.43977591036414565,
+            "y": 0.9937369519832986
+          }
+        },
+        {
+          "filename": "jeanpierre-win-6",
+          "frame": {
+            "x": 8,
+            "y": 506,
+            "w": 305,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "jeanpierre-win-7",
+          "frame": {
+            "x": 1432,
+            "y": 8,
+            "w": 261,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 261,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 261,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "jeanpierre-win",
+          "frame": {
+            "x": 329,
+            "y": 506,
+            "w": 322,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1931,
+        "h": 881
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-walk-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 332,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "jeanpierre-walk-1",
+          "frame": {
+            "x": 1016,
+            "y": 8,
+            "w": 285,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "jeanpierre-walk-2",
+          "frame": {
+            "x": 694,
+            "y": 8,
+            "w": 306,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5049019607843137,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "jeanpierre-walk-3",
+          "frame": {
+            "x": 356,
+            "y": 8,
+            "w": 322,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "jeanpierre-walk-4",
+          "frame": {
+            "x": 376,
+            "y": 462,
+            "w": 327,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5045871559633027,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "jeanpierre-walk-5",
+          "frame": {
+            "x": 1317,
+            "y": 8,
+            "w": 264,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 264,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 264,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.4412878787878788,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "jeanpierre-walk-6",
+          "frame": {
+            "x": 8,
+            "y": 462,
+            "w": 352,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "jeanpierre-walk-7",
+          "frame": {
+            "x": 1597,
+            "y": 8,
+            "w": 326,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "jeanpierre-walk",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 332,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1922,
+        "h": 937
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "jeanpierre-walkBack-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 347,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935205183585313
+          }
+        },
+        {
+          "filename": "jeanpierre-walkBack-1",
+          "frame": {
+            "x": 634,
+            "y": 8,
+            "w": 303,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 303,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 303,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "jeanpierre-walkBack-2",
+          "frame": {
+            "x": 1310,
+            "y": 8,
+            "w": 377,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "jeanpierre-walkBack-3",
+          "frame": {
+            "x": 1703,
+            "y": 8,
+            "w": 211,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 211,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 211,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.34834123222748814,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "jeanpierre-walkBack-4",
+          "frame": {
+            "x": 8,
+            "y": 487,
+            "w": 223,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 223,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 223,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "jeanpierre-walkBack-5",
+          "frame": {
+            "x": 247,
+            "y": 487,
+            "w": 345,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "jeanpierre-walkBack-6",
+          "frame": {
+            "x": 371,
+            "y": 8,
+            "w": 247,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 247,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 247,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "jeanpierre-walkBack-7",
+          "frame": {
+            "x": 953,
+            "y": 8,
+            "w": 341,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "jeanpierre-walkBack",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 347,
+            "h": 463
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 463
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 463
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935205183585313
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}

@@ -131,5 +131,6 @@ export const STORY_STAGE_ROTATION = [
   "casona",
   "ciudadela",
   "rio",
+  "laboratorio",
 ] as const;
 export const BOSS_STAGE = "ampli" as const;

@@ -531,6 +531,12 @@ export class Projectile {
     const obj = this.look?.obj;
     if (!obj) return;
     obj.setPosition(this.x, this.y);
+    if (this.owner.def.id === 'erp' && s.look === 'buster') {
+      // Crecimiento solo visual: radio de colisión y daño permanecen constantes.
+      const travel = Phaser.Math.Clamp(Math.abs(this.x - this.x0) / 900, 0, 1);
+      const growth = Phaser.Math.SmoothStep(travel, 0, 1);
+      obj.setScale((this.radius / BASE_RADIUS) * (1 + 0.25 * growth));
+    }
     if (this.walled) {
       // El muro queda quieto (ni gira ni se voltea).
     } else if (this.look!.jitter) {

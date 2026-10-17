@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1839,
+        "h": 773
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-airKick-0",
+          "frame": {
+            "x": 578,
+            "y": 8,
+            "w": 252,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 252,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 252,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.4503968253968254,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "mayin-airKick-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 261,
+            "h": 386
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 261,
+            "h": 386
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 261,
+            "h": 386
+          },
+          "pivot": {
+            "x": 0.4578544061302682,
+            "y": 0.9922279792746114
+          }
+        },
+        {
+          "filename": "mayin-airKick-2",
+          "frame": {
+            "x": 285,
+            "y": 8,
+            "w": 277,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.572202166064982,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "mayin-airKick-3",
+          "frame": {
+            "x": 846,
+            "y": 8,
+            "w": 382,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.3887434554973822,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "mayin-airKick-4",
+          "frame": {
+            "x": 285,
+            "y": 410,
+            "w": 480,
+            "h": 323
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 480,
+            "h": 323
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 480,
+            "h": 323
+          },
+          "pivot": {
+            "x": 0.4239583333333333,
+            "y": 0.9907120743034056
+          }
+        },
+        {
+          "filename": "mayin-airKick-5",
+          "frame": {
+            "x": 1519,
+            "y": 8,
+            "w": 312,
+            "h": 358
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 358
+          },
+          "pivot": {
+            "x": 0.5192307692307693,
+            "y": 0.9916201117318436
+          }
+        },
+        {
+          "filename": "mayin-airKick-6",
+          "frame": {
+            "x": 8,
+            "y": 410,
+            "w": 261,
+            "h": 355
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 261,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 261,
+            "h": 355
+          },
+          "pivot": {
+            "x": 0.603448275862069,
+            "y": 0.9915492957746479
+          }
+        },
+        {
+          "filename": "mayin-airKick-7",
+          "frame": {
+            "x": 1244,
+            "y": 8,
+            "w": 259,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 259,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 259,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.4247104247104247,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "mayin-airKick",
+          "frame": {
+            "x": 578,
+            "y": 8,
+            "w": 252,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 252,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 252,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.4503968253968254,
+            "y": 0.992
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1910,
+        "h": 837
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-airPunch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 261,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 261,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 261,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.3563218390804598,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "mayin-airPunch-1",
+          "frame": {
+            "x": 698,
+            "y": 8,
+            "w": 302,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.43543046357615894,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "mayin-airPunch-2",
+          "frame": {
+            "x": 272,
+            "y": 438,
+            "w": 289,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.3408304498269896,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "mayin-airPunch-3",
+          "frame": {
+            "x": 285,
+            "y": 8,
+            "w": 397,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 397,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 397,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.2380352644836272,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "mayin-airPunch-4",
+          "frame": {
+            "x": 1016,
+            "y": 8,
+            "w": 329,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.43465045592705165,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "mayin-airPunch-5",
+          "frame": {
+            "x": 1627,
+            "y": 8,
+            "w": 275,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 275,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 275,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.45636363636363636,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "mayin-airPunch-6",
+          "frame": {
+            "x": 8,
+            "y": 438,
+            "w": 248,
+            "h": 391
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 248,
+            "h": 391
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 248,
+            "h": 391
+          },
+          "pivot": {
+            "x": 0.4032258064516129,
+            "y": 0.9923273657289002
+          }
+        },
+        {
+          "filename": "mayin-airPunch-7",
+          "frame": {
+            "x": 1361,
+            "y": 8,
+            "w": 250,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 250,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 250,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.436,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "mayin-airPunch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 261,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 261,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 261,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.3563218390804598,
+            "y": 0.9927536231884058
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1884,
+        "h": 772
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-backdash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 376,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "mayin-backdash-1",
+          "frame": {
+            "x": 8,
+            "y": 423,
+            "w": 266,
+            "h": 341
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 266,
+            "h": 341
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 266,
+            "h": 341
+          },
+          "pivot": {
+            "x": 0.39473684210526316,
+            "y": 0.9912023460410557
+          }
+        },
+        {
+          "filename": "mayin-backdash-2",
+          "frame": {
+            "x": 783,
+            "y": 8,
+            "w": 402,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.44527363184079605,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "mayin-backdash-3",
+          "frame": {
+            "x": 1481,
+            "y": 8,
+            "w": 395,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 395,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 395,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.3848101265822785,
+            "y": 0.9913544668587896
+          }
+        },
+        {
+          "filename": "mayin-backdash-4",
+          "frame": {
+            "x": 658,
+            "y": 423,
+            "w": 424,
+            "h": 339
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 424,
+            "h": 339
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 424,
+            "h": 339
+          },
+          "pivot": {
+            "x": 0.48702830188679247,
+            "y": 0.9911504424778761
+          }
+        },
+        {
+          "filename": "mayin-backdash-5",
+          "frame": {
+            "x": 290,
+            "y": 423,
+            "w": 352,
+            "h": 341
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 341
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 341
+          },
+          "pivot": {
+            "x": 0.4375,
+            "y": 0.9912023460410557
+          }
+        },
+        {
+          "filename": "mayin-backdash-6",
+          "frame": {
+            "x": 1201,
+            "y": 8,
+            "w": 264,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 264,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 264,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.4337121212121212,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "mayin-backdash-7",
+          "frame": {
+            "x": 400,
+            "y": 8,
+            "w": 367,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "mayin-backdash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 376,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924812030075187
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2044,
+        "h": 824
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-special-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 378,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "mayin-special-1",
+          "frame": {
+            "x": 1649,
+            "y": 8,
+            "w": 387,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "mayin-special-2",
+          "frame": {
+            "x": 993,
+            "y": 437,
+            "w": 395,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 395,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 395,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "mayin-special-3",
+          "frame": {
+            "x": 805,
+            "y": 8,
+            "w": 436,
+            "h": 386
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 436,
+            "h": 386
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 436,
+            "h": 386
+          },
+          "pivot": {
+            "x": 0.48509174311926606,
+            "y": 0.9922279792746114
+          }
+        },
+        {
+          "filename": "mayin-special-4",
+          "frame": {
+            "x": 491,
+            "y": 437,
+            "w": 486,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 486,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 486,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.4269547325102881,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "mayin-special-5",
+          "frame": {
+            "x": 8,
+            "y": 437,
+            "w": 467,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 467,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 467,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.4207708779443255,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "mayin-special-6",
+          "frame": {
+            "x": 1257,
+            "y": 8,
+            "w": 376,
+            "h": 382
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 382
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 382
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921465968586387
+          }
+        },
+        {
+          "filename": "mayin-special-7",
+          "frame": {
+            "x": 402,
+            "y": 8,
+            "w": 387,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "mayin-special",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 378,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1857,
+        "h": 870
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-block-0",
+          "frame": {
+            "x": 744,
+            "y": 8,
+            "w": 373,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "mayin-block-1",
+          "frame": {
+            "x": 1494,
+            "y": 8,
+            "w": 355,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "mayin-block-2",
+          "frame": {
+            "x": 8,
+            "y": 451,
+            "w": 353,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "mayin-block-3",
+          "frame": {
+            "x": 735,
+            "y": 451,
+            "w": 320,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 320,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 320,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "mayin-block-4",
+          "frame": {
+            "x": 377,
+            "y": 451,
+            "w": 342,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "mayin-block-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 360,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "mayin-block-6",
+          "frame": {
+            "x": 384,
+            "y": 8,
+            "w": 344,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "mayin-block-7",
+          "frame": {
+            "x": 1133,
+            "y": 8,
+            "w": 345,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "mayin-block",
+          "frame": {
+            "x": 744,
+            "y": 8,
+            "w": 373,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1835,
+        "h": 794
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-crouch-0",
+          "frame": {
+            "x": 728,
+            "y": 416,
+            "w": 342,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918256130790191
+          }
+        },
+        {
+          "filename": "mayin-crouch-1",
+          "frame": {
+            "x": 1115,
+            "y": 8,
+            "w": 346,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "mayin-crouch-2",
+          "frame": {
+            "x": 380,
+            "y": 8,
+            "w": 351,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "mayin-crouch-3",
+          "frame": {
+            "x": 371,
+            "y": 416,
+            "w": 341,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "mayin-crouch-4",
+          "frame": {
+            "x": 1477,
+            "y": 8,
+            "w": 350,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "mayin-crouch-5",
+          "frame": {
+            "x": 747,
+            "y": 8,
+            "w": 352,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "mayin-crouch-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 356,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "mayin-crouch-7",
+          "frame": {
+            "x": 8,
+            "y": 416,
+            "w": 347,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "mayin-crouch",
+          "frame": {
+            "x": 728,
+            "y": 416,
+            "w": 342,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918256130790191
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2039,
+        "h": 769
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-crouchBlock-0",
+          "frame": {
+            "x": 1364,
+            "y": 8,
+            "w": 325,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918256130790191
+          }
+        },
+        {
+          "filename": "mayin-crouchBlock-1",
+          "frame": {
+            "x": 1026,
+            "y": 8,
+            "w": 322,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "mayin-crouchBlock-2",
+          "frame": {
+            "x": 687,
+            "y": 8,
+            "w": 323,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "mayin-crouchBlock-3",
+          "frame": {
+            "x": 351,
+            "y": 396,
+            "w": 322,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "mayin-crouchBlock-4",
+          "frame": {
+            "x": 349,
+            "y": 8,
+            "w": 322,
+            "h": 371
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 371
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 371
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919137466307277
+          }
+        },
+        {
+          "filename": "mayin-crouchBlock-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 325,
+            "h": 372
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 372
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 372
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919354838709677
+          }
+        },
+        {
+          "filename": "mayin-crouchBlock-6",
+          "frame": {
+            "x": 1705,
+            "y": 8,
+            "w": 326,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "mayin-crouchBlock-7",
+          "frame": {
+            "x": 8,
+            "y": 396,
+            "w": 327,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "mayin-crouchBlock",
+          "frame": {
+            "x": 1364,
+            "y": 8,
+            "w": 325,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918256130790191
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1929,
+        "h": 782
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-crouchHurt-0",
+          "frame": {
+            "x": 410,
+            "y": 8,
+            "w": 364,
+            "h": 371
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 371
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 371
+          },
+          "pivot": {
+            "x": 0.5041208791208791,
+            "y": 0.9919137466307277
+          }
+        },
+        {
+          "filename": "mayin-crouchHurt-1",
+          "frame": {
+            "x": 385,
+            "y": 411,
+            "w": 372,
+            "h": 361
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 361
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 361
+          },
+          "pivot": {
+            "x": 0.5094086021505376,
+            "y": 0.9916897506925207
+          }
+        },
+        {
+          "filename": "mayin-crouchHurt-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 386,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.5362694300518135,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "mayin-crouchHurt-3",
+          "frame": {
+            "x": 773,
+            "y": 411,
+            "w": 351,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.5014245014245015,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "mayin-crouchHurt-4",
+          "frame": {
+            "x": 8,
+            "y": 411,
+            "w": 361,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917355371900827
+          }
+        },
+        {
+          "filename": "mayin-crouchHurt-5",
+          "frame": {
+            "x": 790,
+            "y": 8,
+            "w": 372,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918256130790191
+          }
+        },
+        {
+          "filename": "mayin-crouchHurt-6",
+          "frame": {
+            "x": 1553,
+            "y": 8,
+            "w": 368,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.501358695652174,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "mayin-crouchHurt-7",
+          "frame": {
+            "x": 1178,
+            "y": 8,
+            "w": 359,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918256130790191
+          }
+        },
+        {
+          "filename": "mayin-crouchHurt",
+          "frame": {
+            "x": 410,
+            "y": 8,
+            "w": 364,
+            "h": 371
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 371
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 371
+          },
+          "pivot": {
+            "x": 0.5041208791208791,
+            "y": 0.9919137466307277
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1833,
+        "h": 787
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-crouchPunch-0",
+          "frame": {
+            "x": 375,
+            "y": 8,
+            "w": 347,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.49711815561959655,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "mayin-crouchPunch-1",
+          "frame": {
+            "x": 738,
+            "y": 8,
+            "w": 366,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.47404371584699456,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "mayin-crouchPunch-2",
+          "frame": {
+            "x": 1120,
+            "y": 8,
+            "w": 340,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.4970588235294118,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "mayin-crouchPunch-3",
+          "frame": {
+            "x": 732,
+            "y": 405,
+            "w": 402,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.42412935323383083,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "mayin-crouchPunch-4",
+          "frame": {
+            "x": 1476,
+            "y": 8,
+            "w": 349,
+            "h": 375
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 375
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 375
+          },
+          "pivot": {
+            "x": 0.497134670487106,
+            "y": 0.992
+          }
+        },
+        {
+          "filename": "mayin-crouchPunch-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 351,
+            "h": 381
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 381
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 381
+          },
+          "pivot": {
+            "x": 0.4943019943019943,
+            "y": 0.9921259842519685
+          }
+        },
+        {
+          "filename": "mayin-crouchPunch-6",
+          "frame": {
+            "x": 373,
+            "y": 405,
+            "w": 343,
+            "h": 371
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 371
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 371
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919137466307277
+          }
+        },
+        {
+          "filename": "mayin-crouchPunch-7",
+          "frame": {
+            "x": 8,
+            "y": 405,
+            "w": 349,
+            "h": 374
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 374
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 374
+          },
+          "pivot": {
+            "x": 0.498567335243553,
+            "y": 0.9919786096256684
+          }
+        },
+        {
+          "filename": "mayin-crouchPunch",
+          "frame": {
+            "x": 375,
+            "y": 8,
+            "w": 347,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.49711815561959655,
+            "y": 0.9921052631578947
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1939,
+        "h": 772
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-dash-0",
+          "frame": {
+            "x": 459,
+            "y": 8,
+            "w": 350,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "mayin-dash-1",
+          "frame": {
+            "x": 812,
+            "y": 413,
+            "w": 349,
+            "h": 317
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 317
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 317
+          },
+          "pivot": {
+            "x": 0.4183381088825215,
+            "y": 0.9905362776025236
+          }
+        },
+        {
+          "filename": "mayin-dash-2",
+          "frame": {
+            "x": 1557,
+            "y": 8,
+            "w": 374,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.48128342245989303,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "mayin-dash-3",
+          "frame": {
+            "x": 8,
+            "y": 413,
+            "w": 494,
+            "h": 351
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 494,
+            "h": 351
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 494,
+            "h": 351
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9914529914529915
+          }
+        },
+        {
+          "filename": "mayin-dash-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 435,
+            "h": 389
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 435,
+            "h": 389
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 435,
+            "h": 389
+          },
+          "pivot": {
+            "x": 0.8379310344827586,
+            "y": 0.9922879177377892
+          }
+        },
+        {
+          "filename": "mayin-dash-5",
+          "frame": {
+            "x": 1190,
+            "y": 8,
+            "w": 351,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.5014245014245015,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "mayin-dash-6",
+          "frame": {
+            "x": 518,
+            "y": 413,
+            "w": 278,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 278,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 278,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9913544668587896
+          }
+        },
+        {
+          "filename": "mayin-dash-7",
+          "frame": {
+            "x": 825,
+            "y": 8,
+            "w": 349,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "mayin-dash",
+          "frame": {
+            "x": 459,
+            "y": 8,
+            "w": 350,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921875
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1751,
+        "h": 746
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 368,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.4986413043478261,
+            "y": 0.993421052631579
+          }
+        },
+        {
+          "filename": "mayin-ko-1",
+          "frame": {
+            "x": 392,
+            "y": 8,
+            "w": 371,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.49865229110512127,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "mayin-ko-2",
+          "frame": {
+            "x": 779,
+            "y": 8,
+            "w": 381,
+            "h": 331
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 331
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 331
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9909365558912386
+          }
+        },
+        {
+          "filename": "mayin-ko-3",
+          "frame": {
+            "x": 1176,
+            "y": 8,
+            "w": 447,
+            "h": 300
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 447,
+            "h": 300
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 447,
+            "h": 300
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.99
+          }
+        },
+        {
+          "filename": "mayin-ko-4",
+          "frame": {
+            "x": 8,
+            "y": 480,
+            "w": 431,
+            "h": 258
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 431,
+            "h": 258
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 431,
+            "h": 258
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9883720930232558
+          }
+        },
+        {
+          "filename": "mayin-ko-5",
+          "frame": {
+            "x": 455,
+            "y": 480,
+            "w": 420,
+            "h": 178
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 420,
+            "h": 178
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 420,
+            "h": 178
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9831460674157303
+          }
+        },
+        {
+          "filename": "mayin-ko-6",
+          "frame": {
+            "x": 891,
+            "y": 480,
+            "w": 431,
+            "h": 169
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 431,
+            "h": 169
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 431,
+            "h": 169
+          },
+          "pivot": {
+            "x": 0.505800464037123,
+            "y": 0.9822485207100592
+          }
+        },
+        {
+          "filename": "mayin-ko-7",
+          "frame": {
+            "x": 1338,
+            "y": 480,
+            "w": 405,
+            "h": 158
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 405,
+            "h": 158
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 405,
+            "h": 158
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9810126582278481
+          }
+        },
+        {
+          "filename": "mayin-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 368,
+            "h": 456
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 456
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 456
+          },
+          "pivot": {
+            "x": 0.4986413043478261,
+            "y": 0.993421052631579
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1781,
+        "h": 383
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-down-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 428,
+            "h": 176
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 176
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 176
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9829545454545454
+          }
+        },
+        {
+          "filename": "mayin-down-1",
+          "frame": {
+            "x": 455,
+            "y": 200,
+            "w": 430,
+            "h": 174
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 430,
+            "h": 174
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 430,
+            "h": 174
+          },
+          "pivot": {
+            "x": 0.5011627906976744,
+            "y": 0.9827586206896551
+          }
+        },
+        {
+          "filename": "mayin-down-2",
+          "frame": {
+            "x": 1345,
+            "y": 200,
+            "w": 428,
+            "h": 173
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 173
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 173
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9826589595375722
+          }
+        },
+        {
+          "filename": "mayin-down-3",
+          "frame": {
+            "x": 901,
+            "y": 200,
+            "w": 428,
+            "h": 174
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 174
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 174
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9827586206896551
+          }
+        },
+        {
+          "filename": "mayin-down-4",
+          "frame": {
+            "x": 452,
+            "y": 8,
+            "w": 430,
+            "h": 175
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 430,
+            "h": 175
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 430,
+            "h": 175
+          },
+          "pivot": {
+            "x": 0.5011627906976744,
+            "y": 0.9828571428571429
+          }
+        },
+        {
+          "filename": "mayin-down-5",
+          "frame": {
+            "x": 898,
+            "y": 8,
+            "w": 429,
+            "h": 175
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 429,
+            "h": 175
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 429,
+            "h": 175
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9828571428571429
+          }
+        },
+        {
+          "filename": "mayin-down-6",
+          "frame": {
+            "x": 1343,
+            "y": 8,
+            "w": 430,
+            "h": 175
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 430,
+            "h": 175
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 430,
+            "h": 175
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9828571428571429
+          }
+        },
+        {
+          "filename": "mayin-down-7",
+          "frame": {
+            "x": 8,
+            "y": 200,
+            "w": 431,
+            "h": 175
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 431,
+            "h": 175
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 431,
+            "h": 175
+          },
+          "pivot": {
+            "x": 0.5011600928074246,
+            "y": 0.9828571428571429
+          }
+        },
+        {
+          "filename": "mayin-down",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 428,
+            "h": 176
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 176
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 176
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9829545454545454
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1932,
+        "h": 877
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-fall-0",
+          "frame": {
+            "x": 271,
+            "y": 477,
+            "w": 259,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 259,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 259,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.4362934362934363,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "mayin-fall-1",
+          "frame": {
+            "x": 8,
+            "y": 477,
+            "w": 247,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 247,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 247,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.3724696356275304,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "mayin-fall-2",
+          "frame": {
+            "x": 329,
+            "y": 8,
+            "w": 262,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 262,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 262,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.6106870229007634,
+            "y": 0.9932885906040269
+          }
+        },
+        {
+          "filename": "mayin-fall-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 305,
+            "h": 453
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 305,
+            "h": 453
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 305,
+            "h": 453
+          },
+          "pivot": {
+            "x": 0.8278688524590164,
+            "y": 0.9933774834437086
+          }
+        },
+        {
+          "filename": "mayin-fall-4",
+          "frame": {
+            "x": 1554,
+            "y": 8,
+            "w": 370,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "mayin-fall-5",
+          "frame": {
+            "x": 1200,
+            "y": 8,
+            "w": 338,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5310650887573964,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "mayin-fall-6",
+          "frame": {
+            "x": 607,
+            "y": 8,
+            "w": 285,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.531578947368421,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "mayin-fall-7",
+          "frame": {
+            "x": 908,
+            "y": 8,
+            "w": 276,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 276,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 276,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.4583333333333333,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "mayin-fall",
+          "frame": {
+            "x": 271,
+            "y": 477,
+            "w": 259,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 259,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 259,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.4362934362934363,
+            "y": 0.9915966386554622
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1868,
+        "h": 727
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-getup-0",
+          "frame": {
+            "x": 893,
+            "y": 427,
+            "w": 433,
+            "h": 171
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 433,
+            "h": 171
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 433,
+            "h": 171
+          },
+          "pivot": {
+            "x": 0.5046189376443418,
+            "y": 0.9824561403508771
+          }
+        },
+        {
+          "filename": "mayin-getup-1",
+          "frame": {
+            "x": 439,
+            "y": 427,
+            "w": 438,
+            "h": 211
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 438,
+            "h": 211
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 438,
+            "h": 211
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.985781990521327
+          }
+        },
+        {
+          "filename": "mayin-getup-2",
+          "frame": {
+            "x": 8,
+            "y": 427,
+            "w": 415,
+            "h": 292
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 415,
+            "h": 292
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 415,
+            "h": 292
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9897260273972602
+          }
+        },
+        {
+          "filename": "mayin-getup-3",
+          "frame": {
+            "x": 1525,
+            "y": 8,
+            "w": 335,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "mayin-getup-4",
+          "frame": {
+            "x": 1146,
+            "y": 8,
+            "w": 363,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.45041322314049587,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "mayin-getup-5",
+          "frame": {
+            "x": 790,
+            "y": 8,
+            "w": 340,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.46911764705882353,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "mayin-getup-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 372,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "mayin-getup-7",
+          "frame": {
+            "x": 396,
+            "y": 8,
+            "w": 378,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "mayin-getup",
+          "frame": {
+            "x": 893,
+            "y": 427,
+            "w": 433,
+            "h": 171
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 433,
+            "h": 171
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 433,
+            "h": 171
+          },
+          "pivot": {
+            "x": 0.5046189376443418,
+            "y": 0.9824561403508771
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1861,
+        "h": 890
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-hurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 367,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "mayin-hurt-1",
+          "frame": {
+            "x": 1499,
+            "y": 8,
+            "w": 354,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 354,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 354,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "mayin-hurt-2",
+          "frame": {
+            "x": 356,
+            "y": 462,
+            "w": 312,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 312,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 312,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "mayin-hurt-3",
+          "frame": {
+            "x": 684,
+            "y": 462,
+            "w": 333,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 333,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 333,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.512012012012012,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "mayin-hurt-4",
+          "frame": {
+            "x": 8,
+            "y": 462,
+            "w": 332,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "mayin-hurt-5",
+          "frame": {
+            "x": 1143,
+            "y": 8,
+            "w": 340,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "mayin-hurt-6",
+          "frame": {
+            "x": 391,
+            "y": 8,
+            "w": 355,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "mayin-hurt-7",
+          "frame": {
+            "x": 762,
+            "y": 8,
+            "w": 365,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "mayin-hurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 367,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2041,
+        "h": 879
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-idle-0",
+          "frame": {
+            "x": 823,
+            "y": 8,
+            "w": 393,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "mayin-idle-1",
+          "frame": {
+            "x": 414,
+            "y": 8,
+            "w": 393,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "mayin-idle-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 390,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 390,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "mayin-idle-3",
+          "frame": {
+            "x": 1232,
+            "y": 8,
+            "w": 393,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "mayin-idle-4",
+          "frame": {
+            "x": 819,
+            "y": 454,
+            "w": 391,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 391,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 391,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "mayin-idle-5",
+          "frame": {
+            "x": 1641,
+            "y": 8,
+            "w": 392,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 392,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 392,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "mayin-idle-6",
+          "frame": {
+            "x": 415,
+            "y": 454,
+            "w": 388,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "mayin-idle-7",
+          "frame": {
+            "x": 8,
+            "y": 454,
+            "w": 391,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 391,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 391,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "mayin-idle",
+          "frame": {
+            "x": 823,
+            "y": 8,
+            "w": 393,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1878,
+        "h": 881
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-intro-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 279,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.5125448028673835,
+            "y": 0.9932885906040269
+          }
+        },
+        {
+          "filename": "mayin-intro-1",
+          "frame": {
+            "x": 303,
+            "y": 8,
+            "w": 282,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5053191489361702,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "mayin-intro-2",
+          "frame": {
+            "x": 601,
+            "y": 8,
+            "w": 282,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.5035460992907801,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "mayin-intro-3",
+          "frame": {
+            "x": 899,
+            "y": 8,
+            "w": 284,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 284,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 284,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "mayin-intro-4",
+          "frame": {
+            "x": 1199,
+            "y": 8,
+            "w": 292,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 292,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 292,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "mayin-intro-5",
+          "frame": {
+            "x": 397,
+            "y": 471,
+            "w": 345,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "mayin-intro-6",
+          "frame": {
+            "x": 1507,
+            "y": 8,
+            "w": 363,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "mayin-intro-7",
+          "frame": {
+            "x": 8,
+            "y": 471,
+            "w": 373,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "mayin-intro",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 279,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.5125448028673835,
+            "y": 0.9932885906040269
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1836,
+        "h": 838
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-jump-0",
+          "frame": {
+            "x": 1208,
+            "y": 8,
+            "w": 358,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926108374384236
+          }
+        },
+        {
+          "filename": "mayin-jump-1",
+          "frame": {
+            "x": 302,
+            "y": 485,
+            "w": 281,
+            "h": 338
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 338
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 338
+          },
+          "pivot": {
+            "x": 0.45907473309608543,
+            "y": 0.9911242603550295
+          }
+        },
+        {
+          "filename": "mayin-jump-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 295,
+            "h": 461
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 461
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 461
+          },
+          "pivot": {
+            "x": 0.3864406779661017,
+            "y": 0.9934924078091106
+          }
+        },
+        {
+          "filename": "mayin-jump-3",
+          "frame": {
+            "x": 579,
+            "y": 8,
+            "w": 237,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 237,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 237,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.3924050632911392,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "mayin-jump-4",
+          "frame": {
+            "x": 1582,
+            "y": 8,
+            "w": 246,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 246,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 246,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.3780487804878049,
+            "y": 0.9913544668587896
+          }
+        },
+        {
+          "filename": "mayin-jump-5",
+          "frame": {
+            "x": 319,
+            "y": 8,
+            "w": 244,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 244,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 244,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.41188524590163933,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "mayin-jump-6",
+          "frame": {
+            "x": 8,
+            "y": 485,
+            "w": 278,
+            "h": 345
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 278,
+            "h": 345
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 278,
+            "h": 345
+          },
+          "pivot": {
+            "x": 0.47302158273381295,
+            "y": 0.991304347826087
+          }
+        },
+        {
+          "filename": "mayin-jump-7",
+          "frame": {
+            "x": 832,
+            "y": 8,
+            "w": 360,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 360,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "mayin-jump",
+          "frame": {
+            "x": 1208,
+            "y": 8,
+            "w": 358,
+            "h": 406
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 406
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 406
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926108374384236
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2008,
+        "h": 872
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-kick-0",
+          "frame": {
+            "x": 975,
+            "y": 8,
+            "w": 345,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "mayin-kick-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 240,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 240,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 240,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.4083333333333333,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "mayin-kick-2",
+          "frame": {
+            "x": 8,
+            "y": 448,
+            "w": 382,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.35602094240837695,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "mayin-kick-3",
+          "frame": {
+            "x": 264,
+            "y": 8,
+            "w": 420,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 420,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 420,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.3238095238095238,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "mayin-kick-4",
+          "frame": {
+            "x": 1632,
+            "y": 8,
+            "w": 368,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.35597826086956524,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "mayin-kick-5",
+          "frame": {
+            "x": 700,
+            "y": 8,
+            "w": 259,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 259,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 259,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.47876447876447875,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "mayin-kick-6",
+          "frame": {
+            "x": 1336,
+            "y": 8,
+            "w": 280,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5071428571428571,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "mayin-kick-7",
+          "frame": {
+            "x": 406,
+            "y": 448,
+            "w": 358,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "mayin-kick",
+          "frame": {
+            "x": 975,
+            "y": 8,
+            "w": 345,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1764,
+        "h": 702
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-knockdown-0",
+          "frame": {
+            "x": 435,
+            "y": 8,
+            "w": 368,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "mayin-knockdown-1",
+          "frame": {
+            "x": 819,
+            "y": 8,
+            "w": 334,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.5134730538922155,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "mayin-knockdown-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 411,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 411,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 411,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5279805352798054,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "mayin-knockdown-3",
+          "frame": {
+            "x": 1169,
+            "y": 8,
+            "w": 442,
+            "h": 333
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 442,
+            "h": 333
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 442,
+            "h": 333
+          },
+          "pivot": {
+            "x": 0.5656108597285068,
+            "y": 0.990990990990991
+          }
+        },
+        {
+          "filename": "mayin-knockdown-4",
+          "frame": {
+            "x": 8,
+            "y": 435,
+            "w": 462,
+            "h": 259
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 462,
+            "h": 259
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 462,
+            "h": 259
+          },
+          "pivot": {
+            "x": 0.47835497835497837,
+            "y": 0.9884169884169884
+          }
+        },
+        {
+          "filename": "mayin-knockdown-5",
+          "frame": {
+            "x": 486,
+            "y": 435,
+            "w": 424,
+            "h": 208
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 424,
+            "h": 208
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 424,
+            "h": 208
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9855769230769231
+          }
+        },
+        {
+          "filename": "mayin-knockdown-6",
+          "frame": {
+            "x": 926,
+            "y": 435,
+            "w": 384,
+            "h": 172
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 172
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 172
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9825581395348837
+          }
+        },
+        {
+          "filename": "mayin-knockdown-7",
+          "frame": {
+            "x": 1326,
+            "y": 435,
+            "w": 430,
+            "h": 142
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 430,
+            "h": 142
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 430,
+            "h": 142
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9788732394366197
+          }
+        },
+        {
+          "filename": "mayin-knockdown",
+          "frame": {
+            "x": 435,
+            "y": 8,
+            "w": 368,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1684,
+        "h": 866
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-punch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 374,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        },
+        {
+          "filename": "mayin-punch-1",
+          "frame": {
+            "x": 398,
+            "y": 8,
+            "w": 386,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "mayin-punch-2",
+          "frame": {
+            "x": 1255,
+            "y": 8,
+            "w": 421,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 421,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 421,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.45724465558194777,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "mayin-punch-3",
+          "frame": {
+            "x": 800,
+            "y": 8,
+            "w": 439,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 439,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 439,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.46697038724373574,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "mayin-punch-4",
+          "frame": {
+            "x": 794,
+            "y": 445,
+            "w": 458,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 458,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 458,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.44541484716157204,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "mayin-punch-5",
+          "frame": {
+            "x": 1268,
+            "y": 445,
+            "w": 402,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "mayin-punch-6",
+          "frame": {
+            "x": 8,
+            "y": 445,
+            "w": 363,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "mayin-punch-7",
+          "frame": {
+            "x": 387,
+            "y": 445,
+            "w": 391,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 391,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 391,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "mayin-punch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 374,
+            "h": 421
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 421
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 421
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928741092636579
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2016,
+        "h": 915
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-super-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 411,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 411,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 411,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.45742092457420924,
+            "y": 0.9934640522875817
+          }
+        },
+        {
+          "filename": "mayin-super-1",
+          "frame": {
+            "x": 834,
+            "y": 8,
+            "w": 404,
+            "h": 446
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 404,
+            "h": 446
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 404,
+            "h": 446
+          },
+          "pivot": {
+            "x": 0.44801980198019803,
+            "y": 0.9932735426008968
+          }
+        },
+        {
+          "filename": "mayin-super-2",
+          "frame": {
+            "x": 8,
+            "y": 483,
+            "w": 387,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.4392764857881137,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "mayin-super-3",
+          "frame": {
+            "x": 435,
+            "y": 8,
+            "w": 383,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.4830287206266319,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "mayin-super-4",
+          "frame": {
+            "x": 1254,
+            "y": 8,
+            "w": 362,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "mayin-super-5",
+          "frame": {
+            "x": 411,
+            "y": 483,
+            "w": 387,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.46770025839793283,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "mayin-super-6",
+          "frame": {
+            "x": 814,
+            "y": 483,
+            "w": 390,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 390,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.46025641025641023,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "mayin-super-7",
+          "frame": {
+            "x": 1632,
+            "y": 8,
+            "w": 376,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.4973404255319149,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "mayin-super",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 411,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 411,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 411,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.45742092457420924,
+            "y": 0.9934640522875817
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1927,
+        "h": 724
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-sweep-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 381,
+            "h": 389
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 389
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 389
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922879177377892
+          }
+        },
+        {
+          "filename": "mayin-sweep-1",
+          "frame": {
+            "x": 8,
+            "y": 413,
+            "w": 372,
+            "h": 303
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 303
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 303
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9900990099009901
+          }
+        },
+        {
+          "filename": "mayin-sweep-2",
+          "frame": {
+            "x": 829,
+            "y": 413,
+            "w": 467,
+            "h": 280
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 467,
+            "h": 280
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 467,
+            "h": 280
+          },
+          "pivot": {
+            "x": 0.22162740899357602,
+            "y": 0.9892857142857143
+          }
+        },
+        {
+          "filename": "mayin-sweep-3",
+          "frame": {
+            "x": 396,
+            "y": 413,
+            "w": 417,
+            "h": 289
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 417,
+            "h": 289
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 417,
+            "h": 289
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9896193771626297
+          }
+        },
+        {
+          "filename": "mayin-sweep-4",
+          "frame": {
+            "x": 1585,
+            "y": 8,
+            "w": 334,
+            "h": 319
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 319
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 319
+          },
+          "pivot": {
+            "x": 0.31137724550898205,
+            "y": 0.9905956112852664
+          }
+        },
+        {
+          "filename": "mayin-sweep-5",
+          "frame": {
+            "x": 1198,
+            "y": 8,
+            "w": 371,
+            "h": 325
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 325
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 325
+          },
+          "pivot": {
+            "x": 0.5053908355795148,
+            "y": 0.9907692307692307
+          }
+        },
+        {
+          "filename": "mayin-sweep-6",
+          "frame": {
+            "x": 807,
+            "y": 8,
+            "w": 375,
+            "h": 327
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 327
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 327
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9908256880733946
+          }
+        },
+        {
+          "filename": "mayin-sweep-7",
+          "frame": {
+            "x": 405,
+            "y": 8,
+            "w": 386,
+            "h": 340
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 340
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 340
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911764705882353
+          }
+        },
+        {
+          "filename": "mayin-sweep",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 381,
+            "h": 389
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 389
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 389
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922879177377892
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1928,
+        "h": 777
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-uppercut-0",
+          "frame": {
+            "x": 588,
+            "y": 8,
+            "w": 340,
+            "h": 340
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 340
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 340
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911764705882353
+          }
+        },
+        {
+          "filename": "mayin-uppercut-1",
+          "frame": {
+            "x": 8,
+            "y": 478,
+            "w": 301,
+            "h": 291
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 291
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 291
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9896907216494846
+          }
+        },
+        {
+          "filename": "mayin-uppercut-2",
+          "frame": {
+            "x": 944,
+            "y": 8,
+            "w": 332,
+            "h": 338
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 338
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 338
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911242603550295
+          }
+        },
+        {
+          "filename": "mayin-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 275,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 275,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 275,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.46545454545454545,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "mayin-uppercut-4",
+          "frame": {
+            "x": 299,
+            "y": 8,
+            "w": 273,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 273,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 273,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.4065934065934066,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "mayin-uppercut-5",
+          "frame": {
+            "x": 1633,
+            "y": 8,
+            "w": 287,
+            "h": 329
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 287,
+            "h": 329
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 287,
+            "h": 329
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9908814589665653
+          }
+        },
+        {
+          "filename": "mayin-uppercut-6",
+          "frame": {
+            "x": 325,
+            "y": 478,
+            "w": 285,
+            "h": 283
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 283
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 283
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9893992932862191
+          }
+        },
+        {
+          "filename": "mayin-uppercut-7",
+          "frame": {
+            "x": 1292,
+            "y": 8,
+            "w": 325,
+            "h": 338
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 338
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 338
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911242603550295
+          }
+        },
+        {
+          "filename": "mayin-uppercut",
+          "frame": {
+            "x": 588,
+            "y": 8,
+            "w": 340,
+            "h": 340
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 340
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 340
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911764705882353
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1932,
+        "h": 853
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-win-0",
+          "frame": {
+            "x": 8,
+            "y": 447,
+            "w": 334,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "mayin-win-1",
+          "frame": {
+            "x": 1293,
+            "y": 8,
+            "w": 289,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "mayin-win-2",
+          "frame": {
+            "x": 323,
+            "y": 8,
+            "w": 282,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 282,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 282,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5141843971631206,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "mayin-win-3",
+          "frame": {
+            "x": 1598,
+            "y": 8,
+            "w": 326,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "mayin-win-4",
+          "frame": {
+            "x": 950,
+            "y": 8,
+            "w": 327,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "mayin-win-5",
+          "frame": {
+            "x": 621,
+            "y": 8,
+            "w": 313,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "mayin-win-6",
+          "frame": {
+            "x": 358,
+            "y": 447,
+            "w": 295,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "mayin-win-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 299,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 299,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 299,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5150501672240803,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "mayin-win",
+          "frame": {
+            "x": 8,
+            "y": 447,
+            "w": 334,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992462311557789
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1997,
+        "h": 839
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-walk-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 364,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "mayin-walk-1",
+          "frame": {
+            "x": 388,
+            "y": 8,
+            "w": 278,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 278,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 278,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.41906474820143885,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "mayin-walk-2",
+          "frame": {
+            "x": 1011,
+            "y": 8,
+            "w": 235,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 235,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 235,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.35319148936170214,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "mayin-walk-3",
+          "frame": {
+            "x": 682,
+            "y": 8,
+            "w": 313,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "mayin-walk-4",
+          "frame": {
+            "x": 1262,
+            "y": 8,
+            "w": 368,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.49728260869565216,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "mayin-walk-5",
+          "frame": {
+            "x": 259,
+            "y": 438,
+            "w": 257,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 257,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 257,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.46303501945525294,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "mayin-walk-6",
+          "frame": {
+            "x": 8,
+            "y": 438,
+            "w": 235,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 235,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 235,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.4,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "mayin-walk-7",
+          "frame": {
+            "x": 1646,
+            "y": 8,
+            "w": 343,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "mayin-walk",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 364,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1866,
+        "h": 858
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "mayin-walkBack-0",
+          "frame": {
+            "x": 1496,
+            "y": 8,
+            "w": 362,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "mayin-walkBack-1",
+          "frame": {
+            "x": 354,
+            "y": 441,
+            "w": 368,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "mayin-walkBack-2",
+          "frame": {
+            "x": 253,
+            "y": 8,
+            "w": 292,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 292,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 292,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "mayin-walkBack-3",
+          "frame": {
+            "x": 561,
+            "y": 8,
+            "w": 215,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 215,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 215,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "mayin-walkBack-4",
+          "frame": {
+            "x": 1124,
+            "y": 8,
+            "w": 356,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "mayin-walkBack-5",
+          "frame": {
+            "x": 792,
+            "y": 8,
+            "w": 316,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 316,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 316,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "mayin-walkBack-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 229,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 229,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 229,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.5131004366812227,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "mayin-walkBack-7",
+          "frame": {
+            "x": 8,
+            "y": 441,
+            "w": 330,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "mayin-walkBack",
+          "frame": {
+            "x": 1496,
+            "y": 8,
+            "w": 362,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 362,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 362,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}

@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import { COLORS, CSS, GAME_HEIGHT, GAME_WIDTH, SCENES } from '../config';
 import { Audio, loadAudio } from '../systems/Audio';
 import { registerAnimeAtlases } from '../systems/AnimeAtlas';
-import { preloadRosterArt, registerRosterArt } from '../visuals/roster/RosterArt';
+import { preloadRosterArt, registerRosterArt, ROSTER_ART_IDS } from '../visuals/roster/RosterArt';
 import { STAGES } from '../data/stages';
 import { FIGHTERS, defaultOpponent } from '../data/fighters';
 import { configureAcopleCave } from '../visuals/AcopleCave';
@@ -39,7 +39,9 @@ export class PreloadScene extends Phaser.Scene {
     this.load.image('pata-dash', 'assets/pata-dash-anime.png');
     this.load.image('edu-dash', 'assets/edu-dash-anime.png');
     for (const id of ['mayin', 'erp']) {
-      this.load.image(`super-cutin-${id}`, `assets/portrait-${id}.png`);
+      if (!ROSTER_ART_IDS.some((fighter) => fighter === id)) {
+        this.load.image(`super-cutin-${id}`, `assets/portrait-${id}.png`);
+      }
       this.load.image(`super-sheet-${id}`, `assets/super-${id}.png`);
     }
     // Fondos de escenarios con imagen (los demás usan el fondo provisional de systems/StageArt.ts).

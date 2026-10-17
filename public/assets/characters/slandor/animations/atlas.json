@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1967,
+        "h": 754
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-airKick-0",
+          "frame": {
+            "x": 783,
+            "y": 8,
+            "w": 258,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 258,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 258,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.5484496124031008,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "slandor-airKick-1",
+          "frame": {
+            "x": 380,
+            "y": 8,
+            "w": 387,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.4198966408268734,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "slandor-airKick-2",
+          "frame": {
+            "x": 1057,
+            "y": 8,
+            "w": 439,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 439,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 439,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.3815489749430524,
+            "y": 0.9914040114613181
+          }
+        },
+        {
+          "filename": "slandor-airKick-3",
+          "frame": {
+            "x": 1512,
+            "y": 8,
+            "w": 447,
+            "h": 348
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 447,
+            "h": 348
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 447,
+            "h": 348
+          },
+          "pivot": {
+            "x": 0.3512304250559284,
+            "y": 0.9913793103448276
+          }
+        },
+        {
+          "filename": "slandor-airKick-4",
+          "frame": {
+            "x": 550,
+            "y": 404,
+            "w": 406,
+            "h": 333
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 406,
+            "h": 333
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 406,
+            "h": 333
+          },
+          "pivot": {
+            "x": 0.4088669950738916,
+            "y": 0.990990990990991
+          }
+        },
+        {
+          "filename": "slandor-airKick-5",
+          "frame": {
+            "x": 8,
+            "y": 404,
+            "w": 278,
+            "h": 342
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 278,
+            "h": 342
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 278,
+            "h": 342
+          },
+          "pivot": {
+            "x": 0.49280575539568344,
+            "y": 0.9912280701754386
+          }
+        },
+        {
+          "filename": "slandor-airKick-6",
+          "frame": {
+            "x": 302,
+            "y": 404,
+            "w": 232,
+            "h": 337
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 232,
+            "h": 337
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 232,
+            "h": 337
+          },
+          "pivot": {
+            "x": 0.5193965517241379,
+            "y": 0.9910979228486647
+          }
+        },
+        {
+          "filename": "slandor-airKick-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 356,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.5589887640449438,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "slandor-airKick",
+          "frame": {
+            "x": 783,
+            "y": 8,
+            "w": 258,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 258,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 258,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.5484496124031008,
+            "y": 0.9915254237288136
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1780,
+        "h": 802
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-airPunch-0",
+          "frame": {
+            "x": 1147,
+            "y": 8,
+            "w": 308,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.3652597402597403,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "slandor-airPunch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 311,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.39228295819935693,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "slandor-airPunch-2",
+          "frame": {
+            "x": 335,
+            "y": 8,
+            "w": 409,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.3105134474327628,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "slandor-airPunch-3",
+          "frame": {
+            "x": 760,
+            "y": 8,
+            "w": 371,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.33557951482479786,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "slandor-airPunch-4",
+          "frame": {
+            "x": 8,
+            "y": 424,
+            "w": 374,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.3409090909090909,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "slandor-airPunch-5",
+          "frame": {
+            "x": 398,
+            "y": 424,
+            "w": 306,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.4820261437908497,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "slandor-airPunch-6",
+          "frame": {
+            "x": 720,
+            "y": 424,
+            "w": 313,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.4840255591054313,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "slandor-airPunch-7",
+          "frame": {
+            "x": 1471,
+            "y": 8,
+            "w": 301,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5730897009966778,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "slandor-airPunch",
+          "frame": {
+            "x": 1147,
+            "y": 8,
+            "w": 308,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.3652597402597403,
+            "y": 0.9922680412371134
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1841,
+        "h": 788
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-backdash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 363,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "slandor-backdash-1",
+          "frame": {
+            "x": 8,
+            "y": 429,
+            "w": 279,
+            "h": 351
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 279,
+            "h": 351
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 279,
+            "h": 351
+          },
+          "pivot": {
+            "x": 0.489247311827957,
+            "y": 0.9914529914529915
+          }
+        },
+        {
+          "filename": "slandor-backdash-2",
+          "frame": {
+            "x": 387,
+            "y": 8,
+            "w": 335,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.4343283582089552,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "slandor-backdash-3",
+          "frame": {
+            "x": 738,
+            "y": 8,
+            "w": 379,
+            "h": 381
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 381
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 381
+          },
+          "pivot": {
+            "x": 0.10422163588390501,
+            "y": 0.9921259842519685
+          }
+        },
+        {
+          "filename": "slandor-backdash-4",
+          "frame": {
+            "x": 643,
+            "y": 429,
+            "w": 426,
+            "h": 343
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 426,
+            "h": 343
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 426,
+            "h": 343
+          },
+          "pivot": {
+            "x": 0.11854460093896714,
+            "y": 0.9912536443148688
+          }
+        },
+        {
+          "filename": "slandor-backdash-5",
+          "frame": {
+            "x": 303,
+            "y": 429,
+            "w": 324,
+            "h": 351
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 351
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 351
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9914529914529915
+          }
+        },
+        {
+          "filename": "slandor-backdash-6",
+          "frame": {
+            "x": 1133,
+            "y": 8,
+            "w": 340,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "slandor-backdash-7",
+          "frame": {
+            "x": 1489,
+            "y": 8,
+            "w": 344,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "slandor-backdash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 363,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1978,
+        "h": 846
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-special-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 368,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "slandor-special-1",
+          "frame": {
+            "x": 839,
+            "y": 446,
+            "w": 384,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "slandor-special-2",
+          "frame": {
+            "x": 1172,
+            "y": 8,
+            "w": 371,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "slandor-special-3",
+          "frame": {
+            "x": 408,
+            "y": 446,
+            "w": 415,
+            "h": 389
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 415,
+            "h": 389
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 415,
+            "h": 389
+          },
+          "pivot": {
+            "x": 0.4879518072289157,
+            "y": 0.9922879177377892
+          }
+        },
+        {
+          "filename": "slandor-special-4",
+          "frame": {
+            "x": 1559,
+            "y": 8,
+            "w": 411,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 411,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 411,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.4805352798053528,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "slandor-special-5",
+          "frame": {
+            "x": 8,
+            "y": 446,
+            "w": 384,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "slandor-special-6",
+          "frame": {
+            "x": 392,
+            "y": 8,
+            "w": 378,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "slandor-special-7",
+          "frame": {
+            "x": 786,
+            "y": 8,
+            "w": 370,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "slandor-special",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 368,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1753,
+        "h": 915
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-block-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 341,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932885906040269
+          }
+        },
+        {
+          "filename": "slandor-block-1",
+          "frame": {
+            "x": 8,
+            "y": 471,
+            "w": 345,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "slandor-block-2",
+          "frame": {
+            "x": 369,
+            "y": 471,
+            "w": 336,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "slandor-block-3",
+          "frame": {
+            "x": 721,
+            "y": 471,
+            "w": 321,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "slandor-block-4",
+          "frame": {
+            "x": 365,
+            "y": 8,
+            "w": 327,
+            "h": 443
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 443
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 443
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932279909706546
+          }
+        },
+        {
+          "filename": "slandor-block-5",
+          "frame": {
+            "x": 708,
+            "y": 8,
+            "w": 335,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "slandor-block-6",
+          "frame": {
+            "x": 1059,
+            "y": 8,
+            "w": 343,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "slandor-block-7",
+          "frame": {
+            "x": 1418,
+            "y": 8,
+            "w": 327,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "slandor-block",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 341,
+            "h": 447
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 447
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 447
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932885906040269
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1699,
+        "h": 742
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-crouch-0",
+          "frame": {
+            "x": 350,
+            "y": 8,
+            "w": 325,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.4846153846153846,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "slandor-crouch-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 326,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.48619631901840493,
+            "y": 0.9917355371900827
+          }
+        },
+        {
+          "filename": "slandor-crouch-2",
+          "frame": {
+            "x": 691,
+            "y": 8,
+            "w": 322,
+            "h": 351
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 351
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 351
+          },
+          "pivot": {
+            "x": 0.4829192546583851,
+            "y": 0.9914529914529915
+          }
+        },
+        {
+          "filename": "slandor-crouch-3",
+          "frame": {
+            "x": 1029,
+            "y": 8,
+            "w": 327,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.481651376146789,
+            "y": 0.9914040114613181
+          }
+        },
+        {
+          "filename": "slandor-crouch-4",
+          "frame": {
+            "x": 1372,
+            "y": 8,
+            "w": 319,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.48119122257053293,
+            "y": 0.9913544668587896
+          }
+        },
+        {
+          "filename": "slandor-crouch-5",
+          "frame": {
+            "x": 362,
+            "y": 387,
+            "w": 334,
+            "h": 346
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 346
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 346
+          },
+          "pivot": {
+            "x": 0.47904191616766467,
+            "y": 0.9913294797687862
+          }
+        },
+        {
+          "filename": "slandor-crouch-6",
+          "frame": {
+            "x": 712,
+            "y": 387,
+            "w": 332,
+            "h": 345
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 332,
+            "h": 345
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 332,
+            "h": 345
+          },
+          "pivot": {
+            "x": 0.48042168674698793,
+            "y": 0.991304347826087
+          }
+        },
+        {
+          "filename": "slandor-crouch-7",
+          "frame": {
+            "x": 8,
+            "y": 387,
+            "w": 338,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.47781065088757396,
+            "y": 0.9913544668587896
+          }
+        },
+        {
+          "filename": "slandor-crouch",
+          "frame": {
+            "x": 350,
+            "y": 8,
+            "w": 325,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.4846153846153846,
+            "y": 0.9915254237288136
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2021,
+        "h": 730
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-crouchBlock-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 309,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.4401294498381877,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "slandor-crouchBlock-1",
+          "frame": {
+            "x": 333,
+            "y": 8,
+            "w": 334,
+            "h": 353
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 353
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 353
+          },
+          "pivot": {
+            "x": 0.44011976047904194,
+            "y": 0.9915014164305949
+          }
+        },
+        {
+          "filename": "slandor-crouchBlock-2",
+          "frame": {
+            "x": 1704,
+            "y": 8,
+            "w": 309,
+            "h": 346
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 346
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 346
+          },
+          "pivot": {
+            "x": 0.4336569579288026,
+            "y": 0.9913294797687862
+          }
+        },
+        {
+          "filename": "slandor-crouchBlock-3",
+          "frame": {
+            "x": 1034,
+            "y": 8,
+            "w": 310,
+            "h": 348
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 348
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 348
+          },
+          "pivot": {
+            "x": 0.43709677419354837,
+            "y": 0.9913793103448276
+          }
+        },
+        {
+          "filename": "slandor-crouchBlock-4",
+          "frame": {
+            "x": 1360,
+            "y": 8,
+            "w": 328,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.4573170731707317,
+            "y": 0.9913544668587896
+          }
+        },
+        {
+          "filename": "slandor-crouchBlock-5",
+          "frame": {
+            "x": 683,
+            "y": 8,
+            "w": 335,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.44029850746268656,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "slandor-crouchBlock-6",
+          "frame": {
+            "x": 8,
+            "y": 378,
+            "w": 357,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.4495798319327731,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "slandor-crouchBlock-7",
+          "frame": {
+            "x": 381,
+            "y": 378,
+            "w": 318,
+            "h": 344
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 344
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 344
+          },
+          "pivot": {
+            "x": 0.44025157232704404,
+            "y": 0.9912790697674418
+          }
+        },
+        {
+          "filename": "slandor-crouchBlock",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 309,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 309,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 309,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.4401294498381877,
+            "y": 0.9915254237288136
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1828,
+        "h": 708
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-crouchHurt-0",
+          "frame": {
+            "x": 1160,
+            "y": 8,
+            "w": 330,
+            "h": 331
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 331
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 331
+          },
+          "pivot": {
+            "x": 0.43636363636363634,
+            "y": 0.9909365558912386
+          }
+        },
+        {
+          "filename": "slandor-crouchHurt-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 344,
+            "h": 358
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 358
+          },
+          "pivot": {
+            "x": 0.43023255813953487,
+            "y": 0.9916201117318436
+          }
+        },
+        {
+          "filename": "slandor-crouchHurt-2",
+          "frame": {
+            "x": 368,
+            "y": 8,
+            "w": 395,
+            "h": 351
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 395,
+            "h": 351
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 395,
+            "h": 351
+          },
+          "pivot": {
+            "x": 0.46962025316455697,
+            "y": 0.9914529914529915
+          }
+        },
+        {
+          "filename": "slandor-crouchHurt-3",
+          "frame": {
+            "x": 779,
+            "y": 8,
+            "w": 365,
+            "h": 334
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 334
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 334
+          },
+          "pivot": {
+            "x": 0.4767123287671233,
+            "y": 0.9910179640718563
+          }
+        },
+        {
+          "filename": "slandor-crouchHurt-4",
+          "frame": {
+            "x": 8,
+            "y": 382,
+            "w": 348,
+            "h": 318
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 318
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 318
+          },
+          "pivot": {
+            "x": 0.3994252873563218,
+            "y": 0.9905660377358491
+          }
+        },
+        {
+          "filename": "slandor-crouchHurt-5",
+          "frame": {
+            "x": 708,
+            "y": 382,
+            "w": 319,
+            "h": 315
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 315
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 315
+          },
+          "pivot": {
+            "x": 0.41379310344827586,
+            "y": 0.9904761904761905
+          }
+        },
+        {
+          "filename": "slandor-crouchHurt-6",
+          "frame": {
+            "x": 1506,
+            "y": 8,
+            "w": 314,
+            "h": 321
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 321
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 321
+          },
+          "pivot": {
+            "x": 0.43789808917197454,
+            "y": 0.9906542056074766
+          }
+        },
+        {
+          "filename": "slandor-crouchHurt-7",
+          "frame": {
+            "x": 372,
+            "y": 382,
+            "w": 320,
+            "h": 317
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 320,
+            "h": 317
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 320,
+            "h": 317
+          },
+          "pivot": {
+            "x": 0.4390625,
+            "y": 0.9905362776025236
+          }
+        },
+        {
+          "filename": "slandor-crouchHurt",
+          "frame": {
+            "x": 1160,
+            "y": 8,
+            "w": 330,
+            "h": 331
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 331
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 331
+          },
+          "pivot": {
+            "x": 0.43636363636363634,
+            "y": 0.9909365558912386
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1887,
+        "h": 722
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-crouchPunch-0",
+          "frame": {
+            "x": 429,
+            "y": 8,
+            "w": 318,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.4921383647798742,
+            "y": 0.9914040114613181
+          }
+        },
+        {
+          "filename": "slandor-crouchPunch-1",
+          "frame": {
+            "x": 1151,
+            "y": 8,
+            "w": 341,
+            "h": 348
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 348
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 348
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9913793103448276
+          }
+        },
+        {
+          "filename": "slandor-crouchPunch-2",
+          "frame": {
+            "x": 763,
+            "y": 8,
+            "w": 372,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.4543010752688172,
+            "y": 0.9914040114613181
+          }
+        },
+        {
+          "filename": "slandor-crouchPunch-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 405,
+            "h": 350
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 405,
+            "h": 350
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 405,
+            "h": 350
+          },
+          "pivot": {
+            "x": 0.4308641975308642,
+            "y": 0.9914285714285714
+          }
+        },
+        {
+          "filename": "slandor-crouchPunch-4",
+          "frame": {
+            "x": 1508,
+            "y": 8,
+            "w": 371,
+            "h": 340
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 340
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 340
+          },
+          "pivot": {
+            "x": 0.4501347708894879,
+            "y": 0.9911764705882353
+          }
+        },
+        {
+          "filename": "slandor-crouchPunch-5",
+          "frame": {
+            "x": 8,
+            "y": 374,
+            "w": 335,
+            "h": 340
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 340
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 340
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911764705882353
+          }
+        },
+        {
+          "filename": "slandor-crouchPunch-6",
+          "frame": {
+            "x": 701,
+            "y": 374,
+            "w": 329,
+            "h": 334
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 329,
+            "h": 334
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 329,
+            "h": 334
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9910179640718563
+          }
+        },
+        {
+          "filename": "slandor-crouchPunch-7",
+          "frame": {
+            "x": 359,
+            "y": 374,
+            "w": 326,
+            "h": 338
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 338
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 338
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911242603550295
+          }
+        },
+        {
+          "filename": "slandor-crouchPunch",
+          "frame": {
+            "x": 429,
+            "y": 8,
+            "w": 318,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.4921383647798742,
+            "y": 0.9914040114613181
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2016,
+        "h": 734
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-dash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 313,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918256130790191
+          }
+        },
+        {
+          "filename": "slandor-dash-1",
+          "frame": {
+            "x": 669,
+            "y": 8,
+            "w": 364,
+            "h": 355
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 355
+          },
+          "pivot": {
+            "x": 0.4175824175824176,
+            "y": 0.9915492957746479
+          }
+        },
+        {
+          "filename": "slandor-dash-2",
+          "frame": {
+            "x": 1615,
+            "y": 8,
+            "w": 393,
+            "h": 349
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 349
+          },
+          "pivot": {
+            "x": 0.39567430025445294,
+            "y": 0.9914040114613181
+          }
+        },
+        {
+          "filename": "slandor-dash-3",
+          "frame": {
+            "x": 406,
+            "y": 391,
+            "w": 469,
+            "h": 319
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 469,
+            "h": 319
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 469,
+            "h": 319
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9905956112852664
+          }
+        },
+        {
+          "filename": "slandor-dash-4",
+          "frame": {
+            "x": 8,
+            "y": 391,
+            "w": 382,
+            "h": 335
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 335
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 335
+          },
+          "pivot": {
+            "x": 0.46335078534031415,
+            "y": 0.991044776119403
+          }
+        },
+        {
+          "filename": "slandor-dash-5",
+          "frame": {
+            "x": 1049,
+            "y": 8,
+            "w": 248,
+            "h": 352
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 248,
+            "h": 352
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 248,
+            "h": 352
+          },
+          "pivot": {
+            "x": 0.3548387096774194,
+            "y": 0.9914772727272727
+          }
+        },
+        {
+          "filename": "slandor-dash-6",
+          "frame": {
+            "x": 1313,
+            "y": 8,
+            "w": 286,
+            "h": 350
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 350
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 350
+          },
+          "pivot": {
+            "x": 0.458041958041958,
+            "y": 0.9914285714285714
+          }
+        },
+        {
+          "filename": "slandor-dash-7",
+          "frame": {
+            "x": 337,
+            "y": 8,
+            "w": 316,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 316,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 316,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "slandor-dash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 313,
+            "h": 367
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 367
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 367
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918256130790191
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1684,
+        "h": 667
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 283,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "slandor-ko-1",
+          "frame": {
+            "x": 307,
+            "y": 8,
+            "w": 263,
+            "h": 374
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 263,
+            "h": 374
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 263,
+            "h": 374
+          },
+          "pivot": {
+            "x": 0.49809885931558934,
+            "y": 0.9919786096256684
+          }
+        },
+        {
+          "filename": "slandor-ko-2",
+          "frame": {
+            "x": 586,
+            "y": 8,
+            "w": 308,
+            "h": 297
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 297
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 297
+          },
+          "pivot": {
+            "x": 0.49188311688311687,
+            "y": 0.98989898989899
+          }
+        },
+        {
+          "filename": "slandor-ko-3",
+          "frame": {
+            "x": 910,
+            "y": 8,
+            "w": 317,
+            "h": 254
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 254
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 254
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9881889763779528
+          }
+        },
+        {
+          "filename": "slandor-ko-4",
+          "frame": {
+            "x": 1243,
+            "y": 8,
+            "w": 433,
+            "h": 246
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 433,
+            "h": 246
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 433,
+            "h": 246
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9878048780487805
+          }
+        },
+        {
+          "filename": "slandor-ko-5",
+          "frame": {
+            "x": 8,
+            "y": 439,
+            "w": 399,
+            "h": 220
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 399,
+            "h": 220
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 399,
+            "h": 220
+          },
+          "pivot": {
+            "x": 0.5025062656641605,
+            "y": 0.9863636363636363
+          }
+        },
+        {
+          "filename": "slandor-ko-6",
+          "frame": {
+            "x": 423,
+            "y": 439,
+            "w": 401,
+            "h": 138
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 138
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 138
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9782608695652174
+          }
+        },
+        {
+          "filename": "slandor-ko-7",
+          "frame": {
+            "x": 840,
+            "y": 439,
+            "w": 393,
+            "h": 123
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 123
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 123
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.975609756097561
+          }
+        },
+        {
+          "filename": "slandor-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 283,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 283,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 283,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1727,
+        "h": 357
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-down-0",
+          "frame": {
+            "x": 870,
+            "y": 191,
+            "w": 419,
+            "h": 156
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 419,
+            "h": 156
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 156
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9807692307692307
+          }
+        },
+        {
+          "filename": "slandor-down-1",
+          "frame": {
+            "x": 1304,
+            "y": 8,
+            "w": 402,
+            "h": 162
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 162
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 162
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9814814814814815
+          }
+        },
+        {
+          "filename": "slandor-down-2",
+          "frame": {
+            "x": 874,
+            "y": 8,
+            "w": 414,
+            "h": 163
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 414,
+            "h": 163
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 414,
+            "h": 163
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9815950920245399
+          }
+        },
+        {
+          "filename": "slandor-down-3",
+          "frame": {
+            "x": 1305,
+            "y": 191,
+            "w": 414,
+            "h": 154
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 414,
+            "h": 154
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 414,
+            "h": 154
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9805194805194806
+          }
+        },
+        {
+          "filename": "slandor-down-4",
+          "frame": {
+            "x": 436,
+            "y": 8,
+            "w": 422,
+            "h": 165
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 422,
+            "h": 165
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 422,
+            "h": 165
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9818181818181818
+          }
+        },
+        {
+          "filename": "slandor-down-5",
+          "frame": {
+            "x": 8,
+            "y": 191,
+            "w": 409,
+            "h": 158
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 158
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 158
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9810126582278481
+          }
+        },
+        {
+          "filename": "slandor-down-6",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 412,
+            "h": 167
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 412,
+            "h": 167
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 412,
+            "h": 167
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9820359281437125
+          }
+        },
+        {
+          "filename": "slandor-down-7",
+          "frame": {
+            "x": 433,
+            "y": 191,
+            "w": 421,
+            "h": 158
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 421,
+            "h": 158
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 421,
+            "h": 158
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9810126582278481
+          }
+        },
+        {
+          "filename": "slandor-down",
+          "frame": {
+            "x": 870,
+            "y": 191,
+            "w": 419,
+            "h": 156
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 419,
+            "h": 156
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 156
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9807692307692307
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1918,
+        "h": 848
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-fall-0",
+          "frame": {
+            "x": 274,
+            "y": 472,
+            "w": 262,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 262,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 262,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.38549618320610685,
+            "y": 0.9913544668587896
+          }
+        },
+        {
+          "filename": "slandor-fall-1",
+          "frame": {
+            "x": 8,
+            "y": 472,
+            "w": 250,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 250,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 250,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.43,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "slandor-fall-2",
+          "frame": {
+            "x": 955,
+            "y": 8,
+            "w": 254,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 254,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 254,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.4448818897637795,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "slandor-fall-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 257,
+            "h": 448
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 257,
+            "h": 448
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 257,
+            "h": 448
+          },
+          "pivot": {
+            "x": 0.5252918287937743,
+            "y": 0.9933035714285714
+          }
+        },
+        {
+          "filename": "slandor-fall-4",
+          "frame": {
+            "x": 1591,
+            "y": 8,
+            "w": 319,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5846394984326019,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "slandor-fall-5",
+          "frame": {
+            "x": 1225,
+            "y": 8,
+            "w": 350,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.6985714285714286,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "slandor-fall-6",
+          "frame": {
+            "x": 571,
+            "y": 8,
+            "w": 368,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.6929347826086957,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "slandor-fall-7",
+          "frame": {
+            "x": 281,
+            "y": 8,
+            "w": 274,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 274,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 274,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.5857664233576643,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "slandor-fall",
+          "frame": {
+            "x": 274,
+            "y": 472,
+            "w": 262,
+            "h": 347
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 262,
+            "h": 347
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 262,
+            "h": 347
+          },
+          "pivot": {
+            "x": 0.38549618320610685,
+            "y": 0.9913544668587896
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1705,
+        "h": 697
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-getup-0",
+          "frame": {
+            "x": 833,
+            "y": 413,
+            "w": 447,
+            "h": 142
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 447,
+            "h": 142
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 447,
+            "h": 142
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9788732394366197
+          }
+        },
+        {
+          "filename": "slandor-getup-1",
+          "frame": {
+            "x": 410,
+            "y": 413,
+            "w": 407,
+            "h": 200
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 407,
+            "h": 200
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 407,
+            "h": 200
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.985
+          }
+        },
+        {
+          "filename": "slandor-getup-2",
+          "frame": {
+            "x": 8,
+            "y": 413,
+            "w": 386,
+            "h": 276
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 276
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 276
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9891304347826086
+          }
+        },
+        {
+          "filename": "slandor-getup-3",
+          "frame": {
+            "x": 991,
+            "y": 8,
+            "w": 335,
+            "h": 302
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 335,
+            "h": 302
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 335,
+            "h": 302
+          },
+          "pivot": {
+            "x": 0.49402985074626865,
+            "y": 0.9900662251655629
+          }
+        },
+        {
+          "filename": "slandor-getup-4",
+          "frame": {
+            "x": 1342,
+            "y": 8,
+            "w": 355,
+            "h": 289
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 289
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 289
+          },
+          "pivot": {
+            "x": 0.49577464788732395,
+            "y": 0.9896193771626297
+          }
+        },
+        {
+          "filename": "slandor-getup-5",
+          "frame": {
+            "x": 668,
+            "y": 8,
+            "w": 307,
+            "h": 336
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 336
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 336
+          },
+          "pivot": {
+            "x": 0.5293159609120521,
+            "y": 0.9910714285714286
+          }
+        },
+        {
+          "filename": "slandor-getup-6",
+          "frame": {
+            "x": 351,
+            "y": 8,
+            "w": 301,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "slandor-getup-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 327,
+            "h": 389
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 327,
+            "h": 389
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 327,
+            "h": 389
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922879177377892
+          }
+        },
+        {
+          "filename": "slandor-getup",
+          "frame": {
+            "x": 833,
+            "y": 413,
+            "w": 447,
+            "h": 142
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 447,
+            "h": 142
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 447,
+            "h": 142
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9788732394366197
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1835,
+        "h": 870
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-hurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 350,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "slandor-hurt-1",
+          "frame": {
+            "x": 755,
+            "y": 8,
+            "w": 350,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "slandor-hurt-2",
+          "frame": {
+            "x": 374,
+            "y": 8,
+            "w": 365,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 365,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 365,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "slandor-hurt-3",
+          "frame": {
+            "x": 1121,
+            "y": 8,
+            "w": 352,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5852272727272727,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "slandor-hurt-4",
+          "frame": {
+            "x": 728,
+            "y": 460,
+            "w": 342,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "slandor-hurt-5",
+          "frame": {
+            "x": 8,
+            "y": 460,
+            "w": 340,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 340,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 340,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "slandor-hurt-6",
+          "frame": {
+            "x": 364,
+            "y": 460,
+            "w": 348,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "slandor-hurt-7",
+          "frame": {
+            "x": 1489,
+            "y": 8,
+            "w": 338,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "slandor-hurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 350,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1975,
+        "h": 915
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-idle-0",
+          "frame": {
+            "x": 670,
+            "y": 8,
+            "w": 311,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "slandor-idle-1",
+          "frame": {
+            "x": 339,
+            "y": 8,
+            "w": 315,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "slandor-idle-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 315,
+            "h": 448
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 448
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 448
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933035714285714
+          }
+        },
+        {
+          "filename": "slandor-idle-3",
+          "frame": {
+            "x": 997,
+            "y": 8,
+            "w": 311,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "slandor-idle-4",
+          "frame": {
+            "x": 1324,
+            "y": 8,
+            "w": 313,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "slandor-idle-5",
+          "frame": {
+            "x": 1653,
+            "y": 8,
+            "w": 314,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "slandor-idle-6",
+          "frame": {
+            "x": 8,
+            "y": 472,
+            "w": 314,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 314,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 314,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "slandor-idle-7",
+          "frame": {
+            "x": 338,
+            "y": 472,
+            "w": 313,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "slandor-idle",
+          "frame": {
+            "x": 670,
+            "y": 8,
+            "w": 311,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 311,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 311,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1830,
+        "h": 969
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-intro-0",
+          "frame": {
+            "x": 907,
+            "y": 8,
+            "w": 247,
+            "h": 484
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 247,
+            "h": 484
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 247,
+            "h": 484
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993801652892562
+          }
+        },
+        {
+          "filename": "slandor-intro-1",
+          "frame": {
+            "x": 630,
+            "y": 8,
+            "w": 261,
+            "h": 485
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 261,
+            "h": 485
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 261,
+            "h": 485
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9938144329896907
+          }
+        },
+        {
+          "filename": "slandor-intro-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 273,
+            "h": 499
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 273,
+            "h": 499
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 273,
+            "h": 499
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9939879759519038
+          }
+        },
+        {
+          "filename": "slandor-intro-3",
+          "frame": {
+            "x": 297,
+            "y": 8,
+            "w": 317,
+            "h": 488
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 317,
+            "h": 488
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 317,
+            "h": 488
+          },
+          "pivot": {
+            "x": 0.46214511041009465,
+            "y": 0.9938524590163934
+          }
+        },
+        {
+          "filename": "slandor-intro-4",
+          "frame": {
+            "x": 1170,
+            "y": 8,
+            "w": 291,
+            "h": 467
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 291,
+            "h": 467
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 291,
+            "h": 467
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935760171306209
+          }
+        },
+        {
+          "filename": "slandor-intro-5",
+          "frame": {
+            "x": 8,
+            "y": 523,
+            "w": 339,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "slandor-intro-6",
+          "frame": {
+            "x": 1477,
+            "y": 8,
+            "w": 345,
+            "h": 449
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 449
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 449
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933184855233853
+          }
+        },
+        {
+          "filename": "slandor-intro-7",
+          "frame": {
+            "x": 363,
+            "y": 523,
+            "w": 363,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "slandor-intro",
+          "frame": {
+            "x": 907,
+            "y": 8,
+            "w": 247,
+            "h": 484
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 247,
+            "h": 484
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 247,
+            "h": 484
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993801652892562
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1785,
+        "h": 794
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-jump-0",
+          "frame": {
+            "x": 319,
+            "y": 8,
+            "w": 345,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "slandor-jump-1",
+          "frame": {
+            "x": 286,
+            "y": 469,
+            "w": 244,
+            "h": 306
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 244,
+            "h": 306
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 244,
+            "h": 306
+          },
+          "pivot": {
+            "x": 0.4774590163934426,
+            "y": 0.9901960784313726
+          }
+        },
+        {
+          "filename": "slandor-jump-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 295,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.35423728813559324,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "slandor-jump-3",
+          "frame": {
+            "x": 1299,
+            "y": 8,
+            "w": 233,
+            "h": 355
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 233,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 233,
+            "h": 355
+          },
+          "pivot": {
+            "x": 0.38626609442060084,
+            "y": 0.9915492957746479
+          }
+        },
+        {
+          "filename": "slandor-jump-4",
+          "frame": {
+            "x": 1548,
+            "y": 8,
+            "w": 229,
+            "h": 322
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 229,
+            "h": 322
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 229,
+            "h": 322
+          },
+          "pivot": {
+            "x": 0.4192139737991266,
+            "y": 0.9906832298136646
+          }
+        },
+        {
+          "filename": "slandor-jump-5",
+          "frame": {
+            "x": 1044,
+            "y": 8,
+            "w": 239,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 239,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 239,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.4895397489539749,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "slandor-jump-6",
+          "frame": {
+            "x": 8,
+            "y": 469,
+            "w": 262,
+            "h": 317
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 262,
+            "h": 317
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 262,
+            "h": 317
+          },
+          "pivot": {
+            "x": 0.48091603053435117,
+            "y": 0.9905362776025236
+          }
+        },
+        {
+          "filename": "slandor-jump-7",
+          "frame": {
+            "x": 680,
+            "y": 8,
+            "w": 348,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "slandor-jump",
+          "frame": {
+            "x": 319,
+            "y": 8,
+            "w": 345,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1992,
+        "h": 834
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-kick-0",
+          "frame": {
+            "x": 528,
+            "y": 8,
+            "w": 330,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "slandor-kick-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 256,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 256,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.376953125,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "slandor-kick-2",
+          "frame": {
+            "x": 280,
+            "y": 8,
+            "w": 232,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 232,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 232,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.45689655172413796,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "slandor-kick-3",
+          "frame": {
+            "x": 874,
+            "y": 8,
+            "w": 402,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.11194029850746269,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "slandor-kick-4",
+          "frame": {
+            "x": 8,
+            "y": 434,
+            "w": 437,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 437,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 437,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.08123569794050343,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "slandor-kick-5",
+          "frame": {
+            "x": 461,
+            "y": 434,
+            "w": 243,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 243,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 243,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.360082304526749,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "slandor-kick-6",
+          "frame": {
+            "x": 1292,
+            "y": 8,
+            "w": 338,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "slandor-kick-7",
+          "frame": {
+            "x": 1646,
+            "y": 8,
+            "w": 338,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 338,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 338,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "slandor-kick",
+          "frame": {
+            "x": 528,
+            "y": 8,
+            "w": 330,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926650366748166
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1745,
+        "h": 746
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-knockdown-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 372,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "slandor-knockdown-1",
+          "frame": {
+            "x": 396,
+            "y": 8,
+            "w": 339,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 339,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 339,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5427728613569321,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "slandor-knockdown-2",
+          "frame": {
+            "x": 751,
+            "y": 8,
+            "w": 445,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 445,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 445,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.6955056179775281,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "slandor-knockdown-3",
+          "frame": {
+            "x": 1212,
+            "y": 8,
+            "w": 438,
+            "h": 306
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 438,
+            "h": 306
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 438,
+            "h": 306
+          },
+          "pivot": {
+            "x": 0.567351598173516,
+            "y": 0.9901960784313726
+          }
+        },
+        {
+          "filename": "slandor-knockdown-4",
+          "frame": {
+            "x": 8,
+            "y": 488,
+            "w": 426,
+            "h": 250
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 426,
+            "h": 250
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 426,
+            "h": 250
+          },
+          "pivot": {
+            "x": 0.568075117370892,
+            "y": 0.988
+          }
+        },
+        {
+          "filename": "slandor-knockdown-5",
+          "frame": {
+            "x": 450,
+            "y": 488,
+            "w": 444,
+            "h": 175
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 444,
+            "h": 175
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 444,
+            "h": 175
+          },
+          "pivot": {
+            "x": 0.4786036036036036,
+            "y": 0.9828571428571429
+          }
+        },
+        {
+          "filename": "slandor-knockdown-6",
+          "frame": {
+            "x": 910,
+            "y": 488,
+            "w": 388,
+            "h": 151
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 151
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 151
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9801324503311258
+          }
+        },
+        {
+          "filename": "slandor-knockdown-7",
+          "frame": {
+            "x": 1314,
+            "y": 488,
+            "w": 423,
+            "h": 127
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 423,
+            "h": 127
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 423,
+            "h": 127
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9763779527559056
+          }
+        },
+        {
+          "filename": "slandor-knockdown",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 372,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935344827586207
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1981,
+        "h": 861
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-punch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 375,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "slandor-punch-1",
+          "frame": {
+            "x": 399,
+            "y": 8,
+            "w": 386,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "slandor-punch-2",
+          "frame": {
+            "x": 801,
+            "y": 8,
+            "w": 397,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 397,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 397,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.4836272040302267,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "slandor-punch-3",
+          "frame": {
+            "x": 1214,
+            "y": 8,
+            "w": 377,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "slandor-punch-4",
+          "frame": {
+            "x": 776,
+            "y": 449,
+            "w": 417,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 417,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 417,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.4520383693045564,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "slandor-punch-5",
+          "frame": {
+            "x": 382,
+            "y": 449,
+            "w": 378,
+            "h": 396
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 396
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 396
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924242424242424
+          }
+        },
+        {
+          "filename": "slandor-punch-6",
+          "frame": {
+            "x": 1607,
+            "y": 8,
+            "w": 366,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "slandor-punch-7",
+          "frame": {
+            "x": 8,
+            "y": 449,
+            "w": 358,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "slandor-punch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 375,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2043,
+        "h": 831
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-super-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 393,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "slandor-super-1",
+          "frame": {
+            "x": 1218,
+            "y": 8,
+            "w": 385,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 385,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 385,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "slandor-super-2",
+          "frame": {
+            "x": 862,
+            "y": 436,
+            "w": 423,
+            "h": 362
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 423,
+            "h": 362
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 423,
+            "h": 362
+          },
+          "pivot": {
+            "x": 0.46926713947990545,
+            "y": 0.9917127071823204
+          }
+        },
+        {
+          "filename": "slandor-super-3",
+          "frame": {
+            "x": 417,
+            "y": 8,
+            "w": 382,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "slandor-super-4",
+          "frame": {
+            "x": 1619,
+            "y": 8,
+            "w": 416,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 416,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 416,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.484375,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "slandor-super-5",
+          "frame": {
+            "x": 8,
+            "y": 436,
+            "w": 413,
+            "h": 387
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 413,
+            "h": 387
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 413,
+            "h": 387
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922480620155039
+          }
+        },
+        {
+          "filename": "slandor-super-6",
+          "frame": {
+            "x": 437,
+            "y": 436,
+            "w": 409,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "slandor-super-7",
+          "frame": {
+            "x": 815,
+            "y": 8,
+            "w": 387,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "slandor-super",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 393,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1955,
+        "h": 673
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-sweep-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 328,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "slandor-sweep-1",
+          "frame": {
+            "x": 602,
+            "y": 8,
+            "w": 302,
+            "h": 272
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 272
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 272
+          },
+          "pivot": {
+            "x": 0.40894039735099336,
+            "y": 0.9889705882352942
+          }
+        },
+        {
+          "filename": "slandor-sweep-2",
+          "frame": {
+            "x": 8,
+            "y": 425,
+            "w": 514,
+            "h": 240
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 514,
+            "h": 240
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 514,
+            "h": 240
+          },
+          "pivot": {
+            "x": 0.2140077821011673,
+            "y": 0.9875
+          }
+        },
+        {
+          "filename": "slandor-sweep-3",
+          "frame": {
+            "x": 538,
+            "y": 425,
+            "w": 386,
+            "h": 239
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 239
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 239
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9874476987447699
+          }
+        },
+        {
+          "filename": "slandor-sweep-4",
+          "frame": {
+            "x": 1530,
+            "y": 8,
+            "w": 417,
+            "h": 250
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 417,
+            "h": 250
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 417,
+            "h": 250
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.988
+          }
+        },
+        {
+          "filename": "slandor-sweep-5",
+          "frame": {
+            "x": 352,
+            "y": 8,
+            "w": 234,
+            "h": 277
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 234,
+            "h": 277
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 234,
+            "h": 277
+          },
+          "pivot": {
+            "x": 0.4893162393162393,
+            "y": 0.9891696750902527
+          }
+        },
+        {
+          "filename": "slandor-sweep-6",
+          "frame": {
+            "x": 1234,
+            "y": 8,
+            "w": 280,
+            "h": 268
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 280,
+            "h": 268
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 280,
+            "h": 268
+          },
+          "pivot": {
+            "x": 0.4035714285714286,
+            "y": 0.9888059701492538
+          }
+        },
+        {
+          "filename": "slandor-sweep-7",
+          "frame": {
+            "x": 920,
+            "y": 8,
+            "w": 298,
+            "h": 272
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 298,
+            "h": 272
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 298,
+            "h": 272
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9889705882352942
+          }
+        },
+        {
+          "filename": "slandor-sweep",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 328,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 328,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 328,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925187032418953
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1937,
+        "h": 872
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-uppercut-0",
+          "frame": {
+            "x": 939,
+            "y": 8,
+            "w": 347,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "slandor-uppercut-1",
+          "frame": {
+            "x": 310,
+            "y": 485,
+            "w": 306,
+            "h": 345
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 345
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 345
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.991304347826087
+          }
+        },
+        {
+          "filename": "slandor-uppercut-2",
+          "frame": {
+            "x": 275,
+            "y": 8,
+            "w": 364,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "slandor-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 251,
+            "h": 461
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 251,
+            "h": 461
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 251,
+            "h": 461
+          },
+          "pivot": {
+            "x": 0.38645418326693226,
+            "y": 0.9934924078091106
+          }
+        },
+        {
+          "filename": "slandor-uppercut-4",
+          "frame": {
+            "x": 655,
+            "y": 8,
+            "w": 268,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 268,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 268,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.4291044776119403,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "slandor-uppercut-5",
+          "frame": {
+            "x": 1654,
+            "y": 8,
+            "w": 275,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 275,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 275,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.44727272727272727,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "slandor-uppercut-6",
+          "frame": {
+            "x": 8,
+            "y": 485,
+            "w": 286,
+            "h": 379
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 286,
+            "h": 379
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 286,
+            "h": 379
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920844327176781
+          }
+        },
+        {
+          "filename": "slandor-uppercut-7",
+          "frame": {
+            "x": 1302,
+            "y": 8,
+            "w": 336,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "slandor-uppercut",
+          "frame": {
+            "x": 939,
+            "y": 8,
+            "w": 347,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1937,
+        "h": 973
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-win-0",
+          "frame": {
+            "x": 406,
+            "y": 503,
+            "w": 351,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934640522875817
+          }
+        },
+        {
+          "filename": "slandor-win-1",
+          "frame": {
+            "x": 1623,
+            "y": 8,
+            "w": 306,
+            "h": 464
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 464
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 464
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9935344827586207
+          }
+        },
+        {
+          "filename": "slandor-win-2",
+          "frame": {
+            "x": 325,
+            "y": 8,
+            "w": 284,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 284,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 284,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "slandor-win-3",
+          "frame": {
+            "x": 1301,
+            "y": 8,
+            "w": 306,
+            "h": 472
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 306,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 306,
+            "h": 472
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9936440677966102
+          }
+        },
+        {
+          "filename": "slandor-win-4",
+          "frame": {
+            "x": 926,
+            "y": 8,
+            "w": 359,
+            "h": 475
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 475
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 475
+          },
+          "pivot": {
+            "x": 0.49164345403899723,
+            "y": 0.9936842105263158
+          }
+        },
+        {
+          "filename": "slandor-win-5",
+          "frame": {
+            "x": 8,
+            "y": 503,
+            "w": 382,
+            "h": 462
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 462
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 462
+          },
+          "pivot": {
+            "x": 0.4424083769633508,
+            "y": 0.9935064935064936
+          }
+        },
+        {
+          "filename": "slandor-win-6",
+          "frame": {
+            "x": 625,
+            "y": 8,
+            "w": 285,
+            "h": 478
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 285,
+            "h": 478
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 285,
+            "h": 478
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937238493723849
+          }
+        },
+        {
+          "filename": "slandor-win-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 301,
+            "h": 479
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 479
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 479
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9937369519832986
+          }
+        },
+        {
+          "filename": "slandor-win",
+          "frame": {
+            "x": 406,
+            "y": 503,
+            "w": 351,
+            "h": 459
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 459
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 459
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9934640522875817
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1855,
+        "h": 905
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-walk-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 334,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "slandor-walk-1",
+          "frame": {
+            "x": 358,
+            "y": 8,
+            "w": 256,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 256,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "slandor-walk-2",
+          "frame": {
+            "x": 630,
+            "y": 8,
+            "w": 198,
+            "h": 440
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 198,
+            "h": 440
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 198,
+            "h": 440
+          },
+          "pivot": {
+            "x": 0.5454545454545454,
+            "y": 0.9931818181818182
+          }
+        },
+        {
+          "filename": "slandor-walk-3",
+          "frame": {
+            "x": 1181,
+            "y": 8,
+            "w": 334,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "slandor-walk-4",
+          "frame": {
+            "x": 1531,
+            "y": 8,
+            "w": 316,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 316,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 316,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.504746835443038,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "slandor-walk-5",
+          "frame": {
+            "x": 346,
+            "y": 465,
+            "w": 233,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 233,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 233,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.34549356223175964,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "slandor-walk-6",
+          "frame": {
+            "x": 8,
+            "y": 465,
+            "w": 322,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "slandor-walk-7",
+          "frame": {
+            "x": 844,
+            "y": 8,
+            "w": 321,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "slandor-walk",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 334,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1892,
+        "h": 886
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "slandor-walkBack-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 325,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "slandor-walkBack-1",
+          "frame": {
+            "x": 349,
+            "y": 8,
+            "w": 336,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5029761904761905,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "slandor-walkBack-2",
+          "frame": {
+            "x": 701,
+            "y": 8,
+            "w": 397,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 397,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 397,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "slandor-walkBack-3",
+          "frame": {
+            "x": 1340,
+            "y": 8,
+            "w": 220,
+            "h": 426
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 220,
+            "h": 426
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 220,
+            "h": 426
+          },
+          "pivot": {
+            "x": 0.33636363636363636,
+            "y": 0.9929577464788732
+          }
+        },
+        {
+          "filename": "slandor-walkBack-4",
+          "frame": {
+            "x": 1114,
+            "y": 8,
+            "w": 210,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 210,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 210,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.4357142857142857,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "slandor-walkBack-5",
+          "frame": {
+            "x": 8,
+            "y": 455,
+            "w": 318,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 318,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 318,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5188679245283019,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "slandor-walkBack-6",
+          "frame": {
+            "x": 342,
+            "y": 455,
+            "w": 261,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 261,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 261,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "slandor-walkBack-7",
+          "frame": {
+            "x": 1576,
+            "y": 8,
+            "w": 308,
+            "h": 425
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 308,
+            "h": 425
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 308,
+            "h": 425
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929411764705882
+          }
+        },
+        {
+          "filename": "slandor-walkBack",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 325,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 325,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 325,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}

@@ -9,6 +9,7 @@ import { buildLook } from '../visuals/powers';
 import { dialogFor } from '../data/dialogs';
 import { FIGHTERS, type FighterId } from '../data/fighters';
 import { POWERS, powerFor } from '../data/powers';
+import { POWER_QUIPS } from '../data/powerQuips';
 
 import { STAGES, type StageId } from '../data/stages';
 import { MOVES, type MoveDef } from '../data/moves';
@@ -20,7 +21,7 @@ import { Input } from '../systems/Input';
 import { Settings, type CpuLevel } from '../systems/Settings';
 import { StoryRun } from '../systems/StoryRun';
 import { Training, type DemoCombo } from '../systems/Training';
-import { goTo } from '../ui/ui';
+import { goTo, text } from '../ui/ui';
 import type { HudScene } from './HudScene';
 
 export interface FightData {
@@ -85,6 +86,9 @@ export class FightScene extends Phaser.Scene implements Arena {
   private cageWasReady = [true, true];
   /** Nota tachada sobre la cabeza del silenciado. */
   private silenceIcon: Phaser.GameObjects.Graphics | null = null;
+  /** Comentario del poder básico o remate de combo, con frecuencia compartida por luchador. */
+  private powerBubble: { view: Phaser.GameObjects.Container; owner: Fighter; until: number; duration: number } | null = null;
+  private powerQuipAt = new Map<Fighter, number>();
   /** Rivales encerrados en la jaula de NOSU. */
   private cages: { target: Fighter; color: number; until: number; hp: number; g: Phaser.GameObjects.Graphics; t: number; from: number }[] = [];
   round = 1;
@@ -128,6 +132,8 @@ export class FightScene extends Phaser.Scene implements Arena {
     this.cageIcons = [null, null];
     this.cageWasReady = [true, true];
     this.silenceIcon = null;
+    this.powerBubble = null;
+    this.powerQuipAt.clear();
     this.timeScale = 1;
     this.hitstopUntil = 0;
     this.now = 0;
@@ -190,6 +196,8 @@ export class FightScene extends Phaser.Scene implements Arena {
   // ───────────────────────────── Rondas ─────────────────────────────
 
   private startRound(): void {
+    this.clearPowerBubble();
+    this.powerQuipAt.clear();
     this.ultOwner = null;
     this.endSolo();
     for (const p of this.projectiles) p.destroy();
@@ -248,6 +256,7 @@ export class FightScene extends Phaser.Scene implements Arena {
 
   private ko(winner: Fighter | null, kind: 'ko' | 'time'): void {
     if (this.phase !== 'fight') return;
+    this.clearPowerBubble();
     this.phase = 'ko';
     this.stats.fightSeconds += ROUND_SECONDS - this.timer;
     this.endSolo();
@@ -334,6 +343,7 @@ export class FightScene extends Phaser.Scene implements Arena {
     const haste = shots.find((s) => s.haste)?.haste;
     if (haste) {
       owner.haste(haste);
+      this.showPowerQuip(owner);
       const cy = GROUND_Y - owner.z - owner.def.art.height * 0.55;
       for (let k = 0; k < 3; k++) this.fx.ring(owner.x, cy, k === 1 ? COLORS.white : 0xffee32, 120 + k * 90, 0.3);
       this.fx.ghost(owner.sprite, 0xffee32, 0.7, 320, 0.15);
@@ -354,7 +364,7 @@ export class FightScene extends Phaser.Scene implements Arena {
   }
 
   /**
-   * Contraataque (Doctor Escalas): la pelea se congela un instante, reaparece junto al atacante (estela dorada)
+   * Contraataque (George): la pelea se congela un instante, reaparece junto al atacante (estela dorada)
    * y le devuelve un golpe que tumba y no se bloquea.
    */
   counter(owner: Fighter, attacker: Fighter): void {
@@ -383,12 +393,60 @@ export class FightScene extends Phaser.Scene implements Arena {
     const hy = GROUND_Y - attacker.z - attacker.def.art.height * 0.55;
     if (res.result !== 'whiff') {
       this.impact(owner, attacker, moveFor(owner.def.id, 'kick'), res.result, res.damage, hx, hy, { heavy: true });
+      if (res.result === 'hit') this.showPowerQuip(owner);
       for (let k = 0; k < 3; k++) this.fx.ring(hx, hy, k === 1 ? COLORS.white : GOLD, 120 + k * 90, 0.35);
     }
     this.hitstopUntil = this.time.now + 220;
     this.cameras.main.flash(120, 255, 240, 200);
-    this.hud.announce('¡CAPÍTULO TRES!', { size: 90, ms: 800, color: '#e0b862' });
     Audio.tone(this, 880, 0.18, 'triangle', 0.06);
+  }
+
+  private clearPowerBubble(): void {
+    this.powerBubble?.view.destroy();
+    this.powerBubble = null;
+  }
+
+  private showPowerQuip(owner: Fighter): void {
+    if (this.phase !== 'fight' || this.ultOwner || this.powerBubble) return;
+    const last = this.powerQuipAt.get(owner);
+    if (last !== undefined && (this.now - last < 10000 || Math.random() > 0.35)) return;
+    this.powerQuipAt.set(owner, this.now);
+    const phrases = POWER_QUIPS[owner.def.id];
+    const phrase = phrases[Math.floor(Math.random() * phrases.length)];
+    const label = text(this, 0, 0, phrase, {
+      size: 68, italic: true, weight: '900', color: owner.def.css,
+      origin: [0.5, 1], align: 'center', wrap: 420, stroke: '#000000', shadow: true,
+    });
+    // Conserva la letra grande cuando cabe; reduce solo las frases que ocuparían más de dos líneas.
+    let fontSize = 68;
+    while (label.getWrappedText().length > 2 && fontSize > 1) {
+      fontSize -= 2;
+      label.setFontSize(fontSize);
+    }
+    const view = this.add.container(0, 0, [label]).setDepth(25);
+    // Tiempo de lectura según la longitud, con margen para entrada y salida.
+    const duration = 550 + Array.from(phrase).length * 45;
+    this.powerBubble = { view, owner, until: this.time.now + duration, duration };
+    this.updatePowerBubble();
+  }
+
+  private updatePowerBubble(): void {
+    const bubble = this.powerBubble;
+    if (!bubble) return;
+    if (this.phase !== 'fight' || this.ultOwner || bubble.owner.hp <= 0 || this.time.now >= bubble.until) {
+      this.clearPowerBubble();
+      return;
+    }
+    const { owner, view } = bubble;
+    const margin = Math.min(GAME_WIDTH / 2, view.getBounds().width / 2 + 24);
+    view.setPosition(
+      Phaser.Math.Clamp(owner.x, margin, GAME_WIDTH - margin),
+      Math.max(210, GROUND_Y - owner.z - owner.def.art.height - 55),
+    );
+    const remaining = bubble.until - this.time.now;
+    const entrance = Phaser.Math.Clamp((bubble.duration - remaining) / 140, 0, 1);
+    view.setScale(1 + 0.12 * (1 - entrance));
+    view.setAlpha(Math.min(1, (bubble.duration - remaining) / 80, remaining / 180));
   }
 
   hasProjectile(owner: Fighter): boolean {
@@ -401,6 +459,7 @@ export class FightScene extends Phaser.Scene implements Arena {
    */
   requestUltimate(owner: Fighter): boolean {
     if (this.phase !== 'fight' || this.ultOwner) return false;
+    this.clearPowerBubble();
     this.ultOwner = owner;
     return true;
   }
@@ -566,6 +625,7 @@ export class FightScene extends Phaser.Scene implements Arena {
     this.drawAuras(time);
     this.drawCageIcons(time);
     this.drawSilence(time);
+    this.updatePowerBubble();
     if (this.solo) {
       this.solo.update(realDt * 1000, dt);
       if (this.solo.finished) this.endSolo();
@@ -625,6 +685,10 @@ export class FightScene extends Phaser.Scene implements Arena {
       a.moveDone = true;
       a.moveConnected = true;
       this.impact(a, b, move, result, damage, b.x - a.facing * 45, GROUND_Y - b.z - (SPARK_HEIGHT[move.id] ?? 300), { heavy: finisher || (result === 'hit' && !!a.gold && isNormal(move)) });
+      // Una sola oportunidad de frase aunque el remate también sea un golpe de oro.
+      if (result === 'hit' && (move.id === 'special' || finisher || (a.gold && isNormal(move)))) {
+        this.showPowerQuip(a);
+      }
       if (result === 'hit' && a.gold && isNormal(move)) {
         // Golpe de oro: se gasta al pegar (si se lo bloquean, lo conserva), con estallido dorado.
         const y = GROUND_Y - b.z - (SPARK_HEIGHT[move.id] ?? 300);
@@ -740,13 +804,12 @@ export class FightScene extends Phaser.Scene implements Arena {
     });
   }
 
-  /** Silencio (George): `target` no puede usar su poder básico por `ms`; la recarga del que lo lanzó espera a que termine. */
+  /** Silencio (Escalas): `target` no puede usar su poder básico ni activar el ultimate por `ms`; la recarga del que lo lanzó espera a que termine. */
   private silence(owner: Fighter, target: Fighter, ms: number): void {
     target.silencedUntil = target.now + ms;
     owner.powerReadyAt = Math.max(owner.powerReadyAt, owner.now + ms + owner.powerCooldown * 0.5);
     const y = GROUND_Y - target.z - target.def.art.height - 40;
     for (let k = 0; k < 2; k++) this.fx.ring(target.x, y, k ? COLORS.white : 0x9b7bff, 80 + k * 50, 0.3);
-    this.hud.announce('¡DESAFINADO!', { size: 80, ms: 700, color: '#9b7bff' });
   }
 
   /** Silenciado: una nota tachada flota sobre la cabeza mientras dura. */
@@ -818,6 +881,7 @@ export class FightScene extends Phaser.Scene implements Arena {
         damage: Math.round(p.damage * target.def.stats.defense),
       });
       if (result === 'whiff') continue;
+      if (result === 'hit') this.showPowerQuip(p.owner);
       // Jesex: el cheque le compra barra ULTIMATE al rival.
       if (result === 'hit' && p.spec.steal) {
         const stolen = Math.min(target.meter, p.spec.steal);
@@ -830,7 +894,7 @@ export class FightScene extends Phaser.Scene implements Arena {
       if (result === 'hit' && p.spec.tribute && ++p.owner.tributeHits % p.spec.tribute.every === 0) {
         this.tribute(p, Math.round(damage * p.spec.tribute.drain));
       }
-      // George: la onda afinada lo deja sin poder un rato (no se acumula mientras dura).
+      // Escalas: la onda de silencio lo deja sin poder un rato (no se acumula mientras dura).
       if (result === 'hit' && p.spec.silence && !target.silenced) this.silence(p.owner, target, p.spec.silence);
       const hx = p.spec.beam ? target.x - dir * 40 : p.x;
       if (result === 'hit' && p.spec.poison) this.poison(p.owner, target, p.move, p.spec.poison, p.damage);
@@ -882,6 +946,7 @@ export class FightScene extends Phaser.Scene implements Arena {
     const copy = new Projectile(this, this.fx, mirror.owner, spec, mirror.color);
     copy.placeAt(mirror.x, mirror.z);
     this.projectiles.push(copy);
+    this.showPowerQuip(mirror.owner);
     this.fx.hit(mirror.x, mirror.y, COLORS.white, true);
     Audio.sfx(this, 'punch', 0.6, 1.3);
     shot.destroy();

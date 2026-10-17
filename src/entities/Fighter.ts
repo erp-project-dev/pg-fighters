@@ -390,7 +390,7 @@ export class Fighter {
 
     // Súper con su botón: libre, o cancelando un golpe que conectó.
     const canCancel = this.state === 'attack' && this.moveConnected && !!this.move?.cancel && this.phase !== 'startup';
-    if (intent.super && this.meter >= MAX_METER && this.grounded && (this.free || canCancel) && this.arena.requestUltimate(this)) {
+    if (intent.super && !this.silenced && this.meter >= MAX_METER && this.grounded && (this.free || canCancel) && this.arena.requestUltimate(this)) {
       this.buffer = null;
       this.startMove(MOVES.super, false);
       return;
@@ -481,6 +481,8 @@ export class Fighter {
   playCounterStrike(): void {
     this.startMove({ ...moveFor(this.def.id, 'jab'), id: 'special', pose: 'punch', startup: 0, active: 140, recovery: 320, reach: 0, lunge: 0 }, false);
     this.moveSpawned = true;
+    // Guardia exitosa: 0,5 s extra de recarga respecto a una guardia sin respuesta.
+    this.powerReadyAt = this.now + this.powerCooldown + 500;
   }
 
   private startMove(move: MoveDef, chained: boolean): void {

@@ -1,0 +1,6381 @@
+{
+  "textures": [
+    {
+      "image": "atlas-airKick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1820,
+        "h": 852
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-airKick-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 289,
+            "h": 448
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 448
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 448
+          },
+          "pivot": {
+            "x": 0.11764705882352941,
+            "y": 0.9933035714285714
+          }
+        },
+        {
+          "filename": "erp-airKick-1",
+          "frame": {
+            "x": 313,
+            "y": 8,
+            "w": 241,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 241,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 241,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.6639004149377593,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "erp-airKick-2",
+          "frame": {
+            "x": 1443,
+            "y": 8,
+            "w": 369,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.16937669376693767,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "erp-airKick-3",
+          "frame": {
+            "x": 346,
+            "y": 472,
+            "w": 454,
+            "h": 358
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 454,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 454,
+            "h": 358
+          },
+          "pivot": {
+            "x": 0.2687224669603524,
+            "y": 0.9916201117318436
+          }
+        },
+        {
+          "filename": "erp-airKick-4",
+          "frame": {
+            "x": 8,
+            "y": 472,
+            "w": 322,
+            "h": 372
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 372
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 372
+          },
+          "pivot": {
+            "x": 0.2453416149068323,
+            "y": 0.9919354838709677
+          }
+        },
+        {
+          "filename": "erp-airKick-5",
+          "frame": {
+            "x": 1180,
+            "y": 8,
+            "w": 247,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 247,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 247,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.46963562753036436,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "erp-airKick-6",
+          "frame": {
+            "x": 883,
+            "y": 8,
+            "w": 281,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 281,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 281,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.6672597864768683,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "erp-airKick-7",
+          "frame": {
+            "x": 570,
+            "y": 8,
+            "w": 297,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 297,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 297,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.6717171717171717,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "erp-airKick",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 289,
+            "h": 448
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 289,
+            "h": 448
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 289,
+            "h": 448
+          },
+          "pivot": {
+            "x": 0.11764705882352941,
+            "y": 0.9933035714285714
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-airPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1923,
+        "h": 824
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-airPunch-0",
+          "frame": {
+            "x": 705,
+            "y": 8,
+            "w": 264,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 264,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 264,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.2537878787878788,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "erp-airPunch-1",
+          "frame": {
+            "x": 1614,
+            "y": 8,
+            "w": 301,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 301,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 301,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.5415282392026578,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "erp-airPunch-2",
+          "frame": {
+            "x": 985,
+            "y": 8,
+            "w": 323,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 323,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 323,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.20588235294117646,
+            "y": 0.9925373134328358
+          }
+        },
+        {
+          "filename": "erp-airPunch-3",
+          "frame": {
+            "x": 343,
+            "y": 8,
+            "w": 346,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 346,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 346,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.3020231213872832,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "erp-airPunch-4",
+          "frame": {
+            "x": 1324,
+            "y": 8,
+            "w": 274,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 274,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 274,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.39416058394160586,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "erp-airPunch-5",
+          "frame": {
+            "x": 260,
+            "y": 434,
+            "w": 219,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 219,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 219,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.4497716894977169,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "erp-airPunch-6",
+          "frame": {
+            "x": 8,
+            "y": 434,
+            "w": 236,
+            "h": 382
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 236,
+            "h": 382
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 236,
+            "h": 382
+          },
+          "pivot": {
+            "x": 0.5783898305084746,
+            "y": 0.9921465968586387
+          }
+        },
+        {
+          "filename": "erp-airPunch-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 319,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "erp-airPunch",
+          "frame": {
+            "x": 705,
+            "y": 8,
+            "w": 264,
+            "h": 402
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 264,
+            "h": 402
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 264,
+            "h": 402
+          },
+          "pivot": {
+            "x": 0.2537878787878788,
+            "y": 0.9925373134328358
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-backdash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1826,
+        "h": 869
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-backdash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 379,
+            "h": 433
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 433
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 433
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930715935334873
+          }
+        },
+        {
+          "filename": "erp-backdash-1",
+          "frame": {
+            "x": 403,
+            "y": 457,
+            "w": 256,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 256,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.466796875,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "erp-backdash-2",
+          "frame": {
+            "x": 1147,
+            "y": 8,
+            "w": 336,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.43898809523809523,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "erp-backdash-3",
+          "frame": {
+            "x": 675,
+            "y": 457,
+            "w": 402,
+            "h": 390
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 402,
+            "h": 390
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 402,
+            "h": 390
+          },
+          "pivot": {
+            "x": 0.39054726368159204,
+            "y": 0.9923076923076923
+          }
+        },
+        {
+          "filename": "erp-backdash-4",
+          "frame": {
+            "x": 403,
+            "y": 8,
+            "w": 361,
+            "h": 414
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 414
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 414
+          },
+          "pivot": {
+            "x": 0.44182825484764543,
+            "y": 0.9927536231884058
+          }
+        },
+        {
+          "filename": "erp-backdash-5",
+          "frame": {
+            "x": 1499,
+            "y": 8,
+            "w": 319,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "erp-backdash-6",
+          "frame": {
+            "x": 8,
+            "y": 457,
+            "w": 379,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "erp-backdash-7",
+          "frame": {
+            "x": 780,
+            "y": 8,
+            "w": 351,
+            "h": 413
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 413
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 413
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927360774818402
+          }
+        },
+        {
+          "filename": "erp-backdash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 379,
+            "h": 433
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 433
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 433
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930715935334873
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-basic-power.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1885,
+        "h": 847
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-special-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 396,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 396,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 396,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "erp-special-1",
+          "frame": {
+            "x": 1414,
+            "y": 451,
+            "w": 463,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 463,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 463,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.45680345572354214,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "erp-special-2",
+          "frame": {
+            "x": 824,
+            "y": 8,
+            "w": 406,
+            "h": 398
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 406,
+            "h": 398
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 406,
+            "h": 398
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992462311557789
+          }
+        },
+        {
+          "filename": "erp-special-3",
+          "frame": {
+            "x": 1246,
+            "y": 8,
+            "w": 409,
+            "h": 392
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 392
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 392
+          },
+          "pivot": {
+            "x": 0.49511002444987773,
+            "y": 0.9923469387755102
+          }
+        },
+        {
+          "filename": "erp-special-4",
+          "frame": {
+            "x": 898,
+            "y": 451,
+            "w": 500,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 500,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 500,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.426,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "erp-special-5",
+          "frame": {
+            "x": 401,
+            "y": 451,
+            "w": 481,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 481,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 481,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.44490644490644493,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "erp-special-6",
+          "frame": {
+            "x": 8,
+            "y": 451,
+            "w": 377,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "erp-special-7",
+          "frame": {
+            "x": 420,
+            "y": 8,
+            "w": 388,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 388,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 388,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "erp-special",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 396,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 396,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 396,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-block.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1967,
+        "h": 872
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-block-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 387,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "erp-block-1",
+          "frame": {
+            "x": 411,
+            "y": 8,
+            "w": 376,
+            "h": 433
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 433
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 433
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930715935334873
+          }
+        },
+        {
+          "filename": "erp-block-2",
+          "frame": {
+            "x": 803,
+            "y": 8,
+            "w": 375,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "erp-block-3",
+          "frame": {
+            "x": 401,
+            "y": 460,
+            "w": 370,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 370,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 370,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "erp-block-4",
+          "frame": {
+            "x": 787,
+            "y": 460,
+            "w": 378,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "erp-block-5",
+          "frame": {
+            "x": 8,
+            "y": 460,
+            "w": 377,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "erp-block-6",
+          "frame": {
+            "x": 1585,
+            "y": 8,
+            "w": 374,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "erp-block-7",
+          "frame": {
+            "x": 1194,
+            "y": 8,
+            "w": 375,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "erp-block",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 387,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2005,
+        "h": 741
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-crouch-0",
+          "frame": {
+            "x": 346,
+            "y": 8,
+            "w": 319,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.46551724137931033,
+            "y": 0.9916666666666667
+          }
+        },
+        {
+          "filename": "erp-crouch-1",
+          "frame": {
+            "x": 1684,
+            "y": 8,
+            "w": 313,
+            "h": 345
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 313,
+            "h": 345
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 313,
+            "h": 345
+          },
+          "pivot": {
+            "x": 0.4744408945686901,
+            "y": 0.991304347826087
+          }
+        },
+        {
+          "filename": "erp-crouch-2",
+          "frame": {
+            "x": 1358,
+            "y": 8,
+            "w": 310,
+            "h": 359
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 359
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 359
+          },
+          "pivot": {
+            "x": 0.47580645161290325,
+            "y": 0.9916434540389972
+          }
+        },
+        {
+          "filename": "erp-crouch-3",
+          "frame": {
+            "x": 681,
+            "y": 8,
+            "w": 321,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 321,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 321,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.4735202492211838,
+            "y": 0.9916666666666667
+          }
+        },
+        {
+          "filename": "erp-crouch-4",
+          "frame": {
+            "x": 8,
+            "y": 394,
+            "w": 320,
+            "h": 339
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 320,
+            "h": 339
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 320,
+            "h": 339
+          },
+          "pivot": {
+            "x": 0.4765625,
+            "y": 0.9911504424778761
+          }
+        },
+        {
+          "filename": "erp-crouch-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 322,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 322,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 322,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.468944099378882,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "erp-crouch-6",
+          "frame": {
+            "x": 344,
+            "y": 394,
+            "w": 326,
+            "h": 339
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 326,
+            "h": 339
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 326,
+            "h": 339
+          },
+          "pivot": {
+            "x": 0.4493865030674847,
+            "y": 0.9911504424778761
+          }
+        },
+        {
+          "filename": "erp-crouch-7",
+          "frame": {
+            "x": 1018,
+            "y": 8,
+            "w": 324,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 324,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 324,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.4799382716049383,
+            "y": 0.9916666666666667
+          }
+        },
+        {
+          "filename": "erp-crouch",
+          "frame": {
+            "x": 346,
+            "y": 8,
+            "w": 319,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 319,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 319,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.46551724137931033,
+            "y": 0.9916666666666667
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchBlock.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1822,
+        "h": 774
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-crouchBlock-0",
+          "frame": {
+            "x": 1102,
+            "y": 8,
+            "w": 349,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "erp-crouchBlock-1",
+          "frame": {
+            "x": 737,
+            "y": 8,
+            "w": 349,
+            "h": 371
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 371
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 371
+          },
+          "pivot": {
+            "x": 0.498567335243553,
+            "y": 0.9919137466307277
+          }
+        },
+        {
+          "filename": "erp-crouchBlock-2",
+          "frame": {
+            "x": 376,
+            "y": 397,
+            "w": 347,
+            "h": 368
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 368
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 368
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918478260869565
+          }
+        },
+        {
+          "filename": "erp-crouchBlock-3",
+          "frame": {
+            "x": 739,
+            "y": 397,
+            "w": 348,
+            "h": 366
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 366
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 366
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918032786885246
+          }
+        },
+        {
+          "filename": "erp-crouchBlock-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 349,
+            "h": 373
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 373
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 373
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919571045576407
+          }
+        },
+        {
+          "filename": "erp-crouchBlock-5",
+          "frame": {
+            "x": 1467,
+            "y": 8,
+            "w": 347,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918918918918919
+          }
+        },
+        {
+          "filename": "erp-crouchBlock-6",
+          "frame": {
+            "x": 8,
+            "y": 397,
+            "w": 352,
+            "h": 369
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 369
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 369
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.991869918699187
+          }
+        },
+        {
+          "filename": "erp-crouchBlock-7",
+          "frame": {
+            "x": 373,
+            "y": 8,
+            "w": 348,
+            "h": 372
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 348,
+            "h": 372
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 348,
+            "h": 372
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9919354838709677
+          }
+        },
+        {
+          "filename": "erp-crouchBlock",
+          "frame": {
+            "x": 1102,
+            "y": 8,
+            "w": 349,
+            "h": 370
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 370
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 370
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918918918918919
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchHurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1924,
+        "h": 783
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-crouchHurt-0",
+          "frame": {
+            "x": 400,
+            "y": 8,
+            "w": 363,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920634920634921
+          }
+        },
+        {
+          "filename": "erp-crouchHurt-1",
+          "frame": {
+            "x": 1552,
+            "y": 8,
+            "w": 364,
+            "h": 365
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 365
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 365
+          },
+          "pivot": {
+            "x": 0.49862637362637363,
+            "y": 0.9917808219178083
+          }
+        },
+        {
+          "filename": "erp-crouchHurt-2",
+          "frame": {
+            "x": 460,
+            "y": 412,
+            "w": 436,
+            "h": 350
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 436,
+            "h": 350
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 436,
+            "h": 350
+          },
+          "pivot": {
+            "x": 0.44954128440366975,
+            "y": 0.9914285714285714
+          }
+        },
+        {
+          "filename": "erp-crouchHurt-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 376,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.47606382978723405,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "erp-crouchHurt-4",
+          "frame": {
+            "x": 912,
+            "y": 412,
+            "w": 403,
+            "h": 346
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 403,
+            "h": 346
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 403,
+            "h": 346
+          },
+          "pivot": {
+            "x": 0.43300248138957814,
+            "y": 0.9913294797687862
+          }
+        },
+        {
+          "filename": "erp-crouchHurt-5",
+          "frame": {
+            "x": 8,
+            "y": 412,
+            "w": 436,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 436,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 436,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.4151376146788991,
+            "y": 0.9917355371900827
+          }
+        },
+        {
+          "filename": "erp-crouchHurt-6",
+          "frame": {
+            "x": 779,
+            "y": 8,
+            "w": 373,
+            "h": 366
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 366
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 366
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918032786885246
+          }
+        },
+        {
+          "filename": "erp-crouchHurt-7",
+          "frame": {
+            "x": 1168,
+            "y": 8,
+            "w": 368,
+            "h": 366
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 366
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 366
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9918032786885246
+          }
+        },
+        {
+          "filename": "erp-crouchHurt",
+          "frame": {
+            "x": 400,
+            "y": 8,
+            "w": 363,
+            "h": 378
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 363,
+            "h": 378
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 363,
+            "h": 378
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9920634920634921
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-crouchPunch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1982,
+        "h": 801
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-crouchPunch-0",
+          "frame": {
+            "x": 1605,
+            "y": 8,
+            "w": 369,
+            "h": 382
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 382
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 382
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921465968586387
+          }
+        },
+        {
+          "filename": "erp-crouchPunch-1",
+          "frame": {
+            "x": 8,
+            "y": 412,
+            "w": 381,
+            "h": 381
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 381
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 381
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921259842519685
+          }
+        },
+        {
+          "filename": "erp-crouchPunch-2",
+          "frame": {
+            "x": 405,
+            "y": 412,
+            "w": 496,
+            "h": 377
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 496,
+            "h": 377
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 496,
+            "h": 377
+          },
+          "pivot": {
+            "x": 0.3850806451612903,
+            "y": 0.9920424403183024
+          }
+        },
+        {
+          "filename": "erp-crouchPunch-3",
+          "frame": {
+            "x": 917,
+            "y": 412,
+            "w": 440,
+            "h": 376
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 440,
+            "h": 376
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 440,
+            "h": 376
+          },
+          "pivot": {
+            "x": 0.4329545454545455,
+            "y": 0.9920212765957447
+          }
+        },
+        {
+          "filename": "erp-crouchPunch-4",
+          "frame": {
+            "x": 408,
+            "y": 8,
+            "w": 381,
+            "h": 386
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 386
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 386
+          },
+          "pivot": {
+            "x": 0.49868766404199477,
+            "y": 0.9922279792746114
+          }
+        },
+        {
+          "filename": "erp-crouchPunch-5",
+          "frame": {
+            "x": 805,
+            "y": 8,
+            "w": 381,
+            "h": 386
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 386
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 386
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922279792746114
+          }
+        },
+        {
+          "filename": "erp-crouchPunch-6",
+          "frame": {
+            "x": 1202,
+            "y": 8,
+            "w": 387,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 387,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 387,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "erp-crouchPunch-7",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 384,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 384,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 384,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "erp-crouchPunch",
+          "frame": {
+            "x": 1605,
+            "y": 8,
+            "w": 369,
+            "h": 382
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 382
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 382
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921465968586387
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-dash.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1945,
+        "h": 768
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-dash-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 344,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "erp-dash-1",
+          "frame": {
+            "x": 849,
+            "y": 412,
+            "w": 310,
+            "h": 305
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 310,
+            "h": 305
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 310,
+            "h": 305
+          },
+          "pivot": {
+            "x": 0.36774193548387096,
+            "y": 0.9901639344262295
+          }
+        },
+        {
+          "filename": "erp-dash-2",
+          "frame": {
+            "x": 8,
+            "y": 412,
+            "w": 400,
+            "h": 348
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 400,
+            "h": 348
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 400,
+            "h": 348
+          },
+          "pivot": {
+            "x": 0.315,
+            "y": 0.9913793103448276
+          }
+        },
+        {
+          "filename": "erp-dash-3",
+          "frame": {
+            "x": 1042,
+            "y": 8,
+            "w": 441,
+            "h": 358
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 441,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 441,
+            "h": 358
+          },
+          "pivot": {
+            "x": 0.3129251700680272,
+            "y": 0.9916201117318436
+          }
+        },
+        {
+          "filename": "erp-dash-4",
+          "frame": {
+            "x": 1499,
+            "y": 8,
+            "w": 438,
+            "h": 351
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 438,
+            "h": 351
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 438,
+            "h": 351
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9914529914529915
+          }
+        },
+        {
+          "filename": "erp-dash-5",
+          "frame": {
+            "x": 424,
+            "y": 412,
+            "w": 409,
+            "h": 341
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 409,
+            "h": 341
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 409,
+            "h": 341
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9912023460410557
+          }
+        },
+        {
+          "filename": "erp-dash-6",
+          "frame": {
+            "x": 729,
+            "y": 8,
+            "w": 297,
+            "h": 364
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 297,
+            "h": 364
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 297,
+            "h": 364
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917582417582418
+          }
+        },
+        {
+          "filename": "erp-dash-7",
+          "frame": {
+            "x": 368,
+            "y": 8,
+            "w": 345,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "erp-dash",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 344,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922680412371134
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-defeat.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1952,
+        "h": 682
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-ko-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 359,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "erp-ko-1",
+          "frame": {
+            "x": 383,
+            "y": 8,
+            "w": 331,
+            "h": 393
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 331,
+            "h": 393
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 331,
+            "h": 393
+          },
+          "pivot": {
+            "x": 0.4984894259818731,
+            "y": 0.9923664122137404
+          }
+        },
+        {
+          "filename": "erp-ko-2",
+          "frame": {
+            "x": 730,
+            "y": 8,
+            "w": 349,
+            "h": 307
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 307
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 307
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.990228013029316
+          }
+        },
+        {
+          "filename": "erp-ko-3",
+          "frame": {
+            "x": 1554,
+            "y": 8,
+            "w": 390,
+            "h": 241
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 390,
+            "h": 241
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 241
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9875518672199171
+          }
+        },
+        {
+          "filename": "erp-ko-4",
+          "frame": {
+            "x": 1095,
+            "y": 8,
+            "w": 443,
+            "h": 256
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 443,
+            "h": 256
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 443,
+            "h": 256
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.98828125
+          }
+        },
+        {
+          "filename": "erp-ko-5",
+          "frame": {
+            "x": 8,
+            "y": 465,
+            "w": 417,
+            "h": 209
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 417,
+            "h": 209
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 417,
+            "h": 209
+          },
+          "pivot": {
+            "x": 0.5023980815347722,
+            "y": 0.9856459330143541
+          }
+        },
+        {
+          "filename": "erp-ko-6",
+          "frame": {
+            "x": 441,
+            "y": 465,
+            "w": 399,
+            "h": 153
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 399,
+            "h": 153
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 399,
+            "h": 153
+          },
+          "pivot": {
+            "x": 0.5012531328320802,
+            "y": 0.9803921568627451
+          }
+        },
+        {
+          "filename": "erp-ko-7",
+          "frame": {
+            "x": 856,
+            "y": 465,
+            "w": 415,
+            "h": 134
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 415,
+            "h": 134
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 415,
+            "h": 134
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9776119402985075
+          }
+        },
+        {
+          "filename": "erp-ko",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 359,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 359,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 359,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931972789115646
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-down.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1804,
+        "h": 335
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-down-0",
+          "frame": {
+            "x": 1363,
+            "y": 193,
+            "w": 433,
+            "h": 122
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 433,
+            "h": 122
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 433,
+            "h": 122
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9754098360655737
+          }
+        },
+        {
+          "filename": "erp-down-1",
+          "frame": {
+            "x": 1343,
+            "y": 8,
+            "w": 438,
+            "h": 143
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 438,
+            "h": 143
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 438,
+            "h": 143
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9790209790209791
+          }
+        },
+        {
+          "filename": "erp-down-2",
+          "frame": {
+            "x": 893,
+            "y": 8,
+            "w": 434,
+            "h": 149
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 434,
+            "h": 149
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 434,
+            "h": 149
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9798657718120806
+          }
+        },
+        {
+          "filename": "erp-down-3",
+          "frame": {
+            "x": 8,
+            "y": 193,
+            "w": 437,
+            "h": 134
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 437,
+            "h": 134
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 437,
+            "h": 134
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9776119402985075
+          }
+        },
+        {
+          "filename": "erp-down-4",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 418,
+            "h": 169
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 418,
+            "h": 169
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 418,
+            "h": 169
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9822485207100592
+          }
+        },
+        {
+          "filename": "erp-down-5",
+          "frame": {
+            "x": 461,
+            "y": 193,
+            "w": 436,
+            "h": 132
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 436,
+            "h": 132
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 436,
+            "h": 132
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9772727272727273
+          }
+        },
+        {
+          "filename": "erp-down-6",
+          "frame": {
+            "x": 442,
+            "y": 8,
+            "w": 435,
+            "h": 165
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 435,
+            "h": 165
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 435,
+            "h": 165
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9818181818181818
+          }
+        },
+        {
+          "filename": "erp-down-7",
+          "frame": {
+            "x": 913,
+            "y": 193,
+            "w": 434,
+            "h": 128
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 434,
+            "h": 128
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 434,
+            "h": 128
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9765625
+          }
+        },
+        {
+          "filename": "erp-down",
+          "frame": {
+            "x": 1363,
+            "y": 193,
+            "w": 433,
+            "h": 122
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 433,
+            "h": 122
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 433,
+            "h": 122
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9754098360655737
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-fall.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1689,
+        "h": 851
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-fall-0",
+          "frame": {
+            "x": 654,
+            "y": 446,
+            "w": 259,
+            "h": 356
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 259,
+            "h": 356
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 259,
+            "h": 356
+          },
+          "pivot": {
+            "x": 0.5231660231660231,
+            "y": 0.9915730337078652
+          }
+        },
+        {
+          "filename": "erp-fall-1",
+          "frame": {
+            "x": 381,
+            "y": 446,
+            "w": 257,
+            "h": 381
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 257,
+            "h": 381
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 257,
+            "h": 381
+          },
+          "pivot": {
+            "x": 0.4027237354085603,
+            "y": 0.9921259842519685
+          }
+        },
+        {
+          "filename": "erp-fall-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 251,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 251,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 251,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "erp-fall-3",
+          "frame": {
+            "x": 275,
+            "y": 8,
+            "w": 295,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.7491525423728813,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "erp-fall-4",
+          "frame": {
+            "x": 586,
+            "y": 8,
+            "w": 366,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.6079234972677595,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "erp-fall-5",
+          "frame": {
+            "x": 8,
+            "y": 446,
+            "w": 357,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 357,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 357,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5938375350140056,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "erp-fall-6",
+          "frame": {
+            "x": 1329,
+            "y": 8,
+            "w": 352,
+            "h": 401
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 401
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 401
+          },
+          "pivot": {
+            "x": 0.6349431818181818,
+            "y": 0.9925187032418953
+          }
+        },
+        {
+          "filename": "erp-fall-7",
+          "frame": {
+            "x": 968,
+            "y": 8,
+            "w": 345,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 345,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 345,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.6231884057971014,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "erp-fall",
+          "frame": {
+            "x": 654,
+            "y": 446,
+            "w": 259,
+            "h": 356
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 259,
+            "h": 356
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 259,
+            "h": 356
+          },
+          "pivot": {
+            "x": 0.5231660231660231,
+            "y": 0.9915730337078652
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-get-up.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1934,
+        "h": 766
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-getup-0",
+          "frame": {
+            "x": 799,
+            "y": 446,
+            "w": 426,
+            "h": 165
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 426,
+            "h": 165
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 426,
+            "h": 165
+          },
+          "pivot": {
+            "x": 0.49765258215962443,
+            "y": 0.9818181818181818
+          }
+        },
+        {
+          "filename": "erp-getup-1",
+          "frame": {
+            "x": 361,
+            "y": 446,
+            "w": 422,
+            "h": 273
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 422,
+            "h": 273
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 422,
+            "h": 273
+          },
+          "pivot": {
+            "x": 0.5165876777251185,
+            "y": 0.989010989010989
+          }
+        },
+        {
+          "filename": "erp-getup-2",
+          "frame": {
+            "x": 8,
+            "y": 446,
+            "w": 337,
+            "h": 312
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 312
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 312
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9903846153846154
+          }
+        },
+        {
+          "filename": "erp-getup-3",
+          "frame": {
+            "x": 1568,
+            "y": 8,
+            "w": 358,
+            "h": 348
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 348
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 348
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9913793103448276
+          }
+        },
+        {
+          "filename": "erp-getup-4",
+          "frame": {
+            "x": 1163,
+            "y": 8,
+            "w": 389,
+            "h": 360
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 389,
+            "h": 360
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 389,
+            "h": 360
+          },
+          "pivot": {
+            "x": 0.44601542416452444,
+            "y": 0.9916666666666667
+          }
+        },
+        {
+          "filename": "erp-getup-5",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 358,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "erp-getup-6",
+          "frame": {
+            "x": 776,
+            "y": 8,
+            "w": 371,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "erp-getup-7",
+          "frame": {
+            "x": 382,
+            "y": 8,
+            "w": 378,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 378,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 378,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "erp-getup",
+          "frame": {
+            "x": 799,
+            "y": 446,
+            "w": 426,
+            "h": 165
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 426,
+            "h": 165
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 426,
+            "h": 165
+          },
+          "pivot": {
+            "x": 0.49765258215962443,
+            "y": 0.9818181818181818
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-hurt.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1931,
+        "h": 871
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-hurt-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 375,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "erp-hurt-1",
+          "frame": {
+            "x": 399,
+            "y": 8,
+            "w": 377,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "erp-hurt-2",
+          "frame": {
+            "x": 1559,
+            "y": 8,
+            "w": 364,
+            "h": 411
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 411
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 411
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927007299270073
+          }
+        },
+        {
+          "filename": "erp-hurt-3",
+          "frame": {
+            "x": 390,
+            "y": 459,
+            "w": 369,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.505420054200542,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "erp-hurt-4",
+          "frame": {
+            "x": 775,
+            "y": 459,
+            "w": 364,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "erp-hurt-5",
+          "frame": {
+            "x": 8,
+            "y": 459,
+            "w": 366,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 366,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 366,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "erp-hurt-6",
+          "frame": {
+            "x": 1176,
+            "y": 8,
+            "w": 367,
+            "h": 418
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 418
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 418
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.992822966507177
+          }
+        },
+        {
+          "filename": "erp-hurt-7",
+          "frame": {
+            "x": 792,
+            "y": 8,
+            "w": 368,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "erp-hurt",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 375,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1928,
+        "h": 884
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-idle-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 369,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "erp-idle-1",
+          "frame": {
+            "x": 1165,
+            "y": 8,
+            "w": 367,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 367,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 367,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "erp-idle-2",
+          "frame": {
+            "x": 393,
+            "y": 8,
+            "w": 368,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 368,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 368,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "erp-idle-3",
+          "frame": {
+            "x": 777,
+            "y": 8,
+            "w": 372,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        },
+        {
+          "filename": "erp-idle-4",
+          "frame": {
+            "x": 395,
+            "y": 456,
+            "w": 375,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "erp-idle-5",
+          "frame": {
+            "x": 1548,
+            "y": 8,
+            "w": 372,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 372,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 372,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "erp-idle-6",
+          "frame": {
+            "x": 8,
+            "y": 456,
+            "w": 371,
+            "h": 420
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 420
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 420
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928571428571429
+          }
+        },
+        {
+          "filename": "erp-idle-7",
+          "frame": {
+            "x": 786,
+            "y": 456,
+            "w": 374,
+            "h": 419
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 419
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 419
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928400954653938
+          }
+        },
+        {
+          "filename": "erp-idle",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 369,
+            "h": 432
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 432
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 432
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930555555555556
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-intro.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1769,
+        "h": 890
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-intro-0",
+          "frame": {
+            "x": 288,
+            "y": 8,
+            "w": 236,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 236,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 236,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "erp-intro-1",
+          "frame": {
+            "x": 540,
+            "y": 8,
+            "w": 233,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 233,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 233,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "erp-intro-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 264,
+            "h": 455
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 264,
+            "h": 455
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 264,
+            "h": 455
+          },
+          "pivot": {
+            "x": 0.4431818181818182,
+            "y": 0.9934065934065934
+          }
+        },
+        {
+          "filename": "erp-intro-3",
+          "frame": {
+            "x": 789,
+            "y": 8,
+            "w": 231,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 231,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 231,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933920704845814
+          }
+        },
+        {
+          "filename": "erp-intro-4",
+          "frame": {
+            "x": 373,
+            "y": 479,
+            "w": 300,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 300,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 300,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "erp-intro-5",
+          "frame": {
+            "x": 1036,
+            "y": 8,
+            "w": 334,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "erp-intro-6",
+          "frame": {
+            "x": 1386,
+            "y": 8,
+            "w": 375,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 375,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 375,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "erp-intro-7",
+          "frame": {
+            "x": 8,
+            "y": 479,
+            "w": 349,
+            "h": 403
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 349,
+            "h": 403
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 349,
+            "h": 403
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925558312655087
+          }
+        },
+        {
+          "filename": "erp-intro",
+          "frame": {
+            "x": 288,
+            "y": 8,
+            "w": 236,
+            "h": 454
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 236,
+            "h": 454
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 236,
+            "h": 454
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933920704845814
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-jump.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1834,
+        "h": 877
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-jump-0",
+          "frame": {
+            "x": 946,
+            "y": 8,
+            "w": 364,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "erp-jump-1",
+          "frame": {
+            "x": 8,
+            "y": 515,
+            "w": 264,
+            "h": 354
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 264,
+            "h": 354
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 264,
+            "h": 354
+          },
+          "pivot": {
+            "x": 0.4412878787878788,
+            "y": 0.9915254237288136
+          }
+        },
+        {
+          "filename": "erp-jump-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 292,
+            "h": 491
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 292,
+            "h": 491
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 292,
+            "h": 491
+          },
+          "pivot": {
+            "x": 0.3047945205479452,
+            "y": 0.9938900203665988
+          }
+        },
+        {
+          "filename": "erp-jump-3",
+          "frame": {
+            "x": 1326,
+            "y": 8,
+            "w": 213,
+            "h": 388
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 213,
+            "h": 388
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 213,
+            "h": 388
+          },
+          "pivot": {
+            "x": 0.3192488262910798,
+            "y": 0.9922680412371134
+          }
+        },
+        {
+          "filename": "erp-jump-4",
+          "frame": {
+            "x": 288,
+            "y": 515,
+            "w": 230,
+            "h": 325
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 230,
+            "h": 325
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 230,
+            "h": 325
+          },
+          "pivot": {
+            "x": 0.34347826086956523,
+            "y": 0.9907692307692307
+          }
+        },
+        {
+          "filename": "erp-jump-5",
+          "frame": {
+            "x": 703,
+            "y": 8,
+            "w": 227,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 227,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 227,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5726872246696035,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "erp-jump-6",
+          "frame": {
+            "x": 1555,
+            "y": 8,
+            "w": 271,
+            "h": 380
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 271,
+            "h": 380
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 271,
+            "h": 380
+          },
+          "pivot": {
+            "x": 0.47601476014760147,
+            "y": 0.9921052631578947
+          }
+        },
+        {
+          "filename": "erp-jump-7",
+          "frame": {
+            "x": 316,
+            "y": 8,
+            "w": 371,
+            "h": 443
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 443
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 443
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932279909706546
+          }
+        },
+        {
+          "filename": "erp-jump",
+          "frame": {
+            "x": 946,
+            "y": 8,
+            "w": 364,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 364,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 364,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-kick.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2039,
+        "h": 860
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-kick-0",
+          "frame": {
+            "x": 1104,
+            "y": 8,
+            "w": 369,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "erp-kick-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 268,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 268,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 268,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.2966417910447761,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "erp-kick-2",
+          "frame": {
+            "x": 705,
+            "y": 8,
+            "w": 383,
+            "h": 417
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 383,
+            "h": 417
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 383,
+            "h": 417
+          },
+          "pivot": {
+            "x": 0.26240208877284593,
+            "y": 0.9928057553956835
+          }
+        },
+        {
+          "filename": "erp-kick-3",
+          "frame": {
+            "x": 292,
+            "y": 8,
+            "w": 397,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 397,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 397,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.48614609571788414,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "erp-kick-4",
+          "frame": {
+            "x": 1489,
+            "y": 8,
+            "w": 270,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 270,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 270,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.31296296296296294,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "erp-kick-5",
+          "frame": {
+            "x": 1775,
+            "y": 8,
+            "w": 256,
+            "h": 405
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 256,
+            "h": 405
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 405
+          },
+          "pivot": {
+            "x": 0.50390625,
+            "y": 0.9925925925925926
+          }
+        },
+        {
+          "filename": "erp-kick-6",
+          "frame": {
+            "x": 8,
+            "y": 448,
+            "w": 361,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "erp-kick-7",
+          "frame": {
+            "x": 385,
+            "y": 448,
+            "w": 361,
+            "h": 400
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 361,
+            "h": 400
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 361,
+            "h": 400
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9925
+          }
+        },
+        {
+          "filename": "erp-kick",
+          "frame": {
+            "x": 1104,
+            "y": 8,
+            "w": 369,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927710843373494
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-knockdown.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1728,
+        "h": 740
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-knockdown-0",
+          "frame": {
+            "x": 401,
+            "y": 8,
+            "w": 358,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "erp-knockdown-1",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 377,
+            "h": 445
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 445
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 445
+          },
+          "pivot": {
+            "x": 0.5251989389920424,
+            "y": 0.9932584269662922
+          }
+        },
+        {
+          "filename": "erp-knockdown-2",
+          "frame": {
+            "x": 775,
+            "y": 8,
+            "w": 374,
+            "h": 424
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 424
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 424
+          },
+          "pivot": {
+            "x": 0.516042780748663,
+            "y": 0.9929245283018868
+          }
+        },
+        {
+          "filename": "erp-knockdown-3",
+          "frame": {
+            "x": 1165,
+            "y": 8,
+            "w": 469,
+            "h": 350
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 469,
+            "h": 350
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 469,
+            "h": 350
+          },
+          "pivot": {
+            "x": 0.6705756929637526,
+            "y": 0.9914285714285714
+          }
+        },
+        {
+          "filename": "erp-knockdown-4",
+          "frame": {
+            "x": 8,
+            "y": 469,
+            "w": 438,
+            "h": 263
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 438,
+            "h": 263
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 438,
+            "h": 263
+          },
+          "pivot": {
+            "x": 0.519406392694064,
+            "y": 0.9885931558935361
+          }
+        },
+        {
+          "filename": "erp-knockdown-5",
+          "frame": {
+            "x": 462,
+            "y": 469,
+            "w": 401,
+            "h": 180
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 401,
+            "h": 180
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 401,
+            "h": 180
+          },
+          "pivot": {
+            "x": 0.4538653366583541,
+            "y": 0.9833333333333333
+          }
+        },
+        {
+          "filename": "erp-knockdown-6",
+          "frame": {
+            "x": 879,
+            "y": 469,
+            "w": 386,
+            "h": 163
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 386,
+            "h": 163
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 386,
+            "h": 163
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9815950920245399
+          }
+        },
+        {
+          "filename": "erp-knockdown-7",
+          "frame": {
+            "x": 1281,
+            "y": 469,
+            "w": 439,
+            "h": 123
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 439,
+            "h": 123
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 439,
+            "h": 123
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.975609756097561
+          }
+        },
+        {
+          "filename": "erp-knockdown",
+          "frame": {
+            "x": 401,
+            "y": 8,
+            "w": 358,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-punch.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1666,
+        "h": 857
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-punch-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 379,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "erp-punch-1",
+          "frame": {
+            "x": 403,
+            "y": 8,
+            "w": 382,
+            "h": 427
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 427
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 427
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929742388758782
+          }
+        },
+        {
+          "filename": "erp-punch-2",
+          "frame": {
+            "x": 801,
+            "y": 8,
+            "w": 421,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 421,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 421,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.4750593824228028,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "erp-punch-3",
+          "frame": {
+            "x": 1238,
+            "y": 8,
+            "w": 420,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 420,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 420,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.4726190476190476,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "erp-punch-4",
+          "frame": {
+            "x": 397,
+            "y": 452,
+            "w": 380,
+            "h": 395
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 380,
+            "h": 395
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 380,
+            "h": 395
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924050632911392
+          }
+        },
+        {
+          "filename": "erp-punch-5",
+          "frame": {
+            "x": 793,
+            "y": 452,
+            "w": 376,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "erp-punch-6",
+          "frame": {
+            "x": 1185,
+            "y": 452,
+            "w": 377,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 377,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 377,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "erp-punch-7",
+          "frame": {
+            "x": 8,
+            "y": 452,
+            "w": 373,
+            "h": 397
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 397
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 397
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9924433249370277
+          }
+        },
+        {
+          "filename": "erp-punch",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 379,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929906542056075
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-special-attack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1650,
+        "h": 875
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-super-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 413,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 413,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 413,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.4661016949152542,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "erp-super-1",
+          "frame": {
+            "x": 826,
+            "y": 8,
+            "w": 400,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 400,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 400,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.4625,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "erp-super-2",
+          "frame": {
+            "x": 1242,
+            "y": 8,
+            "w": 400,
+            "h": 415
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 400,
+            "h": 415
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 400,
+            "h": 415
+          },
+          "pivot": {
+            "x": 0.47125,
+            "y": 0.9927710843373494
+          }
+        },
+        {
+          "filename": "erp-super-3",
+          "frame": {
+            "x": 437,
+            "y": 8,
+            "w": 373,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 373,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 373,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "erp-super-4",
+          "frame": {
+            "x": 824,
+            "y": 455,
+            "w": 394,
+            "h": 409
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 394,
+            "h": 409
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 394,
+            "h": 409
+          },
+          "pivot": {
+            "x": 0.47588832487309646,
+            "y": 0.9926650366748166
+          }
+        },
+        {
+          "filename": "erp-super-5",
+          "frame": {
+            "x": 8,
+            "y": 455,
+            "w": 393,
+            "h": 412
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 393,
+            "h": 412
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 393,
+            "h": 412
+          },
+          "pivot": {
+            "x": 0.4770992366412214,
+            "y": 0.9927184466019418
+          }
+        },
+        {
+          "filename": "erp-super-6",
+          "frame": {
+            "x": 1234,
+            "y": 455,
+            "w": 395,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 395,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 395,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.4759493670886076,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "erp-super-7",
+          "frame": {
+            "x": 417,
+            "y": 455,
+            "w": 391,
+            "h": 410
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 391,
+            "h": 410
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 391,
+            "h": 410
+          },
+          "pivot": {
+            "x": 0.4718670076726343,
+            "y": 0.9926829268292683
+          }
+        },
+        {
+          "filename": "erp-super",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 413,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 413,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 413,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.4661016949152542,
+            "y": 0.9930394431554525
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-sweep.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1836,
+        "h": 769
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-sweep-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 374,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        },
+        {
+          "filename": "erp-sweep-1",
+          "frame": {
+            "x": 8,
+            "y": 440,
+            "w": 397,
+            "h": 321
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 397,
+            "h": 321
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 397,
+            "h": 321
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9906542056074766
+          }
+        },
+        {
+          "filename": "erp-sweep-2",
+          "frame": {
+            "x": 421,
+            "y": 440,
+            "w": 491,
+            "h": 304
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 491,
+            "h": 304
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 491,
+            "h": 304
+          },
+          "pivot": {
+            "x": 0.17006109979633402,
+            "y": 0.9901315789473685
+          }
+        },
+        {
+          "filename": "erp-sweep-3",
+          "frame": {
+            "x": 928,
+            "y": 440,
+            "w": 382,
+            "h": 295
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 295
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 295
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9898305084745763
+          }
+        },
+        {
+          "filename": "erp-sweep-4",
+          "frame": {
+            "x": 1478,
+            "y": 8,
+            "w": 350,
+            "h": 330
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 330
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 330
+          },
+          "pivot": {
+            "x": 0.35285714285714287,
+            "y": 0.990909090909091
+          }
+        },
+        {
+          "filename": "erp-sweep-5",
+          "frame": {
+            "x": 1185,
+            "y": 8,
+            "w": 277,
+            "h": 333
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 333
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 333
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.990990990990991
+          }
+        },
+        {
+          "filename": "erp-sweep-6",
+          "frame": {
+            "x": 793,
+            "y": 8,
+            "w": 376,
+            "h": 357
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 357
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 357
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9915966386554622
+          }
+        },
+        {
+          "filename": "erp-sweep-7",
+          "frame": {
+            "x": 398,
+            "y": 8,
+            "w": 379,
+            "h": 385
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 385
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 385
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9922077922077922
+          }
+        },
+        {
+          "filename": "erp-sweep",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 374,
+            "h": 416
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 374,
+            "h": 416
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 374,
+            "h": 416
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9927884615384616
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-uppercut.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1744,
+        "h": 845
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-uppercut-0",
+          "frame": {
+            "x": 665,
+            "y": 8,
+            "w": 376,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929906542056075
+          }
+        },
+        {
+          "filename": "erp-uppercut-1",
+          "frame": {
+            "x": 375,
+            "y": 474,
+            "w": 337,
+            "h": 339
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 339
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 339
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9911504424778761
+          }
+        },
+        {
+          "filename": "erp-uppercut-2",
+          "frame": {
+            "x": 1357,
+            "y": 8,
+            "w": 379,
+            "h": 384
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 379,
+            "h": 384
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 379,
+            "h": 384
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9921875
+          }
+        },
+        {
+          "filename": "erp-uppercut-3",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 356,
+            "h": 450
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 356,
+            "h": 450
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 356,
+            "h": 450
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9933333333333333
+          }
+        },
+        {
+          "filename": "erp-uppercut-4",
+          "frame": {
+            "x": 380,
+            "y": 8,
+            "w": 269,
+            "h": 444
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 444
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 444
+          },
+          "pivot": {
+            "x": 0.36617100371747213,
+            "y": 0.9932432432432432
+          }
+        },
+        {
+          "filename": "erp-uppercut-5",
+          "frame": {
+            "x": 1057,
+            "y": 8,
+            "w": 284,
+            "h": 394
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 284,
+            "h": 394
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 284,
+            "h": 394
+          },
+          "pivot": {
+            "x": 0.43309859154929575,
+            "y": 0.9923857868020305
+          }
+        },
+        {
+          "filename": "erp-uppercut-6",
+          "frame": {
+            "x": 728,
+            "y": 474,
+            "w": 316,
+            "h": 335
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 316,
+            "h": 335
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 316,
+            "h": 335
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.991044776119403
+          }
+        },
+        {
+          "filename": "erp-uppercut-7",
+          "frame": {
+            "x": 8,
+            "y": 474,
+            "w": 351,
+            "h": 363
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 351,
+            "h": 363
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 351,
+            "h": 363
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9917355371900827
+          }
+        },
+        {
+          "filename": "erp-uppercut",
+          "frame": {
+            "x": 665,
+            "y": 8,
+            "w": 376,
+            "h": 428
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 376,
+            "h": 428
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 376,
+            "h": 428
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929906542056075
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-victory.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1726,
+        "h": 897
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-win-0",
+          "frame": {
+            "x": 8,
+            "y": 467,
+            "w": 358,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "erp-win-1",
+          "frame": {
+            "x": 1377,
+            "y": 8,
+            "w": 341,
+            "h": 423
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 341,
+            "h": 423
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 341,
+            "h": 423
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9929078014184397
+          }
+        },
+        {
+          "filename": "erp-win-2",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 304,
+            "h": 443
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 443
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 443
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932279909706546
+          }
+        },
+        {
+          "filename": "erp-win-3",
+          "frame": {
+            "x": 688,
+            "y": 8,
+            "w": 337,
+            "h": 435
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 337,
+            "h": 435
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 337,
+            "h": 435
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.993103448275862
+          }
+        },
+        {
+          "filename": "erp-win-4",
+          "frame": {
+            "x": 328,
+            "y": 8,
+            "w": 344,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "erp-win-5",
+          "frame": {
+            "x": 734,
+            "y": 467,
+            "w": 352,
+            "h": 399
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 352,
+            "h": 399
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 352,
+            "h": 399
+          },
+          "pivot": {
+            "x": 0.5085227272727273,
+            "y": 0.9924812030075187
+          }
+        },
+        {
+          "filename": "erp-win-6",
+          "frame": {
+            "x": 382,
+            "y": 467,
+            "w": 336,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 336,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        },
+        {
+          "filename": "erp-win-7",
+          "frame": {
+            "x": 1041,
+            "y": 8,
+            "w": 320,
+            "h": 434
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 320,
+            "h": 434
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 320,
+            "h": 434
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930875576036866
+          }
+        },
+        {
+          "filename": "erp-win",
+          "frame": {
+            "x": 8,
+            "y": 467,
+            "w": 358,
+            "h": 422
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 358,
+            "h": 422
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 358,
+            "h": 422
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9928909952606635
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walk.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1986,
+        "h": 867
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-walk-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 353,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "erp-walk-1",
+          "frame": {
+            "x": 740,
+            "y": 8,
+            "w": 277,
+            "h": 430
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 277,
+            "h": 430
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 277,
+            "h": 430
+          },
+          "pivot": {
+            "x": 0.5036101083032491,
+            "y": 0.9930232558139535
+          }
+        },
+        {
+          "filename": "erp-walk-2",
+          "frame": {
+            "x": 1033,
+            "y": 8,
+            "w": 189,
+            "h": 429
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 189,
+            "h": 429
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 189,
+            "h": 429
+          },
+          "pivot": {
+            "x": 0.3412698412698413,
+            "y": 0.993006993006993
+          }
+        },
+        {
+          "filename": "erp-walk-3",
+          "frame": {
+            "x": 377,
+            "y": 8,
+            "w": 347,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 347,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 347,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        },
+        {
+          "filename": "erp-walk-4",
+          "frame": {
+            "x": 1238,
+            "y": 8,
+            "w": 343,
+            "h": 408
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 343,
+            "h": 408
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 343,
+            "h": 408
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926470588235294
+          }
+        },
+        {
+          "filename": "erp-walk-5",
+          "frame": {
+            "x": 8,
+            "y": 455,
+            "w": 269,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 269,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 269,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.4368029739776952,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "erp-walk-6",
+          "frame": {
+            "x": 293,
+            "y": 455,
+            "w": 193,
+            "h": 404
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 193,
+            "h": 404
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 193,
+            "h": 404
+          },
+          "pivot": {
+            "x": 0.39378238341968913,
+            "y": 0.9925742574257426
+          }
+        },
+        {
+          "filename": "erp-walk-7",
+          "frame": {
+            "x": 1597,
+            "y": 8,
+            "w": 381,
+            "h": 407
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 407
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 407
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9926289926289926
+          }
+        },
+        {
+          "filename": "erp-walk",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 353,
+            "h": 431
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 353,
+            "h": 431
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 353,
+            "h": 431
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9930394431554525
+          }
+        }
+      ]
+    },
+    {
+      "image": "atlas-walkBack.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 1903,
+        "h": 910
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "erp-walkBack-0",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 344,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "erp-walkBack-1",
+          "frame": {
+            "x": 873,
+            "y": 8,
+            "w": 315,
+            "h": 438
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 315,
+            "h": 438
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 315,
+            "h": 438
+          },
+          "pivot": {
+            "x": 0.5126984126984127,
+            "y": 0.9931506849315068
+          }
+        },
+        {
+          "filename": "erp-walkBack-2",
+          "frame": {
+            "x": 8,
+            "y": 466,
+            "w": 400,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 400,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 400,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "erp-walkBack-3",
+          "frame": {
+            "x": 368,
+            "y": 8,
+            "w": 210,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 210,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 210,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.33095238095238094,
+            "y": 0.9932126696832579
+          }
+        },
+        {
+          "filename": "erp-walkBack-4",
+          "frame": {
+            "x": 1204,
+            "y": 8,
+            "w": 295,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 295,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 295,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.48983050847457626,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "erp-walkBack-5",
+          "frame": {
+            "x": 1515,
+            "y": 8,
+            "w": 380,
+            "h": 437
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 380,
+            "h": 437
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 380,
+            "h": 437
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9931350114416476
+          }
+        },
+        {
+          "filename": "erp-walkBack-6",
+          "frame": {
+            "x": 594,
+            "y": 8,
+            "w": 263,
+            "h": 441
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 263,
+            "h": 441
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 263,
+            "h": 441
+          },
+          "pivot": {
+            "x": 0.4828897338403042,
+            "y": 0.9931972789115646
+          }
+        },
+        {
+          "filename": "erp-walkBack-7",
+          "frame": {
+            "x": 424,
+            "y": 466,
+            "w": 307,
+            "h": 436
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 307,
+            "h": 436
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 307,
+            "h": 436
+          },
+          "pivot": {
+            "x": 0.5162866449511401,
+            "y": 0.9931192660550459
+          }
+        },
+        {
+          "filename": "erp-walkBack",
+          "frame": {
+            "x": 8,
+            "y": 8,
+            "w": 344,
+            "h": 442
+          },
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 344,
+            "h": 442
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 344,
+            "h": 442
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.9932126696832579
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "PG Fighters animation packaging",
+    "version": "2",
+    "description": "One independent page per movement"
+  }
+}
